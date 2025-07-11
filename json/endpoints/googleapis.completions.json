@@ -1,0 +1,16 @@
+{
+	"model": "",
+	"messages": [],
+	"reasoning_effort": ["low", "medium", "high"],
+	"stream": true,
+	"extra_body":
+	{
+		"google":
+		{
+			"thinking_config":
+			{
+				"include_thoughts": true
+			}
+		}
+	}
+}

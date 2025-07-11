@@ -1,0 +1,37 @@
+{
+	"model": "",
+	"messages": [],
+	"frequency_penalty": 1,
+	"max_completion_tokens": 1,
+	"modalities": ["text", "audio"],
+	"presence_penalty": 1,
+	"reasoning_effort": ["low", "medium", "high"],
+	"temperature": 1,
+	"top_p": 1,
+	"audio":
+	{
+		"format": ["pcm16", "g711_ulaw", "g711_alaw"],
+		"voice": ["alloy", "ash", "ballad", "coral", "echo", "fable", "nova", "onyx", "sage", "shimmer", "verse"]
+	},
+	"response_format":
+	{
+		"type": ["text", "json_object", "json_schema"],
+		"json_schema":
+		{}
+	},
+	"web_search_options":
+	{
+		"search_context_size": ["low", "medium", "high"],
+		"user_location":
+		{
+			"type": "approximate",
+			"approximate":
+			{
+				"city": "San Francisco",
+				"country": "US",
+				"region": "California",
+				"timezone": "America/Los_Angeles"
+			}
+		}
+	}
+}

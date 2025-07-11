@@ -1,0 +1,71 @@
+{
+	"model": "",
+	"input": [],
+	"max_output_tokens": 1,
+	"store": true,
+	"temperature": 1,
+	"top_p": 1,
+	"reasoning":
+	{
+		"effort": ["low", "medium", "high"],
+		"summary": ["detailed", "auto", null]
+	},
+	"text":
+	{
+		"format":
+		{
+			"type": ["text", "json_object", "json_schema"]
+		}
+	},
+	"tools": [
+	{
+		"type": "code_interpreter",
+		"container":
+		{
+			"type": "auto",
+			"file_ids": []
+		}
+	},
+	{
+		"type": "image_generation",
+		"background": ["auto", "transparent", "opaque"],
+		"moderation": ["auto", "low"],
+		"output_format": ["png", "webp", "jpeg"],
+		"partial_images": 1,
+		"quality": ["low", "medium", "high"],
+		"size": ["auto", "1024x1024", "1024x1536", "1536x1024"]
+	},
+	{
+		"type": "mcp",
+		"allowed_tools": [],
+		"server_label": "",
+		"server_url": "",
+		"headers":
+		{
+			"Authorization": "Bearer "
+		},
+		"require_approval":
+		{
+			"always":
+			{
+				"tool_names": [""]
+			},
+			"never":
+			{
+				"tool_names": [""]
+			}
+		}
+	},
+	{
+		"type": "web_search_preview",
+		"search_context_size": ["low", "medium", "high"],
+		"user_location":
+		{
+			"type": "approximate",
+			"city": "San Francisco",
+			"country": "US",
+			"region": "California",
+			"timezone": "America/Los_Angeles"
+		}
+	}]
+}

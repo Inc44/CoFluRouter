@@ -1,0 +1,28 @@
+{
+	"model": "",
+	"messages": [],
+	"betas": ["web-search-2025-03-05"],
+	"max_tokens": 1,
+	"temperature": 1,
+	"thinking":
+	{
+		"type": "enabled",
+		"budget_tokens": 1
+	},
+	"tools": [
+	{
+		"name": "web_search",
+		"allowed_domains": [""],
+		"blocked_domains": [""],
+		"max_uses": 1,
+		"type": "web_search_20250305",
+		"user_location":
+		{
+			"type": "approximate",
+			"city": "San Francisco",
+			"country": "US",
+			"region": "California",
+			"timezone": "America/Los_Angeles"
+		}
+	}]
+}

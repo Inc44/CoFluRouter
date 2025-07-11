@@ -1,0 +1,89 @@
+{
+	"system_instruction":
+	{
+		"parts": []
+	},
+	"contents": [
+	{
+		"parts": []
+	}],
+	"generationConfig":
+	{
+		"maxOutputTokens": 1,
+		"mediaResolution": ["MEDIA_RESOLUTION_UNSPECIFIED", "MEDIA_RESOLUTION_LOW", "MEDIA_RESOLUTION_MEDIUM"],
+		"responseMimeType": ["text/plain", "application/json"],
+		"responseModalities": ["TEXT", "IMAGE", "AUDIO"],
+		"stopSequences": [],
+		"temperature": 1,
+		"topK": 1,
+		"topP": 1,
+		"speechConfig":
+		{
+			"voiceConfig":
+			{
+				"prebuiltVoiceConfig":
+				{
+					"voiceName": ["Achernar", "Achird", "Algenib", "Algieba", "Alnilam", "Aoede", "Autonoe", "Callirrhoe", "Charon", "Despina", "Enceladus", "Erinome", "Fenrir", "Gacrux", "Iapetus", "Kore", "Laomedeia", "Leda", "Orus", "Puck", "Pulcherrima", "Rasalgethi", "Sadachbia", "Sadaltager", "Schedar", "Sulafat", "Umbriel", "Vindemiatrix", "Zephyr", "Zubenelgenubi"]
+				}
+			},
+			"multiSpeakerVoiceConfig":
+			{
+				"speakerVoiceConfigs": [
+				{
+					"speaker": "",
+					"voiceConfig":
+					{
+						"prebuiltVoiceConfig":
+						{
+							"voiceName": ["Achernar", "Achird", "Algenib", "Algieba", "Alnilam", "Aoede", "Autonoe", "Callirrhoe", "Charon", "Despina", "Enceladus", "Erinome", "Fenrir", "Gacrux", "Iapetus", "Kore", "Laomedeia", "Leda", "Orus", "Puck", "Pulcherrima", "Rasalgethi", "Sadachbia", "Sadaltager", "Schedar", "Sulafat", "Umbriel", "Vindemiatrix", "Zephyr", "Zubenelgenubi"]
+						}
+					}
+				},
+				{
+					"speaker": "",
+					"voiceConfig":
+					{
+						"prebuiltVoiceConfig":
+						{
+							"voiceName": ["Achernar", "Achird", "Algenib", "Algieba", "Alnilam", "Aoede", "Autonoe", "Callirrhoe", "Charon", "Despina", "Enceladus", "Erinome", "Fenrir", "Gacrux", "Iapetus", "Kore", "Laomedeia", "Leda", "Orus", "Puck", "Pulcherrima", "Rasalgethi", "Sadachbia", "Sadaltager", "Schedar", "Sulafat", "Umbriel", "Vindemiatrix", "Zephyr", "Zubenelgenubi"]
+						}
+					}
+				}]
+			}
+		},
+		"thinkingConfig":
+		{
+			"thinkingBudget": 1
+		}
+	},
+	"safetySettings": [
+	{
+		"category": "HARM_CATEGORY_HARASSMENT",
+		"threshold": ["BLOCK_NONE", "BLOCK_ONLY_HIGH", "BLOCK_MEDIUM_AND_ABOVE", "BLOCK_LOW_AND_ABOVE"]
+	},
+	{
+		"category": "HARM_CATEGORY_HATE_SPEECH",
+		"threshold": ["BLOCK_NONE", "BLOCK_ONLY_HIGH", "BLOCK_MEDIUM_AND_ABOVE", "BLOCK_LOW_AND_ABOVE"]
+	},
+	{
+		"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+		"threshold": ["BLOCK_NONE", "BLOCK_ONLY_HIGH", "BLOCK_MEDIUM_AND_ABOVE", "BLOCK_LOW_AND_ABOVE"]
+	},
+	{
+		"category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+		"threshold": ["BLOCK_NONE", "BLOCK_ONLY_HIGH", "BLOCK_MEDIUM_AND_ABOVE", "BLOCK_LOW_AND_ABOVE"]
+	}],
+	"tools": [
+	{
+		"codeExecution":
+		{}
+	},
+	{
+		"google_search":
+		{}
+	},
+	{
+		"url_context":
+		{}
+	}]
+}
