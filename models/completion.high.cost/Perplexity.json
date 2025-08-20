@@ -1,0 +1,8 @@
+{
+	"data": [
+	{
+		"id": "sonar-pro",
+		"max_tokens": 200000,
+		"image": true
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	"data": [
+	{
+		"id": "grok-3",
+		"max_tokens": 131072,
+		"image": false
+	},
+	{
+		"id": "grok-3-fast",
+		"max_tokens": 131072,
+		"image": false
+	},
+	{
+		"id": "grok-3-beta",
+		"max_tokens": 131072,
+		"image": false
+	}]
+}

@@ -1,0 +1,13 @@
+{
+	"data": [
+	{
+		"id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+		"max_tokens": 1048576,
+		"image": true
+	},
+	{
+		"id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+		"max_tokens": 327680,
+		"image": true
+	}]
+}

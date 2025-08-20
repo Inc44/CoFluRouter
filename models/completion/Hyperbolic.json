@@ -1,0 +1,8 @@
+{
+	"data": [
+	{
+		"id": "NousResearch/Hermes-3-Llama-3.1-70B",
+		"max_tokens": 12288,
+		"image": false
+	}]
+}

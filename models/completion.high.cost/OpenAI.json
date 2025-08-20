@@ -1,0 +1,149 @@
+{
+	"data": [
+	{
+		"id": "gpt-4.5-preview",
+		"max_tokens": 16834,
+		"image": true
+	},
+	{
+		"id": "gpt-4.5-preview-2025-02-27",
+		"max_tokens": 16834,
+		"image": true
+	},
+	{
+		"id": "o1-pro",
+		"max_tokens": 100000,
+		"responses_api_only": true,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "o1",
+		"max_tokens": 100000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "o1-2024-12-17",
+		"max_tokens": 100000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "o1-preview",
+		"max_tokens": 32768,
+		"reasoning_effort": "low",
+		"completions_api_only": true,
+		"image": false
+	},
+	{
+		"id": "o1-preview-2024-09-12",
+		"max_tokens": 32768,
+		"reasoning_effort": "low",
+		"completions_api_only": true,
+		"image": false
+	},
+	{
+		"id": "o1-pro-2025-03-19",
+		"max_tokens": 100000,
+		"responses_api_only": true,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "o3-deep-research",
+		"max_tokens": 100000,
+		"responses_api_only": true,
+		"tools": ["web_search_preview"],
+		"image": true
+	},
+	{
+		"id": "o3-deep-research-2025-06-26",
+		"max_tokens": 100000,
+		"responses_api_only": true,
+		"tools": ["web_search_preview"],
+		"image": true
+	},
+	{
+		"id": "o3-pro",
+		"max_tokens": 100000,
+		"responses_api_only": true,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "o3-pro-2025-06-10",
+		"max_tokens": 100000,
+		"responses_api_only": true,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "gpt-4o-search-preview",
+		"max_tokens": 0,
+		"completions_api_only": true,
+		"search_context_size": "low",
+		"image": false
+	},
+	{
+		"id": "gpt-4o-search-preview-2025-03-11",
+		"max_tokens": 0,
+		"completions_api_only": true,
+		"search_context_size": "low",
+		"image": false
+	},
+	{
+		"id": "gpt-4o-mini-search-preview-2025-03-11",
+		"max_tokens": 0,
+		"completions_api_only": true,
+		"search_context_size": "low",
+		"image": false
+	},
+	{
+		"id": "gpt-4o-mini-search-preview",
+		"max_tokens": 0,
+		"completions_api_only": true,
+		"search_context_size": "low",
+		"image": false
+	},
+	{
+		"id": "gpt-4o-2024-05-13",
+		"max_tokens": 4096,
+		"image": true
+	},
+	{
+		"id": "gpt-4-turbo-2024-04-09",
+		"max_tokens": 4096,
+		"image": true
+	},
+	{
+		"id": "gpt-4-turbo",
+		"max_tokens": 4096,
+		"image": true
+	},
+	{
+		"id": "gpt-4-1106-preview",
+		"max_tokens": 4096,
+		"image": true
+	},
+	{
+		"id": "gpt-4-0613",
+		"max_tokens": 4096,
+		"image": true
+	},
+	{
+		"id": "gpt-4-0125-preview",
+		"max_tokens": 4096,
+		"image": true
+	},
+	{
+		"id": "gpt-4",
+		"max_tokens": 4096,
+		"image": true
+	},
+	{
+		"id": "chatgpt-4o-latest",
+		"max_tokens": 16383,
+		"image": true
+	}]
+}

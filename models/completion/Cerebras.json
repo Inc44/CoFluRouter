@@ -1,0 +1,33 @@
+{
+	"data": [
+	{
+		"id": "llama-4-scout-17b-16e-instruct",
+		"max_tokens": 8192,
+		"image": false
+	},
+	{
+		"id": "llama-4-maverick-17b-16e-instruct",
+		"max_tokens": 8192,
+		"image": false
+	},
+	{
+		"id": "llama3.1-8b",
+		"max_tokens": 8192,
+		"image": false
+	},
+	{
+		"id": "llama-3.3-70b",
+		"max_tokens": 8192,
+		"image": false
+	},
+	{
+		"id": "deepseek-r1-distill-llama-70b",
+		"max_tokens": 8192,
+		"image": false
+	},
+	{
+		"id": "qwen-3-32b",
+		"max_tokens": 8192,
+		"image": false
+	}]
+}

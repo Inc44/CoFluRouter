@@ -1,0 +1,13 @@
+{
+	"data": [
+	{
+		"id": "MiniMax-Text-01",
+		"max_tokens": 1000192,
+		"image": true
+	},
+	{
+		"id": "MiniMax-M1",
+		"max_tokens": 1000000,
+		"image": true
+	}]
+}

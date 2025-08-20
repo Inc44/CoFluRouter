@@ -1,0 +1,13 @@
+{
+	"data": [
+	{
+		"id": "deepseek-chat",
+		"max_tokens": 8192,
+		"image": false
+	},
+	{
+		"id": "deepseek-reasoner",
+		"max_tokens": 8192,
+		"image": false
+	}]
+}

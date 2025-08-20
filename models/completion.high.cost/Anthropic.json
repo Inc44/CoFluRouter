@@ -1,0 +1,36 @@
+{
+	"data": [
+	{
+		"id": "claude-opus-4-20250514",
+		"max_tokens": 32000,
+		"thinking": true,
+		"image": false
+	},
+	{
+		"id": "claude-sonnet-4-20250514",
+		"max_tokens": 64000,
+		"thinking": true,
+		"image": false
+	},
+	{
+		"id": "claude-3-7-sonnet-20250219",
+		"max_tokens": 128000,
+		"thinking": true,
+		"image": true
+	},
+	{
+		"id": "claude-3-opus-20240229",
+		"max_tokens": 4096,
+		"image": true
+	},
+	{
+		"id": "claude-3-5-sonnet-20241022",
+		"max_tokens": 8192,
+		"image": true
+	},
+	{
+		"id": "claude-3-5-sonnet-20240620",
+		"max_tokens": 8192,
+		"image": true
+	}]
+}

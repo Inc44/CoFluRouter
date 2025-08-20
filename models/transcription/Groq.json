@@ -1,0 +1,9 @@
+{
+	"data": [
+	{
+		"id": "whisper-large-v3"
+	},
+	{
+		"id": "whisper-large-v3-turbo"
+	}]
+}

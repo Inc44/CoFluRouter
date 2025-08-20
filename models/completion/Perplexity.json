@@ -1,0 +1,28 @@
+{
+	"data": [
+	{
+		"id": "sonar-deep-research",
+		"max_tokens": 200000,
+		"image": true
+	},
+	{
+		"id": "sonar-reasoning-pro",
+		"max_tokens": 128000,
+		"image": true
+	},
+	{
+		"id": "sonar-reasoning",
+		"max_tokens": 127000,
+		"image": true
+	},
+	{
+		"id": "sonar",
+		"max_tokens": 127000,
+		"image": true
+	},
+	{
+		"id": "r1-1776",
+		"max_tokens": 128000,
+		"image": true
+	}]
+}
