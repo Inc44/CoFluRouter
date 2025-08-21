@@ -32,14 +32,16 @@ def redact_entry(obj, entry, prefix):
 	return obj
 
 
-def sort_by_id(obj):
+def sort_by_key(obj, key, reverse=False):
 	if isinstance(obj, dict) and isinstance(obj.get("data"), list):
 		obj["data"].sort(
-			key=lambda value: value.get("id", "") if isinstance(value, dict) else ""
+			key=lambda value: value.get(key, "") if isinstance(value, dict) else "",
+			reverse=reverse,
 		)
 	elif isinstance(obj, list):
 		obj.sort(
-			key=lambda value: value.get("id", "") if isinstance(value, dict) else ""
+			key=lambda value: value.get(key, "") if isinstance(value, dict) else "",
+			reverse=reverse,
 		)
 
 
@@ -57,15 +59,18 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		}
 	url = base_url + "/" + models
 	resp = requests.get(url, headers=headers)
-	obj = resp.json()
-	if name in ["Chutes", "Hyperbolic"]:
+	obj = resp.json()  # json.loads(Path(f"models/external/{name}.json").read_text(encoding="utf-8")) # Testing with fetched models
+	if name in ["Chutes", "Hyperbolic"]:  # Redact fetch time
 		obj = redact_keys(obj, {"created"})
-	if name == "Chutes":
+	if name == "Chutes":  # Redact crypto and permissions
 		obj = redact_keys(obj, {"tao"})
 		obj = redact_entry(obj, "id", "modelperm-")
-	if name == "OpenAI":
+	if name == "OpenAI":  # Redact fine-tuned models
 		obj = redact_entry(obj, "id", "ft:")
-	sort_by_id(obj)
+	if name in ["Cerebras", "DeepInfra", "Groq"]:  # Sort random order models
+		sort_by_key(obj, "id")
+	if name == "Groq":  # Sort by latest models
+		sort_by_key(obj, "created", reverse=True)
 	path = Path(f"models/external/{name}.json")
 	path.parent.mkdir(parents=True, exist_ok=True)
 	path.write_text(
