@@ -5,14 +5,30 @@ from pathlib import Path
 from data import OPENAI_COMPATIBLE
 
 
-def redact(obj, keys):
+def redact_keys(obj, keys):
 	if isinstance(obj, dict):
 		return {
-			key: (0 if key in keys else redact(value, keys))
+			key: (0 if key in keys else redact_keys(value, keys))
 			for key, value in obj.items()
 		}
 	if isinstance(obj, list):
-		return [redact(value, keys) for value in obj]
+		return [redact_keys(value, keys) for value in obj]
+	return obj
+
+
+def redact_entry(obj, entry, prefix):
+	if isinstance(obj, dict):
+		return {key: redact_entry(value, entry, prefix) for key, value in obj.items()}
+	if isinstance(obj, list):
+		return [
+			redact_entry(value, entry, prefix)
+			for value in obj
+			if not (
+				isinstance(value, dict)
+				and isinstance(value.get(entry), str)
+				and value.get(entry).startswith(prefix)
+			)
+		]
 	return obj
 
 
@@ -43,9 +59,12 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 	resp = requests.get(url, headers=headers)
 	obj = resp.json()
 	if name in ["Chutes", "Hyperbolic"]:
-		obj = redact(obj, {"created"})
+		obj = redact_keys(obj, {"created"})
 	if name == "Chutes":
-		obj = redact(obj, {"tao"})
+		obj = redact_keys(obj, {"tao"})
+		obj = redact_entry(obj, "id", "modelperm-")
+	if name == "OpenAI":
+		obj = redact_entry(obj, "id", "ft:")
 	sort_by_id(obj)
 	path = Path(f"models/external/{name}.json")
 	path.parent.mkdir(parents=True, exist_ok=True)
