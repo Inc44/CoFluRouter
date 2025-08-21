@@ -69,7 +69,10 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		obj = redact_entry(obj, "id", "ft:")
 	if name in ["Cerebras", "DeepInfra", "Groq"]:  # Sort random order models
 		sort_by_key(obj, "id")
-	if name == "Groq":  # Sort by latest models
+	# Sort by latest models
+	if name == "Anthropic":
+		sort_by_key(obj, "created_at", reverse=True)
+	else:
 		sort_by_key(obj, "created", reverse=True)
 	path = Path(f"models/external/{name}.json")
 	path.parent.mkdir(parents=True, exist_ok=True)
