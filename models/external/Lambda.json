@@ -1,0 +1,82 @@
+{
+	"data": [
+	{
+		"created": 1724347380,
+		"id": "deepseek-llama3.3-70b",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "deepseek-r1-0528",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "deepseek-r1-671b",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "deepseek-v3-0324",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "hermes3-405b",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "hermes3-70b",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "hermes3-8b",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "lfm-7b",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "llama-4-maverick-17b-128e-instruct-fp8",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "llama-4-scout-17b-16e-instruct",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "llama3.1-8b-instruct",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "llama3.3-70b-instruct-fp8",
+		"object": "model",
+		"owned_by": "lambda"
+	},
+	{
+		"created": 1724347380,
+		"id": "qwen3-32b-fp8",
+		"object": "model",
+		"owned_by": "lambda"
+	}],
+	"object": "list"
+}
