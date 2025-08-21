@@ -994,6 +994,32 @@
 	},
 	{
 		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V3.1",
+		"max_model_len": 163840,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0.1999188
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0.800064
+			}
+		},
+		"pricing":
+		{
+			"completion": 0.800064,
+			"prompt": 0.1999188
+		},
+		"root": "deepseek-ai/DeepSeek-V3.1"
+	},
+	{
+		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3.1-Base",
 		"max_model_len": 163840,
 		"object": "model",
