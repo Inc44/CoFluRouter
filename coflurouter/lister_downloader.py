@@ -4,6 +4,29 @@ from pathlib import Path
 
 from data import OPENAI_COMPATIBLE
 
+
+def redact(obj, keys):
+	if isinstance(obj, dict):
+		return {
+			key: (0 if key in keys else redact(value, keys))
+			for key, value in obj.items()
+		}
+	if isinstance(obj, list):
+		return [redact(value, keys) for value in obj]
+	return obj
+
+
+def sort_by_id(obj):
+	if isinstance(obj, dict) and isinstance(obj.get("data"), list):
+		obj["data"].sort(
+			key=lambda value: value.get("id", "") if isinstance(value, dict) else ""
+		)
+	elif isinstance(obj, list):
+		obj.sort(
+			key=lambda value: value.get("id", "") if isinstance(value, dict) else ""
+		)
+
+
 for name, base_url, api_key in OPENAI_COMPATIBLE:
 	if name in ["Minimax", "Perplexity"]:
 		continue
@@ -19,7 +42,12 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 	url = base_url + "/" + models
 	resp = requests.get(url, headers=headers)
 	obj = resp.json()
-	path = Path(f"downloads/{name}.json")
+	if name in ["Chutes", "Hyperbolic"]:
+		obj = redact(obj, {"created"})
+	if name == "Chutes":
+		obj = redact(obj, {"tao"})
+	sort_by_id(obj)
+	path = Path(f"models/external/{name}.json")
 	path.parent.mkdir(parents=True, exist_ok=True)
 	path.write_text(
 		json.dumps(obj, indent="\t", sort_keys=True, ensure_ascii=False),
