@@ -67,7 +67,16 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		obj = redact_entry(obj, "id", "modelperm-")
 	if name == "OpenAI":  # Redact fine-tuned models
 		obj = redact_entry(obj, "id", "ft:")
-	if name in ["Cerebras", "DeepInfra", "Groq"]:  # Sort random order models
+	if name in [
+		"Anthropic",
+		"Cerebras",
+		"Chutes",
+		"DeepInfra",
+		"Google",
+		"Groq",
+		"Hyperbolic",
+		"Lambda",
+	]:  # Sort random order models
 		sort_by_key(obj, "id")
 	# Sort by latest models
 	if name == "Anthropic":
