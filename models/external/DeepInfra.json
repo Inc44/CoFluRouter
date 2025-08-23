@@ -394,6 +394,14 @@
 	},
 	{
 		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V3.1",
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/DeepSeek-V3.1"
+	},
+	{
+		"created": 0,
 		"id": "google/codegemma-7b-it",
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -879,14 +887,6 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "zai-org/GLM-4.5-Air"
-	},
-	{
-		"created": 0,
-		"id": "zai-org/GLM-4.5V",
-		"object": "model",
-		"owned_by": "deepinfra",
-		"parent": null,
-		"root": "zai-org/GLM-4.5V"
 	}],
 	"object": "list"
 }

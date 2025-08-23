@@ -28,6 +28,32 @@
 	},
 	{
 		"created": 0,
+		"id": "Meridian",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0.0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0.0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0.0,
+			"prompt": 0.0
+		},
+		"root": "Meridian"
+	},
+	{
+		"created": 0,
 		"id": "NousResearch/DeepHermes-3-Llama-3-8B-Preview",
 		"max_model_len": 131072,
 		"object": "model",
@@ -77,6 +103,32 @@
 			"prompt": 0.09329544
 		},
 		"root": "NousResearch/DeepHermes-3-Mistral-24B-Preview"
+	},
+	{
+		"created": 0,
+		"id": "Proxima",
+		"max_model_len": 40960,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0.0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0.0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0.0,
+			"prompt": 0.0
+		},
+		"root": "Proxima"
 	},
 	{
 		"created": 0,
@@ -602,6 +654,32 @@
 	},
 	{
 		"created": 0,
+		"id": "Zenith",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0.1999188
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0.800064
+			}
+		},
+		"pricing":
+		{
+			"completion": 0.800064,
+			"prompt": 0.1999188
+		},
+		"root": "Zenith"
+	},
+	{
+		"created": 0,
 		"id": "agentica-org/DeepCoder-14B-Preview",
 		"max_model_len": 96000,
 		"object": "model",
@@ -717,18 +795,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.017992692
+				"usd": 0.01999188
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.07200575999999999
+				"usd": 0.08000639999999999
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.07200575999999999,
-			"prompt": 0.017992692
+			"completion": 0.08000639999999999,
+			"prompt": 0.01999188
 		},
 		"root": "chutesai/Mistral-Small-3.1-24B-Instruct-2503"
 	},
@@ -821,18 +899,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.17992692
+				"usd": 0.1999188
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.7200576
+				"usd": 0.800064
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.7200576,
-			"prompt": 0.17992692
+			"completion": 0.800064,
+			"prompt": 0.1999188
 		},
 		"root": "deepseek-ai/DeepSeek-R1"
 	},
@@ -847,18 +925,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.17992692
+				"usd": 0.1999188
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.7200576
+				"usd": 0.800064
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.7200576,
-			"prompt": 0.17992692
+			"completion": 0.800064,
+			"prompt": 0.1999188
 		},
 		"root": "deepseek-ai/DeepSeek-R1-0528"
 	},
@@ -925,18 +1003,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.17992692
+				"usd": 0.1999188
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.7200576
+				"usd": 0.800064
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.7200576,
-			"prompt": 0.17992692
+			"completion": 0.800064,
+			"prompt": 0.1999188
 		},
 		"root": "deepseek-ai/DeepSeek-V3"
 	},
@@ -951,18 +1029,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.17992692
+				"usd": 0.1999188
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.7200576
+				"usd": 0.800064
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.7200576,
-			"prompt": 0.17992692
+			"completion": 0.800064,
+			"prompt": 0.1999188
 		},
 		"root": "deepseek-ai/DeepSeek-V3-0324"
 	},
@@ -1346,18 +1424,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.17992692
+				"usd": 0.1999188
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.7200576
+				"usd": 0.800064
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.7200576,
-			"prompt": 0.17992692
+			"completion": 0.800064,
+			"prompt": 0.1999188
 		},
 		"root": "tngtech/DeepSeek-R1T-Chimera"
 	},
