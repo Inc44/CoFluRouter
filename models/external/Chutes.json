@@ -28,6 +28,32 @@
 	},
 	{
 		"created": 0,
+		"id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0.10366159999999999
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0.41484799999999994
+			}
+		},
+		"pricing":
+		{
+			"completion": 0.41484799999999994,
+			"prompt": 0.10366159999999999
+		},
+		"root": "ByteDance-Seed/Seed-OSS-36B-Instruct"
+	},
+	{
+		"created": 0,
 		"id": "Meridian",
 		"max_model_len": 131072,
 		"object": "model",
@@ -141,18 +167,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.06663960000000001
+				"usd": 0.051830799999999996
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.266688
+				"usd": 0.20742399999999997
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.266688,
-			"prompt": 0.06663960000000001
+			"completion": 0.20742399999999997,
+			"prompt": 0.051830799999999996
 		},
 		"root": "Qwen/Qwen2.5-72B-Instruct"
 	},
@@ -389,6 +415,32 @@
 			"prompt": 0.051830799999999996
 		},
 		"root": "Qwen/Qwen3-30B-A3B-Instruct-2507"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+		"max_model_len": 262144,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0.0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0.0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0.0,
+			"prompt": 0.0
+		},
+		"root": "Qwen/Qwen3-30B-A3B-Thinking-2507"
 	},
 	{
 		"created": 0,
@@ -663,18 +715,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0.0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0.0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0.0,
+			"prompt": 0.0
 		},
 		"root": "Zenith"
 	},
@@ -977,18 +1029,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.033319800000000004
+				"usd": 0.025915399999999998
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.133344
+				"usd": 0.10371199999999998
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.133344,
-			"prompt": 0.033319800000000004
+			"completion": 0.10371199999999998,
+			"prompt": 0.025915399999999998
 		},
 		"root": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
 	},

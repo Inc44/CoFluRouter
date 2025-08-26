@@ -12,14 +12,13 @@
 		"canonical_slug": "deepseek/deepseek-chat-v3.1",
 		"context_length": 163840,
 		"created": 1755779628,
-		"description": "DeepSeek-V3.1 is a large hybrid reasoning model (671B parameters, 37B active) that supports both thinking and non-thinking modes via prompt templates. It extends the DeepSeek-V3 base with a two-phase long-context training process, reaching up to 128K tokens, and uses FP8 microscaling for efficient inference.\n\nThe model improves tool use, code generation, and reasoning efficiency, achieving performance comparable to DeepSeek-R1 on difficult benchmarks while responding more quickly. It supports structured tool calling, code agents, and search agents, making it suitable for research, coding, and agentic workflows.\n\nIt succeeds the [DeepSeek V3-0324](/deepseek/deepseek-chat-v3-0324) model and performs well on a variety of tasks.",
+		"description": "DeepSeek-V3.1 is a large hybrid reasoning model (671B parameters, 37B active) that supports both thinking and non-thinking modes via prompt templates. It extends the DeepSeek-V3 base with a two-phase long-context training process, reaching up to 128K tokens, and uses FP8 microscaling for efficient inference. Users can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)\n\nThe model improves tool use, code generation, and reasoning efficiency, achieving performance comparable to DeepSeek-R1 on difficult benchmarks while responding more quickly. It supports structured tool calling, code agents, and search agents, making it suitable for research, coding, and agentic workflows. \n\nIt succeeds the [DeepSeek V3-0324](/deepseek/deepseek-chat-v3-0324) model and performs well on a variety of tasks.",
 		"hugging_face_id": "deepseek-ai/DeepSeek-V3.1",
 		"id": "deepseek/deepseek-chat-v3.1",
 		"name": "DeepSeek: DeepSeek V3.1",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -54,7 +53,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -115,7 +113,7 @@
 			"tokenizer": "Mistral"
 		},
 		"canonical_slug": "mistralai/mistral-medium-3.1",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1755095639,
 		"description": "Mistral Medium 3.1 is an updated version of Mistral Medium 3, which is a high-performance enterprise-grade language model designed to deliver frontier-level capabilities at significantly reduced operational cost. It balances state-of-the-art reasoning and multimodal performance with 8× lower cost compared to traditional large models, making it suitable for scalable deployments across professional and industrial use cases.\n\nThe model excels in domains such as coding, STEM reasoning, and enterprise adaptation. It supports hybrid, on-prem, and in-VPC deployments and is optimized for integration into custom workflows. Mistral Medium 3.1 offers competitive accuracy relative to larger models like Claude Sonnet 3.5/3.7, Llama 4 Maverick, and Command R+, while maintaining broad compatibility across cloud environments.",
 		"hugging_face_id": "",
@@ -124,7 +122,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -135,7 +132,7 @@
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
 			"max_completion_tokens": null
 		}
@@ -159,7 +156,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000028",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -194,7 +190,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000056",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -229,7 +224,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000018",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -264,7 +258,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -299,7 +292,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -334,7 +326,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0",
 			"input_cache_read": "0.000000125",
@@ -370,7 +361,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0",
 			"input_cache_read": "0.000000125",
@@ -406,7 +396,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000002",
 			"image": "0",
 			"input_cache_read": "0.000000025",
@@ -442,7 +431,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000004",
 			"image": "0",
 			"input_cache_read": "0.000000005",
@@ -478,7 +466,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000028",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -513,7 +500,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -548,7 +534,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -583,7 +568,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000075",
 			"image": "0.024",
 			"input_cache_read": "0.0000015",
@@ -620,7 +604,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000009",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -646,7 +629,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-30b-a3b-instruct-2507",
-		"context_length": 131072,
+		"context_length": 262144,
 		"created": 1753806965,
 		"description": "Qwen3-30B-A3B-Instruct-2507 is a 30.5B-parameter mixture-of-experts language model from Qwen, with 3.3B active parameters per inference. It operates in non-thinking mode and is designed for high-quality instruction following, multilingual understanding, and agentic tool use. Post-trained on instruction data, it demonstrates competitive performance across reasoning (AIME, ZebraLogic), coding (MultiPL-E, LiveCodeBench), and alignment (IFEval, WritingBench) benchmarks. It outperforms its non-instruct variant on subjective and open-ended tasks while retaining strong factual and coding performance.",
 		"hugging_face_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
@@ -655,20 +638,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
-			"completion": "0.0000008",
+			"completion": "0.0000003",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000002",
+			"prompt": "0.0000001",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -690,7 +672,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -725,7 +706,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -760,7 +740,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000011",
 			"image": "0",
 			"input_cache_read": "0.00000003",
@@ -796,7 +775,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000031202496",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -831,7 +809,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -866,7 +843,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -901,7 +877,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -936,7 +911,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -971,7 +945,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000004",
 			"image": "0",
 			"input_cache_read": "0.000000025",
@@ -1008,7 +981,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000031202496",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1043,7 +1015,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000034",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1078,7 +1049,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1113,7 +1083,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000249",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1148,7 +1117,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000138",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1183,7 +1151,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1218,7 +1185,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000028",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1253,7 +1219,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1288,7 +1253,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0",
 			"input_cache_read": "0.00000075",
@@ -1324,7 +1288,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1359,7 +1322,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1394,7 +1356,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000003",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1429,7 +1390,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1464,7 +1424,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000019",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1499,7 +1458,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000019",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1534,7 +1492,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000125",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1569,7 +1526,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000011",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1604,7 +1560,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000007",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1639,7 +1594,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1674,7 +1628,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1709,7 +1662,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1744,7 +1696,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000165",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1779,7 +1730,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000004",
 			"image": "0",
 			"input_cache_read": "0.000000025",
@@ -1816,7 +1766,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000025",
 			"image": "0.001238",
 			"input_cache_read": "0.000000075",
@@ -1853,7 +1802,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0.00516",
 			"input_cache_read": "0.00000031",
@@ -1890,7 +1838,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -1925,7 +1872,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00008",
 			"image": "0.0153",
 			"internal_reasoning": "0",
@@ -1960,7 +1906,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000005",
 			"image": "0",
 			"input_cache_read": "0.000000075",
@@ -1996,7 +1941,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0",
 			"input_cache_read": "0.00000075",
@@ -2032,7 +1976,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2067,7 +2010,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000005",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2102,7 +2044,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000005",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2137,7 +2078,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0.00516",
 			"input_cache_read": "0.00000031",
@@ -2174,7 +2114,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2209,7 +2148,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2244,7 +2182,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2279,7 +2216,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2314,7 +2250,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2349,7 +2284,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000075",
 			"image": "0.024",
 			"input_cache_read": "0.0000015",
@@ -2386,7 +2320,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0.0048",
 			"input_cache_read": "0.0000003",
@@ -2423,7 +2356,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2458,7 +2390,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2493,7 +2424,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2528,7 +2458,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2563,7 +2492,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000006",
 			"image": "0",
 			"input_cache_read": "0.000000375",
@@ -2587,6 +2515,40 @@
 			"instruct_type": null,
 			"modality": "text->text",
 			"output_modalities": ["text"],
+			"tokenizer": "Llama3"
+		},
+		"canonical_slug": "meta-llama/llama-3.3-8b-instruct",
+		"context_length": 128000,
+		"created": 1747230154,
+		"description": "A lightweight and ultra-fast variant of Llama 3.3 70B, for use when quick response times are needed most.",
+		"hugging_face_id": "",
+		"id": "meta-llama/llama-3.3-8b-instruct:free",
+		"name": "Meta: Llama 3.3 8B Instruct (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "repetition_penalty", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": true,
+			"max_completion_tokens": 4028
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "nousresearch/deephermes-3-mistral-24b-preview",
@@ -2599,7 +2561,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000003733632",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2634,7 +2595,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2669,7 +2629,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0.00516",
 			"input_cache_read": "0.00000031",
@@ -2706,7 +2665,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000018",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2741,7 +2699,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000033",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2776,7 +2733,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2811,7 +2767,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2846,7 +2801,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000035",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2881,7 +2835,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2916,7 +2869,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2951,7 +2903,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -2986,7 +2937,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000218",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3021,7 +2971,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000018",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3056,7 +3005,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3091,7 +3039,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3126,7 +3073,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3161,7 +3107,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000138",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3196,7 +3141,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3231,7 +3175,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000024",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3266,7 +3209,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000007200576",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3301,7 +3243,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3336,7 +3277,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3371,7 +3311,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3406,7 +3345,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3441,7 +3379,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3476,7 +3413,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3511,7 +3447,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3546,7 +3481,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000166",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3581,7 +3515,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000044",
 			"image": "0.0008415",
 			"input_cache_read": "0.000000275",
@@ -3617,7 +3550,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000008",
 			"image": "0.00153",
 			"input_cache_read": "0.0000005",
@@ -3653,7 +3585,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000044",
 			"image": "0.0008415",
 			"input_cache_read": "0.000000275",
@@ -3689,7 +3620,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3724,7 +3654,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3759,7 +3688,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000008",
 			"image": "0",
 			"input_cache_read": "0.0000005",
@@ -3795,7 +3723,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000016",
 			"image": "0",
 			"input_cache_read": "0.0000001",
@@ -3831,7 +3758,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000004",
 			"image": "0",
 			"input_cache_read": "0.000000025",
@@ -3867,7 +3793,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3902,7 +3827,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000011",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3937,7 +3861,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -3972,7 +3895,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000000400032",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4007,7 +3929,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4042,7 +3963,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4077,7 +3997,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4112,7 +4031,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000100008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4147,7 +4065,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000005",
 			"image": "0",
 			"input_cache_read": "0.000000075",
@@ -4183,7 +4100,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0",
 			"input_cache_read": "0.00000075",
@@ -4219,7 +4135,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4254,7 +4169,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4289,7 +4203,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000018",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4315,6 +4228,40 @@
 			"tokenizer": "Llama4"
 		},
 		"canonical_slug": "meta-llama/llama-4-maverick-17b-128e-instruct",
+		"context_length": 128000,
+		"created": 1743881822,
+		"description": "Llama 4 Maverick 17B Instruct (128E) is a high-capacity multimodal language model from Meta, built on a mixture-of-experts (MoE) architecture with 128 experts and 17 billion active parameters per forward pass (400B total). It supports multilingual text and image input, and produces multilingual text and code output across 12 supported languages. Optimized for vision-language tasks, Maverick is instruction-tuned for assistant-like behavior, image reasoning, and general-purpose multimodal interaction.\n\nMaverick features early fusion for native multimodality and a 1 million token context window. It was trained on a curated mixture of public, licensed, and Meta-platform data, covering ~22 trillion tokens, with a knowledge cutoff in August 2024. Released on April 5, 2025 under the Llama 4 Community License, Maverick is suited for research and commercial applications requiring advanced multimodal understanding and high model throughput.",
+		"hugging_face_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+		"id": "meta-llama/llama-4-maverick:free",
+		"name": "Meta: Llama 4 Maverick (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "repetition_penalty", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": true,
+			"max_completion_tokens": 4028
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Llama4"
+		},
+		"canonical_slug": "meta-llama/llama-4-maverick-17b-128e-instruct",
 		"context_length": 1048576,
 		"created": 1743881822,
 		"description": "Llama 4 Maverick 17B Instruct (128E) is a high-capacity multimodal language model from Meta, built on a mixture-of-experts (MoE) architecture with 128 experts and 17 billion active parameters per forward pass (400B total). It supports multilingual text and image input, and produces multilingual text and code output across 12 supported languages. Optimized for vision-language tasks, Maverick is instruction-tuned for assistant-like behavior, image reasoning, and general-purpose multimodal interaction.\n\nMaverick features early fusion for native multimodality and a 1 million token context window. It was trained on a curated mixture of public, licensed, and Meta-platform data, covering ~22 trillion tokens, with a knowledge cutoff in August 2024. Released on April 5, 2025 under the Llama 4 Community License, Maverick is suited for research and commercial applications requiring advanced multimodal understanding and high model throughput.",
@@ -4324,7 +4271,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000006",
 			"image": "0.0006684",
 			"internal_reasoning": "0",
@@ -4350,6 +4296,40 @@
 			"tokenizer": "Llama4"
 		},
 		"canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
+		"context_length": 128000,
+		"created": 1743881519,
+		"description": "Llama 4 Scout 17B Instruct (16E) is a mixture-of-experts (MoE) language model developed by Meta, activating 17 billion parameters out of a total of 109B. It supports native multimodal input (text and image) and multilingual output (text and code) across 12 supported languages. Designed for assistant-style interaction and visual reasoning, Scout uses 16 experts per forward pass and features a context length of 10 million tokens, with a training corpus of ~40 trillion tokens.\n\nBuilt for high efficiency and local or commercial deployment, Llama 4 Scout incorporates early fusion for seamless modality integration. It is instruction-tuned for use in multilingual chat, captioning, and image understanding tasks. Released under the Llama 4 Community License, it was last trained on data up to August 2024 and launched publicly on April 5, 2025.",
+		"hugging_face_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+		"id": "meta-llama/llama-4-scout:free",
+		"name": "Meta: Llama 4 Scout (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "repetition_penalty", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": true,
+			"max_completion_tokens": 4028
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Llama4"
+		},
+		"canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
 		"context_length": 1048576,
 		"created": 1743881519,
 		"description": "Llama 4 Scout 17B Instruct (16E) is a mixture-of-experts (MoE) language model developed by Meta, activating 17 billion parameters out of a total of 109B. It supports native multimodal input (text and image) and multilingual output (text and code) across 12 supported languages. Designed for assistant-style interaction and visual reasoning, Scout uses 16 experts per forward pass and features a context length of 10 million tokens, with a training corpus of ~40 trillion tokens.\n\nBuilt for high efficiency and local or commercial deployment, Llama 4 Scout incorporates early fusion for seamless modality integration. It is instruction-tuned for use in multilingual chat, captioning, and image understanding tasks. Released under the Llama 4 Community License, it was last trained on data up to August 2024 and launched publicly on April 5, 2025.",
@@ -4359,7 +4339,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000003",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4394,7 +4373,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4429,7 +4407,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000088",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4464,7 +4441,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4499,7 +4475,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4534,7 +4509,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4569,7 +4543,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4582,7 +4555,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 163840
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -4604,7 +4577,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4639,7 +4611,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4674,7 +4645,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0006",
 			"image": "0.21675",
 			"internal_reasoning": "0",
@@ -4709,7 +4679,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4744,7 +4713,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4779,7 +4747,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4814,7 +4781,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4849,7 +4815,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4884,7 +4849,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000192608",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4919,7 +4883,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -4954,7 +4917,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000006",
 			"image": "0.000217",
 			"internal_reasoning": "0",
@@ -4989,7 +4951,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0.003613",
 			"internal_reasoning": "0",
@@ -5024,7 +4985,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5059,7 +5019,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5094,7 +5053,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000266688",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5129,7 +5087,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5164,7 +5121,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000192608",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5199,7 +5155,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000001",
 			"image": "0.00017685",
 			"internal_reasoning": "0",
@@ -5234,7 +5189,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5269,7 +5223,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5304,7 +5257,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000008",
 			"image": "0",
 			"internal_reasoning": "0.000003",
@@ -5339,7 +5291,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5374,7 +5325,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5409,7 +5359,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5444,7 +5393,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000003",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5479,7 +5427,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0.0048",
 			"input_cache_read": "0.0000003",
@@ -5516,7 +5463,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0.0048",
 			"input_cache_read": "0.0000003",
@@ -5553,7 +5499,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5588,7 +5533,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5623,7 +5567,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5658,7 +5601,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000000340768",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5693,7 +5635,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5728,7 +5669,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000014816",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5763,7 +5703,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5798,7 +5737,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000044",
 			"image": "0",
 			"input_cache_read": "0.00000055",
@@ -5834,7 +5772,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5906,7 +5843,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000063",
 			"image": "0.0002688",
 			"internal_reasoning": "0",
@@ -5941,7 +5877,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -5976,7 +5911,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000014",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6011,7 +5945,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6046,7 +5979,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000032",
 			"image": "0.001024",
 			"internal_reasoning": "0",
@@ -6081,7 +6013,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000002",
 			"image": "0",
 			"input_cache_read": "0.00000002",
@@ -6117,7 +6048,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6152,7 +6082,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000400032",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6187,7 +6116,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000012",
 			"image": "0",
 			"input_cache_read": "0.00000016",
@@ -6223,7 +6151,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000064",
 			"image": "0",
 			"input_cache_read": "0.00000064",
@@ -6259,7 +6186,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000044",
 			"image": "0",
 			"input_cache_read": "0.00000055",
@@ -6295,7 +6221,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000018",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6330,7 +6255,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6365,7 +6289,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6400,7 +6323,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6435,7 +6357,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6470,7 +6391,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6505,7 +6425,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000005",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6540,7 +6459,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6575,7 +6493,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6610,7 +6527,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6645,7 +6561,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6680,11 +6595,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
-			"completion": "0.000000133344",
+			"completion": "0.000000103712",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000000333198",
+			"prompt": "0.0000000259154",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -6715,7 +6629,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6750,7 +6663,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6785,7 +6697,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000011",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6820,7 +6731,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000009",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6855,7 +6765,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000014",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6890,7 +6799,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000800064",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6925,7 +6833,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000075",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -6960,7 +6867,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00006",
 			"image": "0.021675",
 			"input_cache_read": "0.0000075",
@@ -6996,7 +6902,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0.0036",
 			"internal_reasoning": "0",
@@ -7031,7 +6936,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7066,7 +6970,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7101,7 +7004,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7136,7 +7038,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7171,7 +7072,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000012",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7206,7 +7106,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000024",
 			"image": "0.00009",
 			"internal_reasoning": "0",
@@ -7241,7 +7140,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000014",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7276,7 +7174,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000032",
 			"image": "0.0012",
 			"internal_reasoning": "0",
@@ -7311,7 +7208,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7346,7 +7242,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0.003613",
 			"input_cache_read": "0.00000125",
@@ -7382,7 +7277,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7417,7 +7311,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7452,7 +7345,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000006",
 			"image": "0.002888",
 			"internal_reasoning": "0",
@@ -7487,7 +7379,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0.009",
 			"internal_reasoning": "0",
@@ -7522,7 +7413,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7557,7 +7447,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7592,7 +7481,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000200016",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7627,7 +7515,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000045",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7662,7 +7549,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7697,7 +7583,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000004",
 			"image": "0",
 			"input_cache_read": "0.00000008",
@@ -7734,7 +7619,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000004",
 			"image": "0",
 			"input_cache_read": "0.00000008",
@@ -7771,7 +7655,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0.0048",
 			"input_cache_read": "0.0000003",
@@ -7808,7 +7691,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000005",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7821,7 +7703,7 @@
 		{
 			"context_length": 16384,
 			"is_moderated": false,
-			"max_completion_tokens": 1024
+			"max_completion_tokens": 2048
 		}
 	},
 	{
@@ -7843,7 +7725,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7878,7 +7759,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7913,7 +7793,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7948,7 +7827,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000003",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -7983,7 +7861,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8018,7 +7895,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8053,7 +7929,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000015",
 			"image": "0",
 			"input_cache_read": "0.00000001",
@@ -8090,7 +7965,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000003",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8125,7 +7999,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8160,7 +8033,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000043",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8195,7 +8067,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000012",
 			"image": "0.001734",
 			"internal_reasoning": "0",
@@ -8230,7 +8101,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8265,7 +8135,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000049",
 			"image": "0.00007948",
 			"internal_reasoning": "0",
@@ -8300,7 +8169,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8335,7 +8203,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8370,7 +8237,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8405,7 +8271,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8440,11 +8305,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
-			"completion": "0.000000266688",
+			"completion": "0.000000207424",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000000666396",
+			"prompt": "0.0000000518308",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -8475,7 +8339,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8510,7 +8373,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000044",
 			"image": "0",
 			"input_cache_read": "0.00000055",
@@ -8546,7 +8408,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000044",
 			"image": "0",
 			"input_cache_read": "0.00000055",
@@ -8582,7 +8443,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000001",
 			"image": "0.0001445",
 			"internal_reasoning": "0",
@@ -8617,7 +8477,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8652,7 +8511,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8687,7 +8545,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000075",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8722,7 +8579,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000002",
 			"image": "0.0001445",
 			"internal_reasoning": "0",
@@ -8757,7 +8613,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8792,7 +8647,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000028",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8827,7 +8681,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8862,7 +8715,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0.007225",
 			"internal_reasoning": "0",
@@ -8897,7 +8749,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000005",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -8932,7 +8783,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0.003613",
 			"input_cache_read": "0.00000125",
@@ -8968,7 +8818,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9003,7 +8852,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000028",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9038,7 +8886,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9073,7 +8920,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9108,7 +8954,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9143,7 +8988,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9178,7 +9022,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000005",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9213,7 +9056,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000006",
 			"image": "0.007225",
 			"input_cache_read": "0.000000075",
@@ -9249,7 +9091,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000006",
 			"image": "0.000217",
 			"input_cache_read": "0.000000075",
@@ -9285,7 +9126,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000065",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9320,7 +9160,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9355,7 +9194,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000000100008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9390,7 +9228,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0.0048",
 			"input_cache_read": "0.0000003",
@@ -9427,7 +9264,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000148",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9462,7 +9298,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000009",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9497,7 +9332,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000009",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9532,7 +9366,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9567,7 +9400,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000054",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9602,7 +9434,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9637,7 +9468,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000000054",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9672,7 +9502,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9707,7 +9536,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9742,7 +9570,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9777,7 +9604,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000003",
 			"image": "0.00004",
 			"input_cache_read": "0.00000001875",
@@ -9814,7 +9640,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9849,7 +9674,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0.007225",
 			"internal_reasoning": "0",
@@ -9884,7 +9708,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00001",
 			"image": "0.003613",
 			"input_cache_read": "0.00000125",
@@ -9920,7 +9743,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000018",
 			"image": "0.007225",
 			"internal_reasoning": "0",
@@ -9955,7 +9777,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -9990,7 +9811,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10025,7 +9845,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000009",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10060,7 +9879,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000048",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10095,7 +9913,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000005",
 			"image": "0.0006575",
 			"internal_reasoning": "0",
@@ -10130,7 +9947,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00003",
 			"image": "0.01445",
 			"internal_reasoning": "0",
@@ -10165,7 +9981,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10200,7 +10015,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10235,7 +10049,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10270,7 +10083,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10305,7 +10117,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10340,7 +10151,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000125",
 			"image": "0.0004",
 			"input_cache_read": "0.00000003",
@@ -10377,7 +10187,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000075",
 			"image": "0.024",
 			"input_cache_read": "0.0000015",
@@ -10414,7 +10223,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10449,7 +10257,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10484,7 +10291,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00003",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10519,7 +10325,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10554,7 +10359,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10589,7 +10393,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10624,7 +10427,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000025",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10659,7 +10461,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000024",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10694,7 +10495,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000175",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10729,7 +10529,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000055",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10794,7 +10593,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00003",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10829,7 +10627,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000002",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10864,7 +10661,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000019",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10899,7 +10695,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000011",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10934,7 +10729,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000004",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10969,7 +10763,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.000001125",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -10982,7 +10775,7 @@
 		{
 			"context_length": 8000,
 			"is_moderated": false,
-			"max_completion_tokens": 1000
+			"max_completion_tokens": 2000
 		}
 	},
 	{
@@ -11004,7 +10797,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000065",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -11039,7 +10831,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00000006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -11074,7 +10865,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00006",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -11109,7 +10899,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.0000015",
 			"image": "0",
 			"internal_reasoning": "0",
@@ -11144,7 +10933,6 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0",
 			"completion": "0.00006",
 			"image": "0",
 			"internal_reasoning": "0",

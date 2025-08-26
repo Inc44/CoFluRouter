@@ -43,6 +43,20 @@
 		{}
 	},
 	{
+		"context_length": 32768,
+		"id": "DeepSeek-V3.1",
+		"max_completion_tokens": 7168,
+		"object": "model",
+		"owned_by": "no-reply@sambanova.ai",
+		"pricing":
+		{
+			"completion": "0.00000450",
+			"prompt": "0.00000300"
+		},
+		"sn_metadata":
+		{}
+	},
+	{
 		"context_length": 4096,
 		"id": "E5-Mistral-7B-Instruct",
 		"max_completion_tokens": 4096,

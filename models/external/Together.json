@@ -2,6 +2,33 @@
 {
 	"config":
 	{
+		"bos_token": "<｜begin▁of▁sentence｜>",
+		"chat_template": null,
+		"eos_token": "<｜end▁of▁sentence｜>",
+		"stop": ["<｜end▁of▁sentence｜>"]
+	},
+	"context_length": 131072,
+	"created": 1755887697,
+	"display_name": "DeepSeek V3.1",
+	"id": "deepseek-ai/DeepSeek-V3.1",
+	"license": "mit",
+	"link": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V3.1",
+	"object": "model",
+	"organization": "Deepseek AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.6,
+		"output": 1.7
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": null,
 		"chat_template": null,
 		"eos_token": null,

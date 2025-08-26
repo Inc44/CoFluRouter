@@ -281,6 +281,11 @@
 		"owned_by": "google"
 	},
 	{
+		"id": "models/lyria-realtime-exp",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"id": "models/text-embedding-004",
 		"object": "model",
 		"owned_by": "google"
