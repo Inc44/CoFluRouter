@@ -158,6 +158,58 @@
 	},
 	{
 		"created": 0,
+		"id": "NousResearch/Hermes-4-405B-FP8",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0.1999188
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0.800064
+			}
+		},
+		"pricing":
+		{
+			"completion": 0.800064,
+			"prompt": 0.1999188
+		},
+		"root": "NousResearch/Hermes-4-405B-FP8"
+	},
+	{
+		"created": 0,
+		"id": "NousResearch/Hermes-4-70B",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0.09329544
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0.37336319999999995
+			}
+		},
+		"pricing":
+		{
+			"completion": 0.37336319999999995,
+			"prompt": 0.09329544
+		},
+		"root": "NousResearch/Hermes-4-70B"
+	},
+	{
+		"created": 0,
 		"id": "Qwen/Qwen2.5-72B-Instruct",
 		"max_model_len": 32768,
 		"object": "model",
