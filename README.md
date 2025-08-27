@@ -22,6 +22,16 @@
 
 [https://generativelanguage.googleapis.com/v1beta/openai/chat/completions](json/endpoints/googleapis.completions.json)
 
+## 🚀 Installation
+
+```bash
+conda create -n coflurouter python=3.10 -y # up to 3.13
+conda activate coflurouter
+git clone https://github.com/Inc44/CoFluRouter.git
+cd CoFluRouter
+pip install -r requirements.txt
+```
+
 ## 🤝 Contribution
 
 Contributions, suggestions, and new ideas are heartily welcomed. If you're considering significant modifications, please initiate an issue for discussion before submitting a pull request.

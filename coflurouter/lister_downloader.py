@@ -1,6 +1,8 @@
 import json
-import requests
 from pathlib import Path
+
+import jsbeautifier
+import requests
 
 from data import OPENAI_COMPATIBLE
 
@@ -83,10 +85,31 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		sort_by_key(obj, "created_at", reverse=True)
 	else:
 		sort_by_key(obj, "created", reverse=True)
+	opts = {
+		"brace_style": "expand",
+		"break_chained_methods": True,
+		"comma_first": False,
+		"e4x": False,
+		"end_with_newline": False,
+		"indent_char": "\t",
+		"indent_empty_lines": False,
+		"indent_inner_html": False,
+		"indent_scripts": "normal",
+		"indent_size": 1,
+		"jslint_happy": False,
+		"keep_array_indentation": False,
+		"max_preserve_newlines": -1,
+		"preserve_newlines": False,
+		"space_before_conditional": True,
+		"unescape_strings": False,
+		"wrap_line_length": 0,
+	}
 	path = Path(f"models/external/{name}.json")
 	path.parent.mkdir(parents=True, exist_ok=True)
 	path.write_text(
-		json.dumps(obj, indent="\t", sort_keys=True, ensure_ascii=False),
+		jsbeautifier.beautify(
+			json.dumps(obj, indent="\t", sort_keys=True, ensure_ascii=False), opts
+		),
 		encoding="utf-8",
 	)
 	if "data" in obj:
