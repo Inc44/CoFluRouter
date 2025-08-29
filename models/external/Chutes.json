@@ -479,18 +479,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0.07126735
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0.28520799999999996
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0.28520799999999996,
+			"prompt": 0.07126735
 		},
 		"root": "Qwen/Qwen3-30B-A3B-Thinking-2507"
 	},
@@ -557,18 +557,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0.051830799999999996
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0.20742399999999997
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0.20742399999999997,
+			"prompt": 0.051830799999999996
 		},
 		"root": "Qwen/Qwen3-Coder-30B-A3B-Instruct"
 	},

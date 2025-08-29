@@ -3,6 +3,18 @@
 	{
 		"created": 0,
 		"id": "Austism/chronos-hermes-13b-v2",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "This offers the imaginative writing style of chronos while still retaining coherency and being capable. Outputs are long and utilize exceptional prose. Supports a maxium context length of 4096. The model follows the Alpaca prompt format.",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 0.13,
+				"output_tokens": 0.13
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -11,6 +23,18 @@
 	{
 		"created": 0,
 		"id": "Gryphe/MythoMax-L2-13b",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 0.072,
+				"output_tokens": 0.072
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -19,6 +43,18 @@
 	{
 		"created": 0,
 		"id": "Gryphe/MythoMax-L2-13b-turbo",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "Faster version of Gryphe/MythoMax-L2-13b running on multiple H100 cards in fp8 precision. Up to 160 tps. ",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 0.13,
+				"output_tokens": 0.13
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -27,6 +63,18 @@
 	{
 		"created": 0,
 		"id": "KoboldAI/LLaMA2-13B-Tiefighter",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "LLaMA2-13B-Tiefighter is a highly creative and versatile language model, fine-tuned for storytelling, adventure, and conversational dialogue. It combines the strengths of multiple models and datasets, including retro-rodeo and choose-your-own-adventure, to generate engaging and imaginative content. With its ability to improvise and adapt to different styles and formats, Tiefighter is perfect for writers, creators, and anyone looking to spark their imagination.",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 0.1,
+				"output_tokens": 0.1
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -35,6 +83,18 @@
 	{
 		"created": 0,
 		"id": "NousResearch/Hermes-3-Llama-3.1-405B",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Hermes 3 is a cutting-edge language model that offers advanced capabilities in roleplaying, reasoning, and conversation. It's a fine-tuned version of the Llama-3.1 405B foundation model, designed to align with user needs and provide powerful control. Key features include reliable function calling, structured output, generalist assistant capabilities, and improved code generation. Hermes 3 is competitive with Llama-3.1 Instruct models, with its own strengths and weaknesses.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.7,
+				"output_tokens": 0.8
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -43,6 +103,18 @@
 	{
 		"created": 0,
 		"id": "NousResearch/Hermes-3-Llama-3.1-70B",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Hermes 3 is a generalist language model with many improvements over Hermes 2, including advanced agentic capabilities, much better roleplaying, reasoning, multi-turn conversation, long context coherence, and improvements across the board.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.1,
+				"output_tokens": 0.28
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -51,6 +123,18 @@
 	{
 		"created": 0,
 		"id": "NovaSky-AI/Sky-T1-32B-Preview",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "This is a 32B reasoning model trained from Qwen2.5-32B-Instruct with 17K data. The performance is on par with o1-preview model on both math and coding.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.12000000000000001,
+				"output_tokens": 0.18
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -59,6 +143,18 @@
 	{
 		"created": 0,
 		"id": "Phind/Phind-CodeLlama-34B-v2",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "Phind-CodeLlama-34B-v2 is an open-source language model that has been fine-tuned on 1.5B tokens of high-quality programming-related data and achieved a pass@1 rate of 73.8% on HumanEval. It is multi-lingual and proficient in Python, C/C++, TypeScript, Java, and more. It has been trained on a proprietary dataset of instruction-answer pairs instead of code completion examples.  The model is instruction-tuned on the Alpaca/Vicuna format to be steerable and easy-to-use. It accepts the Alpaca/Vicuna instruction format and can generate one completion for each prompt.",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 0.6,
+				"output_tokens": 0.6
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -67,6 +163,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/QVQ-72B-Preview",
+		"metadata":
+		{
+			"context_length": 32000,
+			"description": "QVQ-72B-Preview is an experimental research model developed by the Qwen team, focusing on enhancing visual reasoning capabilities. QVQ-72B-Preview has achieved remarkable performance on various benchmarks. It scored a remarkable 70.3% on the Multimodal Massive Multi-task Understanding (MMMU) benchmark",
+			"max_tokens": 32000,
+			"pricing":
+			{
+				"input_tokens": 0.25,
+				"output_tokens": 0.5
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -75,6 +183,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/QwQ-32B",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems. QwQ-32B is the medium-sized reasoning model, which is capable of achieving competitive performance against state-of-the-art reasoning models, e.g., DeepSeek-R1, o1-mini.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.075,
+				"output_tokens": 0.15
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -83,6 +203,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/QwQ-32B-Preview",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "QwQ is an experimental research model developed by the Qwen Team, designed to advance AI reasoning capabilities. This model embodies the spirit of philosophical inquiry, approaching problems with genuine wonder and doubt. QwQ demonstrates impressive analytical abilities, achieving scores of 65.2% on GPQA, 50.0% on AIME, 90.6% on MATH-500, and 50.0% on LiveCodeBench. With its contemplative approach and exceptional performance on complex problems.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.12000000000000001,
+				"output_tokens": 0.18
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -91,6 +223,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen2-72B-Instruct",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "The 72 billion parameter Qwen2 excels in language understanding, multilingual capabilities, coding, mathematics, and reasoning.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.35,
+				"output_tokens": 0.4
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -99,6 +243,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen2-7B-Instruct",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "The 7 billion parameter Qwen2 excels in language understanding, multilingual capabilities, coding, mathematics, and reasoning.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.05499999999999999,
+				"output_tokens": 0.05499999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -107,6 +263,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen2.5-72B-Instruct",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "Qwen2.5 is a model pretrained on a large-scale dataset of up to 18 trillion tokens, offering significant improvements in knowledge, coding, mathematics, and instruction following compared to its predecessor Qwen2. The model also features enhanced capabilities in generating long texts, understanding structured data, and generating structured outputs, while supporting multilingual capabilities for over 29 languages.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.12000000000000001,
+				"output_tokens": 0.38999999999999996
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -115,6 +283,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen2.5-7B-Instruct",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "The 7 billion parameter Qwen2.5 excels in language understanding, multilingual capabilities, coding, mathematics, and reasoning",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.04,
+				"output_tokens": 0.1
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -123,6 +303,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen2.5-Coder-32B-Instruct",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). It has significant improvements in code generation, code reasoning and code fixing. A more comprehensive foundation for real-world applications such as Code Agents. Not only enhancing coding capabilities but also maintaining its strengths in mathematics and general competencies.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.060000000000000005,
+				"output_tokens": 0.15
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -131,6 +323,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen2.5-Coder-7B",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "Qwen2.5-Coder-7B is a powerful code-specific large language model with 7.61 billion parameters. It's designed for code generation, reasoning, and fixing tasks. The model covers 92 programming languages and has been trained on 5.5 trillion tokens of data, including source code, text-code grounding, and synthetic data.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.025,
+				"output_tokens": 0.05
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -139,6 +343,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen2.5-VL-32B-Instruct",
+		"metadata":
+		{
+			"context_length": 128000,
+			"description": "",
+			"max_tokens": 128000,
+			"pricing":
+			{
+				"input_tokens": 0.2,
+				"output_tokens": 0.6
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -147,6 +363,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-14B",
+		"metadata":
+		{
+			"context_length": 40960,
+			"description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support. ",
+			"max_tokens": 40960,
+			"pricing":
+			{
+				"input_tokens": 0.060000000000000005,
+				"output_tokens": 0.24000000000000002
+			},
+			"tags": ["reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -155,6 +383,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-235B-A22B",
+		"metadata":
+		{
+			"context_length": 40960,
+			"description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support",
+			"max_tokens": 40960,
+			"pricing":
+			{
+				"input_tokens": 0.13,
+				"output_tokens": 0.6
+			},
+			"tags": ["reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -163,6 +403,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3-235B-A22B-Instruct-2507 is the updated version of the Qwen3-235B-A22B non-thinking mode, featuring Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage.  ",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.13,
+				"output_tokens": 0.6
+			},
+			"tags": ["reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -171,6 +423,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3-235B-A22B-Thinking-2507 is the Qwen3's new model with scaling the thinking capability of Qwen3-235B-A22B, improving both the quality and depth of reasoning. ",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.13,
+				"output_tokens": 0.6
+			},
+			"tags": ["reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -179,6 +443,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-30B-A3B",
+		"metadata":
+		{
+			"context_length": 40960,
+			"description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support",
+			"max_tokens": 40960,
+			"pricing":
+			{
+				"input_tokens": 0.08,
+				"output_tokens": 0.29
+			},
+			"tags": ["reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -187,6 +463,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-32B",
+		"metadata":
+		{
+			"context_length": 40960,
+			"description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support",
+			"max_tokens": 40960,
+			"pricing":
+			{
+				"input_tokens": 0.1,
+				"output_tokens": 0.3
+			},
+			"tags": ["reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -195,6 +483,18 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3-Coder-480B-A35B-Instruct is the Qwen3's most agentic code model, featuring Significant Performance on Agentic Coding, Agentic Browser-Use and other foundational coding tasks, achieving results comparable to Claude Sonnet.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.4,
+				"output_tokens": 1.6
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -203,6 +503,19 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3-Coder-480B-A35B-Instruct is the Qwen3's most agentic code model, featuring Significant Performance on Agentic Coding, Agentic Browser-Use and other foundational coding tasks, achieving results comparable to Claude Sonnet.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.15,
+				"input_tokens": 0.3,
+				"output_tokens": 1.2
+			},
+			"tags": ["prompt_cache"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -211,6 +524,18 @@
 	{
 		"created": 0,
 		"id": "Sao10K/L3-70B-Euryale-v2.1",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "Euryale 70B v2.1 is a model focused on creative roleplay from Sao10k",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.7,
+				"output_tokens": 0.8
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -219,6 +544,18 @@
 	{
 		"created": 0,
 		"id": "Sao10K/L3-8B-Lunaris-v1",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "A generalist / roleplaying model merge based on Llama 3. Sao10K has carefully selected the values based on extensive personal experimentation and has fine-tuned them to create a customized recipe.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.030000000000000002,
+				"output_tokens": 0.060000000000000005
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -227,6 +564,18 @@
 	{
 		"created": 0,
 		"id": "Sao10K/L3-8B-Lunaris-v1-Turbo",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.02,
+				"output_tokens": 0.05
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -235,6 +584,18 @@
 	{
 		"created": 0,
 		"id": "Sao10K/L3.1-70B-Euryale-v2.2",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Euryale 3.1 - 70B v2.2 is a model focused on creative roleplay from Sao10k",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.6499999999999999,
+				"output_tokens": 0.7499999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -243,6 +604,18 @@
 	{
 		"created": 0,
 		"id": "Sao10K/L3.3-70B-Euryale-v2.3",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "L3.3-70B-Euryale-v2.3 is a model focused on creative roleplay from Sao10k",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.6499999999999999,
+				"output_tokens": 0.7499999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -251,6 +624,18 @@
 	{
 		"created": 0,
 		"id": "allenai/olmOCR-7B-0725-FP8",
+		"metadata":
+		{
+			"context_length": 16384,
+			"description": "olmOCR is a specialized AI tool that converts PDF documents into clean, structured text while preserving important formatting and layout information. What makes olmOCR particularly valuable for developers is its ability to handle challenging PDFs that traditional OCR tools struggle with—including complex layouts, poor-quality scans, handwritten text, and documents with mixed content types. Built on a fine-tuned 7B vision-language model, olmOCR provides enterprise-grade PDF processing at a fraction of the cost of proprietary solutions.",
+			"max_tokens": 16384,
+			"pricing":
+			{
+				"input_tokens": 0.27,
+				"output_tokens": 1.4999999999999998
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -259,6 +644,19 @@
 	{
 		"created": 0,
 		"id": "anthropic/claude-3-7-sonnet-latest",
+		"metadata":
+		{
+			"context_length": 200000,
+			"description": "",
+			"max_tokens": 200000,
+			"pricing":
+			{
+				"cache_read_tokens": 0.33000000000000007,
+				"input_tokens": 3.3000000000000003,
+				"output_tokens": 16.5
+			},
+			"tags": ["vision", "prompt_cache", "reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -267,6 +665,18 @@
 	{
 		"created": 0,
 		"id": "anthropic/claude-4-opus",
+		"metadata":
+		{
+			"context_length": 200000,
+			"description": "Anthropic’s most powerful model yet and the state-of-the-art coding model. It delivers sustained performance on long-running tasks that require focused effort and thousands of steps, significantly expanding what AI agents can solve. Claude Opus 4 is ideal for powering frontier agent products and features.",
+			"max_tokens": 200000,
+			"pricing":
+			{
+				"input_tokens": 16.5,
+				"output_tokens": 82.5
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -275,6 +685,18 @@
 	{
 		"created": 0,
 		"id": "anthropic/claude-4-sonnet",
+		"metadata":
+		{
+			"context_length": 200000,
+			"description": "Anthropic's mid-size model with superior intelligence for high-volume uses in coding, in-depth research, agents, & more.",
+			"max_tokens": 200000,
+			"pricing":
+			{
+				"input_tokens": 3.3000000000000003,
+				"output_tokens": 16.5
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -283,6 +705,18 @@
 	{
 		"created": 0,
 		"id": "bigcode/starcoder2-15b-instruct-v0.1",
+		"metadata":
+		{
+			"context_length": 16384,
+			"description": "We introduce StarCoder2-15B-Instruct-v0.1, the very first entirely self-aligned code Large Language Model (LLM) trained with a fully permissive and transparent pipeline. Our open-source pipeline uses StarCoder2-15B to generate thousands of instruction-response pairs, which are then used to fine-tune StarCoder-15B itself without any human annotations or distilled data from huge and proprietary LLMs.",
+			"max_tokens": 16384,
+			"pricing":
+			{
+				"input_tokens": 0.15,
+				"output_tokens": 0.15
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -291,6 +725,18 @@
 	{
 		"created": 0,
 		"id": "cognitivecomputations/dolphin-2.6-mixtral-8x7b",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "The Dolphin 2.6 Mixtral 8x7b model is a finetuned version of the Mixtral-8x7b model, trained on a variety of data including coding data, for 3 days on 4 A100 GPUs. It is uncensored and requires trust_remote_code. The model is very obedient and good at coding, but not DPO tuned. The dataset has been filtered for alignment and bias. The model is compliant with user requests and can be used for various purposes such as generating code or engaging in general chat.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.24000000000000002,
+				"output_tokens": 0.24000000000000002
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -299,6 +745,18 @@
 	{
 		"created": 0,
 		"id": "cognitivecomputations/dolphin-2.9.1-llama-3-70b",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "Dolphin 2.9.1, a fine-tuned Llama-3-70b model. The new model, trained on filtered data, is more compliant but uncensored. It demonstrates improvements in instruction, conversation, coding, and function calling abilities.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.35,
+				"output_tokens": 0.4
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -307,6 +765,18 @@
 	{
 		"created": 0,
 		"id": "deepinfra/airoboros-70b",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "Latest version of the Airoboros model fine-tunned version of llama-2-70b using the Airoboros dataset. This model is currently running jondurbin/airoboros-l2-70b-2.2.1 ",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 0.7,
+				"output_tokens": 0.9
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -315,6 +785,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-Prover-V2-671B",
+		"metadata":
+		{
+			"context_length": 163840,
+			"description": "DeepSeek-Prover-V2, an open-source large language model designed for formal theorem proving in Lean 4, with initialization data collected through a recursive theorem proving pipeline powered by DeepSeek-V3. The cold-start training procedure begins by prompting DeepSeek-V3 to decompose complex problems into a series of subgoals. The proofs of resolved subgoals are synthesized into a chain-of-thought process, combined with DeepSeek-V3's step-by-step reasoning, to create an initial cold start for reinforcement learning. ",
+			"max_tokens": 163840,
+			"pricing":
+			{
+				"input_tokens": 0.5,
+				"output_tokens": 2.18
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -323,6 +805,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1",
+		"metadata":
+		{
+			"context_length": 163840,
+			"description": "We introduce DeepSeek-R1, which incorporates cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks. ",
+			"max_tokens": 163840,
+			"pricing":
+			{
+				"input_tokens": 0.7,
+				"output_tokens": 2.4
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -331,6 +825,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1-0528",
+		"metadata":
+		{
+			"context_length": 163840,
+			"description": "The DeepSeek R1 model has undergone a minor version upgrade, with the current version being DeepSeek-R1-0528.",
+			"max_tokens": 163840,
+			"pricing":
+			{
+				"input_tokens": 0.5,
+				"output_tokens": 2.15
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -339,6 +845,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1-0528-Turbo",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "The DeepSeek R1 0528 turbo model is a state of the art reasoning model that can generate very quick responses",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 1.0,
+				"output_tokens": 2.9999999999999996
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -347,6 +865,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "DeepSeek-R1-Distill-Llama-70B is a highly efficient language model that leverages knowledge distillation to achieve state-of-the-art performance. This model distills the reasoning patterns of larger models into a smaller, more agile architecture, resulting in exceptional results on benchmarks like AIME 2024, MATH-500, and LiveCodeBench. With 70 billion parameters, DeepSeek-R1-Distill-Llama-70B offers a unique balance of accuracy and efficiency, making it an ideal choice for a wide range of natural language processing tasks. ",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.1,
+				"output_tokens": 0.4
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -355,6 +885,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "DeepSeek R1 Distill Qwen 32B is a distilled large language model based on Qwen 2.5 32B, using outputs from DeepSeek R1. It outperforms OpenAI's o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.  Other benchmark results include:  AIME 2024: 72.6 | MATH-500: 94.3 | CodeForces Rating: 1691.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.075,
+				"output_tokens": 0.15
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -363,6 +905,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1-Turbo",
+		"metadata":
+		{
+			"context_length": 163840,
+			"description": "We introduce DeepSeek-R1, which incorporates cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks. ",
+			"max_tokens": 163840,
+			"pricing":
+			{
+				"input_tokens": 1.0,
+				"output_tokens": 2.9999999999999996
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -371,6 +925,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3",
+		"metadata":
+		{
+			"context_length": 163840,
+			"description": "DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. To achieve efficient inference and cost-effective training, DeepSeek-V3 adopts Multi-head Latent Attention (MLA) and DeepSeekMoE architectures, which were thoroughly validated in DeepSeek-V2. ",
+			"max_tokens": 163840,
+			"pricing":
+			{
+				"input_tokens": 0.38,
+				"output_tokens": 0.8899999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -379,6 +945,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3-0324",
+		"metadata":
+		{
+			"context_length": 163840,
+			"description": "DeepSeek-V3-0324, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token, an improved iteration over DeepSeek-V3.",
+			"max_tokens": 163840,
+			"pricing":
+			{
+				"input_tokens": 0.28,
+				"output_tokens": 0.8799999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -387,6 +965,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3-0324-Turbo",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 1.0,
+				"output_tokens": 2.9999999999999996
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -395,6 +985,18 @@
 	{
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3.1",
+		"metadata":
+		{
+			"context_length": 163840,
+			"description": "DeepSeek-V3.1 is post-trained on the top of DeepSeek-V3.1-Base, which is built upon the original V3 base checkpoint through a two-phase long context extension approach, following the methodology outlined in the original DeepSeek-V3 report. We have expanded our dataset by collecting additional long documents and substantially extending both training phases. The 32K extension phase has been increased 10-fold to 630B tokens, while the 128K extension phase has been extended by 3.3x to 209B tokens. Additionally, DeepSeek-V3.1 is trained using the UE8M0 FP8 scale data format to ensure compatibility with microscaling data formats.",
+			"max_tokens": 163840,
+			"pricing":
+			{
+				"input_tokens": 0.3,
+				"output_tokens": 1.0
+			},
+			"tags": ["reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -403,6 +1005,18 @@
 	{
 		"created": 0,
 		"id": "google/codegemma-7b-it",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "CodeGemma is a collection of lightweight open code models built on top of Gemma. CodeGemma models are text-to-text and text-to-code decoder-only models and are available as a 7 billion pretrained variant that specializes in code completion and code generation tasks, a 7 billion parameter instruction-tuned variant for code chat and instruction following and a 2 billion parameter pretrained variant for fast code completion.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.07,
+				"output_tokens": 0.07
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -411,6 +1025,18 @@
 	{
 		"created": 0,
 		"id": "google/gemini-1.5-flash",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"description": "Gemini 1.5 Flash is Google's foundation model that performs well at a variety of multimodal tasks such as visual understanding, classification, summarization, and creating content from image, audio and video. It's adept at processing visual and text inputs such as photographs, documents, infographics, and screenshots.  Gemini 1.5 Flash is designed for high-volume, high-frequency tasks where cost and latency matter. ",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 0.075,
+				"output_tokens": 0.3
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -419,6 +1045,18 @@
 	{
 		"created": 0,
 		"id": "google/gemini-1.5-flash-8b",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"description": "",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 0.0375,
+				"output_tokens": 0.15
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -427,6 +1065,18 @@
 	{
 		"created": 0,
 		"id": "google/gemini-2.0-flash-001",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"description": "",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 0.1,
+				"output_tokens": 0.4
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -435,6 +1085,18 @@
 	{
 		"created": 0,
 		"id": "google/gemini-2.5-flash",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"description": "Gemini 2.5 Flash is Google's latest thinking model, designed to tackle increasingly complex problems. It's capable of reasoning through their thoughts before responding, resulting in enhanced performance and improved accuracy.  Gemini 2.5 Flash: best for balancing reasoning and speed.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 0.21,
+				"output_tokens": 1.75
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -443,6 +1105,18 @@
 	{
 		"created": 0,
 		"id": "google/gemini-2.5-pro",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"description": "Gemini 2.5 Pro is Google's the most advanced thinking model, designed to tackle increasingly complex problems. Gemini 2.5 Pro leads common benchmarks by meaningful margins and showcases strong reasoning and code capabilities.  Gemini 2.5 models are thinking models, capable of reasoning through their thoughts before responding, resulting in enhanced performance and improved accuracy.  The Gemini 2.5 Pro model is now available on DeepInfra.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 0.875,
+				"output_tokens": 7.0
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -451,6 +1125,18 @@
 	{
 		"created": 0,
 		"id": "google/gemma-1.1-7b-it",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "Gemma is an open-source model designed by Google. This is Gemma 1.1 7B (IT), an update over the original instruction-tuned Gemma release. Gemma 1.1 was trained using a novel RLHF method, leading to substantial gains on quality, coding capabilities, factuality, instruction following and multi-turn conversation quality.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.07,
+				"output_tokens": 0.07
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -459,6 +1145,18 @@
 	{
 		"created": 0,
 		"id": "google/gemma-2-27b-it",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "Gemma is a family of lightweight, state-of-the-art open models from Google. Gemma-2-27B delivers the best performance for its size class, and even offers competitive alternatives to models more than twice its size. ",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.27,
+				"output_tokens": 0.27
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -467,6 +1165,18 @@
 	{
 		"created": 0,
 		"id": "google/gemma-2-9b-it",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "Gemma is a family of lightweight, state-of-the-art open models from Google. The 9B Gemma 2 model delivers class-leading performance, outperforming Llama 3 8B and other open models in its size category.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.030000000000000002,
+				"output_tokens": 0.060000000000000005
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -475,6 +1185,18 @@
 	{
 		"created": 0,
 		"id": "google/gemma-3-12b-it",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3-12B is Google's latest open source model, successor to Gemma 2",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.05,
+				"output_tokens": 0.1
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -483,6 +1205,18 @@
 	{
 		"created": 0,
 		"id": "google/gemma-3-27b-it",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to Gemma 2",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.09,
+				"output_tokens": 0.16999999999999998
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -491,6 +1225,18 @@
 	{
 		"created": 0,
 		"id": "google/gemma-3-4b-it",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3-12B is Google's latest open source model, successor to Gemma 2",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.02,
+				"output_tokens": 0.04
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -499,6 +1245,18 @@
 	{
 		"created": 0,
 		"id": "lizpreciatior/lzlv_70b_fp16_hf",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "A Mythomax/MLewd_13B-style merge of selected 70B models  A multi-model merge of several  LLaMA2 70B finetunes for roleplaying and creative work. The goal was to create a model that combines creativity with intelligence for an enhanced experience.",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 0.35,
+				"output_tokens": 0.4
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -507,6 +1265,18 @@
 	{
 		"created": 0,
 		"id": "mattshumer/Reflection-Llama-3.1-70B",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "Reflection Llama-3.1 70B is trained with a new technique called Reflection-Tuning that teaches a LLM to detect mistakes in its reasoning and correct course.  The model was trained on synthetic data.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.35,
+				"output_tokens": 0.4
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -515,6 +1285,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-2-13b-chat-hf",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "Llama 2 is a collection of pretrained and fine-tuned generative text models ranging in scale from 7 billion to 70 billion parameters. This is the repository for the 7B fine-tuned model, optimized for dialogue use cases and converted for the Hugging Face Transformers format. ",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 0.13,
+				"output_tokens": 0.13
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -523,6 +1305,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-2-70b-chat-hf",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "LLaMa 2 is a collections of LLMs trained by Meta. This is the 70B chat optimized version. This endpoint has per token pricing.",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 0.64,
+				"output_tokens": 0.8
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -531,6 +1325,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Llama 3.2 11B Vision is a multimodal model with 11 billion parameters, designed to handle tasks combining visual and textual data. It excels in tasks such as image captioning and visual question answering, bridging the gap between language generation and visual reasoning. Pre-trained on a massive dataset of image-text pairs, it performs well in complex, high-accuracy image analysis.  Its ability to integrate visual understanding with language processing makes it an ideal solution for industries requiring comprehensive visual-linguistic AI applications, such as content creation, AI-driven customer service, and research.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.048999999999999995,
+				"output_tokens": 0.048999999999999995
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -539,6 +1345,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-3.2-1B-Instruct",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out).",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.005,
+				"output_tokens": 0.01
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -547,6 +1365,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-3.2-3B-Instruct",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out)",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.012,
+				"output_tokens": 0.024
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -555,6 +1385,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-3.2-90B-Vision-Instruct",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "The Llama 90B Vision model is a top-tier, 90-billion-parameter multimodal model designed for the most challenging visual reasoning and language tasks. It offers unparalleled accuracy in image captioning, visual question answering, and advanced image-text comprehension. Pre-trained on vast multimodal datasets and fine-tuned with human feedback, the Llama 90B Vision is engineered to handle the most demanding image-based AI tasks.  This model is perfect for industries requiring cutting-edge multimodal AI capabilities, particularly those dealing with complex, real-time visual and textual analysis.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.35,
+				"output_tokens": 0.4
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -563,6 +1405,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-3.3-70B-Instruct",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Llama 3.3-70B is a multilingual LLM trained on a massive dataset of 15 trillion tokens, fine-tuned for instruction-following and conversational dialogue. The model is designed to be helpful, safe, and flexible, with a focus on responsible deployment and mitigating potential risks such as bias, toxicity, and misinformation. It achieves state-of-the-art performance on various benchmarks, including conversational tasks, language translation, and text generation.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.22999999999999998,
+				"output_tokens": 0.4
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -571,6 +1425,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Llama 3.3-70B Turbo is a highly optimized version of the Llama 3.3-70B model, utilizing FP8 quantization to deliver significantly faster inference speeds with a minor trade-off in accuracy. The model is designed to be helpful, safe, and flexible, with a focus on responsible deployment and mitigating potential risks such as bias, toxicity, and misinformation. It achieves state-of-the-art performance on various benchmarks, including conversational tasks, language translation, and text generation.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.038000000000000006,
+				"output_tokens": 0.12000000000000001
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -579,6 +1445,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"description": "The Llama 4 collection of models are natively multimodal AI models that enable text and multimodal experiences. These models leverage a mixture-of-experts architecture to offer industry-leading performance in text and image understanding. Llama 4 Maverick, a 17 billion parameter model with 128 experts",
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"input_tokens": 0.15,
+				"output_tokens": 0.6
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -587,6 +1465,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-Turbo",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "The Llama 4 collection of models are natively multimodal AI models that enable text and multimodal experiences. These models leverage a mixture-of-experts architecture to offer industry-leading performance in text and image understanding. Llama 4 Maverick, a 17 billion parameter model with 128 experts",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.5,
+				"output_tokens": 0.5
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -595,6 +1485,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+		"metadata":
+		{
+			"context_length": 327680,
+			"description": "The Llama 4 collection of models are natively multimodal AI models that enable text and multimodal experiences. These models leverage a mixture-of-experts architecture to offer industry-leading performance in text and image understanding. Llama 4 Scout, a 17 billion parameter model with 16 experts",
+			"max_tokens": 327680,
+			"pricing":
+			{
+				"input_tokens": 0.08,
+				"output_tokens": 0.3
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -603,6 +1505,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-Guard-3-8B",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Llama Guard 3 is a Llama-3.1-8B pretrained model, fine-tuned for content safety classification. Similar to previous versions, it can be used to classify content in both LLM inputs (prompt classification) and in LLM responses (response classification). It acts as an LLM – it generates text in its output that indicates whether a given prompt or response is safe or unsafe, and if unsafe, it also lists the content categories violated.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.05499999999999999,
+				"output_tokens": 0.05499999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -611,6 +1525,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Llama-Guard-4-12B",
+		"metadata":
+		{
+			"context_length": 163840,
+			"description": "Llama Guard 4 is a natively multimodal safety classifier with 12 billion parameters trained jointly on text and multiple images. Llama Guard 4 is a dense architecture pruned from the Llama 4 Scout pre-trained model and fine-tuned for content safety classification. Similar to previous versions, it can be used to classify content in both LLM inputs (prompt classification) and in LLM responses (response classification). It itself acts as an LLM: it generates text in its output that indicates whether a given prompt or response is safe or unsafe, and if unsafe, it also lists the content categories violated.",
+			"max_tokens": 163840,
+			"pricing":
+			{
+				"input_tokens": 0.18,
+				"output_tokens": 0.18
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -619,6 +1545,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Meta-Llama-3-70B-Instruct",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "Model Details Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.3,
+				"output_tokens": 0.4
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -627,6 +1565,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Meta-Llama-3-8B-Instruct",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.030000000000000002,
+				"output_tokens": 0.060000000000000005
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -635,6 +1585,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "Meta developed and released the Meta Llama 3.1 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8B, 70B and 405B sizes",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.8,
+				"output_tokens": 0.8
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -643,6 +1605,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Meta developed and released the Meta Llama 3.1 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8B, 70B and 405B sizes",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.22999999999999998,
+				"output_tokens": 0.4
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -651,6 +1625,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Meta developed and released the Meta Llama 3.1 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8B, 70B and 405B sizes",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.1,
+				"output_tokens": 0.28
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -659,6 +1645,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Meta developed and released the Meta Llama 3.1 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8B, 70B and 405B sizes",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.030000000000000002,
+				"output_tokens": 0.05
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -667,6 +1665,18 @@
 	{
 		"created": 0,
 		"id": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Meta developed and released the Meta Llama 3.1 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8B, 70B and 405B sizes",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.015000000000000001,
+				"output_tokens": 0.02
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -675,6 +1685,18 @@
 	{
 		"created": 0,
 		"id": "microsoft/Phi-3-medium-4k-instruct",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "The Phi-3-Medium-4K-Instruct is a powerful and lightweight language model with 14 billion parameters, trained on high-quality data to excel in instruction following and safety measures. It demonstrates exceptional performance across benchmarks, including common sense, language understanding, and logical reasoning, outperforming models of similar size.",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 0.14,
+				"output_tokens": 0.14
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -683,6 +1705,18 @@
 	{
 		"created": 0,
 		"id": "microsoft/Phi-4-multimodal-instruct",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Phi-4-multimodal-instruct is a lightweight open multimodal foundation model that leverages the language, vision, and speech research and datasets used for Phi-3.5 and 4.0 models. The model processes text, image, and audio inputs, generating text outputs, and comes with 128K token context length. The model underwent an enhancement process, incorporating both supervised fine-tuning, direct preference optimization and RLHF (Reinforcement Learning from Human Feedback) to support precise instruction adherence and safety measures. The languages that each modal supports are the following: - Text: Arabic, Chinese, Czech, Danish, Dutch, English, Finnish, French, German, Hebrew, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Russian, Spanish, Swedish, Thai, Turkish, Ukrainian - Vision: English - Audio: English, Chinese, German, French, Italian, Japanese, Spanish, Portuguese",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.05,
+				"output_tokens": 0.1
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -691,6 +1725,18 @@
 	{
 		"created": 0,
 		"id": "microsoft/WizardLM-2-7B",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "WizardLM-2 7B is the smaller variant of Microsoft AI's latest Wizard model. It is the fastest and achieves comparable performance with existing 10x larger open-source leading models",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.05499999999999999,
+				"output_tokens": 0.05499999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -699,6 +1745,18 @@
 	{
 		"created": 0,
 		"id": "microsoft/WizardLM-2-8x22B",
+		"metadata":
+		{
+			"context_length": 65536,
+			"description": "WizardLM-2 8x22B is Microsoft AI's most advanced Wizard model. It demonstrates highly competitive performance compared to those leading proprietary models.",
+			"max_tokens": 65536,
+			"pricing":
+			{
+				"input_tokens": 0.48000000000000004,
+				"output_tokens": 0.48000000000000004
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -707,6 +1765,18 @@
 	{
 		"created": 0,
 		"id": "microsoft/phi-4",
+		"metadata":
+		{
+			"context_length": 16384,
+			"description": "Phi-4 is a model built upon a blend of synthetic datasets, data from filtered public domain websites, and acquired academic books and Q&A datasets. The goal of this approach was to ensure that small capable models were trained with data focused on high quality and advanced reasoning.",
+			"max_tokens": 16384,
+			"pricing":
+			{
+				"input_tokens": 0.07,
+				"output_tokens": 0.14
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -715,6 +1785,18 @@
 	{
 		"created": 0,
 		"id": "microsoft/phi-4-reasoning-plus",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "Phi-4-reasoning-plus is a state-of-the-art open-weight reasoning model finetuned from Phi-4 using supervised fine-tuning on a dataset of chain-of-thought traces and reinforcement learning. The supervised fine-tuning dataset includes a blend of synthetic prompts and high-quality filtered data from public domain websites, focused on math, science, and coding skills as well as alignment data for safety and Responsible AI. The goal of this approach was to ensure that small capable models were trained with data focused on high quality and advanced reasoning. Phi-4-reasoning-plus has been trained additionally with Reinforcement Learning, hence, it has higher accuracy but generates on average 50% more tokens, thus having higher latency.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.07,
+				"output_tokens": 0.35
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -723,6 +1805,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Devstral-Small-2505",
+		"metadata":
+		{
+			"context_length": 128000,
+			"description": "Devstral is an agentic LLM for software engineering tasks. Devstral excels at using tools to explore codebases, editing multiple files and power software engineering agents. ",
+			"max_tokens": 128000,
+			"pricing":
+			{
+				"input_tokens": 0.060000000000000005,
+				"output_tokens": 0.12000000000000001
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -731,6 +1825,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Devstral-Small-2507",
+		"metadata":
+		{
+			"context_length": 128000,
+			"description": "Devstral is an agentic LLM for software engineering tasks, making it a great choice for software engineering agents.",
+			"max_tokens": 128000,
+			"pricing":
+			{
+				"input_tokens": 0.07,
+				"output_tokens": 0.28
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -739,6 +1845,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Mistral-7B-Instruct-v0.1",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "The Mistral-7B-Instruct-v0.1 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.05499999999999999,
+				"output_tokens": 0.05499999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -747,6 +1865,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Mistral-7B-Instruct-v0.2",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.2 generative text model using a variety of publicly available conversation datasets.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.05499999999999999,
+				"output_tokens": 0.05499999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -755,6 +1885,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Mistral-7B-Instruct-v0.3",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "Mistral-7B-Instruct-v0.3 is an instruction-tuned model, next iteration of of Mistral 7B that has larger vocabulary, newer tokenizer and supports function calling.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.028,
+				"output_tokens": 0.054
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -763,6 +1905,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Mistral-Nemo-Instruct-2407",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "12B model trained jointly by Mistral AI and NVIDIA, it significantly outperforms existing models smaller or similar in size.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.02,
+				"output_tokens": 0.04
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -771,6 +1925,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Mistral-Small-24B-Instruct-2501",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "Mistral Small 3 is a 24B-parameter language model optimized for low-latency performance across common AI tasks. Released under the Apache 2.0 license, it features both pre-trained and instruction-tuned versions designed for efficient local deployment.  The model achieves 81% accuracy on the MMLU benchmark and performs competitively with larger models like Llama 3.3 70B and Qwen 32B, while operating at three times the speed on equivalent hardware.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.05,
+				"output_tokens": 0.08
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -779,6 +1945,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+		"metadata":
+		{
+			"context_length": 128000,
+			"description": "Mistral Small 3.1 (2503) adds state-of-the-art vision understanding and extends context capabilities up to 128K tokens while maintaining top-tier text performance. Its 24 billion parameters and instruction fine-tuning deliver fast, local deployment for both text and vision tasks.",
+			"max_tokens": 128000,
+			"pricing":
+			{
+				"input_tokens": 0.05,
+				"output_tokens": 0.1
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -787,6 +1965,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+		"metadata":
+		{
+			"context_length": 128000,
+			"description": "Mistral-Small-3.2-24B-Instruct is a drop-in upgrade over the 3.1 release, with markedly better instruction following, roughly half the infinite-generation errors, and a more robust function-calling interface—while otherwise matching or slightly improving on all previous text and vision benchmarks.",
+			"max_tokens": 128000,
+			"pricing":
+			{
+				"input_tokens": 0.05,
+				"output_tokens": 0.1
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -795,6 +1985,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+		"metadata":
+		{
+			"context_length": 65536,
+			"description": "This is the instruction fine-tuned version of Mixtral-8x22B - the latest and largest mixture of experts large language model (LLM) from Mistral AI. This state of the art machine learning model uses a mixture 8 of experts (MoE) 22b models. During inference 2 experts are selected. This architecture allows large models to be fast and cheap at inference.",
+			"max_tokens": 65536,
+			"pricing":
+			{
+				"input_tokens": 0.6499999999999999,
+				"output_tokens": 0.6499999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -803,6 +2005,18 @@
 	{
 		"created": 0,
 		"id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+		"metadata":
+		{
+			"context_length": 32768,
+			"description": "Mixtral is mixture of expert large language model (LLM) from Mistral AI. This is state of the art machine learning model using a mixture 8 of experts (MoE) 7b models. During inference 2 expers are selected. This architecture allows large models to be fast and cheap at inference. The Mixtral-8x7B outperforms Llama 2 70B on most benchmarks.",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.08,
+				"output_tokens": 0.24000000000000002
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -811,6 +2025,18 @@
 	{
 		"created": 0,
 		"id": "moonshotai/Kimi-K2-Instruct",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Kimi K2 is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It is optimized for agentic capabilities, including advanced tool use, reasoning, and code synthesis. Kimi K2 excels across a broad range of benchmarks, particularly in coding (LiveCodeBench, SWE-bench), reasoning (ZebraLogic, GPQA), and tool-use (Tau2, AceBench) tasks.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.5,
+				"output_tokens": 2.0
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -819,6 +2045,18 @@
 	{
 		"created": 0,
 		"id": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Llama-3.1-Nemotron-70B-Instruct is a large language model customized by NVIDIA to improve the helpfulness of LLM generated responses to user queries. This model reaches Arena Hard of 85.0, AlpacaEval 2 LC of 57.6 and GPT-4-Turbo MT-Bench of 8.98, which are known to be predictive of LMSys Chatbot Arena Elo.  As of 16th Oct 2024, this model is #1 on all three automatic alignment benchmarks (verified tab for AlpacaEval 2 LC), edging out strong frontier models such as GPT-4o and Claude 3.5 Sonnet.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.12000000000000001,
+				"output_tokens": 0.3
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -827,6 +2065,18 @@
 	{
 		"created": 0,
 		"id": "nvidia/Nemotron-4-340B-Instruct",
+		"metadata":
+		{
+			"context_length": 4096,
+			"description": "Nemotron-4-340B-Instruct is a chat model intended for use for the English language, designed for Synthetic Data Generation",
+			"max_tokens": 4096,
+			"pricing":
+			{
+				"input_tokens": 4.2,
+				"output_tokens": 4.2
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -835,6 +2085,18 @@
 	{
 		"created": 0,
 		"id": "openai/gpt-oss-120b",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.09,
+				"output_tokens": 0.45
+			},
+			"tags": ["reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -843,6 +2105,18 @@
 	{
 		"created": 0,
 		"id": "openai/gpt-oss-20b",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for lower-latency inference. The model is trained in OpenAI’s Harmony response format and supports reasoning level configuration, fine-tuning, and agentic capabilities including function calling, tool use, and structured outputs.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.04,
+				"output_tokens": 0.16
+			},
+			"tags": ["reasoning_effort"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -851,6 +2125,18 @@
 	{
 		"created": 0,
 		"id": "openbmb/MiniCPM-Llama3-V-2_5",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.33999999999999997,
+				"output_tokens": 0.33999999999999997
+			},
+			"tags": ["vision"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -859,6 +2145,18 @@
 	{
 		"created": 0,
 		"id": "openchat/openchat-3.6-8b",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "Openchat 3.6 is a LLama-3-8b fine tune that outperforms it on multiple benchmarks.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.05499999999999999,
+				"output_tokens": 0.05499999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -867,6 +2165,18 @@
 	{
 		"created": 0,
 		"id": "openchat/openchat_3.5",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "OpenChat is a library of open-source language models that have been fine-tuned with C-RLFT, a strategy inspired by offline reinforcement learning. These models can learn from mixed-quality data without preference labels and have achieved exceptional performance comparable to ChatGPT. The developers of OpenChat are dedicated to creating a high-performance, commercially viable, open-source large language model and are continuously making progress towards this goal.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.05499999999999999,
+				"output_tokens": 0.05499999999999999
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -875,6 +2185,18 @@
 	{
 		"created": 0,
 		"id": "zai-org/GLM-4.5",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters, while GLM-4.5-Air adopts a more compact design with 106 billion total parameters and 12 billion active parameters. GLM-4.5 models unify reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.55,
+				"output_tokens": 2.0
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -883,6 +2205,18 @@
 	{
 		"created": 0,
 		"id": "zai-org/GLM-4.5-Air",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "The GLM-4.5 series models are foundation models designed for intelligent agents. GLM-4.5 has 355 billion total parameters with 32 billion active parameters, while GLM-4.5-Air adopts a more compact design with 106 billion total parameters and 12 billion active parameters. GLM-4.5 models unify reasoning, coding, and intelligent agent capabilities to meet the complex demands of intelligent agent applications.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.2,
+				"output_tokens": 1.1
+			},
+			"tags": []
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,

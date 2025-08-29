@@ -7,6 +7,40 @@
 			"instruct_type": null,
 			"modality": "text->text",
 			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3-30b-a3b-thinking-2507",
+		"context_length": 262144,
+		"created": 1756399192,
+		"description": "Qwen3-30B-A3B-Thinking-2507 is a 30B parameter Mixture-of-Experts reasoning model optimized for complex tasks requiring extended multi-step thinking. The model is designed specifically for “thinking mode,” where internal reasoning traces are separated from final answers.\n\nCompared to earlier Qwen3-30B releases, this version improves performance across logical reasoning, mathematics, science, coding, and multilingual benchmarks. It also demonstrates stronger instruction following, tool use, and alignment with human preferences. With higher reasoning efficiency and extended output budgets, it is best suited for advanced research, competitive problem solving, and agentic applications requiring structured long-context reasoning.",
+		"hugging_face_id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+		"id": "qwen/qwen3-30b-a3b-thinking-2507",
+		"name": "Qwen: Qwen3 30B A3B Thinking 2507",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000002852",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000000713",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
 			"tokenizer": "Grok"
 		},
 		"canonical_slug": "x-ai/grok-code-fast-1",
@@ -169,6 +203,40 @@
 			"context_length": 32768,
 			"is_moderated": false,
 			"max_completion_tokens": 8192
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": "deepseek-v3.1",
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "DeepSeek"
+		},
+		"canonical_slug": "deepseek/deepseek-chat-v3.1",
+		"context_length": 64000,
+		"created": 1755779628,
+		"description": "DeepSeek-V3.1 is a large hybrid reasoning model (671B parameters, 37B active) that supports both thinking and non-thinking modes via prompt templates. It extends the DeepSeek-V3 base with a two-phase long-context training process, reaching up to 128K tokens, and uses FP8 microscaling for efficient inference. Users can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)\n\nThe model improves tool use, code generation, and reasoning efficiency, achieving performance comparable to DeepSeek-R1 on difficult benchmarks while responding more quickly. It supports structured tool calling, code agents, and search agents, making it suitable for research, coding, and agentic workflows. \n\nIt succeeds the [DeepSeek V3-0324](/deepseek/deepseek-chat-v3-0324) model and performs well on a variety of tasks.",
+		"hugging_face_id": "deepseek-ai/DeepSeek-V3.1",
+		"id": "deepseek/deepseek-chat-v3.1:free",
+		"name": "DeepSeek: DeepSeek V3.1 (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 64000,
+			"is_moderated": true,
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -488,7 +556,7 @@
 			"tokenizer": "GPT"
 		},
 		"canonical_slug": "openai/gpt-5-chat-2025-08-07",
-		"context_length": 400000,
+		"context_length": 128000,
 		"created": 1754587837,
 		"description": "GPT-5 Chat is designed for advanced, natural, multimodal, and context-aware conversations for enterprise applications.",
 		"hugging_face_id": "",
@@ -508,9 +576,9 @@
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs"],
 		"top_provider":
 		{
-			"context_length": 400000,
+			"context_length": 128000,
 			"is_moderated": true,
-			"max_completion_tokens": 128000
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -616,6 +684,40 @@
 			"context_length": 400000,
 			"is_moderated": true,
 			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-oss-120b",
+		"context_length": 32768,
+		"created": 1754414231,
+		"description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized to run on a single H100 GPU with native MXFP4 quantization. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
+		"hugging_face_id": "openai/gpt-oss-120b",
+		"id": "openai/gpt-oss-120b:free",
+		"name": "OpenAI: gpt-oss-120b (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "stop", "temperature"],
+		"top_provider":
+		{
+			"context_length": 32768,
+			"is_moderated": true,
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -746,7 +848,7 @@
 			"internal_reasoning": "0",
 			"prompt": "0.000015",
 			"request": "0",
-			"web_search": "0"
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools"],
 		"top_provider":
@@ -799,6 +901,40 @@
 			"output_modalities": ["text"],
 			"tokenizer": "Qwen3"
 		},
+		"canonical_slug": "qwen/qwen3-coder-30b-a3b-instruct",
+		"context_length": 262144,
+		"created": 1753972379,
+		"description": "Qwen3-Coder-30B-A3B-Instruct is a 30.5B parameter Mixture-of-Experts (MoE) model with 128 experts (8 active per forward pass), designed for advanced code generation, repository-scale understanding, and agentic tool use. Built on the Qwen3 architecture, it supports a native context length of 256K tokens (extendable to 1M with Yarn) and performs strongly in tasks involving function calls, browser use, and structured code completion.\n\nThis model is optimized for instruction-following without “thinking mode”, and integrates well with OpenAI-compatible tool-use formats. ",
+		"hugging_face_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+		"id": "qwen/qwen3-coder-30b-a3b-instruct",
+		"name": "Qwen: Qwen3 Coder 30B A3B Instruct",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000000207424",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000000518308",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
 		"canonical_slug": "qwen/qwen3-30b-a3b-instruct-2507",
 		"context_length": 262144,
 		"created": 1753806965,
@@ -809,14 +945,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000003",
+			"completion": "0.000000207424",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000001",
+			"prompt": "0.0000000518308",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -911,20 +1047,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000011",
+			"completion": "0.00000086",
 			"image": "0",
-			"input_cache_read": "0.00000003",
 			"internal_reasoning": "0",
-			"prompt": "0.0000002",
+			"prompt": "0.00000014",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 96000
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -1010,7 +1145,7 @@
 		"description": "Qwen3-Coder-480B-A35B-Instruct is a Mixture-of-Experts (MoE) code generation model developed by the Qwen team. It is optimized for agentic coding tasks such as function calling, tool use, and long-context reasoning over repositories. The model features 480 billion total parameters, with 35 billion active per forward pass (8 out of 160 experts).\n\nPricing for the Alibaba endpoints varies by context length. Once a request is greater than 128k input tokens, the higher pricing is used.",
 		"hugging_face_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
 		"id": "qwen/qwen3-coder:free",
-		"name": "Qwen: Qwen3 Coder  (free)",
+		"name": "Qwen: Qwen3 Coder 480B A35B (free)",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -1044,7 +1179,7 @@
 		"description": "Qwen3-Coder-480B-A35B-Instruct is a Mixture-of-Experts (MoE) code generation model developed by the Qwen team. It is optimized for agentic coding tasks such as function calling, tool use, and long-context reasoning over repositories. The model features 480 billion total parameters, with 35 billion active per forward pass (8 out of 160 experts).\n\nPricing for the Alibaba endpoints varies by context length. Once a request is greater than 128k input tokens, the higher pricing is used.",
 		"hugging_face_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
 		"id": "qwen/qwen3-coder",
-		"name": "Qwen: Qwen3 Coder ",
+		"name": "Qwen: Qwen3 Coder 480B A35B",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -1089,7 +1224,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -1534,7 +1669,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -1738,7 +1873,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 16384,
@@ -2462,7 +2597,7 @@
 			"internal_reasoning": "0",
 			"prompt": "0.000015",
 			"request": "0",
-			"web_search": "0"
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -2482,7 +2617,7 @@
 			"tokenizer": "Claude"
 		},
 		"canonical_slug": "anthropic/claude-4-sonnet-20250522",
-		"context_length": 200000,
+		"context_length": 1000000,
 		"created": 1747930371,
 		"description": "Claude Sonnet 4 significantly enhances the capabilities of its predecessor, Sonnet 3.7, excelling in both coding and reasoning tasks with improved precision and controllability. Achieving state-of-the-art performance on SWE-bench (72.7%), Sonnet 4 balances capability and computational efficiency, making it suitable for a broad range of applications from routine coding tasks to complex software development projects. Key enhancements include improved autonomous codebase navigation, reduced error rates in agent-driven workflows, and increased reliability in following intricate instructions. Sonnet 4 is optimized for practical everyday use, providing advanced reasoning capabilities while maintaining efficiency and responsiveness in diverse internal and external scenarios.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-4)",
 		"hugging_face_id": "",
@@ -2503,7 +2638,7 @@
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 200000,
+			"context_length": 1000000,
 			"is_moderated": false,
 			"max_completion_tokens": 64000
 		}
@@ -4005,7 +4140,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 8192,
@@ -5265,7 +5400,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -5677,7 +5812,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -7591,7 +7726,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 8192,
@@ -7761,7 +7896,7 @@
 			"internal_reasoning": "0",
 			"prompt": "0.0000008",
 			"request": "0",
-			"web_search": "0"
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -8331,7 +8466,7 @@
 			"tokenizer": "Llama3"
 		},
 		"canonical_slug": "meta-llama/llama-3.2-90b-vision-instruct",
-		"context_length": 131072,
+		"context_length": 32768,
 		"created": 1727222400,
 		"description": "The Llama 90B Vision model is a top-tier, 90-billion-parameter multimodal model designed for the most challenging visual reasoning and language tasks. It offers unparalleled accuracy in image captioning, visual question answering, and advanced image-text comprehension. Pre-trained on vast multimodal datasets and fine-tuned with human feedback, the Llama 90B Vision is engineered to handle the most demanding image-based AI tasks.\n\nThis model is perfect for industries requiring cutting-edge multimodal AI capabilities, particularly those dealing with complex, real-time visual and textual analysis.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
 		"hugging_face_id": "meta-llama/Llama-3.2-90B-Vision-Instruct",
@@ -8340,19 +8475,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000012",
-			"image": "0.001734",
+			"completion": "0.0000004",
+			"image": "0.0005058",
 			"internal_reasoning": "0",
-			"prompt": "0.0000012",
+			"prompt": "0.00000035",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": 2048
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -9304,7 +9439,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "stop", "structured_outputs", "temperature", "top_p"],
 		"top_provider":
 		{
 			"context_length": 8192,
@@ -9578,7 +9713,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -9646,7 +9781,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -10873,7 +11008,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 4096,

@@ -1,6 +1,30 @@
 {
 	"data": [
 	{
+		"created": 1756339249,
+		"id": "gpt-audio",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1756271773,
+		"id": "gpt-realtime-2025-08-28",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1756271701,
+		"id": "gpt-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1756256146,
+		"id": "gpt-audio-2025-08-28",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1754426384,
 		"id": "gpt-5-nano",
 		"object": "model",
