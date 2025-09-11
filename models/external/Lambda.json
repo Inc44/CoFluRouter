@@ -14,12 +14,6 @@
 	},
 	{
 		"created": 1724347380,
-		"id": "deepseek-r1-671b",
-		"object": "model",
-		"owned_by": "lambda"
-	},
-	{
-		"created": 1724347380,
 		"id": "deepseek-v3-0324",
 		"object": "model",
 		"owned_by": "lambda"

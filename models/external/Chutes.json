@@ -626,6 +626,32 @@
 	},
 	{
 		"created": 0,
+		"id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+		"max_model_len": 262144,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "Qwen/Qwen3-Next-80B-A3B-Instruct"
+	},
+	{
+		"created": 0,
 		"id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
 		"max_model_len": 262144,
 		"object": "model",
