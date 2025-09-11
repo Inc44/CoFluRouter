@@ -64,8 +64,11 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 	obj = resp.json()  # json.loads(Path(f"models/external/{name}.json").read_text(encoding="utf-8")) # Testing with fetched models
 	if name in ["Chutes", "Hyperbolic"]:  # Redact fetch time
 		obj = redact_keys(obj, {"created"})
-	if name == "Chutes":  # Redact crypto and permissions
+	if name == "Chutes":  # Redact crypto, pricing and permissions
+		obj = redact_keys(obj, {"completion"})
+		obj = redact_keys(obj, {"prompt"})
 		obj = redact_keys(obj, {"tao"})
+		obj = redact_keys(obj, {"usd"})
 		obj = redact_entry(obj, "id", "modelperm-")
 	if name == "OpenAI":  # Redact fine-tuned models
 		obj = redact_entry(obj, "id", "ft:")
