@@ -11,18 +11,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.040003199999999996
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.040003199999999996,
-			"prompt": 0.01
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "ArliAI/QwQ-32B-ArliAI-RpR-v1"
 	},
@@ -37,18 +37,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.10366159999999999
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.41484799999999994
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.41484799999999994,
-			"prompt": 0.10366159999999999
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "ByteDance-Seed/Seed-OSS-36B-Instruct"
 	},
@@ -63,18 +63,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Meridian"
 	},
@@ -89,18 +89,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "NousResearch/DeepHermes-3-Llama-3-8B-Preview"
 	},
@@ -115,46 +115,20 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.09329544
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.37336319999999995
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.37336319999999995,
-			"prompt": 0.09329544
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "NousResearch/DeepHermes-3-Mistral-24B-Preview"
-	},
-	{
-		"created": 0,
-		"id": "Proxima",
-		"max_model_len": 40960,
-		"object": "model",
-		"owned_by": "sglang",
-		"price":
-		{
-			"input":
-			{
-				"tao": 0,
-				"usd": 0.0
-			},
-			"output":
-			{
-				"tao": 0,
-				"usd": 0.0
-			}
-		},
-		"pricing":
-		{
-			"completion": 0.0,
-			"prompt": 0.0
-		},
-		"root": "Proxima"
 	},
 	{
 		"created": 0,
@@ -167,18 +141,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "NousResearch/Hermes-4-405B-FP8"
 	},
@@ -193,20 +167,46 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.09329544
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.37336319999999995
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.37336319999999995,
-			"prompt": 0.09329544
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "NousResearch/Hermes-4-70B"
+	},
+	{
+		"created": 0,
+		"id": "Proxima",
+		"max_model_len": 40960,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "Proxima"
 	},
 	{
 		"created": 0,
@@ -219,18 +219,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.051830799999999996
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.20742399999999997
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.20742399999999997,
-			"prompt": 0.051830799999999996
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen2.5-72B-Instruct"
 	},
@@ -245,18 +245,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0499797
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.200016
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.200016,
-			"prompt": 0.0499797
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen2.5-Coder-32B-Instruct"
 	},
@@ -271,18 +271,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.08000639999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.08000639999999999,
-			"prompt": 0.01999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen2.5-VL-32B-Instruct"
 	},
@@ -297,18 +297,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0999594
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.400032
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.400032,
-			"prompt": 0.0999594
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen2.5-VL-72B-Instruct"
 	},
@@ -323,18 +323,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-14B"
 	},
@@ -349,18 +349,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-235B-A22B"
 	},
@@ -375,18 +375,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.077968332
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.31202496
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.31202496,
-			"prompt": 0.077968332
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-235B-A22B-Instruct-2507"
 	},
@@ -401,18 +401,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.077968332
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.31202496
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.31202496,
-			"prompt": 0.077968332
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-235B-A22B-Thinking-2507"
 	},
@@ -427,18 +427,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.08000639999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.08000639999999999,
-			"prompt": 0.01999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-30B-A3B"
 	},
@@ -453,18 +453,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.051830799999999996
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.20742399999999997
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.20742399999999997,
-			"prompt": 0.051830799999999996
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-30B-A3B-Instruct-2507"
 	},
@@ -479,18 +479,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.07126735
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.28520799999999996
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.28520799999999996,
-			"prompt": 0.07126735
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-30B-A3B-Thinking-2507"
 	},
@@ -505,18 +505,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.017992692
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.07200575999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.07200575999999999,
-			"prompt": 0.017992692
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-32B"
 	},
@@ -531,18 +531,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-8B"
 	},
@@ -557,18 +557,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.051830799999999996
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.20742399999999997
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.20742399999999997,
-			"prompt": 0.051830799999999996
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-Coder-30B-A3B-Instruct"
 	},
@@ -583,18 +583,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
 	},
@@ -609,18 +609,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.040003199999999996
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.040003199999999996,
-			"prompt": 0.01
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Salesforce/xgen-small-9B-instruct-r"
 	},
@@ -635,18 +635,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.08000639999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.08000639999999999,
-			"prompt": 0.01999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Tesslate/UIGEN-X-32B-0727"
 	},
@@ -661,18 +661,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0240643
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.096304
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.096304,
-			"prompt": 0.0240643
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "TheDrummer/Cydonia-24B-v2.1"
 	},
@@ -689,18 +689,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0340768
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0340768,
-			"prompt": 0.01
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "TheDrummer/Gemmasutra-Pro-27B-v1.1"
 	},
@@ -715,18 +715,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0481286
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.192608
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.192608,
-			"prompt": 0.0481286
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "TheDrummer/Skyfall-36B-v2"
 	},
@@ -741,18 +741,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0481286
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.192608
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.192608,
-			"prompt": 0.0481286
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "TheDrummer/Tunguska-39B-v1"
 	},
@@ -767,18 +767,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "Zenith"
 	},
@@ -793,18 +793,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "agentica-org/DeepCoder-14B-Preview"
 	},
@@ -821,18 +821,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.040003199999999996
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.040003199999999996,
-			"prompt": 0.01
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "all-hands/openhands-lm-32b-v0.1-ep3"
 	},
@@ -847,18 +847,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.08000639999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.08000639999999999,
-			"prompt": 0.01999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "chutesai/Devstral-Small-2505"
 	},
@@ -873,18 +873,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.17992692
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.7200576
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.7200576,
-			"prompt": 0.17992692
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8"
 	},
@@ -899,18 +899,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.08000639999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.08000639999999999,
-			"prompt": 0.01999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "chutesai/Mistral-Small-3.1-24B-Instruct-2503"
 	},
@@ -925,18 +925,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.10366159999999999
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.41484799999999994
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.41484799999999994,
-			"prompt": 0.10366159999999999
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "chutesai/Mistral-Small-3.2-24B-Instruct-2506"
 	},
@@ -951,18 +951,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.037022
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.14816
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.14816,
-			"prompt": 0.037022
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "cognitivecomputations/Dolphin3.0-Mistral-24B"
 	},
@@ -977,18 +977,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0340768
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0340768,
-			"prompt": 0.01
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "cognitivecomputations/Dolphin3.0-R1-Mistral-24B"
 	},
@@ -1003,18 +1003,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "deepseek-ai/DeepSeek-R1"
 	},
@@ -1029,18 +1029,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "deepseek-ai/DeepSeek-R1-0528"
 	},
@@ -1055,18 +1055,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01703012
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0681536
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0681536,
-			"prompt": 0.01703012
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
 	},
@@ -1081,18 +1081,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.025915399999999998
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.10371199999999998
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.10371199999999998,
-			"prompt": 0.025915399999999998
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
 	},
@@ -1107,18 +1107,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "deepseek-ai/DeepSeek-V3"
 	},
@@ -1133,18 +1133,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "deepseek-ai/DeepSeek-V3-0324"
 	},
@@ -1159,18 +1159,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "deepseek-ai/DeepSeek-V3-Base"
 	},
@@ -1185,18 +1185,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "deepseek-ai/DeepSeek-V3.1"
 	},
@@ -1211,18 +1211,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "deepseek-ai/DeepSeek-V3.1-Base"
 	},
@@ -1238,18 +1238,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "internlm/Intern-S1"
 	},
@@ -1264,18 +1264,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "microsoft/MAI-DS-R1-FP8"
 	},
@@ -1290,18 +1290,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.06663960000000001
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.266688
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.266688,
-			"prompt": 0.06663960000000001
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "moonshotai/Kimi-Dev-72B"
 	},
@@ -1316,18 +1316,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.148088
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.59264
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.59264,
-			"prompt": 0.148088
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "moonshotai/Kimi-K2-Instruct"
 	},
@@ -1344,18 +1344,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.02498985
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.100008
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.100008,
-			"prompt": 0.02498985
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "moonshotai/Kimi-VL-A3B-Thinking"
 	},
@@ -1372,18 +1372,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.06663960000000001
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.266688
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.266688,
-			"prompt": 0.06663960000000001
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5"
 	},
@@ -1398,18 +1398,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.07256312
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.2903936
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.2903936,
-			"prompt": 0.07256312
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "openai/gpt-oss-120b"
 	},
@@ -1424,18 +1424,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "openai/gpt-oss-20b"
 	},
@@ -1450,18 +1450,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.08000639999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.08000639999999999,
-			"prompt": 0.01999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "shisa-ai/shisa-v2-llama3.3-70b"
 	},
@@ -1476,18 +1476,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "stepfun-ai/step3"
 	},
@@ -1502,18 +1502,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "tencent/Hunyuan-A13B-Instruct"
 	},
@@ -1528,18 +1528,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "tngtech/DeepSeek-R1T-Chimera"
 	},
@@ -1554,18 +1554,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "tngtech/DeepSeek-TNG-R1T2-Chimera"
 	},
@@ -1580,18 +1580,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.01,
-			"prompt": 0.01
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "tplr/TEMPLAR-I"
 	},
@@ -1608,18 +1608,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.01,
-			"prompt": 0.01
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "unsloth/Llama-3.2-1B-Instruct"
 	},
@@ -1634,18 +1634,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.01,
-			"prompt": 0.01
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "unsloth/Llama-3.2-3B-Instruct"
 	},
@@ -1660,18 +1660,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.040003199999999996
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.040003199999999996,
-			"prompt": 0.01
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "unsloth/Mistral-Nemo-Instruct-2407"
 	},
@@ -1686,18 +1686,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.08000639999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.08000639999999999,
-			"prompt": 0.01999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "unsloth/Mistral-Small-24B-Instruct-2501"
 	},
@@ -1712,18 +1712,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.010000799999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.010000799999999999,
-			"prompt": 0.01
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "unsloth/gemma-2-9b-it"
 	},
@@ -1738,18 +1738,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0481286
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.192608
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.192608,
-			"prompt": 0.0481286
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "unsloth/gemma-3-12b-it"
 	},
@@ -1764,18 +1764,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.06663960000000001
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.266688
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.266688,
-			"prompt": 0.06663960000000001
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "unsloth/gemma-3-27b-it"
 	},
@@ -1790,18 +1790,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01703012
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0681536
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0681536,
-			"prompt": 0.01703012
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "unsloth/gemma-3-4b-it"
 	},
@@ -1816,18 +1816,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.08000639999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.08000639999999999,
-			"prompt": 0.01999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "zai-org/GLM-4-32B-0414"
 	},
@@ -1842,18 +1842,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.0
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.0,
-			"prompt": 0.0
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "zai-org/GLM-4.5-Air"
 	},
@@ -1868,18 +1868,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.1999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.800064
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.800064,
-			"prompt": 0.1999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "zai-org/GLM-4.5-FP8"
 	},
@@ -1894,18 +1894,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.051830799999999996
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.20742399999999997
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.20742399999999997,
-			"prompt": 0.051830799999999996
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "zai-org/GLM-4.5V-FP8"
 	},
@@ -1920,18 +1920,18 @@
 			"input":
 			{
 				"tao": 0,
-				"usd": 0.01999188
+				"usd": 0
 			},
 			"output":
 			{
 				"tao": 0,
-				"usd": 0.08000639999999999
+				"usd": 0
 			}
 		},
 		"pricing":
 		{
-			"completion": 0.08000639999999999,
-			"prompt": 0.01999188
+			"completion": 0,
+			"prompt": 0
 		},
 		"root": "zai-org/GLM-Z1-32B-0414"
 	}],
