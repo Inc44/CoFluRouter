@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"created": 1757162961,
+		"id": "qwen3-max-preview",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1755780073,
 		"id": "qwen2-7b-instruct",
 		"object": "model",

@@ -132,6 +132,32 @@
 	},
 	{
 		"created": 0,
+		"id": "NousResearch/Hermes-4-14B",
+		"max_model_len": 40960,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "NousResearch/Hermes-4-14B"
+	},
+	{
+		"created": 0,
 		"id": "NousResearch/Hermes-4-405B-FP8",
 		"max_model_len": 131072,
 		"object": "model",
@@ -1255,6 +1281,32 @@
 	},
 	{
 		"created": 0,
+		"id": "meituan-longcat/LongCat-Flash-Chat-FP8",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "meituan-longcat/LongCat-Flash-Chat-FP8"
+	},
+	{
+		"created": 0,
 		"id": "microsoft/MAI-DS-R1-FP8",
 		"max_model_len": 163840,
 		"object": "model",
@@ -1330,6 +1382,32 @@
 			"prompt": 0
 		},
 		"root": "moonshotai/Kimi-K2-Instruct"
+	},
+	{
+		"created": 0,
+		"id": "moonshotai/Kimi-K2-Instruct-0905",
+		"max_model_len": 262144,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "moonshotai/Kimi-K2-Instruct-0905"
 	},
 	{
 		"created": 0,

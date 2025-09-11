@@ -2,6 +2,34 @@
 {
 	"config":
 	{
+		"bos_token": "[BOS]",
+		"chat_template": null,
+		"eos_token": "[EOS]",
+		"max_output_length": 16384,
+		"stop": ["[EOS]"]
+	},
+	"context_length": 0,
+	"created": 1757037421,
+	"display_name": "Kimi K2 Instruct 0905",
+	"id": "moonshotai/Kimi-K2-Instruct-0905",
+	"license": "other modified-mit",
+	"link": "https://huggingface.co/api/models/moonshotai/Kimi-K2-Instruct-0905",
+	"object": "model",
+	"organization": "Moonshotai",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 1,
+		"output": 3
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": "<｜begin▁of▁sentence｜>",
 		"chat_template": null,
 		"eos_token": "<｜end▁of▁sentence｜>",
@@ -9,12 +37,12 @@
 	},
 	"context_length": 131072,
 	"created": 1755887697,
-	"display_name": "DeepSeek V3.1",
+	"display_name": "Deepseek V3.1",
 	"id": "deepseek-ai/DeepSeek-V3.1",
 	"license": "mit",
-	"link": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-V3.1",
+	"link": "https://huggingface.co/api/models/togethercomputer/DeepSeek-V3.1",
 	"object": "model",
-	"organization": "Deepseek AI",
+	"organization": "Togethercomputer",
 	"pricing":
 	{
 		"base": 0,
@@ -505,6 +533,33 @@
 	},
 	"running": false,
 	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "[PAD]",
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 512,
+	"created": 1749601524,
+	"display_name": "BAAI-Bge-Base-1.5",
+	"id": "BAAI/bge-base-en-v1.5",
+	"license": "MIT",
+	"link": "https://huggingface.co/api/models/BAAI/bge-base-en-v1.5",
+	"object": "model",
+	"organization": "BAAI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.008,
+		"output": 0.008
+	},
+	"running": false,
+	"type": "embedding"
 },
 {
 	"config":
@@ -1342,7 +1397,7 @@
 	"config":
 	{
 		"bos_token": "<｜begin▁of▁sentence｜>",
-		"chat_template": "{%- for message in messages -%}{%- if message.role == 'system' -%}{{- message.content -}}{%- endif -%}{%- if message.role == 'user' -%}{{- message.content -}}{%- endif -%}{%- if message.role == 'assistant' -%}{{- message.content -}}{%- endif -%}{%- if message.role == 'tool' -%}{{- message.content -}}{%- endif -%}{%- endfor -%}",
+		"chat_template": "{% if not add_generation_prompt is defined %}{% set add_generation_prompt = false %}{% endif %}{% set is_first = false %}{% set is_tool = false %}{% set is_output_first = true %}{% set system_prompt = ''%}{% set is_first_sp = true %}{% set is_last_user = false %}{%- for message in messages %}{%- if message['role'] == 'system' %}{%- if is_first_sp %}{% set system_prompt = system_prompt + message['content'] %}{% set is_first_sp = false %}{%- else %}{% set system_prompt = system_prompt + '\n\n' + message['content'] %}{%- endif %}{%- endif %}{%- endfor %}{{ bos_token }}{{ system_prompt }}{%- for message in messages %}{% set content = message['content'] %}{%- if message['role'] == 'user' %}{%- set is_tool = false -%}{%- set is_first = false -%}{%- set is_last_user = true -%}{{'<｜User｜>' + content + '<｜Assistant｜>'}}{%- endif %}{%- if message['role'] == 'assistant' %}{% if '</think>' in content %}{% set content = content.split('</think>')[-1] %}{% endif %}{% endif %}{%- if message['role'] == 'assistant' and message['tool_calls'] is defined and message['tool_calls'] is not none %}{%- set is_last_user = false -%}{%- if is_tool %}{{'<｜tool▁outputs▁end｜>'}}{%- endif %}{%- set is_first = false %}{%- set is_tool = false -%}{%- set is_output_first = true %}{%- for tool in message['tool_calls'] %}{%- if not is_first %}{%- if content is none %}{{'<｜tool▁calls▁begin｜><｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\n' + '```json' + '\n' + tool['function']['arguments'] + '\n' + '```' + '<｜tool▁call▁end｜>'}}{%- else %}{{content + '<｜tool▁calls▁begin｜><｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\n' + '```json' + '\n' + tool['function']['arguments'] + '\n' + '```' + '<｜tool▁call▁end｜>'}}{%- endif %}{%- set is_first = true -%}{%- else %}{{'\n' + '<｜tool▁call▁begin｜>' + tool['type'] + '<｜tool▁sep｜>' + tool['function']['name'] + '\n' + '```json' + '\n' + tool['function']['arguments'] + '\n' + '```' + '<｜tool▁call▁end｜>'}}{%- endif %}{%- endfor %}{{'<｜tool▁calls▁end｜><｜end▁of▁sentence｜>'}}{%- endif %}{%- if message['role'] == 'assistant' and (message['tool_calls'] is not defined or message['tool_calls'] is none)%}{%- set is_last_user = false -%}{%- if is_tool %}{{'<｜tool▁outputs▁end｜>' + content + '<｜end▁of▁sentence｜>'}}{%- set is_tool = false -%}{%- else %}{{content + '<｜end▁of▁sentence｜>'}}{%- endif %}{%- endif %}{%- if message['role'] == 'tool' %}{%- set is_last_user = false -%}{%- set is_tool = true -%}{%- if is_output_first %}{{'<｜tool▁outputs▁begin｜><｜tool▁output▁begin｜>' + content + '<｜tool▁output▁end｜>'}}{%- set is_output_first = false %}{%- else %}{{'\n<｜tool▁output▁begin｜>' + content + '<｜tool▁output▁end｜>'}}{%- endif %}{%- endif %}{%- endfor -%}{% if is_tool %}{{'<｜tool▁outputs▁end｜>'}}{% endif %}{% if add_generation_prompt and not is_last_user and not is_tool %}{{'<｜Assistant｜>'}}{% endif %}",
 		"eos_token": "<｜end▁of▁sentence｜>",
 		"max_output_length": 12288,
 		"stop": ["<｜end▁of▁sentence｜>"]
@@ -1627,17 +1682,17 @@
 {
 	"config":
 	{
-		"bos_token": null,
+		"bos_token": "<|endoftext|>",
 		"chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- messages[0]['content'] }}\n    {%- else %}\n        {{- 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' }}\n    {%- endif %}\n    {{- \"\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0]['content'] + '<|im_end|>\\n' }}\n    {%- else %}\n        {{- '<|im_start|>system\\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) or (message.role == \"assistant\" and not message.tool_calls) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role }}\n        {%- if message.content %}\n            {{- '\\n' + message.content }}\n        {%- endif %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n                {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- '\\n<tool_call>\\n{\"name\": \"' }}\n            {{- tool_call.name }}\n            {{- '\", \"arguments\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- '}\\n</tool_call>' }}\n        {%- endfor %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
 		"eos_token": "<|im_end|>",
 		"stop": ["<|im_end|>"]
 	},
-	"context_length": 32768,
+	"context_length": 16384,
 	"created": 1731556615,
-	"display_name": "Qwen2.5 Coder 32B Instruct",
+	"display_name": "Qwen 2.5 Coder 32B Instruct",
 	"id": "Qwen/Qwen2.5-Coder-32B-Instruct",
-	"license": "apache-2.0",
-	"link": "https://huggingface.co/api/models/Qwen/Qwen2.5-Coder-32B-Instruct",
+	"license": "Qwen",
+	"link": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
 	"object": "model",
 	"organization": "Qwen",
 	"pricing":
@@ -1713,10 +1768,10 @@
 		"eos_token": "<|im_end|>",
 		"stop": ["<|im_end|>"]
 	},
-	"context_length": 131072,
-	"created": 1728633510,
-	"display_name": "Qwen2.5 72B Instruct Turbo",
-	"id": "Qwen/Qwen2.5-72B-Instruct-Turbo",
+	"context_length": 32768,
+	"created": 1733523968,
+	"display_name": "Qwen2.5 72B Instruct",
+	"id": "Qwen/Qwen2.5-72B-Instruct",
 	"license": "Qwen",
 	"link": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
 	"object": "model",
@@ -2065,8 +2120,8 @@
 	},
 	"context_length": 8192,
 	"created": 1713420479,
-	"display_name": "Meta Llama 3 8B Instruct Reference",
-	"id": "meta-llama/Llama-3-8b-chat-hf",
+	"display_name": "Meta Llama 3 8B Instruct",
+	"id": "meta-llama/Meta-Llama-3-8B-Instruct",
 	"license": "Llama-3 (Other)",
 	"link": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
 	"object": "model",

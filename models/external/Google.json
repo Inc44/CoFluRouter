@@ -301,7 +301,17 @@
 		"owned_by": "google"
 	},
 	{
+		"id": "models/veo-3.0-fast-generate-001",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"id": "models/veo-3.0-fast-generate-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"id": "models/veo-3.0-generate-001",
 		"object": "model",
 		"owned_by": "google"
 	},

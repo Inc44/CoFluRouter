@@ -22,6 +22,150 @@
 	},
 	{
 		"created": 0,
+		"id": "BAAI/bge-base-en-v1.5",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "BAAI/bge-base-en-v1.5"
+	},
+	{
+		"created": 0,
+		"id": "BAAI/bge-en-icl",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "BAAI/bge-en-icl"
+	},
+	{
+		"created": 0,
+		"id": "BAAI/bge-large-en-v1.5",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "BAAI/bge-large-en-v1.5"
+	},
+	{
+		"created": 0,
+		"id": "BAAI/bge-m3",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "BAAI/bge-m3"
+	},
+	{
+		"created": 0,
+		"id": "BAAI/bge-m3-multi",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "BAAI/bge-m3-multi"
+	},
+	{
+		"created": 0,
+		"id": "Bria/Bria-3.2",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/Bria-3.2"
+	},
+	{
+		"created": 0,
+		"id": "Bria/Bria-3.2-vector",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/Bria-3.2-vector"
+	},
+	{
+		"created": 0,
+		"id": "Bria/blur_background",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/blur_background"
+	},
+	{
+		"created": 0,
+		"id": "Bria/enhance",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/enhance"
+	},
+	{
+		"created": 0,
+		"id": "Bria/erase",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/erase"
+	},
+	{
+		"created": 0,
+		"id": "Bria/erase_foreground",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/erase_foreground"
+	},
+	{
+		"created": 0,
+		"id": "Bria/expand",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/expand"
+	},
+	{
+		"created": 0,
+		"id": "Bria/gen_fill",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/gen_fill"
+	},
+	{
+		"created": 0,
+		"id": "Bria/remove_background",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/remove_background"
+	},
+	{
+		"created": 0,
+		"id": "Bria/replace_background",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/replace_background"
+	},
+	{
+		"created": 0,
+		"id": "CompVis/stable-diffusion-v1-4",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "CompVis/stable-diffusion-v1-4"
+	},
+	{
+		"created": 0,
 		"id": "Gryphe/MythoMax-L2-13b",
 		"metadata":
 		{
@@ -190,8 +334,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.075,
-				"output_tokens": 0.15
+				"input_tokens": 0.15,
+				"output_tokens": 0.4
 			},
 			"tags": []
 		},
@@ -219,6 +363,15 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/QwQ-32B-Preview"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen-Image-Edit",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen-Image-Edit"
 	},
 	{
 		"created": 0,
@@ -510,7 +663,7 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.15,
+				"cache_read_tokens": 0.24,
 				"input_tokens": 0.3,
 				"output_tokens": 1.2
 			},
@@ -520,6 +673,33 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-Embedding-0.6B",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Embedding-0.6B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-Embedding-4B",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Embedding-4B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-Embedding-8B",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Embedding-8B"
 	},
 	{
 		"created": 0,
@@ -623,6 +803,15 @@
 	},
 	{
 		"created": 0,
+		"id": "XpucT/Deliberate",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "XpucT/Deliberate"
+	},
+	{
+		"created": 0,
 		"id": "allenai/olmOCR-7B-0725-FP8",
 		"metadata":
 		{
@@ -721,6 +910,60 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "bigcode/starcoder2-15b-instruct-v0.1"
+	},
+	{
+		"created": 0,
+		"id": "black-forest-labs/FLUX-1-Redux-dev",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX-1-Redux-dev"
+	},
+	{
+		"created": 0,
+		"id": "black-forest-labs/FLUX-1-dev",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX-1-dev"
+	},
+	{
+		"created": 0,
+		"id": "black-forest-labs/FLUX-1-schnell",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX-1-schnell"
+	},
+	{
+		"created": 0,
+		"id": "black-forest-labs/FLUX-1.1-pro",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX-1.1-pro"
+	},
+	{
+		"created": 0,
+		"id": "black-forest-labs/FLUX-pro",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX-pro"
+	},
+	{
+		"created": 0,
+		"id": "black-forest-labs/FLUX.1-Kontext-dev",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX.1-Kontext-dev"
 	},
 	{
 		"created": 0,
@@ -832,10 +1075,11 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
+				"cache_read_tokens": 0.4,
 				"input_tokens": 0.5,
 				"output_tokens": 2.15
 			},
-			"tags": []
+			"tags": ["prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -907,9 +1151,9 @@
 		"id": "deepseek-ai/DeepSeek-R1-Turbo",
 		"metadata":
 		{
-			"context_length": 163840,
+			"context_length": 40960,
 			"description": "We introduce DeepSeek-R1, which incorporates cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks. ",
-			"max_tokens": 163840,
+			"max_tokens": 40960,
 			"pricing":
 			{
 				"input_tokens": 1.0,
@@ -952,10 +1196,11 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
+				"cache_read_tokens": 0.22400000000000003,
 				"input_tokens": 0.28,
 				"output_tokens": 0.8799999999999999
 			},
-			"tags": []
+			"tags": ["prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -992,15 +1237,34 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"input_tokens": 0.3,
+				"cache_read_tokens": 0.21600000000000003,
+				"input_tokens": 0.27,
 				"output_tokens": 1.0
 			},
-			"tags": ["reasoning_effort"]
+			"tags": ["prompt_cache", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "deepseek-ai/DeepSeek-V3.1"
+	},
+	{
+		"created": 0,
+		"id": "deepseek-ai/Janus-Pro-1B",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/Janus-Pro-1B"
+	},
+	{
+		"created": 0,
+		"id": "deepseek-ai/Janus-Pro-7B",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/Janus-Pro-7B"
 	},
 	{
 		"created": 0,
@@ -1215,7 +1479,7 @@
 				"input_tokens": 0.09,
 				"output_tokens": 0.16999999999999998
 			},
-			"tags": ["vision"]
+			"tags": []
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1232,8 +1496,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.02,
-				"output_tokens": 0.04
+				"input_tokens": 0.04,
+				"output_tokens": 0.08
 			},
 			"tags": ["vision"]
 		},
@@ -1241,6 +1505,42 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "google/gemma-3-4b-it"
+	},
+	{
+		"created": 0,
+		"id": "intfloat/e5-base-v2",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "intfloat/e5-base-v2"
+	},
+	{
+		"created": 0,
+		"id": "intfloat/e5-large-v2",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "intfloat/e5-large-v2"
+	},
+	{
+		"created": 0,
+		"id": "intfloat/multilingual-e5-large",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "intfloat/multilingual-e5-large"
+	},
+	{
+		"created": 0,
+		"id": "intfloat/multilingual-e5-large-instruct",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "intfloat/multilingual-e5-large-instruct"
 	},
 	{
 		"created": 0,
@@ -2044,6 +2344,27 @@
 	},
 	{
 		"created": 0,
+		"id": "moonshotai/Kimi-K2-Instruct-0905",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Kimi K2 0905 is the September update of Kimi K2 0711. It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It supports long-context inference up to 256k tokens, extended from the previous 128k.  This update improves agentic coding with higher accuracy and better generalization across scaffolds, and enhances frontend coding with more aesthetic and functional outputs for web, 3D, and related tasks. Kimi K2 is optimized for agentic capabilities, including advanced tool use, reasoning, and code synthesis. It excels across coding (LiveCodeBench, SWE-bench), reasoning (ZebraLogic, GPQA), and tool-use (Tau2, AceBench) benchmarks. The model is trained with a novel stack incorporating the MuonClip optimizer for stable large-scale MoE training.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.4,
+				"input_tokens": 0.5,
+				"output_tokens": 2.0
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "moonshotai/Kimi-K2-Instruct-0905"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
 		"metadata":
 		{
@@ -2061,6 +2382,46 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "nvidia/Llama-3.1-Nemotron-70B-Instruct"
+	},
+	{
+		"created": 0,
+		"id": "nvidia/Llama-3.3-Nemotron-Super-49B-v1.5",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "Llama-3.3-Nemotron-Super-49B-v1.5 is a large language model (LLM) optimized for advanced reasoning, conversational interactions, retrieval-augmented generation (RAG), and tool-calling tasks. Derived from Meta's Llama-3.3-70B-Instruct, it employs a Neural Architecture Search (NAS) approach, significantly enhancing efficiency and reducing memory requirements. ",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.1,
+				"output_tokens": 0.4
+			},
+			"tags": []
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/Llama-3.3-Nemotron-Super-49B-v1.5"
+	},
+	{
+		"created": 0,
+		"id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response.  The model's reasoning capabilities can be controlled via a system prompt. If the user prefers the model to provide its final answer without intermediate reasoning traces, it can be configured to do so.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.04,
+				"output_tokens": 0.16
+			},
+			"tags": []
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/NVIDIA-Nemotron-Nano-9B-v2"
 	},
 	{
 		"created": 0,
@@ -2181,6 +2542,159 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "openchat/openchat_3.5"
+	},
+	{
+		"created": 0,
+		"id": "run-diffusion/Juggernaut-Flux",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "run-diffusion/Juggernaut-Flux"
+	},
+	{
+		"created": 0,
+		"id": "run-diffusion/Juggernaut-Lightning-Flux",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "run-diffusion/Juggernaut-Lightning-Flux"
+	},
+	{
+		"created": 0,
+		"id": "runwayml/stable-diffusion-v1-5",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "runwayml/stable-diffusion-v1-5"
+	},
+	{
+		"created": 0,
+		"id": "sentence-transformers/all-MiniLM-L12-v2",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "sentence-transformers/all-MiniLM-L12-v2"
+	},
+	{
+		"created": 0,
+		"id": "sentence-transformers/all-MiniLM-L6-v2",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "sentence-transformers/all-MiniLM-L6-v2"
+	},
+	{
+		"created": 0,
+		"id": "sentence-transformers/all-mpnet-base-v2",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "sentence-transformers/all-mpnet-base-v2"
+	},
+	{
+		"created": 0,
+		"id": "sentence-transformers/clip-ViT-B-32",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "sentence-transformers/clip-ViT-B-32"
+	},
+	{
+		"created": 0,
+		"id": "sentence-transformers/clip-ViT-B-32-multilingual-v1",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "sentence-transformers/clip-ViT-B-32-multilingual-v1"
+	},
+	{
+		"created": 0,
+		"id": "sentence-transformers/multi-qa-mpnet-base-dot-v1",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "sentence-transformers/multi-qa-mpnet-base-dot-v1"
+	},
+	{
+		"created": 0,
+		"id": "sentence-transformers/paraphrase-MiniLM-L6-v2",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "sentence-transformers/paraphrase-MiniLM-L6-v2"
+	},
+	{
+		"created": 0,
+		"id": "shibing624/text2vec-base-chinese",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "shibing624/text2vec-base-chinese"
+	},
+	{
+		"created": 0,
+		"id": "stabilityai/sd3.5",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "stabilityai/sd3.5"
+	},
+	{
+		"created": 0,
+		"id": "stabilityai/sd3.5-medium",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "stabilityai/sd3.5-medium"
+	},
+	{
+		"created": 0,
+		"id": "stabilityai/sdxl-turbo",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "stabilityai/sdxl-turbo"
+	},
+	{
+		"created": 0,
+		"id": "stabilityai/stable-diffusion-2-1",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "stabilityai/stable-diffusion-2-1"
+	},
+	{
+		"created": 0,
+		"id": "thenlper/gte-base",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "thenlper/gte-base"
+	},
+	{
+		"created": 0,
+		"id": "thenlper/gte-large",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "thenlper/gte-large"
 	},
 	{
 		"created": 0,

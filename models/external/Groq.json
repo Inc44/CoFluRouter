@@ -2,6 +2,36 @@
 	"data": [
 	{
 		"active": true,
+		"context_window": 262144,
+		"created": 1757046093,
+		"id": "moonshotai/kimi-k2-instruct-0905",
+		"max_completion_tokens": 16384,
+		"object": "model",
+		"owned_by": "Moonshot AI",
+		"public_apps": null
+	},
+	{
+		"active": true,
+		"context_window": 131072,
+		"created": 1756949707,
+		"id": "groq/compound-mini",
+		"max_completion_tokens": 8192,
+		"object": "model",
+		"owned_by": "Groq",
+		"public_apps": null
+	},
+	{
+		"active": true,
+		"context_window": 131072,
+		"created": 1756949530,
+		"id": "groq/compound",
+		"max_completion_tokens": 8192,
+		"object": "model",
+		"owned_by": "Groq",
+		"public_apps": null
+	},
+	{
+		"active": true,
 		"context_window": 131072,
 		"created": 1754408224,
 		"id": "openai/gpt-oss-120b",

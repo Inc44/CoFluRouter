@@ -154,6 +154,20 @@
 		},
 		"sn_metadata":
 		{}
+	},
+	{
+		"context_length": 131072,
+		"id": "gpt-oss-120b",
+		"max_completion_tokens": 16384,
+		"object": "model",
+		"owned_by": "no-reply@sambanova.ai",
+		"pricing":
+		{
+			"completion": "0.00000059",
+			"prompt": "0.00000022"
+		},
+		"sn_metadata":
+		{}
 	}],
 	"object": "list"
 }
