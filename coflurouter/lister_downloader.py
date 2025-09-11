@@ -34,15 +34,19 @@ def redact_entry(obj, entry, prefix):
 	return obj
 
 
-def sort_by_key(obj, key, reverse=False):
+def sort_by_keys(obj, keys, reverse=False):
 	if isinstance(obj, dict) and isinstance(obj.get("data"), list):
 		obj["data"].sort(
-			key=lambda value: value.get(key, "") if isinstance(value, dict) else "",
+			key=lambda value: tuple(
+				value.get(key, "") if isinstance(value, dict) else "" for key in keys
+			),
 			reverse=reverse,
 		)
 	elif isinstance(obj, list):
 		obj.sort(
-			key=lambda value: value.get(key, "") if isinstance(value, dict) else "",
+			key=lambda value: tuple(
+				value.get(key, "") if isinstance(value, dict) else "" for key in keys
+			),
 			reverse=reverse,
 		)
 
@@ -82,12 +86,12 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		"Hyperbolic",
 		"Lambda",
 	]:  # Sort random order models
-		sort_by_key(obj, "id")
+		sort_by_keys(obj, ["id"])
 	# Sort by latest models
 	if name == "Anthropic":
-		sort_by_key(obj, "created_at", reverse=True)
+		sort_by_keys(obj, ["created_at", "name"], reverse=True)
 	else:
-		sort_by_key(obj, "created", reverse=True)
+		sort_by_keys(obj, ["created", "name"], reverse=True)
 	opts = {
 		"brace_style": "expand",
 		"break_chained_methods": True,
