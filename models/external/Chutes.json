@@ -2,6 +2,32 @@
 	"data": [
 	{
 		"created": 0,
+		"id": "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B"
+	},
+	{
+		"created": 0,
 		"id": "ArliAI/QwQ-32B-ArliAI-RpR-v1",
 		"max_model_len": 32768,
 		"object": "model",
@@ -83,7 +109,9 @@
 		"id": "NousResearch/DeepHermes-3-Llama-3-8B-Preview",
 		"max_model_len": 131072,
 		"object": "model",
-		"owned_by": "sglang",
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
 		"price":
 		{
 			"input":
@@ -207,6 +235,32 @@
 			"prompt": 0
 		},
 		"root": "NousResearch/Hermes-4-70B"
+	},
+	{
+		"created": 0,
+		"id": "OpenGVLab/InternVL3-78B",
+		"max_model_len": 32768,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "OpenGVLab/InternVL3-78B"
 	},
 	{
 		"created": 0,
@@ -759,9 +813,7 @@
 		"id": "TheDrummer/Gemmasutra-Pro-27B-v1.1",
 		"max_model_len": 8192,
 		"object": "model",
-		"owned_by": "vllm",
-		"parent": null,
-		"permission": [],
+		"owned_by": "sglang",
 		"price":
 		{
 			"input":
@@ -1228,6 +1280,32 @@
 	},
 	{
 		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V3-0324-turbo",
+		"max_model_len": 163840,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "deepseek-ai/DeepSeek-V3-0324-turbo"
+	},
+	{
+		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3-Base",
 		"max_model_len": 163840,
 		"object": "model",
@@ -1303,6 +1381,32 @@
 			"prompt": 0
 		},
 		"root": "deepseek-ai/DeepSeek-V3.1-Base"
+	},
+	{
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V3.1-turbo",
+		"max_model_len": 163840,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "deepseek-ai/DeepSeek-V3.1-turbo"
 	},
 	{
 		"created": 0,
@@ -2012,6 +2116,60 @@
 			"prompt": 0
 		},
 		"root": "zai-org/GLM-4.5-FP8"
+	},
+	{
+		"created": 0,
+		"id": "zai-org/GLM-4.5-turbo",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "zai-org/GLM-4.5-turbo"
+	},
+	{
+		"created": 0,
+		"id": "zai-org/GLM-4.5V",
+		"max_model_len": 65536,
+		"object": "model",
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "zai-org/GLM-4.5V"
 	},
 	{
 		"created": 0,

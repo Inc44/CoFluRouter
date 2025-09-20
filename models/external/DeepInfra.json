@@ -174,8 +174,8 @@
 			"max_tokens": 4096,
 			"pricing":
 			{
-				"input_tokens": 0.072,
-				"output_tokens": 0.072
+				"input_tokens": 0.08,
+				"output_tokens": 0.09
 			},
 			"tags": []
 		},
@@ -234,8 +234,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.7,
-				"output_tokens": 0.8
+				"input_tokens": 1.0,
+				"output_tokens": 1.0
 			},
 			"tags": []
 		},
@@ -254,8 +254,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.1,
-				"output_tokens": 0.28
+				"input_tokens": 0.3,
+				"output_tokens": 0.3
 			},
 			"tags": []
 		},
@@ -543,8 +543,8 @@
 			"max_tokens": 40960,
 			"pricing":
 			{
-				"input_tokens": 0.13,
-				"output_tokens": 0.6
+				"input_tokens": 0.18,
+				"output_tokens": 0.54
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -583,8 +583,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.13,
-				"output_tokens": 0.6
+				"input_tokens": 0.3,
+				"output_tokens": 2.9000000000000004
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -624,7 +624,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.1,
-				"output_tokens": 0.3
+				"output_tokens": 0.28
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -663,11 +663,10 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.24,
-				"input_tokens": 0.3,
+				"input_tokens": 0.29,
 				"output_tokens": 1.2
 			},
-			"tags": ["prompt_cache"]
+			"tags": []
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -700,6 +699,46 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3-Embedding-8B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Over the past few months, we have observed increasingly clear trends toward scaling both total parameters and context lengths in the pursuit of more powerful and agentic artificial intelligence (AI). We are excited to share our latest advancements in addressing these demands, centered on improving scaling efficiency through innovative model architecture. We call this next-generation foundation models Qwen3-Next.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.14,
+				"output_tokens": 1.4
+			},
+			"tags": ["reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Next-80B-A3B-Instruct"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Over the past few months, we have observed increasingly clear trends toward scaling both total parameters and context lengths in the pursuit of more powerful and agentic artificial intelligence (AI). We are excited to share our latest advancements in addressing these demands, centered on improving scaling efficiency through innovative model architecture. We call this next-generation foundation models Qwen3-Next.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.14,
+				"output_tokens": 1.4
+			},
+			"tags": ["reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Next-80B-A3B-Thinking"
 	},
 	{
 		"created": 0,
@@ -751,7 +790,7 @@
 			"max_tokens": 8192,
 			"pricing":
 			{
-				"input_tokens": 0.02,
+				"input_tokens": 0.04,
 				"output_tokens": 0.05
 			},
 			"tags": []
@@ -1116,8 +1155,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.1,
-				"output_tokens": 0.4
+				"input_tokens": 0.2,
+				"output_tokens": 0.6
 			},
 			"tags": []
 		},
@@ -1136,8 +1175,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.075,
-				"output_tokens": 0.15
+				"input_tokens": 0.27,
+				"output_tokens": 0.27
 			},
 			"tags": []
 		},
@@ -1196,11 +1235,10 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.22400000000000003,
-				"input_tokens": 0.28,
+				"input_tokens": 0.27,
 				"output_tokens": 0.8799999999999999
 			},
-			"tags": ["prompt_cache"]
+			"tags": []
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1285,6 +1323,15 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "google/codegemma-7b-it"
+	},
+	{
+		"created": 0,
+		"id": "google/embeddinggemma-300m",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/embeddinggemma-300m"
 	},
 	{
 		"created": 0,
@@ -1477,9 +1524,9 @@
 			"pricing":
 			{
 				"input_tokens": 0.09,
-				"output_tokens": 0.16999999999999998
+				"output_tokens": 0.16
 			},
-			"tags": []
+			"tags": ["vision"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1672,8 +1719,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.012,
-				"output_tokens": 0.024
+				"input_tokens": 0.02,
+				"output_tokens": 0.02
 			},
 			"tags": []
 		},
@@ -1732,8 +1779,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.038000000000000006,
-				"output_tokens": 0.12000000000000001
+				"input_tokens": 0.13,
+				"output_tokens": 0.38999999999999996
 			},
 			"tags": []
 		},
@@ -1912,7 +1959,7 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.22999999999999998,
+				"input_tokens": 0.4,
 				"output_tokens": 0.4
 			},
 			"tags": []
@@ -1972,8 +2019,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.015000000000000001,
-				"output_tokens": 0.02
+				"input_tokens": 0.02,
+				"output_tokens": 0.030000000000000002
 			},
 			"tags": []
 		},
@@ -2272,8 +2319,8 @@
 			"max_tokens": 128000,
 			"pricing":
 			{
-				"input_tokens": 0.05,
-				"output_tokens": 0.1
+				"input_tokens": 0.075,
+				"output_tokens": 0.2
 			},
 			"tags": ["vision"]
 		},
@@ -2312,8 +2359,8 @@
 			"max_tokens": 32768,
 			"pricing":
 			{
-				"input_tokens": 0.08,
-				"output_tokens": 0.24000000000000002
+				"input_tokens": 0.4,
+				"output_tokens": 0.4
 			},
 			"tags": []
 		},
@@ -2373,8 +2420,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.12000000000000001,
-				"output_tokens": 0.3
+				"input_tokens": 0.6,
+				"output_tokens": 0.6
 			},
 			"tags": []
 		},
@@ -2706,8 +2753,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.55,
-				"output_tokens": 2.0
+				"input_tokens": 0.4,
+				"output_tokens": 1.6
 			},
 			"tags": []
 		},

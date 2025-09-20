@@ -89,6 +89,17 @@
 		"supports_tools": false
 	},
 	{
+		"context_length": 40960,
+		"created": 0,
+		"id": "Qwen/Qwen3-235B-A22B",
+		"number_of_inference_nodes": null,
+		"object": "model",
+		"owned_by": "Hyperbolic",
+		"supports_chat": true,
+		"supports_image_input": false,
+		"supports_tools": false
+	},
+	{
 		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8",
@@ -111,6 +122,28 @@
 		"supports_tools": false
 	},
 	{
+		"context_length": 262144,
+		"created": 0,
+		"id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+		"number_of_inference_nodes": null,
+		"object": "model",
+		"owned_by": "Hyperbolic",
+		"supports_chat": true,
+		"supports_image_input": false,
+		"supports_tools": false
+	},
+	{
+		"context_length": 262144,
+		"created": 0,
+		"id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+		"number_of_inference_nodes": null,
+		"object": "model",
+		"owned_by": "Hyperbolic",
+		"supports_chat": true,
+		"supports_image_input": false,
+		"supports_tools": false
+	},
+	{
 		"context_length": null,
 		"created": 0,
 		"id": "SDXL1.0-base",
@@ -119,6 +152,17 @@
 		"owned_by": "Hyperbolic",
 		"supports_chat": false,
 		"supports_image_input": false,
+		"supports_tools": false
+	},
+	{
+		"context_length": null,
+		"created": 0,
+		"id": "StableDiffusion",
+		"number_of_inference_nodes": null,
+		"object": "model",
+		"owned_by": "Hyperbolic",
+		"supports_chat": false,
+		"supports_image_input": true,
 		"supports_tools": false
 	},
 	{
@@ -136,6 +180,17 @@
 		"context_length": 163840,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1",
+		"number_of_inference_nodes": null,
+		"object": "model",
+		"owned_by": "Hyperbolic",
+		"supports_chat": true,
+		"supports_image_input": false,
+		"supports_tools": false
+	},
+	{
+		"context_length": 163840,
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-R1-0528",
 		"number_of_inference_nodes": null,
 		"object": "model",
 		"owned_by": "Hyperbolic",
@@ -262,6 +317,39 @@
 		"owned_by": "Hyperbolic",
 		"supports_chat": true,
 		"supports_image_input": true,
+		"supports_tools": false
+	},
+	{
+		"context_length": 131072,
+		"created": 0,
+		"id": "openai/gpt-oss-120b",
+		"number_of_inference_nodes": null,
+		"object": "model",
+		"owned_by": "Hyperbolic",
+		"supports_chat": true,
+		"supports_image_input": false,
+		"supports_tools": false
+	},
+	{
+		"context_length": 131072,
+		"created": 0,
+		"id": "openai/gpt-oss-120b-turbo",
+		"number_of_inference_nodes": null,
+		"object": "model",
+		"owned_by": "Hyperbolic",
+		"supports_chat": true,
+		"supports_image_input": false,
+		"supports_tools": false
+	},
+	{
+		"context_length": 131072,
+		"created": 0,
+		"id": "openai/gpt-oss-20b",
+		"number_of_inference_nodes": null,
+		"object": "model",
+		"owned_by": "Hyperbolic",
+		"supports_chat": true,
+		"supports_image_input": false,
 		"supports_tools": false
 	}],
 	"object": "list"

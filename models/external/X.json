@@ -1,6 +1,18 @@
 {
 	"data": [
 	{
+		"created": 1756944000,
+		"id": "grok-4-fast-non-reasoning",
+		"object": "model",
+		"owned_by": "xai"
+	},
+	{
+		"created": 1756944000,
+		"id": "grok-4-fast-reasoning",
+		"object": "model",
+		"owned_by": "xai"
+	},
+	{
 		"created": 1755993600,
 		"id": "grok-code-fast-1",
 		"object": "model",

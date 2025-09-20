@@ -2,18 +2,72 @@
 {
 	"config":
 	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": "<|im_end|>",
+		"stop": ["<|im_end|>"]
+	},
+	"context_length": 262144,
+	"created": 1757604143,
+	"display_name": "Qwen3 Next 80B A3b Thinking",
+	"id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+	"license": "apache-2.0",
+	"link": "https://huggingface.co/api/models/Qwen/Qwen3-Next-80B-A3B-Thinking",
+	"object": "model",
+	"organization": "Qwen",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.15,
+		"output": 1.5
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": "<|im_end|>",
+		"stop": ["<|im_end|>"]
+	},
+	"context_length": 262144,
+	"created": 1757604120,
+	"display_name": "Qwen3 Next 80B A3b Instruct",
+	"id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+	"license": "apache-2.0",
+	"link": "https://huggingface.co/api/models/Qwen/Qwen3-Next-80B-A3B-Instruct",
+	"object": "model",
+	"organization": "Qwen",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.15,
+		"output": 1.5
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": "[BOS]",
 		"chat_template": null,
 		"eos_token": "[EOS]",
 		"max_output_length": 16384,
 		"stop": ["[EOS]"]
 	},
-	"context_length": 0,
+	"context_length": 262144,
 	"created": 1757037421,
-	"display_name": "Kimi K2 Instruct 0905",
+	"display_name": "Kimi K2-Instruct 0905",
 	"id": "moonshotai/Kimi-K2-Instruct-0905",
 	"license": "other modified-mit",
-	"link": "https://huggingface.co/api/models/moonshotai/Kimi-K2-Instruct-0905",
+	"link": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905",
 	"object": "model",
 	"organization": "Moonshotai",
 	"pricing":
@@ -40,9 +94,9 @@
 	"display_name": "Deepseek V3.1",
 	"id": "deepseek-ai/DeepSeek-V3.1",
 	"license": "mit",
-	"link": "https://huggingface.co/api/models/togethercomputer/DeepSeek-V3.1",
+	"link": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
 	"object": "model",
-	"organization": "Togethercomputer",
+	"organization": "DeepSeek",
 	"pricing":
 	{
 		"base": 0,
@@ -243,10 +297,37 @@
 {
 	"config":
 	{
-		"bos_token": "<|begin_of_text|>",
+		"bos_token": "<|endoftext|>",
 		"chat_template": null,
-		"eos_token": "<|im_end|>",
-		"stop": ["<|im_end|>"]
+		"eos_token": "<|endoftext|>",
+		"stop": ["<|endoftext|>"]
+	},
+	"context_length": 131072,
+	"created": 1753840897,
+	"display_name": "Glm 4.5 Air Fp8",
+	"id": "zai-org/GLM-4.5-Air-FP8",
+	"license": "mit",
+	"link": "https://huggingface.co/api/models/zai-org/GLM-4.5-Air-FP8",
+	"object": "model",
+	"organization": "Zai Org",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.2,
+		"output": 1.1
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "<｜begin▁of▁sentence｜>",
+		"chat_template": null,
+		"eos_token": "<｜end▁of▁sentence｜>",
+		"stop": ["<｜end▁of▁sentence｜>"]
 	},
 	"context_length": 65536,
 	"created": 1753745648,
@@ -255,6 +336,32 @@
 	"link": "https://huggingface.co/api/models/togethercomputer/afm-rl-fuse-1-polished-step-250",
 	"object": "model",
 	"organization": "Togethercomputer",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.1,
+		"output": 0.4
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "<｜begin▁of▁sentence｜>",
+		"chat_template": null,
+		"eos_token": "<｜end▁of▁sentence｜>",
+		"stop": ["<｜end▁of▁sentence｜>"]
+	},
+	"context_length": 65536,
+	"created": 1753745648,
+	"display_name": "Arcee AI AFM 4.5B",
+	"id": "arcee-ai/AFM-4.5B",
+	"link": "https://huggingface.co/arcee-ai/AFM-4.5B",
+	"object": "model",
+	"organization": "Arcee AI",
 	"pricing":
 	{
 		"base": 0,
@@ -2035,6 +2142,32 @@
 	},
 	"running": false,
 	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "<s>",
+		"chat_template": null,
+		"eos_token": "</s>",
+		"stop": ["</s>"]
+	},
+	"context_length": 4096,
+	"created": 1689720415,
+	"display_name": "LLaMA-2 (70B)",
+	"id": "meta-llama/Llama-2-70b-hf",
+	"license": "llama2",
+	"link": "https://huggingface.co/api/models/meta-llama/Llama-2-70b-hf",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.9,
+		"output": 0.9
+	},
+	"running": false,
+	"type": "language"
 },
 {
 	"config":
