@@ -563,7 +563,7 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.13,
+				"input_tokens": 0.09,
 				"output_tokens": 0.6
 			},
 			"tags": ["reasoning_effort"]
@@ -1288,6 +1288,27 @@
 	},
 	{
 		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+		"metadata":
+		{
+			"context_length": 163840,
+			"description": "DeepSeek-V3.1 Terminus is an update to DeepSeek V3.1 that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's performance in coding and search agents. It is a large hybrid reasoning model (671B parameters, 37B active) that supports both thinking and non-thinking modes. It extends the DeepSeek-V3 base with a two-phase long-context training process. Users can control the reasoning behaviour with the reasoning enabled boolean. Learn more in our docs  The model improves tool use, code generation, and reasoning efficiency, achieving performance comparable to DeepSeek-R1 on difficult benchmarks while responding more quickly. It supports structured tool calling, code agents, and search agents, making it suitable for research, coding, and agentic workflows.",
+			"max_tokens": 163840,
+			"pricing":
+			{
+				"cache_read_tokens": 0.21600000000000003,
+				"input_tokens": 0.27,
+				"output_tokens": 1.0
+			},
+			"tags": ["prompt_cache", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/DeepSeek-V3.1-Terminus"
+	},
+	{
+		"created": 0,
 		"id": "deepseek-ai/Janus-Pro-1B",
 		"metadata": null,
 		"object": "model",
@@ -1403,8 +1424,8 @@
 			"max_tokens": 1000000,
 			"pricing":
 			{
-				"input_tokens": 0.21,
-				"output_tokens": 1.75
+				"input_tokens": 0.3,
+				"output_tokens": 2.5
 			},
 			"tags": ["vision", "reasoning_effort"]
 		},
@@ -1423,8 +1444,8 @@
 			"max_tokens": 1000000,
 			"pricing":
 			{
-				"input_tokens": 0.875,
-				"output_tokens": 7.0
+				"input_tokens": 1.25,
+				"output_tokens": 10.0
 			},
 			"tags": ["vision", "reasoning_effort"]
 		},

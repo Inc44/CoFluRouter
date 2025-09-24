@@ -158,7 +158,7 @@
 	{
 		"context_length": 131072,
 		"id": "gpt-oss-120b",
-		"max_completion_tokens": 16384,
+		"max_completion_tokens": 131072,
 		"object": "model",
 		"owned_by": "no-reply@sambanova.ai",
 		"pricing":

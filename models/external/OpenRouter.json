@@ -7,6 +7,213 @@
 			"instruct_type": null,
 			"modality": "text+image->text",
 			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3-vl-235b-a22b-thinking",
+		"context_length": 131072,
+		"created": 1758668690,
+		"description": "Qwen3-VL-235B-A22B Thinking is a multimodal model that unifies strong text generation with visual understanding across images and video. The Thinking model is optimized for multimodal reasoning in STEM and math. The series emphasizes robust perception (recognition of diverse real-world and synthetic categories), spatial understanding (2D/3D grounding), and long-form visual comprehension, with competitive results on public multimodal benchmarks for both perception and reasoning.\n\nBeyond analysis, Qwen3-VL supports agentic interaction and tool use: it can follow complex instructions over multi-image, multi-turn dialogues; align text to video timelines for precise temporal queries; and operate GUI elements for automation tasks. The models also enable visual coding workflows, turning sketches or mockups into code and assisting with UI debugging, while maintaining strong text-only performance comparable to the flagship Qwen3 language models. This makes Qwen3-VL suitable for production scenarios spanning document AI, multilingual OCR, software/UI assistance, spatial/embodied tasks, and research on vision-language agents.",
+		"hugging_face_id": "Qwen/Qwen3-VL-235B-A22B-Thinking",
+		"id": "qwen/qwen3-vl-235b-a22b-thinking",
+		"name": "Qwen: Qwen3 VL 235B A22B Thinking",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000003",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": 32768
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3-vl-235b-a22b-instruct",
+		"context_length": 131072,
+		"created": 1758668687,
+		"description": "Qwen3-VL-235B-A22B Instruct is an open-weight multimodal model that unifies strong text generation with visual understanding across images and video. The Instruct model targets general vision-language use (VQA, document parsing, chart/table extraction, multilingual OCR). The series emphasizes robust perception (recognition of diverse real-world and synthetic categories), spatial understanding (2D/3D grounding), and long-form visual comprehension, with competitive results on public multimodal benchmarks for both perception and reasoning.\n\nBeyond analysis, Qwen3-VL supports agentic interaction and tool use: it can follow complex instructions over multi-image, multi-turn dialogues; align text to video timelines for precise temporal queries; and operate GUI elements for automation tasks. The models also enable visual coding workflows—turning sketches or mockups into code and assisting with UI debugging—while maintaining strong text-only performance comparable to the flagship Qwen3 language models. This makes Qwen3-VL suitable for production scenarios spanning document AI, multilingual OCR, software/UI assistance, spatial/embodied tasks, and research on vision-language agents.",
+		"hugging_face_id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+		"id": "qwen/qwen3-vl-235b-a22b-instruct",
+		"name": "Qwen: Qwen3 VL 235B A22B Instruct",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000015",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": 32768
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3-max",
+		"context_length": 256000,
+		"created": 1758662808,
+		"description": "Qwen3-Max is an updated release built on the Qwen3 series, offering major improvements in reasoning, instruction following, multilingual support, and long-tail knowledge coverage compared to the January 2025 version. It delivers higher accuracy in math, coding, logic, and science tasks, follows complex instructions in Chinese and English more reliably, reduces hallucinations, and produces higher-quality responses for open-ended Q&A, writing, and conversation. The model supports over 100 languages with stronger translation and commonsense reasoning, and is optimized for retrieval-augmented generation (RAG) and tool calling, though it does not include a dedicated “thinking” mode.",
+		"hugging_face_id": "",
+		"id": "qwen/qwen3-max",
+		"name": "Qwen: Qwen3 Max",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000006",
+			"image": "0",
+			"input_cache_read": "0.00000024",
+			"internal_reasoning": "0",
+			"prompt": "0.0000012",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 256000,
+			"is_moderated": false,
+			"max_completion_tokens": 32768
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3-coder-plus",
+		"context_length": 128000,
+		"created": 1758662707,
+		"description": "Qwen3 Coder Plus is Alibaba's proprietary version of the Open Source Qwen3 Coder 480B A35B. It is a powerful coding agent model specializing in autonomous programming via tool calling and environment interaction, combining coding proficiency with versatile general-purpose abilities.",
+		"hugging_face_id": "",
+		"id": "qwen/qwen3-coder-plus",
+		"name": "Qwen: Qwen3 Coder Plus",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000005",
+			"image": "0",
+			"input_cache_read": "0.0000001",
+			"internal_reasoning": "0",
+			"prompt": "0.000001",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5-codex",
+		"context_length": 400000,
+		"created": 1758643403,
+		"description": "GPT-5-Codex is a specialized version of GPT-5 optimized for software engineering and coding workflows. It is designed for both interactive development sessions and long, independent execution of complex engineering tasks. The model supports building projects from scratch, feature development, debugging, large-scale refactoring, and code review. Compared to GPT-5, Codex is more steerable, adheres closely to developer instructions, and produces cleaner, higher-quality code outputs. Reasoning effort can be adjusted with the `reasoning.effort` parameter. Read the [docs here](https://openrouter.ai/docs/use-cases/reasoning-tokens#reasoning-effort-level)\n\nCodex integrates into developer environments including the CLI, IDE extensions, GitHub, and cloud tasks. It adapts reasoning effort dynamically—providing fast responses for small tasks while sustaining extended multi-hour runs for large projects. The model is trained to perform structured code reviews, catching critical flaws by reasoning over dependencies and validating behavior against tests. It also supports multimodal inputs such as images or screenshots for UI development and integrates tool use for search, dependency installation, and environment setup. Codex is intended specifically for agentic coding applications.",
+		"hugging_face_id": "",
+		"id": "openai/gpt-5-codex",
+		"name": "OpenAI: GPT-5 Codex",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00001",
+			"image": "0",
+			"input_cache_read": "0.000000125",
+			"internal_reasoning": "0",
+			"prompt": "0.00000125",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools", "top_logprobs"],
+		"top_provider":
+		{
+			"context_length": 400000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": "deepseek-v3.1",
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "DeepSeek"
+		},
+		"canonical_slug": "deepseek/deepseek-v3.1-terminus",
+		"context_length": 131072,
+		"created": 1758548275,
+		"description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's performance in coding and search agents. It is a large hybrid reasoning model (671B parameters, 37B active) that supports both thinking and non-thinking modes. It extends the DeepSeek-V3 base with a two-phase long-context training process, reaching up to 128K tokens, and uses FP8 microscaling for efficient inference. Users can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)\n\nThe model improves tool use, code generation, and reasoning efficiency, achieving performance comparable to DeepSeek-R1 on difficult benchmarks while responding more quickly. It supports structured tool calling, code agents, and search agents, making it suitable for research, coding, and agentic workflows. ",
+		"hugging_face_id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+		"id": "deepseek/deepseek-v3.1-terminus",
+		"name": "DeepSeek: DeepSeek V3.1 Terminus",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000001",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000027",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
 			"tokenizer": "Grok"
 		},
 		"canonical_slug": "x-ai/grok-4-fast",
@@ -31,7 +238,7 @@
 		{
 			"context_length": 2000000,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 30000
 		}
 	},
 	{
@@ -96,41 +303,6 @@
 			"web_search": "0"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
-		"top_provider":
-		{
-			"context_length": 128000,
-			"is_moderated": false,
-			"max_completion_tokens": 65536
-		}
-	},
-	{
-		"architecture":
-		{
-			"input_modalities": ["text"],
-			"instruct_type": null,
-			"modality": "text->text",
-			"output_modalities": ["text"],
-			"tokenizer": "Qwen3"
-		},
-		"canonical_slug": "qwen/qwen3-coder-plus",
-		"context_length": 128000,
-		"created": 1758115194,
-		"description": "Qwen3 Coder Plus is Alibaba's proprietary version of the Open Source Qwen3 Coder 480B A35B. It is a powerful coding agent model specializing in autonomous programming via tool calling and environment interaction, combining coding proficiency with versatile general-purpose abilities.",
-		"hugging_face_id": "",
-		"id": "qwen/qwen3-coder-plus",
-		"name": "Qwen: Qwen3 Coder Plus",
-		"per_request_limits": null,
-		"pricing":
-		{
-			"completion": "0.000005",
-			"image": "0",
-			"input_cache_read": "0.0000001",
-			"internal_reasoning": "0",
-			"prompt": "0.000001",
-			"request": "0",
-			"web_search": "0"
-		},
-		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -519,41 +691,6 @@
 			"instruct_type": null,
 			"modality": "text->text",
 			"output_modalities": ["text"],
-			"tokenizer": "Qwen3"
-		},
-		"canonical_slug": "qwen/qwen3-max",
-		"context_length": 256000,
-		"created": 1757076567,
-		"description": "Qwen3-Max is an updated release built on the Qwen3 series, offering major improvements in reasoning, instruction following, multilingual support, and long-tail knowledge coverage compared to the January 2025 version. It delivers higher accuracy in math, coding, logic, and science tasks, follows complex instructions in Chinese and English more reliably, reduces hallucinations, and produces higher-quality responses for open-ended Q&A, writing, and conversation. The model supports over 100 languages with stronger translation and commonsense reasoning, and is optimized for retrieval-augmented generation (RAG) and tool calling, though it does not include a dedicated “thinking” mode.",
-		"hugging_face_id": "",
-		"id": "qwen/qwen3-max",
-		"name": "Qwen: Qwen3 Max",
-		"per_request_limits": null,
-		"pricing":
-		{
-			"completion": "0.000006",
-			"image": "0",
-			"input_cache_read": "0.00000024",
-			"internal_reasoning": "0",
-			"prompt": "0.0000012",
-			"request": "0",
-			"web_search": "0"
-		},
-		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
-		"top_provider":
-		{
-			"context_length": 256000,
-			"is_moderated": false,
-			"max_completion_tokens": 32768
-		}
-	},
-	{
-		"architecture":
-		{
-			"input_modalities": ["text"],
-			"instruct_type": null,
-			"modality": "text->text",
-			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "moonshotai/kimi-k2-0905",
@@ -866,10 +1003,10 @@
 		"canonical_slug": "google/gemini-2.5-flash-image-preview",
 		"context_length": 32768,
 		"created": 1756218977,
-		"description": "Gemini 2.5 Flash Image Preview, AKA Nano Banana is a state of the art image generation model with contextual understanding. It is capable of image generation, edits, and multi-turn conversations.",
+		"description": "Gemini 2.5 Flash Image Preview, a.k.a. \"Nano Banana,\" is a state of the art image generation model with contextual understanding. It is capable of image generation, edits, and multi-turn conversations.",
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-flash-image-preview",
-		"name": "Google: Gemini 2.5 Flash Image Preview",
+		"name": "Gemini 2.5 Flash Image (Nano Banana)",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -1970,10 +2107,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000001",
+			"completion": "0.0000006",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000001",
+			"prompt": "0.00000009",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1982,7 +2119,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -2045,11 +2182,11 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["max_tokens", "seed", "stop", "temperature"],
 		"top_provider":
 		{
 			"context_length": 32768,
-			"is_moderated": false,
+			"is_moderated": true,
 			"max_completion_tokens": null
 		}
 	},
@@ -2540,7 +2677,7 @@
 			"tokenizer": "Llama3"
 		},
 		"canonical_slug": "thedrummer/anubis-70b-v1.1",
-		"context_length": 16384,
+		"context_length": 4096,
 		"created": 1751208347,
 		"description": "TheDrummer's Anubis v1.1 is an unaligned, creative Llama 3.3 70B model focused on providing character-driven roleplay & stories. It excels at gritty, visceral prose, unique character adherence, and coherent narratives, while maintaining the instruction following Llama 3.3 70B is known for.",
 		"hugging_face_id": "TheDrummer/Anubis-70B-v1.1",
@@ -2559,7 +2696,7 @@
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 16384,
+			"context_length": 4096,
 			"is_moderated": false,
 			"max_completion_tokens": null
 		}
@@ -4130,10 +4267,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000024",
+			"completion": "0.00000014",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000006",
+			"prompt": "0.00000004",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -4142,7 +4279,7 @@
 		{
 			"context_length": 40960,
 			"is_moderated": false,
-			"max_completion_tokens": 40960
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -6230,6 +6367,40 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "nousresearch/deephermes-3-llama-3-8b-preview",
+		"context_length": 131072,
+		"created": 1740719372,
+		"description": "DeepHermes 3 Preview is the latest version of our flagship Hermes series of LLMs by Nous Research, and one of the first models in the world to unify Reasoning (long chains of thought that improve answer accuracy) and normal LLM response modes into one model. We have also improved LLM annotation, judgement, and function calling.\n\nDeepHermes 3 Preview is one of the first LLM models to unify both \"intuitive\", traditional mode responses and long chain of thought reasoning responses into a single model, toggled by a system prompt.",
+		"hugging_face_id": "NousResearch/DeepHermes-3-Llama-3-8B-Preview",
+		"id": "nousresearch/deephermes-3-llama-3-8b-preview",
+		"name": "Nous: DeepHermes 3 Llama 3 8B Preview",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000005",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000001",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "image", "file", "audio"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -6892,7 +7063,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen2.5-vl-72b-instruct",
-		"context_length": 32768,
+		"context_length": 131072,
 		"created": 1738410311,
 		"description": "Qwen2.5-VL is proficient in recognizing common objects such as flowers, birds, fish, and insects. It is also highly capable of analyzing texts, charts, icons, graphics, and layouts within images.",
 		"hugging_face_id": "Qwen/Qwen2.5-VL-72B-Instruct",
@@ -6908,12 +7079,12 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "top_p"],
 		"top_provider":
 		{
-			"context_length": 32768,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 2048
 		}
 	},
 	{
@@ -7149,7 +7320,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -7891,10 +8062,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000036",
+			"completion": "0.00000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000000012",
+			"prompt": "0.00000004",
 			"request": "0",
 			"web_search": "0"
 		},

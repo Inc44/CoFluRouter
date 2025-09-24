@@ -187,6 +187,18 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 2.5 Flash Native Audio Latest",
+		"id": "models/gemini-2.5-flash-native-audio-latest",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 2.5 Flash Native Audio Preview 09-2025",
+		"id": "models/gemini-2.5-flash-native-audio-preview-09-2025",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 2.5 Flash Preview 05-20",
 		"id": "models/gemini-2.5-flash-preview-05-20",
 		"object": "model",

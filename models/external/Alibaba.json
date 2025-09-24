@@ -1,14 +1,38 @@
 {
 	"data": [
 	{
-		"created": 1757905433,
-		"id": "qwen-max",
+		"created": 1758643487,
+		"id": "qwen-plus",
 		"object": "model",
 		"owned_by": "system"
 	},
 	{
-		"created": 1757905349,
-		"id": "qwen-plus",
+		"created": 1758629537,
+		"id": "qwen3-vl-plus-2025-09-23",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1758621547,
+		"id": "qwen3-coder-plus-2025-09-23",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1758533494,
+		"id": "qwen3-next-80b-a3b-instruct",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1758533476,
+		"id": "qwen3-next-80b-a3b-thinking",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1757905433,
+		"id": "qwen-max",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -21,18 +45,6 @@
 	{
 		"created": 1757646198,
 		"id": "qwen-plus-2025-09-11",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1757645369,
-		"id": "qwen3-next-80b-a3b-thinking",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1757645343,
-		"id": "qwen3-next-80b-a3b-instruct",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -50,6 +62,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-7",
+	"last_id": "model-id-9",
 	"object": "list"
 }
