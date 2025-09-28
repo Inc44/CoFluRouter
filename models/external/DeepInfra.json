@@ -157,6 +157,15 @@
 	},
 	{
 		"created": 0,
+		"id": "ByteDance/Seedream-4",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ByteDance/Seedream-4"
+	},
+	{
+		"created": 0,
 		"id": "CompVis/stable-diffusion-v1-4",
 		"metadata": null,
 		"object": "model",
@@ -871,6 +880,26 @@
 	},
 	{
 		"created": 0,
+		"id": "allenai/olmOCR-7B-0825",
+		"metadata":
+		{
+			"context_length": 16384,
+			"description": "olmOCR is a specialized AI tool that converts PDF documents into clean, structured text while preserving important formatting and layout information. What makes olmOCR particularly valuable for developers is its ability to handle challenging PDFs that traditional OCR tools struggle with—including complex layouts, poor-quality scans, handwritten text, and documents with mixed content types. Built on a fine-tuned 7B vision-language model, olmOCR provides enterprise-grade PDF processing at a fraction of the cost of proprietary solutions.",
+			"max_tokens": 16384,
+			"pricing":
+			{
+				"input_tokens": 0.27,
+				"output_tokens": 1.4999999999999998
+			},
+			"tags": ["vision"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "allenai/olmOCR-7B-0825"
+	},
+	{
+		"created": 0,
 		"id": "anthropic/claude-3-7-sonnet-latest",
 		"metadata":
 		{
@@ -1235,7 +1264,7 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"input_tokens": 0.27,
+				"input_tokens": 0.25,
 				"output_tokens": 0.8799999999999999
 			},
 			"tags": []
@@ -2000,8 +2029,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.1,
-				"output_tokens": 0.28
+				"input_tokens": 0.4,
+				"output_tokens": 0.4
 			},
 			"tags": []
 		},
@@ -2521,7 +2550,7 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.09,
+				"input_tokens": 0.05,
 				"output_tokens": 0.45
 			},
 			"tags": ["reasoning_effort"]
@@ -2542,7 +2571,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.04,
-				"output_tokens": 0.16
+				"output_tokens": 0.15
 			},
 			"tags": ["reasoning_effort"]
 		},

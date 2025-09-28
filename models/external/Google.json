@@ -181,6 +181,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 2.5 Flash-Lite Preview Sep 2025",
+		"id": "models/gemini-2.5-flash-lite-preview-09-2025",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 2.5 Flash Live Preview",
 		"id": "models/gemini-2.5-flash-live-preview",
 		"object": "model",
@@ -201,6 +207,12 @@
 	{
 		"display_name": "Gemini 2.5 Flash Preview 05-20",
 		"id": "models/gemini-2.5-flash-preview-05-20",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 2.5 Flash Preview Sep 2025",
+		"id": "models/gemini-2.5-flash-preview-09-2025",
 		"object": "model",
 		"owned_by": "google"
 	},
@@ -271,8 +283,32 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini Flash Latest",
+		"id": "models/gemini-flash-latest",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini Flash-Lite Latest",
+		"id": "models/gemini-flash-lite-latest",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini Live 2.5 Flash Preview",
 		"id": "models/gemini-live-2.5-flash-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini Pro Latest",
+		"id": "models/gemini-pro-latest",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini Robotics-ER 1.5 Preview",
+		"id": "models/gemini-robotics-er-1.5-preview",
 		"object": "model",
 		"owned_by": "google"
 	},

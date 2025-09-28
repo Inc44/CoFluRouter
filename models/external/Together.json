@@ -87,6 +87,7 @@
 		"bos_token": "<｜begin▁of▁sentence｜>",
 		"chat_template": null,
 		"eos_token": "<｜end▁of▁sentence｜>",
+		"max_output_length": 40000,
 		"stop": ["<｜end▁of▁sentence｜>"]
 	},
 	"context_length": 131072,
