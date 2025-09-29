@@ -1,10 +1,14 @@
 {
 	"data": [
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -24,13 +28,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B"
+		"quantization": "bf16",
+		"root": "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "ArliAI/QwQ-32B-ArliAI-RpR-v1",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -50,13 +61,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "ArliAI/QwQ-32B-ArliAI-RpR-v1"
+		"quantization": "bf16",
+		"root": "ArliAI/QwQ-32B-ArliAI-RpR-v1",
+		"supported_features": ["json_mode", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -76,13 +94,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "ByteDance-Seed/Seed-OSS-36B-Instruct"
+		"quantization": "bf16",
+		"root": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "Meridian",
+		"input_modalities": null,
 		"max_model_len": 131072,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -102,13 +127,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Meridian"
+		"quantization": null,
+		"root": "Meridian",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "NousResearch/DeepHermes-3-Llama-3-8B-Preview",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
@@ -130,13 +162,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "NousResearch/DeepHermes-3-Llama-3-8B-Preview"
+		"quantization": "bf16",
+		"root": "NousResearch/DeepHermes-3-Llama-3-8B-Preview",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "NousResearch/DeepHermes-3-Mistral-24B-Preview",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -156,13 +195,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "NousResearch/DeepHermes-3-Mistral-24B-Preview"
+		"quantization": "bf16",
+		"root": "NousResearch/DeepHermes-3-Mistral-24B-Preview",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 40960,
 		"created": 0,
 		"id": "NousResearch/Hermes-4-14B",
+		"input_modalities": ["text"],
 		"max_model_len": 40960,
+		"max_output_length": 40960,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -182,13 +228,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "NousResearch/Hermes-4-14B"
+		"quantization": "bf16",
+		"root": "NousResearch/Hermes-4-14B",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "NousResearch/Hermes-4-405B-FP8",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -208,13 +261,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "NousResearch/Hermes-4-405B-FP8"
+		"quantization": "fp8",
+		"root": "NousResearch/Hermes-4-405B-FP8",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "NousResearch/Hermes-4-70B",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -234,13 +294,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "NousResearch/Hermes-4-70B"
+		"quantization": "bf16",
+		"root": "NousResearch/Hermes-4-70B",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "OpenGVLab/InternVL3-78B",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -260,13 +327,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "OpenGVLab/InternVL3-78B"
+		"quantization": "bf16",
+		"root": "OpenGVLab/InternVL3-78B",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "Proxima",
+		"input_modalities": null,
 		"max_model_len": 40960,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -286,13 +360,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Proxima"
+		"quantization": null,
+		"root": "Proxima",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "Qwen/Qwen2.5-72B-Instruct",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -312,13 +393,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen2.5-72B-Instruct"
+		"quantization": "fp8",
+		"root": "Qwen/Qwen2.5-72B-Instruct",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "Qwen/Qwen2.5-Coder-32B-Instruct",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -338,13 +426,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen2.5-Coder-32B-Instruct"
+		"quantization": "fp8",
+		"root": "Qwen/Qwen2.5-Coder-32B-Instruct",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 16384,
 		"created": 0,
 		"id": "Qwen/Qwen2.5-VL-32B-Instruct",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 16384,
+		"max_output_length": 16384,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -364,13 +459,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen2.5-VL-32B-Instruct"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen2.5-VL-32B-Instruct",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "Qwen/Qwen2.5-VL-72B-Instruct",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -390,13 +492,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen2.5-VL-72B-Instruct"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen2.5-VL-72B-Instruct",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 40960,
 		"created": 0,
 		"id": "Qwen/Qwen3-14B",
+		"input_modalities": ["text"],
 		"max_model_len": 40960,
+		"max_output_length": 40960,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -416,13 +525,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-14B"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-14B",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 40960,
 		"created": 0,
 		"id": "Qwen/Qwen3-235B-A22B",
+		"input_modalities": ["text"],
 		"max_model_len": 40960,
+		"max_output_length": 40960,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -442,13 +558,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-235B-A22B"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-235B-A22B",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+		"input_modalities": ["text"],
 		"max_model_len": 262144,
+		"max_output_length": 262144,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -468,13 +591,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-235B-A22B-Instruct-2507"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+		"input_modalities": ["text"],
 		"max_model_len": 262144,
+		"max_output_length": 262144,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -494,13 +624,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-235B-A22B-Thinking-2507"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 40960,
 		"created": 0,
 		"id": "Qwen/Qwen3-30B-A3B",
+		"input_modalities": ["text"],
 		"max_model_len": 40960,
+		"max_output_length": 40960,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -520,13 +657,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-30B-A3B"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-30B-A3B",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+		"input_modalities": ["text"],
 		"max_model_len": 262144,
+		"max_output_length": 262144,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -546,13 +690,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-30B-A3B-Instruct-2507"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+		"input_modalities": ["text"],
 		"max_model_len": 262144,
+		"max_output_length": 262144,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -572,13 +723,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-30B-A3B-Thinking-2507"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 40960,
 		"created": 0,
 		"id": "Qwen/Qwen3-32B",
+		"input_modalities": ["text"],
 		"max_model_len": 40960,
+		"max_output_length": 40960,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -598,13 +756,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-32B"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-32B",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 40960,
 		"created": 0,
 		"id": "Qwen/Qwen3-8B",
+		"input_modalities": ["text"],
 		"max_model_len": 40960,
+		"max_output_length": 40960,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -624,13 +789,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-8B"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-8B",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+		"input_modalities": ["text"],
 		"max_model_len": 262144,
+		"max_output_length": 262144,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -650,13 +822,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+		"input_modalities": ["text"],
 		"max_model_len": 262144,
+		"max_output_length": 262144,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -676,13 +855,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+		"input_modalities": ["text"],
 		"max_model_len": 262144,
+		"max_output_length": 262144,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -702,13 +888,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-Next-80B-A3B-Instruct"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+		"input_modalities": ["text"],
 		"max_model_len": 262144,
+		"max_output_length": 262144,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -728,13 +921,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-Next-80B-A3B-Thinking"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-VL-235B-A22B-Thinking",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 262144,
+		"max_output_length": 262144,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
@@ -756,13 +956,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Qwen/Qwen3-VL-235B-A22B-Thinking"
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-VL-235B-A22B-Thinking",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "Salesforce/xgen-small-9B-instruct-r",
+		"input_modalities": null,
 		"max_model_len": 262144,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -782,13 +989,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Salesforce/xgen-small-9B-instruct-r"
+		"quantization": null,
+		"root": "Salesforce/xgen-small-9B-instruct-r",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 40960,
 		"created": 0,
 		"id": "Tesslate/UIGEN-X-32B-0727",
+		"input_modalities": ["text"],
 		"max_model_len": 40960,
+		"max_output_length": 40960,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -808,13 +1022,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Tesslate/UIGEN-X-32B-0727"
+		"quantization": "bf16",
+		"root": "Tesslate/UIGEN-X-32B-0727",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "TheDrummer/Cydonia-24B-v2.1",
+		"input_modalities": null,
 		"max_model_len": 32768,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -834,13 +1055,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "TheDrummer/Cydonia-24B-v2.1"
+		"quantization": null,
+		"root": "TheDrummer/Cydonia-24B-v2.1",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 8192,
 		"created": 0,
 		"id": "TheDrummer/Gemmasutra-Pro-27B-v1.1",
+		"input_modalities": ["text"],
 		"max_model_len": 8192,
+		"max_output_length": 8192,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -860,13 +1088,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "TheDrummer/Gemmasutra-Pro-27B-v1.1"
+		"quantization": "bf16",
+		"root": "TheDrummer/Gemmasutra-Pro-27B-v1.1",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "TheDrummer/Skyfall-36B-v2",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -886,13 +1121,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "TheDrummer/Skyfall-36B-v2"
+		"quantization": "bf16",
+		"root": "TheDrummer/Skyfall-36B-v2",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "TheDrummer/Tunguska-39B-v1",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -912,13 +1154,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "TheDrummer/Tunguska-39B-v1"
+		"quantization": "bf16",
+		"root": "TheDrummer/Tunguska-39B-v1",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "Zenith",
+		"input_modalities": null,
 		"max_model_len": 131072,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -938,13 +1187,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "Zenith"
+		"quantization": null,
+		"root": "Zenith",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 96000,
 		"created": 0,
 		"id": "agentica-org/DeepCoder-14B-Preview",
+		"input_modalities": ["text"],
 		"max_model_len": 96000,
+		"max_output_length": 96000,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -964,12 +1220,19 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "agentica-org/DeepCoder-14B-Preview"
+		"quantization": "bf16",
+		"root": "agentica-org/DeepCoder-14B-Preview",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
+		"input_modalities": null,
 		"id": "all-hands/openhands-lm-32b-v0.1-ep3",
+		"max_output_length": null,
 		"max_model_len": 16384,
+		"output_modalities": null,
 		"object": "model",
 		"owned_by": "vllm",
 		"parent": null,
@@ -992,13 +1255,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "all-hands/openhands-lm-32b-v0.1-ep3"
+		"quantization": null,
+		"root": "all-hands/openhands-lm-32b-v0.1-ep3",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "chutesai/Devstral-Small-2505",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1018,13 +1288,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "chutesai/Devstral-Small-2505"
+		"quantization": "bf16",
+		"root": "chutesai/Devstral-Small-2505",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8",
+		"input_modalities": null,
 		"max_model_len": 128000,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1044,13 +1321,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8"
+		"quantization": null,
+		"root": "chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "chutesai/Mistral-Small-3.1-24B-Instruct-2503",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1070,13 +1354,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "chutesai/Mistral-Small-3.1-24B-Instruct-2503"
+		"quantization": "bf16",
+		"root": "chutesai/Mistral-Small-3.1-24B-Instruct-2503",
+		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "chutesai/Mistral-Small-3.2-24B-Instruct-2506",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1096,13 +1387,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "chutesai/Mistral-Small-3.2-24B-Instruct-2506"
+		"quantization": "bf16",
+		"root": "chutesai/Mistral-Small-3.2-24B-Instruct-2506",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "cognitivecomputations/Dolphin3.0-Mistral-24B",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1122,13 +1420,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "cognitivecomputations/Dolphin3.0-Mistral-24B"
+		"quantization": "bf16",
+		"root": "cognitivecomputations/Dolphin3.0-Mistral-24B",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "cognitivecomputations/Dolphin3.0-R1-Mistral-24B",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1148,13 +1453,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "cognitivecomputations/Dolphin3.0-R1-Mistral-24B"
+		"quantization": "bf16",
+		"root": "cognitivecomputations/Dolphin3.0-R1-Mistral-24B",
+		"supported_features": ["json_mode", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1174,13 +1486,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-R1"
+		"quantization": "fp8",
+		"root": "deepseek-ai/DeepSeek-R1",
+		"supported_features": ["json_mode", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1-0528",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1200,13 +1519,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-R1-0528"
+		"quantization": "fp8",
+		"root": "deepseek-ai/DeepSeek-R1-0528",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1226,13 +1552,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
+		"quantization": "bf16",
+		"root": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+		"supported_features": ["json_mode", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1252,13 +1585,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
+		"quantization": "bf16",
+		"root": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3",
+		"input_modalities": null,
 		"max_model_len": 163840,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1278,13 +1618,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-V3"
+		"quantization": null,
+		"root": "deepseek-ai/DeepSeek-V3",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3-0324",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1304,13 +1651,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-V3-0324"
+		"quantization": "fp8",
+		"root": "deepseek-ai/DeepSeek-V3-0324",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3-0324-turbo",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1330,13 +1684,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-V3-0324-turbo"
+		"quantization": "fp8",
+		"root": "deepseek-ai/DeepSeek-V3-0324-turbo",
+		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3-Base",
+		"input_modalities": null,
 		"max_model_len": 163840,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1356,13 +1717,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-V3-Base"
+		"quantization": null,
+		"root": "deepseek-ai/DeepSeek-V3-Base",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3.1",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1382,13 +1750,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-V3.1"
+		"quantization": "fp8",
+		"root": "deepseek-ai/DeepSeek-V3.1",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3.1-Base",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1408,13 +1783,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-V3.1-Base"
+		"quantization": "fp8",
+		"root": "deepseek-ai/DeepSeek-V3.1-Base",
+		"supported_features": [],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1434,13 +1816,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-V3.1-Terminus"
+		"quantization": "fp8",
+		"root": "deepseek-ai/DeepSeek-V3.1-Terminus",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3.1-turbo",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1460,12 +1849,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "deepseek-ai/DeepSeek-V3.1-turbo"
+		"quantization": "fp8",
+		"root": "deepseek-ai/DeepSeek-V3.1-turbo",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "internlm/Intern-S1",
+		"input_modalities": null,
+		"max_model_len": null,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "lmdeploy",
 		"parent": null,
 		"permission": [],
@@ -1487,13 +1884,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "internlm/Intern-S1"
+		"quantization": null,
+		"root": "internlm/Intern-S1",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "meituan-longcat/LongCat-Flash-Chat-FP8",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1513,13 +1917,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "meituan-longcat/LongCat-Flash-Chat-FP8"
+		"quantization": "fp8",
+		"root": "meituan-longcat/LongCat-Flash-Chat-FP8",
+		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "meituan-longcat/LongCat-Flash-Thinking-FP8",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1539,13 +1950,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "meituan-longcat/LongCat-Flash-Thinking-FP8"
+		"quantization": "fp8",
+		"root": "meituan-longcat/LongCat-Flash-Thinking-FP8",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "microsoft/MAI-DS-R1-FP8",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1565,13 +1983,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "microsoft/MAI-DS-R1-FP8"
+		"quantization": "fp8",
+		"root": "microsoft/MAI-DS-R1-FP8",
+		"supported_features": ["json_mode", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "moonshotai/Kimi-Dev-72B",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1591,13 +2016,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "moonshotai/Kimi-Dev-72B"
+		"quantization": "bf16",
+		"root": "moonshotai/Kimi-Dev-72B",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "moonshotai/Kimi-K2-Instruct",
+		"input_modalities": null,
 		"max_model_len": 75000,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1617,13 +2049,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "moonshotai/Kimi-K2-Instruct"
+		"quantization": null,
+		"root": "moonshotai/Kimi-K2-Instruct",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 262144,
 		"created": 0,
 		"id": "moonshotai/Kimi-K2-Instruct-0905",
+		"input_modalities": ["text"],
 		"max_model_len": 262144,
+		"max_output_length": 262144,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1643,13 +2082,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "moonshotai/Kimi-K2-Instruct-0905"
+		"quantization": "fp8",
+		"root": "moonshotai/Kimi-K2-Instruct-0905",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "moonshotai/Kimi-VL-A3B-Thinking",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
@@ -1671,13 +2117,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "moonshotai/Kimi-VL-A3B-Thinking"
+		"quantization": "bf16",
+		"root": "moonshotai/Kimi-VL-A3B-Thinking",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
+		"input_modalities": null,
 		"max_model_len": 131072,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
@@ -1699,13 +2152,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5"
+		"quantization": null,
+		"root": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "openai/gpt-oss-120b",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1725,13 +2185,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "openai/gpt-oss-120b"
+		"quantization": "bf16",
+		"root": "openai/gpt-oss-120b",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "openai/gpt-oss-20b",
+		"input_modalities": null,
 		"max_model_len": 131072,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1751,13 +2218,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "openai/gpt-oss-20b"
+		"quantization": null,
+		"root": "openai/gpt-oss-20b",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "shisa-ai/shisa-v2-llama3.3-70b",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1777,13 +2251,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "shisa-ai/shisa-v2-llama3.3-70b"
+		"quantization": "bf16",
+		"root": "shisa-ai/shisa-v2-llama3.3-70b",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "stepfun-ai/step3",
+		"input_modalities": null,
 		"max_model_len": 65536,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1803,13 +2284,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "stepfun-ai/step3"
+		"quantization": null,
+		"root": "stepfun-ai/step3",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "tencent/Hunyuan-A13B-Instruct",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1829,13 +2317,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "tencent/Hunyuan-A13B-Instruct"
+		"quantization": "bf16",
+		"root": "tencent/Hunyuan-A13B-Instruct",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "tngtech/DeepSeek-R1T-Chimera",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1855,13 +2350,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "tngtech/DeepSeek-R1T-Chimera"
+		"quantization": "fp8",
+		"root": "tngtech/DeepSeek-R1T-Chimera",
+		"supported_features": ["json_mode", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 163840,
 		"created": 0,
 		"id": "tngtech/DeepSeek-TNG-R1T2-Chimera",
+		"input_modalities": ["text"],
 		"max_model_len": 163840,
+		"max_output_length": 163840,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1881,13 +2383,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "tngtech/DeepSeek-TNG-R1T2-Chimera"
+		"quantization": "fp8",
+		"root": "tngtech/DeepSeek-TNG-R1T2-Chimera",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "tplr/TEMPLAR-I",
+		"input_modalities": null,
 		"max_model_len": 2048,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1907,13 +2416,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "tplr/TEMPLAR-I"
+		"quantization": null,
+		"root": "tplr/TEMPLAR-I",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "unsloth/Llama-3.2-1B-Instruct",
+		"input_modalities": null,
 		"max_model_len": 16384,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
@@ -1935,13 +2451,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "unsloth/Llama-3.2-1B-Instruct"
+		"quantization": null,
+		"root": "unsloth/Llama-3.2-1B-Instruct",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 16384,
 		"created": 0,
 		"id": "unsloth/Llama-3.2-3B-Instruct",
+		"input_modalities": ["text"],
 		"max_model_len": 16384,
+		"max_output_length": 16384,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1961,13 +2484,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "unsloth/Llama-3.2-3B-Instruct"
+		"quantization": "bf16",
+		"root": "unsloth/Llama-3.2-3B-Instruct",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "unsloth/Mistral-Nemo-Instruct-2407",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -1987,13 +2517,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "unsloth/Mistral-Nemo-Instruct-2407"
+		"quantization": "bf16",
+		"root": "unsloth/Mistral-Nemo-Instruct-2407",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "unsloth/Mistral-Small-24B-Instruct-2501",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2013,13 +2550,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "unsloth/Mistral-Small-24B-Instruct-2501"
+		"quantization": "bf16",
+		"root": "unsloth/Mistral-Small-24B-Instruct-2501",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 8192,
 		"created": 0,
 		"id": "unsloth/gemma-2-9b-it",
+		"input_modalities": ["text"],
 		"max_model_len": 8192,
+		"max_output_length": 8192,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2039,13 +2583,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "unsloth/gemma-2-9b-it"
+		"quantization": "bf16",
+		"root": "unsloth/gemma-2-9b-it",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 96000,
 		"created": 0,
 		"id": "unsloth/gemma-3-12b-it",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 96000,
+		"max_output_length": 96000,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2065,13 +2616,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "unsloth/gemma-3-12b-it"
+		"quantization": "bf16",
+		"root": "unsloth/gemma-3-12b-it",
+		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 96000,
 		"created": 0,
 		"id": "unsloth/gemma-3-27b-it",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 96000,
+		"max_output_length": 96000,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2091,13 +2649,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "unsloth/gemma-3-27b-it"
+		"quantization": "bf16",
+		"root": "unsloth/gemma-3-27b-it",
+		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 96000,
 		"created": 0,
 		"id": "unsloth/gemma-3-4b-it",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 96000,
+		"max_output_length": 96000,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2117,13 +2682,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "unsloth/gemma-3-4b-it"
+		"quantization": "bf16",
+		"root": "unsloth/gemma-3-4b-it",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "zai-org/GLM-4-32B-0414",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2143,13 +2715,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "zai-org/GLM-4-32B-0414"
+		"quantization": "bf16",
+		"root": "zai-org/GLM-4-32B-0414",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "zai-org/GLM-4.5-Air",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2169,13 +2748,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "zai-org/GLM-4.5-Air"
+		"quantization": "bf16",
+		"root": "zai-org/GLM-4.5-Air",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "zai-org/GLM-4.5-FP8",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2195,13 +2781,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "zai-org/GLM-4.5-FP8"
+		"quantization": "fp8",
+		"root": "zai-org/GLM-4.5-FP8",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 131072,
 		"created": 0,
 		"id": "zai-org/GLM-4.5-turbo",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2221,13 +2814,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "zai-org/GLM-4.5-turbo"
+		"quantization": "bf16",
+		"root": "zai-org/GLM-4.5-turbo",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 65536,
 		"created": 0,
 		"id": "zai-org/GLM-4.5V",
+		"input_modalities": ["text", "image"],
 		"max_model_len": 65536,
+		"max_output_length": 65536,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
@@ -2249,13 +2849,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "zai-org/GLM-4.5V"
+		"quantization": "bf16",
+		"root": "zai-org/GLM-4.5V",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": null,
 		"created": 0,
 		"id": "zai-org/GLM-4.5V-FP8",
+		"input_modalities": null,
 		"max_model_len": 65536,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2275,13 +2882,20 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "zai-org/GLM-4.5V-FP8"
+		"quantization": null,
+		"root": "zai-org/GLM-4.5V-FP8",
+		"supported_features": null,
+		"supported_sampling_parameters": null
 	},
 	{
+		"context_length": 32768,
 		"created": 0,
 		"id": "zai-org/GLM-Z1-32B-0414",
+		"input_modalities": ["text"],
 		"max_model_len": 32768,
+		"max_output_length": 32768,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"price":
 		{
@@ -2301,7 +2915,10 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "zai-org/GLM-Z1-32B-0414"
+		"quantization": "bf16",
+		"root": "zai-org/GLM-Z1-32B-0414",
+		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	}],
 	"object": "list"
 }

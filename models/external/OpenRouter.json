@@ -3,6 +3,48 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Claude"
+		},
+		"canonical_slug": "anthropic/claude-4.5-sonnet-20250929",
+		"context_length": 1000000,
+		"created": 1759161676,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 1,
+			"top_p": 1
+		},
+		"description": "Claude Sonnet 4.5 is Anthropic’s most advanced Sonnet model to date, optimized for real-world agents and coding workflows. It delivers state-of-the-art performance on coding benchmarks such as SWE-bench Verified, with improvements across system design, code security, and specification adherence. The model is designed for extended autonomous operation, maintaining task continuity across sessions and providing fact-based progress tracking.\n\nSonnet 4.5 also introduces stronger agentic capabilities, including improved tool orchestration, speculative parallel execution, and more efficient context and memory management. With enhanced context tracking and awareness of token usage across tool calls, it is particularly well-suited for multi-context and long-running workflows. Use cases span software engineering, cybersecurity, financial analysis, research agents, and other domains requiring sustained reasoning and tool use.",
+		"hugging_face_id": "",
+		"id": "anthropic/claude-sonnet-4.5",
+		"name": "Anthropic: Claude Sonnet 4.5",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000015",
+			"image": "0",
+			"input_cache_read": "0.0000003",
+			"input_cache_write": "0.00000375",
+			"internal_reasoning": "0",
+			"prompt": "0.000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": true,
+			"max_completion_tokens": 64000
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text"],
 			"instruct_type": "deepseek-v3.1",
 			"modality": "text->text",
@@ -10,7 +52,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-v3.2-exp",
-		"context_length": 131072,
+		"context_length": 163840,
 		"created": 1759150481,
 		"default_parameters":
 		{
@@ -25,20 +67,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000042",
+			"completion": "0.00000041",
 			"image": "0",
-			"input_cache_read": "0.000000028",
 			"internal_reasoning": "0",
-			"prompt": "0.00000028",
+			"prompt": "0.00000027",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "stop", "temperature", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 64000
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -394,7 +435,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools", "top_logprobs"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -677,7 +718,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -713,7 +754,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -749,7 +790,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -773,10 +814,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
+			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000012",
+			"prompt": "0",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -785,7 +826,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -1037,7 +1078,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -1073,7 +1114,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -1290,7 +1331,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -1314,10 +1355,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000999999888",
+			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000024999988",
+			"prompt": "0.00000025",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1326,7 +1367,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -1438,7 +1479,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -1462,10 +1503,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000999999888",
+			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000024999988",
+			"prompt": "0.00000025",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1474,7 +1515,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -1955,7 +1996,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -2143,7 +2184,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -2179,7 +2220,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -2219,7 +2260,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -2259,7 +2300,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -2335,7 +2376,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -2447,7 +2488,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -2557,7 +2598,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -3298,7 +3339,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -3831,7 +3872,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "deepseek/deepseek-r1-0528-qwen3-8b",
-		"context_length": 131072,
+		"context_length": 32768,
 		"created": 1748538543,
 		"default_parameters":
 		{},
@@ -3852,9 +3893,9 @@
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -3926,7 +3967,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -4082,7 +4123,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -4263,7 +4304,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -4739,7 +4780,7 @@
 		{
 			"context_length": 40960,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 40960
 		}
 	},
 	{
@@ -4883,7 +4924,7 @@
 		{
 			"context_length": 40960,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 40960
 		}
 	},
 	{
@@ -4919,7 +4960,7 @@
 		{
 			"context_length": 40960,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 40960
 		}
 	},
 	{
@@ -5051,10 +5092,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000999999888",
+			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000024999988",
+			"prompt": "0.00000025",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5063,7 +5104,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -5123,10 +5164,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000999999888",
+			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000024999988",
+			"prompt": "0.00000025",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5135,7 +5176,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -5171,7 +5212,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -5390,7 +5431,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -5645,7 +5686,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -5789,7 +5830,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -6187,7 +6228,7 @@
 		{
 			"context_length": 16384,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -6259,7 +6300,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -6371,7 +6412,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 96000
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -6551,7 +6592,7 @@
 		{
 			"context_length": 96000,
 			"is_moderated": false,
-			"max_completion_tokens": 8192
+			"max_completion_tokens": 96000
 		}
 	},
 	{
@@ -6767,7 +6808,7 @@
 		{
 			"context_length": 96000,
 			"is_moderated": false,
-			"max_completion_tokens": 8192
+			"max_completion_tokens": 96000
 		}
 	},
 	{
@@ -6839,7 +6880,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -7127,7 +7168,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -7385,7 +7426,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -7457,7 +7498,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -7894,7 +7935,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -8081,7 +8122,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -8405,7 +8446,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -9279,7 +9320,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -10083,7 +10124,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -10700,7 +10741,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -12404,7 +12445,7 @@
 		"created": 1699401600,
 		"default_parameters":
 		{},
-		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nThe meta-model is powered by [Not Diamond](https://docs.notdiamond.ai/docs/how-not-diamond-works). Learn more in our [docs](/docs/model-routing).\n\nRequests will be routed to the following models:\n- [openai/gpt-4o-2024-08-06](/openai/gpt-4o-2024-08-06)\n- [openai/gpt-4o-2024-05-13](/openai/gpt-4o-2024-05-13)\n- [openai/gpt-4o-mini-2024-07-18](/openai/gpt-4o-mini-2024-07-18)\n- [openai/chatgpt-4o-latest](/openai/chatgpt-4o-latest)\n- [openai/o1-preview-2024-09-12](/openai/o1-preview-2024-09-12)\n- [openai/o1-mini-2024-09-12](/openai/o1-mini-2024-09-12)\n- [anthropic/claude-3.5-sonnet](/anthropic/claude-3.5-sonnet)\n- [anthropic/claude-3.5-haiku](/anthropic/claude-3.5-haiku)\n- [anthropic/claude-3-opus](/anthropic/claude-3-opus)\n- [anthropic/claude-2.1](/anthropic/claude-2.1)\n- [google/gemini-pro-1.5](/google/gemini-pro-1.5)\n- [google/gemini-flash-1.5](/google/gemini-flash-1.5)\n- [mistralai/mistral-large-2407](/mistralai/mistral-large-2407)\n- [mistralai/mistral-nemo](/mistralai/mistral-nemo)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [meta-llama/llama-3.1-70b-instruct](/meta-llama/llama-3.1-70b-instruct)\n- [meta-llama/llama-3.1-405b-instruct](/meta-llama/llama-3.1-405b-instruct)\n- [mistralai/mixtral-8x22b-instruct](/mistralai/mixtral-8x22b-instruct)\n- [cohere/command-r-plus](/cohere/command-r-plus)\n- [cohere/command-r](/cohere/command-r)",
+		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nThe meta-model is powered by [Not Diamond](https://docs.notdiamond.ai/docs/how-not-diamond-works). Learn more in our [docs](/docs/model-routing).\n\nRequests will be routed to the following models:\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-4.1-nano](/openai/gpt-4.1-nano)\n- [openai/gpt-4.1](/openai/gpt-4.1)\n- [openai/gpt-4.1-mini](/openai/gpt-4.1-mini)\n- [openai/gpt-4.1](/openai/gpt-4.1)\n- [openai/gpt-4o-mini](/openai/gpt-4o-mini)\n- [openai/chatgpt-4o-latest](/openai/chatgpt-4o-latest)\n- [anthropic/claude-3.5-haiku](/anthropic/claude-3.5-haiku)\n- [anthropic/claude-opus-4-1](/anthropic/claude-opus-4-1)\n- [anthropic/claude-sonnet-4-0](/anthropic/claude-sonnet-4-0)\n- [anthropic/claude-3-7-sonnet-latest](/anthropic/claude-3-7-sonnet-latest)\n- [google/gemini-pro-1.5](/google/gemini-pro-1.5)\n- [google/gemini-flash-1.5](/google/gemini-flash-1.5)\n- [google/gemini-2.5-pro](/google/gemini-2.5-pro)\n- [google/gemini-2.5-flash](/google/gemini-2.5-flash)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium](/mistralai/mistral-medium)\n- [mistralai/mistral-small](/mistralai/mistral-small)\n- [mistralai/mistral-nemo](/mistralai/mistral-nemo)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [meta-llama/llama-3.1-70b-instruct](/meta-llama/llama-3.1-70b-instruct)\n- [meta-llama/llama-3.1-405b-instruct](/meta-llama/llama-3.1-405b-instruct)\n- [mistralai/mixtral-8x22b-instruct](/mistralai/mixtral-8x22b-instruct)\n- [perplexity/sonar](/perplexity/sonar)\n- [cohere/command-r-plus](/cohere/command-r-plus)\n- [cohere/command-r](/cohere/command-r)",
 		"hugging_face_id": null,
 		"id": "openrouter/auto",
 		"name": "Auto Router",
