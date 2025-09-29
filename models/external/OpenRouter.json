@@ -4,6 +4,47 @@
 		"architecture":
 		{
 			"input_modalities": ["text"],
+			"instruct_type": "deepseek-v3.1",
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "DeepSeek"
+		},
+		"canonical_slug": "deepseek/deepseek-v3.2-exp",
+		"context_length": 131072,
+		"created": 1759150481,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.6,
+			"top_p": 0.95
+		},
+		"description": "DeepSeek-V3.2-Exp is an experimental large language model released by DeepSeek as an intermediate step between V3.1 and future architectures. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism designed to improve training and inference efficiency in long-context scenarios while maintaining output quality. Users can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)\n\nThe model was trained under conditions aligned with V3.1-Terminus to enable direct comparison. Benchmarking shows performance roughly on par with V3.1 across reasoning, coding, and agentic tool-use tasks, with minor tradeoffs and gains depending on the domain. This release focuses on validating architectural optimizations for extended context lengths rather than advancing raw task accuracy, making it primarily a research-oriented model for exploring efficient transformer designs.",
+		"hugging_face_id": "deepseek-ai/DeepSeek-V3.2-Exp",
+		"id": "deepseek/deepseek-v3.2-exp",
+		"name": "DeepSeek: DeepSeek V3.2 Exp",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000042",
+			"image": "0",
+			"input_cache_read": "0.000000028",
+			"internal_reasoning": "0",
+			"prompt": "0.00000028",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "stop", "temperature", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": 64000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
 			"instruct_type": null,
 			"modality": "text->text",
 			"output_modalities": ["text"],
@@ -58,7 +99,7 @@
 			"temperature": null,
 			"top_p": null
 		},
-		"description": "Relace Apply 3 is a specialized code-patching LLM that merges AI-suggested edits straight into your source files. It can apply updates from GPT-4o, Claude, and others into your files at 7,500 tokens/sec on average.\n\n\nThe model requires the prompt to be in the following format: \n<code>${originalCode}</code>\\n<update>${updateSnippet}</update>\n\n\nLearn more about this model in their [documentation](https://docs.relace.ai/api-reference/instant-apply/apply)",
+		"description": "Relace Apply 3 is a specialized code-patching LLM that merges AI-suggested edits straight into your source files. It can apply updates from GPT-4o, Claude, and others into your files at 7,500 tokens/sec on average.\n\nThe model requires the prompt to be in the following format: \n<instruction>{instruction}</instruction>\n<code>{initial_code}</code>\n<update>{edit_snippet}</update>\n\nZero Data Retention is enabled for Relace. Learn more about this model in their [documentation](https://docs.relace.ai/api-reference/instant-apply/apply)",
 		"hugging_face_id": "",
 		"id": "relace/relace-apply-3",
 		"name": "Relace: Relace Apply 3",
@@ -393,7 +434,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 163840,
@@ -973,7 +1014,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "moonshotai/kimi-k2-0905",
-		"context_length": 98304,
+		"context_length": 262144,
 		"created": 1757021147,
 		"default_parameters":
 		{},
@@ -984,17 +1025,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000135",
+			"completion": "0.00000225",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000003",
+			"prompt": "0.0000004",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 98304,
+			"context_length": 262144,
 			"is_moderated": false,
 			"max_completion_tokens": null
 		}
@@ -1338,7 +1379,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-chat-v3.1",
-		"context_length": 163840,
+		"context_length": 163800,
 		"created": 1755779628,
 		"default_parameters":
 		{},
@@ -1359,8 +1400,8 @@
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 163840,
-			"is_moderated": false,
+			"context_length": 163800,
+			"is_moderated": true,
 			"max_completion_tokens": null
 		}
 	},
@@ -1385,10 +1426,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000999999888",
+			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000024999988",
+			"prompt": "0.0000002",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1902,10 +1943,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000025",
+			"completion": "0.0000004",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000005",
+			"prompt": "0.00000004",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2090,10 +2131,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000028",
+			"completion": "0.00000025",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000007",
+			"prompt": "0.00000006",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2166,10 +2207,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000016",
+			"completion": "0.00000155",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000004",
+			"prompt": "0.00000039",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2282,10 +2323,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000039",
+			"completion": "0.0000006",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000001",
+			"prompt": "0.00000011",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2504,10 +2545,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
+			"completion": "0.00000055",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000009",
+			"prompt": "0.00000008",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2969,8 +3010,12 @@
 		"context_length": 81920,
 		"created": 1751910858,
 		"default_parameters":
-		{},
-		"description": "Morph's high-accuracy apply model for complex code edits. 2000+ tokens/sec with 98% accuracy for precise code transformations.",
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Morph's high-accuracy apply model for complex code edits. ~4,500 tokens/sec with 98% accuracy for precise code transformations.\n\nThe model requires the prompt to be in the following format: \n<instruction>{instruction}</instruction>\n<code>{initial_code}</code>\n<update>{edit_snippet}</update>\n\nZero Data Retention is enabled for Morph. Learn more about this model in their [documentation](https://docs.morphllm.com/quickstart)",
 		"hugging_face_id": "",
 		"id": "morph/morph-v3-large",
 		"name": "Morph: Morph V3 Large",
@@ -3005,18 +3050,22 @@
 		"context_length": 81920,
 		"created": 1751910002,
 		"default_parameters":
-		{},
-		"description": "Morph's fastest apply model for code edits. 4500+ tokens/sec with 96% accuracy for rapid code transformations.",
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Morph's fastest apply model for code edits. ~10,500 tokens/sec with 96% accuracy for rapid code transformations.\n\nThe model requires the prompt to be in the following format: \n<instruction>{instruction}</instruction>\n<code>{initial_code}</code>\n<update>{edit_snippet}</update>\n\nZero Data Retention is enabled for Morph. Learn more about this model in their [documentation](https://docs.morphllm.com/quickstart)",
 		"hugging_face_id": "",
 		"id": "morph/morph-v3-fast",
 		"name": "Morph: Morph V3 Fast",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000019",
+			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000009",
+			"prompt": "0.0000008",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -3224,7 +3273,7 @@
 			"tokenizer": "Mistral"
 		},
 		"canonical_slug": "mistralai/mistral-small-3.2-24b-instruct-2506",
-		"context_length": 128000,
+		"context_length": 131072,
 		"created": 1750443016,
 		"default_parameters":
 		{
@@ -3237,17 +3286,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000002",
+			"completion": "0.00000018",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000000075",
+			"prompt": "0.00000006",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 128000,
+			"context_length": 131072,
 			"is_moderated": false,
 			"max_completion_tokens": null
 		}
@@ -6198,10 +6247,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000999999888",
+			"completion": "0.00000084",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000024999988",
+			"prompt": "0.00000024",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -10639,10 +10688,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000028",
+			"completion": "0.0000004",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000001",
+			"prompt": "0.0000004",
 			"request": "0",
 			"web_search": "0"
 		},
