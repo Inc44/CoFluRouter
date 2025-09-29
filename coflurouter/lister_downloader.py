@@ -35,14 +35,9 @@ def redact_entry(obj, entry, prefix):
 
 
 def sort_by_keys(obj, keys, reverse=False):
-	if isinstance(obj, dict) and isinstance(obj.get("data"), list):
-		obj["data"].sort(
-			key=lambda value: tuple(
-				value.get(key, "") if isinstance(value, dict) else "" for key in keys
-			),
-			reverse=reverse,
-		)
-	elif isinstance(obj, list):
+	if "data" in obj:
+		obj = obj["data"]
+	if isinstance(obj, list):
 		obj.sort(
 			key=lambda value: tuple(
 				value.get(key, "") if isinstance(value, dict) else "" for key in keys
@@ -65,7 +60,11 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		}
 	url = base_url + "/" + models
 	resp = requests.get(url, headers=headers)
-	obj = resp.json()  # json.loads(Path(f"models/external/{name}.json").read_text(encoding="utf-8")) # Testing with fetched models
+	path = Path(f"models/external/{name}.json")
+	path.parent.mkdir(parents=True, exist_ok=True)
+	obj = (
+		resp.json()
+	)  # json.loads(path.read_text(encoding="utf-8")) # Testing with fetched models
 	if name in ["Chutes", "Hyperbolic"]:  # Redact fetch time
 		obj = redact_keys(obj, {"created"})
 	if name == "Chutes":  # Redact crypto, pricing and permissions
@@ -111,8 +110,6 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		"unescape_strings": False,
 		"wrap_line_length": 0,
 	}
-	path = Path(f"models/external/{name}.json")
-	path.parent.mkdir(parents=True, exist_ok=True)
 	path.write_text(
 		jsbeautifier.beautify(
 			json.dumps(obj, indent="\t", sort_keys=True, ensure_ascii=False), opts
@@ -120,8 +117,7 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		encoding="utf-8",
 	)
 	if "data" in obj:
-		models = [model["id"] for model in obj["data"]]
-	else:
-		models = [model["id"] for model in obj]
+		obj = obj["data"]
+	models = [model["id"] for model in obj]
 	for model in models:
 		print(f"{name}: {model}", file=open("lists/list2.txt", "a"))
