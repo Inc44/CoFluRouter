@@ -1,9 +1,9 @@
-import json
 import re
 from pathlib import Path
 
 from categorizer import list_high_cost_models
 from data import OPENAI_COMPATIBLE
+from utils import read_json
 
 
 def extract_max_tokens(item):
@@ -101,7 +101,7 @@ def list_models():
 			continue
 		path = Path(f"models/external/{name}.json")
 		path.parent.mkdir(parents=True, exist_ok=True)
-		obj = json.loads(path.read_text(encoding="utf-8"))
+		obj = read_json(path)
 		if "data" in obj:
 			obj = obj["data"]
 		for item in obj:

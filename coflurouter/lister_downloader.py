@@ -1,10 +1,9 @@
-import json
 from pathlib import Path
 
-import jsbeautifier
 import requests
 
 from data import OPENAI_COMPATIBLE
+from utils import read_json, write_json
 
 
 def redact_keys(obj, keys):
@@ -62,9 +61,7 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 	resp = requests.get(url, headers=headers)
 	path = Path(f"models/external/{name}.json")
 	path.parent.mkdir(parents=True, exist_ok=True)
-	obj = (
-		resp.json()
-	)  # json.loads(path.read_text(encoding="utf-8")) # Testing with fetched models
+	obj = resp.json()  # read_json(path) # Testing with fetched models
 	if name in ["Chutes", "Hyperbolic"]:  # Redact fetch time
 		obj = redact_keys(obj, {"created"})
 	if name == "Chutes":  # Redact crypto, pricing and permissions
@@ -91,31 +88,7 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		sort_by_keys(obj, ["created_at", "name"], reverse=True)
 	else:
 		sort_by_keys(obj, ["created", "name"], reverse=True)
-	opts = {
-		"brace_style": "expand",
-		"break_chained_methods": True,
-		"comma_first": False,
-		"e4x": False,
-		"end_with_newline": False,
-		"indent_char": "\t",
-		"indent_empty_lines": False,
-		"indent_inner_html": False,
-		"indent_scripts": "normal",
-		"indent_size": 1,
-		"jslint_happy": False,
-		"keep_array_indentation": False,
-		"max_preserve_newlines": -1,
-		"preserve_newlines": False,
-		"space_before_conditional": True,
-		"unescape_strings": False,
-		"wrap_line_length": 0,
-	}
-	path.write_text(
-		jsbeautifier.beautify(
-			json.dumps(obj, indent="\t", sort_keys=True, ensure_ascii=False), opts
-		),
-		encoding="utf-8",
-	)
+	write_json(path, obj)
 	if "data" in obj:
 		obj = obj["data"]
 	models = [model["id"] for model in obj]

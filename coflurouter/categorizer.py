@@ -1,7 +1,7 @@
-import json
 from pathlib import Path
 
 from data import OPENAI_COMPATIBLE
+from utils import read_json
 
 
 def list_high_cost_models():
@@ -11,7 +11,7 @@ def list_high_cost_models():
 			continue
 		path = Path(f"models/external/{name}.json")
 		path.parent.mkdir(parents=True, exist_ok=True)
-		obj = json.loads(path.read_text(encoding="utf-8"))
+		obj = read_json(path)
 		threshold = 15
 		if name == "OpenRouter":
 			threshold /= 1_000_000
