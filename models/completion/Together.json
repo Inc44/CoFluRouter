@@ -1,13 +1,13 @@
 {
 	"data": [
 	{
-		"id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
-		"max_tokens": 131073,
+		"id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+		"max_tokens": 32768,
 		"image": false
 	},
 	{
-		"id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
-		"max_tokens": 32768,
+		"id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+		"max_tokens": 131073,
 		"image": false
 	}]
 }

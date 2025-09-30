@@ -1,12 +1,17 @@
 {
 	"data": [
 	{
+		"id": "qwen-plus",
+		"max_tokens": 8192,
+		"image": false
+	},
+	{
 		"id": "qwen-max",
 		"max_tokens": 8192,
 		"image": false
 	},
 	{
-		"id": "qwen-plus",
+		"id": "qwen-turbo",
 		"max_tokens": 8192,
 		"image": false
 	},
@@ -45,11 +50,6 @@
 	},
 	{
 		"id": "qwen2.5-32b-instruct",
-		"max_tokens": 8192,
-		"image": false
-	},
-	{
-		"id": "qwen-turbo",
 		"max_tokens": 8192,
 		"image": false
 	},

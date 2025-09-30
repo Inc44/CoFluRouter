@@ -1,24 +1,104 @@
 {
 	"data": [
 	{
-		"id": "cognitivecomputations/dolphin3.0-mistral-24b:free",
-		"max_tokens": 32768,
+		"id": "mistralai/devstral-small",
+		"max_tokens": 131072,
 		"image": false
 	},
 	{
-		"id": "cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
-		"max_tokens": 32768,
+		"id": "baidu/ernie-4.5-300b-a47b",
+		"max_tokens": 123000,
 		"image": false
 	},
 	{
-		"id": "deepseek/deepseek-r1-distill-llama-8b",
+		"id": "inception/mercury",
 		"max_tokens": 32000,
 		"image": false
 	},
 	{
-		"id": "google/gemma-3-1b-it:free",
+		"id": "minimax/minimax-m1",
+		"max_tokens": 1000000,
+		"image": true
+	},
+	{
+		"id": "moonshotai/kimi-dev-72b:free",
+		"max_tokens": 131072,
+		"image": false
+	},
+	{
+		"id": "mistralai/magistral-small-2506",
+		"max_tokens": 40000,
+		"image": false
+	},
+	{
+		"id": "mistralai/magistral-medium-2506:thinking",
+		"max_tokens": 40960,
+		"image": false
+	},
+	{
+		"id": "mistralai/magistral-medium-2506",
+		"max_tokens": 40960,
+		"image": false
+	},
+	{
+		"id": "deepseek/deepseek-r1-0528-qwen3-8b",
+		"max_tokens": 128000,
+		"image": false
+	},
+	{
+		"id": "deepseek/deepseek-r1-0528",
+		"max_tokens": 163840,
+		"image": false
+	},
+	{
+		"id": "openai/codex-mini",
+		"max_tokens": 1000000,
+		"image": true
+	},
+	{
+		"id": "mistralai/mistral-medium-3",
+		"max_tokens": 131072,
+		"image": false
+	},
+	{
+		"id": "microsoft/phi-4-reasoning-plus",
+		"max_tokens": 32768,
+		"image": false
+	},
+	{
+		"id": "deepseek/deepseek-prover-v2",
+		"max_tokens": 131072,
+		"image": false
+	},
+	{
+		"id": "deepseek/deepseek-prover-v2",
+		"max_tokens": 131072,
+		"image": false
+	},
+	{
+		"id": "tngtech/deepseek-r1t-chimera:free",
+		"max_tokens": 163840,
+		"image": false
+	},
+	{
+		"id": "microsoft/mai-ds-r1:free",
+		"max_tokens": 163840,
+		"image": false
+	},
+	{
+		"id": "thudm/glm-z1-32b",
 		"max_tokens": 32000,
 		"image": false
+	},
+	{
+		"id": "thudm/glm-4-32b",
+		"max_tokens": 32000,
+		"image": false
+	},
+	{
+		"id": "moonshotai/kimi-vl-a3b-thinking:free",
+		"max_tokens": 131072,
+		"image": true
 	},
 	{
 		"id": "google/gemma-3-4b-it:free",
@@ -31,14 +111,29 @@
 		"image": true
 	},
 	{
-		"id": "microsoft/phi-4",
-		"max_tokens": 16384,
-		"image": false
-	},
-	{
 		"id": "microsoft/phi-4-multimodal-instruct",
 		"max_tokens": 128000,
 		"image": true
+	},
+	{
+		"id": "microsoft/phi-4-multimodal-instruct",
+		"max_tokens": 131072,
+		"image": true
+	},
+	{
+		"id": "cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
+		"max_tokens": 32768,
+		"image": false
+	},
+	{
+		"id": "cognitivecomputations/dolphin3.0-mistral-24b:free",
+		"max_tokens": 32768,
+		"image": false
+	},
+	{
+		"id": "deepseek/deepseek-r1-distill-llama-8b",
+		"max_tokens": 32000,
+		"image": false
 	},
 	{
 		"id": "minimax/minimax-01",
@@ -48,6 +143,11 @@
 	{
 		"id": "mistralai/codestral-2501",
 		"max_tokens": 256000,
+		"image": false
+	},
+	{
+		"id": "microsoft/phi-4",
+		"max_tokens": 16384,
 		"image": false
 	},
 	{
@@ -66,6 +166,11 @@
 		"image": false
 	},
 	{
+		"id": "google/gemma-3-1b-it:free",
+		"max_tokens": 32000,
+		"image": false
+	},
+	{
 		"id": "openrouter/quasar-alpha",
 		"max_tokens": 1000000,
 		"image": true
@@ -76,98 +181,8 @@
 		"image": true
 	},
 	{
-		"id": "moonshotai/kimi-vl-a3b-thinking:free",
-		"max_tokens": 131072,
-		"image": true
-	},
-	{
-		"id": "thudm/glm-4-32b",
-		"max_tokens": 32000,
-		"image": false
-	},
-	{
-		"id": "thudm/glm-z1-32b",
-		"max_tokens": 32000,
-		"image": false
-	},
-	{
-		"id": "microsoft/mai-ds-r1:free",
-		"max_tokens": 163840,
-		"image": false
-	},
-	{
 		"id": "thudm/glm-z1-rumination-32b",
 		"max_tokens": 32000,
-		"image": false
-	},
-	{
-		"id": "tngtech/deepseek-r1t-chimera:free",
-		"max_tokens": 163840,
-		"image": false
-	},
-	{
-		"id": "deepseek/deepseek-prover-v2",
-		"max_tokens": 131072,
-		"image": false
-	},
-	{
-		"id": "microsoft/phi-4-multimodal-instruct",
-		"max_tokens": 131072,
-		"image": true
-	},
-	{
-		"id": "deepseek/deepseek-prover-v2",
-		"max_tokens": 131072,
-		"image": false
-	},
-	{
-		"id": "microsoft/phi-4-reasoning-plus",
-		"max_tokens": 32768,
-		"image": false
-	},
-	{
-		"id": "mistralai/mistral-medium-3",
-		"max_tokens": 131072,
-		"image": false
-	},
-	{
-		"id": "openai/codex-mini",
-		"max_tokens": 1000000,
-		"image": true
-	},
-	{
-		"id": "mistralai/devstral-small",
-		"max_tokens": 131072,
-		"image": false
-	},
-	{
-		"id": "deepseek/deepseek-r1-0528",
-		"max_tokens": 163840,
-		"image": false
-	},
-	{
-		"id": "deepseek/deepseek-r1-0528-qwen3-8b",
-		"max_tokens": 128000,
-		"image": false
-	},
-	{
-		"id": "mistralai/magistral-medium-2506:thinking",
-		"max_tokens": 40960,
-		"image": false
-	},
-	{
-		"id": "mistralai/magistral-medium-2506",
-		"max_tokens": 40960,
-		"image": false
-	},
-	{
-		"id": "mistralai/magistral-small-2506",
-		"max_tokens": 40000,
-		"image": false
-	},
-	{
-		"id": "moonshotai/kimi-dev-72b:free",
-		"max_tokens": 131072,
 		"image": false
 	},
 	{
@@ -176,23 +191,8 @@
 		"image": true
 	},
 	{
-		"id": "minimax/minimax-m1",
-		"max_tokens": 1000000,
-		"image": true
-	},
-	{
 		"id": "mistralai/mistral-small-3.2-24b-instruct-2506",
 		"max_tokens": 128000,
-		"image": false
-	},
-	{
-		"id": "inception/mercury",
-		"max_tokens": 32000,
-		"image": false
-	},
-	{
-		"id": "baidu/ernie-4.5-300b-a47b",
-		"max_tokens": 123000,
 		"image": false
 	}]
 }

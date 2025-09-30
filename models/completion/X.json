@@ -1,31 +1,19 @@
 {
 	"data": [
 	{
-		"id": "grok-4",
-		"max_tokens": 256000,
-		"reasoning_effort": "low",
-		"image": true
-	},
-	{
-		"id": "grok-3-mini",
-		"max_tokens": 131072,
-		"reasoning_effort": "low",
-		"image": false
-	},
-	{
 		"id": "grok-3",
 		"max_tokens": 131072,
 		"image": false
 	},
 	{
-		"id": "grok-3-mini-beta",
+		"id": "grok-3-fast",
 		"max_tokens": 131072,
-		"reasoning_effort": "low",
 		"image": false
 	},
 	{
-		"id": "grok-3-beta",
+		"id": "grok-3-mini",
 		"max_tokens": 131072,
+		"reasoning_effort": "low",
 		"image": false
 	},
 	{
@@ -35,7 +23,7 @@
 		"image": false
 	},
 	{
-		"id": "grok-3-fast",
+		"id": "grok-2-1212",
 		"max_tokens": 131072,
 		"image": false
 	},
@@ -45,7 +33,19 @@
 		"image": true
 	},
 	{
-		"id": "grok-2-1212",
+		"id": "grok-4",
+		"max_tokens": 256000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "grok-3-mini-beta",
+		"max_tokens": 131072,
+		"reasoning_effort": "low",
+		"image": false
+	},
+	{
+		"id": "grok-3-beta",
 		"max_tokens": 131072,
 		"image": false
 	},
