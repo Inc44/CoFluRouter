@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 
 from categorizer import list_high_cost_models
@@ -108,12 +109,20 @@ def list_models():
 				continue
 			model = {}
 			model["name"] = name
-			if "id" in item and item["id"].split("/")[-1].lower() in high_cost_models:
+			if (
+				"id" in item
+				and re.sub(
+					r"-(?:\d{4}-\d{2}-\d{2}|\d{8})$",
+					"",
+					str(item["id"]).split("/")[-1].lower().replace(".", "-"),
+				)
+				in high_cost_models
+			):
 				model["high_cost"] = True
 			if is_transcription_model(item):
 				model["transcription"] = True
 			if "id" in item:
-				model["id"] = item["id"].split("/")[-1]
+				model["id"] = item["id"]
 			max_tokens = extract_max_tokens(item)
 			if max_tokens:
 				model["max_tokens"] = max_tokens
@@ -122,4 +131,25 @@ def list_models():
 			if audio:
 				model["audio"] = audio
 			models.append(model)
+	groups = {}
+	for model in models:
+		if "id" in model:
+			key = re.sub(
+				r"-(?:\d{4}-\d{2}-\d{2}|\d{8})$",
+				"",
+				str(model["id"]).split("/")[-1].lower().replace(".", "-"),
+			)
+			groups.setdefault(key, []).append(model)
+	for group in groups.values():
+		for attr in ("image", "max_tokens", "audio"):
+			shared_value = None
+			for model in group:
+				if model.get(attr):
+					shared_value = model[attr]
+					break
+			if shared_value is None:
+				continue
+			for model in group:
+				if not model.get(attr):
+					model[attr] = shared_value
 	return models

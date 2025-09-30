@@ -19,7 +19,7 @@ def list_high_cost_models():
 			obj = obj["data"]
 		models.extend(
 			[
-				model["id"].split("/")[-1].lower()
+				str(model["id"]).split("/")[-1].lower().replace(".", "-")
 				for model in obj
 				if model.get("pricing", {})
 				and any(
