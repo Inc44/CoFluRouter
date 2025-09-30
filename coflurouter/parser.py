@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+from categorizer import list_high_cost_models
 from data import OPENAI_COMPATIBLE
 
 
@@ -60,7 +61,39 @@ def extract_audio_support(item):
 	return False
 
 
+def skip_model(item):
+	if "supports_chat" in item and not item.get("supports_chat"):
+		return True
+	if "type" in item and "image" in item["type"]:
+		return True
+	if "id" in item and (
+		"flux" in str(item["id"]).lower()
+		or "sdxl" in str(item["id"]).lower()
+		or (
+			"stable" in str(item["id"]).lower()
+			and "diffusion" in str(item["id"]).lower()
+		)
+	):
+		return True
+	return False
+
+
+def is_transcription_model(item):
+	if "type" in item and "transcribe" in item["type"]:
+		return True
+	if "pricing" in item and "duration_per_hour" in item["pricing"]:
+		return True
+	if "max_completion_tokens" in item and item["max_completion_tokens"] == 448:
+		return True
+	if "id" in item and (
+		"transcribe" in str(item["id"]).lower() or "whisper" in str(item["id"]).lower()
+	):
+		return True
+	return False
+
+
 def list_models():
+	high_cost_models = list_high_cost_models()
 	models = []
 	for name, _, _ in OPENAI_COMPATIBLE:
 		if name in ["Minimax", "Perplexity"]:
@@ -71,7 +104,14 @@ def list_models():
 		if "data" in obj:
 			obj = obj["data"]
 		for item in obj:
+			if skip_model(item):
+				continue
 			model = {}
+			model["name"] = name
+			if "id" in item and item["id"].split("/")[-1].lower() in high_cost_models:
+				model["high_cost"] = True
+			if is_transcription_model(item):
+				model["transcription"] = True
 			if "id" in item:
 				model["id"] = item["id"].split("/")[-1].lower()
 			max_tokens = extract_max_tokens(item)
@@ -82,5 +122,5 @@ def list_models():
 			if audio:
 				model["audio"] = audio
 			models.append(model)
-	models.sort(key=lambda model: model.get("id", ""))
+	models.sort(key=lambda model: model["name"] + model["id"])
 	return models
