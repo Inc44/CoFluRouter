@@ -113,7 +113,7 @@ def list_models():
 			if is_transcription_model(item):
 				model["transcription"] = True
 			if "id" in item:
-				model["id"] = item["id"].split("/")[-1].lower()
+				model["id"] = item["id"].split("/")[-1]
 			max_tokens = extract_max_tokens(item)
 			if max_tokens:
 				model["max_tokens"] = max_tokens
@@ -122,5 +122,4 @@ def list_models():
 			if audio:
 				model["audio"] = audio
 			models.append(model)
-	models.sort(key=lambda model: model["name"] + model["id"])
 	return models
