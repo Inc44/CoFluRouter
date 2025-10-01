@@ -1,14 +1,225 @@
 {
 	"data": [
 	{
-		"id": "gemini-exp-1206",
+		"id": "gemini-1.5-flash",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-1.5-flash-002",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-1.5-flash-8b",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-1.5-flash-8b-001",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-1.5-flash-8b-latest",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-1.5-flash-latest",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-1.5-pro",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-1.5-pro-002",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-1.5-pro-latest",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-2.0-flash",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-2.0-flash-001",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-2.0-flash-exp",
 		"max_tokens": 8192,
 		"audio": true,
 		"image": true,
 		"video": true
 	},
 	{
-		"id": "gemini-2.5-pro-exp-03-25",
+		"id": "gemini-2.0-flash-lite",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-2.0-flash-lite-001",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-2.0-flash-lite-preview",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-2.0-flash-lite-preview-02-05",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-2.0-flash-thinking-exp",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-2.0-flash-thinking-exp-01-21",
+		"max_tokens": 65536,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-2.0-flash-thinking-exp-1219",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-2.0-pro-exp",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-2.0-pro-exp-02-05",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-2.5-flash",
+		"max_tokens": 65536,
+		"thinking": true,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-2.5-flash-image-preview",
+		"max_tokens": 8192,
+		"image": true,
+		"modality": "image"
+	},
+	{
+		"id": "gemini-2.5-flash-lite",
+		"max_tokens": 65536,
+		"thinking": true,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-2.5-flash-lite-preview-06-17",
+		"max_tokens": 65536,
+		"thinking": true,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-2.5-flash-lite-preview-09-2025",
+		"max_tokens": 65536,
+		"thinking": true,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-2.5-flash-preview-05-20",
+		"max_tokens": 65536,
+		"thinking": true,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-2.5-flash-preview-09-2025",
+		"max_tokens": 65536,
+		"thinking": true,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-2.5-pro",
 		"max_tokens": 65536,
 		"audio": true,
 		"image": true,
@@ -40,7 +251,101 @@
 		"search": true
 	},
 	{
-		"id": "gemini-2.5-pro",
+		"id": "gemini-exp-1206",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-flash-latest",
+		"max_tokens": 65536,
+		"thinking": true,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-flash-lite-latest",
+		"max_tokens": 65536,
+		"thinking": true,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-pro-latest",
+		"max_tokens": 65536,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-robotics-er-1.5-preview",
+		"max_tokens": 65536,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemma-3-12b-it",
+		"max_tokens": 8192,
+		"image": true
+	},
+	{
+		"id": "gemma-3-1b-it",
+		"max_tokens": 8192,
+		"image": false
+	},
+	{
+		"id": "gemma-3-27b-it",
+		"max_tokens": 8192,
+		"image": true
+	},
+	{
+		"id": "gemma-3-4b-it",
+		"max_tokens": 8192,
+		"image": true
+	},
+	{
+		"id": "gemma-3n-e2b-it",
+		"max_tokens": 2048,
+		"image": false
+	},
+	{
+		"id": "gemma-3n-e4b-it",
+		"max_tokens": 2048,
+		"image": false
+	},
+	{
+		"id": "learnlm-2.0-flash-experimental",
+		"max_tokens": 32768,
+		"audio": true,
+		"image": true,
+		"video": true
+	},
+	{
+		"id": "gemini-1.5-flash-001",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-1.5-pro-001",
+		"max_tokens": 8192,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
+		"id": "gemini-2.5-pro-exp-03-25",
 		"max_tokens": 65536,
 		"audio": true,
 		"image": true,
@@ -57,102 +362,12 @@
 		"search": true
 	},
 	{
-		"id": "gemini-2.5-flash-preview-05-20",
-		"max_tokens": 65536,
-		"thinking": true,
-		"audio": true,
-		"image": true,
-		"video": true,
-		"search": true
-	},
-	{
-		"id": "gemini-2.5-flash",
-		"max_tokens": 65536,
-		"thinking": true,
-		"audio": true,
-		"image": true,
-		"video": true,
-		"search": true
-	},
-	{
-		"id": "gemini-2.5-flash-lite-preview-06-17",
-		"max_tokens": 65536,
-		"thinking": true,
-		"audio": true,
-		"image": true,
-		"video": true,
-		"search": true
-	},
-	{
-		"id": "gemini-2.0-flash-001",
-		"max_tokens": 8192,
-		"audio": true,
-		"image": true,
-		"video": true,
-		"search": true
-	},
-	{
 		"id": "gemini-2.0-flash-exp-image-generation",
 		"max_tokens": 8192,
 		"audio": true,
 		"image": true,
 		"video": true,
 		"modality": "image"
-	},
-	{
-		"id": "gemini-2.0-flash-lite-001",
-		"max_tokens": 8192,
-		"audio": true,
-		"image": true
-	},
-	{
-		"id": "gemini-2.0-pro-exp-02-05",
-		"max_tokens": 8192,
-		"audio": true,
-		"image": true
-	},
-	{
-		"id": "gemini-2.0-flash-thinking-exp-01-21",
-		"max_tokens": 65536,
-		"audio": true,
-		"image": true
-	},
-	{
-		"id": "gemini-2.0-flash-exp",
-		"max_tokens": 8192,
-		"audio": true,
-		"image": true,
-		"video": true
-	},
-	{
-		"id": "gemma-3-1b-it",
-		"max_tokens": 8192,
-		"image": false
-	},
-	{
-		"id": "gemma-3-4b-it",
-		"max_tokens": 8192,
-		"image": true
-	},
-	{
-		"id": "gemma-3-12b-it",
-		"max_tokens": 8192,
-		"image": true
-	},
-	{
-		"id": "gemma-3-27b-it",
-		"max_tokens": 8192,
-		"image": true
-	},
-	{
-		"id": "gemma-3n-e2b-it",
-		"max_tokens": 2048,
-		"image": false
-	},
-	{
-		"id": "gemma-3n-e4b-it",
-		"max_tokens": 2048,
-		"image": false
 	},
 	{
 		"id": "gemma-2-2b-it",
