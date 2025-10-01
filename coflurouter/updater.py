@@ -28,7 +28,9 @@ for model in models:
 			existing_model["id"] = model["id"]
 		else:
 			for key in model:
-				if key not in ["name", "high_cost", "transcription"]:
+				if existing_model.get("image"):
+					continue
+				elif key not in ["name", "high_cost", "transcription"]:
 					existing_model[key] = model[key]
 	else:
 		new_model = {}

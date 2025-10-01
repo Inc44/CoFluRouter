@@ -76,6 +76,29 @@ def skip_model(item):
 		)
 	):
 		return True
+	if (
+		"id" in item
+		and (
+			"tts-" in str(item["id"]).lower() or str(item["id"]).lower().endswith("tts")
+		)
+		and "gemini" not in str(item["id"]).lower()
+	):
+		return True
+	if ("id" in item and "embedding" in str(item["id"]).lower()) or (
+		"type" in item and "embedding" in item["type"]
+	):
+		return True
+	for model in [
+		"babbage",
+		"computer-use",
+		"dall-e",
+		"davinci",
+		"gpt-image",
+		"omni-moderation",
+		"realtime",
+	]:
+		if "id" in item and model in str(item["id"]).lower():
+			return True
 	return False
 
 
