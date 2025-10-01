@@ -1,13 +1,18 @@
 {
 	"data": [
 	{
-		"id": "grok-3",
-		"max_tokens": 131072,
-		"image": false
+		"id": "grok-4-fast-non-reasoning",
+		"max_tokens": 30000,
+		"image": true
 	},
 	{
-		"id": "grok-3-fast",
-		"max_tokens": 131072,
+		"id": "grok-4-fast-reasoning",
+		"max_tokens": 30000,
+		"image": true
+	},
+	{
+		"id": "grok-code-fast-1",
+		"max_tokens": 10000,
 		"image": false
 	},
 	{
@@ -30,12 +35,6 @@
 	{
 		"id": "grok-2-vision-1212",
 		"max_tokens": 32768,
-		"image": true
-	},
-	{
-		"id": "grok-4",
-		"max_tokens": 256000,
-		"reasoning_effort": "low",
 		"image": true
 	},
 	{

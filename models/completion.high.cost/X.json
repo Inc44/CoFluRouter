@@ -1,6 +1,16 @@
 {
 	"data": [
 	{
+		"id": "grok-4-0709",
+		"max_tokens": 256000,
+		"image": true
+	},
+	{
+		"id": "grok-4-0709-eu",
+		"max_tokens": 256000,
+		"image": true
+	},
+	{
 		"id": "grok-3",
 		"max_tokens": 131072,
 		"image": false
@@ -14,5 +24,10 @@
 		"id": "grok-3-beta",
 		"max_tokens": 131072,
 		"image": false
+	},
+	{
+		"id": "grok-4",
+		"max_tokens": 256000,
+		"image": true
 	}]
 }
