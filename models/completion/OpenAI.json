@@ -1,6 +1,53 @@
 {
 	"data": [
 	{
+		"id": "gpt-5-codex",
+		"max_tokens": 128000,
+		"responses_api_only": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5-nano",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "gpt-5-nano-2025-08-07",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "gpt-5-mini",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "gpt-5-mini-2025-08-07",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "gpt-5",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "gpt-5-2025-08-07",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "gpt-5-chat-latest",
+		"max_tokens": 16384,
+		"image": true
+	},
+	{
 		"id": "o4-mini-deep-research-2025-06-26",
 		"max_tokens": 100000,
 		"responses_api_only": true,
@@ -15,12 +62,11 @@
 		"image": true
 	},
 	{
-		"id": "gpt-4o-audio-preview-2025-06-03",
-		"max_tokens": 2048,
-		"completions_api_only": true,
-		"audio": true,
-		"image": false,
-		"modality": "audio"
+		"id": "codex-mini-latest",
+		"max_tokens": 100000,
+		"reasoning_effort": "low",
+		"responses_api_only": true,
+		"image": true
 	},
 	{
 		"id": "gpt-4.1-nano",
@@ -94,46 +140,6 @@
 		"image": false
 	},
 	{
-		"id": "gpt-4o-mini-audio-preview",
-		"max_tokens": 2048,
-		"completions_api_only": true,
-		"audio": true,
-		"image": true,
-		"modality": "audio"
-	},
-	{
-		"id": "gpt-4o-mini-audio-preview-2024-12-17",
-		"max_tokens": 2048,
-		"completions_api_only": true,
-		"audio": true,
-		"image": true,
-		"modality": "audio"
-	},
-	{
-		"id": "gpt-4o-audio-preview-2024-12-17",
-		"max_tokens": 2048,
-		"completions_api_only": true,
-		"audio": true,
-		"image": false,
-		"modality": "audio"
-	},
-	{
-		"id": "gpt-4o-audio-preview",
-		"max_tokens": 2048,
-		"completions_api_only": true,
-		"audio": true,
-		"image": false,
-		"modality": "audio"
-	},
-	{
-		"id": "gpt-4o-audio-preview-2024-10-01",
-		"max_tokens": 2048,
-		"completions_api_only": true,
-		"audio": true,
-		"image": false,
-		"modality": "audio"
-	},
-	{
 		"id": "o1-mini",
 		"max_tokens": 65536,
 		"completions_api_only": true,
@@ -166,12 +172,27 @@
 		"image": true
 	},
 	{
+		"id": "gpt-3.5-turbo-0125",
+		"max_tokens": 4096,
+		"image": false
+	},
+	{
 		"id": "gpt-3.5-turbo-1106",
 		"max_tokens": 4096,
 		"image": false
 	},
 	{
 		"id": "gpt-3.5-turbo-1106",
+		"max_tokens": 4096,
+		"image": false
+	},
+	{
+		"id": "gpt-3.5-turbo-instruct-0914",
+		"max_tokens": 4096,
+		"image": false
+	},
+	{
+		"id": "gpt-3.5-turbo-instruct",
 		"max_tokens": 4096,
 		"image": false
 	},

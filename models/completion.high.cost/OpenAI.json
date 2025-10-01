@@ -1,6 +1,22 @@
 {
 	"data": [
 	{
+		"id": "gpt-audio",
+		"max_tokens": 16384,
+		"completions_api_only": true,
+		"audio": true,
+		"image": false,
+		"modality": "audio"
+	},
+	{
+		"id": "gpt-audio-2025-08-28",
+		"max_tokens": 16384,
+		"completions_api_only": true,
+		"audio": true,
+		"image": false,
+		"modality": "audio"
+	},
+	{
 		"id": "o3-deep-research-2025-06-26",
 		"max_tokens": 100000,
 		"responses_api_only": true,
@@ -20,6 +36,14 @@
 		"responses_api_only": true,
 		"reasoning_effort": "low",
 		"image": true
+	},
+	{
+		"id": "gpt-4o-audio-preview-2025-06-03",
+		"max_tokens": 2048,
+		"completions_api_only": true,
+		"audio": true,
+		"image": false,
+		"modality": "audio"
 	},
 	{
 		"id": "o3-pro",
@@ -71,6 +95,14 @@
 		"image": false
 	},
 	{
+		"id": "gpt-4o-mini-audio-preview",
+		"max_tokens": 2048,
+		"completions_api_only": true,
+		"audio": true,
+		"image": true,
+		"modality": "audio"
+	},
+	{
 		"id": "o1",
 		"max_tokens": 100000,
 		"reasoning_effort": "low",
@@ -81,6 +113,38 @@
 		"max_tokens": 100000,
 		"reasoning_effort": "low",
 		"image": true
+	},
+	{
+		"id": "gpt-4o-mini-audio-preview-2024-12-17",
+		"max_tokens": 2048,
+		"completions_api_only": true,
+		"audio": true,
+		"image": true,
+		"modality": "audio"
+	},
+	{
+		"id": "gpt-4o-audio-preview-2024-12-17",
+		"max_tokens": 2048,
+		"completions_api_only": true,
+		"audio": true,
+		"image": false,
+		"modality": "audio"
+	},
+	{
+		"id": "gpt-4o-audio-preview",
+		"max_tokens": 2048,
+		"completions_api_only": true,
+		"audio": true,
+		"image": false,
+		"modality": "audio"
+	},
+	{
+		"id": "gpt-4o-audio-preview-2024-10-01",
+		"max_tokens": 2048,
+		"completions_api_only": true,
+		"audio": true,
+		"image": false,
+		"modality": "audio"
 	},
 	{
 		"id": "chatgpt-4o-latest",
@@ -101,6 +165,11 @@
 		"id": "gpt-4-turbo",
 		"max_tokens": 4096,
 		"image": true
+	},
+	{
+		"id": "gpt-4-turbo-preview",
+		"max_tokens": 4096,
+		"image": false
 	},
 	{
 		"id": "gpt-4-0125-preview",
