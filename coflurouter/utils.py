@@ -8,7 +8,7 @@ def read_json(path: Path) -> dict:
 	return json.loads(path.read_text(encoding="utf-8"))
 
 
-def write_json(path: Path, obj: dict) -> None:
+def write_json(path: Path, obj: dict, sort_keys: bool = False) -> None:
 	opts = {
 		"brace_style": "expand",
 		"break_chained_methods": True,
@@ -29,6 +29,8 @@ def write_json(path: Path, obj: dict) -> None:
 		"wrap_line_length": 0,
 	}
 	path.write_text(
-		jsbeautifier.beautify(json.dumps(obj, indent="\t", ensure_ascii=False), opts),
+		jsbeautifier.beautify(
+			json.dumps(obj, indent="\t", sort_keys=sort_keys, ensure_ascii=False), opts
+		),
 		encoding="utf-8",
 	)

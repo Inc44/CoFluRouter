@@ -88,7 +88,7 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		sort_by_keys(obj, ["created_at", "name"], reverse=True)
 	else:
 		sort_by_keys(obj, ["created", "name"], reverse=True)
-	write_json(path, obj)
+	write_json(path, obj, True)
 	if "data" in obj:
 		obj = obj["data"]
 	models = [model["id"] for model in obj]
