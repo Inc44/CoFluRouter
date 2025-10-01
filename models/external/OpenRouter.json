@@ -3,6 +3,46 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "z-ai/glm-4.6",
+		"context_length": 202752,
+		"created": 1759235576,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.6,
+			"top_p": null
+		},
+		"description": "Compared with GLM-4.5, this generation brings several key improvements:\n\nLonger context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex agentic tasks.\nSuperior coding performance: The model achieves higher scores on code benchmarks and demonstrates better real-world performance in applications such as Claude Code、Cline、Roo Code and Kilo Code, including improvements in generating visually polished front-end pages.\nAdvanced reasoning: GLM-4.6 shows a clear improvement in reasoning performance and supports tool use during inference, leading to stronger overall capability.\nMore capable agents: GLM-4.6 exhibits stronger performance in tool using and search-based agents, and integrates more effectively within agent frameworks.\nRefined writing: Better aligns with human preferences in style and readability, and performs more naturally in role-playing scenarios.",
+		"hugging_face_id": "",
+		"id": "z-ai/glm-4.6",
+		"name": "Z.AI: GLM 4.6",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000002",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000006",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 202752,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -26,7 +66,7 @@
 		"pricing":
 		{
 			"completion": "0.000015",
-			"image": "0",
+			"image": "0.0048",
 			"input_cache_read": "0.0000003",
 			"input_cache_write": "0.00000375",
 			"internal_reasoning": "0",
@@ -67,19 +107,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000041",
+			"completion": "0.0000004",
 			"image": "0",
 			"internal_reasoning": "0",
 			"prompt": "0.00000027",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -100,7 +140,7 @@
 			"temperature": null,
 			"top_p": null
 		},
-		"description": "Creative writing model based on Mistral Small 3.2 24B",
+		"description": "Uncensored and creative writing model based on Mistral Small 3.2 24B with good recall, prompt adherence, and intelligence.",
 		"hugging_face_id": "thedrummer/cydonia-24b-v4.1",
 		"id": "thedrummer/cydonia-24b-v4.1",
 		"name": "TheDrummer: Cydonia 24B V4.1",
@@ -254,7 +294,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-vl-235b-a22b-thinking",
-		"context_length": 131072,
+		"context_length": 65536,
 		"created": 1758668690,
 		"default_parameters":
 		{
@@ -269,19 +309,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000003",
+			"completion": "0.0000035",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000003",
+			"prompt": "0.0000005",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 65536,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -468,19 +508,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
+			"completion": "0.0000009",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000027",
+			"prompt": "0.00000023",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -814,14 +854,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0",
+			"completion": "0.00000075",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0",
+			"prompt": "0.00000015",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["max_tokens", "temperature", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -1066,7 +1106,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000225",
+			"completion": "0.000002",
 			"image": "0",
 			"internal_reasoning": "0",
 			"prompt": "0.0000004",
@@ -1693,7 +1733,7 @@
 			"completion": "0.0000018",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000005",
+			"prompt": "0.0000006",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1702,7 +1742,7 @@
 		{
 			"context_length": 65536,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -2056,7 +2096,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000015",
+			"completion": "0.00000014",
 			"image": "0",
 			"internal_reasoning": "0",
 			"prompt": "0.00000003",
@@ -2068,7 +2108,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -2248,10 +2288,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000155",
+			"completion": "0.0000016",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000039",
+			"prompt": "0.00000038",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2260,7 +2300,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -3036,6 +3076,42 @@
 			"context_length": 163840,
 			"is_moderated": false,
 			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "DeepSeek"
+		},
+		"canonical_slug": "tngtech/deepseek-r1t2-chimera",
+		"context_length": 163840,
+		"created": 1751986985,
+		"default_parameters":
+		{},
+		"description": "DeepSeek-TNG-R1T2-Chimera is the second-generation Chimera model from TNG Tech. It is a 671 B-parameter mixture-of-experts text-generation model assembled from DeepSeek-AI’s R1-0528, R1, and V3-0324 checkpoints with an Assembly-of-Experts merge. The tri-parent design yields strong reasoning performance while running roughly 20 % faster than the original R1 and more than 2× faster than R1-0528 under vLLM, giving a favorable cost-to-intelligence trade-off. The checkpoint supports contexts up to 60 k tokens in standard use (tested to ~130 k) and maintains consistent <think> token behaviour, making it suitable for long-context analysis, dialogue and other open-ended generation tasks.",
+		"hugging_face_id": "tngtech/DeepSeek-TNG-R1T2-Chimera",
+		"id": "tngtech/deepseek-r1t2-chimera",
+		"name": "TNG: DeepSeek R1T2 Chimera",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000001",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000025",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 163840,
+			"is_moderated": false,
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -6436,10 +6512,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000015",
+			"completion": "0.00000035",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000001",
+			"prompt": "0.0000002",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -12702,10 +12778,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000006",
+			"completion": "0.00000009",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000006",
+			"prompt": "0.00000005",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -12714,7 +12790,7 @@
 		{
 			"context_length": 4096,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 4096
 		}
 	},
 	{
