@@ -1,16 +1,28 @@
 {
 	"data": [
 	{
+		"id": "claude-sonnet-4-5-20250929",
+		"max_tokens": 64000,
+		"thinking": true,
+		"image": true
+	},
+	{
+		"id": "claude-opus-4-1-20250805",
+		"max_tokens": 32000,
+		"thinking": true,
+		"image": true
+	},
+	{
 		"id": "claude-opus-4-20250514",
 		"max_tokens": 32000,
 		"thinking": true,
-		"image": false
+		"image": true
 	},
 	{
 		"id": "claude-sonnet-4-20250514",
 		"max_tokens": 64000,
 		"thinking": true,
-		"image": false
+		"image": true
 	},
 	{
 		"id": "claude-3-7-sonnet-20250219",
