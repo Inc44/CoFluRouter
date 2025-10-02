@@ -2,7 +2,27 @@
 	"data": [
 	{
 		"id": "qwen-plus",
-		"max_tokens": 8192,
+		"max_tokens": 32768,
+		"image": false
+	},
+	{
+		"id": "qwen3-vl-plus-2025-09-23",
+		"max_tokens": 32768,
+		"image": true
+	},
+	{
+		"id": "qwen3-coder-plus-2025-09-23",
+		"max_tokens": 65536,
+		"image": false
+	},
+	{
+		"id": "qwen3-next-80b-a3b-instruct",
+		"max_tokens": 32768,
+		"image": false
+	},
+	{
+		"id": "qwen3-next-80b-a3b-thinking",
+		"max_tokens": 32768,
 		"image": false
 	},
 	{
@@ -14,6 +34,21 @@
 		"id": "qwen-turbo",
 		"max_tokens": 8192,
 		"image": false
+	},
+	{
+		"id": "qwen-plus-2025-09-11",
+		"max_tokens": 32768,
+		"image": false
+	},
+	{
+		"id": "qwen3-max-preview",
+		"max_tokens": 65536,
+		"image": false
+	},
+	{
+		"id": "qwen2-7b-instruct",
+		"image": false,
+		"max_tokens": 32768
 	},
 	{
 		"id": "qwen-plus-2025-04-28",
