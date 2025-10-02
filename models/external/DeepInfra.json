@@ -1573,8 +1573,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.05,
-				"output_tokens": 0.1
+				"input_tokens": 0.04,
+				"output_tokens": 0.13
 			},
 			"tags": ["vision"]
 		},
@@ -2884,7 +2884,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.6,
-				"output_tokens": 2.0
+				"output_tokens": 1.9
 			},
 			"tags": []
 		},

@@ -61,7 +61,7 @@
 		"public_apps": null
 	},
 	{
-		"active": true,
+		"active": false,
 		"context_window": 512,
 		"created": 1748632165,
 		"id": "meta-llama/llama-prompt-guard-2-86m",
@@ -71,7 +71,7 @@
 		"public_apps": null
 	},
 	{
-		"active": true,
+		"active": false,
 		"context_window": 512,
 		"created": 1748632101,
 		"id": "meta-llama/llama-prompt-guard-2-22m",

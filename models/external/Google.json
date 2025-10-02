@@ -164,6 +164,12 @@
 	},
 	{
 		"display_name": "Nano Banana",
+		"id": "models/gemini-2.5-flash-image",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Nano Banana",
 		"id": "models/gemini-2.5-flash-image-preview",
 		"object": "model",
 		"owned_by": "google"
