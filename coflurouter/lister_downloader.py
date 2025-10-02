@@ -46,7 +46,7 @@ def sort_by_keys(obj, keys, reverse=False):
 
 
 for name, base_url, api_key in OPENAI_COMPATIBLE:
-	if name in ["Minimax", "Perplexity"]:
+	if name in ["Lambda", "Minimax", "Perplexity"]:
 		continue
 	models = "models"
 	headers = {"Authorization": f"Bearer {api_key}", "Accept": "application/json"}
