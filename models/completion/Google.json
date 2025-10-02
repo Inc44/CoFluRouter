@@ -168,6 +168,12 @@
 		"search": true
 	},
 	{
+		"id": "gemini-2.5-flash-image",
+		"max_tokens": 8192,
+		"image": true,
+		"modality": "image"
+	},
+	{
 		"id": "gemini-2.5-flash-image-preview",
 		"max_tokens": 8192,
 		"image": true,
