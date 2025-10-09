@@ -151,6 +151,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 2.5 Computer Use Preview 10-2025",
+		"id": "models/gemini-2.5-computer-use-preview-10-2025",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 2.5 Flash",
 		"id": "models/gemini-2.5-flash",
 		"object": "model",

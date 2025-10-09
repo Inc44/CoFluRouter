@@ -1,6 +1,60 @@
 {
 	"data": [
 	{
+		"created": 1759708663,
+		"id": "sora-2-pro",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1759708615,
+		"id": "sora-2",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1759517175,
+		"id": "gpt-realtime-mini-2025-10-06",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1759517133,
+		"id": "gpt-realtime-mini",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1759512137,
+		"id": "gpt-audio-mini-2025-10-06",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1759512027,
+		"id": "gpt-audio-mini",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1759469822,
+		"id": "gpt-5-pro",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1759469707,
+		"id": "gpt-5-pro-2025-10-06",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1758845821,
+		"id": "gpt-image-1-mini",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1757527818,
 		"id": "gpt-5-codex",
 		"object": "model",

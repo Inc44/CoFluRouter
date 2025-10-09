@@ -3,6 +3,164 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["image", "text"],
+			"instruct_type": null,
+			"modality": "text+image->text+image",
+			"output_modalities": ["image", "text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-2.5-flash-image",
+		"context_length": 32768,
+		"created": 1759870431,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Gemini 2.5 Flash Image, a.k.a. \"Nano Banana,\" is now generally available. It is a state of the art image generation model with contextual understanding. It is capable of image generation, edits, and multi-turn conversations. Aspect ratios can be controlled with the [image_config API Parameter](https://openrouter.ai/docs/features/multimodal/image-generation#image-aspect-ratio-configuration)",
+		"hugging_face_id": "",
+		"id": "google/gemini-2.5-flash-image",
+		"name": "Google: Gemini 2.5 Flash Image (Nano Banana)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000025",
+			"image": "0.001238",
+			"internal_reasoning": "0",
+			"prompt": "0.0000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "response_format", "seed", "structured_outputs", "temperature", "top_p"],
+		"top_provider":
+		{
+			"context_length": 32768,
+			"is_moderated": false,
+			"max_completion_tokens": 8192
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3-vl-30b-a3b-thinking",
+		"context_length": 262144,
+		"created": 1759794479,
+		"default_parameters":
+		{
+			"temperature": 0.8,
+			"top_p": 0.95
+		},
+		"description": "Qwen3-VL-30B-A3B-Thinking is a multimodal model that unifies strong text generation with visual understanding for images and videos. Its Thinking variant enhances reasoning in STEM, math, and complex tasks. It excels in perception of real-world/synthetic categories, 2D/3D spatial grounding, and long-form visual comprehension, achieving competitive multimodal benchmark results. For agentic use, it handles multi-image multi-turn instructions, video timeline alignments, GUI automation, and visual coding from sketches to debugged UI. Text performance matches flagship Qwen3 models, suiting document AI, OCR, UI assistance, spatial tasks, and agent research.",
+		"hugging_face_id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+		"id": "qwen/qwen3-vl-30b-a3b-thinking",
+		"name": "Qwen: Qwen3 VL 30B A3B Thinking",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000001",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3-vl-30b-a3b-instruct",
+		"context_length": 262144,
+		"created": 1759794476,
+		"default_parameters":
+		{
+			"temperature": 0.7,
+			"top_p": 0.8
+		},
+		"description": "Qwen3-VL-30B-A3B-Instruct is a multimodal model that unifies strong text generation with visual understanding for images and videos. Its Instruct variant optimizes instruction-following for general multimodal tasks. It excels in perception of real-world/synthetic categories, 2D/3D spatial grounding, and long-form visual comprehension, achieving competitive multimodal benchmark results. For agentic use, it handles multi-image multi-turn instructions, video timeline alignments, GUI automation, and visual coding from sketches to debugged UI. Text performance matches flagship Qwen3 models, suiting document AI, OCR, UI assistance, spatial tasks, and agent research.",
+		"hugging_face_id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+		"id": "qwen/qwen3-vl-30b-a3b-instruct",
+		"name": "Qwen: Qwen3 VL 30B A3B Instruct",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000001",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text", "file"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5-pro-2025-10-06",
+		"context_length": 400000,
+		"created": 1759776663,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "GPT-5 Pro is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and accuracy in high-stakes use cases. It supports test-time routing features and advanced prompt understanding, including user-specified intent like \"think hard about this.\" Improvements include reductions in hallucination, sycophancy, and better performance in coding, writing, and health-related tasks.",
+		"hugging_face_id": "",
+		"id": "openai/gpt-5-pro",
+		"name": "OpenAI: GPT-5 Pro",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00012",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.000015",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"top_provider":
+		{
+			"context_length": 400000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text"],
 			"instruct_type": null,
 			"modality": "text->text",
@@ -32,7 +190,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 202752,
@@ -66,9 +224,7 @@
 		"pricing":
 		{
 			"completion": "0.000015",
-			"image": "0.0048",
-			"input_cache_read": "0.0000003",
-			"input_cache_write": "0.00000375",
+			"image": "0",
 			"internal_reasoning": "0",
 			"prompt": "0.000003",
 			"request": "0",
@@ -78,7 +234,7 @@
 		"top_provider":
 		{
 			"context_length": 1000000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 64000
 		}
 	},
@@ -349,19 +505,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000015",
+			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
 			"prompt": "0.0000003",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -786,10 +942,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000013",
+			"completion": "0.00000026",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000003",
+			"prompt": "0.00000007",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -822,10 +978,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000008",
+			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000001",
+			"prompt": "0.00000014",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -834,7 +990,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -1081,7 +1237,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -1182,10 +1338,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002",
+			"completion": "0.0000019",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000004",
+			"prompt": "0.00000039",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1471,10 +1627,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
+			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000025",
+			"prompt": "0.0000003",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1507,7 +1663,7 @@
 		"description": "Gemini 2.5 Flash Image Preview, a.k.a. \"Nano Banana,\" is a state of the art image generation model with contextual understanding. It is capable of image generation, edits, and multi-turn conversations.",
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-flash-image-preview",
-		"name": "Gemini 2.5 Flash Image (Nano Banana)",
+		"name": "Google: Gemini 2.5 Flash Image Preview (Nano Banana)",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -1554,7 +1710,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "stop", "temperature"],
 		"top_provider":
 		{
 			"context_length": 163800,
@@ -2219,13 +2375,13 @@
 			"internal_reasoning": "0",
 			"prompt": "0.000015",
 			"request": "0",
-			"web_search": "0.01"
+			"web_search": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 200000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 32000
 		}
 	},
@@ -2324,10 +2480,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000028",
+			"completion": "0.00000033",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000007",
+			"prompt": "0.00000008",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2364,10 +2520,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000016",
+			"completion": "0.00000155",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000038",
+			"prompt": "0.00000035",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2376,7 +2532,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -2411,7 +2567,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -2451,7 +2607,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -3175,10 +3331,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
+			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000025",
+			"prompt": "0.0000003",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -3352,7 +3508,7 @@
 			"tokenizer": "Llama3"
 		},
 		"canonical_slug": "thedrummer/anubis-70b-v1.1",
-		"context_length": 4096,
+		"context_length": 131072,
 		"created": 1751208347,
 		"default_parameters":
 		{},
@@ -3363,19 +3519,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000007",
+			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000004",
+			"prompt": "0.00000065",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 4096,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -4035,10 +4191,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000005",
+			"completion": "0.00000011",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000001",
+			"prompt": "0.00000003",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -4154,13 +4310,13 @@
 			"internal_reasoning": "0",
 			"prompt": "0.000015",
 			"request": "0",
-			"web_search": "0.01"
+			"web_search": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 200000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 32000
 		}
 	},
@@ -4263,10 +4419,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000014",
+			"completion": "0.00000022",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000004",
+			"prompt": "0.00000005",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -4444,10 +4600,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000051",
+			"completion": "0.00000059",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000013",
+			"prompt": "0.00000015",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5064,10 +5220,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000014",
+			"completion": "0.00000022",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000004",
+			"prompt": "0.00000005",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5100,10 +5256,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000013",
+			"completion": "0.0000002",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000003",
+			"prompt": "0.00000005",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5244,10 +5400,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
+			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000025",
+			"prompt": "0.0000003",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5316,10 +5472,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
+			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000025",
+			"prompt": "0.0000003",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5352,10 +5508,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000014",
+			"completion": "0.00000022",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000004",
+			"prompt": "0.00000005",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5571,10 +5727,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000014",
+			"completion": "0.00000022",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000004",
+			"prompt": "0.00000005",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5584,6 +5740,42 @@
 			"context_length": 32768,
 			"is_moderated": false,
 			"max_completion_tokens": 32768
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "qwen/qwen2.5-coder-7b-instruct",
+		"context_length": 32768,
+		"created": 1744734887,
+		"default_parameters":
+		{},
+		"description": "Qwen2.5-Coder-7B-Instruct is a 7B parameter instruction-tuned language model optimized for code-related tasks such as code generation, reasoning, and bug fixing. Based on the Qwen2.5 architecture, it incorporates enhancements like RoPE, SwiGLU, RMSNorm, and GQA attention with support for up to 128K tokens using YaRN-based extrapolation. It is trained on a large corpus of source code, synthetic data, and text-code grounding, providing robust performance across programming languages and agentic coding workflows.\n\nThis model is part of the Qwen2.5-Coder family and offers strong compatibility with tools like vLLM for efficient deployment. Released under the Apache 2.0 license.",
+		"hugging_face_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+		"id": "qwen/qwen2.5-coder-7b-instruct",
+		"name": "Qwen: Qwen2.5 Coder 7B Instruct",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000009",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 32768,
+			"is_moderated": false,
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -5826,10 +6018,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000007",
+			"completion": "0.00000011",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000002",
+			"prompt": "0.00000003",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -6321,7 +6513,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen2.5-vl-32b-instruct",
-		"context_length": 8192,
+		"context_length": 16384,
 		"created": 1742839838,
 		"default_parameters":
 		{},
@@ -6342,7 +6534,7 @@
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 8192,
+			"context_length": 16384,
 			"is_moderated": false,
 			"max_completion_tokens": null
 		}
@@ -6368,10 +6560,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000014",
+			"completion": "0.00000022",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000004",
+			"prompt": "0.00000005",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -6539,7 +6731,7 @@
 			"tokenizer": "Mistral"
 		},
 		"canonical_slug": "mistralai/mistral-small-3.1-24b-instruct-2503",
-		"context_length": 131072,
+		"context_length": 128000,
 		"created": 1742238937,
 		"default_parameters":
 		{
@@ -6552,19 +6744,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000015",
+			"completion": "0.0000001",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000004",
+			"prompt": "0.00000005",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -6703,7 +6895,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["max_tokens", "seed", "temperature", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -6739,7 +6931,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -6937,7 +7129,7 @@
 			"tokenizer": "Gemini"
 		},
 		"canonical_slug": "google/gemma-3-27b-it",
-		"context_length": 96000,
+		"context_length": 131072,
 		"created": 1741756359,
 		"default_parameters":
 		{},
@@ -6948,19 +7140,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000026",
-			"image": "0",
+			"completion": "0.00000016",
+			"image": "0.0000256",
 			"internal_reasoning": "0",
-			"prompt": "0.00000007",
+			"prompt": "0.00000009",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 96000,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 96000
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -7020,10 +7212,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000016",
+			"completion": "0.00000033",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000004",
+			"prompt": "0.00000008",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -7308,10 +7500,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000005",
+			"completion": "0.00000011",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000001",
+			"prompt": "0.00000003",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -7638,10 +7830,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000011",
+			"completion": "0.00000017",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000003",
+			"prompt": "0.00000004",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -8075,10 +8267,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000028",
+			"completion": "0.00000033",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000007",
+			"prompt": "0.00000008",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -8262,10 +8454,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000015",
+			"completion": "0.00000008",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000004",
+			"prompt": "0.00000005",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -8274,7 +8466,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -8593,7 +8785,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -8804,10 +8996,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000999999888",
+			"completion": "0.00000085",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000024999988",
+			"prompt": "0.0000003",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -8816,7 +9008,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -9093,10 +9285,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000012",
+			"completion": "0.00000039",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000004",
+			"prompt": "0.00000013",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -9105,7 +9297,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 120000
 		}
 	},
 	{
@@ -9460,7 +9652,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000014",
+			"completion": "0.00000016",
 			"image": "0",
 			"internal_reasoning": "0",
 			"prompt": "0.00000004",
@@ -9651,7 +9843,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 16384,
@@ -9786,11 +9978,15 @@
 		"context_length": 65536,
 		"created": 1729036800,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Qwen2.5 7B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2:\n\n- Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our specialized expert models in these domains.\n\n- Significant improvements in instruction following, generating long texts (over 8K tokens), understanding structured data (e.g, tables), and generating structured outputs especially JSON. More resilient to the diversity of system prompts, enhancing role-play implementation and condition-setting for chatbots.\n\n- Long-context Support up to 128K tokens and can generate up to 8K tokens.\n\n- Multilingual support for over 29 languages, including Chinese, English, French, Spanish, Portuguese, German, Italian, Russian, Japanese, Korean, Vietnamese, Thai, Arabic, and more.\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
 		"hugging_face_id": "Qwen/Qwen2.5-7B-Instruct",
 		"id": "qwen/qwen-2.5-7b-instruct",
-		"name": "Qwen2.5 7B Instruct",
+		"name": "Qwen: Qwen2.5 7B Instruct",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -10307,7 +10503,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -10809,10 +11005,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002",
+			"completion": "0.000004",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000002",
+			"prompt": "0.000004",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -10821,7 +11017,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -10834,7 +11030,7 @@
 			"tokenizer": "Llama3"
 		},
 		"canonical_slug": "meta-llama/llama-3.1-8b-instruct",
-		"context_length": 16384,
+		"context_length": 131072,
 		"created": 1721692800,
 		"default_parameters":
 		{},
@@ -10855,7 +11051,7 @@
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 16384,
+			"context_length": 131072,
 			"is_moderated": false,
 			"max_completion_tokens": 16384
 		}
@@ -11211,14 +11407,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000002",
+			"completion": "0.00000003",
 			"image": "0",
 			"internal_reasoning": "0",
 			"prompt": "0.00000001",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 8192,
@@ -11920,7 +12116,7 @@
 		{
 			"context_length": 65536,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -12496,10 +12692,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000004",
+			"completion": "0.00000054",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000004",
+			"prompt": "0.00000054",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -12539,7 +12735,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 4096,
@@ -12575,7 +12771,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 6144,
@@ -12597,7 +12793,7 @@
 		"created": 1699401600,
 		"default_parameters":
 		{},
-		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nThe meta-model is powered by [Not Diamond](https://docs.notdiamond.ai/docs/how-not-diamond-works). Learn more in our [docs](/docs/model-routing).\n\nRequests will be routed to the following models:\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-4.1-nano](/openai/gpt-4.1-nano)\n- [openai/gpt-4.1](/openai/gpt-4.1)\n- [openai/gpt-4.1-mini](/openai/gpt-4.1-mini)\n- [openai/gpt-4.1](/openai/gpt-4.1)\n- [openai/gpt-4o-mini](/openai/gpt-4o-mini)\n- [openai/chatgpt-4o-latest](/openai/chatgpt-4o-latest)\n- [anthropic/claude-3.5-haiku](/anthropic/claude-3.5-haiku)\n- [anthropic/claude-opus-4-1](/anthropic/claude-opus-4-1)\n- [anthropic/claude-sonnet-4-0](/anthropic/claude-sonnet-4-0)\n- [anthropic/claude-3-7-sonnet-latest](/anthropic/claude-3-7-sonnet-latest)\n- [google/gemini-pro-1.5](/google/gemini-pro-1.5)\n- [google/gemini-flash-1.5](/google/gemini-flash-1.5)\n- [google/gemini-2.5-pro](/google/gemini-2.5-pro)\n- [google/gemini-2.5-flash](/google/gemini-2.5-flash)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium](/mistralai/mistral-medium)\n- [mistralai/mistral-small](/mistralai/mistral-small)\n- [mistralai/mistral-nemo](/mistralai/mistral-nemo)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [meta-llama/llama-3.1-70b-instruct](/meta-llama/llama-3.1-70b-instruct)\n- [meta-llama/llama-3.1-405b-instruct](/meta-llama/llama-3.1-405b-instruct)\n- [mistralai/mixtral-8x22b-instruct](/mistralai/mixtral-8x22b-instruct)\n- [perplexity/sonar](/perplexity/sonar)\n- [cohere/command-r-plus](/cohere/command-r-plus)\n- [cohere/command-r](/cohere/command-r)",
+		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nThe meta-model is powered by [Not Diamond](https://docs.notdiamond.ai/docs/how-not-diamond-works). Learn more in our [docs](/docs/model-routing).\n\nRequests will be routed to the following models:\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-4.1-nano](/openai/gpt-4.1-nano)\n- [openai/gpt-4.1](/openai/gpt-4.1)\n- [openai/gpt-4.1-mini](/openai/gpt-4.1-mini)\n- [openai/gpt-4.1](/openai/gpt-4.1)\n- [openai/gpt-4o-mini](/openai/gpt-4o-mini)\n- [openai/chatgpt-4o-latest](/openai/chatgpt-4o-latest)\n- [anthropic/claude-3.5-haiku](/anthropic/claude-3.5-haiku)\n- [anthropic/claude-opus-4-1](/anthropic/claude-opus-4-1)\n- [anthropic/claude-sonnet-4-0](/anthropic/claude-sonnet-4-0)\n- [anthropic/claude-3-7-sonnet-latest](/anthropic/claude-3-7-sonnet-latest)\n- [google/gemini-2.5-pro](/google/gemini-2.5-pro)\n- [google/gemini-2.5-flash](/google/gemini-2.5-flash)\n- [mistral/mistral-large-latest](/mistral/mistral-large-latest)\n- [mistral/mistral-medium-latest](/mistral/mistral-medium-latest)\n- [mistral/mistral-small-latest](/mistral/mistral-small-latest)\n- [mistralai/mistral-nemo](/mistralai/mistral-nemo)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [meta-llama/llama-3.1-70b-instruct](/meta-llama/llama-3.1-70b-instruct)\n- [meta-llama/llama-3.1-405b-instruct](/meta-llama/llama-3.1-405b-instruct)\n- [mistralai/mixtral-8x22b-instruct](/mistralai/mixtral-8x22b-instruct)\n- [perplexity/sonar](/perplexity/sonar)\n- [cohere/command-r-plus](/cohere/command-r-plus)\n- [cohere/command-r](/cohere/command-r)",
 		"hugging_face_id": null,
 		"id": "openrouter/auto",
 		"name": "Auto Router",
@@ -12789,7 +12985,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 8000,
@@ -12825,7 +13021,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 6144,
@@ -12861,7 +13057,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 4096,

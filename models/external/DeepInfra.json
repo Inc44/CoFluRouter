@@ -644,6 +644,26 @@
 	},
 	{
 		"created": 0,
+		"id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3-Coder-30B-A3B-Instruct is a high-performance code generation model optimized for agentic coding and complex programming tasks. With 30.5B total parameters and 3.3B activated through Mixture-of-Experts architecture, it delivers exceptional efficiency. The model features native support for 256K token context (extendable to 1M), making it ideal for repository-scale code understanding. It excels at tool calling, browser automation, and multi-step coding workflows.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.07,
+				"output_tokens": 0.27
+			},
+			"tags": []
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+	},
+	{
+		"created": 0,
 		"id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
 		"metadata":
 		{
@@ -720,7 +740,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.14,
-				"output_tokens": 1.4
+				"output_tokens": 1.1
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -740,7 +760,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.14,
-				"output_tokens": 1.4
+				"output_tokens": 1.2
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -2429,8 +2449,8 @@
 			"max_tokens": 32768,
 			"pricing":
 			{
-				"input_tokens": 0.4,
-				"output_tokens": 0.4
+				"input_tokens": 0.54,
+				"output_tokens": 0.54
 			},
 			"tags": []
 		},
@@ -2571,7 +2591,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.05,
-				"output_tokens": 0.45
+				"output_tokens": 0.27
 			},
 			"tags": ["reasoning_effort"]
 		},

@@ -929,15 +929,46 @@
 	{
 		"context_length": 262144,
 		"created": 0,
+		"id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+		"input_modalities": ["text", "image"],
+		"max_model_len": 262144,
+		"max_output_length": 262144,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"context_length": 262144,
+		"created": 0,
 		"id": "Qwen/Qwen3-VL-235B-A22B-Thinking",
 		"input_modalities": ["text", "image"],
 		"max_model_len": 262144,
 		"max_output_length": 262144,
 		"object": "model",
 		"output_modalities": ["text"],
-		"owned_by": "vllm",
-		"parent": null,
-		"permission": [],
+		"owned_by": "sglang",
 		"price":
 		{
 			"input":
@@ -2657,12 +2688,12 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
-		"context_length": 96000,
+		"context_length": 131072,
 		"created": 0,
 		"id": "unsloth/gemma-3-12b-it",
 		"input_modalities": ["text", "image"],
-		"max_model_len": 96000,
-		"max_output_length": 96000,
+		"max_model_len": 1048576,
+		"max_output_length": 131072,
 		"object": "model",
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
@@ -2686,7 +2717,7 @@
 		},
 		"quantization": "bf16",
 		"root": "unsloth/gemma-3-12b-it",
-		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_features": ["json_mode", "structured_output"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
@@ -2923,6 +2954,39 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"context_length": 202752,
+		"created": 0,
+		"id": "zai-org/GLM-4.6-FP8",
+		"input_modalities": ["text"],
+		"max_model_len": 202752,
+		"max_output_length": 202752,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "zai-org/GLM-4.6-FP8",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"context_length": null,
 		"created": 0,
 		"id": "zai-org/GLM-4.5V-FP8",
@@ -2986,6 +3050,39 @@
 		"quantization": "fp8",
 		"root": "zai-org/GLM-4.6-FP8",
 		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"context_length": 202752,
+		"created": 0,
+		"id": "zai-org/GLM-4.6-turbo",
+		"input_modalities": ["text"],
+		"max_model_len": 202752,
+		"max_output_length": 202752,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "bf16",
+		"root": "zai-org/GLM-4.6-turbo",
+		"supported_features": ["json_mode", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{

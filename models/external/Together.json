@@ -2,6 +2,60 @@
 {
 	"config":
 	{
+		"bos_token": "<s>",
+		"chat_template": null,
+		"eos_token": "</s>",
+		"stop": []
+	},
+	"context_length": 131072,
+	"created": 1759435628,
+	"display_name": "Apriel 1.5 15B Thinker",
+	"id": "ServiceNow-AI/Apriel-1.5-15b-Thinker",
+	"license": "mit",
+	"link": "https://huggingface.co/api/models/ServiceNow-AI/Apriel-1.5-15b-Thinker",
+	"object": "model",
+	"organization": "Servicenow AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "<s>",
+		"chat_template": null,
+		"eos_token": "<SPECIAL_12>",
+		"stop": ["<SPECIAL_12>"]
+	},
+	"context_length": 131072,
+	"created": 1758138256,
+	"display_name": "Nvidia Nemotron Nano 9B V2",
+	"id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+	"license": "other nvidia-open-model-license",
+	"link": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+	"object": "model",
+	"organization": "Nvidia",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.060000000000000005,
+		"output": 0.25
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": null,
 		"chat_template": null,
 		"eos_token": "<|im_end|>",
@@ -2041,6 +2095,58 @@
 {
 	"config":
 	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1703216381,
+	"display_name": "UAE-Large-V1",
+	"id": "WhereIsAI/UAE-Large-V1",
+	"license": "apache-2.0",
+	"link": "https://huggingface.co/bert-base-uncased",
+	"object": "model",
+	"organization": "WhereIsAI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.016,
+		"output": 0.016
+	},
+	"running": false,
+	"type": "embedding"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": "{% for message in messages %}{% if message['role'] == 'system' %}{% if message['content']%}{{'### System:\n' + message['content']+'\n\n'}}{% endif %}{% elif message['role'] == 'user' %}{{'### User:\n' + message['content']+'\n\n'}}{% elif message['role'] == 'assistant' %}{{'### Assistant:\n'  + message['content']}}{% endif %}{% if loop.last and add_generation_prompt %}{{ '### Assistant:\n' }}{% endif %}{% endfor %}",
+		"eos_token": null,
+		"stop": ["</s>", "###"]
+	},
+	"context_length": 4096,
+	"created": 1702851922,
+	"display_name": "Upstage SOLAR Instruct v1 (11B)",
+	"id": "upstage/SOLAR-10.7B-Instruct-v1.0",
+	"license": "cc-by-nc-4.0",
+	"object": "model",
+	"organization": "upstage",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.3,
+		"output": 0.3
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": "<s>",
 		"chat_template": "{% if messages[0]['role'] == 'system' %}{% set loop_messages = messages[1:] %}{% set system_message = messages[0]['content'] %}{% else %}{% set loop_messages = messages %}{% set system_message = false %}{% endif %}{% for message in loop_messages %}{% if loop.index0 == 0 and system_message != false %}{% set content = '<<SYS>>\\n' + system_message + '\\n<</SYS>>\\n\\n' + message['content'] %}{% else %}{% set content = message['content'] %}{% endif %}{% if message['role'] == 'user' or message['role'] == 'tool' %}{{ bos_token + '[INST] ' + content + ' [/INST]' }}{% elif message['role'] == 'system' %}{{ '<<SYS>>\\n' + content + '\\n<</SYS>>\\n\\n' }}{% elif message['role'] == 'assistant' %}{{ ' '  + content + ' ' + eos_token }}{% endif %}{% endfor %}",
 		"eos_token": "</s>",
@@ -2126,12 +2232,64 @@
 		"eos_token": null,
 		"stop": []
 	},
+	"created": 1699985626,
+	"display_name": "M2-BERT-Retrieval-2K",
+	"id": "togethercomputer/m2-bert-80M-2k-retrieval",
+	"license": "Apache-2",
+	"object": "model",
+	"organization": "Together",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.008,
+		"output": 0.008
+	},
+	"running": false,
+	"type": "embedding"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
 	"context_length": 32768,
 	"created": 1699120644,
 	"display_name": "M2-BERT-Retrieval-32k",
 	"id": "togethercomputer/m2-bert-80M-32k-retrieval",
 	"license": "apache-2.0",
 	"link": "https://huggingface.co/togethercomputer/m2-bert-80M-32k-retrieval",
+	"object": "model",
+	"organization": "Together",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.008,
+		"output": 0.008
+	},
+	"running": false,
+	"type": "embedding"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 8192,
+	"created": 1699120644,
+	"display_name": "M2-BERT-Retrieval-8k",
+	"id": "togethercomputer/m2-bert-80M-8k-retrieval",
+	"license": "apache-2.0",
+	"link": "https://huggingface.co/togethercomputer/m2-bert-80M-8k-retrieval",
 	"object": "model",
 	"organization": "Together",
 	"pricing":
@@ -2175,6 +2333,84 @@
 {
 	"config":
 	{
+		"bos_token": null,
+		"chat_template": "{% for message in messages %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n' }}{% else %}{{ '### Response:\n' + message['content'] + '\n' }}{% endif %}{% endfor %}{{ '### Response:' }}",
+		"eos_token": null,
+		"stop": ["</s>"]
+	},
+	"context_length": 4096,
+	"created": 1693943905,
+	"display_name": "MythoMax-L2 (13B)",
+	"id": "Gryphe/MythoMax-L2-13b",
+	"license": "other",
+	"object": "model",
+	"organization": "Gryphe",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.3,
+		"output": 0.3
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": "{% for message in messages %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n' }}{% else %}{{ '### Response:\n' + message['content'] + '\n' }}{% endif %}{% endfor %}{{ '### Response:' }}",
+		"eos_token": null,
+		"stop": ["</s>"]
+	},
+	"context_length": 4096,
+	"created": 1693943905,
+	"display_name": "Gryphe MythoMax L2 Lite (13B)",
+	"id": "Gryphe/MythoMax-L2-13b-Lite",
+	"license": "other",
+	"object": "model",
+	"organization": "Gryphe",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.1,
+		"output": 0.1
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "<s>",
+		"chat_template": "{% if messages[0]['role'] == 'system' %}{% set loop_messages = messages[1:] %}{% set system_message = messages[0]['content'] %}{% else %}{% set loop_messages = messages %}{% set system_message = false %}{% endif %}{% for message in loop_messages %}{% if loop.index0 == 0 and system_message != false %}{% set content = '<<SYS>>\\n' + system_message + '\\n<</SYS>>\\n\\n' + message['content'] %}{% else %}{% set content = message['content'] %}{% endif %}{% if message['role'] == 'user' or message['role'] == 'tool' %}{{ bos_token + '[INST] ' + content + ' [/INST]' }}{% elif message['role'] == 'system' %}{{ '<<SYS>>\\n' + content + '\\n<</SYS>>\\n\\n' }}{% elif message['role'] == 'assistant' %}{{ ' '  + content + ' ' + eos_token }}{% endif %}{% endfor %}",
+		"eos_token": "</s>",
+		"stop": ["</s>", "[INST]"]
+	},
+	"context_length": 16384,
+	"created": 1692898122,
+	"display_name": "Code Llama Instruct (34B)",
+	"id": "codellama/CodeLlama-34b-Instruct-hf",
+	"license": "LLAMA 2 Community license Agreement (Meta)",
+	"object": "model",
+	"organization": "Meta",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.776,
+		"output": 0.776
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": "<s>",
 		"chat_template": null,
 		"eos_token": "</s>",
@@ -2197,6 +2433,33 @@
 	},
 	"running": false,
 	"type": "language"
+},
+{
+	"config":
+	{
+		"bos_token": "<s>",
+		"chat_template": "{% if messages[0]['role'] == 'system' %}{% set loop_messages = messages[1:] %}{% set system_message = messages[0]['content'] %}{% else %}{% set loop_messages = messages %}{% set system_message = false %}{% endif %}{% for message in loop_messages %}{% if loop.index0 == 0 and system_message != false %}{% set content = '<<SYS>>\\n' + system_message + '\\n<</SYS>>\\n\\n' + message['content'] %}{% else %}{% set content = message['content'] %}{% endif %}{% if message['role'] == 'user' or message['role'] == 'tool' %}{{ bos_token + '[INST] ' + content + ' [/INST]' }}{% elif message['role'] == 'system' %}{{ '<<SYS>>\\n' + content + '\\n<</SYS>>\\n\\n' }}{% elif message['role'] == 'assistant' %}{{ ' '  + content + ' ' + eos_token }}{% endif %}{% endfor %}",
+		"eos_token": "</s>",
+		"stop": ["[/INST]", "</s>"]
+	},
+	"context_length": 4096,
+	"created": 1689720415,
+	"display_name": "LLaMA-2 Chat (13B)",
+	"id": "meta-llama/Llama-2-13b-chat-hf",
+	"license": "LLaMA license Agreement (Meta)",
+	"link": "https://huggingface.co/meta-llama/Llama-2-13b-chat-hf",
+	"object": "model",
+	"organization": "Meta",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.22,
+		"output": 0.22
+	},
+	"running": false,
+	"type": "chat"
 },
 {
 	"config":
@@ -2311,10 +2574,145 @@
 		"eos_token": null,
 		"stop": []
 	},
+	"context_length": 32768,
 	"created": 0,
-	"display_name": "FLUX.1 [pro]",
-	"id": "black-forest-labs/FLUX.1-pro",
-	"link": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
+	"display_name": "Together AI MoA-1-Turbo",
+	"id": "togethercomputer/MoA-1-Turbo",
+	"license": null,
+	"link": "https://github.com/togethercomputer/MoA",
+	"object": "model",
+	"organization": "Together AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": "{% for message in messages %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}",
+		"eos_token": null,
+		"stop": ["<|im_start|>", "<|im_end|>"]
+	},
+	"context_length": 32768,
+	"created": 0,
+	"display_name": "DBRX Instruct",
+	"id": "databricks/dbrx-instruct",
+	"license": "Databricks Open Model License",
+	"link": "https://huggingface.co/databricks/dbrx-instruct",
+	"object": "model",
+	"organization": "Databricks",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 1.2,
+		"output": 1.2
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "<|begin_of_text|>",
+		"chat_template": "{{- bos_token }}\n{%- if custom_tools is defined %}\n    {%- set tools = custom_tools %}\n{%- endif %}\n{%- if not tools_in_user_message is defined %}\n    {%- set tools_in_user_message = true %}\n{%- endif %}\n{%- if not date_string is defined %}\n    {%- set date_string = \"26 Jul 2024\" %}\n{%- endif %}\n\n{#- This block extracts the system message, so we can slot it into the right place. #}\n{%- if messages[0]['role'] == 'system' %}\n    {%- set system_message = messages[0]['content']|trim %}\n    {%- set messages = messages[1:] %}\n{%- else %}\n    {%- set system_message = \"\" %}\n{%- endif %}\n\n{#- System message + builtin tools #}\n{{- \"<|start_header_id|>system<|end_header_id|>\\n\\n\" }}\n{%- if builtin_tools is defined or tools %}\n    {{- \"Environment: ipython\\n\" }}\n{%- endif %}\n{%- if builtin_tools is defined %}\n    {{- \"Tools: \" + builtin_tools | reject('equalto', 'code_interpreter') | join(\", \") + \"\\n\\n\"}}\n{%- endif %}\n{{- \"Cutting Knowledge Date: December 2023\\n\" }}\n{{- \"Today Date: \" + date_string + \"\\n\\n\" }}\n{%- if tools %}\n    {{- \"You have access to the following functions:\\n\\n\" }}{%- for t in tools %}\n        {{- \"Use the function '\" + t.function.name + \"' to '\" + t.function.description + \"'\\n\" }}\n        {{- t.function | dump(4) }}\n        {{- \"\\n\\n\" }}\n    {%- endfor %}\n{% raw %}If a you choose to call a function ONLY reply in the following format:\n<{start_tag}={function_name}>{parameters}{end_tag}\nwhere\n\nstart_tag => `<function`\nparameters => a JSON dict with the function argument name as key and function argument value as value.\nend_tag => `</function>`\n\nHere is an example,\n<function=example_function_name>{\"example_name\": \"example_value\"}</function>\n\nReminder:\n- Function calls MUST follow the specified format\n- Required parameters MUST be specified\n- Only call one function at a time\n- Put the entire function call reply on one line\n- Always add your sources when using search results to answer the user query\n\n{% endraw %}{%- endif %}\n{{- system_message }}\n{{- \"<|eot_id|>\" }}\n\n{%- for message in messages %}\n    {%- if not (message.role == 'ipython' or message.role == 'tool' or 'tool_calls' in message) %}\n        {{- '<|start_header_id|>' + message['role'] + '<|end_header_id|>\\n\\n'+ message['content'] | trim + '<|eot_id|>' }}\n    {%- elif 'tool_calls' in message and message.tool_calls %}\n        {%- if not message.tool_calls|length == 1 %}\n            {{- raise_exception(\"This model only supports single tool-calls at once!\") }}\n        {%- endif %}\n        {%- set tool_call = message.tool_calls[0].function %}\n        {%- if builtin_tools is defined and tool_call.name in builtin_tools %}\n            {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' -}}\n            {{- \"<|python_tag|>\" + tool_call.name + \".call(\" }}\n            {%- for arg_name, arg_val in tool_call.arguments | items %}\n                {{- arg_name + '=\"' + arg_val + '\"' }}\n                {%- if not loop.last %}\n                    {{- \", \" }}\n                {%- endif %}\n                {%- endfor %}\n            {{- \")\" }}\n        {%- else  %}\n            {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' -}}\n            {{- '{\"name\": \"' + tool_call.name + '\", ' }}\n            {{- '\"parameters\": ' }}\n            {{- tool_call.arguments | dump }}\n            {{- \"}\" }}\n        {%- endif %}\n        {%- if builtin_tools is defined %}\n            {#- This means we're in ipython mode #}\n            {{- \"<|eom_id|>\" }}\n        {%- else %}\n            {{- \"<|eot_id|>\" }}\n        {%- endif %}\n    {%- elif message.role == \"tool\" or message.role == \"ipython\" %}\n        {{- \"<|start_header_id|>ipython<|end_header_id|>\\n\\n\" }}\n        {%- if message.content is mapping or message.content is iterable %}\n            {{- message.content | dump }}\n        {%- else %}\n            {{- message.content }}\n        {%- endif %}\n        {{- \"<|eot_id|>\" }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' }}{%- endif %}\n",
+		"eos_token": "<|eot_id|>",
+		"stop": ["<|eot_id|>", "<|eom_id|>"]
+	},
+	"context_length": 4096,
+	"created": 0,
+	"display_name": "Meta Llama 3.1 405B Instruct Turbo",
+	"id": "meta-llama/Meta-Llama-3.1-405B-Instruct-Lite-Pro",
+	"license": "llama",
+	"link": "https://huggingface.co/meta-llama/Meta-Llama-3.1-405B-Instruct",
+	"object": "model",
+	"organization": "Meta",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "<|begin_of_text|>",
+		"chat_template": "{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>\n\n'+ message['content'] | trim + '<|eot_id|>' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{% endif %}{{ content }}{% endfor %}{{ '<|start_header_id|>assistant<|end_header_id|>\n\n' }}",
+		"eos_token": "<|end_of_text|>",
+		"stop": ["<|eot_id|>"]
+	},
+	"context_length": 8192,
+	"created": 0,
+	"display_name": "Meta Llama 3 70B Instruct Lite",
+	"id": "meta-llama/Meta-Llama-3-70B-Instruct-Lite",
+	"license": "Llama-3 (Other)",
+	"link": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+	"object": "model",
+	"organization": "Meta",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.54,
+		"output": 0.54
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": "{{ '[INST] Task: Check if there is unsafe content in \\'' }}{% if messages[messages.length-1]['role'] == 'user' %}{{ 'User' }}{% else %}{{ 'Agent' }}{% endif %}{{ '\\' messages in conversations according our safety policy with the below categories.\n\n<BEGIN UNSAFE CONTENT CATEGORIES>\nO1: Violence and Hate. \nShould not\n - Help people plan or engage in violence.\n - Encourage people to engage in violence.\n - Express hateful, derogatory, or demeaning sentiments against people based on sensitive personal characteristics like their race, color, religion, national origin, sexual orientation, gender, gender identity, or disability.\n - Encourage discrimination against people based on those characteristics and should not use slurs or create insults based on those characteristics.\nCan\n - Provide information on violence and discrimination.\n - Discuss the topics of hate and violence, and can discuss historical events involving violence.\nO2: Sexual Content. \nShould not\n - Engage in sexually explicit (i.e., erotic) conversations and should not encourage people to engage in sexual activities.\nCan\n - Discuss topics related to sexuality and sexual education.\n - Provide general information regarding sexual activities.\n - Provide guidance on topics related to sexual health.\nO3: Criminal Planning. \nShould not\n - Help people plan or engage in criminal activities like theft, kidnapping, or financial crimes, especially when the person indicates that they may act on the information provided to them.\n - Encourage people to engage in criminal activities or condone criminal behavior.\nCan\n - Help people understand how crimes are committed, provided that the response is not so detailed that it could be used to provide a roadmap for future crimes.\n - Help people understand how systems work that are used to prevent crimes, provided those descriptions do not provide detailed information on how to defeat those systems.\nO4: Guns and Illegal Weapons. \nShould not\n - Assist in the planning or execution of firearm or illegal weapons crimes, especially when the person indicates that they may act on the information provided to them.\n - Encourage people to engage in firearm or illegal weapons crimes or condone such behavior.\nCan\n - Discuss firearms and the arguments for and against firearm ownership.\nO5: Regulated or Controlled Substances. \nShould not\n - Encourage or assist people in the trafficking, consumption, or use of regulated or controlled substances, including but not limited to illegal drugs, tobacco, alcohol, and cannabis.\n - Assist or encourage people to create such substances when it is illegal to do so.\nCan\n - Discuss the use of regulated or controlled substances, and can provide general information on those substances (ex: what their chemical composition is and what their effects are).\n - Provide information on how those substances are manufactured, provided that the information is not so detailed as to provide step-by-step instructions for their creation.\nO6: Self-Harm. \nShould not\n - Encourage people to harm themselves.\n - Romanticize or condone self-harm or suicide.\n - Provide information regarding the methods of suicide or self-harm.\n - Provide any information or advice, other than information regarding appropriate health resources, to people who express or imply that they wish to harm themselves.\nCan\n - Provide general information regarding self-harm and suicide (ex: statistics, the mental health challenges faced by those who take these actions).\nShould\n - Provide information regarding appropriate health resources to people who imply or express the desire to harm themselves.\n<END UNSAFE CONTENT CATEGORIES>\n\n<BEGIN CONVERSATION>\n\n' }}{% for message in messages %}{% if message['role'] == 'user' %}{{ 'User: ' + message['content'] + '\n\n' }}{% else %}{{ 'Agent: ' + message['content'] + '\n\n' }}{% endif %}{% endfor %}{{ '<END CONVERSATION>\n\nProvide your safety assessment for '}}{% if messages[messages.length-1]['role'] == 'user' %}{{ 'User' }}{% else %}{{ 'Agent' }}{% endif %}{{' in the above conversation:\n - First line must read \\'safe\\' or \\'unsafe\\'.\n - If unsafe, a second line must include a comma-separated list of violated categories. [/INST]' }}",
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 4096,
+	"created": 0,
+	"display_name": "Llama Guard (7B)",
+	"id": "Meta-Llama/Llama-Guard-7b",
+	"license": "LLaMA license Agreement (Meta)",
+	"link": "https://huggingface.co/meta-llama/LlamaGuard-7b",
+	"object": "model",
+	"organization": "Meta",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.2,
+		"output": 0.2
+	},
+	"running": false,
+	"type": "moderation"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 0,
+	"created": 0,
+	"display_name": "FLUX.1 Kontext [max]",
+	"id": "black-forest-labs/FLUX.1-kontext-max",
 	"object": "model",
 	"organization": "Black Forest Labs",
 	"pricing":
@@ -2361,14 +2759,12 @@
 		"eos_token": null,
 		"stop": []
 	},
-	"context_length": 32768,
 	"created": 0,
-	"display_name": "Together AI MoA-1-Turbo",
-	"id": "togethercomputer/MoA-1-Turbo",
-	"license": null,
-	"link": "https://github.com/togethercomputer/MoA",
+	"display_name": "FLUX.1 [pro]",
+	"id": "black-forest-labs/FLUX.1-pro",
+	"link": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
 	"object": "model",
-	"organization": "Together AI",
+	"organization": "Black Forest Labs",
 	"pricing":
 	{
 		"base": 0,
@@ -2378,7 +2774,7 @@
 		"output": 0
 	},
 	"running": false,
-	"type": "chat"
+	"type": "image"
 },
 {
 	"config":
@@ -2406,31 +2802,6 @@
 	},
 	"running": false,
 	"type": "chat"
-},
-{
-	"config":
-	{
-		"bos_token": null,
-		"chat_template": null,
-		"eos_token": null,
-		"stop": []
-	},
-	"context_length": 0,
-	"created": 0,
-	"display_name": "FLUX.1 Kontext [max]",
-	"id": "black-forest-labs/FLUX.1-kontext-max",
-	"object": "model",
-	"organization": "Black Forest Labs",
-	"pricing":
-	{
-		"base": 0,
-		"finetune": 0,
-		"hourly": 0,
-		"input": 0,
-		"output": 0
-	},
-	"running": false,
-	"type": "image"
 },
 {
 	"config":

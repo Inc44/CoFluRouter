@@ -1,7 +1,7 @@
 {
 	"data": [
 	{
-		"context_length": 32768,
+		"context_length": 131072,
 		"id": "DeepSeek-R1-0528",
 		"max_completion_tokens": 7168,
 		"object": "model",
@@ -29,7 +29,7 @@
 		{}
 	},
 	{
-		"context_length": 32768,
+		"context_length": 131072,
 		"id": "DeepSeek-V3-0324",
 		"max_completion_tokens": 7168,
 		"object": "model",
@@ -43,7 +43,7 @@
 		{}
 	},
 	{
-		"context_length": 32768,
+		"context_length": 131072,
 		"id": "DeepSeek-V3.1",
 		"max_completion_tokens": 7168,
 		"object": "model",
@@ -57,7 +57,7 @@
 		{}
 	},
 	{
-		"context_length": 32768,
+		"context_length": 131072,
 		"id": "DeepSeek-V3.1-Terminus",
 		"max_completion_tokens": 7168,
 		"object": "model",
@@ -163,7 +163,6 @@
 		"pricing":
 		{
 			"completion": "0.00000000",
-			"duration_per_hour": "0.100",
 			"prompt": "0.00000000"
 		},
 		"sn_metadata":
