@@ -3,6 +3,47 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image->text+image",
+			"output_modalities": ["image", "text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5-image-mini",
+		"context_length": 400000,
+		"created": 1760624583,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "GPT-5 Image Mini combines OpenAI's GPT-5 Mini with state-of-the-art image generation capabilities. It provides the same instruction-following and safety-tuning benefits as GPT-5, but with reduced latency and cost. This natively multimodal model incorporates GPT Image 1 Mini's superior instruction following, text rendering, and detailed image editing, making it ideal for applications that require both efficient text processing and high-quality visual creation at scale.",
+		"hugging_face_id": "",
+		"id": "openai/gpt-5-image-mini",
+		"name": "OpenAI: GPT-5 Image Mini",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000002",
+			"image": "0.0000025",
+			"input_cache_read": "0.00000025",
+			"internal_reasoning": "0",
+			"prompt": "0.0000025",
+			"request": "0",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 400000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["image", "text"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -150,7 +191,7 @@
 			"image": "0.00001",
 			"input_cache_read": "0.00000125",
 			"internal_reasoning": "0",
-			"prompt": "0.000005",
+			"prompt": "0.00001",
 			"request": "0",
 			"web_search": "0.01"
 		},
@@ -187,10 +228,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0",
+			"completion": "0.00000228",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0",
+			"prompt": "0.00000057",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1751,6 +1792,46 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Llama3"
+		},
+		"canonical_slug": "deepcogito/cogito-v2-preview-llama-70b",
+		"context_length": 32768,
+		"created": 1756831784,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Cogito v2 70B is a dense hybrid reasoning model that combines direct answering capabilities with advanced self-reflection. Built with iterative policy improvement, it delivers strong performance across reasoning tasks while maintaining efficiency through shorter reasoning chains and improved intuition.",
+		"hugging_face_id": "deepcogito/cogito-v2-preview-llama-70B",
+		"id": "deepcogito/cogito-v2-preview-llama-70b",
+		"name": "Deep Cogito: Cogito V2 Preview Llama 70B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000088",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000088",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 32768,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["image", "text"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -1780,6 +1861,46 @@
 		"top_provider":
 		{
 			"context_length": 32767,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Llama3"
+		},
+		"canonical_slug": "deepcogito/cogito-v2-preview-llama-405B",
+		"context_length": 32768,
+		"created": 1756831149,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Cogito v2 405B is a dense hybrid reasoning model that combines direct answering capabilities with advanced self-reflection. It represents a significant step toward frontier intelligence with dense architecture delivering performance competitive with leading closed models. This advanced reasoning system combines policy improvement with massive scale for exceptional capabilities.",
+		"hugging_face_id": "deepcogito/cogito-v2-preview-llama-405B",
+		"id": "deepcogito/cogito-v2-preview-llama-405B",
+		"name": "Deep Cogito: Cogito V2 Preview Llama 405B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000035",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000035",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 32768,
 			"is_moderated": false,
 			"max_completion_tokens": null
 		}
