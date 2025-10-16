@@ -1,6 +1,426 @@
 {
 	"data": [
 	{
+		"created": 1760530303,
+		"id": "qwen3-vl-flash-2025-10-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760530294,
+		"id": "qwen3-vl-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760428930,
+		"id": "text-embedding-v4",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760428866,
+		"id": "qwen-image-edit",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422634,
+		"id": "qwen3-tts-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422627,
+		"id": "qwen3-tts-flash-2025-09-18",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422605,
+		"id": "qwen3-tts-flash-realtime-2025-09-18",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422584,
+		"id": "qwen3-tts-flash-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422573,
+		"id": "qwen3-omni-flash-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422555,
+		"id": "qwen3-omni-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422528,
+		"id": "qwen3-omni-flash-2025-09-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422512,
+		"id": "qwen3-omni-flash-realtime-2025-09-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422492,
+		"id": "qwen3-omni-30b-a3b-captioner",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422451,
+		"id": "qwen3-s2s-flash-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422426,
+		"id": "qwen3-livetranslate-flash-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422417,
+		"id": "qwen3-livetranslate-flash-realtime-2025-09-22",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422225,
+		"id": "text-embedding-v3",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422195,
+		"id": "qwen2.5-7b-instruct",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422183,
+		"id": "qwen2.5-14b-instruct",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422169,
+		"id": "qwen2.5-32b-instruct",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422160,
+		"id": "qwen2.5-72b-instruct",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422042,
+		"id": "qwen2.5-14b-instruct-1m",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760422014,
+		"id": "qwen2.5-7b-instruct-1m",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421995,
+		"id": "qwen-max-2025-01-25",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421965,
+		"id": "qwen-max-latest",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421764,
+		"id": "qwen-turbo-2024-11-01",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421739,
+		"id": "qwen-turbo-latest",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421728,
+		"id": "qwen-plus-latest",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421706,
+		"id": "qwen-plus-2025-01-25",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421663,
+		"id": "qwq-plus-2025-03-05",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421638,
+		"id": "qwen-mt-turbo",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421630,
+		"id": "qwen-mt-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421602,
+		"id": "qwen-coder-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421593,
+		"id": "qwq-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421564,
+		"id": "qwen2.5-vl-32b-instruct",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421475,
+		"id": "qvq-max",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760421407,
+		"id": "qwen-omni-turbo",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413871,
+		"id": "qwen3-8b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413836,
+		"id": "qwen3-30b-a3b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413824,
+		"id": "qwen3-235b-a22b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413804,
+		"id": "qwen-turbo-2025-04-28",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413785,
+		"id": "qwen-plus-2025-04-28",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413725,
+		"id": "qwen-vl-max-2025-04-08",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413704,
+		"id": "qwen-vl-plus-2025-01-25",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413670,
+		"id": "qwen-vl-plus-latest",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413651,
+		"id": "qwen-vl-max-latest",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413623,
+		"id": "qwen-vl-plus-2025-05-07",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413566,
+		"id": "qwen3-coder-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413548,
+		"id": "qwen3-coder-480b-a35b-instruct",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413482,
+		"id": "qwen3-235b-a22b-instruct-2507",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413462,
+		"id": "qwen-plus-2025-07-14",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413448,
+		"id": "qwen3-coder-plus-2025-07-22",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413428,
+		"id": "qwen3-235b-a22b-thinking-2507",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413309,
+		"id": "qwen3-coder-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413112,
+		"id": "qwen-vl-max",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760413058,
+		"id": "qwen-vl-max-2025-08-13",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760412871,
+		"id": "qwen3-max",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760412852,
+		"id": "qwen3-max-2025-09-23",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760412762,
+		"id": "qwen-image-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760412741,
+		"id": "qwen3-vl-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760412732,
+		"id": "qwen3-vl-235b-a22b-instruct",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760412724,
+		"id": "qwen3-vl-235b-a22b-thinking",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760411704,
+		"id": "qwen3-30b-a3b-thinking-2507",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760411694,
+		"id": "qwen3-30b-a3b-instruct-2507",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760411542,
+		"id": "qwen3-14b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760411523,
+		"id": "qwen3-32b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760411483,
+		"id": "qwen3-0.6b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760411450,
+		"id": "qwen3-4b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760411440,
+		"id": "qwen3-1.7b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1760411425,
+		"id": "qwen-vl-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1758643487,
 		"id": "qwen-plus",
 		"object": "model",
@@ -62,6 +482,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-9",
+	"last_id": "model-id-79",
 	"object": "list"
 }

@@ -443,6 +443,18 @@
 		"id": "models/veo-3.0-generate-preview",
 		"object": "model",
 		"owned_by": "google"
+	},
+	{
+		"display_name": "Veo 3.1 fast",
+		"id": "models/veo-3.1-fast-generate-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Veo 3.1",
+		"id": "models/veo-3.1-generate-preview",
+		"object": "model",
+		"owned_by": "google"
 	}],
 	"object": "list"
 }

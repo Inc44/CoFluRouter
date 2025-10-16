@@ -573,7 +573,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.09,
-				"output_tokens": 0.6
+				"output_tokens": 0.5700000000000001
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -653,7 +653,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.07,
-				"output_tokens": 0.27
+				"output_tokens": 0.26
 			},
 			"tags": []
 		},
@@ -768,6 +768,166 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3-Next-80B-A3B-Thinking"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date.  This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.3,
+				"output_tokens": 1.49
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-VL-235B-A22B-Instruct"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-VL-235B-A22B-Thinking",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date.  This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.45,
+				"output_tokens": 3.4900000000000007
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-VL-235B-A22B-Thinking"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date.  This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.29,
+				"output_tokens": 0.9899999999999999
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-VL-30B-A3B-Instruct"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date.  This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.29,
+				"output_tokens": 0.9899999999999999
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-VL-30B-A3B-Thinking"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-VL-4B-Instruct",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date.  This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.1,
+				"output_tokens": 0.6
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-VL-4B-Instruct"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-VL-4B-Thinking",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date.  This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.1,
+				"output_tokens": 1.0
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-VL-4B-Thinking"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-VL-8B-Instruct",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date.  This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.18,
+				"output_tokens": 0.69
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-VL-8B-Instruct"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-VL-8B-Thinking",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date.  This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.18,
+				"output_tokens": 2.0900000000000003
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-VL-8B-Thinking"
 	},
 	{
 		"created": 0,
@@ -908,8 +1068,8 @@
 			"max_tokens": 16384,
 			"pricing":
 			{
-				"input_tokens": 0.27,
-				"output_tokens": 1.4999999999999998
+				"input_tokens": 0.14,
+				"output_tokens": 0.8
 			},
 			"tags": ["vision"]
 		},
@@ -1204,8 +1364,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.2,
-				"output_tokens": 0.6
+				"input_tokens": 0.5,
+				"output_tokens": 1.0
 			},
 			"tags": []
 		},
@@ -1870,7 +2030,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.13,
-				"output_tokens": 0.38999999999999996
+				"output_tokens": 0.38
 			},
 			"tags": []
 		},

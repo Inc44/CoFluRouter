@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"created_at": "2025-10-15T00:00:00Z",
+		"display_name": "Claude Haiku 4.5",
+		"id": "claude-haiku-4-5-20251001",
+		"type": "model"
+	},
+	{
 		"created_at": "2025-09-29T00:00:00Z",
 		"display_name": "Claude Sonnet 4.5",
 		"id": "claude-sonnet-4-5-20250929",
@@ -60,7 +66,7 @@
 		"id": "claude-3-opus-20240229",
 		"type": "model"
 	}],
-	"first_id": "claude-sonnet-4-5-20250929",
+	"first_id": "claude-haiku-4-5-20251001",
 	"has_more": false,
 	"last_id": "claude-3-opus-20240229"
 }

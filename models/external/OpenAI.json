@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"created": 1760043960,
+		"id": "gpt-5-search-api-2025-10-14",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1759708663,
 		"id": "sora-2-pro",
 		"object": "model",
@@ -21,6 +27,12 @@
 	{
 		"created": 1759517133,
 		"id": "gpt-realtime-mini",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1759514629,
+		"id": "gpt-5-search-api",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -135,6 +147,12 @@
 	{
 		"created": 1750865219,
 		"id": "o3-deep-research-2025-06-26",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1750798887,
+		"id": "gpt-4o-transcribe-diarize",
 		"object": "model",
 		"owned_by": "system"
 	},
