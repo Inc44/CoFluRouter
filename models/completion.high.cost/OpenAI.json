@@ -1,6 +1,54 @@
 {
 	"data": [
 	{
+		"id": "gpt-5-search-api-2025-10-14",
+		"max_tokens": 0,
+		"completions_api_only": true,
+		"search_context_size": "low",
+		"image": false
+	},
+	{
+		"id": "gpt-5-search-api",
+		"max_tokens": 0,
+		"completions_api_only": true,
+		"search_context_size": "low",
+		"image": false
+	},
+	{
+		"id": "gpt-audio-mini-2025-10-06",
+		"max_tokens": 16384,
+		"completions_api_only": true,
+		"audio": true,
+		"file": true,
+		"image": false,
+		"modality": "audio"
+	},
+	{
+		"id": "gpt-audio-mini",
+		"max_tokens": 16384,
+		"completions_api_only": true,
+		"audio": true,
+		"file": true,
+		"image": false,
+		"modality": "audio"
+	},
+	{
+		"id": "gpt-5-pro",
+		"max_tokens": 272000,
+		"responses_api_only": true,
+		"tools": ["web_search_preview"],
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5-pro-2025-10-06",
+		"max_tokens": 272000,
+		"responses_api_only": true,
+		"tools": ["web_search_preview"],
+		"file": true,
+		"image": true
+	},
+	{
 		"id": "gpt-audio",
 		"max_tokens": 16384,
 		"completions_api_only": true,
