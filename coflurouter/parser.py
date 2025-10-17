@@ -92,6 +92,7 @@ def skip_model(item):
 		"gpt-image",
 		"omni-moderation",
 		"realtime",
+		"sora",
 	]:
 		if "id" in item and model in str(item["id"]).lower():
 			return True
@@ -101,6 +102,12 @@ def skip_model(item):
 		"live",
 		"native",
 		"veo",
+	]:
+		if "id" in item and model in str(item["id"]).lower():
+			return True
+	for model in [
+		"guard",
+		"qwen-image",
 	]:
 		if "id" in item and model in str(item["id"]).lower():
 			return True
