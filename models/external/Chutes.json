@@ -725,7 +725,7 @@
 		},
 		"quantization": "bf16",
 		"root": "Qwen/Qwen3-30B-A3B-Thinking-2507",
-		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_features": ["json_mode", "structured_output", "tools"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
@@ -956,7 +956,7 @@
 		},
 		"quantization": "bf16",
 		"root": "Qwen/Qwen3-VL-235B-A22B-Instruct",
-		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_features": ["json_mode", "structured_output", "tools"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{

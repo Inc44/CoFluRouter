@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"created": 1761016914,
+		"id": "qwen-image-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1760530303,
 		"id": "qwen3-vl-flash-2025-10-15",
 		"object": "model",
@@ -345,12 +351,6 @@
 	{
 		"created": 1760412852,
 		"id": "qwen3-max-2025-09-23",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1760412762,
-		"id": "qwen-image-plus",
 		"object": "model",
 		"owned_by": "system"
 	},

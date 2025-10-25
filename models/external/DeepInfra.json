@@ -183,8 +183,8 @@
 			"max_tokens": 4096,
 			"pricing":
 			{
-				"input_tokens": 0.05,
-				"output_tokens": 0.09
+				"input_tokens": 0.060000000000000005,
+				"output_tokens": 0.060000000000000005
 			},
 			"tags": []
 		},
@@ -292,6 +292,26 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "NovaSky-AI/Sky-T1-32B-Preview"
+	},
+	{
+		"created": 0,
+		"id": "PaddlePaddle/PaddleOCR-VL-0.9B",
+		"metadata":
+		{
+			"context_length": 16384,
+			"description": "PaddleOCR-VL is a SOTA and resource-efficient model tailored for document parsing. Its core component is PaddleOCR-VL-0.9B, a compact yet powerful vision-language model (VLM) that integrates a NaViT-style dynamic resolution visual encoder with the ERNIE-4.5-0.3B language model to enable accurate element recognition. This innovative model efficiently supports 109 languages and excels in recognizing complex elements (e.g., text, tables, formulas, and charts), while maintaining minimal resource consumption. Through comprehensive evaluations on widely used public benchmarks and in-house benchmarks, PaddleOCR-VL achieves SOTA performance in both page-level document parsing and element-level recognition. It significantly outperforms existing solutions, exhibits strong competitiveness against top-tier VLMs, and delivers fast inference speeds. These strengths make it highly suitable for practical deployment in real-world scenarios.",
+			"max_tokens": 16384,
+			"pricing":
+			{
+				"input_tokens": 0.14,
+				"output_tokens": 0.8
+			},
+			"tags": ["vision"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "PaddlePaddle/PaddleOCR-VL-0.9B"
 	},
 	{
 		"created": 0,
@@ -1040,6 +1060,46 @@
 	},
 	{
 		"created": 0,
+		"id": "allenai/olmOCR-2",
+		"metadata":
+		{
+			"context_length": 16384,
+			"description": "olmOCR is a specialized AI tool that converts PDF documents into clean, structured text while preserving important formatting and layout information. What makes olmOCR particularly valuable for developers is its ability to handle challenging PDFs that traditional OCR tools struggle with—including complex layouts, poor-quality scans, handwritten text, and documents with mixed content types. Built on a fine-tuned 7B vision-language model, olmOCR provides enterprise-grade PDF processing at a fraction of the cost of proprietary solutions.",
+			"max_tokens": 16384,
+			"pricing":
+			{
+				"input_tokens": 0.14,
+				"output_tokens": 0.8
+			},
+			"tags": ["vision"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "allenai/olmOCR-2"
+	},
+	{
+		"created": 0,
+		"id": "allenai/olmOCR-2-7B-1025",
+		"metadata":
+		{
+			"context_length": 16384,
+			"description": "olmOCR is a specialized AI tool that converts PDF documents into clean, structured text while preserving important formatting and layout information. What makes olmOCR particularly valuable for developers is its ability to handle challenging PDFs that traditional OCR tools struggle with—including complex layouts, poor-quality scans, handwritten text, and documents with mixed content types. Built on a fine-tuned 7B vision-language model, olmOCR provides enterprise-grade PDF processing at a fraction of the cost of proprietary solutions.",
+			"max_tokens": 16384,
+			"pricing":
+			{
+				"input_tokens": 0.09,
+				"output_tokens": 0.19
+			},
+			"tags": ["vision"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "allenai/olmOCR-2-7B-1025"
+	},
+	{
+		"created": 0,
 		"id": "allenai/olmOCR-7B-0725-FP8",
 		"metadata":
 		{
@@ -1077,6 +1137,26 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "allenai/olmOCR-7B-0825"
+	},
+	{
+		"created": 0,
+		"id": "allenai/olmOCR-7B-1025",
+		"metadata":
+		{
+			"context_length": 16384,
+			"description": "olmOCR is a specialized AI tool that converts PDF documents into clean, structured text while preserving important formatting and layout information. What makes olmOCR particularly valuable for developers is its ability to handle challenging PDFs that traditional OCR tools struggle with—including complex layouts, poor-quality scans, handwritten text, and documents with mixed content types. Built on a fine-tuned 7B vision-language model, olmOCR provides enterprise-grade PDF processing at a fraction of the cost of proprietary solutions.",
+			"max_tokens": 16384,
+			"pricing":
+			{
+				"input_tokens": 0.14,
+				"output_tokens": 0.8
+			},
+			"tags": ["vision"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "allenai/olmOCR-7B-1025"
 	},
 	{
 		"created": 0,
@@ -1272,6 +1352,26 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "deepinfra/airoboros-70b"
+	},
+	{
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-OCR",
+		"metadata":
+		{
+			"context_length": 8192,
+			"description": "DeepSeek-OCR as an initial investigation into the feasibility of compressing long contexts via optical 2D mapping. DeepSeek-OCR consists of two components: DeepEncoder and DeepSeek3B-MoE-A570M as the decoder. Specifically, DeepEncoder serves as the core engine, designed to maintain low activations under high-resolution input while achieving high compression ratios to ensure an optimal and manageable number of vision tokens. Experiments show that when the number of text tokens is within 10 times that of vision tokens (i.e., a compression ratio < 10x), the model can achieve decoding (OCR) precision of 97%. Even at a compression ratio of 20x, the OCR accuracy still remains at about 60%. This shows considerable promise for research areas such as historical long-context compression and memory forgetting mechanisms in LLMs.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.030000000000000002,
+				"output_tokens": 0.1
+			},
+			"tags": ["vision"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/DeepSeek-OCR"
 	},
 	{
 		"created": 0,
@@ -2751,7 +2851,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.05,
-				"output_tokens": 0.27
+				"output_tokens": 0.24000000000000002
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -3063,10 +3163,11 @@
 			"max_tokens": 202752,
 			"pricing":
 			{
+				"cache_read_tokens": 0.10999999799999999,
 				"input_tokens": 0.6,
 				"output_tokens": 1.9
 			},
-			"tags": []
+			"tags": ["prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",

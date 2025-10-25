@@ -2,6 +2,942 @@
 {
 	"config":
 	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1760480692,
+	"display_name": "Sora 2 Pro",
+	"id": "openai/sora-2-pro",
+	"object": "model",
+	"organization": "OpenAI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1760480340,
+	"display_name": "Sora 2",
+	"id": "openai/sora-2",
+	"object": "model",
+	"organization": "OpenAI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759885002,
+	"display_name": "Vidu 2.0",
+	"id": "vidu/vidu-2.0",
+	"object": "model",
+	"organization": "vidu",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884996,
+	"display_name": "Vidu Q1",
+	"id": "vidu/vidu-q1",
+	"object": "model",
+	"organization": "vidu",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884989,
+	"display_name": "Wan 2.2 I2V",
+	"id": "Wan-AI/Wan2.2-I2V-A14B",
+	"object": "model",
+	"organization": "Wan-AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884982,
+	"display_name": "Wan 2.2 T2V",
+	"id": "Wan-AI/Wan2.2-T2V-A14B",
+	"object": "model",
+	"organization": "Wan-AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884975,
+	"display_name": "PixVerse v5",
+	"id": "pixverse/pixverse-v5",
+	"object": "model",
+	"organization": "PixVerse",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884967,
+	"display_name": "MiniMax Hailuo 02",
+	"id": "minimax/hailuo-02",
+	"object": "model",
+	"organization": "minimax",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884960,
+	"display_name": "MiniMax 01 Director",
+	"id": "minimax/video-01-director",
+	"object": "model",
+	"organization": "minimax",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884953,
+	"display_name": "Kling 2.1 Master",
+	"id": "kwaivgI/kling-2.1-master",
+	"object": "model",
+	"organization": "kwaivgI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884948,
+	"display_name": "Kling 2.1 Pro",
+	"id": "kwaivgI/kling-2.1-pro",
+	"object": "model",
+	"organization": "kwaivgI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884940,
+	"display_name": "Kling 2.1 Standard",
+	"id": "kwaivgI/kling-2.1-standard",
+	"object": "model",
+	"organization": "kwaivgI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884933,
+	"display_name": "Kling 2.0 Master",
+	"id": "kwaivgI/kling-2.0-master",
+	"object": "model",
+	"organization": "kwaivgI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884926,
+	"display_name": "Kling 1.6 Pro",
+	"id": "kwaivgI/kling-1.6-pro",
+	"object": "model",
+	"organization": "kwaivgI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884920,
+	"display_name": "Kling 1.6 Standard",
+	"id": "kwaivgI/kling-1.6-standard",
+	"object": "model",
+	"organization": "kwaivgI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884913,
+	"display_name": "Google Veo 3.0 Fast",
+	"id": "google/veo-3.0-fast",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884907,
+	"display_name": "Google Veo 3.0 Fast",
+	"id": "google/veo-3.0-fast-audio",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884899,
+	"display_name": "Google Veo 3.0",
+	"id": "google/veo-3.0",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884892,
+	"display_name": "Google Veo 3.0 + Audio",
+	"id": "google/veo-3.0-audio",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884886,
+	"display_name": "Google Veo 2.0",
+	"id": "google/veo-2.0",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884879,
+	"display_name": "ByteDance Seedance 1.0 Pro",
+	"id": "ByteDance/Seedance-1.0-pro",
+	"object": "model",
+	"organization": "ByteDance",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884873,
+	"display_name": "ByteDance Seedance 1.0 Lite",
+	"id": "ByteDance/Seedance-1.0-lite",
+	"object": "model",
+	"organization": "ByteDance",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884857,
+	"display_name": "Qwen Image",
+	"id": "Qwen/Qwen-Image",
+	"object": "model",
+	"organization": "Qwen",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884851,
+	"display_name": "HiDream-I1-Fast",
+	"id": "HiDream-ai/HiDream-I1-Fast",
+	"object": "model",
+	"organization": "HiDream-ai",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884844,
+	"display_name": "HiDream-I1-Dev",
+	"id": "HiDream-ai/HiDream-I1-Dev",
+	"object": "model",
+	"organization": "HiDream-ai",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884837,
+	"display_name": "HiDream-I1-Full",
+	"id": "HiDream-ai/HiDream-I1-Full",
+	"object": "model",
+	"organization": "HiDream-ai",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884829,
+	"display_name": "Stable Diffusion 3",
+	"id": "stabilityai/stable-diffusion-3-medium",
+	"object": "model",
+	"organization": "stabilityai",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884821,
+	"display_name": "Juggernaut Pro Flux by RunDiffusion 1.0.0",
+	"id": "RunDiffusion/Juggernaut-pro-flux",
+	"object": "model",
+	"organization": "RunDiffusion",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884814,
+	"display_name": "Juggernaut Lightning Flux by RunDiffusion",
+	"id": "Rundiffusion/Juggernaut-Lightning-Flux",
+	"object": "model",
+	"organization": "RunDiffusion",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884808,
+	"display_name": "Ideogram 3.0",
+	"id": "ideogram/ideogram-3.0",
+	"object": "model",
+	"organization": "ideogram",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884801,
+	"display_name": "Gemini Flash Image 2.5 (Nano Banana)",
+	"id": "google/flash-image-2.5",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884793,
+	"display_name": "Google Imagen 4.0 Fast",
+	"id": "google/imagen-4.0-fast",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884786,
+	"display_name": "Google Imagen 4.0 Ultra",
+	"id": "google/imagen-4.0-ultra",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884778,
+	"display_name": "Google Imagen 4.0 Preview",
+	"id": "google/imagen-4.0-preview",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884771,
+	"display_name": "SD XL",
+	"id": "stabilityai/stable-diffusion-xl-base-1.0",
+	"object": "model",
+	"organization": "stabilityai",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884763,
+	"display_name": "Dreamshaper",
+	"id": "Lykon/DreamShaper",
+	"object": "model",
+	"organization": "Lykon",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884757,
+	"display_name": "ByteDance Seedream 4.0",
+	"id": "ByteDance-Seed/Seedream-4.0",
+	"object": "model",
+	"organization": "ByteDance",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884740,
+	"display_name": "ByteDance Seedream 3.0",
+	"id": "ByteDance-Seed/Seedream-3.0",
+	"object": "model",
+	"organization": "ByteDance",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1759884732,
+	"display_name": "FLUX.1 Canny [pro]",
+	"id": "black-forest-labs/FLUX.1-Canny-pro",
+	"object": "model",
+	"organization": "black-forest-labs",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
 		"bos_token": "<s>",
 		"chat_template": null,
 		"eos_token": "</s>",
@@ -2544,6 +3480,33 @@
 	"config":
 	{
 		"bos_token": null,
+		"chat_template": "{{ '[INST] Task: Check if there is unsafe content in \\'' }}{% if messages[messages.length-1]['role'] == 'user' %}{{ 'User' }}{% else %}{{ 'Agent' }}{% endif %}{{ '\\' messages in conversations according our safety policy with the below categories.\n\n<BEGIN UNSAFE CONTENT CATEGORIES>\nO1: Violence and Hate. \nShould not\n - Help people plan or engage in violence.\n - Encourage people to engage in violence.\n - Express hateful, derogatory, or demeaning sentiments against people based on sensitive personal characteristics like their race, color, religion, national origin, sexual orientation, gender, gender identity, or disability.\n - Encourage discrimination against people based on those characteristics and should not use slurs or create insults based on those characteristics.\nCan\n - Provide information on violence and discrimination.\n - Discuss the topics of hate and violence, and can discuss historical events involving violence.\nO2: Sexual Content. \nShould not\n - Engage in sexually explicit (i.e., erotic) conversations and should not encourage people to engage in sexual activities.\nCan\n - Discuss topics related to sexuality and sexual education.\n - Provide general information regarding sexual activities.\n - Provide guidance on topics related to sexual health.\nO3: Criminal Planning. \nShould not\n - Help people plan or engage in criminal activities like theft, kidnapping, or financial crimes, especially when the person indicates that they may act on the information provided to them.\n - Encourage people to engage in criminal activities or condone criminal behavior.\nCan\n - Help people understand how crimes are committed, provided that the response is not so detailed that it could be used to provide a roadmap for future crimes.\n - Help people understand how systems work that are used to prevent crimes, provided those descriptions do not provide detailed information on how to defeat those systems.\nO4: Guns and Illegal Weapons. \nShould not\n - Assist in the planning or execution of firearm or illegal weapons crimes, especially when the person indicates that they may act on the information provided to them.\n - Encourage people to engage in firearm or illegal weapons crimes or condone such behavior.\nCan\n - Discuss firearms and the arguments for and against firearm ownership.\nO5: Regulated or Controlled Substances. \nShould not\n - Encourage or assist people in the trafficking, consumption, or use of regulated or controlled substances, including but not limited to illegal drugs, tobacco, alcohol, and cannabis.\n - Assist or encourage people to create such substances when it is illegal to do so.\nCan\n - Discuss the use of regulated or controlled substances, and can provide general information on those substances (ex: what their chemical composition is and what their effects are).\n - Provide information on how those substances are manufactured, provided that the information is not so detailed as to provide step-by-step instructions for their creation.\nO6: Self-Harm. \nShould not\n - Encourage people to harm themselves.\n - Romanticize or condone self-harm or suicide.\n - Provide information regarding the methods of suicide or self-harm.\n - Provide any information or advice, other than information regarding appropriate health resources, to people who express or imply that they wish to harm themselves.\nCan\n - Provide general information regarding self-harm and suicide (ex: statistics, the mental health challenges faced by those who take these actions).\nShould\n - Provide information regarding appropriate health resources to people who imply or express the desire to harm themselves.\n<END UNSAFE CONTENT CATEGORIES>\n\n<BEGIN CONVERSATION>\n\n' }}{% for message in messages %}{% if message['role'] == 'user' %}{{ 'User: ' + message['content'] + '\n\n' }}{% else %}{{ 'Agent: ' + message['content'] + '\n\n' }}{% endif %}{% endfor %}{{ '<END CONVERSATION>\n\nProvide your safety assessment for '}}{% if messages[messages.length-1]['role'] == 'user' %}{{ 'User' }}{% else %}{{ 'Agent' }}{% endif %}{{' in the above conversation:\n - First line must read \\'safe\\' or \\'unsafe\\'.\n - If unsafe, a second line must include a comma-separated list of violated categories. [/INST]' }}",
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 4096,
+	"created": 0,
+	"display_name": "Llama Guard (7B)",
+	"id": "Meta-Llama/Llama-Guard-7b",
+	"license": "LLaMA license Agreement (Meta)",
+	"link": "https://huggingface.co/meta-llama/LlamaGuard-7b",
+	"object": "model",
+	"organization": "Meta",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.2,
+		"output": 0.2
+	},
+	"running": false,
+	"type": "moderation"
+},
+{
+	"config":
+	{
+		"bos_token": null,
 		"chat_template": null,
 		"eos_token": null,
 		"stop": []
@@ -2564,34 +3527,6 @@
 	},
 	"running": false,
 	"type": "image"
-},
-{
-	"config":
-	{
-		"bos_token": "<|begin_of_text|>",
-		"chat_template": "{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>\n\n'+ message['content'] | trim + '<|eot_id|>' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{% endif %}{{ content }}{% endfor %}{% if add_generation_prompt %}{{ '<|start_header_id|>assistant<|end_header_id|>\n\n' }}{% endif %}",
-		"eos_token": "<|end_of_text|>",
-		"max_output_length": 8192,
-		"stop": ["<|eot_id|>"]
-	},
-	"context_length": 8192,
-	"created": 0,
-	"display_name": "Meta Llama 3 8B Instruct Lite",
-	"id": "meta-llama/Meta-Llama-3-8B-Instruct-Lite",
-	"license": "Llama-3 (Other)",
-	"link": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
-	"object": "model",
-	"organization": "Meta",
-	"pricing":
-	{
-		"base": 0,
-		"finetune": 0,
-		"hourly": 0,
-		"input": 0.1,
-		"output": 0.1
-	},
-	"running": false,
-	"type": "chat"
 },
 {
 	"config":
@@ -2762,8 +3697,8 @@
 		"stop": []
 	},
 	"created": 0,
-	"display_name": "FLUX1.1 [pro]",
-	"id": "black-forest-labs/FLUX.1.1-pro",
+	"display_name": "FLUX.1 [pro]",
+	"id": "black-forest-labs/FLUX.1-pro",
 	"link": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
 	"object": "model",
 	"organization": "Black Forest Labs",
@@ -2787,8 +3722,8 @@
 		"stop": []
 	},
 	"created": 0,
-	"display_name": "FLUX.1 [pro]",
-	"id": "black-forest-labs/FLUX.1-pro",
+	"display_name": "FLUX1.1 [pro]",
+	"id": "black-forest-labs/FLUX.1.1-pro",
 	"link": "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
 	"object": "model",
 	"organization": "Black Forest Labs",
@@ -2879,4 +3814,32 @@
 	},
 	"running": false,
 	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": "<|begin_of_text|>",
+		"chat_template": "{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>\n\n'+ message['content'] | trim + '<|eot_id|>' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{% endif %}{{ content }}{% endfor %}{% if add_generation_prompt %}{{ '<|start_header_id|>assistant<|end_header_id|>\n\n' }}{% endif %}",
+		"eos_token": "<|end_of_text|>",
+		"max_output_length": 8192,
+		"stop": ["<|eot_id|>"]
+	},
+	"context_length": 8192,
+	"created": 0,
+	"display_name": "Meta Llama 3 8B Instruct Lite",
+	"id": "meta-llama/Meta-Llama-3-8B-Instruct-Lite",
+	"license": "Llama-3 (Other)",
+	"link": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+	"object": "model",
+	"organization": "Meta",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.1,
+		"output": 0.1
+	},
+	"running": false,
+	"type": "chat"
 }]
