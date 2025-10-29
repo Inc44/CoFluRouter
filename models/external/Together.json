@@ -965,6 +965,32 @@
 {
 	"config":
 	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1758585307,
+	"display_name": "Kokoro 82M",
+	"id": "hexgrad/Kokoro-82M",
+	"license": "apache2",
+	"link": "https://huggingface.co/hexgrad/Kokoro-82M",
+	"object": "model",
+	"organization": "Hexgrad",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.27,
+		"output": 0.85
+	},
+	"running": false,
+	"type": "audio"
+},
+{
+	"config":
+	{
 		"bos_token": "<s>",
 		"chat_template": null,
 		"eos_token": "<SPECIAL_12>",
@@ -988,6 +1014,32 @@
 	},
 	"running": false,
 	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1757712332,
+	"display_name": "Voxtral Mini 3B 2507",
+	"id": "mistralai/Voxtral-Mini-3B-2507",
+	"license": "apache2",
+	"link": "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
+	"object": "model",
+	"organization": "Mistral AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.27,
+		"output": 0.85
+	},
+	"running": false,
+	"type": "transcribe"
 },
 {
 	"config":
@@ -1098,6 +1150,32 @@
 	},
 	"running": false,
 	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1755731205,
+	"display_name": "Orpheus 3B 0.1 FT",
+	"id": "canopylabs/orpheus-3b-0.1-ft",
+	"license": "apache2",
+	"link": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
+	"object": "model",
+	"organization": "Canopy Labs",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.27,
+		"output": 0.85
+	},
+	"running": false,
+	"type": "audio"
 },
 {
 	"config":

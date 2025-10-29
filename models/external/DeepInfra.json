@@ -2802,6 +2802,26 @@
 	},
 	{
 		"created": 0,
+		"id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "The model is an auto-regressive vision language model that uses an optimized transformer architecture. The model enables multi-image reasoning and video understanding, along with strong document intelligence, visual Q&A and summarization capabilities.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.2,
+				"output_tokens": 0.6
+			},
+			"tags": ["vision"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
 		"metadata":
 		{

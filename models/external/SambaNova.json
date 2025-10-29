@@ -1,6 +1,20 @@
 {
 	"data": [
 	{
+		"context_length": 4096,
+		"id": "ALLaM-7B-Instruct-preview",
+		"max_completion_tokens": 4096,
+		"object": "model",
+		"owned_by": "no-reply@sambanova.ai",
+		"pricing":
+		{
+			"completion": "0.00000059",
+			"prompt": "0.00000022"
+		},
+		"sn_metadata":
+		{}
+	},
+	{
 		"context_length": 131072,
 		"id": "DeepSeek-R1-0528",
 		"max_completion_tokens": 7168,

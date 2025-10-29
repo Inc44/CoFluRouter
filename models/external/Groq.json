@@ -2,6 +2,16 @@
 	"data": [
 	{
 		"active": true,
+		"context_window": 131072,
+		"created": 1761708789,
+		"id": "openai/gpt-oss-safeguard-20b",
+		"max_completion_tokens": 65536,
+		"object": "model",
+		"owned_by": "OpenAI",
+		"public_apps": null
+	},
+	{
+		"active": true,
 		"context_window": 262144,
 		"created": 1757046093,
 		"id": "moonshotai/kimi-k2-instruct-0905",
