@@ -3183,8 +3183,8 @@
 			"max_tokens": 202752,
 			"pricing":
 			{
-				"cache_read_tokens": 0.10999999799999999,
-				"input_tokens": 0.6,
+				"cache_read_tokens": 0.109999998,
+				"input_tokens": 0.45,
 				"output_tokens": 1.9
 			},
 			"tags": ["prompt_cache"]

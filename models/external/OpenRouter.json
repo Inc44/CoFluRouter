@@ -3,6 +3,168 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Nova"
+		},
+		"canonical_slug": "amazon/nova-premier-v1",
+		"context_length": 1000000,
+		"created": 1761950332,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Amazon Nova Premier is the most capable of Amazon’s multimodal models for complex reasoning tasks and for use as the best teacher for distilling custom models.",
+		"hugging_face_id": "",
+		"id": "amazon/nova-premier-v1",
+		"name": "Amazon: Nova Premier 1.0",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000125",
+			"image": "0",
+			"input_cache_read": "0.000000625",
+			"internal_reasoning": "0",
+			"prompt": "0.0000025",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "stop", "temperature", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": true,
+			"max_completion_tokens": 32000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text", "embeddings"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "openai/text-embedding-3-large",
+		"context_length": 8192,
+		"created": 1761862866,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "text-embedding-3-large is OpenAI's most capable embedding model for both english and non-english tasks. Embeddings are a numerical representation of text that can be used to measure the relatedness between two pieces of text. Embeddings are useful for search, clustering, recommendations, anomaly detection, and classification tasks.",
+		"hugging_face_id": "",
+		"id": "openai/text-embedding-3-large",
+		"name": "OpenAI: Text Embedding 3 Large",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000013",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 8192,
+			"is_moderated": true,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "perplexity/sonar-pro-search",
+		"context_length": 200000,
+		"created": 1761854366,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Exclusively available on the OpenRouter API, Sonar Pro's new Pro Search mode is Perplexity's most advanced agentic search system. It is designed for deeper reasoning and analysis. Pricing is based on tokens plus $18 per thousand requests. This model powers the Pro Search mode on the Perplexity platform.\n\nSonar Pro Search adds autonomous, multi-step reasoning to Sonar Pro. So, instead of just one query + synthesis, it plans and executes entire research workflows using tools.",
+		"hugging_face_id": "",
+		"id": "perplexity/sonar-pro-search",
+		"name": "Perplexity: Sonar Pro Search",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000015",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.000003",
+			"request": "0.018",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "structured_outputs", "temperature", "top_k", "top_p", "web_search_options"],
+		"top_provider":
+		{
+			"context_length": 200000,
+			"is_moderated": false,
+			"max_completion_tokens": 8000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "audio"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Mistral"
+		},
+		"canonical_slug": "mistralai/voxtral-small-24b-2507",
+		"context_length": 32000,
+		"created": 1761835144,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.2,
+			"top_p": 0.95
+		},
+		"description": "Voxtral Small is an enhancement of Mistral Small 3, incorporating state-of-the-art audio input capabilities while retaining best-in-class text performance. It excels at speech transcription, translation and audio understanding. Input audio is priced at $100 per million seconds.",
+		"hugging_face_id": "mistralai/Voxtral-Small-24B-2507",
+		"id": "mistralai/voxtral-small-24b-2507",
+		"name": "Mistral: Voxtral Small 24B 2507",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"audio": "0.0001",
+			"completion": "0.0000003",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000001",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 32000,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text"],
 			"instruct_type": null,
 			"modality": "text->text",
@@ -1065,7 +1227,7 @@
 			"completion": "0.0000019",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000006",
+			"prompt": "0.00000045",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1453,7 +1615,11 @@
 		"context_length": 256000,
 		"created": 1758662808,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": 1,
+			"top_p": 1
+		},
 		"description": "Qwen3-Max is an updated release built on the Qwen3 series, offering major improvements in reasoning, instruction following, multilingual support, and long-tail knowledge coverage compared to the January 2025 version. It delivers higher accuracy in math, coding, logic, and science tasks, follows complex instructions in Chinese and English more reliably, reduces hallucinations, and produces higher-quality responses for open-ended Q&A, writing, and conversation. The model supports over 100 languages with stronger translation and commonsense reasoning, and is optimized for retrieval-augmented generation (RAG) and tool calling, though it does not include a dedicated “thinking” mode.",
 		"hugging_face_id": "",
 		"id": "qwen/qwen3-max",
@@ -2602,19 +2768,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000029",
+			"completion": "0.0000003",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000008",
+			"prompt": "0.00000009",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -4144,7 +4310,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 63000,
@@ -5586,7 +5752,7 @@
 			"tokenizer": "Mistral"
 		},
 		"canonical_slug": "mistralai/devstral-small-2505",
-		"context_length": 131072,
+		"context_length": 128000,
 		"created": 1747837379,
 		"default_parameters":
 		{
@@ -5599,19 +5765,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000022",
+			"completion": "0.00000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000005",
+			"prompt": "0.00000006",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -7567,7 +7733,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -8396,14 +8562,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000033",
+			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000008",
+			"prompt": "0.0000005",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -8765,7 +8931,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -12667,19 +12833,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000003",
+			"completion": "0.00000009",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000001",
+			"prompt": "0.00000003",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 8192,
 			"is_moderated": false,
-			"max_completion_tokens": 8192
+			"max_completion_tokens": null
 		}
 	},
 	{

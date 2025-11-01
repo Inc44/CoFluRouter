@@ -79,6 +79,7 @@
 		"object": "model",
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
+		"parent": null,
 		"price":
 		{
 			"input":

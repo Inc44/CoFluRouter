@@ -1,6 +1,24 @@
 {
 	"data": [
 	{
+		"created": 1761810999,
+		"id": "qwen-image-edit-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1761810924,
+		"id": "qwen-image-edit-plus-2025-10-30",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1761809797,
+		"id": "qwen3-max-2025-10-30",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1761555509,
 		"id": "qwen3-asr-flash-realtime-2025-10-27",
 		"object": "model",
@@ -494,6 +512,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-81",
+	"last_id": "model-id-84",
 	"object": "list"
 }

@@ -392,7 +392,7 @@
 		"stop": []
 	},
 	"created": 1759884907,
-	"display_name": "Google Veo 3.0 Fast",
+	"display_name": "Google Veo 3.0 Fast + Audio",
 	"id": "google/veo-3.0-fast-audio",
 	"object": "model",
 	"organization": "Google",
