@@ -130,6 +130,15 @@
 	},
 	{
 		"created": 0,
+		"id": "Bria/fibo",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/fibo"
+	},
+	{
+		"created": 0,
 		"id": "Bria/gen_fill",
 		"metadata": null,
 		"object": "model",
@@ -183,8 +192,8 @@
 			"max_tokens": 4096,
 			"pricing":
 			{
-				"input_tokens": 0.060000000000000005,
-				"output_tokens": 0.060000000000000005
+				"input_tokens": 0.08,
+				"output_tokens": 0.08
 			},
 			"tags": []
 		},
@@ -552,7 +561,7 @@
 			"max_tokens": 40960,
 			"pricing":
 			{
-				"input_tokens": 0.060000000000000005,
+				"input_tokens": 0.08,
 				"output_tokens": 0.24000000000000002
 			},
 			"tags": ["reasoning_effort"]
@@ -733,6 +742,15 @@
 	},
 	{
 		"created": 0,
+		"id": "Qwen/Qwen3-Embedding-0.6B-batch",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Embedding-0.6B-batch"
+	},
+	{
+		"created": 0,
 		"id": "Qwen/Qwen3-Embedding-4B",
 		"metadata": null,
 		"object": "model",
@@ -742,12 +760,30 @@
 	},
 	{
 		"created": 0,
+		"id": "Qwen/Qwen3-Embedding-4B-batch",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Embedding-4B-batch"
+	},
+	{
+		"created": 0,
 		"id": "Qwen/Qwen3-Embedding-8B",
 		"metadata": null,
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3-Embedding-8B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-Embedding-8B-batch",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Embedding-8B-batch"
 	},
 	{
 		"created": 0,
@@ -839,8 +875,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.29,
-				"output_tokens": 0.9899999999999999
+				"input_tokens": 0.15,
+				"output_tokens": 0.6
 			},
 			"tags": ["vision", "reasoning_effort"]
 		},
@@ -1019,8 +1055,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.6499999999999999,
-				"output_tokens": 0.7499999999999999
+				"input_tokens": 0.85,
+				"output_tokens": 0.85
 			},
 			"tags": []
 		},
@@ -1039,8 +1075,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.6499999999999999,
-				"output_tokens": 0.7499999999999999
+				"input_tokens": 0.85,
+				"output_tokens": 0.85
 			},
 			"tags": []
 		},
@@ -1464,8 +1500,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.5,
-				"output_tokens": 1.0
+				"input_tokens": 0.6,
+				"output_tokens": 1.2
 			},
 			"tags": []
 		},
