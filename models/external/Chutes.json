@@ -2384,6 +2384,41 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "8d008c10-60d3-51e8-9272-c428ed6ff576",
+		"context_length": 262144,
+		"created": 0,
+		"id": "moonshotai/Kimi-K2-Thinking",
+		"input_modalities": ["text"],
+		"max_model_len": 262144,
+		"max_output_length": 16384,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "int4",
+		"root": "moonshotai/Kimi-K2-Thinking",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": null,
 		"context_length": 131072,
 		"created": 0,

@@ -9,6 +9,86 @@
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
+		"canonical_slug": "moonshotai/kimi-linear-48b-a3b-instruct-20251029",
+		"context_length": 1048576,
+		"created": 1762565833,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Kimi Linear is a hybrid linear attention architecture that outperforms traditional full attention methods across various contexts, including short, long, and reinforcement learning (RL) scaling regimes. At its core is Kimi Delta Attention (KDA)—a refined version of Gated DeltaNet that introduces a more efficient gating mechanism to optimize the use of finite-state RNN memory.\n\nKimi Linear achieves superior performance and hardware efficiency, especially for long-context tasks. It reduces the need for large KV caches by up to 75% and boosts decoding throughput by up to 6x for contexts as long as 1M tokens.",
+		"hugging_face_id": "moonshotai/Kimi-Linear-48B-A3B-Instruct",
+		"id": "moonshotai/kimi-linear-48b-a3b-instruct",
+		"name": "MoonshotAI: Kimi Linear 48B A3B Instruct",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000006",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 1048576
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "openrouter/polaris-alpha",
+		"context_length": 256000,
+		"created": 1762451707,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "This is a cloaked model provided to the community to gather feedback. A powerful, general-purpose model that excels across real-world tasks, with standout performance in coding, tool calling, and instruction following.\n\n**Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.",
+		"hugging_face_id": "",
+		"id": "openrouter/polaris-alpha",
+		"name": "Polaris Alpha",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "response_format", "structured_outputs", "tool_choice", "tools"],
+		"top_provider":
+		{
+			"context_length": 256000,
+			"is_moderated": false,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
 		"canonical_slug": "moonshotai/kimi-k2-thinking-20251106",
 		"context_length": 262144,
 		"created": 1762440622,
@@ -374,7 +454,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "minimax/minimax-m2",
-		"context_length": 196608,
+		"context_length": 204800,
 		"created": 1761252093,
 		"default_parameters":
 		{
@@ -389,19 +469,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000045",
+			"completion": "0.00000102",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000015",
+			"prompt": "0.000000255",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 196608,
+			"context_length": 204800,
 			"is_moderated": false,
-			"max_completion_tokens": 196608
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -1348,6 +1428,8 @@
 		{
 			"completion": "0.000015",
 			"image": "0",
+			"input_cache_read": "0.0000003",
+			"input_cache_write": "0.00000375",
 			"internal_reasoning": "0",
 			"prompt": "0.000003",
 			"request": "0",
@@ -1484,7 +1566,7 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["image", "file", "text", "audio"],
+			"input_modalities": ["image", "file", "text", "audio", "video"],
 			"instruct_type": null,
 			"modality": "text+image->text",
 			"output_modalities": ["text"],
@@ -1527,7 +1609,7 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["file", "image", "text", "audio"],
+			"input_modalities": ["text", "image", "file", "audio", "video"],
 			"instruct_type": null,
 			"modality": "text+image->text",
 			"output_modalities": ["text"],
@@ -4193,7 +4275,7 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["file", "image", "text", "audio"],
+			"input_modalities": ["text", "image", "file", "audio", "video"],
 			"instruct_type": null,
 			"modality": "text+image->text",
 			"output_modalities": ["text"],
@@ -4203,7 +4285,11 @@
 		"context_length": 1048576,
 		"created": 1753200276,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Gemini 2.5 Flash-Lite is a lightweight reasoning model in the Gemini 2.5 family, optimized for ultra-low latency and cost efficiency. It offers improved throughput, faster token generation, and better performance across common benchmarks compared to earlier Flash models. By default, \"thinking\" (i.e. multi-pass reasoning) is disabled to prioritize speed, but developers can enable it via the [Reasoning API parameter](https://openrouter.ai/docs/use-cases/reasoning-tokens) to selectively trade off cost for intelligence. ",
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-flash-lite",
@@ -4346,7 +4432,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "moonshotai/kimi-k2",
-		"context_length": 63000,
+		"context_length": 131072,
 		"created": 1752263252,
 		"default_parameters":
 		{},
@@ -4357,19 +4443,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000249",
+			"completion": "0.0000024",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000014",
+			"prompt": "0.0000005",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 63000,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 63000
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -5119,7 +5205,7 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["file", "image", "text", "audio"],
+			"input_modalities": ["file", "image", "text", "audio", "video"],
 			"instruct_type": null,
 			"modality": "text+image->text",
 			"output_modalities": ["text"],
@@ -5129,7 +5215,11 @@
 		"context_length": 1048576,
 		"created": 1750172488,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Gemini 2.5 Flash is Google's state-of-the-art workhorse model, specifically designed for advanced reasoning, coding, mathematics, and scientific tasks. It includes built-in \"thinking\" capabilities, enabling it to provide responses with greater accuracy and nuanced context handling. \n\nAdditionally, Gemini 2.5 Flash is configurable through the \"max tokens for reasoning\" parameter, as described in the documentation (https://openrouter.ai/docs/use-cases/reasoning-tokens#max-tokens-for-reasoning).",
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-flash",
@@ -5157,7 +5247,7 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["file", "image", "text", "audio"],
+			"input_modalities": ["text", "image", "file", "audio", "video"],
 			"instruct_type": null,
 			"modality": "text+image->text",
 			"output_modalities": ["text"],
@@ -5167,7 +5257,11 @@
 		"context_length": 1048576,
 		"created": 1750169544,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through responses with enhanced accuracy and nuanced context handling. Gemini 2.5 Pro achieves top-tier performance on multiple benchmarks, including first-place positioning on the LMArena leaderboard, reflecting superior human-preference alignment and complex problem-solving abilities.",
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-pro",
@@ -6056,7 +6150,7 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image", "file", "audio"],
+			"input_modalities": ["text", "image", "file", "audio", "video"],
 			"instruct_type": null,
 			"modality": "text+image->text",
 			"output_modalities": ["text"],
@@ -6066,7 +6160,11 @@
 		"context_length": 1048576,
 		"created": 1746578513,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through responses with enhanced accuracy and nuanced context handling. Gemini 2.5 Pro achieves top-tier performance on multiple benchmarks, including first-place positioning on the LMArena leaderboard, reflecting superior human-preference alignment and complex problem-solving abilities.",
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-pro-preview-05-06",
@@ -7859,7 +7957,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 327680,
@@ -10440,7 +10538,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000085",
+			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
 			"prompt": "0.0000003",
