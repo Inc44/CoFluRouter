@@ -244,6 +244,26 @@
 	},
 	{
 		"created": 0,
+		"id": "MiniMaxAI/MiniMax-M2",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "MiniMax-M2 is a Mini model built for Max coding & agentic workflows with just 10 billion activated parameters",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.27,
+				"output_tokens": 1.15
+			},
+			"tags": []
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "MiniMaxAI/MiniMax-M2"
+	},
+	{
+		"created": 0,
 		"id": "NousResearch/Hermes-3-Llama-3.1-405B",
 		"metadata":
 		{

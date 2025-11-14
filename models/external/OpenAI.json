@@ -1,6 +1,36 @@
 {
 	"data": [
 	{
+		"created": 1763007109,
+		"id": "gpt-5.1-codex-mini",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1762988221,
+		"id": "gpt-5.1-codex",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1762800673,
+		"id": "gpt-5.1",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1762800353,
+		"id": "gpt-5.1-2025-11-13",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1762547951,
+		"id": "gpt-5.1-chat-latest",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1760043960,
 		"id": "gpt-5-search-api-2025-10-14",
 		"object": "model",
