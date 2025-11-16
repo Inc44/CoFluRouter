@@ -2818,6 +2818,26 @@
 	},
 	{
 		"created": 0,
+		"id": "moonshotai/Kimi-K2-Thinking",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Kimi K2 Thinking is the latest, most capable version of open-source thinking model developed by MoonshotAI",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.55,
+				"output_tokens": 2.5
+			},
+			"tags": []
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "moonshotai/Kimi-K2-Thinking"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
 		"metadata":
 		{
@@ -2826,8 +2846,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.6,
-				"output_tokens": 0.6
+				"input_tokens": 1.2,
+				"output_tokens": 1.2
 			},
 			"tags": []
 		},

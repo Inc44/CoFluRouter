@@ -3,6 +3,86 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "openrouter/sherlock-dash-alpha",
+		"context_length": 1840000,
+		"created": 1763228989,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.7,
+			"top_p": 0.95
+		},
+		"description": "This is a cloaked model provided to the community to gather feedback. A frontier non-reasoning model that excels at tool calling, with a 1.8M context window and multimodal support.\n\n**Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.",
+		"hugging_face_id": "",
+		"id": "openrouter/sherlock-dash-alpha",
+		"name": "Sherlock Dash Alpha",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "response_format", "structured_outputs", "tool_choice", "tools"],
+		"top_provider":
+		{
+			"context_length": 1840000,
+			"is_moderated": false,
+			"max_completion_tokens": 64000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "openrouter/sherlock-think-alpha",
+		"context_length": 1840000,
+		"created": 1763228986,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.7,
+			"top_p": 0.95
+		},
+		"description": "This is a cloaked model provided to the community to gather feedback. A frontier reasoning model that excels at tool calling, with a 1.8M context window and multimodal support.\n\n**Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.",
+		"hugging_face_id": "",
+		"id": "openrouter/sherlock-think-alpha",
+		"name": "Sherlock Think Alpha",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "tool_choice", "tools"],
+		"top_provider":
+		{
+			"context_length": 1840000,
+			"is_moderated": false,
+			"max_completion_tokens": 64000
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["image", "text", "file"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -1638,7 +1718,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -3887,10 +3967,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0",
+			"completion": "0.0000004",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0",
+			"prompt": "0.00000004",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -3899,7 +3979,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -4016,7 +4096,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -9223,7 +9303,7 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image", "file", "audio"],
+			"input_modalities": ["text", "image", "file", "audio", "video"],
 			"instruct_type": null,
 			"modality": "text+image->text",
 			"output_modalities": ["text"],
@@ -9233,7 +9313,11 @@
 		"context_length": 1048576,
 		"created": 1740506212,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Gemini 2.0 Flash Lite offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5), all at extremely economical token prices.",
 		"hugging_face_id": "",
 		"id": "google/gemini-2.0-flash-lite-001",
@@ -9662,7 +9746,7 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image", "file", "audio"],
+			"input_modalities": ["text", "image", "file", "audio", "video"],
 			"instruct_type": null,
 			"modality": "text+image->text",
 			"output_modalities": ["text"],
@@ -9672,7 +9756,11 @@
 		"context_length": 1048576,
 		"created": 1738769413,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It introduces notable enhancements in multimodal understanding, coding capabilities, complex instruction following, and function calling. These advancements come together to deliver more seamless and robust agentic experiences.",
 		"hugging_face_id": "",
 		"id": "google/gemini-2.0-flash-001",
@@ -11771,10 +11859,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
+			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000006",
+			"prompt": "0.0000012",
 			"request": "0",
 			"web_search": "0"
 		},
