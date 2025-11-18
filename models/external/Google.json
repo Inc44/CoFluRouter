@@ -271,6 +271,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 3 Pro Preview",
+		"id": "models/gemini-3-pro-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini Embedding 001",
 		"id": "models/gemini-embedding-001",
 		"object": "model",
