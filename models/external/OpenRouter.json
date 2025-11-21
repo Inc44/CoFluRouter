@@ -3,6 +3,126 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["image", "text"],
+			"instruct_type": null,
+			"modality": "text+image->text+image",
+			"output_modalities": ["image", "text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-3-pro-image-preview-20251120",
+		"context_length": 65536,
+		"created": 1763653797,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Nano Banana Pro is Google’s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world grounding, and high-fidelity visual synthesis. The model generates context-rich graphics, from infographics and diagrams to cinematic composites, and can incorporate real-time information via Search grounding.\n\nIt offers industry-leading text rendering in images (including long passages and multilingual layouts), consistent multi-image blending, and accurate identity preservation across up to five subjects. Nano Banana Pro adds fine-grained creative controls such as localized edits, lighting and focus adjustments, camera transformations, and support for 2K/4K outputs and flexible aspect ratios. It is designed for professional-grade design, product visualization, storyboarding, and complex multi-element compositions while remaining efficient for general image creation workflows.",
+		"hugging_face_id": "",
+		"id": "google/gemini-3-pro-image-preview",
+		"name": "Google: Nano Banana Pro (Gemini 3 Pro Image Preview)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000012",
+			"image": "0.067",
+			"internal_reasoning": "0",
+			"prompt": "0.000002",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "top_p"],
+		"top_provider":
+		{
+			"context_length": 65536,
+			"is_moderated": false,
+			"max_completion_tokens": 32768
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Grok"
+		},
+		"canonical_slug": "x-ai/grok-4.1-fast",
+		"context_length": 2000000,
+		"created": 1763587502,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.7,
+			"top_p": 0.95
+		},
+		"description": "Grok 4.1 Fast is xAI's best agentic tool calling model that shines in real-world use cases like customer support and deep research. 2M context window.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
+		"hugging_face_id": "",
+		"id": "x-ai/grok-4.1-fast:free",
+		"name": "xAI: Grok 4.1 Fast (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 2000000,
+			"is_moderated": false,
+			"max_completion_tokens": 30000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Grok"
+		},
+		"canonical_slug": "x-ai/grok-4.1-fast",
+		"context_length": 2000000,
+		"created": 1763587502,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.7,
+			"top_p": 0.95
+		},
+		"description": "Grok 4.1 Fast is xAI's best agentic tool calling model that shines in real-world use cases like customer support and deep research. 2M context window.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
+		"hugging_face_id": "",
+		"id": "x-ai/grok-4.1-fast",
+		"name": "xAI: Grok 4.1 Fast",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 2000000,
+			"is_moderated": false,
+			"max_completion_tokens": 30000
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "image", "file", "audio", "video"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -40,6 +160,46 @@
 			"context_length": 1048576,
 			"is_moderated": false,
 			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "deepcogito/cogito-v2.1-671b-20251118",
+		"context_length": 128000,
+		"created": 1763071233,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Cogito v2.1 671B MoE represents one of the strongest open models globally, matching performance of frontier closed and open models. This model is trained using self play with reinforcement learning to reach state-of-the-art performance on multiple categories (instruction following, coding, longer queries and creative writing). This advanced system demonstrates significant progress toward scalable superintelligence through policy improvement.",
+		"hugging_face_id": "",
+		"id": "deepcogito/cogito-v2.1-671b",
+		"name": "Deep Cogito: Cogito v2.1 671B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000125",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000125",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": false,
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -431,10 +591,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000025",
+			"completion": "0.00000235",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000005",
+			"prompt": "0.00000045",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -443,7 +603,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -2312,7 +2472,7 @@
 			"temperature": null,
 			"top_p": null
 		},
-		"description": "Grok 4 Fast is xAI's latest multimodal model with SOTA cost-efficiency and a 2M token context window. It comes in two flavors: non-reasoning and reasoning. Read more about the model on xAI's [news post](http://x.ai/news/grok-4-fast). Reasoning can be enabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
+		"description": "Grok 4 Fast is xAI's latest multimodal model with SOTA cost-efficiency and a 2M token context window. It comes in two flavors: non-reasoning and reasoning. Read more about the model on xAI's [news post](http://x.ai/news/grok-4-fast).\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
 		"hugging_face_id": "",
 		"id": "x-ai/grok-4-fast",
 		"name": "xAI: Grok 4 Fast",
@@ -4212,7 +4372,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,

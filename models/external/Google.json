@@ -271,6 +271,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Nano Banana Pro",
+		"id": "models/gemini-3-pro-image-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 3 Pro Preview",
 		"id": "models/gemini-3-pro-preview",
 		"object": "model",
@@ -411,6 +417,12 @@
 	{
 		"display_name": "Lyria Realtime Experimental",
 		"id": "models/lyria-realtime-exp",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Nano Banana Pro",
+		"id": "models/nano-banana-pro-preview",
 		"object": "model",
 		"owned_by": "google"
 	},

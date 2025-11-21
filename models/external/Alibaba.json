@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"created": 1763606675,
+		"id": "qwen-vl-ocr-2025-11-20",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1762433201,
 		"id": "qwen-mt-flash",
 		"object": "model",
@@ -530,6 +536,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-87",
+	"last_id": "model-id-88",
 	"object": "list"
 }
