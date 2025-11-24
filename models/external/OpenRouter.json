@@ -3,6 +3,208 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Claude"
+		},
+		"canonical_slug": "anthropic/claude-4.5-opus-20251124",
+		"context_length": 200000,
+		"created": 1764010580,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Claude Opus 4.5 is Anthropic’s frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and reasoning benchmarks, and improved robustness to prompt injection. The model is designed to operate efficiently across varied effort levels, enabling developers to trade off speed, depth, and token usage depending on task requirements. It comes with a new parameter to control token efficiency, which can be accessed using the OpenRouter Verbosity parameter with low, medium, or high.\n\nOpus 4.5 supports advanced tool use, extended context management, and coordinated multi-agent setups, making it well-suited for autonomous research, debugging, multi-step planning, and spreadsheet/browser manipulation. It delivers substantial gains in structured reasoning, execution reliability, and alignment compared to prior Opus generations, while reducing token overhead and improving performance on long-running tasks.",
+		"hugging_face_id": "",
+		"id": "anthropic/claude-opus-4.5",
+		"name": "Anthropic: Claude Opus 4.5",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000025",
+			"image": "0",
+			"input_cache_read": "0.0000005",
+			"input_cache_write": "0.00000625",
+			"internal_reasoning": "0",
+			"prompt": "0.000005",
+			"request": "0",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "verbosity"],
+		"top_provider":
+		{
+			"context_length": 200000,
+			"is_moderated": true,
+			"max_completion_tokens": 32000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "openrouter/bert-nebulon-alpha",
+		"context_length": 256000,
+		"created": 1764005058,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "This is a cloaked model provided to the community to gather feedback. A general-purpose multimodal model (text/image in, text out) designed for reliability, long-context comprehension, and adaptive logic. It is engineered for production-grade assistants, retrieval-augmented systems, science workloads, and complex agentic workflows.\n\n**Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.",
+		"hugging_face_id": "",
+		"id": "openrouter/bert-nebulon-alpha",
+		"name": "Bert-Nebulon Alpha",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "response_format", "structured_outputs"],
+		"top_provider":
+		{
+			"context_length": 256000,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "allenai/olmo-3-32b-think-20251121",
+		"context_length": 65536,
+		"created": 1763758276,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.6,
+			"top_p": 0.95
+		},
+		"description": "Olmo 3 32B Think is a large-scale, 32-billion-parameter model purpose-built for deep reasoning, complex logic chains and advanced instruction-following scenarios. Its capacity enables strong performance on demanding evaluation tasks and highly nuanced conversational reasoning. Developed by Ai2 under the Apache 2.0 license, Olmo 3 32B Think embodies the Olmo initiative’s commitment to openness, offering full transparency across weights, code and training methodology.",
+		"hugging_face_id": "allenai/Olmo-3-32B-Think",
+		"id": "allenai/olmo-3-32b-think",
+		"name": "AllenAI: Olmo 3 32B Think",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000045",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 65536,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "allenai/olmo-3-7b-instruct-20251121",
+		"context_length": 65536,
+		"created": 1763758273,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.6,
+			"top_p": 0.95
+		},
+		"description": "Olmo 3 7B Instruct is a supervised instruction-fine-tuned variant of the Olmo 3 7B base model, optimized for instruction-following, question-answering, and natural conversational dialogue. By leveraging high-quality instruction data and an open training pipeline, it delivers strong performance across everyday NLP tasks while remaining accessible and easy to integrate. Developed by Ai2 under the Apache 2.0 license, the model offers a transparent, community-friendly option for instruction-driven applications.",
+		"hugging_face_id": "allenai/Olmo-3-7B-Instruct",
+		"id": "allenai/olmo-3-7b-instruct",
+		"name": "AllenAI: Olmo 3 7B Instruct",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000002",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000001",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 65536,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "allenai/olmo-3-7b-think-20251121",
+		"context_length": 65536,
+		"created": 1763758270,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.6,
+			"top_p": 0.95
+		},
+		"description": "Olmo 3 7B Think is a research-oriented language model in the Olmo family designed for advanced reasoning and instruction-driven tasks. It excels at multi-step problem solving, logical inference, and maintaining coherent conversational context. Developed by Ai2 under the Apache 2.0 license, Olmo 3 7B Think supports transparent, fully open experimentation and provides a lightweight yet capable foundation for academic research and practical NLP workflows.",
+		"hugging_face_id": "allenai/Olmo-3-7B-Think",
+		"id": "allenai/olmo-3-7b-think",
+		"name": "AllenAI: Olmo 3 7B Think",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000002",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000012",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 65536,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["image", "text"],
 			"instruct_type": null,
 			"modality": "text+image->text+image",
@@ -72,7 +274,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 2000000,
@@ -112,7 +314,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 2000000,
@@ -954,10 +1156,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000102",
+			"completion": "0.00000096",
 			"image": "0",
+			"input_cache_read": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000000255",
+			"prompt": "0.00000024",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1352,11 +1555,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000005",
+			"completion": "0.0000004",
 			"image": "0",
 			"input_cache_read": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000008",
+			"prompt": "0.000000064",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1631,10 +1834,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000028",
+			"completion": "0.000000224",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000007",
+			"prompt": "0.000000056",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1710,11 +1913,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
+			"completion": "0.0000008",
 			"image": "0",
 			"input_cache_read": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000002",
+			"prompt": "0.00000016",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1953,10 +2156,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000004",
+			"completion": "0.000000328",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000027",
+			"prompt": "0.000000216",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1965,7 +2168,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -2359,10 +2562,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
+			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000027",
+			"prompt": "0.000000216",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2384,7 +2587,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-v3.1-terminus",
-		"context_length": 163840,
+		"context_length": 131072,
 		"created": 1758548275,
 		"default_parameters":
 		{
@@ -2399,19 +2602,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000009",
+			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000023",
+			"prompt": "0.000000216",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 163840,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 163840
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -2702,7 +2905,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-next-80b-a3b-thinking-2509",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1757612284,
 		"default_parameters":
 		{
@@ -2720,16 +2923,16 @@
 			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000015",
+			"prompt": "0.00000012",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -3753,10 +3956,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000028",
+			"completion": "0.000000224",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000007",
+			"prompt": "0.000000056",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -3789,10 +3992,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000056",
+			"completion": "0.000000448",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000014",
+			"prompt": "0.000000112",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -3829,11 +4032,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000018",
+			"completion": "0.00000144",
 			"image": "0",
 			"input_cache_read": "0.00000011",
 			"internal_reasoning": "0",
-			"prompt": "0.0000006",
+			"prompt": "0.00000048",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -4094,10 +4297,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000024",
+			"completion": "0.0000002",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000005",
+			"prompt": "0.00000004",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -4106,7 +4309,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -4169,7 +4372,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000004",
+			"completion": "0.0000002",
 			"image": "0",
 			"internal_reasoning": "0",
 			"prompt": "0.00000004",
@@ -4181,7 +4384,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -4521,11 +4724,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000085",
+			"completion": "0.00000068",
 			"image": "0",
 			"input_cache_read": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000013",
+			"prompt": "0.000000104",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -4670,10 +4873,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000153",
+			"completion": "0.000004",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000038",
+			"prompt": "0.000001",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -4682,7 +4885,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -4809,7 +5012,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-235b-a22b-07-25",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1753119555,
 		"default_parameters":
 		{},
@@ -4820,19 +5023,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000055",
+			"completion": "0.000000464",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000008",
+			"prompt": "0.000000072",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -4928,10 +5131,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000024",
+			"completion": "0.00000184",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000005",
+			"prompt": "0.000000456",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -4940,7 +5143,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -4964,10 +5167,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000138",
+			"completion": "0.0000001104",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000000035",
+			"prompt": "0.000000028",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5409,10 +5612,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000125",
+			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000042",
+			"prompt": "0.000000336",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5445,10 +5648,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000011",
+			"completion": "0.00000088",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000028",
+			"prompt": "0.000000224",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -7131,10 +7334,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000138",
+			"completion": "0.0000001104",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000000035",
+			"prompt": "0.000000028",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -7239,10 +7442,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000002",
+			"completion": "0.00000024",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000005",
+			"prompt": "0.00000008",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -8363,10 +8566,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
+			"completion": "0.00000068",
 			"image": "0.0006684",
+			"input_cache_read": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000015",
+			"prompt": "0.000000136",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -8375,7 +8579,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 8192
 		}
 	},
 	{
@@ -8619,10 +8823,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000084",
+			"completion": "0.000000896",
 			"image": "0",
+			"input_cache_read": "0.000000135",
 			"internal_reasoning": "0",
-			"prompt": "0.00000024",
+			"prompt": "0.000000216",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -8731,10 +8936,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000022",
+			"completion": "0.00000011",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000005",
+			"prompt": "0.00000003",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -10478,7 +10683,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "deepseek/deepseek-r1-distill-qwen-32b",
-		"context_length": 131072,
+		"context_length": 64000,
 		"created": 1738194830,
 		"default_parameters":
 		{},
@@ -10489,19 +10694,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000027",
+			"completion": "0.00000024",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000027",
+			"prompt": "0.00000024",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 64000,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32000
 		}
 	},
 	{
@@ -10561,10 +10766,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000015",
+			"completion": "0.00000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000015",
+			"prompt": "0.00000012",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -11320,10 +11525,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000038",
+			"completion": "0.000000312",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000013",
+			"prompt": "0.000000104",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -11332,7 +11537,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 120000
 		}
 	},
 	{

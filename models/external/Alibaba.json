@@ -1,6 +1,18 @@
 {
 	"data": [
 	{
+		"created": 1763974079,
+		"id": "qwen-image-edit-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1763974013,
+		"id": "qwen-image-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1763606675,
 		"id": "qwen-vl-ocr-2025-11-20",
 		"object": "model",
@@ -33,12 +45,6 @@
 	{
 		"created": 1762089061,
 		"id": "qwen3-max-2025-10-30",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1761810999,
-		"id": "qwen-image-edit-plus",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -141,12 +147,6 @@
 	{
 		"created": 1761529698,
 		"id": "qwen3-coder-plus-2025-09-23",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1761529688,
-		"id": "qwen-image-plus",
 		"object": "model",
 		"owned_by": "system"
 	},

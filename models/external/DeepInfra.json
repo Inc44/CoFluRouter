@@ -1682,10 +1682,11 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
+				"cache_read_tokens": 0.21600000000000003,
 				"input_tokens": 0.27,
 				"output_tokens": 0.4
 			},
-			"tags": []
+			"tags": ["prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
