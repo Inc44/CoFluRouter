@@ -364,6 +364,24 @@
 	},
 	{
 		"created": 0,
+		"id": "PrunaAI/p-image",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "PrunaAI/p-image"
+	},
+	{
+		"created": 0,
+		"id": "PrunaAI/p-image-Edit",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "PrunaAI/p-image-Edit"
+	},
+	{
+		"created": 0,
 		"id": "Qwen/QVQ-72B-Preview",
 		"metadata":
 		{
@@ -1333,6 +1351,24 @@
 	},
 	{
 		"created": 0,
+		"id": "black-forest-labs/FLUX-2-dev",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX-2-dev"
+	},
+	{
+		"created": 0,
+		"id": "black-forest-labs/FLUX-2-pro",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX-2-pro"
+	},
+	{
+		"created": 0,
 		"id": "black-forest-labs/FLUX-pro",
 		"metadata": null,
 		"object": "model",
@@ -1600,10 +1636,11 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"input_tokens": 0.25,
+				"cache_read_tokens": 0.135,
+				"input_tokens": 0.2,
 				"output_tokens": 0.8799999999999999
 			},
-			"tags": []
+			"tags": ["prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",

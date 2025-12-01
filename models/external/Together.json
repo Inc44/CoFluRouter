@@ -7,6 +7,106 @@
 		"eos_token": null,
 		"stop": []
 	},
+	"created": 1764090764,
+	"display_name": "FLUX.2 [flex]",
+	"id": "black-forest-labs/FLUX.2-flex",
+	"object": "model",
+	"organization": "Black Forest Labs",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1764086551,
+	"display_name": "FLUX.2 [dev]",
+	"id": "black-forest-labs/FLUX.2-dev",
+	"object": "model",
+	"organization": "Black Forest Labs",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1764070232,
+	"display_name": "FLUX.2 [pro]",
+	"id": "black-forest-labs/FLUX.2-pro",
+	"object": "model",
+	"organization": "Black Forest Labs",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": "[BOS]",
+		"chat_template": null,
+		"eos_token": "[EOS]",
+		"max_output_length": 16384,
+		"stop": ["[EOS]"]
+	},
+	"context_length": 131072,
+	"created": 1764035457,
+	"display_name": "Kimi K2-Instruct 0905",
+	"id": "keith-aditya/kimi-k2-instruct",
+	"license": "other modified-mit",
+	"link": "https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905",
+	"object": "model",
+	"organization": "Moonshotai",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 1,
+		"output": 3
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
 	"created": 1763662095,
 	"display_name": "Gemini 3 (Nano Banana 2 Pro)",
 	"id": "google/gemini-3-pro-image",
@@ -204,6 +304,33 @@
 	},
 	"running": false,
 	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": ["[/INST]", "</s>"]
+	},
+	"context_length": 32768,
+	"created": 1759960647,
+	"display_name": "Mistral Small Instruct 2501",
+	"id": "pangram/mistral-small-2501",
+	"license": "apache-2.0",
+	"link": "https://huggingface.co/mistralai/Mistral-Small-Instruct-2501",
+	"object": "model",
+	"organization": "Mistral",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.8,
+		"output": 0.8
+	},
+	"running": false,
+	"type": "chat"
 },
 {
 	"config":

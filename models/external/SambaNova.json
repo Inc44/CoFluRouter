@@ -177,6 +177,7 @@
 		"pricing":
 		{
 			"completion": "0.00000000",
+			"duration_per_hour": "0.100",
 			"prompt": "0.00000000"
 		},
 		"sn_metadata":

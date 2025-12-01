@@ -1,6 +1,72 @@
 {
 	"data": [
 	{
+		"created": 1764590306,
+		"id": "qwen3-omni-flash-2025-12-01",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1764583564,
+		"id": "qwen3-livetranslate-flash-2025-12-01",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1764583430,
+		"id": "qwen3-livetranslate-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1764582854,
+		"id": "qwen-plus-2025-12-01",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1764582262,
+		"id": "qwen-mt-lite",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1764243727,
+		"id": "qwen3-asr-flash-realtime-2025-10-27",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1764243719,
+		"id": "qwen3-asr-flash-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1764221904,
+		"id": "tongyi-skynet-llm-cm-2511",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1764126288,
+		"id": "qwen3-tts-vc-realtime-2025-11-27",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1764126017,
+		"id": "qwen3-tts-flash-2025-11-27",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1764125786,
+		"id": "qwen3-tts-flash-realtime-2025-11-27",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1763974079,
 		"id": "qwen-image-edit-plus",
 		"object": "model",
@@ -51,18 +117,6 @@
 	{
 		"created": 1761810924,
 		"id": "qwen-image-edit-plus-2025-10-30",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1761555509,
-		"id": "qwen3-asr-flash-realtime-2025-10-27",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1761555433,
-		"id": "qwen3-asr-flash-realtime",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -536,6 +590,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-88",
+	"last_id": "model-id-97",
 	"object": "list"
 }

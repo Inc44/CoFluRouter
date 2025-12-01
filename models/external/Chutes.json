@@ -2772,6 +2772,41 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "689d2caa-01c1-5de1-ba69-39c5398be0c6",
+		"context_length": 163840,
+		"created": 0,
+		"id": "tngtech/TNG-R1T-Chimera",
+		"input_modalities": ["text"],
+		"max_model_len": 163840,
+		"max_output_length": 163840,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "tngtech/TNG-R1T-Chimera",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": null,
 		"context_length": null,
 		"created": 0,
