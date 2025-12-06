@@ -2068,6 +2068,41 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "d711f181-5b21-5169-a011-ccb472a1604f",
+		"context_length": 163840,
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V3.2",
+		"input_modalities": ["text"],
+		"max_model_len": 163840,
+		"max_output_length": 16384,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "deepseek-ai/DeepSeek-V3.2",
+		"supported_features": ["json_mode", "tools", "reasoning", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": "722df757-203b-58df-b54b-22130fd1fc53",
 		"context_length": 163840,
 		"created": 0,
@@ -2101,6 +2136,69 @@
 		"root": "deepseek-ai/DeepSeek-V3.2-Exp",
 		"supported_features": ["json_mode", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "94ef7147-8f8e-58f8-ae57-77b6f863acae",
+		"context_length": 163840,
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V3.2-Speciale",
+		"input_modalities": ["text"],
+		"max_model_len": 163840,
+		"max_output_length": 32768,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "deepseek-ai/DeepSeek-V3.2-Speciale",
+		"supported_features": ["json_mode", "reasoning", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "39d75699-957f-571f-8737-f2c72819d3e8",
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V3.2-Speciale-TEE",
+		"max_model_len": 163840,
+		"object": "model",
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "deepseek-ai/DeepSeek-V3.2-Speciale"
 	},
 	{
 		"chute_id": null,

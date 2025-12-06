@@ -252,10 +252,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.27,
-				"output_tokens": 1.15
+				"cache_read_tokens": 0.1275,
+				"input_tokens": 0.255,
+				"output_tokens": 1.02
 			},
-			"tags": []
+			"tags": ["prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -639,8 +640,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.09,
-				"output_tokens": 0.5700000000000001
+				"input_tokens": 0.071,
+				"output_tokens": 0.463
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -759,7 +760,7 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.29,
+				"input_tokens": 0.28,
 				"output_tokens": 1.2
 			},
 			"tags": []
@@ -873,8 +874,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.3,
-				"output_tokens": 1.49
+				"input_tokens": 0.2,
+				"output_tokens": 1.2
 			},
 			"tags": ["vision", "reasoning_effort"]
 		},
@@ -1616,7 +1617,7 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"input_tokens": 0.38,
+				"input_tokens": 0.32,
 				"output_tokens": 0.8899999999999999
 			},
 			"tags": []
@@ -1636,7 +1637,7 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.135,
+				"cache_read_tokens": 0.10600000000000001,
 				"input_tokens": 0.2,
 				"output_tokens": 0.8799999999999999
 			},
@@ -1677,9 +1678,9 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.21600000000000003,
-				"input_tokens": 0.27,
-				"output_tokens": 1.0
+				"cache_read_tokens": 0.168,
+				"input_tokens": 0.21,
+				"output_tokens": 0.7899999999999999
 			},
 			"tags": ["prompt_cache", "reasoning_effort"]
 		},
@@ -1698,9 +1699,9 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.21600000000000003,
-				"input_tokens": 0.27,
-				"output_tokens": 1.0
+				"cache_read_tokens": 0.168,
+				"input_tokens": 0.21,
+				"output_tokens": 0.7899999999999999
 			},
 			"tags": ["prompt_cache", "reasoning_effort"]
 		},
@@ -1708,6 +1709,27 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "deepseek-ai/DeepSeek-V3.1-Terminus"
+	},
+	{
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V3.2",
+		"metadata":
+		{
+			"context_length": 163840,
+			"description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism that reduces training and inference cost while preserving quality in long-context scenarios. A scalable reinforcement learning post-training framework further improves reasoning, with reported performance in the GPT-5 class, and the model has demonstrated gold-medal results on the 2025 IMO and IOI. V3.2 also uses a large-scale agentic task synthesis pipeline to better integrate reasoning into tool-use settings, boosting compliance and generalization in interactive environments.",
+			"max_tokens": 163840,
+			"pricing":
+			{
+				"cache_read_tokens": 0.21600000000000003,
+				"input_tokens": 0.27,
+				"output_tokens": 0.4
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/DeepSeek-V3.2"
 	},
 	{
 		"created": 0,
@@ -2864,10 +2886,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.55,
-				"output_tokens": 2.5
+				"cache_read_tokens": 0.141,
+				"input_tokens": 0.47,
+				"output_tokens": 2.0
 			},
-			"tags": []
+			"tags": ["prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2984,8 +3007,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.05,
-				"output_tokens": 0.24000000000000002
+				"input_tokens": 0.039,
+				"output_tokens": 0.19
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -3297,9 +3320,9 @@
 			"max_tokens": 202752,
 			"pricing":
 			{
-				"cache_read_tokens": 0.109999998,
-				"input_tokens": 0.45,
-				"output_tokens": 1.9
+				"cache_read_tokens": 0.0799999993,
+				"input_tokens": 0.43,
+				"output_tokens": 1.75
 			},
 			"tags": ["prompt_cache"]
 		},

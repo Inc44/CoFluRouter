@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"created": 1763671532,
+		"id": "gpt-5.1-codex-max",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1763007109,
 		"id": "gpt-5.1-codex-mini",
 		"object": "model",

@@ -3,6 +3,367 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5.1-codex-max-20251204",
+		"context_length": 400000,
+		"created": 1764878934,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "GPT-5.1-Codex-Max is OpenAI’s latest agentic coding model, designed for long-running, high-context software development tasks. It is based on an updated version of the 5.1 reasoning stack and trained on agentic workflows spanning software engineering, mathematics, and research. \nGPT-5.1-Codex-Max delivers faster performance, improved reasoning, and higher token efficiency across the development lifecycle. ",
+		"hugging_face_id": "",
+		"id": "openai/gpt-5.1-codex-max",
+		"name": "OpenAI: GPT-5.1-Codex-Max",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00001",
+			"image": "0",
+			"input_cache_read": "0.000000125",
+			"internal_reasoning": "0",
+			"prompt": "0.00000125",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools", "top_logprobs"],
+		"top_provider":
+		{
+			"context_length": 400000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video", "file"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Nova"
+		},
+		"canonical_slug": "amazon/nova-2-lite-v1",
+		"context_length": 1000000,
+		"created": 1764696672,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Nova 2 Lite is a fast, cost-effective reasoning model for everyday workloads that can process text, images, and videos to generate text. \n\nNova 2 Lite demonstrates standout capabilities in processing documents, extracting information from videos, generating code, providing accurate grounded answers, and automating multi-step agentic workflows.",
+		"hugging_face_id": "",
+		"id": "amazon/nova-2-lite-v1:free",
+		"name": "Amazon: Nova 2 Lite (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 65535
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video", "file"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Nova"
+		},
+		"canonical_slug": "amazon/nova-2-lite-v1",
+		"context_length": 1000000,
+		"created": 1764696672,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Nova 2 Lite is a fast, cost-effective reasoning model for everyday workloads that can process text, images, and videos to generate text. \n\nNova 2 Lite demonstrates standout capabilities in processing documents, extracting information from videos, generating code, providing accurate grounded answers, and automating multi-step agentic workflows.",
+		"hugging_face_id": "",
+		"id": "amazon/nova-2-lite-v1",
+		"name": "Amazon: Nova 2 Lite",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000025",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": true,
+			"max_completion_tokens": 65535
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Mistral"
+		},
+		"canonical_slug": "mistralai/ministral-14b-2512",
+		"context_length": 262144,
+		"created": 1764681735,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.3,
+			"top_p": null
+		},
+		"description": "The largest model in the Ministral 3 family, Ministral 3 14B offers frontier capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. A powerful and efficient language model with vision capabilities.",
+		"hugging_face_id": "",
+		"id": "mistralai/ministral-14b-2512",
+		"name": "Mistral: Ministral 3 14B 2512",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000002",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000002",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Mistral"
+		},
+		"canonical_slug": "mistralai/ministral-8b-2512",
+		"context_length": 262144,
+		"created": 1764681654,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.3,
+			"top_p": null
+		},
+		"description": "A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities.",
+		"hugging_face_id": "",
+		"id": "mistralai/ministral-8b-2512",
+		"name": "Mistral: Ministral 3 8B 2512",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000015",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000015",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Mistral"
+		},
+		"canonical_slug": "mistralai/ministral-3b-2512",
+		"context_length": 131072,
+		"created": 1764681560,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.3,
+			"top_p": null
+		},
+		"description": "The smallest model in the Ministral 3 family, Ministral 3 3B is a powerful, efficient tiny language model with vision capabilities.",
+		"hugging_face_id": "",
+		"id": "mistralai/ministral-3b-2512",
+		"name": "Mistral: Ministral 3 3B 2512",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000001",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000001",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Mistral"
+		},
+		"canonical_slug": "mistralai/mistral-large-2512",
+		"context_length": 262144,
+		"created": 1764624472,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.0645,
+			"top_p": null
+		},
+		"description": "Mistral Large 3 2512 is Mistral’s most capable model to date, featuring a sparse mixture-of-experts architecture with 41B active parameters (675B total), and released under the Apache 2.0 license.",
+		"hugging_face_id": "",
+		"id": "mistralai/mistral-large-2512",
+		"name": "Mistral: Mistral Large 3 2512",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000015",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.0000005",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "arcee-ai/trinity-mini-20251201",
+		"context_length": 131072,
+		"created": 1764601720,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.15,
+			"top_p": 0.75
+		},
+		"description": "Trinity Mini is a 26B-parameter (3B active) sparse mixture-of-experts language model featuring 128 experts with 8 active per token. Engineered for efficient reasoning over long contexts (131k) with robust function calling and multi-step agent workflows.",
+		"hugging_face_id": "arcee-ai/Trinity-Mini",
+		"id": "arcee-ai/trinity-mini:free",
+		"name": "Arcee AI: Trinity Mini (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "arcee-ai/trinity-mini-20251201",
+		"context_length": 131072,
+		"created": 1764601720,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.15,
+			"top_p": 0.75
+		},
+		"description": "Trinity Mini is a 26B-parameter (3B active) sparse mixture-of-experts language model featuring 128 experts with 8 active per token. Engineered for efficient reasoning over long contexts (131k) with robust function calling and multi-step agent workflows.",
+		"hugging_face_id": "arcee-ai/Trinity-Mini",
+		"id": "arcee-ai/trinity-mini",
+		"name": "Arcee AI: Trinity Mini",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000015",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.000000045",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text"],
 			"instruct_type": null,
 			"modality": "text->text",
@@ -10,7 +371,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-v3.2-speciale-20251201",
-		"context_length": 131072,
+		"context_length": 163840,
 		"created": 1764594837,
 		"default_parameters":
 		{
@@ -25,20 +386,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000042",
+			"completion": "0.00000041",
 			"image": "0",
-			"input_cache_read": "0.000000028",
 			"internal_reasoning": "0",
-			"prompt": "0.00000028",
+			"prompt": "0.00000027",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "stop", "temperature", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 64000
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -51,7 +411,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-v3.2-20251201",
-		"context_length": 131072,
+		"context_length": 163840,
 		"created": 1764594642,
 		"default_parameters":
 		{
@@ -66,20 +426,20 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000042",
+			"completion": "0.0000004",
 			"image": "0",
-			"input_cache_read": "0.000000028",
+			"input_cache_read": "0.000000216",
 			"internal_reasoning": "0",
-			"prompt": "0.00000028",
+			"prompt": "0.00000027",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 64000
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -241,7 +601,7 @@
 		{
 			"context_length": 200000,
 			"is_moderated": true,
-			"max_completion_tokens": 64000
+			"max_completion_tokens": 32000
 		}
 	},
 	{
@@ -282,6 +642,46 @@
 			"context_length": 256000,
 			"is_moderated": false,
 			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "allenai/olmo-3-32b-think-20251121",
+		"context_length": 65536,
+		"created": 1763758276,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.6,
+			"top_p": 0.95
+		},
+		"description": "Olmo 3 32B Think is a large-scale, 32-billion-parameter model purpose-built for deep reasoning, complex logic chains and advanced instruction-following scenarios. Its capacity enables strong performance on demanding evaluation tasks and highly nuanced conversational reasoning. Developed by Ai2 under the Apache 2.0 license, Olmo 3 32B Think embodies the Olmo initiative’s commitment to openness, offering full transparency across weights, code and training methodology.",
+		"hugging_face_id": "allenai/Olmo-3-32B-Think",
+		"id": "allenai/olmo-3-32b-think:free",
+		"name": "AllenAI: Olmo 3 32B Think (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 65536,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -509,10 +909,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0",
+			"completion": "0.0000005",
 			"image": "0",
+			"input_cache_read": "0.00000005",
 			"internal_reasoning": "0",
-			"prompt": "0",
+			"prompt": "0.0000002",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2220,7 +2621,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "z-ai/glm-4.6",
-		"context_length": 204800,
+		"context_length": 202752,
 		"created": 1759235576,
 		"default_parameters":
 		{
@@ -2235,19 +2636,20 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000176",
+			"completion": "0.00000175",
 			"image": "0",
+			"input_cache_read": "0.0000000799999993",
 			"internal_reasoning": "0",
-			"prompt": "0.00000044",
+			"prompt": "0.00000043",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 204800,
+			"context_length": 202752,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -2357,10 +2759,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000328",
+			"completion": "0.00000032",
 			"image": "0",
+			"input_cache_read": "0.000000168",
 			"internal_reasoning": "0",
-			"prompt": "0.000000216",
+			"prompt": "0.00000021",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -2369,7 +2772,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -2585,7 +2988,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-vl-235b-a22b-instruct",
-		"context_length": 131072,
+		"context_length": 262144,
 		"created": 1758668687,
 		"default_parameters":
 		{
@@ -2600,19 +3003,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000019",
+			"completion": "0.0000012",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000021",
+			"prompt": "0.0000002",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -2748,7 +3151,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-v3.1-terminus",
-		"context_length": 131072,
+		"context_length": 163840,
 		"created": 1758548275,
 		"default_parameters":
 		{
@@ -2763,19 +3166,20 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000008",
+			"completion": "0.00000079",
 			"image": "0",
+			"input_cache_read": "0.000000168",
 			"internal_reasoning": "0",
-			"prompt": "0.000000216",
+			"prompt": "0.00000021",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -2788,7 +3192,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-v3.1-terminus",
-		"context_length": 131072,
+		"context_length": 163840,
 		"created": 1758548275,
 		"default_parameters":
 		{
@@ -2803,19 +3207,20 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000008",
+			"completion": "0.00000079",
 			"image": "0",
+			"input_cache_read": "0.000000168",
 			"internal_reasoning": "0",
-			"prompt": "0.000000216",
+			"prompt": "0.00000021",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -3081,10 +3486,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000026",
+			"completion": "0.0000006",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000007",
+			"prompt": "0.00000015",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -3995,7 +4400,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-chat-v3.1",
-		"context_length": 163840,
+		"context_length": 131072,
 		"created": 1755779628,
 		"default_parameters":
 		{},
@@ -4006,19 +4411,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000008",
+			"completion": "0",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000002",
+			"prompt": "0",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 163840,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 163840
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -4494,41 +4899,6 @@
 		},
 		"description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized to run on a single H100 GPU with native MXFP4 quantization. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
 		"hugging_face_id": "openai/gpt-oss-120b",
-		"id": "openai/gpt-oss-120b:exacto",
-		"name": "OpenAI: gpt-oss-120b (exacto)",
-		"per_request_limits": null,
-		"pricing":
-		{
-			"completion": "0.0000002",
-			"image": "0",
-			"internal_reasoning": "0",
-			"prompt": "0.00000004",
-			"request": "0",
-			"web_search": "0"
-		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
-		"top_provider":
-		{
-			"context_length": 131072,
-			"is_moderated": false,
-			"max_completion_tokens": 32768
-		}
-	},
-	{
-		"architecture":
-		{
-			"input_modalities": ["text"],
-			"instruct_type": null,
-			"modality": "text->text",
-			"output_modalities": ["text"],
-			"tokenizer": "GPT"
-		},
-		"canonical_slug": "openai/gpt-oss-120b",
-		"context_length": 32768,
-		"created": 1754414231,
-		"default_parameters": null,
-		"description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized to run on a single H100 GPU with native MXFP4 quantization. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
-		"hugging_face_id": "openai/gpt-oss-120b",
 		"id": "openai/gpt-oss-120b:free",
 		"name": "OpenAI: gpt-oss-120b (free)",
 		"per_request_limits": null,
@@ -4541,11 +4911,51 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "stop", "temperature"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "stop", "temperature", "tool_choice", "tools"],
 		"top_provider":
 		{
-			"context_length": 32768,
+			"context_length": 131072,
 			"is_moderated": true,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-oss-120b",
+		"context_length": 131072,
+		"created": 1754414231,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized to run on a single H100 GPU with native MXFP4 quantization. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
+		"hugging_face_id": "openai/gpt-oss-120b",
+		"id": "openai/gpt-oss-120b:exacto",
+		"name": "OpenAI: gpt-oss-120b (exacto)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000019",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.000000039",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
 			"max_completion_tokens": null
 		}
 	},
@@ -4574,10 +4984,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000002",
+			"completion": "0.00000019",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000004",
+			"prompt": "0.000000039",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -4586,7 +4996,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -5214,7 +5624,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-235b-a22b-07-25",
-		"context_length": 131072,
+		"context_length": 262144,
 		"created": 1753119555,
 		"default_parameters":
 		{},
@@ -5225,19 +5635,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000464",
+			"completion": "0.000000463",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000000072",
+			"prompt": "0.000000071",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -6718,7 +7128,11 @@
 		"context_length": 1000000,
 		"created": 1747930371,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Claude Sonnet 4 significantly enhances the capabilities of its predecessor, Sonnet 3.7, excelling in both coding and reasoning tasks with improved precision and controllability. Achieving state-of-the-art performance on SWE-bench (72.7%), Sonnet 4 balances capability and computational efficiency, making it suitable for a broad range of applications from routine coding tasks to complex software development projects. Key enhancements include improved autonomous codebase navigation, reduced error rates in agent-driven workflows, and increased reliability in following intricate instructions. Sonnet 4 is optimized for practical everyday use, providing advanced reasoning capabilities while maintaining efficiency and responsiveness in diverse internal and external scenarios.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-4)",
 		"hugging_face_id": "",
 		"id": "anthropic/claude-sonnet-4",
@@ -6811,7 +7225,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -9015,7 +9429,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-chat-v3-0324",
-		"context_length": 163840,
+		"context_length": 8192,
 		"created": 1742824755,
 		"default_parameters":
 		{},
@@ -9026,20 +9440,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000088",
+			"completion": "0.0000007",
 			"image": "0",
-			"input_cache_read": "0.000000135",
 			"internal_reasoning": "0",
-			"prompt": "0.0000002",
+			"prompt": "0.00000015",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 163840,
+			"context_length": 8192,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 7168
 		}
 	},
 	{
@@ -9506,7 +9919,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "structured_outputs", "temperature", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -9963,7 +10376,11 @@
 		"context_length": 200000,
 		"created": 1740422110,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and extended, step-by-step processing for complex tasks. The model demonstrates notable improvements in coding, particularly in front-end development and full-stack updates, and excels in agentic workflows, where it can autonomously navigate multi-step processes. \n\nClaude 3.7 Sonnet maintains performance parity with its predecessor in standard mode while offering an extended reasoning mode for enhanced accuracy in math, coding, and instruction-following tasks.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-3-7-sonnet)",
 		"hugging_face_id": "",
 		"id": "anthropic/claude-3.7-sonnet:thinking",
@@ -10001,7 +10418,11 @@
 		"context_length": 200000,
 		"created": 1740422110,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and extended, step-by-step processing for complex tasks. The model demonstrates notable improvements in coding, particularly in front-end development and full-stack updates, and excels in agentic workflows, where it can autonomously navigate multi-step processes. \n\nClaude 3.7 Sonnet maintains performance parity with its predecessor in standard mode while offering an extended reasoning mode for enhanced accuracy in math, coding, and instruction-following tasks.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-3-7-sonnet)",
 		"hugging_face_id": "",
 		"id": "anthropic/claude-3.7-sonnet",
@@ -10861,10 +11282,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000008",
+			"completion": "0.00000011",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000005",
+			"prompt": "0.00000003",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -10873,7 +11294,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -11699,7 +12120,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -11728,10 +12149,12 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000312",
+			"completion": "0.00000032",
 			"image": "0",
+			"input_cache_read": "0",
+			"input_cache_write": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000000104",
+			"prompt": "0.000000108",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -12233,7 +12656,11 @@
 		"context_length": 200000,
 		"created": 1730678400,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "Claude 3.5 Haiku features offers enhanced capabilities in speed, coding accuracy, and tool use. Engineered to excel in real-time applications, it delivers quick response times that are essential for dynamic tasks such as chat interactions and immediate coding suggestions.\n\nThis makes it highly suitable for environments that demand both speed and precision, such as software development, customer service bots, and data management systems.\n\nThis model is currently pointing to [Claude 3.5 Haiku (2024-10-22)](/anthropic/claude-3-5-haiku-20241022).",
 		"hugging_face_id": null,
 		"id": "anthropic/claude-3.5-haiku",
@@ -12248,7 +12675,7 @@
 			"internal_reasoning": "0",
 			"prompt": "0.0000008",
 			"request": "0",
-			"web_search": "0.01"
+			"web_search": "0"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -12315,12 +12742,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000015",
-			"image": "0.0048",
-			"input_cache_read": "0.0000003",
-			"input_cache_write": "0.00000375",
+			"completion": "0.00003",
+			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000003",
+			"prompt": "0.000006",
 			"request": "0",
 			"web_search": "0"
 		},
