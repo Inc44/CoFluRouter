@@ -3,6 +3,204 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Mistral"
+		},
+		"canonical_slug": "mistralai/devstral-2512",
+		"context_length": 262144,
+		"created": 1765285419,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.3,
+			"top_p": null
+		},
+		"description": "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window.\n\nDevstral 2 supports exploring codebases and orchestrating changes across multiple files while maintaining architecture-level context. It tracks framework dependencies, detects failures, and retries with corrections—solving challenges like bug fixing and modernizing legacy systems. The model can be fine-tuned to prioritize specific languages or optimize for large enterprise codebases. It is available under a modified MIT license.",
+		"hugging_face_id": "mistralai/Devstral-2-123B-Instruct-2512",
+		"id": "mistralai/devstral-2512:free",
+		"name": "Mistral: Devstral 2 2512 (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "relace/relace-search-20251208",
+		"context_length": 256000,
+		"created": 1765213560,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "The relace-search model uses 4-12 `view_file` and `grep` tools in parallel to explore a codebase and return relevant files to the user request. \n\nIn contrast to RAG, relace-search performs agentic multi-step reasoning to produce highly precise results 4x faster than any frontier model. It's designed to serve as a subagent that passes its findings to an \"oracle\" coding agent, who orchestrates/performs the rest of the coding task.\n\nTo use relace-search you need to build an appropriate agent harness, and parse the response for relevant information to hand off to the oracle. Read more about it in the [Relace documentation](https://docs.relace.ai/docs/fast-agentic-search/agent).",
+		"hugging_face_id": null,
+		"id": "relace/relace-search",
+		"name": "Relace: Relace Search",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000003",
+			"image": "0",
+			"input_cache_read": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.000001",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["max_tokens", "seed", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 256000,
+			"is_moderated": false,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "z-ai/glm-4.6-20251208",
+		"context_length": 131072,
+		"created": 1765207462,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.8,
+			"top_p": 0.6
+		},
+		"description": "GLM-4.6V is a large multimodal model designed for high-fidelity visual understanding and long-context reasoning across images, documents, and mixed media. It supports up to 128K tokens, processes complex page layouts and charts directly as visual inputs, and integrates native multimodal function calling to connect perception with downstream tool execution. The model also enables interleaved image-text generation and UI reconstruction workflows, including screenshot-to-HTML synthesis and iterative visual editing.",
+		"hugging_face_id": "zai-org/GLM-4.6V",
+		"id": "z-ai/glm-4.6v",
+		"name": "Z.AI: GLM 4.6V",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000009",
+			"image": "0",
+			"input_cache_read": "0.00000005",
+			"internal_reasoning": "0",
+			"prompt": "0.0000003",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": 24000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "essentialai/rnj-1-instruct",
+		"context_length": 32768,
+		"created": 1765094847,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Rnj-1 is an 8B-parameter, dense, open-weight model family developed by Essential AI and trained from scratch with a focus on programming, math, and scientific reasoning. The model demonstrates strong performance across multiple programming languages, tool-use workflows, and agentic execution environments (e.g., mini-SWE-agent). ",
+		"hugging_face_id": "EssentialAI/rnj-1-instruct",
+		"id": "essentialai/rnj-1-instruct",
+		"name": "EssentialAI: Rnj 1 Instruct",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000015",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000015",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 32768,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Router"
+		},
+		"canonical_slug": "openrouter/bodybuilder",
+		"context_length": 128000,
+		"created": 1764903653,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Transform your natural language requests into structured OpenRouter API request objects. Describe what you want to accomplish with AI models, and Body Builder will construct the appropriate API calls. Example: \"count to 10 using gemini and opus.\"\n\nThis is useful for creating multi-model requests, custom model routers, or programmatic generation of API calls from human descriptions.",
+		"hugging_face_id": "",
+		"id": "openrouter/bodybuilder",
+		"name": "Body Builder",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "-1",
+			"prompt": "-1"
+		},
+		"supported_parameters": [],
+		"top_provider":
+		{
+			"context_length": null,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "image"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -348,6 +546,7 @@
 		{
 			"completion": "0.00000015",
 			"image": "0",
+			"input_cache_read": "0",
 			"internal_reasoning": "0",
 			"prompt": "0.000000045",
 			"request": "0",
@@ -358,7 +557,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -393,12 +592,12 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -426,11 +625,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000004",
+			"completion": "0.00000039",
 			"image": "0",
-			"input_cache_read": "0.000000216",
+			"input_cache_read": "0.0000002",
 			"internal_reasoning": "0",
-			"prompt": "0.00000027",
+			"prompt": "0.00000026",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -439,7 +638,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -1316,10 +1515,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
+			"completion": "0.0000009",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000005",
+			"prompt": "0.0000007",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -1744,7 +1943,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "minimax/minimax-m2",
-		"context_length": 204800,
+		"context_length": 262144,
 		"created": 1761252093,
 		"default_parameters":
 		{
@@ -1761,17 +1960,18 @@
 		{
 			"completion": "0.00000102",
 			"image": "0",
+			"input_cache_read": "0.000000127",
 			"internal_reasoning": "0",
-			"prompt": "0.000000255",
+			"prompt": "0.000000254",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 204800,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -2541,7 +2741,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-vl-30b-a3b-instruct",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1759794476,
 		"default_parameters":
 		{
@@ -2556,19 +2756,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
+			"completion": "0.000001",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000015",
+			"prompt": "0.00000014",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -4400,7 +4600,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-chat-v3.1",
-		"context_length": 131072,
+		"context_length": 8192,
 		"created": 1755779628,
 		"default_parameters":
 		{},
@@ -4411,19 +4611,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0",
+			"completion": "0.00000075",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0",
+			"prompt": "0.00000015",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 8192,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 7168
 		}
 	},
 	{
@@ -5036,7 +5236,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -7058,10 +7258,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000045",
+			"completion": "0.00000175",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000002",
+			"prompt": "0.0000004",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -9429,7 +9629,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-chat-v3-0324",
-		"context_length": 8192,
+		"context_length": 163840,
 		"created": 1742824755,
 		"default_parameters":
 		{},
@@ -9440,19 +9640,20 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000007",
+			"completion": "0.00000088",
 			"image": "0",
+			"input_cache_read": "0.000000106",
 			"internal_reasoning": "0",
-			"prompt": "0.00000015",
+			"prompt": "0.0000002",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 8192,
+			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 7168
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -9919,12 +10120,12 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
+		"supported_parameters": ["max_tokens", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 8192
 		}
 	},
 	{
@@ -9937,7 +10138,7 @@
 			"tokenizer": "Gemini"
 		},
 		"canonical_slug": "google/gemma-3-27b-it",
-		"context_length": 131072,
+		"context_length": 96000,
 		"created": 1741756359,
 		"default_parameters":
 		{},
@@ -9948,19 +10149,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000005",
+			"completion": "0.00000015",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000007",
+			"prompt": "0.00000004",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 96000,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 96000
 		}
 	},
 	{
@@ -10023,7 +10224,7 @@
 			"completion": "0.0000008",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000005",
+			"prompt": "0.00000055",
 			"request": "0",
 			"web_search": "0"
 		},

@@ -2,6 +2,33 @@
 {
 	"config":
 	{
+		"bos_token": "<s>",
+		"chat_template": null,
+		"eos_token": "</s>",
+		"stop": ["</s>"]
+	},
+	"context_length": 131072,
+	"created": 1765214663,
+	"display_name": "Apriel 1.6 15B Thinker",
+	"id": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+	"license": "mit",
+	"link": "https://huggingface.co/api/models/ServiceNow-AI/Apriel-1.6-15b-Thinker",
+	"object": "model",
+	"organization": "Servicenow AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": "<|begin_of_text|>",
 		"chat_template": null,
 		"eos_token": "<|end_of_text|>",
@@ -11,7 +38,7 @@
 	"created": 1764918557,
 	"display_name": "EssentialAI Rnj-1 Instruct",
 	"id": "essentialai/rnj-1-instruct",
-	"link": "https://huggingface.co/EssentialAI/rnj-1-instruct",
+	"link": "https://huggingface.co/api/models/togethercomputer/EssentialAI-RNJ-1-Instruct",
 	"object": "model",
 	"organization": "Essential AI",
 	"pricing":
@@ -21,6 +48,33 @@
 		"hourly": 0,
 		"input": 0.15,
 		"output": 0.15
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": [""]
+	},
+	"context_length": 262144,
+	"created": 1764641096,
+	"display_name": "Ministral 3 14B Instruct 2512",
+	"id": "mistralai/Ministral-3-14B-Instruct-2512",
+	"license": "apache-2.0",
+	"link": "https://huggingface.co/api/models/mistralai/Ministral-3-14B-Instruct-2512",
+	"object": "model",
+	"organization": "Mistralai",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.2,
+		"output": 0.2
 	},
 	"running": false,
 	"type": "chat"
@@ -3024,10 +3078,10 @@
 	},
 	"context_length": 131072,
 	"created": 1733466629,
-	"display_name": "Meta Llama 3.3 70B Instruct Turbo",
+	"display_name": "Llama 3.3 70B Instruct Turbo",
 	"id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
 	"license": "Llama-3.3 (Other)",
-	"link": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+	"link": "https://huggingface.co/api/models/nvidia/Llama-3.3-70B-Instruct-FP8",
 	"object": "model",
 	"organization": "Meta",
 	"pricing":

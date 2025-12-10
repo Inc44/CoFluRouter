@@ -252,8 +252,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.1275,
-				"input_tokens": 0.255,
+				"cache_read_tokens": 0.127,
+				"input_tokens": 0.254,
 				"output_tokens": 1.02
 			},
 			"tags": ["prompt_cache"]
@@ -3330,6 +3330,26 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "zai-org/GLM-4.6"
+	},
+	{
+		"created": 0,
+		"id": "zai-org/GLM-4.6V",
+		"metadata":
+		{
+			"context_length": 131072,
+			"description": "This model is part of the GLM-V family of models, introduced in the paper GLM-4.1V-Thinking and GLM-4.5V: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.3,
+				"output_tokens": 0.9
+			},
+			"tags": ["vision"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "zai-org/GLM-4.6V"
 	}],
 	"object": "list"
 }
