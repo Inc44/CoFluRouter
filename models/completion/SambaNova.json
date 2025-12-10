@@ -1,6 +1,11 @@
 {
 	"data": [
 	{
+		"id": "ALLaM-7B-Instruct-preview",
+		"max_tokens": 4096,
+		"image": false
+	},
+	{
 		"id": "DeepSeek-R1-0528",
 		"max_tokens": 7168,
 		"image": false
@@ -43,6 +48,11 @@
 	{
 		"id": "Meta-Llama-3.3-70B-Instruct",
 		"max_tokens": 3072,
+		"image": false
+	},
+	{
+		"id": "Qwen3-235B",
+		"max_tokens": 4096,
 		"image": false
 	},
 	{

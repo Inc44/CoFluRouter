@@ -1,0 +1,11 @@
+{
+	"data": [
+	{
+		"id": "gemini-3-pro-preview",
+		"max_tokens": 65536,
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	}]
+}

@@ -1,6 +1,16 @@
 {
 	"data": [
 	{
+		"id": "grok-4-1-fast-non-reasoning",
+		"max_tokens": 30000,
+		"image": true
+	},
+	{
+		"id": "grok-4-1-fast-reasoning",
+		"max_tokens": 30000,
+		"image": true
+	},
+	{
 		"id": "grok-4-fast-non-reasoning",
 		"max_tokens": 30000,
 		"image": true

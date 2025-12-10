@@ -389,5 +389,12 @@
 		"id": "gemma-2-27b-it",
 		"max_tokens": 8192,
 		"image": false
+	},
+	{
+		"id": "gemini-3-pro-image-preview",
+		"max_tokens": 32768,
+		"image": true,
+		"search": true,
+		"modality": "image"
 	}]
 }

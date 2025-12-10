@@ -1,14 +1,19 @@
 {
 	"data": [
 	{
-		"id": "qwen3-vl-flash-2025-10-15",
-		"max_tokens": 32768,
+		"id": "qwen3-omni-flash-2025-12-01",
+		"max_tokens": 16384,
 		"image": true
 	},
 	{
-		"id": "qwen3-vl-flash",
+		"id": "qwen-plus-2025-12-01",
 		"max_tokens": 32768,
-		"image": true
+		"image": false
+	},
+	{
+		"id": "qwen3-max-preview",
+		"max_tokens": 65536,
+		"image": false
 	},
 	{
 		"id": "qwen3-omni-30b-a3b-captioner",
@@ -16,6 +21,36 @@
 		"audio": true,
 		"image": false,
 		"modality": "audio"
+	},
+	{
+		"id": "qwen3-coder-plus-2025-09-23",
+		"max_tokens": 65536,
+		"image": false
+	},
+	{
+		"id": "qwen3-vl-flash",
+		"max_tokens": 32768,
+		"image": true
+	},
+	{
+		"id": "qwen3-vl-plus",
+		"max_tokens": 32768,
+		"image": true
+	},
+	{
+		"id": "qwen3-max-2025-09-23",
+		"max_tokens": 65536,
+		"image": false
+	},
+	{
+		"id": "qwen3-max",
+		"max_tokens": 65536,
+		"image": false
+	},
+	{
+		"id": "qwen3-vl-flash-2025-10-15",
+		"max_tokens": 32768,
+		"image": true
 	},
 	{
 		"id": "qwen2.5-7b-instruct",
@@ -210,21 +245,6 @@
 		"image": true
 	},
 	{
-		"id": "qwen3-max",
-		"max_tokens": 65536,
-		"image": false
-	},
-	{
-		"id": "qwen3-max-2025-09-23",
-		"max_tokens": 65536,
-		"image": false
-	},
-	{
-		"id": "qwen3-vl-plus",
-		"max_tokens": 32768,
-		"image": true
-	},
-	{
 		"id": "qwen3-30b-a3b-thinking-2507",
 		"max_tokens": 32768,
 		"image": false
@@ -280,11 +300,6 @@
 		"image": true
 	},
 	{
-		"id": "qwen3-coder-plus-2025-09-23",
-		"max_tokens": 65536,
-		"image": false
-	},
-	{
 		"id": "qwen3-next-80b-a3b-instruct",
 		"max_tokens": 32768,
 		"image": false
@@ -307,11 +322,6 @@
 	{
 		"id": "qwen-plus-2025-09-11",
 		"max_tokens": 32768,
-		"image": false
-	},
-	{
-		"id": "qwen3-max-preview",
-		"max_tokens": 65536,
 		"image": false
 	},
 	{

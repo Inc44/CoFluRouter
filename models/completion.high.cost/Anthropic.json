@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"id": "claude-opus-4-5-20251101",
+		"max_tokens": 64000,
+		"thinking": true,
+		"image": true
+	},
+	{
 		"id": "claude-sonnet-4-5-20250929",
 		"max_tokens": 64000,
 		"thinking": true,

@@ -1,8 +1,47 @@
 {
 	"data": [
 	{
+		"id": "gpt-5.1-codex-max",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"responses_api_only": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.1-codex-mini",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"responses_api_only": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.1-codex",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"responses_api_only": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.1",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "gpt-5.1-2025-11-13",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"image": true
+	},
+	{
+		"id": "gpt-5.1-chat-latest",
+		"max_tokens": 16384,
+		"image": true
+	},
+	{
 		"id": "gpt-5-codex",
 		"max_tokens": 128000,
+		"reasoning_effort": "low",
 		"responses_api_only": true,
 		"image": true
 	},

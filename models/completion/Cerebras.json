@@ -47,6 +47,11 @@
 		"image": false
 	},
 	{
+		"id": "zai-glm-4.6",
+		"max_tokens": 8192,
+		"image": false
+	},
+	{
 		"id": "deepseek-r1-distill-llama-70b",
 		"max_tokens": 8192,
 		"image": false
