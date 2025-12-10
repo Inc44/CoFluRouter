@@ -18,6 +18,8 @@ for model in models:
 		obj = {"data": []}
 	if "data" not in obj or not isinstance(obj["data"], list):
 		obj["data"] = obj if isinstance(obj, list) else []
+	if model.get("id", "").startswith("models/"):
+		model["id"] = model["id"].replace("models/", "")
 	existing_model = None
 	for existing in obj.get("data", []):
 		if existing.get("id") == model.get("id"):
