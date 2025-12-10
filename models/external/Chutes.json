@@ -1398,12 +1398,12 @@
 		"chute_id": null,
 		"context_length": null,
 		"created": 0,
-		"input_modalities": null,
 		"id": "all-hands/openhands-lm-32b-v0.1-ep3",
-		"max_output_length": null,
+		"input_modalities": null,
 		"max_model_len": 16384,
-		"output_modalities": null,
+		"max_output_length": null,
 		"object": "model",
+		"output_modalities": null,
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
@@ -3499,41 +3499,6 @@
 		"quantization": "bf16",
 		"root": "zai-org/GLM-4.5V",
 		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
-		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
-	},
-	{
-		"chute_id": null,
-		"context_length": 202752,
-		"created": 0,
-		"id": "zai-org/GLM-4.6-FP8",
-		"input_modalities": ["text"],
-		"max_model_len": 202752,
-		"max_output_length": 202752,
-		"object": "model",
-		"output_modalities": ["text"],
-		"owned_by": "sglang",
-		"parent": null,
-		"price":
-		{
-			"input":
-			{
-				"tao": 0,
-				"usd": 0
-			},
-			"output":
-			{
-				"tao": 0,
-				"usd": 0
-			}
-		},
-		"pricing":
-		{
-			"completion": 0,
-			"prompt": 0
-		},
-		"quantization": "fp8",
-		"root": "zai-org/GLM-4.6-FP8",
-		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
