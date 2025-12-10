@@ -72,6 +72,26 @@ for name, base_url, api_key in OPENAI_COMPATIBLE:
 		obj = redact_entry(obj, "id", "modelperm-")
 	if name == "OpenAI":  # Redact fine-tuned models
 		obj = redact_entry(obj, "id", "ft:")
+	if path.exists():
+		data = obj.get("data") if isinstance(obj, dict) else obj
+		existing_obj = read_json(path)
+		existing_data = (
+			existing_obj.get("data") if isinstance(existing_obj, dict) else existing_obj
+		)
+		if isinstance(data, list) and isinstance(existing_data, list):
+			merged_data = {
+				model["id"]: model
+				for model in existing_data
+				if isinstance(model, dict) and "id" in model
+			}
+			for model in data:
+				if isinstance(model, dict) and "id" in model:
+					merged_data[model["id"]] = model
+			merged_obj = list(merged_data.values())
+			if isinstance(obj, dict) and "data" in obj:
+				obj["data"] = merged_obj
+			elif isinstance(obj, list):
+				obj = merged_obj
 	if name in [
 		"Anthropic",
 		"Cerebras",
