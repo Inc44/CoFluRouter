@@ -1,6 +1,20 @@
 {
 	"data": [
 	{
+		"id": "gpt-5.2-pro",
+		"max_tokens": 128000,
+		"tools": ["web_search_preview"],
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.2-pro-2025-12-11",
+		"max_tokens": 128000,
+		"tools": ["web_search_preview"],
+		"file": true,
+		"image": true
+	},
+	{
 		"id": "gpt-5-search-api-2025-10-14",
 		"max_tokens": 0,
 		"completions_api_only": true,
@@ -202,6 +216,7 @@
 	{
 		"id": "gpt-4o-2024-05-13",
 		"max_tokens": 4096,
+		"file": true,
 		"image": true
 	},
 	{

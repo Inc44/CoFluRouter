@@ -1,6 +1,26 @@
 {
 	"data": [
 	{
+		"id": "gpt-5.2-chat-latest",
+		"max_tokens": 16384,
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.2",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.2-2025-12-11",
+		"max_tokens": 128000,
+		"reasoning_effort": "low",
+		"file": true,
+		"image": true
+	},
+	{
 		"id": "gpt-5.1-codex-max",
 		"max_tokens": 128000,
 		"reasoning_effort": "low",
@@ -25,17 +45,20 @@
 		"id": "gpt-5.1",
 		"max_tokens": 128000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5.1-2025-11-13",
 		"max_tokens": 128000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5.1-chat-latest",
 		"max_tokens": 16384,
+		"file": true,
 		"image": true
 	},
 	{
@@ -43,47 +66,55 @@
 		"max_tokens": 128000,
 		"reasoning_effort": "low",
 		"responses_api_only": true,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5-nano",
 		"max_tokens": 128000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5-nano-2025-08-07",
 		"max_tokens": 128000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5-mini",
 		"max_tokens": 128000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5-mini-2025-08-07",
 		"max_tokens": 128000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5",
 		"max_tokens": 128000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5-2025-08-07",
 		"max_tokens": 128000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5-chat-latest",
 		"max_tokens": 16384,
+		"file": true,
 		"image": true
 	},
 	{
@@ -110,72 +141,85 @@
 	{
 		"id": "gpt-4.1-nano",
 		"max_tokens": 16384,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-4.1-nano-2025-04-14",
 		"max_tokens": 16384,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-4.1-mini",
 		"max_tokens": 16384,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-4.1-mini-2025-04-14",
 		"max_tokens": 16384,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-4.1",
 		"max_tokens": 16384,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-4.1-2025-04-14",
 		"max_tokens": 16384,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "o4-mini",
 		"max_tokens": 100000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "o3",
 		"max_tokens": 100000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "o4-mini-2025-04-16",
 		"max_tokens": 100000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "o3-2025-04-16",
 		"max_tokens": 100000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-4o-2024-11-20",
 		"max_tokens": 16383,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "o3-mini-2025-01-31",
 		"max_tokens": 100000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": false
 	},
 	{
 		"id": "o3-mini",
 		"max_tokens": 100000,
 		"reasoning_effort": "low",
+		"file": true,
 		"image": false
 	},
 	{
@@ -193,21 +237,25 @@
 	{
 		"id": "gpt-4o-2024-08-06",
 		"max_tokens": 16383,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-4o-mini",
 		"max_tokens": 16383,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-4o-mini-2024-07-18",
 		"max_tokens": 16383,
+		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-4o",
 		"max_tokens": 16383,
+		"file": true,
 		"image": true
 	},
 	{
