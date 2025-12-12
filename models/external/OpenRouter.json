@@ -3,6 +3,128 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5.2-chat-20251211",
+		"context_length": 128000,
+		"created": 1765389783,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "GPT-5.2 Chat (AKA Instant) is the fast, lightweight member of the 5.2 family, optimized for low-latency chat while retaining strong general intelligence. It uses adaptive reasoning to selectively “think” on harder queries, improving accuracy on math, coding, and multi-step tasks without slowing down typical conversations. The model is warmer and more conversational by default, with better instruction following and more stable short-form reasoning. GPT-5.2 Chat is designed for high-throughput, interactive workloads where responsiveness and consistency matter more than deep deliberation.",
+		"hugging_face_id": "",
+		"id": "openai/gpt-5.2-chat",
+		"name": "OpenAI: GPT-5.2 Chat",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000014",
+			"image": "0",
+			"input_cache_read": "0.000000175",
+			"internal_reasoning": "0",
+			"prompt": "0.00000175",
+			"request": "0",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["max_tokens", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": true,
+			"max_completion_tokens": 16384
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text", "file"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5.2-pro-20251211",
+		"context_length": 400000,
+		"created": 1765389780,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "GPT-5.2 Pro is OpenAI’s most advanced model, offering major improvements in agentic coding and long context performance over GPT-5 Pro. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and accuracy in high-stakes use cases. It supports test-time routing features and advanced prompt understanding, including user-specified intent like \"think hard about this.\" Improvements include reductions in hallucination, sycophancy, and better performance in coding, writing, and health-related tasks.",
+		"hugging_face_id": "",
+		"id": "openai/gpt-5.2-pro",
+		"name": "OpenAI: GPT-5.2 Pro",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000168",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.000021",
+			"request": "0",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"top_provider":
+		{
+			"context_length": 400000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5.2-20251211",
+		"context_length": 400000,
+		"created": 1765389775,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "GPT-5.2 is the latest frontier-grade model in the GPT-5 series, offering stronger agentic and long context perfomance compared to GPT-5.1. It uses adaptive reasoning to allocate computation dynamically, responding quickly to simple queries while spending more depth on complex tasks.\n\nBuilt for broad task coverage, GPT-5.2 delivers consistent gains across math, coding, sciende, and tool calling workloads, with more coherent long-form answers and improved tool-use reliability.",
+		"hugging_face_id": "",
+		"id": "openai/gpt-5.2",
+		"name": "OpenAI: GPT-5.2",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000014",
+			"image": "0",
+			"input_cache_read": "0.000000175",
+			"internal_reasoning": "0",
+			"prompt": "0.00000175",
+			"request": "0",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"top_provider":
+		{
+			"context_length": 400000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text"],
 			"instruct_type": null,
 			"modality": "text->text",
@@ -38,6 +160,46 @@
 			"context_length": 262144,
 			"is_moderated": false,
 			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Mistral"
+		},
+		"canonical_slug": "mistralai/devstral-2512",
+		"context_length": 262144,
+		"created": 1765285419,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 0.3,
+			"top_p": null
+		},
+		"description": "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window.\n\nDevstral 2 supports exploring codebases and orchestrating changes across multiple files while maintaining architecture-level context. It tracks framework dependencies, detects failures, and retries with corrections—solving challenges like bug fixing and modernizing legacy systems. The model can be fine-tuned to prioritize specific languages or optimize for large enterprise codebases. It is available under a modified MIT license.",
+		"hugging_face_id": "mistralai/Devstral-2-123B-Instruct-2512",
+		"id": "mistralai/devstral-2512",
+		"name": "Mistral: Devstral 2 2512",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000006",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000015",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -120,6 +282,48 @@
 			"context_length": 131072,
 			"is_moderated": false,
 			"max_completion_tokens": 24000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "DeepSeek"
+		},
+		"canonical_slug": "nex-agi/deepseek-v3.1-nex-n1",
+		"context_length": 131072,
+		"created": 1765204393,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "DeepSeek V3.1 Nex-N1 is the flagship release of the Nex-N1 series — a post-trained model designed to highlight agent autonomy, tool use, and real-world productivity. \n\nNex-N1 demonstrates competitive performance across all evaluation scenarios, showing particularly strong results in practical coding and HTML generation tasks.",
+		"hugging_face_id": "nex-agi/DeepSeek-V3.1-Nex-N1",
+		"id": "nex-agi/deepseek-v3.1-nex-n1:free",
+		"name": "Nex AGI: DeepSeek V3.1 Nex N1 (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"input_cache_read": "0",
+			"input_cache_write": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -231,7 +435,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools", "top_logprobs"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -338,7 +542,7 @@
 			"top_p": null
 		},
 		"description": "The largest model in the Ministral 3 family, Ministral 3 14B offers frontier capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. A powerful and efficient language model with vision capabilities.",
-		"hugging_face_id": "",
+		"hugging_face_id": "mistralai/Ministral-3-14B-Instruct-2512",
 		"id": "mistralai/ministral-14b-2512",
 		"name": "Mistral: Ministral 3 14B 2512",
 		"per_request_limits": null,
@@ -351,7 +555,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -378,7 +582,7 @@
 			"top_p": null
 		},
 		"description": "A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities.",
-		"hugging_face_id": "",
+		"hugging_face_id": "mistralai/Ministral-3-8B-Instruct-2512",
 		"id": "mistralai/ministral-8b-2512",
 		"name": "Mistral: Ministral 3 8B 2512",
 		"per_request_limits": null,
@@ -418,7 +622,7 @@
 			"top_p": null
 		},
 		"description": "The smallest model in the Ministral 3 family, Ministral 3 3B is a powerful, efficient tiny language model with vision capabilities.",
-		"hugging_face_id": "",
+		"hugging_face_id": "mistralai/Ministral-3-3B-Instruct-2512",
 		"id": "mistralai/ministral-3b-2512",
 		"name": "Mistral: Ministral 3 3B 2512",
 		"per_request_limits": null,
@@ -625,20 +829,21 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000039",
+			"completion": "0.00000038",
 			"image": "0",
-			"input_cache_read": "0.0000002",
+			"input_cache_read": "0.00000019",
+			"input_cache_write": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000026",
+			"prompt": "0.00000025",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -1319,7 +1524,7 @@
 			"request": "0",
 			"web_search": "0.01"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools", "top_logprobs"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -1360,7 +1565,7 @@
 			"request": "0",
 			"web_search": "0.01"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools", "top_logprobs"],
+		"supported_parameters": ["max_tokens", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -1401,7 +1606,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools", "top_logprobs"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -1442,7 +1647,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools", "top_logprobs"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -1845,7 +2050,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["include_reasoning", "reasoning", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -2741,7 +2946,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-vl-30b-a3b-instruct",
-		"context_length": 131072,
+		"context_length": 262144,
 		"created": 1759794476,
 		"default_parameters":
 		{
@@ -2756,19 +2961,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
+			"completion": "0.0000006",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000014",
+			"prompt": "0.00000015",
 			"request": "0",
 			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -2821,7 +3026,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "z-ai/glm-4.6",
-		"context_length": 202752,
+		"context_length": 204800,
 		"created": 1759235576,
 		"default_parameters":
 		{
@@ -2836,20 +3041,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000175",
+			"completion": "0.00000176",
 			"image": "0",
-			"input_cache_read": "0.0000000799999993",
 			"internal_reasoning": "0",
-			"prompt": "0.00000043",
+			"prompt": "0.00000044",
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 202752,
+			"context_length": 204800,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -3686,10 +3890,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
+			"completion": "0.00000039",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000015",
+			"prompt": "0.0000001",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -3762,10 +3966,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000008",
+			"completion": "0.0000011",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.0000001",
+			"prompt": "0.00000009",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -3774,7 +3978,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -3957,7 +4161,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["include_reasoning", "reasoning", "response_format", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -5685,10 +5889,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000153",
+			"completion": "0.0000018",
 			"image": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.00000038",
+			"prompt": "0.00000022",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -5697,7 +5901,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -5842,7 +6046,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -8086,7 +8290,7 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 40960,
@@ -9383,11 +9587,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000068",
+			"completion": "0.0000006",
 			"image": "0.0006684",
-			"input_cache_read": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000000136",
+			"prompt": "0.00000015",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -9396,7 +9599,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 8192
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -10120,12 +10323,12 @@
 			"request": "0",
 			"web_search": "0"
 		},
-		"supported_parameters": ["max_tokens", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 8192
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -12352,10 +12555,8 @@
 		{
 			"completion": "0.00000032",
 			"image": "0",
-			"input_cache_read": "0",
-			"input_cache_write": "0",
 			"internal_reasoning": "0",
-			"prompt": "0.000000108",
+			"prompt": "0.0000001",
 			"request": "0",
 			"web_search": "0"
 		},
@@ -12364,7 +12565,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 120000
+			"max_completion_tokens": 16384
 		}
 	},
 	{

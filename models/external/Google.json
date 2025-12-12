@@ -7,6 +7,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Deep Research Pro Preview (Dec-12-2025)",
+		"id": "models/deep-research-pro-preview-12-2025",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Embedding 001",
 		"id": "models/embedding-001",
 		"object": "model",

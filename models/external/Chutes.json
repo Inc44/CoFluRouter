@@ -1886,6 +1886,34 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "0df3133d-c477-56d2-b4db-f2093bb150a1",
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V3-0324-TEE",
+		"max_model_len": 163840,
+		"object": "model",
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "deepseek-ai/DeepSeek-V3-0324"
+	},
+	{
 		"chute_id": "f53ae961-7dcd-576f-badd-098f907d9bd2",
 		"context_length": 163840,
 		"created": 0,
@@ -2412,6 +2440,41 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "61a6b03a-067c-5fa0-8a14-b0940ff22c03",
+		"context_length": 262144,
+		"created": 0,
+		"id": "mistralai/Devstral-2-123B-Instruct-2512",
+		"input_modalities": ["text"],
+		"max_model_len": 262144,
+		"max_output_length": 65536,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "mistralai/Devstral-2-123B-Instruct-2512",
+		"supported_features": ["json_mode", "tools", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": "00331b13-3614-5b0a-ab48-56116167aeef",
 		"context_length": 131072,
 		"created": 0,
@@ -2657,6 +2720,34 @@
 		"root": "openai/gpt-oss-120b",
 		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "8f3bb827-b9e6-5487-88bc-ee8f0c6f5810",
+		"created": 0,
+		"id": "openai/gpt-oss-120b-TEE",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"root": "openai/gpt-oss-120b"
 	},
 	{
 		"chute_id": "52bebe99-e55f-5bee-a386-b293b6e762c5",
@@ -3667,6 +3758,41 @@
 		"quantization": "bf16",
 		"root": "zai-org/GLM-4.6-turbo",
 		"supported_features": ["json_mode", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "8f2105c5-b200-5aa5-969f-0720f7690f3c",
+		"context_length": 131072,
+		"created": 0,
+		"id": "zai-org/GLM-4.6V",
+		"input_modalities": ["text", "image"],
+		"max_model_len": 131072,
+		"max_output_length": 65536,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "bf16",
+		"root": "zai-org/GLM-4.6V",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{

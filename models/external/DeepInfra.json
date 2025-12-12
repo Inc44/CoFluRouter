@@ -660,8 +660,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.3,
-				"output_tokens": 2.9000000000000004
+				"input_tokens": 0.22999999999999998,
+				"output_tokens": 2.39
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -700,7 +700,7 @@
 			"max_tokens": 40960,
 			"pricing":
 			{
-				"input_tokens": 0.1,
+				"input_tokens": 0.08,
 				"output_tokens": 0.28
 			},
 			"tags": ["reasoning_effort"]
@@ -834,7 +834,7 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.14,
+				"input_tokens": 0.09,
 				"output_tokens": 1.1
 			},
 			"tags": ["reasoning_effort"]
@@ -1720,9 +1720,9 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.21600000000000003,
-				"input_tokens": 0.27,
-				"output_tokens": 0.4
+				"cache_read_tokens": 0.20020000000000002,
+				"input_tokens": 0.26,
+				"output_tokens": 0.38999999999999996
 			},
 			"tags": ["prompt_cache"]
 		},
@@ -2245,8 +2245,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.13,
-				"output_tokens": 0.38
+				"input_tokens": 0.1,
+				"output_tokens": 0.32
 			},
 			"tags": []
 		},
@@ -2860,13 +2860,13 @@
 		"id": "moonshotai/Kimi-K2-Instruct-0905",
 		"metadata":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"description": "Kimi K2 0905 is the September update of Kimi K2 0711. It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It supports long-context inference up to 256k tokens, extended from the previous 128k.  This update improves agentic coding with higher accuracy and better generalization across scaffolds, and enhances frontend coding with more aesthetic and functional outputs for web, 3D, and related tasks. Kimi K2 is optimized for agentic capabilities, including advanced tool use, reasoning, and code synthesis. It excels across coding (LiveCodeBench, SWE-bench), reasoning (ZebraLogic, GPQA), and tool-use (Tau2, AceBench) benchmarks. The model is trained with a novel stack incorporating the MuonClip optimizer for stable large-scale MoE training.",
-			"max_tokens": 262144,
+			"max_tokens": 131072,
 			"pricing":
 			{
-				"cache_read_tokens": 0.4,
-				"input_tokens": 0.5,
+				"cache_read_tokens": 0.32000000000000006,
+				"input_tokens": 0.4,
 				"output_tokens": 2.0
 			},
 			"tags": ["prompt_cache"]
@@ -2881,9 +2881,9 @@
 		"id": "moonshotai/Kimi-K2-Thinking",
 		"metadata":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"description": "Kimi K2 Thinking is the latest, most capable version of open-source thinking model developed by MoonshotAI",
-			"max_tokens": 262144,
+			"max_tokens": 131072,
 			"pricing":
 			{
 				"cache_read_tokens": 0.141,
