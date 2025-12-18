@@ -82,6 +82,16 @@ def extract_reasoning_effort_support(item):
 	return False
 
 
+def extract_video_support(item):
+	if (
+		"architecture" in item
+		and "input_modalities" in item["architecture"]
+		and "video" in item["architecture"]["input_modalities"]
+	):
+		return True
+	return False
+
+
 def skip_model(item):
 	if "supports_chat" in item and not item.get("supports_chat"):
 		return True
@@ -188,6 +198,9 @@ def list_models():
 			reasoning_effort = extract_reasoning_effort_support(item)
 			if reasoning_effort:
 				model["reasoning_effort"] = ["low", "high"]
+			video = extract_video_support(item)
+			if video:
+				model["video"] = video
 			models.append(model)
 	groups = {}
 	for model in models:
@@ -206,6 +219,7 @@ def list_models():
 			"reasoning_effort",
 			"thinking",
 			"thinking_budget",
+			"video",
 		):
 			shared_value = None
 			for model in group:
