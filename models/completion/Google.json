@@ -391,6 +391,15 @@
 		"image": false
 	},
 	{
+		"id": "gemini-3-flash-preview",
+		"max_tokens": 65536,
+		"reasoning_effort": ["low", "high"],
+		"audio": true,
+		"image": true,
+		"video": true,
+		"search": true
+	},
+	{
 		"id": "gemini-3-pro-image-preview",
 		"max_tokens": 32768,
 		"image": true,

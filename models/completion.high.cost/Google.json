@@ -3,6 +3,7 @@
 	{
 		"id": "gemini-3-pro-preview",
 		"max_tokens": 65536,
+		"reasoning_effort": ["low", "high"],
 		"audio": true,
 		"image": true,
 		"video": true,

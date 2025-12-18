@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"id": "gpt-4o-mini-transcribe-2025-03-20"
+	},
+	{
+		"id": "gpt-4o-mini-transcribe-2025-12-15"
+	},
+	{
 		"id": "gpt-4o-transcribe-diarize"
 	},
 	{
