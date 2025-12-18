@@ -1574,46 +1574,6 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text"],
-			"instruct_type": null,
-			"modality": "text->text",
-			"output_modalities": ["text"],
-			"tokenizer": "Other"
-		},
-		"canonical_slug": "deepcogito/cogito-v2.1-671b-20251118",
-		"context_length": 128000,
-		"created": 1763071233,
-		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"temperature": null,
-			"top_p": null
-		},
-		"description": "Cogito v2.1 671B MoE represents one of the strongest open models globally, matching performance of frontier closed and open models. This model is trained using self play with reinforcement learning to reach state-of-the-art performance on multiple categories (instruction following, coding, longer queries and creative writing). This advanced system demonstrates significant progress toward scalable superintelligence through policy improvement.",
-		"hugging_face_id": "",
-		"id": "deepcogito/cogito-v2.1-671b",
-		"name": "Deep Cogito: Cogito v2.1 671B",
-		"per_request_limits": null,
-		"pricing":
-		{
-			"completion": "0.00000125",
-			"image": "0",
-			"internal_reasoning": "0",
-			"prompt": "0.00000125",
-			"request": "0",
-			"web_search": "0"
-		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
-		"top_provider":
-		{
-			"context_length": 128000,
-			"is_moderated": false,
-			"max_completion_tokens": null
-		}
-	},
-	{
-		"architecture":
-		{
 			"input_modalities": ["text", "image"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -1689,6 +1649,46 @@
 			"context_length": 1840000,
 			"is_moderated": false,
 			"max_completion_tokens": 64000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "deepcogito/cogito-v2.1-671b-20251118",
+		"context_length": 128000,
+		"created": 1763071233,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Cogito v2.1 671B MoE represents one of the strongest open models globally, matching performance of frontier closed and open models. This model is trained using self play with reinforcement learning to reach state-of-the-art performance on multiple categories (instruction following, coding, longer queries and creative writing). This advanced system demonstrates significant progress toward scalable superintelligence through policy improvement.",
+		"hugging_face_id": "",
+		"id": "deepcogito/cogito-v2.1-671b",
+		"name": "Deep Cogito: Cogito v2.1 671B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000125",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0.00000125",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": false,
+			"max_completion_tokens": null
 		}
 	},
 	{

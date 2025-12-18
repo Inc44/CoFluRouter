@@ -73,42 +73,6 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
-		"chute_id": "6b0c4c7d-c911-570b-a9cc-061d9930b694",
-		"confidential_compute": false,
-		"context_length": 196608,
-		"created": 0,
-		"id": "MiniMaxAI/MiniMax-M2",
-		"input_modalities": ["text"],
-		"max_model_len": 196608,
-		"max_output_length": 196608,
-		"object": "model",
-		"output_modalities": ["text"],
-		"owned_by": "sglang",
-		"parent": null,
-		"price":
-		{
-			"input":
-			{
-				"tao": 0,
-				"usd": 0
-			},
-			"output":
-			{
-				"tao": 0,
-				"usd": 0
-			}
-		},
-		"pricing":
-		{
-			"completion": 0,
-			"prompt": 0
-		},
-		"quantization": "fp8",
-		"root": "MiniMaxAI/MiniMax-M2",
-		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
-		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
-	},
-	{
 		"chute_id": null,
 		"confidential_compute": false,
 		"context_length": 131072,
@@ -179,6 +143,42 @@
 		"root": "Meridian",
 		"supported_features": null,
 		"supported_sampling_parameters": null
+	},
+	{
+		"chute_id": "6b0c4c7d-c911-570b-a9cc-061d9930b694",
+		"confidential_compute": false,
+		"context_length": 196608,
+		"created": 0,
+		"id": "MiniMaxAI/MiniMax-M2",
+		"input_modalities": ["text"],
+		"max_model_len": 196608,
+		"max_output_length": 196608,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "MiniMaxAI/MiniMax-M2",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": "b20fe05c-52c6-594a-b7c6-5c68f3153df3",
@@ -1548,42 +1548,6 @@
 		"confidential_compute": false,
 		"context_length": null,
 		"created": 0,
-		"id": "chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8",
-		"input_modalities": null,
-		"max_model_len": 128000,
-		"max_output_length": null,
-		"object": "model",
-		"output_modalities": null,
-		"owned_by": "sglang",
-		"parent": null,
-		"price":
-		{
-			"input":
-			{
-				"tao": 0,
-				"usd": 0
-			},
-			"output":
-			{
-				"tao": 0,
-				"usd": 0
-			}
-		},
-		"pricing":
-		{
-			"completion": 0,
-			"prompt": 0
-		},
-		"quantization": null,
-		"root": "chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8",
-		"supported_features": null,
-		"supported_sampling_parameters": null
-	},
-	{
-		"chute_id": null,
-		"confidential_compute": false,
-		"context_length": null,
-		"created": 0,
 		"id": "chutesai/Ling-1T-FP8",
 		"input_modalities": null,
 		"max_model_len": 131072,
@@ -1612,6 +1576,42 @@
 		},
 		"quantization": null,
 		"root": "chutesai/Ling-1T-FP8",
+		"supported_features": null,
+		"supported_sampling_parameters": null
+	},
+	{
+		"chute_id": null,
+		"confidential_compute": false,
+		"context_length": null,
+		"created": 0,
+		"id": "chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8",
+		"input_modalities": null,
+		"max_model_len": 128000,
+		"max_output_length": null,
+		"object": "model",
+		"output_modalities": null,
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": null,
+		"root": "chutesai/Llama-4-Maverick-17B-128E-Instruct-FP8",
 		"supported_features": null,
 		"supported_sampling_parameters": null
 	},
@@ -2475,6 +2475,42 @@
 	{
 		"chute_id": null,
 		"confidential_compute": false,
+		"context_length": 131072,
+		"created": 0,
+		"id": "inclusionAI/Ring-1T-FP8",
+		"input_modalities": ["text"],
+		"max_model_len": 131072,
+		"max_output_length": 131072,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "inclusionAI/Ring-1T-FP8",
+		"supported_features": ["json_mode", "tools", "structured_output"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": null,
+		"confidential_compute": false,
 		"context_length": null,
 		"created": 0,
 		"id": "internlm/Intern-S1",
@@ -2508,42 +2544,6 @@
 		"root": "internlm/Intern-S1",
 		"supported_features": null,
 		"supported_sampling_parameters": null
-	},
-	{
-		"chute_id": null,
-		"confidential_compute": false,
-		"context_length": 131072,
-		"created": 0,
-		"id": "inclusionAI/Ring-1T-FP8",
-		"input_modalities": ["text"],
-		"max_model_len": 131072,
-		"max_output_length": 131072,
-		"object": "model",
-		"output_modalities": ["text"],
-		"owned_by": "sglang",
-		"parent": null,
-		"price":
-		{
-			"input":
-			{
-				"tao": 0,
-				"usd": 0
-			},
-			"output":
-			{
-				"tao": 0,
-				"usd": 0
-			}
-		},
-		"pricing":
-		{
-			"completion": 0,
-			"prompt": 0
-		},
-		"quantization": "fp8",
-		"root": "inclusionAI/Ring-1T-FP8",
-		"supported_features": ["json_mode", "tools", "structured_output"],
-		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": "2a6173bd-6d60-5ca6-8601-9ece77f055e4",
