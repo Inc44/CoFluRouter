@@ -10,17 +10,8 @@
 ![Last Commit](https://img.shields.io/github/last-commit/Inc44/CoFluRouter?color=red)
 [![Release](https://img.shields.io/github/release/Inc44/CoFluRouter.svg)](https://github.com/Inc44/CoFluRouter/releases)
 [![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/Inc44)
-[![Build](https://github.com/Inc44/CoFluRouter/actions/workflows/build.yml/badge.svg)](https://github.com/Inc44/CoFluRouter/actions/workflows/build.yml)
 
-[https://api.anthropic.com/v1/messages](json/endpoints/anthropic.messages.json)
-
-[https://api.openai.com/v1/chat/completions](json/endpoints/openai.completions.json)
-
-[https://api.openai.com/v1/responses](json/endpoints/openai.responses.json)
-
-[https://generativelanguage.googleapis.com/v1beta/models](json/endpoints/googleapis.models.json)
-
-[https://generativelanguage.googleapis.com/v1beta/openai/chat/completions](json/endpoints/googleapis.completions.json)
+CoFluRouter CLI
 
 ## 🚀 Installation
 
@@ -31,6 +22,181 @@ git clone https://github.com/Inc44/CoFluRouter.git
 cd CoFluRouter
 pip install -r requirements.txt
 ```
+
+## 🧾 Configuration
+
+Set environment variable:
+
+```powershell
+setx /M CEREBRAS_API_KEY your_api_key
+setx /M OPENAI_API_KEY your_api_key
+setx /M CHUTES_API_KEY your_api_key
+setx /M ANTHROPIC_API_KEY your_api_key
+setx /M DEEPINFRA_API_KEY your_api_key
+setx /M DEEPSEEK_API_KEY your_api_key
+setx /M GOOGLE_API_KEY your_api_key
+setx /M X_API_KEY your_api_key
+setx /M GROQ_API_KEY your_api_key
+setx /M HYPERBOLIC_API_KEY your_api_key
+setx /M LAMBDA_API_KEY your_api_key
+setx /M MINIMAX_API_KEY your_api_key
+setx /M OPENROUTER_API_KEY your_api_key
+setx /M PERPLEXITY_API_KEY your_api_key
+setx /M ALIBABA_API_KEY your_api_key
+setx /M SAMBANOVA_API_KEY your_api_key
+setx /M TOGETHER_API_KEY your_api_key
+```
+
+For Linux/macOS:
+
+```bash
+echo 'export CEREBRAS_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export OPENAI_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export CHUTES_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export ANTHROPIC_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export DEEPINFRA_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export DEEPSEEK_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export GOOGLE_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export X_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export GROQ_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export HYPERBOLIC_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export LAMBDA_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export MINIMAX_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export OPENROUTER_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export PERPLEXITY_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export ALIBABA_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export SAMBANOVA_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+echo 'export TOGETHER_API_KEY="your_api_key"' >> ~/.bashrc # or ~/.zshrc
+```
+
+Or create a `.env` file or modify /etc/environment:
+
+```
+CEREBRAS_API_KEY=your_api_key
+OPENAI_API_KEY=your_api_key
+CHUTES_API_KEY=your_api_key
+ANTHROPIC_API_KEY=your_api_key
+DEEPINFRA_API_KEY=your_api_key
+DEEPSEEK_API_KEY=your_api_key
+GOOGLE_API_KEY=your_api_key
+X_API_KEY=your_api_key
+GROQ_API_KEY=your_api_key
+HYPERBOLIC_API_KEY=your_api_key
+LAMBDA_API_KEY=your_api_key
+MINIMAX_API_KEY=your_api_key
+OPENROUTER_API_KEY=your_api_key
+PERPLEXITY_API_KEY=your_api_key
+ALIBABA_API_KEY=your_api_key
+SAMBANOVA_API_KEY=your_api_key
+TOGETHER_API_KEY=your_api_key
+```
+
+Check by restarting the terminal and using:
+
+```cmd
+echo %CEREBRAS_API_KEY%
+echo %OPENAI_API_KEY%
+echo %CHUTES_API_KEY%
+echo %ANTHROPIC_API_KEY%
+echo %DEEPINFRA_API_KEY%
+echo %DEEPSEEK_API_KEY%
+echo %GOOGLE_API_KEY%
+echo %X_API_KEY%
+echo %GROQ_API_KEY%
+echo %HYPERBOLIC_API_KEY%
+echo %LAMBDA_API_KEY%
+echo %MINIMAX_API_KEY%
+echo %OPENROUTER_API_KEY%
+echo %PERPLEXITY_API_KEY%
+echo %ALIBABA_API_KEY%
+echo %SAMBANOVA_API_KEY%
+echo %TOGETHER_API_KEY%
+```
+
+For Linux/macOS:
+
+```bash
+echo $CEREBRAS_API_KEY
+echo $OPENAI_API_KEY
+echo $CHUTES_API_KEY
+echo $ANTHROPIC_API_KEY
+echo $DEEPINFRA_API_KEY
+echo $DEEPSEEK_API_KEY
+echo $GOOGLE_API_KEY
+echo $X_API_KEY
+echo $GROQ_API_KEY
+echo $HYPERBOLIC_API_KEY
+echo $LAMBDA_API_KEY
+echo $MINIMAX_API_KEY
+echo $OPENROUTER_API_KEY
+echo $PERPLEXITY_API_KEY
+echo $ALIBABA_API_KEY
+echo $SAMBANOVA_API_KEY
+echo $TOGETHER_API_KEY
+```
+
+## 📖 Usage Examples
+
+### Convert Colors to WCAG-Compliant High-Contrast Alternatives
+
+Convert colors to WCAG-compliant high-contrast alternatives:
+
+```bash
+python -m coflurouter.cli -a "(255, 0, 0), (0, 255, 0), (0, 0, 255)"
+```
+
+### Download External Models Lists
+
+Download `external` models lists:
+
+```bash
+python -m coflurouter.cli -f
+```
+
+### Update Models Lists
+
+Update `completion`, `completion.high.cost`, `transcription` models lists:
+
+```bash
+python -m coflurouter.cli -u
+```
+
+## 🎨 Command-Line Arguments
+
+| Argument                              | Description                                                                                |
+|---------------------------------------|--------------------------------------------------------------------------------------------|
+| `-a, --accessibility [ACCESSIBILITY]` | Convert colors to WCAG-compliant high-contrast alternatives. Format: (r,g,b), (r,g,b), ... |
+| `-f, --fetch`                         | Download external models lists.                                                            |
+| `-u, --update`                        | Update models lists.                                                                       |
+
+## 🎯 Motivation
+
+Maintaining up-to-date lists of LLM models across dozens of providers is tedious and error-prone. Providers frequently add, deprecate, or rename models. CoFluRouter automates the discovery and configuration process, ensuring that downstream applications have access to accurate pricing, capability flags, and model IDs with minimal manual intervention.
+
+## 🐛 Bugs
+
+Not yet found.
+
+## ⛔ Known Limitations
+
+Not yet known.
+
+## 🚧 TODO
+
+- [ ] [https://api.anthropic.com/v1/messages](json/endpoints/anthropic.messages.json)
+- [ ] [https://api.openai.com/v1/chat/completions](json/endpoints/openai.completions.json)
+- [ ] [https://api.openai.com/v1/responses](json/endpoints/openai.responses.json)
+- [ ] [https://generativelanguage.googleapis.com/v1beta/models](json/endpoints/googleapis.models.json)
+- [ ] [https://generativelanguage.googleapis.com/v1beta/openai/chat/completions](json/endpoints/googleapis.completions.json)
+
+## 🙏 Thanks
+
+Creators of:
+
+- [Python](https://www.python.org)
+- [Requests](https://requests.readthedocs.io)
+- [js-beautify](https://beautifier.io)
+- [tqdm](https://tqdm.github.io)
 
 ## 🤝 Contribution
 

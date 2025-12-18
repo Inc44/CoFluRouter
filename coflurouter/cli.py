@@ -25,7 +25,7 @@ def main() -> None:
 		nargs="?",
 		const="(237, 53, 36), (250, 157, 1), (46, 218, 119), (20, 199, 222), (1, 111, 255), (68, 79, 173), (140, 84, 208)",
 		default=None,
-		help="Convert colors to WCAG compliant high-contrast alternatives. Format: (r,g,b), (r,g,b), ...",
+		help="Convert colors to WCAG-compliant high-contrast alternatives. Format: (r,g,b), (r,g,b), ...",
 	)
 	arg_parser.add_argument(
 		"-f",
