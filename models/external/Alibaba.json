@@ -1,6 +1,24 @@
 {
 	"data": [
 	{
+		"created": 1765861356,
+		"id": "qwen3-tts-vd-realtime-2025-12-16",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1765813590,
+		"id": "qwen-image-edit-plus-2025-12-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1765464160,
+		"id": "tongyi-skynet-llm-cm-2511",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1764768412,
 		"id": "qwen-image-plus",
 		"object": "model",
@@ -51,12 +69,6 @@
 	{
 		"created": 1764243719,
 		"id": "qwen3-asr-flash-realtime",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1764221904,
-		"id": "tongyi-skynet-llm-cm-2511",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -596,6 +608,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-98",
+	"last_id": "model-id-100",
 	"object": "list"
 }

@@ -223,6 +223,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 2.5 Flash Native Audio Preview 12-2025",
+		"id": "models/gemini-2.5-flash-native-audio-preview-12-2025",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 2.5 Flash Preview 05-20",
 		"id": "models/gemini-2.5-flash-preview-05-20",
 		"object": "model",
@@ -273,6 +279,12 @@
 	{
 		"display_name": "Gemini 2.5 Pro Preview TTS",
 		"id": "models/gemini-2.5-pro-preview-tts",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3 Flash Preview",
+		"id": "models/gemini-3-flash-preview",
 		"object": "model",
 		"owned_by": "google"
 	},

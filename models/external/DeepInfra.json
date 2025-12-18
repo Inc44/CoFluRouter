@@ -1361,6 +1361,15 @@
 	},
 	{
 		"created": 0,
+		"id": "black-forest-labs/FLUX-2-max",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX-2-max"
+	},
+	{
+		"created": 0,
 		"id": "black-forest-labs/FLUX-2-pro",
 		"metadata": null,
 		"object": "model",
@@ -1720,7 +1729,7 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.20020000000000002,
+				"cache_read_tokens": 0.13,
 				"input_tokens": 0.26,
 				"output_tokens": 0.38999999999999996
 			},
@@ -2976,6 +2985,26 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "nvidia/NVIDIA-Nemotron-Nano-9B-v2"
+	},
+	{
+		"created": 0,
+		"id": "nvidia/Nemotron-3-Nano-30B-A3B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "NVIDIA Nemotron 3 Nano is an open reasoning model optimized for fast, cost-efficient inference. Built with a hybrid MoE and Mamba architecture and trained on NVIDIA-curated synthetic reasoning data, it delivers strong multi-step reasoning with stable latency and predictable performance for agentic and production workloads.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.060000000000000005,
+				"output_tokens": 0.24000000000000002
+			},
+			"tags": []
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/Nemotron-3-Nano-30B-A3B"
 	},
 	{
 		"created": 0,
