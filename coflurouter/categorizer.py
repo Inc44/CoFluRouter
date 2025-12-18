@@ -1,10 +1,11 @@
+from __future__ import annotations
 from pathlib import Path
 
-from data import OPENAI_COMPATIBLE
-from utils import read_json
+from .data import OPENAI_COMPATIBLE
+from .utils import read_json
 
 
-def list_high_cost_models():
+def list_high_cost_models() -> list[str]:
 	models = []
 	for name, _, _ in OPENAI_COMPATIBLE:
 		if name in ["Minimax", "Perplexity"]:

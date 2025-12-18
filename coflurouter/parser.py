@@ -1,9 +1,10 @@
-import re
+from __future__ import annotations
 from pathlib import Path
+import re
 
-from categorizer import list_high_cost_models
-from data import OPENAI_COMPATIBLE
-from utils import read_json
+from .categorizer import list_high_cost_models
+from .data import OPENAI_COMPATIBLE
+from .utils import read_json
 
 
 def extract_max_tokens(item):
