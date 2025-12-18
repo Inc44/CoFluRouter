@@ -6,6 +6,8 @@ from utils import read_json, write_json
 models = list_models()
 
 for model in models:
+	if model["name"] in ["Chutes", "DeepInfra", "Lambda", "OpenRouter", "Together"]:
+		continue
 	path = Path(f"models/completion/{model['name']}.json")
 	if model.get("high_cost"):
 		path = Path(f"models/completion.high.cost/{model['name']}.json")
@@ -20,6 +22,15 @@ for model in models:
 		obj["data"] = obj if isinstance(obj, list) else []
 	if model.get("id", "").startswith("models/"):
 		model["id"] = model["id"].replace("models/", "")
+	if model.get("reasoning_effort") is not None and model["name"] in [
+		"Alibaba",
+		"Anthropic",
+		"Google",
+	]:
+		model["thinking"] = True
+		if model["name"] in ["Alibaba", "Anthropic"]:
+			model["thinking_budget"] = [1024, 63999]
+			del model["reasoning_effort"]
 	existing_model = None
 	for existing in obj.get("data", []):
 		if existing.get("id") == model.get("id"):

@@ -62,6 +62,25 @@ def extract_audio_support(item):
 	return False
 
 
+def extract_reasoning_effort_support(item):
+	if (
+		"metadata" in item
+		and item["metadata"] is not None
+		and "tags" in item["metadata"]
+		and "reasoning_effort" in item["metadata"]["tags"]
+	):
+		return True
+	if (
+		"supported_features" in item
+		and item["supported_features"] is not None
+		and "reasoning" in item["supported_features"]
+	):
+		return True
+	if "supported_parameters" in item and "reasoning" in item["supported_parameters"]:
+		return True
+	return False
+
+
 def skip_model(item):
 	if "supports_chat" in item and not item.get("supports_chat"):
 		return True
@@ -165,6 +184,9 @@ def list_models():
 			audio = extract_audio_support(item)
 			if audio:
 				model["audio"] = audio
+			reasoning_effort = extract_reasoning_effort_support(item)
+			if reasoning_effort:
+				model["reasoning_effort"] = ["low", "high"]
 			models.append(model)
 	groups = {}
 	for model in models:
@@ -176,7 +198,14 @@ def list_models():
 			)
 			groups.setdefault(key, []).append(model)
 	for group in groups.values():
-		for attr in ("image", "max_tokens", "audio"):
+		for attr in (
+			"image",
+			"max_tokens",
+			"audio",
+			"reasoning_effort",
+			"thinking",
+			"thinking_budget",
+		):
 			shared_value = None
 			for model in group:
 				if model.get(attr):
