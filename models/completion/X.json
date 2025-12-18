@@ -28,13 +28,13 @@
 	{
 		"id": "grok-3-mini",
 		"max_tokens": 131072,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "high"],
 		"image": false
 	},
 	{
 		"id": "grok-3-mini-fast",
 		"max_tokens": 131072,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "high"],
 		"image": false
 	},
 	{
@@ -50,7 +50,7 @@
 	{
 		"id": "grok-3-mini-beta",
 		"max_tokens": 131072,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "high"],
 		"image": false
 	},
 	{

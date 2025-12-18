@@ -96,7 +96,7 @@
 		"id": "o3-pro-2025-06-10",
 		"max_tokens": 100000,
 		"responses_api_only": true,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"image": true
 	},
 	{
@@ -111,21 +111,21 @@
 		"id": "o3-pro",
 		"max_tokens": 100000,
 		"responses_api_only": true,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"image": true
 	},
 	{
 		"id": "o1-pro",
 		"max_tokens": 100000,
 		"responses_api_only": true,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"image": true
 	},
 	{
 		"id": "o1-pro-2025-03-19",
 		"max_tokens": 100000,
 		"responses_api_only": true,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"image": true
 	},
 	{
@@ -167,13 +167,13 @@
 	{
 		"id": "o1",
 		"max_tokens": 100000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"image": true
 	},
 	{
 		"id": "o1-2024-12-17",
 		"max_tokens": 100000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"image": true
 	},
 	{
@@ -267,14 +267,14 @@
 	{
 		"id": "o1-preview",
 		"max_tokens": 32768,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"completions_api_only": true,
 		"image": false
 	},
 	{
 		"id": "o1-preview-2024-09-12",
 		"max_tokens": 32768,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"completions_api_only": true,
 		"image": false
 	}]

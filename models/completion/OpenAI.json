@@ -9,49 +9,49 @@
 	{
 		"id": "gpt-5.2",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["none", "low", "medium", "high", "xhigh"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5.2-2025-12-11",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["none", "low", "medium", "high", "xhigh"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5.1-codex-max",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high", "xhigh"],
 		"responses_api_only": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5.1-codex-mini",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"responses_api_only": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5.1-codex",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"responses_api_only": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5.1",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["none", "low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5.1-2025-11-13",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["none", "low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
@@ -64,7 +64,7 @@
 	{
 		"id": "gpt-5-codex",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"responses_api_only": true,
 		"file": true,
 		"image": true
@@ -72,42 +72,42 @@
 	{
 		"id": "gpt-5-nano",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["minimal", "low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5-nano-2025-08-07",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["minimal", "low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5-mini",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["minimal", "low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5-mini-2025-08-07",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["minimal", "low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["minimal", "low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "gpt-5-2025-08-07",
 		"max_tokens": 128000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["minimal", "low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
@@ -134,7 +134,7 @@
 	{
 		"id": "codex-mini-latest",
 		"max_tokens": 100000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"responses_api_only": true,
 		"image": true
 	},
@@ -177,28 +177,28 @@
 	{
 		"id": "o4-mini",
 		"max_tokens": 100000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "o3",
 		"max_tokens": 100000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "o4-mini-2025-04-16",
 		"max_tokens": 100000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
 	{
 		"id": "o3-2025-04-16",
 		"max_tokens": 100000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"file": true,
 		"image": true
 	},
@@ -211,14 +211,14 @@
 	{
 		"id": "o3-mini-2025-01-31",
 		"max_tokens": 100000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"file": true,
 		"image": false
 	},
 	{
 		"id": "o3-mini",
 		"max_tokens": 100000,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"file": true,
 		"image": false
 	},

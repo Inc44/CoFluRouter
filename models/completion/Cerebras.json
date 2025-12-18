@@ -3,7 +3,7 @@
 	{
 		"id": "gpt-oss-120b",
 		"max_tokens": 8192,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"image": false
 	},
 	{

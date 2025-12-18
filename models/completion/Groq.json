@@ -18,13 +18,13 @@
 	{
 		"id": "openai/gpt-oss-120b",
 		"max_tokens": 65536,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"image": false
 	},
 	{
 		"id": "openai/gpt-oss-20b",
 		"max_tokens": 65536,
-		"reasoning_effort": "low",
+		"reasoning_effort": ["low", "medium", "high"],
 		"image": false
 	},
 	{
