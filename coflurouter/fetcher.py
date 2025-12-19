@@ -1,6 +1,7 @@
 from __future__ import annotations
 from pathlib import Path
 
+from tqdm import tqdm
 import requests
 
 from .data import OPENAI_COMPATIBLE
@@ -47,7 +48,7 @@ def sort_by_keys(obj, keys, reverse=False):
 
 
 def fetch_models():
-	for name, base_url, api_key in OPENAI_COMPATIBLE:
+	for name, base_url, api_key in tqdm(OPENAI_COMPATIBLE, desc="Downloading models"):
 		if name in ["Lambda", "Minimax", "Perplexity"]:
 			continue
 		models = "models"

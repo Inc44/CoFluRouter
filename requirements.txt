@@ -4,3 +4,4 @@ openai==1.102.0
 python-dotenv==1.1.1
 requests==2.32.5
 together==1.5.25
+tqdm==4.67.1

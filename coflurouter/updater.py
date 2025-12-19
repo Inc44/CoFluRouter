@@ -1,6 +1,8 @@
 from __future__ import annotations
 from pathlib import Path
 
+from tqdm import tqdm
+
 from .parser import list_models
 from .utils import read_json, write_json
 
@@ -36,7 +38,7 @@ def reorder_keys(model: dict) -> dict:
 def update_models():
 	models = list_models()
 
-	for model in models:
+	for model in tqdm(models, desc="Updating models"):
 		if model["name"] in ["Chutes", "DeepInfra", "Lambda", "OpenRouter", "Together"]:
 			continue
 		path = Path(f"models/completion/{model['name']}.json")
