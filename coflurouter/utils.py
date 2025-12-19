@@ -1,6 +1,7 @@
 from __future__ import annotations
 from pathlib import Path
 import json
+import re
 
 import jsbeautifier
 
@@ -29,9 +30,12 @@ def write_json(path: Path, obj: dict, sort_keys: bool = False) -> None:
 		"unescape_strings": False,
 		"wrap_line_length": 0,
 	}
-	path.write_text(
-		jsbeautifier.beautify(
-			json.dumps(obj, indent="\t", sort_keys=sort_keys, ensure_ascii=False), opts
-		),
-		encoding="utf-8",
+	text = jsbeautifier.beautify(
+		json.dumps(obj, indent="\t", sort_keys=sort_keys, ensure_ascii=False), opts
 	)
+	text = re.sub(
+		r"\[\s+([^\[\]\{\}]+?)\s+\]",
+		lambda match: f"[{' '.join(match.group(1).split())}]",
+		text,
+	)
+	path.write_text(text, encoding="utf-8")
