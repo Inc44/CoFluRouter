@@ -1,15 +1,17 @@
 {
 	"name": "",
+	"max_tokens": 100000,
 	"completions_api_only": true,
 	"responses_api_only": true,
+	"tools": ["web_search_preview"],
+	"search_context_size": ["low", "medium", "high"],
+	"reasoning_effort": ["low", "high"],
+	"thinking_budget": [1024, 63999],
+	"thinking": true,
 	"audio": true,
+	"file": true,
 	"image": true,
 	"video": true,
 	"search": true,
-	"thinking": true,
-	"search_context_size": "low",
-	"reasoning_effort": "low",
-	"modality": ["audio", "image"],
-	"tools": ["web_search_preview"],
-	"max_tokens": 100000
+	"modality": ["audio", "image"]
 }

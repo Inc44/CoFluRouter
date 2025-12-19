@@ -5,6 +5,34 @@ from .parser import list_models
 from .utils import read_json, write_json
 
 
+def reorder_keys(model: dict) -> dict:
+	keys = [
+		"id",
+		"max_tokens",
+		"completions_api_only",
+		"responses_api_only",
+		"tools",
+		"search_context_size",
+		"reasoning_effort",
+		"thinking_budget",
+		"thinking",
+		"audio",
+		"file",
+		"image",
+		"video",
+		"search",
+		"modality",
+	]
+	new_model = {}
+	for key in keys:
+		if key in model:
+			new_model[key] = model[key]
+	for key in model:
+		if key not in keys:
+			new_model[key] = model[key]
+	return new_model
+
+
 def update_models():
 	models = list_models()
 
@@ -54,6 +82,7 @@ def update_models():
 				if key not in ["name", "high_cost", "transcription"]:
 					new_model[key] = model[key]
 			obj["data"].append(new_model)
+		obj["data"] = [reorder_keys(model) for model in obj["data"]]
 		write_json(path, obj)
 
 
