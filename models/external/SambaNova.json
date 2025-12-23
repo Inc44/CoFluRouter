@@ -155,7 +155,7 @@
 		{}
 	},
 	{
-		"context_length": 131072,
+		"context_length": 65536,
 		"id": "Qwen3-235B",
 		"max_completion_tokens": 4096,
 		"object": "model",

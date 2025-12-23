@@ -2793,8 +2793,8 @@
 		"base": 0,
 		"finetune": 0,
 		"hourly": 0,
-		"input": 0.8,
-		"output": 0.8
+		"input": 0.1,
+		"output": 0.3
 	},
 	"running": false,
 	"type": "chat"
@@ -3132,10 +3132,10 @@
 	},
 	"context_length": 131072,
 	"created": 1733466629,
-	"display_name": "Llama 3.3 70B Instruct Turbo",
+	"display_name": "Meta Llama 3.3 70B Instruct Turbo",
 	"id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
 	"license": "Llama-3.3 (Other)",
-	"link": "https://huggingface.co/api/models/nvidia/Llama-3.3-70B-Instruct-FP8",
+	"link": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
 	"object": "model",
 	"organization": "Meta",
 	"pricing":

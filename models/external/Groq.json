@@ -2,6 +2,26 @@
 	"data": [
 	{
 		"active": true,
+		"context_window": 200,
+		"created": 1766186316,
+		"id": "canopylabs/orpheus-v1-english",
+		"max_completion_tokens": 50000,
+		"object": "model",
+		"owned_by": "Canopy Labs",
+		"public_apps": null
+	},
+	{
+		"active": true,
+		"context_window": 200,
+		"created": 1765926439,
+		"id": "canopylabs/orpheus-arabic-saudi",
+		"max_completion_tokens": 50000,
+		"object": "model",
+		"owned_by": "Canopy Labs",
+		"public_apps": null
+	},
+	{
+		"active": true,
 		"context_window": 131072,
 		"created": 1761708789,
 		"id": "openai/gpt-oss-safeguard-20b",
@@ -132,7 +152,7 @@
 	},
 	{
 		"active": true,
-		"context_window": 8192,
+		"context_window": 10000,
 		"created": 1740682783,
 		"id": "playai-tts-arabic",
 		"max_completion_tokens": 8192,
@@ -142,7 +162,7 @@
 	},
 	{
 		"active": true,
-		"context_window": 8192,
+		"context_window": 10000,
 		"created": 1740682771,
 		"id": "playai-tts",
 		"max_completion_tokens": 8192,
