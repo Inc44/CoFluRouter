@@ -2,7 +2,7 @@
 	"data": [
 	{
 		"active": true,
-		"context_window": 200,
+		"context_window": 4000,
 		"created": 1766186316,
 		"id": "canopylabs/orpheus-v1-english",
 		"max_completion_tokens": 50000,
@@ -12,7 +12,7 @@
 	},
 	{
 		"active": true,
-		"context_window": 200,
+		"context_window": 4000,
 		"created": 1765926439,
 		"id": "canopylabs/orpheus-arabic-saudi",
 		"max_completion_tokens": 50000,

@@ -265,6 +265,27 @@
 	},
 	{
 		"created": 0,
+		"id": "MiniMaxAI/MiniMax-M2.1",
+		"metadata":
+		{
+			"context_length": 196608,
+			"description": "MiniMax-M2.1 is a model optimized specifically for robustness in coding, tool use, instruction following, and long-horizon planning. From automating multilingual software development to executing complex, multi-step office workflows, MiniMax-M2.1 empowers developers to build the next generation of autonomous applications—all while being fully transparent, controllable, and accessible.",
+			"max_tokens": 196608,
+			"pricing":
+			{
+				"cache_read_tokens": 0.14,
+				"input_tokens": 0.28,
+				"output_tokens": 1.2
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "MiniMaxAI/MiniMax-M2.1"
+	},
+	{
+		"created": 0,
 		"id": "NousResearch/Hermes-3-Llama-3.1-405B",
 		"metadata":
 		{
@@ -1135,6 +1156,26 @@
 	},
 	{
 		"created": 0,
+		"id": "allenai/Olmo-3.1-32B-Instruct",
+		"metadata":
+		{
+			"context_length": 65536,
+			"description": "Olmo is a series of Open language models, developed by Allen Institute for AI (Ai2), designed to enable the science of language models. ",
+			"max_tokens": 65536,
+			"pricing":
+			{
+				"input_tokens": 0.2,
+				"output_tokens": 0.6
+			},
+			"tags": []
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "allenai/Olmo-3.1-32B-Instruct"
+	},
+	{
+		"created": 0,
 		"id": "allenai/olmOCR-2",
 		"metadata":
 		{
@@ -1358,6 +1399,24 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "black-forest-labs/FLUX-2-dev"
+	},
+	{
+		"created": 0,
+		"id": "black-forest-labs/FLUX-2-klein-4b",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX-2-klein-4b"
+	},
+	{
+		"created": 0,
+		"id": "black-forest-labs/FLUX-2-klein-9b",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "black-forest-labs/FLUX-2-klein-9b"
 	},
 	{
 		"created": 0,
@@ -3379,6 +3438,27 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "zai-org/GLM-4.6V"
+	},
+	{
+		"created": 0,
+		"id": "zai-org/GLM-4.7",
+		"metadata":
+		{
+			"context_length": 202752,
+			"description": "GLM-4.7 is a state-of-the-art, multilingual Mixture-of-Experts (MoE) language model designed for complex reasoning, agentic coding, and tool use. Building on its predecessor GLM-4.6, it delivers significant improvements across key benchmarks, including multilingual SWE-bench, Terminal Bench, and reasoning-heavy evaluations like HLE. The model features advanced \"Interleaved Thinking\" and new \"Preserved Thinking\" modes, allowing it to reason before actions and maintain consistency across long, multi-turn tasks. With 358 billion parameters, GLM-4.7 excels in generating clean code, modern UI elements, and sophisticated reasoning outputs.",
+			"max_tokens": 202752,
+			"pricing":
+			{
+				"cache_read_tokens": 0.0799999993,
+				"input_tokens": 0.43,
+				"output_tokens": 1.75
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "zai-org/GLM-4.7"
 	}],
 	"object": "list"
 }

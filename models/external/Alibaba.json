@@ -1,14 +1,80 @@
 {
 	"data": [
 	{
-		"created": 1766391120,
-		"id": "qwen3-tts-flash-realtime-2025-09-18",
+		"created": 1768725487,
+		"id": "qwen-image-edit-max-2026-01-16",
 		"object": "model",
 		"owned_by": "system"
 	},
 	{
-		"created": 1766391105,
+		"created": 1768724594,
+		"id": "qwen-image-edit-max",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1768647298,
+		"id": "qwen3-tts-vc-realtime-2026-01-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1768481033,
+		"id": "qwen-plus-character",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1768308001,
+		"id": "qwen-flash-character",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1768287984,
+		"id": "qwen3-max-preview",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1767939899,
+		"id": "qwen-image-plus-2026-01-09",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1767618063,
 		"id": "qwen3-tts-flash-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1767618047,
+		"id": "qwen3-tts-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1767096300,
+		"id": "qwen-image-max",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1767096290,
+		"id": "qwen-image-max-2025-12-30",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1766649784,
+		"id": "qwen-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1766391120,
+		"id": "qwen3-tts-flash-realtime-2025-09-18",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -145,12 +211,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1762169229,
-		"id": "qwen3-max-preview",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1762089061,
 		"id": "qwen3-max-2025-10-30",
 		"object": "model",
@@ -213,12 +273,6 @@
 	{
 		"created": 1761550341,
 		"id": "qwen3-tts-flash-2025-09-18",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1761550263,
-		"id": "qwen3-tts-flash",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -620,6 +674,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-102",
+	"last_id": "model-id-109",
 	"object": "list"
 }

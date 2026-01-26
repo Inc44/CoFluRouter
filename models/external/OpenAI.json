@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"created": 1766164985,
+		"id": "gpt-5.2-codex",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1765925279,
 		"id": "chatgpt-image-latest",
 		"object": "model",

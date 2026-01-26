@@ -2,6 +2,60 @@
 {
 	"config":
 	{
+		"bos_token": "<bos>",
+		"chat_template": "{{ bos_token }}{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{{ '<start_of_turn>' + role + '\n' + message['content'] | trim + '<end_of_turn>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}",
+		"eos_token": "<eos>",
+		"stop": ["<eos>"]
+	},
+	"context_length": 8192,
+	"created": 1767994160,
+	"display_name": "Gemma 2B It",
+	"id": "google/gemma-2b-it-Ishan",
+	"license": "gemma",
+	"link": "https://huggingface.co/api/models/google/gemma-2b-it",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 202752,
+	"created": 1766432071,
+	"display_name": "GLM 4.7 Fp8",
+	"id": "zai-org/GLM-4.7",
+	"license": "mit",
+	"link": "https://huggingface.co/api/models/zai-org/GLM-4.7-fp8",
+	"object": "model",
+	"organization": "Zai Org",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.45,
+		"output": 2
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": "<s>",
 		"chat_template": null,
 		"eos_token": "</s>",
@@ -1427,8 +1481,8 @@
 		"base": 0,
 		"finetune": 0,
 		"hourly": 0,
-		"input": 4,
-		"output": 0
+		"input": 0.27,
+		"output": 0.85
 	},
 	"running": false,
 	"type": "audio"
@@ -2895,6 +2949,7 @@
 	"created": 1737396322,
 	"display_name": "DeepSeek R1-0528",
 	"id": "deepseek-ai/DeepSeek-R1",
+	"license": "",
 	"link": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
 	"object": "model",
 	"organization": "DeepSeek",
@@ -3259,7 +3314,7 @@
 	"config":
 	{
 		"bos_token": "<|begin_of_text|>",
-		"chat_template": "{%- if messages|length % 2 == 0 -%}\n    {%- set role = 'Agent' -%}\n{%-  else -%}\n    {%-  set role = 'User' -%}\n{%-  endif -%}\n{%-  if categories is not defined -%}\n    {%-  \n        set categories = ({\n            \"S1\": \"Violent Crimes.\",\n            \"S2\": \"Non-Violent Crimes.\",\n            \"S3\": \"Sex Crimes.\",\n            \"S4\": \"Child Exploitation.\",\n            \"S5\": \"Defamation.\",\n            \"S6\": \"Specialized Advice.\",\n            \"S7\": \"Privacy.\",\n            \"S8\": \"Intellectual Property.\",\n            \"S9\": \"Indiscriminate Weapons.\",\n            \"S10\": \"Hate.\",\n            \"S11\": \"Self-Harm.\",\n            \"S12\": \"Sexual Content.\",\n            \"S13\": \"Elections.\",\n        })\n    -%}\n{%-  endif -%}\n\n{{- \"<|begin_of_text|><|start_header_id|>user<|end_header_id|>\\n\\n\" -}}\n{%- set ns = namespace(contains_image=false) -%}\n{%-  for message in messages -%}\n    {%- for content in message['content'] | selectattr('type', 'equalto', 'image') -%}\n        {%- set ns.contains_image = true -%}\n    {%- endfor -%}\n{%- endfor -%}\n{%- if ns.contains_image -%}\n{{- \"<|image|> \"-}}\n{%- endif -%}\n{{- \"Task: Check if there is unsafe content in '\" + role + \"' messages in conversations according our safety policy with the below categories.\\n\\n\" -}}\n{{- \"<BEGIN UNSAFE CONTENT CATEGORIES>\\n\"-}}\n\n{%-  for key in categories -%}\n    {%-  if key not in excluded_category_keys -%}\n        {{-key + \": \" + categories[key] + \"\\n\" -}}\n    {%-  endif -%}\n{%-  endfor -%}\n\n{{- \"<END UNSAFE CONTENT CATEGORIES>\\n\\n\"-}}\n{{- \"<BEGIN CONVERSATION>\\n\\n\"-}}\n{%-  for message in messages -%}\n    {%-  if (message['role'] == 'user') != (loop.index0 % 2 == 0) -%}\n        {{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...')-}}\n    {%-  endif -%}\n    {%-  set content = message['content'] -%}\n    {%-  if message['role'] == 'user' -%}\n        {%-  set role = 'User' -%}\n    {%-  elif message['role'] == 'assistant' -%}\n        {%-  set role = 'Agent' -%}\n    {%-  endif -%}\n    {%-  for content in message['content'] | selectattr('type', 'equalto', 'text') -%}\n{{- role + ': ' + content['text'] | trim + '\\n\\n'-}}\n    {%-  endfor -%}\n{%-  endfor -%}\n{{- \"<END CONVERSATION>\\n\\n\"-}}\n{{- \"Provide your safety assessment for ONLY THE LAST \" + role + \" message in the above conversation:\\n\"-}}\n{{- \" - First line must read 'safe' or 'unsafe'.\\n\"-}}\n{{- \" - If unsafe, a second line must include a comma-separated list of violated categories. <|eot_id|><|start_header_id|>assistant<|end_header_id|>\"-}}",
+		"chat_template": "{%- if messages|length % 2 == 0 -%}\n    {%- set role = 'Agent' -%}\n{%-  else -%}\n    {%-  set role = 'User' -%}\n{%-  endif -%}\n{%-  if categories is not defined -%}\n    {%-  \n        set categories = ({\n            \"S1\": \"Violent Crimes.\",\n            \"S2\": \"Non-Violent Crimes.\",\n            \"S3\": \"Sex Crimes.\",\n            \"S4\": \"Child Exploitation.\",\n            \"S5\": \"Defamation.\",\n            \"S6\": \"Specialized Advice.\",\n            \"S7\": \"Privacy.\",\n            \"S8\": \"Intellectual Property.\",\n            \"S9\": \"Indiscriminate Weapons.\",\n            \"S10\": \"Hate.\",\n            \"S11\": \"Self-Harm.\",\n            \"S12\": \"Sexual Content.\",\n            \"S13\": \"Elections.\",\n        })\n    -%}\n{%-  endif -%}\n\n{{- \"<|begin_of_text|><|start_header_id|>user<|end_header_id|>\\n\\n\" -}}\n{%- set ns = namespace(contains_image=false) -%}\n{%-  for message in messages -%}\n    {%- for content in message['content'] -%}\n        {%- if content['type'] == 'image' or content['type'] == 'image_url' -%}\n            {%- set ns.contains_image = true -%}\n        {%- endif -%}\n    {%- endfor -%}\n{%- endfor -%}\n{%- if ns.contains_image -%}\n{{- \"<|image|> \"-}}\n{%- endif -%}\n{{- \"Task: Check if there is unsafe content in '\" + role + \"' messages in conversations according our safety policy with the below categories.\\n\\n\" -}}\n{{- \"<BEGIN UNSAFE CONTENT CATEGORIES>\\n\"-}}\n\n{%-  for key in categories -%}\n    {%-  if key not in excluded_category_keys -%}\n        {{-key + \": \" + categories[key] + \"\\n\" -}}\n    {%-  endif -%}\n{%-  endfor -%}\n\n{{- \"<END UNSAFE CONTENT CATEGORIES>\\n\\n\"-}}\n{{- \"<BEGIN CONVERSATION>\\n\\n\"-}}\n{%-  for message in messages -%}\n    {%-  if (message['role'] == 'user') != (loop.index0 % 2 == 0) -%}\n        {{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...')-}}\n    {%-  endif -%}\n    {%-  set content = message['content'] -%}\n    {%-  if message['role'] == 'user' -%}\n        {%-  set role = 'User' -%}\n    {%-  elif message['role'] == 'assistant' -%}\n        {%-  set role = 'Agent' -%}\n    {%-  endif -%}\n    {%-  for content in message['content'] | selectattr('type', 'equalto', 'text') -%}\n{{- role + ': ' + content['text'] | trim + '\\n\\n'-}}\n    {%-  endfor -%}\n{%-  endfor -%}\n{{- \"<END CONVERSATION>\\n\\n\"-}}\n{{- \"Provide your safety assessment for ONLY THE LAST \" + role + \" message in the above conversation:\\n\"-}}\n{{- \" - First line must read 'safe' or 'unsafe'.\\n\"-}}\n{{- \" - If unsafe, a second line must include a comma-separated list of violated categories. <|eot_id|><|start_header_id|>assistant<|end_header_id|>\"-}}",
 		"eos_token": "<|eot_id|>",
 		"stop": ["<|eot_id|>", "<|eom_id|>"]
 	},
@@ -3343,7 +3398,7 @@
 		"eos_token": "<|eot_id|>",
 		"stop": ["<|eot_id|>", "<|eom_id|>"]
 	},
-	"context_length": 130815,
+	"context_length": 10000,
 	"created": 1721698359,
 	"display_name": "Meta Llama 3.1 405B Instruct Turbo",
 	"id": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
@@ -4365,4 +4420,30 @@
 	},
 	"running": false,
 	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 0,
+	"created": 0,
+	"display_name": "Cartesia Sonic 3",
+	"id": "cartesia/sonic-3",
+	"link": "https://www.cartesia.ai",
+	"object": "model",
+	"organization": "Together",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 65,
+		"output": 0
+	},
+	"running": false,
+	"type": "audio"
 }]

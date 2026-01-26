@@ -59,6 +59,12 @@
 		"id": "zai-glm-4.6",
 		"object": "model",
 		"owned_by": "Cerebras"
+	},
+	{
+		"created": 0,
+		"id": "zai-glm-4.7",
+		"object": "model",
+		"owned_by": "Cerebras"
 	}],
 	"object": "list"
 }
