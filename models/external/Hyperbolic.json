@@ -115,7 +115,7 @@
 		"owned_by": "Hyperbolic",
 		"supports_chat": true,
 		"supports_image_input": false,
-		"supports_tools": false
+		"supports_tools": true
 	},
 	{
 		"context_length": 262144,
@@ -128,7 +128,7 @@
 		"owned_by": "Hyperbolic",
 		"supports_chat": true,
 		"supports_image_input": false,
-		"supports_tools": false
+		"supports_tools": true
 	},
 	{
 		"context_length": 262144,
@@ -154,7 +154,7 @@
 		"owned_by": "Hyperbolic",
 		"supports_chat": true,
 		"supports_image_input": false,
-		"supports_tools": false
+		"supports_tools": true
 	},
 	{
 		"context_length": 262144,
@@ -180,7 +180,7 @@
 		"owned_by": "Hyperbolic",
 		"supports_chat": true,
 		"supports_image_input": false,
-		"supports_tools": false
+		"supports_tools": true
 	},
 	{
 		"context_length": 262144,
@@ -193,7 +193,7 @@
 		"owned_by": "Hyperbolic",
 		"supports_chat": true,
 		"supports_image_input": false,
-		"supports_tools": false
+		"supports_tools": true
 	},
 	{
 		"context_length": null,
@@ -414,7 +414,7 @@
 		"owned_by": "Hyperbolic",
 		"supports_chat": true,
 		"supports_image_input": false,
-		"supports_tools": false
+		"supports_tools": true
 	},
 	{
 		"context_length": 131072,

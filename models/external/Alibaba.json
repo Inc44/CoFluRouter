@@ -1,6 +1,24 @@
 {
 	"data": [
 	{
+		"created": 1769588848,
+		"id": "qwen3-vl-flash-2026-01-22",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1769481833,
+		"id": "qwen3-max-2026-01-23",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1769443051,
+		"id": "qwen3-vl-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1768725487,
 		"id": "qwen-image-edit-max-2026-01-16",
 		"object": "model",
@@ -291,12 +309,6 @@
 	{
 		"created": 1761529658,
 		"id": "qwen3-vl-flash",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1761529615,
-		"id": "qwen3-vl-plus",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -674,6 +686,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-109",
+	"last_id": "model-id-111",
 	"object": "list"
 }

@@ -139,6 +139,15 @@
 	},
 	{
 		"created": 0,
+		"id": "Bria/fibo_edit",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/fibo_edit"
+	},
+	{
+		"created": 0,
 		"id": "Bria/gen_fill",
 		"metadata": null,
 		"object": "model",
@@ -172,6 +181,33 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "ByteDance/Seedream-4"
+	},
+	{
+		"created": 0,
+		"id": "ClarityAI/creative",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ClarityAI/creative"
+	},
+	{
+		"created": 0,
+		"id": "ClarityAI/crystal",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ClarityAI/crystal"
+	},
+	{
+		"created": 0,
+		"id": "ClarityAI/flux",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ClarityAI/flux"
 	},
 	{
 		"created": 0,
@@ -1790,7 +1826,7 @@
 			{
 				"cache_read_tokens": 0.13,
 				"input_tokens": 0.26,
-				"output_tokens": 0.38999999999999996
+				"output_tokens": 0.38
 			},
 			"tags": ["prompt_cache"]
 		},
@@ -2967,6 +3003,27 @@
 	},
 	{
 		"created": 0,
+		"id": "moonshotai/Kimi-K2.5",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Kimi K2.5 is an open-source, native multimodal agentic model built through continual pretraining on approximately 15 trillion mixed visual and text tokens atop Kimi-K2-Base. It seamlessly integrates vision and language understanding with advanced agentic capabilities, instant and thinking modes, as well as conversational and agentic paradigms.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.225,
+				"input_tokens": 0.45,
+				"output_tokens": 2.8
+			},
+			"tags": ["vision", "prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "moonshotai/Kimi-K2.5"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
 		"metadata":
 		{
@@ -3055,8 +3112,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.060000000000000005,
-				"output_tokens": 0.24000000000000002
+				"input_tokens": 0.05,
+				"output_tokens": 0.2
 			},
 			"tags": []
 		},
@@ -3449,9 +3506,9 @@
 			"max_tokens": 202752,
 			"pricing":
 			{
-				"cache_read_tokens": 0.0799999993,
-				"input_tokens": 0.43,
-				"output_tokens": 1.75
+				"cache_read_tokens": 0.08000000000000002,
+				"input_tokens": 0.4,
+				"output_tokens": 1.9
 			},
 			"tags": ["prompt_cache"]
 		},
@@ -3459,6 +3516,26 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "zai-org/GLM-4.7"
+	},
+	{
+		"created": 0,
+		"id": "zai-org/GLM-4.7-Flash",
+		"metadata":
+		{
+			"context_length": 202752,
+			"description": "GLM-4.7-Flash is a 30B-A3B MoE model. As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency.",
+			"max_tokens": 202752,
+			"pricing":
+			{
+				"input_tokens": 0.060000000000000005,
+				"output_tokens": 0.4
+			},
+			"tags": []
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "zai-org/GLM-4.7-Flash"
 	}],
 	"object": "list"
 }

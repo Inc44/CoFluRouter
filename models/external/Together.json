@@ -2,6 +2,33 @@
 {
 	"config":
 	{
+		"bos_token": "[BOS]",
+		"chat_template": null,
+		"eos_token": "[EOS]",
+		"stop": ["[EOS]"]
+	},
+	"context_length": 262144,
+	"created": 1769484937,
+	"display_name": "Kimi K2.5",
+	"id": "moonshotai/Kimi-K2.5",
+	"license": "other modified-mit",
+	"link": "https://huggingface.co/api/models/moonshotai/Kimi-K2.5",
+	"object": "model",
+	"organization": "Moonshot AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.5,
+		"output": 2.8
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": "<bos>",
 		"chat_template": "{{ bos_token }}{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{{ '<start_of_turn>' + role + '\n' + message['content'] | trim + '<end_of_turn>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}",
 		"eos_token": "<eos>",

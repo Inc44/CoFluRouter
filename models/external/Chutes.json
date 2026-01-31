@@ -3169,7 +3169,9 @@
 		"max_output_length": 262144,
 		"object": "model",
 		"output_modalities": ["text"],
-		"owned_by": "sglang",
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
 		"price":
 		{
 			"input":
@@ -3263,6 +3265,43 @@
 		},
 		"quantization": "int4",
 		"root": "moonshotai/Kimi-K2-Thinking",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "2ff25e81-4586-5ec8-b892-3a6f342693d7",
+		"confidential_compute": true,
+		"context_length": 262144,
+		"created": 0,
+		"id": "moonshotai/Kimi-K2.5-TEE",
+		"input_modalities": ["text", "image", "video"],
+		"max_model_len": 262144,
+		"max_output_length": 65535,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"prompt": 0
+		},
+		"quantization": "int4",
+		"root": "moonshotai/Kimi-K2.5",
 		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
@@ -3781,10 +3820,14 @@
 	{
 		"chute_id": "391c8d5f-0d84-51fe-85cf-984ea6d7e49e",
 		"confidential_compute": false,
+		"context_length": 163840,
 		"created": 0,
 		"id": "tngtech/TNG-R1T-Chimera-Turbo",
+		"input_modalities": ["text"],
 		"max_model_len": 131072,
+		"max_output_length": 65536,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
@@ -3806,7 +3849,10 @@
 			"completion": 0,
 			"prompt": 0
 		},
-		"root": "tngtech/TNG-R1T-Chimera-NVFP4"
+		"quantization": "fp4",
+		"root": "tngtech/TNG-R1T-Chimera-NVFP4",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": null,
