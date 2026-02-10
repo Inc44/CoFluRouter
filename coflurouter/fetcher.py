@@ -69,6 +69,7 @@ def fetch_models():
 			obj = redact_keys(obj, {"created"})
 		if name == "Chutes":  # Redact crypto, pricing and permissions
 			obj = redact_keys(obj, {"completion"})
+			obj = redact_keys(obj, {"input_cache_read"})
 			obj = redact_keys(obj, {"prompt"})
 			obj = redact_keys(obj, {"tao"})
 			obj = redact_keys(obj, {"usd"})
