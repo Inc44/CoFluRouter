@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"created_at": "2026-02-04T00:00:00Z",
+		"display_name": "Claude Opus 4.6",
+		"id": "claude-opus-4-6",
+		"type": "model"
+	},
+	{
 		"created_at": "2025-11-24T00:00:00Z",
 		"display_name": "Claude Opus 4.5",
 		"id": "claude-opus-4-5-20251101",
@@ -72,7 +78,7 @@
 		"id": "claude-3-opus-20240229",
 		"type": "model"
 	}],
-	"first_id": "claude-opus-4-5-20251101",
+	"first_id": "claude-opus-4-6",
 	"has_more": false,
 	"last_id": "claude-3-haiku-20240307"
 }

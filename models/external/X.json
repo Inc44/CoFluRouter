@@ -13,6 +13,12 @@
 		"owned_by": "xai"
 	},
 	{
+		"created": 1769558400,
+		"id": "grok-imagine-image-pro",
+		"object": "model",
+		"owned_by": "xai"
+	},
+	{
 		"created": 1763510400,
 		"id": "grok-4-1-fast-non-reasoning",
 		"object": "model",

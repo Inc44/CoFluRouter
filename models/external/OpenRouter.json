@@ -7,6 +7,277 @@
 			"instruct_type": null,
 			"modality": "text->text",
 			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "qwen/qwen3-max-thinking-20260123",
+		"context_length": 262144,
+		"created": 1770671901,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Qwen3-Max-Thinking is the flagship reasoning model in the Qwen3 series, designed for high-stakes cognitive tasks that require deep, multi-step reasoning. By significantly scaling model capacity and reinforcement learning compute, it delivers major gains in factual accuracy, complex reasoning, instruction following, alignment with human preferences, and agentic behavior.",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "qwen/qwen3-max-thinking",
+		"name": "Qwen: Qwen3 Max Thinking",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000006",
+			"prompt": "0.0000012"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 32768
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "openrouter/aurora-alpha",
+		"context_length": 128000,
+		"created": 1770611225,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "This is a cloaked model provided to the community to gather feedback. A reasoning model designed for speed. It is built for coding assistants, real-time conversational applications, and agentic workflows.\n\nDefault reasoning effort is set to medium for fast responses. For agentic coding use cases, we recommend changing effort to high. \n\nNote: All prompts and completions for this model are logged by the provider and may be used to improve the model.",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "openrouter/aurora-alpha",
+		"name": "Aurora Alpha",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "structured_outputs", "temperature", "tool_choice", "tools"],
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": false,
+			"max_completion_tokens": 50000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "openrouter/pony-alpha",
+		"context_length": 200000,
+		"created": 1770393855,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 1,
+			"top_p": 0.95
+		},
+		"description": "Pony is a cutting-edge foundation model with strong performance in coding, agentic workflows, reasoning, and roleplay, making it well suited for hands-on coding and real-world use.\n\n**Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "openrouter/pony-alpha",
+		"name": "Pony Alpha",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 200000,
+			"is_moderated": false,
+			"max_completion_tokens": 131000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Claude"
+		},
+		"canonical_slug": "anthropic/claude-4.6-opus-20260205",
+		"context_length": 1000000,
+		"created": 1770219050,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Opus 4.6 is Anthropic’s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective for large codebases, complex refactors, and multi-step debugging that unfolds over time. The model shows deeper contextual understanding, stronger problem decomposition, and greater reliability on hard engineering tasks than prior generations.\n\nBeyond coding, Opus 4.6 excels at sustained knowledge work. It produces near-production-ready documents, plans, and analyses in a single pass, and maintains coherence across very long outputs and extended sessions. This makes it a strong default for tasks that require persistence, judgment, and follow-through, such as technical design, migration planning, and end-to-end project execution.\n\nFor users upgrading from earlier Opus versions, see our [official migration guide here](https://openrouter.ai/docs/guides/guides/model-migrations/claude-4-6-opus)\n",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "anthropic/claude-opus-4.6",
+		"name": "Anthropic: Claude Opus 4.6",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000025",
+			"input_cache_read": "0.0000005",
+			"input_cache_write": "0.00000625",
+			"prompt": "0.000005",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p", "verbosity"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "qwen/qwen3-coder-next-2025-02-03",
+		"context_length": 262144,
+		"created": 1770164101,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 1,
+			"top_p": 0.95
+		},
+		"description": "Qwen3-Coder-Next is an open-weight causal language model optimized for coding agents and local development workflows. It uses a sparse MoE design with 80B total parameters and only 3B activated per token, delivering performance comparable to models with 10 to 20x higher active compute, which makes it well suited for cost-sensitive, always-on agent deployment.\n\nThe model is trained with a strong agentic focus and performs reliably on long-horizon coding tasks, complex tool usage, and recovery from execution failures. With a native 256k context window, it integrates cleanly into real-world CLI and IDE environments and adapts well to common agent scaffolds used by modern coding tools. The model operates exclusively in non-thinking mode and does not emit <think> blocks, simplifying integration for production coding agents.",
+		"expiration_date": null,
+		"hugging_face_id": "Qwen/Qwen3-Coder-Next",
+		"id": "qwen/qwen3-coder-next",
+		"name": "Qwen: Qwen3 Coder Next",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000003",
+			"input_cache_read": "0.000000035",
+			"prompt": "0.00000007"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Router"
+		},
+		"canonical_slug": "openrouter/free",
+		"context_length": 200000,
+		"created": 1769917427,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "The simplest way to get free inference. openrouter/free is a router that selects free models at random from the models available on OpenRouter. The router smartly filters for models that support features needed for your request such as image understanding, tool calling, structured outputs and more. ",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "openrouter/free",
+		"name": "Free Models Router",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": null,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "stepfun/step-3.5-flash",
+		"context_length": 256000,
+		"created": 1769728337,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token. It is a reasoning model that is incredibly speed efficient even at long contexts.",
+		"expiration_date": null,
+		"hugging_face_id": "stepfun-ai/Step-3.5-Flash",
+		"id": "stepfun/step-3.5-flash:free",
+		"name": "StepFun: Step 3.5 Flash (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 256000,
+			"is_moderated": false,
+			"max_completion_tokens": 256000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "arcee-ai/trinity-large-preview",
@@ -63,8 +334,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000028",
-			"prompt": "0.0000005"
+			"completion": "0.00000225",
+			"input_cache_read": "0.000000070000002",
+			"prompt": "0.00000045"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
@@ -346,7 +618,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "z-ai/glm-4.7-flash-20260119",
-		"context_length": 200000,
+		"context_length": 202752,
 		"created": 1768833913,
 		"default_parameters":
 		{
@@ -363,15 +635,15 @@
 		"pricing":
 		{
 			"completion": "0.0000004",
-			"input_cache_read": "0.00000001",
-			"prompt": "0.00000007"
+			"input_cache_read": "0.0000000100000002",
+			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 200000,
+			"context_length": 202752,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -443,6 +715,43 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 36864,
+			"is_moderated": false,
+			"max_completion_tokens": 36864
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "allenai/molmo-2-8b-20260109",
+		"context_length": 36864,
+		"created": 1767996672,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Molmo2-8B is an open vision-language model developed by the Allen Institute for AI (Ai2) as part of the Molmo2 family, supporting image, video, and multi-image understanding and grounding. It is based on Qwen3-8B and uses SigLIP 2 as its vision backbone, outperforming other open-weight, open-data models on short videos, counting, and captioning, while remaining competitive on long-video tasks.",
+		"expiration_date": null,
+		"hugging_face_id": "allenai/Molmo2-8B",
+		"id": "allenai/molmo-2-8b",
+		"name": "AllenAI: Molmo2 8B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000002",
+			"prompt": "0.0000002"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 36864,
@@ -587,7 +896,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000011",
+			"completion": "0.00000095",
+			"input_cache_read": "0.0000000299999997",
 			"prompt": "0.00000027"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -595,7 +905,7 @@
 		{
 			"context_length": 196608,
 			"is_moderated": false,
-			"max_completion_tokens": 196608
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -625,9 +935,10 @@
 		"pricing":
 		{
 			"completion": "0.0000015",
+			"input_cache_read": "0.0000002",
 			"prompt": "0.0000004"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 202752,
@@ -855,6 +1166,7 @@
 		"pricing":
 		{
 			"completion": "0.00000029",
+			"input_cache_read": "0.000000045",
 			"prompt": "0.00000009"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -1119,6 +1431,7 @@
 		"pricing":
 		{
 			"completion": "0.00000022",
+			"input_cache_read": "0.000000025",
 			"prompt": "0.00000005"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -1721,6 +2034,7 @@
 		"pricing":
 		{
 			"completion": "0.00000041",
+			"input_cache_read": "0.000000135",
 			"prompt": "0.00000027"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
@@ -1758,6 +2072,7 @@
 		"pricing":
 		{
 			"completion": "0.00000038",
+			"input_cache_read": "0.000000125",
 			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -1869,6 +2184,7 @@
 		"pricing":
 		{
 			"completion": "0.00000085",
+			"input_cache_read": "0.000000125",
 			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -2729,9 +3045,10 @@
 		"pricing":
 		{
 			"completion": "0.00000175",
+			"input_cache_read": "0.0000002",
 			"prompt": "0.0000004"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -2844,11 +3161,8 @@
 		"pricing":
 		{
 			"completion": "0.000015",
-			"image": "0",
-			"internal_reasoning": "0",
 			"prompt": "0.000003",
-			"request": "0.018",
-			"web_search": "0"
+			"web_search": "0.018"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "structured_outputs", "temperature", "top_k", "top_p", "web_search_options"],
 		"top_provider":
@@ -3076,7 +3390,7 @@
 		{
 			"completion": "0.000001",
 			"input_cache_read": "0.00000003",
-			"prompt": "0.0000002"
+			"prompt": "0.000000255"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -3382,7 +3696,7 @@
 			"prompt": "0.000001",
 			"web_search": "0.01"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -3400,7 +3714,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-vl-8b-thinking",
-		"context_length": 256000,
+		"context_length": 131072,
 		"created": 1760463746,
 		"default_parameters":
 		{
@@ -3416,16 +3730,12 @@
 		"pricing":
 		{
 			"completion": "0.0000021",
-			"image": "0",
-			"internal_reasoning": "0",
-			"prompt": "0.00000018",
-			"request": "0",
-			"web_search": "0"
+			"prompt": "0.00000018"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
-			"context_length": 256000,
+			"context_length": 131072,
 			"is_moderated": false,
 			"max_completion_tokens": 32768
 		}
@@ -3952,6 +4262,7 @@
 		"pricing":
 		{
 			"completion": "0.0000015",
+			"input_cache_read": "0.000000175",
 			"prompt": "0.00000035"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
@@ -4028,9 +4339,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000032",
-			"input_cache_read": "0.00000021",
-			"prompt": "0.00000021"
+			"completion": "0.00000041",
+			"prompt": "0.00000027"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -4261,7 +4571,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000012",
+			"completion": "0.00000088",
+			"input_cache_read": "0.00000011",
 			"prompt": "0.0000002"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -4282,7 +4593,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-max",
-		"context_length": 256000,
+		"context_length": 262144,
 		"created": 1758662808,
 		"default_parameters":
 		{
@@ -4299,19 +4610,15 @@
 		"pricing":
 		{
 			"completion": "0.000006",
-			"image": "0",
 			"input_cache_read": "0.00000024",
-			"internal_reasoning": "0",
-			"prompt": "0.0000012",
-			"request": "0",
-			"web_search": "0"
+			"prompt": "0.0000012"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
-			"context_length": 256000,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -4324,7 +4631,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-coder-plus",
-		"context_length": 128000,
+		"context_length": 1000000,
 		"created": 1758662707,
 		"default_parameters":
 		{
@@ -4341,17 +4648,13 @@
 		"pricing":
 		{
 			"completion": "0.000005",
-			"image": "0",
-			"input_cache_read": "0.0000001",
-			"internal_reasoning": "0",
-			"prompt": "0.000001",
-			"request": "0",
-			"web_search": "0"
+			"input_cache_read": "0.0000002",
+			"prompt": "0.000001"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
-			"context_length": 128000,
+			"context_length": 1000000,
 			"is_moderated": false,
 			"max_completion_tokens": 65536
 		}
@@ -4459,7 +4762,7 @@
 		"pricing":
 		{
 			"completion": "0.00000079",
-			"input_cache_read": "0.000000168",
+			"input_cache_read": "0.0000001300000002",
 			"prompt": "0.00000021"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -4615,10 +4918,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000004",
+			"completion": "0.00000045",
+			"input_cache_read": "0.00000009",
 			"prompt": "0.00000009"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -4636,7 +4940,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-coder-flash",
-		"context_length": 128000,
+		"context_length": 1000000,
 		"created": 1758115536,
 		"default_parameters":
 		{
@@ -4653,17 +4957,13 @@
 		"pricing":
 		{
 			"completion": "0.0000015",
-			"image": "0",
-			"input_cache_read": "0.00000008",
-			"internal_reasoning": "0",
-			"prompt": "0.0000003",
-			"request": "0",
-			"web_search": "0"
+			"input_cache_read": "0.00000006",
+			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
-			"context_length": 128000,
+			"context_length": 1000000,
 			"is_moderated": false,
 			"max_completion_tokens": 65536
 		}
@@ -4730,8 +5030,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000039",
-			"prompt": "0.0000001"
+			"completion": "0.0000006",
+			"input_cache_read": "0.000000075",
+			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
@@ -4940,12 +5241,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000004",
-			"image": "0",
-			"internal_reasoning": "0",
-			"prompt": "0.0000004",
-			"request": "0",
-			"web_search": "0"
+			"completion": "0.0000012",
+			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
@@ -4982,11 +5279,7 @@
 		"pricing":
 		{
 			"completion": "0.0000012",
-			"image": "0",
-			"internal_reasoning": "0",
-			"prompt": "0.0000004",
-			"request": "0",
-			"web_search": "0"
+			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
@@ -5190,6 +5483,7 @@
 		"pricing":
 		{
 			"completion": "0.0000019",
+			"input_cache_read": "0.000000195",
 			"prompt": "0.00000039"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -5506,6 +5800,7 @@
 		"pricing":
 		{
 			"completion": "0.00000038",
+			"input_cache_read": "0.000000055",
 			"prompt": "0.00000011"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -6119,7 +6414,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": true,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -6230,7 +6525,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": true,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -6259,15 +6554,15 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000001",
-			"prompt": "0.00000002"
+			"completion": "0.00000014",
+			"prompt": "0.00000003"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -6401,6 +6696,7 @@
 		"pricing":
 		{
 			"completion": "0.00000033",
+			"input_cache_read": "0.00000004",
 			"prompt": "0.00000008"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -6438,6 +6734,7 @@
 		"pricing":
 		{
 			"completion": "0.00000155",
+			"input_cache_read": "0.000000175",
 			"prompt": "0.00000035"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -6511,15 +6808,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000022",
-			"prompt": "0.00000005"
+			"completion": "0.00000085",
+			"input_cache_read": "0.000000025",
+			"prompt": "0.00000013"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 98304
 		}
 	},
 	{
@@ -6549,6 +6847,7 @@
 		"pricing":
 		{
 			"completion": "0.0000006",
+			"input_cache_read": "0.000000055",
 			"prompt": "0.00000011"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -6621,7 +6920,7 @@
 			"completion": "0",
 			"prompt": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262000,
@@ -6655,7 +6954,7 @@
 			"input_cache_read": "0.000000022",
 			"prompt": "0.00000022"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -6685,7 +6984,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000095",
+			"completion": "0.000001",
+			"input_cache_read": "0.000000022",
 			"prompt": "0.00000022"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -6693,7 +6993,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -6793,7 +7093,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000463",
+			"completion": "0.0000001",
 			"prompt": "0.000000071"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -7235,6 +7535,7 @@
 		"pricing":
 		{
 			"completion": "0.00000085",
+			"input_cache_read": "0.000000125",
 			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -7521,6 +7822,7 @@
 		"pricing":
 		{
 			"completion": "0.00000018",
+			"input_cache_read": "0.00000003",
 			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -8129,12 +8431,12 @@
 			"completion": "0",
 			"prompt": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "temperature"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -8164,6 +8466,7 @@
 		"pricing":
 		{
 			"completion": "0.00000175",
+			"input_cache_read": "0.0000002",
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -8492,6 +8795,7 @@
 		"pricing":
 		{
 			"completion": "0.0000001",
+			"input_cache_read": "0.00000001",
 			"prompt": "0.00000002"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -8949,6 +9253,7 @@
 		"pricing":
 		{
 			"completion": "0.00000022",
+			"input_cache_read": "0.00000003",
 			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -9021,11 +9326,11 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000025",
+			"completion": "0.0000004",
 			"input_cache_read": "0.00000005",
 			"prompt": "0.00000005"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32000,
@@ -9092,6 +9397,7 @@
 		"pricing":
 		{
 			"completion": "0.00000022",
+			"input_cache_read": "0.000000025",
 			"prompt": "0.00000005"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -9125,6 +9431,7 @@
 		"pricing":
 		{
 			"completion": "0.00000024",
+			"input_cache_read": "0.00000004",
 			"prompt": "0.00000008"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -9260,6 +9567,7 @@
 		"pricing":
 		{
 			"completion": "0.0000012",
+			"input_cache_read": "0.00000015",
 			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
@@ -10288,7 +10596,7 @@
 			"completion": "0.0000003",
 			"prompt": "0.00000008"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 327680,
@@ -10395,6 +10703,7 @@
 		"pricing":
 		{
 			"completion": "0.00000022",
+			"input_cache_read": "0.000000025",
 			"prompt": "0.00000005"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
@@ -10464,6 +10773,7 @@
 		"pricing":
 		{
 			"completion": "0.00000087",
+			"input_cache_read": "0.000000095",
 			"prompt": "0.00000019"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -10567,6 +10877,7 @@
 		"pricing":
 		{
 			"completion": "0.00000011",
+			"input_cache_read": "0.000000015",
 			"prompt": "0.00000003"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -10732,6 +11043,7 @@
 		"pricing":
 		{
 			"completion": "0.0000001",
+			"input_cache_read": "0.000000015",
 			"prompt": "0.00000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
@@ -10908,12 +11220,12 @@
 			"completion": "0",
 			"prompt": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["max_tokens", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 8192
 		}
 	},
 	{
@@ -10926,7 +11238,7 @@
 			"tokenizer": "Gemini"
 		},
 		"canonical_slug": "google/gemma-3-27b-it",
-		"context_length": 96000,
+		"context_length": 128000,
 		"created": 1741756359,
 		"default_parameters":
 		{
@@ -10943,14 +11255,15 @@
 		"pricing":
 		{
 			"completion": "0.00000015",
+			"input_cache_read": "0.00000002",
 			"prompt": "0.00000004"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 96000,
+			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": 96000
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -11081,10 +11394,7 @@
 		"pricing":
 		{
 			"completion": "0.000008",
-			"image": "0",
-			"internal_reasoning": "0",
 			"prompt": "0.000002",
-			"request": "0",
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "temperature", "top_k", "top_p", "web_search_options"],
@@ -11118,10 +11428,7 @@
 		"pricing":
 		{
 			"completion": "0.000015",
-			"image": "0",
-			"internal_reasoning": "0",
 			"prompt": "0.000003",
-			"request": "0",
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "temperature", "top_k", "top_p", "web_search_options"],
@@ -11155,10 +11462,8 @@
 		"pricing":
 		{
 			"completion": "0.000008",
-			"image": "0",
 			"internal_reasoning": "0.000003",
 			"prompt": "0.000002",
-			"request": "0",
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "temperature", "top_k", "top_p", "web_search_options"],
@@ -11235,7 +11540,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -11804,7 +12109,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen-vl-plus",
-		"context_length": 7500,
+		"context_length": 131072,
 		"created": 1738731255,
 		"default_parameters":
 		{},
@@ -11817,18 +12122,15 @@
 		"pricing":
 		{
 			"completion": "0.00000063",
-			"image": "0.0002688",
-			"internal_reasoning": "0",
-			"prompt": "0.00000021",
-			"request": "0",
-			"web_search": "0"
+			"input_cache_read": "0.000000042",
+			"prompt": "0.00000021"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "top_p"],
 		"top_provider":
 		{
-			"context_length": 7500,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 1500
+			"max_completion_tokens": 8192
 		}
 	},
 	{
@@ -11957,18 +12259,14 @@
 		"pricing":
 		{
 			"completion": "0.0000032",
-			"image": "0.001024",
-			"internal_reasoning": "0",
-			"prompt": "0.0000008",
-			"request": "0",
-			"web_search": "0"
+			"prompt": "0.0000008"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 8192
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -11981,7 +12279,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen-turbo-2024-11-01",
-		"context_length": 1000000,
+		"context_length": 131072,
 		"created": 1738410974,
 		"default_parameters":
 		{},
@@ -11994,17 +12292,13 @@
 		"pricing":
 		{
 			"completion": "0.0000002",
-			"image": "0",
-			"input_cache_read": "0.00000002",
-			"internal_reasoning": "0",
-			"prompt": "0.00000005",
-			"request": "0",
-			"web_search": "0"
+			"input_cache_read": "0.00000001",
+			"prompt": "0.00000005"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
-			"context_length": 1000000,
+			"context_length": 131072,
 			"is_moderated": false,
 			"max_completion_tokens": 8192
 		}
@@ -12068,6 +12362,7 @@
 		"pricing":
 		{
 			"completion": "0.0000006",
+			"input_cache_read": "0.000000075",
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
@@ -12088,7 +12383,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen-plus-2025-01-25",
-		"context_length": 131072,
+		"context_length": 1000000,
 		"created": 1738409840,
 		"default_parameters":
 		{},
@@ -12101,19 +12396,15 @@
 		"pricing":
 		{
 			"completion": "0.0000012",
-			"image": "0",
-			"input_cache_read": "0.00000016",
-			"internal_reasoning": "0",
-			"prompt": "0.0000004",
-			"request": "0",
-			"web_search": "0"
+			"input_cache_read": "0.00000008",
+			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 1000000,
 			"is_moderated": false,
-			"max_completion_tokens": 8192
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -12139,12 +12430,8 @@
 		"pricing":
 		{
 			"completion": "0.0000064",
-			"image": "0",
-			"input_cache_read": "0.00000064",
-			"internal_reasoning": "0",
-			"prompt": "0.0000016",
-			"request": "0",
-			"web_search": "0"
+			"input_cache_read": "0.00000032",
+			"prompt": "0.0000016"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
@@ -12252,15 +12539,15 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000011",
-			"prompt": "0.00000003"
+			"completion": "0.00000008",
+			"prompt": "0.00000005"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -12293,7 +12580,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -12427,11 +12714,8 @@
 		"pricing":
 		{
 			"completion": "0.000001",
-			"image": "0",
-			"internal_reasoning": "0",
 			"prompt": "0.000001",
-			"request": "0.005",
-			"web_search": "0"
+			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "temperature", "top_k", "top_p", "web_search_options"],
 		"top_provider":
@@ -12572,9 +12856,10 @@
 		"pricing":
 		{
 			"completion": "0.00000011",
+			"input_cache_read": "0.000000015",
 			"prompt": "0.00000003"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -12752,7 +13037,7 @@
 		{
 			"context_length": 16384,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -12811,6 +13096,7 @@
 		"pricing":
 		{
 			"completion": "0.0000012",
+			"input_cache_read": "0.00000015",
 			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -13036,7 +13322,7 @@
 			"tokenizer": "Llama3"
 		},
 		"canonical_slug": "meta-llama/llama-3.3-70b-instruct",
-		"context_length": 131072,
+		"context_length": 128000,
 		"created": 1733506137,
 		"default_parameters":
 		{},
@@ -13051,12 +13337,12 @@
 			"completion": "0",
 			"prompt": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131072,
-			"is_moderated": false,
-			"max_completion_tokens": null
+			"context_length": 128000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -13425,6 +13711,7 @@
 		"pricing":
 		{
 			"completion": "0.00000011",
+			"input_cache_read": "0.000000015",
 			"prompt": "0.00000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
@@ -13498,7 +13785,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -13919,7 +14206,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -14225,7 +14512,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 4096
 		}
 	},
 	{
@@ -14433,7 +14720,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -14568,7 +14855,7 @@
 		{
 			"context_length": 65536,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -14652,7 +14939,7 @@
 		"default_parameters":
 		{},
 		"description": "OpenAI ChatGPT 4o is continually updated by OpenAI to point to the current version of GPT-4o used by ChatGPT. It therefore differs slightly from the API version of [GPT-4o](/models/openai/gpt-4o) in that it has additional RLHF. It is intended for research and evaluation.\n\nOpenAI notes that this model is not suited for production use-cases as it may be removed or redirected to another model in the future.",
-		"expiration_date": null,
+		"expiration_date": "2026-02-17",
 		"hugging_face_id": null,
 		"id": "openai/chatgpt-4o-latest",
 		"name": "OpenAI: ChatGPT-4o",
@@ -14879,7 +15166,7 @@
 			"tokenizer": "Llama3"
 		},
 		"canonical_slug": "meta-llama/llama-3.1-405b-instruct",
-		"context_length": 10000,
+		"context_length": 131000,
 		"created": 1721692800,
 		"default_parameters":
 		{},
@@ -14891,13 +15178,13 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000035",
-			"prompt": "0.0000035"
+			"completion": "0.000004",
+			"prompt": "0.000004"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 10000,
+			"context_length": 131000,
 			"is_moderated": false,
 			"max_completion_tokens": null
 		}
@@ -15073,7 +15360,7 @@
 		{
 			"context_length": 8192,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 2048
 		}
 	},
 	{
@@ -15694,7 +15981,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000006",
+			"completion": "0.00000004",
 			"prompt": "0.00000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -16438,7 +16725,7 @@
 		{
 			"context_length": 4096,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 2048
 		}
 	},
 	{
@@ -16492,7 +16779,7 @@
 			"temperature": null,
 			"top_p": null
 		},
-		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nLearn more, including how to customize the models for routing, in our [docs](/docs/guides/routing/routers/auto-router).\n\nRequests will be routed to the following models:\n- [openai/gpt-5.2](/openai/gpt-5.2)\n- [openai/gpt-5.2-pro](/openai/gpt-5.2-pro)\n- [openai/gpt-5.1](/openai/gpt-5.1)\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-4.1](/openai/gpt-4.1)\n- [openai/gpt-4.1-mini](/openai/gpt-4.1-mini)\n- [openai/gpt-4.1-nano](/openai/gpt-4.1-nano)\n- [openai/gpt-oss-120b](/openai/gpt-oss-120b)\n- [anthropic/claude-opus-4.5](/anthropic/claude-opus-4.5)\n- [anthropic/claude-sonnet-4.5](/anthropic/claude-sonnet-4.5)\n- [anthropic/claude-haiku-4.5](/anthropic/claude-haiku-4.5)\n- [google/gemini-3-pro-preview](/google/gemini-3-pro-preview)\n- [google/gemini-2.5-pro](/google/gemini-2.5-pro)\n- [google/gemini-2.5-flash](/google/gemini-2.5-flash)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-large-2407](/mistralai/mistral-large-2407)\n- [mistralai/mistral-large-2411](/mistralai/mistral-large-2411)\n- [mistralai/mistral-medium-3.1](/mistralai/mistral-medium-3.1)\n- [mistralai/mistral-nemo](/mistralai/mistral-nemo)\n- [mistralai/mistral-7b-instruct](/mistralai/mistral-7b-instruct)\n- [mistralai/mixtral-8x7b-instruct](/mistralai/mixtral-8x7b-instruct)\n- [mistralai/mixtral-8x22b-instruct](/mistralai/mixtral-8x22b-instruct)\n- [mistralai/codestral-2508](/mistralai/codestral-2508)\n- [x-ai/grok-4](/x-ai/grok-4)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [meta-llama/llama-3.3-70b-instruct](/meta-llama/llama-3.3-70b-instruct)\n- [meta-llama/llama-3.1-405b-instruct](/meta-llama/llama-3.1-405b-instruct)\n- [meta-llama/llama-3.1-70b-instruct](/meta-llama/llama-3.1-70b-instruct)\n- [meta-llama/llama-3.1-8b-instruct](/meta-llama/llama-3.1-8b-instruct)\n- [meta-llama/llama-3-70b-instruct](/meta-llama/llama-3-70b-instruct)\n- [meta-llama/llama-3-8b-instruct](/meta-llama/llama-3-8b-instruct)\n- [qwen/qwen3-235b-a22b](/qwen/qwen3-235b-a22b)\n- [qwen/qwen3-32b](/qwen/qwen3-32b)\n- [qwen/qwen3-14b](/qwen/qwen3-14b)\n- [cohere/command-r-plus-08-2024](/cohere/command-r-plus-08-2024)\n- [cohere/command-r-08-2024](/cohere/command-r-08-2024)\n- [moonshotai/kimi-k2-thinking](/moonshotai/kimi-k2-thinking)\n- [perplexity/sonar](/perplexity/sonar)",
+		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nLearn more, including how to customize the models for routing, in our [docs](/docs/guides/routing/routers/auto-router).\n\nRequests will be routed to the following models:\n- [anthropic/claude-3.7-sonnet](/anthropic/claude-3.7-sonnet)\n- [anthropic/claude-haiku-4.5](/anthropic/claude-haiku-4.5)\n- [anthropic/claude-opus-4](/anthropic/claude-opus-4)\n- [anthropic/claude-opus-4.1](/anthropic/claude-opus-4.1)\n- [anthropic/claude-opus-4.5](/anthropic/claude-opus-4.5)\n- [anthropic/claude-opus-4.6](/anthropic/claude-opus-4.6)\n- [anthropic/claude-sonnet-4](/anthropic/claude-sonnet-4)\n- [anthropic/claude-sonnet-4.5](/anthropic/claude-sonnet-4.5)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [google/gemini-2.0-flash-001](/google/gemini-2.0-flash-001)\n- [google/gemini-2.5-flash](/google/gemini-2.5-flash)\n- [google/gemini-2.5-flash-lite](/google/gemini-2.5-flash-lite)\n- [google/gemini-2.5-pro](/google/gemini-2.5-pro)\n- [google/gemini-3-flash-preview](/google/gemini-3-flash-preview)\n- [google/gemini-3-pro-preview](/google/gemini-3-pro-preview)\n- [meta-llama/llama-3.3-70b-instruct](/meta-llama/llama-3.3-70b-instruct)\n- [mistralai/codestral-2508](/mistralai/codestral-2508)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium-3.1](/mistralai/mistral-medium-3.1)\n- [mistralai/mistral-small-3.2-24b-instruct-2506](/mistralai/mistral-small-3.2-24b-instruct-2506)\n- [moonshotai/kimi-k2-thinking](/moonshotai/kimi-k2-thinking)\n- [moonshotai/kimi-k2.5](/moonshotai/kimi-k2.5)\n- [openai/chatgpt-4o-latest](/openai/chatgpt-4o-latest)\n- [openai/gpt-4.1](/openai/gpt-4.1)\n- [openai/gpt-4.1-mini](/openai/gpt-4.1-mini)\n- [openai/gpt-4.1-nano](/openai/gpt-4.1-nano)\n- [openai/gpt-4o](/openai/gpt-4o)\n- [openai/gpt-4o-mini](/openai/gpt-4o-mini)\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-5.1](/openai/gpt-5.1)\n- [openai/gpt-5.2](/openai/gpt-5.2)\n- [openai/gpt-5.2-pro](/openai/gpt-5.2-pro)\n- [openai/gpt-oss-120b](/openai/gpt-oss-120b)\n- [perplexity/sonar](/perplexity/sonar)\n- [qwen/qwen3-14b](/qwen/qwen3-14b)\n- [qwen/qwen3-235b-a22b](/qwen/qwen3-235b-a22b)\n- [qwen/qwen3-32b](/qwen/qwen3-32b)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openrouter/auto",
@@ -16503,7 +16790,7 @@
 			"completion": "-1",
 			"prompt": "-1"
 		},
-		"supported_parameters": [],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p", "web_search_options"],
 		"top_provider":
 		{
 			"context_length": null,
@@ -16708,7 +16995,7 @@
 		{
 			"context_length": 6144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 4096
 		}
 	},
 	{
@@ -16741,7 +17028,7 @@
 		{
 			"context_length": 4096,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 4096
 		}
 	},
 	{

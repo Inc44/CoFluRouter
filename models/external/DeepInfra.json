@@ -228,8 +228,8 @@
 			"max_tokens": 4096,
 			"pricing":
 			{
-				"input_tokens": 0.08,
-				"output_tokens": 0.08
+				"input_tokens": 0.4,
+				"output_tokens": 0.4
 			},
 			"tags": []
 		},
@@ -309,9 +309,9 @@
 			"max_tokens": 196608,
 			"pricing":
 			{
-				"cache_read_tokens": 0.14,
-				"input_tokens": 0.28,
-				"output_tokens": 1.2
+				"cache_read_tokens": 0.029999999700000002,
+				"input_tokens": 0.27,
+				"output_tokens": 0.95
 			},
 			"tags": ["prompt_cache"]
 		},
@@ -657,7 +657,7 @@
 			"max_tokens": 40960,
 			"pricing":
 			{
-				"input_tokens": 0.08,
+				"input_tokens": 0.12000000000000001,
 				"output_tokens": 0.24000000000000002
 			},
 			"tags": ["reasoning_effort"]
@@ -698,7 +698,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.071,
-				"output_tokens": 0.463
+				"output_tokens": 0.1
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -717,10 +717,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
+				"cache_read_tokens": 0.20000000059999998,
 				"input_tokens": 0.22999999999999998,
-				"output_tokens": 2.39
+				"output_tokens": 2.3
 			},
-			"tags": ["reasoning_effort"]
+			"tags": ["prompt_cache", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -738,7 +739,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.08,
-				"output_tokens": 0.29
+				"output_tokens": 0.28
 			},
 			"tags": ["reasoning_effort"]
 		},
@@ -817,10 +818,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.28,
-				"output_tokens": 1.2
+				"cache_read_tokens": 0.022,
+				"input_tokens": 0.21999999999999997,
+				"output_tokens": 1.0
 			},
-			"tags": []
+			"tags": ["prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -931,10 +933,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
+				"cache_read_tokens": 0.11000000000000001,
 				"input_tokens": 0.2,
-				"output_tokens": 1.2
+				"output_tokens": 0.8799999999999999
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["vision", "prompt_cache", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1620,7 +1623,7 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.4,
+				"cache_read_tokens": 0.35,
 				"input_tokens": 0.5,
 				"output_tokens": 2.15
 			},
@@ -1661,8 +1664,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.6,
-				"output_tokens": 1.2
+				"input_tokens": 0.7,
+				"output_tokens": 0.8
 			},
 			"tags": []
 		},
@@ -1741,9 +1744,9 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.10600000000000001,
+				"cache_read_tokens": 0.135,
 				"input_tokens": 0.2,
-				"output_tokens": 0.8799999999999999
+				"output_tokens": 0.77
 			},
 			"tags": ["prompt_cache"]
 		},
@@ -1782,7 +1785,7 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.168,
+				"cache_read_tokens": 0.1300000002,
 				"input_tokens": 0.21,
 				"output_tokens": 0.7899999999999999
 			},
@@ -1803,7 +1806,7 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.168,
+				"cache_read_tokens": 0.1300000002,
 				"input_tokens": 0.21,
 				"output_tokens": 0.7899999999999999
 			},
@@ -2093,7 +2096,7 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.09,
+				"input_tokens": 0.08,
 				"output_tokens": 0.16
 			},
 			"tags": ["vision"]
@@ -2490,7 +2493,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.030000000000000002,
-				"output_tokens": 0.060000000000000005
+				"output_tokens": 0.04
 			},
 			"tags": []
 		},
@@ -2569,7 +2572,7 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.030000000000000002,
+				"input_tokens": 0.02,
 				"output_tokens": 0.05
 			},
 			"tags": []
@@ -2969,7 +2972,7 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"cache_read_tokens": 0.32000000000000006,
+				"cache_read_tokens": 0.15000000000000002,
 				"input_tokens": 0.4,
 				"output_tokens": 2.0
 			},
@@ -3011,9 +3014,9 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.225,
+				"cache_read_tokens": 0.070000002,
 				"input_tokens": 0.45,
-				"output_tokens": 2.8
+				"output_tokens": 2.25
 			},
 			"tags": ["vision", "prompt_cache"]
 		},
@@ -3467,7 +3470,7 @@
 			{
 				"cache_read_tokens": 0.0799999993,
 				"input_tokens": 0.43,
-				"output_tokens": 1.75
+				"output_tokens": 1.74
 			},
 			"tags": ["prompt_cache"]
 		},
@@ -3508,7 +3511,7 @@
 			{
 				"cache_read_tokens": 0.08000000000000002,
 				"input_tokens": 0.4,
-				"output_tokens": 1.9
+				"output_tokens": 1.75
 			},
 			"tags": ["prompt_cache"]
 		},
@@ -3527,10 +3530,11 @@
 			"max_tokens": 202752,
 			"pricing":
 			{
+				"cache_read_tokens": 0.0100000002,
 				"input_tokens": 0.060000000000000005,
 				"output_tokens": 0.4
 			},
-			"tags": []
+			"tags": ["prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",

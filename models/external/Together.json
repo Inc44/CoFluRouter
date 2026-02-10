@@ -2,6 +2,81 @@
 {
 	"config":
 	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 262144,
+	"created": 1769984339,
+	"display_name": "Qwen3 Coder Next Fp8",
+	"id": "Qwen/Qwen3-Coder-Next-FP8",
+	"license": "apache-2.0",
+	"link": "https://huggingface.co/api/models/Qwen/Qwen3-Coder-Next-FP8",
+	"object": "model",
+	"organization": "Qwen",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.5,
+		"output": 1.2
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1769621066,
+	"display_name": "PixVerse v5",
+	"id": "pixverse/pixverse-v5.6",
+	"object": "model",
+	"organization": "PixVerse",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1769618722,
+	"display_name": "Wan 2.6 Image",
+	"id": "Wan-AI/Wan2.6-image",
+	"object": "model",
+	"organization": "Wan-AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
 		"bos_token": "[BOS]",
 		"chat_template": null,
 		"eos_token": "[EOS]",
@@ -402,8 +477,6 @@
 	"created": 1762466703,
 	"display_name": "Kimi K2 Thinking",
 	"id": "moonshotai/Kimi-K2-Thinking",
-	"license": "other modified-mit",
-	"link": "https://huggingface.co/api/models/moonshotai/Kimi-K2-Thinking",
 	"object": "model",
 	"organization": "Moonshotai",
 	"pricing":
