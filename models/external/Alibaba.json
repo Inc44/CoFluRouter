@@ -1,6 +1,54 @@
 {
 	"data": [
 	{
+		"created": 1770985895,
+		"id": "qwen3-asr-flash-realtime-2026-02-10",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1770800291,
+		"id": "qwen3-omni-flash-realtime-2025-09-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1770800281,
+		"id": "qwen3-omni-flash-realtime-2025-12-01",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1770800271,
+		"id": "qwen3-omni-flash-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1770800240,
+		"id": "qwen3-tts-flash-realtime-2025-09-18",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1770800230,
+		"id": "qwen3-tts-flash-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1770800217,
+		"id": "qwen3-tts-vd-realtime-2025-12-16",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1770800013,
+		"id": "qwen-omni-turbo",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1770722334,
 		"id": "qwen3-tts-vc-2026-01-22",
 		"object": "model",
@@ -253,12 +301,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1767618063,
-		"id": "qwen3-tts-flash-realtime",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1767618047,
 		"id": "qwen3-tts-flash",
 		"object": "model",
@@ -283,12 +325,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1766391120,
-		"id": "qwen3-tts-flash-realtime-2025-09-18",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1766371140,
 		"id": "z-image-turbo",
 		"object": "model",
@@ -297,12 +333,6 @@
 	{
 		"created": 1766150048,
 		"id": "qwen3-vl-plus-2025-12-19",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1765861356,
-		"id": "qwen3-tts-vd-realtime-2025-12-16",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -333,12 +363,6 @@
 	{
 		"created": 1764737072,
 		"id": "qwen3-livetranslate-flash",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1764734061,
-		"id": "qwen3-omni-flash-realtime-2025-12-01",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -429,18 +453,6 @@
 	{
 		"created": 1761550599,
 		"id": "qwen3-omni-30b-a3b-captioner",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1761550572,
-		"id": "qwen3-omni-flash-realtime-2025-09-15",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1761550548,
-		"id": "qwen3-omni-flash-realtime",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -595,12 +607,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1760421407,
-		"id": "qwen-omni-turbo",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1760413836,
 		"id": "qwen3-30b-a3b",
 		"object": "model",
@@ -728,6 +734,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-118",
+	"last_id": "model-id-119",
 	"object": "list"
 }

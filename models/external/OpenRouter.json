@@ -7,6 +7,80 @@
 			"instruct_type": null,
 			"modality": "text->text",
 			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "minimax/minimax-m2.5-20260211",
+		"context_length": 196608,
+		"created": 1770908502,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 1,
+			"top_p": 0.95
+		},
+		"description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1 to extend into general office work, reaching fluency in generating and operating Word, Excel, and Powerpoint files, context switching between diverse software environments, and working across different agent and human teams. Scoring 80.2% on SWE-Bench Verified, 51.3% on Multi-SWE-Bench, and 76.3% on BrowseComp, M2.5 is also more token efficient than previous generations, having been trained to optimize its actions and output through planning.",
+		"expiration_date": null,
+		"hugging_face_id": "MiniMaxAI/MiniMax-M2.5",
+		"id": "minimax/minimax-m2.5",
+		"name": "MiniMax: MiniMax M2.5",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000001",
+			"prompt": "0.0000002"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 196608,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "z-ai/glm-5-20260211",
+		"context_length": 204800,
+		"created": 1770829182,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": 1,
+			"top_p": 0.95
+		},
+		"description": "GLM-5 is Z.ai’s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading closed-source models. With advanced agentic planning, deep backend reasoning, and iterative self-correction, GLM-5 moves beyond code generation to full-system construction and autonomous execution.",
+		"expiration_date": null,
+		"hugging_face_id": "zai-org/GLM-5",
+		"id": "z-ai/glm-5",
+		"name": "Z.ai: GLM 5",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000255",
+			"prompt": "0.00000075"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 204800,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen3-max-thinking-20260123",
@@ -34,7 +108,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -280,6 +354,44 @@
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
+		"canonical_slug": "stepfun/step-3.5-flash",
+		"context_length": 256000,
+		"created": 1769728337,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token. It is a reasoning model that is incredibly speed efficient even at long contexts.",
+		"expiration_date": null,
+		"hugging_face_id": "stepfun-ai/Step-3.5-Flash",
+		"id": "stepfun/step-3.5-flash",
+		"name": "StepFun: Step 3.5 Flash",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000003",
+			"input_cache_read": "0.00000002",
+			"prompt": "0.0000001"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 256000,
+			"is_moderated": false,
+			"max_completion_tokens": 256000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
 		"canonical_slug": "arcee-ai/trinity-large-preview",
 		"context_length": 131000,
 		"created": 1769552670,
@@ -298,7 +410,11 @@
 		"pricing":
 		{
 			"completion": "0",
-			"prompt": "0"
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "structured_outputs", "temperature", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -334,16 +450,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000225",
-			"input_cache_read": "0.000000070000002",
+			"completion": "0.00000044",
+			"input_cache_read": "0.0000001125",
 			"prompt": "0.00000045"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 65535
 		}
 	},
 	{
@@ -630,7 +746,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.7-Flash",
 		"id": "z-ai/glm-4.7-flash",
-		"name": "Z.AI: GLM 4.7 Flash",
+		"name": "Z.ai: GLM 4.7 Flash",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -677,7 +793,7 @@
 			"prompt": "0.00000175",
 			"web_search": "0.01"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools", "top_logprobs"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -926,11 +1042,11 @@
 			"temperature": 1,
 			"top_p": 0.95
 		},
-		"description": "GLM-4.7 is Z.AI’s latest flagship model, featuring upgrades in two key areas: enhanced programming capabilities and more stable multi-step reasoning/execution. It demonstrates significant improvements in executing complex agent tasks while delivering more natural conversational experiences and superior front-end aesthetics.",
+		"description": "GLM-4.7 is Z.ai’s latest flagship model, featuring upgrades in two key areas: enhanced programming capabilities and more stable multi-step reasoning/execution. It demonstrates significant improvements in executing complex agent tasks while delivering more natural conversational experiences and superior front-end aesthetics.",
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.7",
 		"id": "z-ai/glm-4.7",
-		"name": "Z.AI: GLM 4.7",
+		"name": "Z.ai: GLM 4.7",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -1501,7 +1617,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.6V",
 		"id": "z-ai/glm-4.6v",
-		"name": "Z.AI: GLM 4.6V",
+		"name": "Z.ai: GLM 4.6V",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -1999,7 +2115,7 @@
 			"completion": "0.00000015",
 			"prompt": "0.000000045"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -3410,7 +3526,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen3-vl-32b-instruct",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1761231332,
 		"default_parameters":
 		{
@@ -3419,22 +3535,22 @@
 			"top_p": null
 		},
 		"description": "Qwen3-VL-32B-Instruct is a large-scale multimodal vision-language model designed for high-precision understanding and reasoning across text, images, and video. With 32 billion parameters, it combines deep visual perception with advanced text comprehension, enabling fine-grained spatial reasoning, document and scene analysis, and long-horizon video understanding.Robust OCR in 32 languages, and enhanced multimodal fusion through Interleaved-MRoPE and DeepStack architectures. Optimized for agentic interaction and visual tool use, Qwen3-VL-32B delivers state-of-the-art performance for complex real-world multimodal tasks.",
-		"expiration_date": null,
+		"expiration_date": "2026-02-25",
 		"hugging_face_id": "Qwen/Qwen3-VL-32B-Instruct",
 		"id": "qwen/qwen3-vl-32b-instruct",
 		"name": "Qwen: Qwen3 VL 32B Instruct",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000015",
-			"prompt": "0.0000005"
+			"completion": "0.000000416",
+			"prompt": "0.000000104"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -3729,8 +3845,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000021",
-			"prompt": "0.00000018"
+			"completion": "0.000001365",
+			"prompt": "0.000000117"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
@@ -4110,8 +4226,12 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
-			"prompt": "0.0000002"
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -4131,7 +4251,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-vl-30b-a3b-instruct",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1759794476,
 		"default_parameters":
 		{
@@ -4147,16 +4267,15 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"input_cache_read": "0.000000075",
-			"prompt": "0.00000015"
+			"completion": "0.00000052",
+			"prompt": "0.00000013"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -4219,7 +4338,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "z-ai/glm-4.6:exacto",
-		"name": "Z.AI: GLM 4.6 (exacto)",
+		"name": "Z.ai: GLM 4.6 (exacto)",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -4257,7 +4376,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "z-ai/glm-4.6",
-		"name": "Z.AI: GLM 4.6",
+		"name": "Z.ai: GLM 4.6",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -4265,7 +4384,7 @@
 			"input_cache_read": "0.000000175",
 			"prompt": "0.00000035"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 202752,
@@ -4518,7 +4637,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-vl-235b-a22b-thinking",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1758668690,
 		"default_parameters":
 		{
@@ -4534,15 +4653,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000035",
-			"prompt": "0.00000045"
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -4575,7 +4698,7 @@
 			"input_cache_read": "0.00000011",
 			"prompt": "0.0000002"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -6154,7 +6277,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.5V",
 		"id": "z-ai/glm-4.5v",
-		"name": "Z.AI: GLM 4.5V",
+		"name": "Z.ai: GLM 4.5V",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -6729,7 +6852,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.5",
 		"id": "z-ai/glm-4.5",
-		"name": "Z.AI: GLM 4.5",
+		"name": "Z.ai: GLM 4.5",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -6767,7 +6890,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.5-Air",
 		"id": "z-ai/glm-4.5-air:free",
-		"name": "Z.AI: GLM 4.5 Air (free)",
+		"name": "Z.ai: GLM 4.5 Air (free)",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -6804,7 +6927,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.5-Air",
 		"id": "z-ai/glm-4.5-air",
-		"name": "Z.AI: GLM 4.5 Air",
+		"name": "Z.ai: GLM 4.5 Air",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -6830,7 +6953,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-235b-a22b-thinking-2507",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1753449557,
 		"default_parameters":
 		{
@@ -6846,16 +6969,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"input_cache_read": "0.000000055",
-			"prompt": "0.00000011"
+			"completion": "0",
+			"image": "0",
+			"internal_reasoning": "0",
+			"prompt": "0",
+			"request": "0",
+			"web_search": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -6880,7 +7006,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "z-ai/glm-4-32b",
-		"name": "Z.AI: GLM 4 32B ",
+		"name": "Z.ai: GLM 4 32B ",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -6988,7 +7114,7 @@
 			"input_cache_read": "0.000000022",
 			"prompt": "0.00000022"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -7846,7 +7972,11 @@
 		"context_length": 1000000,
 		"created": 1750200414,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "MiniMax-M1 is a large-scale, open-weight reasoning model designed for extended context and high-efficiency inference. It leverages a hybrid Mixture-of-Experts (MoE) architecture paired with a custom \"lightning attention\" mechanism, allowing it to process long sequences—up to 1 million tokens—while maintaining competitive FLOP efficiency. With 456 billion total parameters and 45.9B active per token, this variant is optimized for complex, multi-step reasoning tasks.\n\nTrained via a custom reinforcement learning pipeline (CISPO), M1 excels in long-context understanding, software engineering, agentic tool use, and mathematical reasoning. Benchmarks show strong performance across FullStackBench, SWE-bench, MATH, GPQA, and TAU-Bench, often outperforming other open models like DeepSeek R1 and Qwen3-235B.",
 		"expiration_date": null,
 		"hugging_face_id": "",
@@ -9125,6 +9255,39 @@
 		"architecture":
 		{
 			"input_modalities": ["text"],
+			"instruct_type": "qwen3",
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3-4b-04-28",
+		"context_length": 131072,
+		"created": 1746031104,
+		"default_parameters":
+		{},
+		"description": "Qwen3-4B is a 4 billion parameter dense language model from the Qwen3 series, designed to support both general-purpose and reasoning-intensive tasks. It introduces a dual-mode architecture—thinking and non-thinking—allowing dynamic switching between high-precision logical reasoning and efficient dialogue generation. This makes it well-suited for multi-turn chat, instruction following, and complex agent workflows.",
+		"expiration_date": null,
+		"hugging_face_id": "Qwen/Qwen3-4B",
+		"id": "qwen/qwen3-4b",
+		"name": "Qwen: Qwen3 4B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000000273",
+			"prompt": "0.0000000715"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": 8192
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
 			"instruct_type": null,
 			"modality": "text->text",
 			"output_modalities": ["text"],
@@ -9330,7 +9493,7 @@
 			"input_cache_read": "0.00000005",
 			"prompt": "0.00000005"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32000,
@@ -9500,15 +9663,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"prompt": "0.0000002"
+			"completion": "0.0000012",
+			"input_cache_read": "0.00000015",
+			"prompt": "0.0000003"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 40960,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 40960
 		}
 	},
 	{
@@ -10706,7 +10870,7 @@
 			"input_cache_read": "0.000000025",
 			"prompt": "0.00000005"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 16384,
@@ -12365,7 +12529,7 @@
 			"input_cache_read": "0.000000075",
 			"prompt": "0.00000015"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -12949,7 +13113,11 @@
 		"context_length": 1000192,
 		"created": 1736915462,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "MiniMax-01 is a combines MiniMax-Text-01 for text generation and MiniMax-VL-01 for image understanding. It has 456 billion parameters, with 45.9 billion parameters activated per inference, and can handle a context of up to 4 million tokens.\n\nThe text model adopts a hybrid architecture that combines Lightning Attention, Softmax Attention, and Mixture-of-Experts (MoE). The image model adopts the “ViT-MLP-LLM” framework and is trained on top of the text model.\n\nTo read more about the release, see: https://www.minimaxi.com/en/news/minimax-01-series-2",
 		"expiration_date": null,
 		"hugging_face_id": "MiniMaxAI/MiniMax-Text-01",
@@ -15941,7 +16109,7 @@
 		"default_parameters":
 		{},
 		"description": "This safeguard model has 8B parameters and is based on the Llama 3 family. Just like is predecessor, [LlamaGuard 1](https://huggingface.co/meta-llama/LlamaGuard-7b), it can do both prompt and response classification.\n\nLlamaGuard 2 acts as a normal LLM would, generating text that indicates whether the given input/output is safe/unsafe. If deemed unsafe, it will also share the content categories violated.\n\nFor best results, please use raw prompt input or the `/completions` endpoint, instead of the chat API.\n\nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
-		"expiration_date": null,
+		"expiration_date": "2026-02-25",
 		"hugging_face_id": "meta-llama/Meta-Llama-Guard-2-8B",
 		"id": "meta-llama/llama-guard-2-8b",
 		"name": "Meta: LlamaGuard 2 8B",
@@ -16070,7 +16238,7 @@
 			"tokenizer": "Mistral"
 		},
 		"canonical_slug": "microsoft/wizardlm-2-8x22b",
-		"context_length": 65536,
+		"context_length": 65535,
 		"created": 1713225600,
 		"default_parameters":
 		{},
@@ -16082,15 +16250,15 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000048",
-			"prompt": "0.00000048"
+			"completion": "0.00000062",
+			"prompt": "0.00000062"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 65536,
+			"context_length": 65535,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 8000
 		}
 	},
 	{
@@ -16779,7 +16947,7 @@
 			"temperature": null,
 			"top_p": null
 		},
-		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nLearn more, including how to customize the models for routing, in our [docs](/docs/guides/routing/routers/auto-router).\n\nRequests will be routed to the following models:\n- [anthropic/claude-3.7-sonnet](/anthropic/claude-3.7-sonnet)\n- [anthropic/claude-haiku-4.5](/anthropic/claude-haiku-4.5)\n- [anthropic/claude-opus-4](/anthropic/claude-opus-4)\n- [anthropic/claude-opus-4.1](/anthropic/claude-opus-4.1)\n- [anthropic/claude-opus-4.5](/anthropic/claude-opus-4.5)\n- [anthropic/claude-opus-4.6](/anthropic/claude-opus-4.6)\n- [anthropic/claude-sonnet-4](/anthropic/claude-sonnet-4)\n- [anthropic/claude-sonnet-4.5](/anthropic/claude-sonnet-4.5)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [google/gemini-2.0-flash-001](/google/gemini-2.0-flash-001)\n- [google/gemini-2.5-flash](/google/gemini-2.5-flash)\n- [google/gemini-2.5-flash-lite](/google/gemini-2.5-flash-lite)\n- [google/gemini-2.5-pro](/google/gemini-2.5-pro)\n- [google/gemini-3-flash-preview](/google/gemini-3-flash-preview)\n- [google/gemini-3-pro-preview](/google/gemini-3-pro-preview)\n- [meta-llama/llama-3.3-70b-instruct](/meta-llama/llama-3.3-70b-instruct)\n- [mistralai/codestral-2508](/mistralai/codestral-2508)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium-3.1](/mistralai/mistral-medium-3.1)\n- [mistralai/mistral-small-3.2-24b-instruct-2506](/mistralai/mistral-small-3.2-24b-instruct-2506)\n- [moonshotai/kimi-k2-thinking](/moonshotai/kimi-k2-thinking)\n- [moonshotai/kimi-k2.5](/moonshotai/kimi-k2.5)\n- [openai/chatgpt-4o-latest](/openai/chatgpt-4o-latest)\n- [openai/gpt-4.1](/openai/gpt-4.1)\n- [openai/gpt-4.1-mini](/openai/gpt-4.1-mini)\n- [openai/gpt-4.1-nano](/openai/gpt-4.1-nano)\n- [openai/gpt-4o](/openai/gpt-4o)\n- [openai/gpt-4o-mini](/openai/gpt-4o-mini)\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-5.1](/openai/gpt-5.1)\n- [openai/gpt-5.2](/openai/gpt-5.2)\n- [openai/gpt-5.2-pro](/openai/gpt-5.2-pro)\n- [openai/gpt-oss-120b](/openai/gpt-oss-120b)\n- [perplexity/sonar](/perplexity/sonar)\n- [qwen/qwen3-14b](/qwen/qwen3-14b)\n- [qwen/qwen3-235b-a22b](/qwen/qwen3-235b-a22b)\n- [qwen/qwen3-32b](/qwen/qwen3-32b)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)",
+		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nLearn more, including how to customize the models for routing, in our [docs](/docs/guides/routing/routers/auto-router).\n\nRequests will be routed to the following models:\n- [anthropic/claude-haiku-4.5](/anthropic/claude-haiku-4.5)\n- [anthropic/claude-opus-4.6](/anthropic/claude-opus-4.6)\n- [anthropic/claude-sonnet-4.5](/anthropic/claude-sonnet-4.5)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [google/gemini-2.5-flash-lite](/google/gemini-2.5-flash-lite)\n- [google/gemini-3-flash-preview](/google/gemini-3-flash-preview)\n- [google/gemini-3-pro-preview](/google/gemini-3-pro-preview)\n- [meta-llama/llama-3.3-70b-instruct](/meta-llama/llama-3.3-70b-instruct)\n- [mistralai/codestral-2508](/mistralai/codestral-2508)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium-3.1](/mistralai/mistral-medium-3.1)\n- [mistralai/mistral-small-3.2-24b-instruct-2506](/mistralai/mistral-small-3.2-24b-instruct-2506)\n- [moonshotai/kimi-k2-thinking](/moonshotai/kimi-k2-thinking)\n- [moonshotai/kimi-k2.5](/moonshotai/kimi-k2.5)\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-5.1](/openai/gpt-5.1)\n- [openai/gpt-5.2](/openai/gpt-5.2)\n- [openai/gpt-5.2-pro](/openai/gpt-5.2-pro)\n- [openai/gpt-oss-120b](/openai/gpt-oss-120b)\n- [perplexity/sonar](/perplexity/sonar)\n- [qwen/qwen3-235b-a22b](/qwen/qwen3-235b-a22b)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openrouter/auto",

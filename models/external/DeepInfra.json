@@ -885,6 +885,48 @@
 	},
 	{
 		"created": 0,
+		"id": "Qwen/Qwen3-Max",
+		"metadata":
+		{
+			"context_length": 256000,
+			"description": "The latest flagship model in the Qwen family. State-of-the-art results across a comprehensive suite of benchmarks — including knowledge, reasoning, coding, instruction following, human preference alignment, agent tasks, and multilingual understanding.",
+			"max_tokens": 256000,
+			"pricing":
+			{
+				"cache_read_tokens": 0.24,
+				"input_tokens": 1.2,
+				"output_tokens": 5.999999999999999
+			},
+			"tags": ["prompt_cache", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Max"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-Max-Thinking",
+		"metadata":
+		{
+			"context_length": 256000,
+			"description": "The latest flagship reasoning model in the Qwen3 family. Further enhanced by multiple innovations like adaptive tool-use and advanced test-time scaling techniques",
+			"max_tokens": 256000,
+			"pricing":
+			{
+				"cache_read_tokens": 0.24,
+				"input_tokens": 1.2,
+				"output_tokens": 5.999999999999999
+			},
+			"tags": ["prompt_cache", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-Max-Thinking"
+	},
+	{
+		"created": 0,
 		"id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
 		"metadata":
 		{
@@ -3540,6 +3582,27 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "zai-org/GLM-4.7-Flash"
+	},
+	{
+		"created": 0,
+		"id": "zai-org/GLM-5",
+		"metadata":
+		{
+			"context_length": 202752,
+			"description": "GLM-5 is an advanced, open-source large language model designed for developers tackling the toughest challenges. It excels at long-context reasoning, multi-step tool orchestration, and complex systems engineering, making it the ideal choice for powering sophisticated agents and applications that require high-level cognitive tasks.",
+			"max_tokens": 202752,
+			"pricing":
+			{
+				"cache_read_tokens": 0.16000000000000003,
+				"input_tokens": 0.8,
+				"output_tokens": 2.56
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "zai-org/GLM-5"
 	}],
 	"object": "list"
 }

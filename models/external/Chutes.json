@@ -220,6 +220,38 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "ce6a92e4-5c2f-5681-9742-c80a4447bbdf",
+		"confidential_compute": true,
+		"created": 0,
+		"id": "MiniMaxAI/MiniMax-M2.5-TEE",
+		"max_model_len": 196608,
+		"object": "model",
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "MiniMaxAI/MiniMax-M2.5"
+	},
+	{
 		"chute_id": "b20fe05c-52c6-594a-b7c6-5c68f3153df3",
 		"confidential_compute": false,
 		"context_length": 131072,
@@ -1195,16 +1227,13 @@
 	{
 		"chute_id": "83ce50c4-6d3f-55a6-88a6-c5db187f2c70",
 		"confidential_compute": false,
-		"context_length": 262144,
 		"created": 0,
 		"id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
-		"input_modalities": ["text"],
 		"max_model_len": 262144,
-		"max_output_length": 262144,
 		"object": "model",
-		"output_modalities": ["text"],
-		"owned_by": "sglang",
+		"owned_by": "vllm",
 		"parent": null,
+		"permission": [],
 		"price":
 		{
 			"input":
@@ -1212,6 +1241,7 @@
 				"tao": 0,
 				"usd": 0
 			},
+			"input_cache_read": 0,
 			"output":
 			{
 				"tao": 0,
@@ -1221,12 +1251,10 @@
 		"pricing":
 		{
 			"completion": 0,
+			"input_cache_read": 0,
 			"prompt": 0
 		},
-		"quantization": "bf16",
-		"root": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
-		"supported_features": ["json_mode", "structured_outputs", "tools"],
-		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+		"root": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
 	},
 	{
 		"chute_id": "0596f791-79e9-51e1-bf93-93f22a4e8110",
@@ -2887,8 +2915,9 @@
 		"max_output_length": 65536,
 		"object": "model",
 		"output_modalities": ["text"],
-		"owned_by": "sglang",
+		"owned_by": "vllm",
 		"parent": null,
+		"permission": [],
 		"price":
 		{
 			"input":
@@ -4958,6 +4987,45 @@
 		},
 		"quantization": "bf16",
 		"root": "zai-org/GLM-4.7",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "e51e818e-fa63-570d-9f68-49d7d1b4d12f",
+		"confidential_compute": true,
+		"context_length": 202752,
+		"created": 0,
+		"id": "zai-org/GLM-5-TEE",
+		"input_modalities": ["text"],
+		"max_model_len": 202752,
+		"max_output_length": 65535,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "zai-org/GLM-5-FP8",
 		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},

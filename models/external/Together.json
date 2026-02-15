@@ -4,6 +4,32 @@
 	{
 		"bos_token": null,
 		"chat_template": null,
+		"eos_token": "<|endoftext|>",
+		"stop": ["<|endoftext|>"]
+	},
+	"context_length": 202752,
+	"created": 1770946797,
+	"display_name": "GLM-5-FP4",
+	"id": "zai-org/GLM-5",
+	"link": "https://huggingface.co/api/models/togethercomputer/GLM-5-FP4",
+	"object": "model",
+	"organization": "zai-org",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 1,
+		"output": 3.2
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
 		"eos_token": null,
 		"stop": []
 	},
@@ -658,7 +684,7 @@
 	"display_name": "Vidu 2.0",
 	"id": "vidu/vidu-2.0",
 	"object": "model",
-	"organization": "vidu",
+	"organization": "Vidu",
 	"pricing":
 	{
 		"base": 0,
@@ -682,7 +708,7 @@
 	"display_name": "Vidu Q1",
 	"id": "vidu/vidu-q1",
 	"object": "model",
-	"organization": "vidu",
+	"organization": "Vidu",
 	"pricing":
 	{
 		"base": 0,
