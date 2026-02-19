@@ -2,6 +2,83 @@
 {
 	"config":
 	{
+		"bos_token": "<|startoftext|>",
+		"chat_template": null,
+		"eos_token": "<|im_end|>",
+		"stop": ["<|im_end|>"]
+	},
+	"context_length": 128000,
+	"created": 1771367000,
+	"display_name": "Lfm2 24B A2b Preview",
+	"id": "LiquidAI/LFM2-24B-A2B-Preview",
+	"object": "model",
+	"organization": "Togethercomputer",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.00011999999999999999,
+		"output": 0.00047999999999999996
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": "<|im_end|>",
+		"stop": ["<|im_end|>"]
+	},
+	"context_length": 262144,
+	"created": 1771230345,
+	"display_name": "Qwen3.5 397B A17b",
+	"id": "Qwen/Qwen3.5-397B-A17B",
+	"license": "apache-2.0",
+	"link": "https://huggingface.co/api/models/Qwen/Qwen3.5-397B-A17B",
+	"object": "model",
+	"organization": "Qwen",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.6,
+		"output": 3.6
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 196608,
+	"created": 1771131180,
+	"display_name": "MiniMax M2.5 FP4",
+	"id": "MiniMaxAI/MiniMax-M2.5",
+	"object": "model",
+	"organization": "MiniMaxAI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.3,
+		"output": 1.2
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": null,
 		"chat_template": null,
 		"eos_token": "<|endoftext|>",

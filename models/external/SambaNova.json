@@ -238,6 +238,20 @@
 		},
 		"sn_metadata":
 		{}
+	},
+	{
+		"context_length": 163840,
+		"id": "MiniMax-M2.5",
+		"max_completion_tokens": 16384,
+		"object": "model",
+		"owned_by": "no-reply@sambanova.ai",
+		"pricing":
+		{
+			"completion": "0.00000120",
+			"prompt": "0.00000030"
+		},
+		"sn_metadata":
+		{}
 	}],
 	"object": "list"
 }

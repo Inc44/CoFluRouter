@@ -222,10 +222,14 @@
 	{
 		"chute_id": "ce6a92e4-5c2f-5681-9742-c80a4447bbdf",
 		"confidential_compute": true,
+		"context_length": 196608,
 		"created": 0,
 		"id": "MiniMaxAI/MiniMax-M2.5-TEE",
+		"input_modalities": ["text"],
 		"max_model_len": 196608,
+		"max_output_length": 65536,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
@@ -249,7 +253,10 @@
 			"input_cache_read": 0,
 			"prompt": 0
 		},
-		"root": "MiniMaxAI/MiniMax-M2.5"
+		"quantization": "fp8",
+		"root": "MiniMaxAI/MiniMax-M2.5",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": "b20fe05c-52c6-594a-b7c6-5c68f3153df3",
@@ -1335,6 +1342,45 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "6320ab82-9e94-5d63-8e38-d136f61dc157",
+		"confidential_compute": true,
+		"context_length": 262144,
+		"created": 0,
+		"id": "Qwen/Qwen3-Coder-Next-TEE",
+		"input_modalities": ["text"],
+		"max_model_len": 262144,
+		"max_output_length": 65536,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-Coder-Next",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": "4f1c6850-19ad-5c1a-89e8-7fb40216e876",
 		"confidential_compute": false,
 		"context_length": 262144,
@@ -1480,6 +1526,45 @@
 		},
 		"quantization": "bf16",
 		"root": "Qwen/Qwen3-VL-235B-A22B-Thinking",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "51a4284a-a5a0-5e44-a9cc-6af5a2abfbcf",
+		"confidential_compute": true,
+		"context_length": 262144,
+		"created": 0,
+		"id": "Qwen/Qwen3.5-397B-A17B-TEE",
+		"input_modalities": ["text", "image"],
+		"max_model_len": 262144,
+		"max_output_length": 65536,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3.5-397B-A17B",
 		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
@@ -1762,6 +1847,45 @@
 			"prompt": 0
 		},
 		"root": "XiaomiMiMo/MiMo-V2-Flash"
+	},
+	{
+		"chute_id": "18aab253-1f97-5279-bef7-499f1f837653",
+		"confidential_compute": true,
+		"context_length": 262144,
+		"created": 0,
+		"id": "XiaomiMiMo/MiMo-V2-Flash-TEE",
+		"input_modalities": ["text"],
+		"max_model_len": 262144,
+		"max_output_length": 65536,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "XiaomiMiMo/MiMo-V2-Flash",
+		"supported_features": ["json_mode", "structured_outputs", "tools"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": null,
@@ -2915,9 +3039,8 @@
 		"max_output_length": 65536,
 		"object": "model",
 		"output_modalities": ["text"],
-		"owned_by": "vllm",
+		"owned_by": "sglang",
 		"parent": null,
-		"permission": [],
 		"price":
 		{
 			"input":
@@ -5001,9 +5124,8 @@
 		"max_output_length": 65535,
 		"object": "model",
 		"output_modalities": ["text"],
-		"owned_by": "vllm",
+		"owned_by": "sglang",
 		"parent": null,
-		"permission": [],
 		"price":
 		{
 			"input":

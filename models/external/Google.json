@@ -301,6 +301,18 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 3.1 Pro Preview",
+		"id": "models/gemini-3.1-pro-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.1 Pro Preview Custom Tools",
+		"id": "models/gemini-3.1-pro-preview-customtools",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini Embedding 001",
 		"id": "models/gemini-embedding-001",
 		"object": "model",

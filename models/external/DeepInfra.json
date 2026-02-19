@@ -175,12 +175,63 @@
 	},
 	{
 		"created": 0,
+		"id": "ByteDance/Seed-1.8",
+		"metadata":
+		{
+			"context_length": 256000,
+			"description": "Optimized specifically for multimodal agent scenarios. It features enhanced agent capabilities, upgraded multimodal comprehension, and more flexible context management.",
+			"max_tokens": 256000,
+			"pricing":
+			{
+				"cache_read_tokens": 0.05,
+				"input_tokens": 0.25,
+				"output_tokens": 2.0
+			},
+			"tags": ["vision", "prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ByteDance/Seed-1.8"
+	},
+	{
+		"created": 0,
+		"id": "ByteDance/Seed-2.0-mini",
+		"metadata":
+		{
+			"context_length": 256000,
+			"description": "Built for low-latency, high-concurrency, cost-sensitive use cases, with flexible deployment, four-tier thinking, and multimodal",
+			"max_tokens": 256000,
+			"pricing":
+			{
+				"cache_read_tokens": 0.020000000000000004,
+				"input_tokens": 0.1,
+				"output_tokens": 0.4
+			},
+			"tags": ["vision", "prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ByteDance/Seed-2.0-mini"
+	},
+	{
+		"created": 0,
 		"id": "ByteDance/Seedream-4",
 		"metadata": null,
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "ByteDance/Seedream-4"
+	},
+	{
+		"created": 0,
+		"id": "ByteDance/Seedream-4.5",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ByteDance/Seedream-4.5"
 	},
 	{
 		"created": 0,
@@ -319,6 +370,27 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "MiniMaxAI/MiniMax-M2.1"
+	},
+	{
+		"created": 0,
+		"id": "MiniMaxAI/MiniMax-M2.5",
+		"metadata":
+		{
+			"context_length": 196608,
+			"description": "MiniMax M2.5 is SOTA in coding, agentic tool use and search, office work, and a range of other economically valuable tasks, boasting scores of 80.2% in SWE-Bench Verified, 51.3% in Multi-SWE-Bench, and 76.3% in BrowseComp (with context management).",
+			"max_tokens": 196608,
+			"pricing":
+			{
+				"cache_read_tokens": 0.029999999700000002,
+				"input_tokens": 0.27,
+				"output_tokens": 0.95
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "MiniMaxAI/MiniMax-M2.5"
 	},
 	{
 		"created": 0,
@@ -506,6 +578,24 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen-Image-Edit"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen-Image-Edit-Max",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen-Image-Edit-Max"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen-Image-Max",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen-Image-Max"
 	},
 	{
 		"created": 0,
@@ -1225,6 +1315,24 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Sao10K/L3.3-70B-Euryale-v2.3"
+	},
+	{
+		"created": 0,
+		"id": "Wan-AI/Wan2.6-Image-Edit",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Wan-AI/Wan2.6-Image-Edit"
+	},
+	{
+		"created": 0,
+		"id": "Wan-AI/Wan2.6-T2I",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Wan-AI/Wan2.6-T2I"
 	},
 	{
 		"created": 0,
