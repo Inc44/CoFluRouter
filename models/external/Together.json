@@ -2,6 +2,31 @@
 {
 	"config":
 	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": "<|im_end|>",
+		"stop": ["<|im_end|>"]
+	},
+	"context_length": 262144,
+	"created": 1772073611,
+	"display_name": "Qwen3.5 397B A17b Fp8",
+	"id": "Qwen/Qwen3.5-397B-A17B-FP8",
+	"object": "model",
+	"organization": "Qwen",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": "<|startoftext|>",
 		"chat_template": null,
 		"eos_token": "<|im_end|>",
@@ -9,10 +34,10 @@
 	},
 	"context_length": 128000,
 	"created": 1771367000,
-	"display_name": "Lfm2 24B A2b Preview",
+	"display_name": "LFM2 24B A2B Preview",
 	"id": "LiquidAI/LFM2-24B-A2B-Preview",
 	"object": "model",
-	"organization": "Togethercomputer",
+	"organization": "LiquidAI",
 	"pricing":
 	{
 		"base": 0,

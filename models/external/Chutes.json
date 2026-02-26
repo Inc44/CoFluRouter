@@ -2743,9 +2743,8 @@
 		"max_output_length": 65536,
 		"object": "model",
 		"output_modalities": ["text"],
-		"owned_by": "vllm",
+		"owned_by": "sglang",
 		"parent": null,
-		"permission": [],
 		"price":
 		{
 			"input":
@@ -3779,8 +3778,9 @@
 		"max_output_length": 131072,
 		"object": "model",
 		"output_modalities": ["text"],
-		"owned_by": "sglang",
+		"owned_by": "vllm",
 		"parent": null,
+		"permission": [],
 		"price":
 		{
 			"input":

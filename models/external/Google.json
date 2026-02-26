@@ -301,6 +301,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Nano Banana 2",
+		"id": "models/gemini-3.1-flash-image-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 3.1 Pro Preview",
 		"id": "models/gemini-3.1-pro-preview",
 		"object": "model",

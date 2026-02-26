@@ -1,14 +1,44 @@
 {
 	"data": [
 	{
-		"created": 1771517401,
-		"id": "qwen3.5-plus",
+		"created": 1772010837,
+		"id": "qwen3.5-35b-a3b",
 		"object": "model",
 		"owned_by": "system"
 	},
 	{
-		"created": 1771515097,
+		"created": 1772008394,
+		"id": "qwen3.5-122b-a10b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1771933666,
+		"id": "qwen3.5-flash-2026-02-23",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1771933614,
+		"id": "qwen3.5-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1771933430,
+		"id": "qwen3.5-27b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1771600643,
 		"id": "qwen3-coder-next",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1771517401,
+		"id": "qwen3.5-plus",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -758,6 +788,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-123",
+	"last_id": "model-id-128",
 	"object": "list"
 }
