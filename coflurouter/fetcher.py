@@ -92,7 +92,12 @@ def fetch_models():
 				}
 				for model in data:
 					if isinstance(model, dict) and "id" in model:
-						merged_data[model["id"]] = model
+						if not (
+							name == "Together"
+							and model.get("created") == 0
+							and model["id"] in merged_data
+						):
+							merged_data[model["id"]] = model
 				merged_obj = list(merged_data.values())
 				if isinstance(obj, dict) and "data" in obj:
 					obj["data"] = merged_obj
