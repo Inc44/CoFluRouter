@@ -3,6 +3,43 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "bytedance-seed/seed-2.0-mini-20260224",
+		"context_length": 262144,
+		"created": 1772131107,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
+		"description": "Seed-2.0-mini targets latency-sensitive, high-concurrency, and cost-sensitive scenarios, emphasizing fast response and flexible inference deployment. It delivers performance comparable to ByteDance-Seed-1.6, supports 256k context, four reasoning effort modes (minimal/low/medium/high), multimodal understanding, and is optimized for lightweight tasks where cost and speed take priority.",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "bytedance-seed/seed-2.0-mini",
+		"name": "ByteDance Seed: Seed-2.0-Mini",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000004",
+			"prompt": "0.0000001"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["image", "text"],
 			"instruct_type": null,
 			"modality": "text+image->text+image",
@@ -200,7 +237,10 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": 1.05,
 			"temperature": 0.1,
+			"top_k": 50,
 			"top_p": null
 		},
 		"description": "LFM2-24B-A2B is the largest model in the LFM2 family of hybrid architectures designed for efficient on-device deployment. Built as a 24B parameter Mixture-of-Experts model with only 2B active parameters per token, it delivers high-quality generation while maintaining low inference costs. The model fits within 32 GB of RAM, making it practical to run on consumer laptops and desktops without sacrificing capability.",
@@ -330,6 +370,7 @@
 		"pricing":
 		{
 			"completion": "0.0000016",
+			"input_cache_read": "0.0000002",
 			"prompt": "0.0000008"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "temperature", "top_p"],
@@ -523,16 +564,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000011",
-			"input_cache_read": "0.00000015",
-			"prompt": "0.0000003"
+			"completion": "0.0000012",
+			"input_cache_read": "0.00000003",
+			"prompt": "0.000000295"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 196608,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 196608
 		}
 	},
 	{
@@ -1810,7 +1851,7 @@
 			"temperature": null,
 			"top_p": null
 		},
-		"description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems.\n\nThe model is fully open with open-weights, datasets and recipes so developers can easily\ncustomize, optimize, and deploy the model on their infrastructure for maximum privacy and\nsecurity.\n\nNote: For the free endpoint, all prompts and output are logged to improve the provider's model and its product and services. Please do not upload any personal, confidential, or otherwise sensitive information. This is a trial use only. Do not use for production or business-critical systems.",
+		"description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems.\n\nThe model is fully open with open-weights, datasets and recipes so developers can easily\ncustomize, optimize, and deploy the model on their infrastructure for maximum privacy and\nsecurity.",
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
 		"id": "nvidia/nemotron-3-nano-30b-a3b:free",
@@ -1847,7 +1888,7 @@
 			"temperature": null,
 			"top_p": null
 		},
-		"description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems.\n\nThe model is fully open with open-weights, datasets and recipes so developers can easily\ncustomize, optimize, and deploy the model on their infrastructure for maximum privacy and\nsecurity.\n\nNote: For the free endpoint, all prompts and output are logged to improve the provider's model and its product and services. Please do not upload any personal, confidential, or otherwise sensitive information. This is a trial use only. Do not use for production or business-critical systems.",
+		"description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems.\n\nThe model is fully open with open-weights, datasets and recipes so developers can easily\ncustomize, optimize, and deploy the model on their infrastructure for maximum privacy and\nsecurity.",
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
 		"id": "nvidia/nemotron-3-nano-30b-a3b",
@@ -5921,7 +5962,11 @@
 		"context_length": 128000,
 		"created": 1757106807,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response. \n\nThe model's reasoning capabilities can be controlled via a system prompt. If the user prefers the model to provide its final answer without intermediate reasoning traces, it can be configured to do so.",
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
@@ -5954,7 +5999,11 @@
 		"context_length": 131072,
 		"created": 1757106807,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"temperature": null,
+			"top_p": null
+		},
 		"description": "NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response. \n\nThe model's reasoning capabilities can be controlled via a system prompt. If the user prefers the model to provide its final answer without intermediate reasoning traces, it can be configured to do so.",
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
@@ -9088,9 +9137,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000175",
-			"input_cache_read": "0.0000002",
-			"prompt": "0.0000004"
+			"completion": "0.00000215",
+			"input_cache_read": "0.000000225",
+			"prompt": "0.00000045"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
@@ -9965,7 +10014,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-8b-04-28",
-		"context_length": 32000,
+		"context_length": 40960,
 		"created": 1745876632,
 		"default_parameters":
 		{
@@ -9988,7 +10037,7 @@
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
-			"context_length": 32000,
+			"context_length": 40960,
 			"is_moderated": false,
 			"max_completion_tokens": 8192
 		}
@@ -11425,16 +11474,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000087",
-			"input_cache_read": "0.000000095",
-			"prompt": "0.00000019"
+			"completion": "0.00000077",
+			"input_cache_read": "0.000000135",
+			"prompt": "0.0000002"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -12186,7 +12235,7 @@
 			"completion": "0.0000004",
 			"prompt": "0.00000015"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -13225,7 +13274,7 @@
 			"completion": "0.00000029",
 			"prompt": "0.00000029"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -13784,7 +13833,7 @@
 			"completion": "0.00000075",
 			"prompt": "0.00000065"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -14431,7 +14480,7 @@
 			"completion": "0.0000004",
 			"prompt": "0.0000004"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -14854,7 +14903,7 @@
 			"completion": "0.00000043",
 			"prompt": "0.00000017"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,

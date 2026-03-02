@@ -2817,9 +2817,8 @@
 		"max_output_length": 65536,
 		"object": "model",
 		"output_modalities": ["text"],
-		"owned_by": "vllm",
+		"owned_by": "sglang",
 		"parent": null,
-		"permission": [],
 		"price":
 		{
 			"input":
@@ -3030,11 +3029,11 @@
 	{
 		"chute_id": "398651e1-5f85-5e50-a513-7c5324e8e839",
 		"confidential_compute": true,
-		"context_length": 163840,
+		"context_length": 131072,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V3.2-TEE",
 		"input_modalities": ["text"],
-		"max_model_len": 163840,
+		"max_model_len": 131072,
 		"max_output_length": 65536,
 		"object": "model",
 		"output_modalities": ["text"],
@@ -3691,6 +3690,38 @@
 		"root": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
 		"supported_features": ["json_mode", "tools", "structured_outputs"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "a9487a19-3a06-536d-b4a0-35aefbcb4483",
+		"confidential_compute": true,
+		"created": 0,
+		"id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-TEE",
+		"max_model_len": 262144,
+		"object": "model",
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
 	},
 	{
 		"chute_id": "610528a4-f2db-55c8-a43f-b83f3f215d00",

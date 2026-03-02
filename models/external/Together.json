@@ -4,6 +4,57 @@
 	{
 		"bos_token": null,
 		"chat_template": null,
+		"eos_token": "<|endoftext|>",
+		"stop": ["<|endoftext|>"]
+	},
+	"context_length": 202752,
+	"created": 1772171373,
+	"display_name": "GLM-5-FP4",
+	"id": "zai-org/GLM-5",
+	"link": "https://huggingface.co/api/models/togethercomputer/GLM-5-FP4",
+	"object": "model",
+	"organization": "zai-org",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 1,
+		"output": 3.2
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 196608,
+	"created": 1772169853,
+	"display_name": "MiniMax M2.5 FP4",
+	"id": "MiniMaxAI/MiniMax-M2.5",
+	"object": "model",
+	"organization": "MiniMaxAI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.3,
+		"output": 1.2
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
 		"eos_token": "<|im_end|>",
 		"stop": ["<|im_end|>"]
 	},
@@ -72,57 +123,6 @@
 		"hourly": 0,
 		"input": 0.6,
 		"output": 3.6
-	},
-	"running": false,
-	"type": "chat"
-},
-{
-	"config":
-	{
-		"bos_token": null,
-		"chat_template": null,
-		"eos_token": null,
-		"stop": []
-	},
-	"context_length": 196608,
-	"created": 1771131180,
-	"display_name": "MiniMax M2.5 FP4",
-	"id": "MiniMaxAI/MiniMax-M2.5",
-	"object": "model",
-	"organization": "MiniMaxAI",
-	"pricing":
-	{
-		"base": 0,
-		"finetune": 0,
-		"hourly": 0,
-		"input": 0.3,
-		"output": 1.2
-	},
-	"running": false,
-	"type": "chat"
-},
-{
-	"config":
-	{
-		"bos_token": null,
-		"chat_template": null,
-		"eos_token": "<|endoftext|>",
-		"stop": ["<|endoftext|>"]
-	},
-	"context_length": 202752,
-	"created": 1770946797,
-	"display_name": "GLM-5-FP4",
-	"id": "zai-org/GLM-5",
-	"link": "https://huggingface.co/api/models/togethercomputer/GLM-5-FP4",
-	"object": "model",
-	"organization": "zai-org",
-	"pricing":
-	{
-		"base": 0,
-		"finetune": 0,
-		"hourly": 0,
-		"input": 1,
-		"output": 3.2
 	},
 	"running": false,
 	"type": "chat"
