@@ -97,6 +97,15 @@ def fetch_models():
 							and model.get("created") == 0
 							and model["id"] in merged_data
 						):
+							if (
+								model.get("expiration_date") is None
+								and model["id"] in merged_data
+								and merged_data[model["id"]].get("expiration_date")
+								is not None
+							):
+								model["expiration_date"] = merged_data[model["id"]][
+									"expiration_date"
+								]
 							merged_data[model["id"]] = model
 				merged_obj = list(merged_data.values())
 				if isinstance(obj, dict) and "data" in obj:
