@@ -360,7 +360,7 @@
 			"max_tokens": 196608,
 			"pricing":
 			{
-				"cache_read_tokens": 0.029999999700000002,
+				"cache_read_tokens": 0.0290000007,
 				"input_tokens": 0.27,
 				"output_tokens": 0.95
 			},
@@ -1020,9 +1020,9 @@
 		"id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
 		"metadata":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"description": "Over the past few months, we have observed increasingly clear trends toward scaling both total parameters and context lengths in the pursuit of more powerful and agentic artificial intelligence (AI). We are excited to share our latest advancements in addressing these demands, centered on improving scaling efficiency through innovative model architecture. We call this next-generation foundation models Qwen3-Next.",
-			"max_tokens": 262144,
+			"max_tokens": 131072,
 			"pricing":
 			{
 				"input_tokens": 0.09,
@@ -3177,6 +3177,27 @@
 	},
 	{
 		"created": 0,
+		"id": "moonshotai/Kimi-K2.5-Turbo",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.10000000199999999,
+				"input_tokens": 0.6,
+				"output_tokens": 2.9999999999999996
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "moonshotai/Kimi-K2.5-Turbo"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
 		"metadata":
 		{
@@ -3217,11 +3238,32 @@
 	},
 	{
 		"created": 0,
+		"id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "NVIDIA Nemotron 3 Super is a hybrid Mixture-of-Experts (MoE) model engineered for highest compute efficiency and accuracy in multi-agent applications and specialized agentic systems. It is optimized to run many collaborating agents per application on a single GPU, delivering high accuracy for reasoning, tool use, and instruction following.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.04000000000000001,
+				"input_tokens": 0.1,
+				"output_tokens": 0.5
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL",
 		"metadata":
 		{
 			"context_length": 131072,
-			"description": "The model is an auto-regressive vision language model that uses an optimized transformer architecture. The model enables multi-image reasoning and video understanding, along with strong document intelligence, visual Q&A and summarization capabilities.",
+			"description": "NVIDIA Nemotron 2 Nano VL extends the Nemotron family into multi-modal reasoning and document intelligence. This auto-regressive vision-language model enables multi-image reasoning, video understanding, visual Q&A and document analysis and summarization. Optimized for enterprise AI workflows, it powers multimodal agentic systems such as visual copilots, document assistants, and knowledge automation pipelines.",
 			"max_tokens": 131072,
 			"pricing":
 			{
@@ -3261,7 +3303,7 @@
 		"metadata":
 		{
 			"context_length": 262144,
-			"description": "NVIDIA Nemotron 3 Nano is an open reasoning model optimized for fast, cost-efficient inference. Built with a hybrid MoE and Mamba architecture and trained on NVIDIA-curated synthetic reasoning data, it delivers strong multi-step reasoning with stable latency and predictable performance for agentic and production workloads.",
+			"description": "NVIDIA Nemotron 3 Nano is an open small reasoning model optimized for fast, cost-efficient inference in agentic and production workloads. Built with a hybrid Mixture-of-Experts (MoE) and Mamba-Transformer architecture, it delivers strong multi-step reasoning, high token throughput, stable latency with predictable cost, and efficient deployment for agent-based systems. Designed for real-world AI systems where reasoning can generate significantly more tokens per prompt, Nemotron Nano reduces compute cost while maintaining strong reasoning quality.",
 			"max_tokens": 262144,
 			"pricing":
 			{

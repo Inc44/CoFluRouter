@@ -4,6 +4,56 @@
 	{
 		"bos_token": null,
 		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1773163054,
+	"display_name": "Kokoro 82M",
+	"id": "hexgrad/Kokoro-82M",
+	"license": "apache2",
+	"link": "https://huggingface.co/hexgrad/Kokoro-82M",
+	"object": "model",
+	"organization": "Hexgrad",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 4,
+		"output": 0
+	},
+	"running": false,
+	"type": "audio"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1772535344,
+	"display_name": "Gemini 3.1 Flash Image (Nano Banana 2)",
+	"id": "google/flash-image-3.1",
+	"object": "model",
+	"organization": "Google",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
 		"eos_token": "<|endoftext|>",
 		"stop": ["<|endoftext|>"]
 	},
@@ -498,7 +548,7 @@
 		"stop": []
 	},
 	"created": 1763662095,
-	"display_name": "Gemini 3 (Nano Banana 2 Pro)",
+	"display_name": "Gemini 3 (Nano Banana Pro)",
 	"id": "google/gemini-3-pro-image",
 	"object": "model",
 	"organization": "Google",
@@ -1692,32 +1742,6 @@
 {
 	"config":
 	{
-		"bos_token": null,
-		"chat_template": null,
-		"eos_token": null,
-		"stop": []
-	},
-	"created": 1758585307,
-	"display_name": "Kokoro 82M",
-	"id": "hexgrad/Kokoro-82M",
-	"license": "apache2",
-	"link": "https://huggingface.co/hexgrad/Kokoro-82M",
-	"object": "model",
-	"organization": "Hexgrad",
-	"pricing":
-	{
-		"base": 0,
-		"finetune": 0,
-		"hourly": 0,
-		"input": 0.27,
-		"output": 0.85
-	},
-	"running": false,
-	"type": "audio"
-},
-{
-	"config":
-	{
 		"bos_token": "<s>",
 		"chat_template": null,
 		"eos_token": "<SPECIAL_12>",
@@ -1898,8 +1922,8 @@
 		"base": 0,
 		"finetune": 0,
 		"hourly": 0,
-		"input": 0.27,
-		"output": 0.85
+		"input": 15,
+		"output": 0
 	},
 	"running": false,
 	"type": "audio"
