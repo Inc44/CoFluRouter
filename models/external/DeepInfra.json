@@ -1020,9 +1020,9 @@
 		"id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
 		"metadata":
 		{
-			"context_length": 131072,
+			"context_length": 262144,
 			"description": "Over the past few months, we have observed increasingly clear trends toward scaling both total parameters and context lengths in the pursuit of more powerful and agentic artificial intelligence (AI). We are excited to share our latest advancements in addressing these demands, centered on improving scaling efficiency through innovative model architecture. We call this next-generation foundation models Qwen3-Next.",
-			"max_tokens": 131072,
+			"max_tokens": 262144,
 			"pricing":
 			{
 				"input_tokens": 0.09,
@@ -3336,6 +3336,15 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "nvidia/Nemotron-4-340B-Instruct"
+	},
+	{
+		"created": 0,
+		"id": "nvidia/llama-nemotron-embed-vl-1b-v2",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/llama-nemotron-embed-vl-1b-v2"
 	},
 	{
 		"created": 0,

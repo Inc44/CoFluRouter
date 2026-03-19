@@ -4,6 +4,264 @@
 	{
 		"bos_token": null,
 		"chat_template": null,
+		"eos_token": "<|im_end|>",
+		"stop": []
+	},
+	"context_length": 262144,
+	"created": 1773924376,
+	"display_name": "Qwen3.5 9B",
+	"id": "Qwen/Qwen3.5-9B",
+	"link": "https://huggingface.co/api/models/togethercomputer/Qwen3.5-9B",
+	"object": "model",
+	"organization": "Qwen",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.1,
+		"output": 0.15
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "<|begin_of_text|>",
+		"chat_template": "{{- bos_token }}\n{%- if custom_tools is defined %}\n    {%- set tools = custom_tools %}\n{%- endif %}\n{%- if not tools_in_user_message is defined %}\n    {%- set tools_in_user_message = true %}\n{%- endif %}\n{%- if not date_string is defined %}\n    {%- set date_string = \"26 Jul 2024\" %}\n{%- endif %}\n{%- if not tools is defined %}\n    {%- set tools = none %}\n{%- endif %}\n\n{#- This block extracts the system message, so we can slot it into the right place. #}\n{%- if messages[0]['role'] == 'system' %}\n    {%- set system_message = messages[0]['content']|trim %}\n    {%- set messages = messages[1:] %}\n{%- else %}\n    {%- set system_message = \"\" %}\n{%- endif %}\n\n{#- System message + builtin tools #}\n{{- \"<|start_header_id|>system<|end_header_id|>\\n\\n\" }}\n{%- if builtin_tools is defined or tools is not none %}\n    {{- \"Environment: ipython\\n\" }}\n{%- endif %}\n{%- if builtin_tools is defined %}\n    {{- \"Tools: \" + builtin_tools | reject('equalto', 'code_interpreter') | join(\", \") + \"\\n\\n\"}}\n{%- endif %}\n{{- \"Cutting Knowledge Date: December 2023\\n\" }}\n{{- \"Today Date: \" + date_string + \"\\n\\n\" }}\n{%- if tools is not none and not tools_in_user_message %}\n    {{- \"You have access to the following functions. To call a function, please respond with JSON for a function call.\" }}\n    {{- 'Respond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.' }}\n    {{- \"Do not use variables.\\n\\n\" }}\n    {%- for t in tools %}\n        {{- t | tojson(indent=4) }}\n        {{- \"\\n\\n\" }}\n    {%- endfor %}\n{%- endif %}\n{{- system_message }}\n{{- \"<|eot_id|>\" }}\n\n{#- Custom tools are passed in a user message with some extra guidance #}\n{%- if tools_in_user_message and not tools is none %}\n    {#- Extract the first user message so we can plug it in here #}\n    {%- if messages | length != 0 %}\n        {%- set first_user_message = messages[0]['content']|trim %}\n        {%- set messages = messages[1:] %}\n    {%- else %}\n        {{- raise_exception(\"Cannot put tools in the first user message when there's no first user message!\") }}\n{%- endif %}\n    {{- '<|start_header_id|>user<|end_header_id|>\\n\\n' -}}\n    {{- \"Given the following functions, please respond with a JSON for a function call \" }}\n    {{- \"with its proper arguments that best answers the given prompt.\\n\\n\" }}\n    {{- 'Respond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.' }}\n    {{- \"Do not use variables.\\n\\n\" }}\n    {%- for t in tools %}\n        {{- t | tojson(indent=4) }}\n        {{- \"\\n\\n\" }}\n    {%- endfor %}\n    {{- first_user_message + \"<|eot_id|>\"}}\n{%- endif %}\n\n{%- for message in messages %}\n    {%- if not (message.role == 'ipython' or message.role == 'tool' or 'tool_calls' in message) %}\n        {{- '<|start_header_id|>' + message['role'] + '<|end_header_id|>\\n\\n'+ message['content'] | trim + '<|eot_id|>' }}\n    {%- elif 'tool_calls' in message %}\n        {%- if not message.tool_calls|length == 1 %}\n            {{- raise_exception(\"This model only supports single tool-calls at once!\") }}\n        {%- endif %}\n        {%- set tool_call = message.tool_calls[0].function %}\n        {%- if builtin_tools is defined and tool_call.name in builtin_tools %}\n            {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' -}}\n            {{- \"<|python_tag|>\" + tool_call.name + \".call(\" }}\n            {%- for arg_name, arg_val in tool_call.arguments | items %}\n                {{- arg_name + '=\"' + arg_val + '\"' }}\n                {%- if not loop.last %}\n                    {{- \", \" }}\n                {%- endif %}\n                {%- endfor %}\n            {{- \")\" }}\n        {%- else  %}\n            {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' -}}\n            {{- '{\"name\": \"' + tool_call.name + '\", ' }}\n            {{- '\"parameters\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- \"}\" }}\n        {%- endif %}\n        {%- if builtin_tools is defined %}\n            {#- This means we're in ipython mode #}\n            {{- \"<|eom_id|>\" }}\n        {%- else %}\n            {{- \"<|eot_id|>\" }}\n        {%- endif %}\n    {%- elif message.role == \"tool\" or message.role == \"ipython\" %}\n        {{- \"<|start_header_id|>ipython<|end_header_id|>\\n\\n\" }}\n        {%- if message.content is mapping or message.content is iterable %}\n            {{- message.content | tojson }}\n        {%- else %}\n            {{- message.content }}\n        {%- endif %}\n        {{- \"<|eot_id|>\" }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' }}\n{%- endif %}\n",
+		"eos_token": "<|eot_id|>",
+		"stop": ["<|eot_id|>", "<|eom_id|>"]
+	},
+	"context_length": 131072,
+	"created": 1773877078,
+	"display_name": "Meta Llama 3.3 70B Instruct Turbo",
+	"id": "meta-llama/Llama-3.3-70B-Instruct-Turbo-test",
+	"license": "Llama-3.3 (Other)",
+	"link": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+	"object": "model",
+	"organization": "Meta",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.88,
+		"output": 0.88
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "<|endoftext|>",
+		"chat_template": null,
+		"eos_token": "<|endoftext|>",
+		"stop": ["<|endoftext|>"]
+	},
+	"context_length": 448,
+	"created": 1773697950,
+	"display_name": "Nvidia Parakeet TDT 0.6B V3",
+	"id": "nvidia/parakeet-tdt-0.6b-v3",
+	"link": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+	"object": "model",
+	"organization": "Nvidia",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "transcribe"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 0,
+	"created": 1773696454,
+	"display_name": "Cartesia Sonic",
+	"id": "cartesia/sonic",
+	"link": "https://www.cartesia.ai",
+	"object": "model",
+	"organization": "Cartesia",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 65,
+		"output": 0
+	},
+	"running": false,
+	"type": "audio"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 0,
+	"created": 1773696427,
+	"display_name": "Cartesia Sonic 3",
+	"id": "cartesia/sonic-3",
+	"link": "https://www.cartesia.ai",
+	"object": "model",
+	"organization": "Cartesia",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 65,
+		"output": 0
+	},
+	"running": false,
+	"type": "audio"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"context_length": 0,
+	"created": 1773696316,
+	"display_name": "Cartesia Sonic 2",
+	"id": "cartesia/sonic-2",
+	"link": "https://www.cartesia.ai",
+	"object": "model",
+	"organization": "Cartesia",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 65,
+		"output": 0
+	},
+	"running": false,
+	"type": "audio"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": "<|endoftext|>",
+		"stop": ["<|endoftext|>"]
+	},
+	"context_length": 202752,
+	"created": 1773638117,
+	"display_name": "GLM-5-FP4",
+	"id": "zai-org/GLM-5",
+	"link": "https://huggingface.co/api/models/togethercomputer/GLM-5-FP4",
+	"object": "model",
+	"organization": "zai-org",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 1,
+		"output": 3.2
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": "[BOS]",
+		"chat_template": null,
+		"eos_token": "[EOS]",
+		"stop": ["[EOS]"]
+	},
+	"context_length": 262144,
+	"created": 1773358632,
+	"display_name": "Kimi K2.5",
+	"id": "moonshotai/Kimi-K2.5",
+	"license": "other modified-mit",
+	"link": "https://huggingface.co/api/models/moonshotai/Kimi-K2.5",
+	"object": "model",
+	"organization": "Moonshot AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0.5,
+		"output": 2.8
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1773318281,
+	"display_name": "Qwen Image 2.0 Pro",
+	"id": "Qwen/Qwen-Image-2.0-Pro",
+	"object": "model",
+	"organization": "Qwen",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1773251084,
+	"display_name": "Qwen Image 2.0",
+	"id": "Qwen/Qwen-Image-2.0",
+	"object": "model",
+	"organization": "Qwen",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "image"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
 		"eos_token": null,
 		"stop": []
 	},
@@ -48,32 +306,6 @@
 	},
 	"running": false,
 	"type": "image"
-},
-{
-	"config":
-	{
-		"bos_token": null,
-		"chat_template": null,
-		"eos_token": "<|endoftext|>",
-		"stop": ["<|endoftext|>"]
-	},
-	"context_length": 202752,
-	"created": 1772171373,
-	"display_name": "GLM-5-FP4",
-	"id": "zai-org/GLM-5",
-	"link": "https://huggingface.co/api/models/togethercomputer/GLM-5-FP4",
-	"object": "model",
-	"organization": "zai-org",
-	"pricing":
-	{
-		"base": 0,
-		"finetune": 0,
-		"hourly": 0,
-		"input": 1,
-		"output": 3.2
-	},
-	"running": false,
-	"type": "chat"
 },
 {
 	"config":
@@ -251,33 +483,6 @@
 	},
 	"running": false,
 	"type": "image"
-},
-{
-	"config":
-	{
-		"bos_token": "[BOS]",
-		"chat_template": null,
-		"eos_token": "[EOS]",
-		"stop": ["[EOS]"]
-	},
-	"context_length": 262144,
-	"created": 1769484937,
-	"display_name": "Kimi K2.5",
-	"id": "moonshotai/Kimi-K2.5",
-	"license": "other modified-mit",
-	"link": "https://huggingface.co/api/models/moonshotai/Kimi-K2.5",
-	"object": "model",
-	"organization": "Moonshot AI",
-	"pricing":
-	{
-		"base": 0,
-		"finetune": 0,
-		"hourly": 0,
-		"input": 0.5,
-		"output": 2.8
-	},
-	"running": false,
-	"type": "chat"
 },
 {
 	"config":
@@ -705,7 +910,7 @@
 	},
 	"context_length": 202752,
 	"created": 1761236990,
-	"display_name": "Glm 4.6 Fp8",
+	"display_name": "GLM 4.6 Fp8",
 	"id": "zai-org/GLM-4.6",
 	"license": "mit",
 	"link": "https://huggingface.co/api/models/zai-org/GLM-4.6-FP8",
@@ -2332,6 +2537,34 @@
 {
 	"config":
 	{
+		"bos_token": "<｜begin▁of▁sentence｜>",
+		"chat_template": "{%- for message in messages -%}{%- if message.role == 'system' -%}{{- message.content -}}{%- endif -%}{%- if message.role == 'user' -%}{{- message.content -}}{%- endif -%}{%- if message.role == 'assistant' -%}{{- message.content -}}{%- endif -%}{%- if message.role == 'tool' -%}{{- message.content -}}{%- endif -%}{%- endfor -%}",
+		"eos_token": "<｜end▁of▁sentence｜>",
+		"max_output_length": 12288,
+		"stop": ["<｜end▁of▁sentence｜>"]
+	},
+	"context_length": 163840,
+	"created": 1752475276,
+	"display_name": "DeepSeek R1 0528",
+	"id": "deepseek-ai/DeepSeek-R1-0528",
+	"license": "mit",
+	"link": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1-0528",
+	"object": "model",
+	"organization": "Deepseek",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 3,
+		"output": 7
+	},
+	"running": false,
+	"type": "chat"
+},
+{
+	"config":
+	{
 		"bos_token": "[BOS]",
 		"chat_template": null,
 		"eos_token": "[EOS]",
@@ -3310,7 +3543,7 @@
 	"license": "apache-2.0",
 	"link": "https://huggingface.co/api/models/Qwen/Qwen2.5-14B-Instruct",
 	"object": "model",
-	"organization": "",
+	"organization": "Qwen",
 	"pricing":
 	{
 		"base": 0,
@@ -4285,58 +4518,6 @@
 	"config":
 	{
 		"bos_token": null,
-		"chat_template": null,
-		"eos_token": null,
-		"stop": []
-	},
-	"context_length": 0,
-	"created": 0,
-	"display_name": "Cartesia Sonic",
-	"id": "cartesia/sonic",
-	"link": "https://www.cartesia.ai",
-	"object": "model",
-	"organization": "Together",
-	"pricing":
-	{
-		"base": 0,
-		"finetune": 0,
-		"hourly": 0,
-		"input": 65,
-		"output": 0
-	},
-	"running": false,
-	"type": "audio"
-},
-{
-	"config":
-	{
-		"bos_token": null,
-		"chat_template": null,
-		"eos_token": null,
-		"stop": []
-	},
-	"context_length": 0,
-	"created": 0,
-	"display_name": "Cartesia Sonic 2",
-	"id": "cartesia/sonic-2",
-	"link": "https://www.cartesia.ai",
-	"object": "model",
-	"organization": "Together",
-	"pricing":
-	{
-		"base": 0,
-		"finetune": 0,
-		"hourly": 0,
-		"input": 65,
-		"output": 0
-	},
-	"running": false,
-	"type": "audio"
-},
-{
-	"config":
-	{
-		"bos_token": null,
 		"chat_template": "{{ '[INST] Task: Check if there is unsafe content in \\'' }}{% if messages[messages.length-1]['role'] == 'user' %}{{ 'User' }}{% else %}{{ 'Agent' }}{% endif %}{{ '\\' messages in conversations according our safety policy with the below categories.\n\n<BEGIN UNSAFE CONTENT CATEGORIES>\nO1: Violence and Hate. \nShould not\n - Help people plan or engage in violence.\n - Encourage people to engage in violence.\n - Express hateful, derogatory, or demeaning sentiments against people based on sensitive personal characteristics like their race, color, religion, national origin, sexual orientation, gender, gender identity, or disability.\n - Encourage discrimination against people based on those characteristics and should not use slurs or create insults based on those characteristics.\nCan\n - Provide information on violence and discrimination.\n - Discuss the topics of hate and violence, and can discuss historical events involving violence.\nO2: Sexual Content. \nShould not\n - Engage in sexually explicit (i.e., erotic) conversations and should not encourage people to engage in sexual activities.\nCan\n - Discuss topics related to sexuality and sexual education.\n - Provide general information regarding sexual activities.\n - Provide guidance on topics related to sexual health.\nO3: Criminal Planning. \nShould not\n - Help people plan or engage in criminal activities like theft, kidnapping, or financial crimes, especially when the person indicates that they may act on the information provided to them.\n - Encourage people to engage in criminal activities or condone criminal behavior.\nCan\n - Help people understand how crimes are committed, provided that the response is not so detailed that it could be used to provide a roadmap for future crimes.\n - Help people understand how systems work that are used to prevent crimes, provided those descriptions do not provide detailed information on how to defeat those systems.\nO4: Guns and Illegal Weapons. \nShould not\n - Assist in the planning or execution of firearm or illegal weapons crimes, especially when the person indicates that they may act on the information provided to them.\n - Encourage people to engage in firearm or illegal weapons crimes or condone such behavior.\nCan\n - Discuss firearms and the arguments for and against firearm ownership.\nO5: Regulated or Controlled Substances. \nShould not\n - Encourage or assist people in the trafficking, consumption, or use of regulated or controlled substances, including but not limited to illegal drugs, tobacco, alcohol, and cannabis.\n - Assist or encourage people to create such substances when it is illegal to do so.\nCan\n - Discuss the use of regulated or controlled substances, and can provide general information on those substances (ex: what their chemical composition is and what their effects are).\n - Provide information on how those substances are manufactured, provided that the information is not so detailed as to provide step-by-step instructions for their creation.\nO6: Self-Harm. \nShould not\n - Encourage people to harm themselves.\n - Romanticize or condone self-harm or suicide.\n - Provide information regarding the methods of suicide or self-harm.\n - Provide any information or advice, other than information regarding appropriate health resources, to people who express or imply that they wish to harm themselves.\nCan\n - Provide general information regarding self-harm and suicide (ex: statistics, the mental health challenges faced by those who take these actions).\nShould\n - Provide information regarding appropriate health resources to people who imply or express the desire to harm themselves.\n<END UNSAFE CONTENT CATEGORIES>\n\n<BEGIN CONVERSATION>\n\n' }}{% for message in messages %}{% if message['role'] == 'user' %}{{ 'User: ' + message['content'] + '\n\n' }}{% else %}{{ 'Agent: ' + message['content'] + '\n\n' }}{% endif %}{% endfor %}{{ '<END CONVERSATION>\n\nProvide your safety assessment for '}}{% if messages[messages.length-1]['role'] == 'user' %}{{ 'User' }}{% else %}{{ 'Agent' }}{% endif %}{{' in the above conversation:\n - First line must read \\'safe\\' or \\'unsafe\\'.\n - If unsafe, a second line must include a comma-separated list of violated categories. [/INST]' }}",
 		"eos_token": null,
 		"stop": []
@@ -4676,26 +4857,3193 @@
 {
 	"config":
 	{
-		"bos_token": null,
+		"bos_token": "<|startoftext|>",
 		"chat_template": null,
-		"eos_token": null,
-		"stop": []
+		"eos_token": "<|im_end|>",
+		"stop": ["<|im_end|>"]
 	},
-	"context_length": 0,
+	"context_length": 32768,
 	"created": 0,
-	"display_name": "Cartesia Sonic 3",
-	"id": "cartesia/sonic-3",
-	"link": "https://www.cartesia.ai",
+	"display_name": "LFM2-24B-A2B",
+	"id": "LiquidAI/LFM2-24B-A2B",
 	"object": "model",
-	"organization": "Together",
+	"organization": "Togethercomputer",
 	"pricing":
 	{
 		"base": 0,
 		"finetune": 0,
 		"hourly": 0,
-		"input": 65,
-		"output": 0
+		"input": 0.030000000000000002,
+		"output": 0.12000000000000001
 	},
 	"running": false,
-	"type": "audio"
+	"type": "chat"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "nim/nvidia/llama-3.3-nemotron-super-49b-v1",
+	"id": "nim/nvidia/llama-3.3-nemotron-super-49b-v1",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepseek V3.1 Base",
+	"id": "deepseek-ai/DeepSeek-V3.1-Base",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma-2 Instruct (27B)",
+	"id": "google/gemma-2-27b-it",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "GLM OCR",
+	"id": "zai-org/GLM-OCR",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepseek Coder 33B Instruct",
+	"id": "deepseek-ai/deepseek-coder-33b-instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2.5 14B",
+	"id": "Qwen/Qwen2.5-14B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Mixtral 8X22b Instruct V0.1",
+	"id": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 30B A3b Base",
+	"id": "Qwen/Qwen3-30B-A3B-Base",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2.5 7B",
+	"id": "Qwen/Qwen2.5-7B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Devstral Small 2505",
+	"id": "mistralai/Devstral-Small-2505",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2.5 1.5B",
+	"id": "Qwen/Qwen2.5-1.5B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "nim/meta/llama-3.2-11b-vision-instruct",
+	"id": "nim/meta/llama-3.2-11b-vision-instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "nim/meta/llama-3.3-70b-instruct",
+	"id": "nim/meta/llama-3.3-70b-instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Larp Qwen14b 250805",
+	"id": "togethercomputer/Larp-Qwen14b-250805",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3.5 9B Fp8",
+	"id": "Qwen/Qwen3.5-9B-FP8",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "nim/meta/llama-3.1-70b-instruct",
+	"id": "nim/meta/llama-3.1-70b-instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "sarvamai/sarvam-translate",
+	"id": "sarvamai/sarvam-translate",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Llama 3.1 405B",
+	"id": "meta-llama/Llama-3.1-405B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "nim/meta/llama-3.2-90b-vision-instruct",
+	"id": "nim/meta/llama-3.2-90b-vision-instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 14B Base",
+	"id": "Qwen/Qwen3-14B-Base",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Mixtral 8X7b V0.1",
+	"id": "mistralai/Mixtral-8x7B-v0.1",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2.5 72B",
+	"id": "Qwen/Qwen2.5-72B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Kimi K2.5 Fp4",
+	"id": "moonshotai/Kimi-K2.5-fp4",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Llama 3.1 8B Instruct",
+	"id": "meta-llama/Llama-3.1-8B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma 3 4b it",
+	"id": "google/gemma-3-4b-it",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma 3 270M It",
+	"id": "google/gemma-3-270m-it",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "nim/nv-mistralai/mistral-nemo-12b-instruct",
+	"id": "nim/nv-mistralai/mistral-nemo-12b-instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen QwQ-32B-Preview",
+	"id": "Qwen/QwQ-32B-Preview",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Mxbai Rerank Large V2",
+	"id": "mixedbread-ai/mxbai-rerank-large-v2",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Meta Llama 3 8B Instruct Reference",
+	"id": "meta-llama/Llama-3-8b-chat-hf",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "nim/nvidia/llama-3.1-nemotron-70b-instruct",
+	"id": "nim/nvidia/llama-3.1-nemotron-70b-instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "DeepSeek R1 Distill Qwen 7B",
+	"id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Meta Llama 3.2 3B Instruct",
+	"id": "meta-llama/Llama-3.2-3B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "",
+	"id": "Qwen/Qwen3-4B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "EssentialAI Rnj-1 Instruct",
+	"id": "togethercomputer/EssentialAI-RNJ-1-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "MiniMax M2.5 FP4",
+	"id": "MiniMaxAI/MiniMax-M2.5-FP4",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "GLM 5 Fp4",
+	"id": "zai-org/GLM-5-FP4",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2.5 7B Instruct",
+	"id": "Qwen/Qwen2.5-7B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2 72B Instruct",
+	"id": "Qwen/Qwen2-72B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "MiniMax M2",
+	"id": "MiniMaxAI/MiniMax-M2",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Llama 4 Maverick 17B 128E",
+	"id": "meta-llama/Llama-4-Maverick-17B-128E",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3.5-397B-A17B FP4",
+	"id": "Qwen/Qwen3.5-397B-A17B-FP4",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "10_14Dpo",
+	"id": "rica40325/10_14dpo",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Meta Llama 3.1 8B",
+	"id": "meta-llama/Meta-Llama-3.1-8B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma 2B It",
+	"id": "google/gemma-2b-it",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Cogito V1 Preview Llama 70B",
+	"id": "deepcogito/cogito-v1-preview-llama-70B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 30B A3b",
+	"id": "Qwen/Qwen3-30B-A3B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Nltpt Guard W8a16",
+	"id": "togethercomputer/nltpt-guard-w8a16",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Minimax M2.1",
+	"id": "MiniMaxAI/MiniMax-M2.1",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepseek V3.2",
+	"id": "deepseek-ai/DeepSeek-V3.2",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepseek V3 0324",
+	"id": "deepseek-ai/DeepSeek-V3-0324",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3-VL-235B-A22B-Instruct-FP8",
+	"id": "Qwen/Qwen3-VL-235B-A22B-Instruct-FP8",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2.5 32B",
+	"id": "Qwen/Qwen2.5-32B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepseek OCR 2",
+	"id": "deepseek-ai/DeepSeek-OCR-2",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepgram Flux",
+	"id": "deepgram/flux",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma 3 4B Pt",
+	"id": "google/gemma-3-4b-pt",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2.5 32B Instruct",
+	"id": "Qwen/Qwen2.5-32B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 32B Fp8",
+	"id": "Qwen/Qwen3-32B-FP8",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepcogito Cogito V2 Preview Llama 109B Moe",
+	"id": "togethercomputer/deepcogito-cogito-v2-preview-llama-109B-MoE",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 8B Lora",
+	"id": "Qwen/Qwen3-8B-Lora",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Llama 4 Scout (17Bx16E)",
+	"id": "meta-llama/Llama-4-Scout-17B-16E",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma 3 27B It",
+	"id": "google/gemma-3-27b-it",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Rime Labs Arcana v3",
+	"id": "rime-labs/rime-arcana-v3",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 235B A22B FP8",
+	"id": "Qwen/Qwen3-235B-A22B-fp8",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "nim/mistralai/mixtral-8x22b-instruct-v01",
+	"id": "nim/mistralai/mixtral-8x22b-instruct-v01",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Facebook CWM",
+	"id": "facebook/cwm",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Llama 3.1 Nemotron 70B Instruct HF",
+	"id": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Cogito V1 Preview Qwen 14B",
+	"id": "deepcogito/cogito-v1-preview-qwen-14B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen 2 (1.5B)",
+	"id": "Qwen/Qwen2-1.5B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma 3 1B Pt",
+	"id": "google/gemma-3-1b-pt",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepseek V3.1 Terminus",
+	"id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2.5 3B",
+	"id": "Qwen/Qwen2.5-3B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 30B A3b Instruct 2507",
+	"id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Cogito V1 Preview Llama 8B",
+	"id": "deepcogito/cogito-v1-preview-llama-8B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Code Llama (7B)",
+	"id": "codellama/CodeLlama-7b-hf",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "DeepSeek R1 (Original)",
+	"id": "deepseek-ai/DeepSeek-R1-Original",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Molmo 7B D 0924",
+	"id": "allenai/Molmo-7B-D-0924",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 32B",
+	"id": "Qwen/Qwen3-32B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepgram Aura 2",
+	"id": "deepgram/aura-2",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Meta Llama 3.2 3B",
+	"id": "meta-llama/Llama-3.2-3B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2.5 3B Instruct",
+	"id": "Qwen/Qwen2.5-3B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepseek V3",
+	"id": "deepseek-ai/DeepSeek-V3-DE",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepseek V3.2 Exp",
+	"id": "deepseek-ai/DeepSeek-V3.2-Exp",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Rime Labs Mist v2",
+	"id": "rime-labs/rime-mist-v2",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2-VL (72B) Instruct",
+	"id": "Qwen/Qwen2-VL-72B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 Vl 235B A22b Thinking Fp8",
+	"id": "Qwen/Qwen3-VL-235B-A22B-Thinking-FP8",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma 3 1b it",
+	"id": "google/gemma-3-1b-it",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Meta Llama 3 8B",
+	"id": "meta-llama/Meta-Llama-3-8B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 Coder 30B A3b Instruct",
+	"id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Llama 4 Scout 17B 16E Instruct",
+	"id": "meta-llama/Llama-4-Scout-17B-16E-Instruct-64k",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Meta Llama 3.1 8B Instruct Reference",
+	"id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Cogito V1 Preview Llama 3B",
+	"id": "deepcogito/cogito-v1-preview-llama-3B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepcoder 14B Preview",
+	"id": "togethercomputer/DeepCoder-14B-Preview",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "nim/mistralai/mixtral-8x7b-instruct-v01",
+	"id": "nim/mistralai/mixtral-8x7b-instruct-v01",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3.5 35B A3b",
+	"id": "Qwen/Qwen3.5-35B-A3B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Minimax M1 40K",
+	"id": "MiniMaxAI/MiniMax-M1-40k",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Nvidia Nemotron 3 Super 120B A12b Fp8",
+	"id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3.5 27B",
+	"id": "Qwen/Qwen3.5-27B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Llama 3.1 70B",
+	"id": "meta-llama/Meta-Llama-3.1-70B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "GLM 4.5V",
+	"id": "zai-org/GLM-4.5V",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen 2 Instruct (1.5B)",
+	"id": "Qwen/Qwen2-1.5B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 1.7B",
+	"id": "Qwen/Qwen3-1.7B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Rime Labs Arcana v3 Turbo",
+	"id": "rime-labs/rime-arcana-v3-turbo",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Llama 3.2 1B",
+	"id": "meta-llama/Llama-3.2-1B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 14B",
+	"id": "Qwen/Qwen3-14B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 4B Base",
+	"id": "Qwen/Qwen3-4B-Base",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepseek V3 Base",
+	"id": "deepseek-ai/DeepSeek-V3-Base",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma 3 27B Pt",
+	"id": "google/gemma-3-27b-pt",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Magistral Small 2506",
+	"id": "mistralai/Magistral-Small-2506",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "DeepSeek R1 Distill Qwen 1.5B",
+	"id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "meta-llama/Llama-2-7b-chat-hf",
+	"id": "meta-llama/Llama-2-7b-chat-hf",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Nvidia Nemotron 3 Nano 30B A3b Bf16",
+	"id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Meta Llama 3.1 8B Instruct Awq Int4",
+	"id": "togethercomputer/meta-llama-3.1-8B-Instruct-AWQ-INT4",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "nim/meta/llama-3.1-8b-instruct",
+	"id": "nim/meta/llama-3.1-8b-instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 1.7B Base",
+	"id": "Qwen/Qwen3-1.7B-Base",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 0.6B",
+	"id": "Qwen/Qwen3-0.6B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen 2 (7B)",
+	"id": "Qwen/Qwen2-7B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Rime Labs Arcana v2",
+	"id": "rime-labs/rime-arcana-v2",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Nous Hermes 2 Mixtral 8X7B Dpo",
+	"id": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Mistral 7B v0.1",
+	"id": "mistralai/Mistral-7B-v0.1",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 Vl 235B A22b Instruct",
+	"id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 Next 80B A3b Instruct Fp8",
+	"id": "Qwen/Qwen3-Next-80B-A3B-Instruct-FP8",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Sarvam M",
+	"id": "salesforce/sarvam-m",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepcoder 14B Preview",
+	"id": "agentica-org/DeepCoder-14B-Preview",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "meta-llama/Llama-3.3-70B-Instruct",
+	"id": "meta-llama/Llama-3.3-70B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Cogito V1 Preview Qwen 32B",
+	"id": "deepcogito/cogito-v1-preview-qwen-32B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Meta Llama 3.1 70B Instruct",
+	"id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepgram Nova 3",
+	"id": "deepgram/nova-3-en",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen2.5 1.5B Instruct",
+	"id": "Qwen/Qwen2.5-1.5B-Instruct",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma 2 9B It",
+	"id": "google/gemma-2-9b-it",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen 2 (72B)",
+	"id": "Qwen/Qwen2-72B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 8B",
+	"id": "Qwen/Qwen3-8B",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Salesforce Textevalv3 7B Qwen",
+	"id": "salesforce/texteval-v3-7b-qwen-b",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Deepgram Nova 3 Multilingual",
+	"id": "deepgram/nova-3-multi",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Trinity Large Preview",
+	"id": "arcee-ai/trinity-large-preview",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Minimax M1 80K",
+	"id": "MiniMaxAI/MiniMax-M1-80k",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Atlas V3 Spotlight",
+	"id": "smarterdx/atlas-v3-spotlight",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Medgemma 27B Text It",
+	"id": "google/medgemma-27b-text-it",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 8B Base",
+	"id": "Qwen/Qwen3-8B-Base",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Sarvam M",
+	"id": "sarvamai/sarvam-m",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Gemma 3 12B It",
+	"id": "google/gemma-3-12b-it",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Minimax Speech 2.6 Turbo",
+	"id": "minimax/speech-2.6-turbo",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Qwen3 0.6B Base",
+	"id": "Qwen/Qwen3-0.6B-Base",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 0,
+	"display_name": "Cogito V1 Preview Llama 70B Turbo",
+	"id": "deepcogito/cogito-v1-preview-llama-70B-Turbo",
+	"object": "model",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false
 }]

@@ -233,6 +233,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -308,6 +309,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -346,6 +348,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -421,6 +424,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -642,6 +646,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -680,6 +685,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -719,6 +725,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -832,6 +839,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -945,6 +953,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -984,6 +993,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -1022,6 +1032,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -1134,6 +1145,45 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-32B",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "ac059e33-eb27-541c-b9a9-24b214036475",
+		"confidential_compute": true,
+		"context_length": 40960,
+		"created": 0,
+		"id": "Qwen/Qwen3-32B-TEE",
+		"input_modalities": ["text"],
+		"max_model_len": 40960,
+		"max_output_length": 40960,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -1355,6 +1405,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -1393,6 +1444,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -1468,6 +1520,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -1543,6 +1596,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -1578,6 +1632,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -1862,6 +1917,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -2117,6 +2173,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -2156,6 +2213,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -2374,6 +2432,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -2412,6 +2471,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -2489,6 +2549,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -2563,6 +2624,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -2745,6 +2807,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -2819,6 +2882,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -3039,6 +3103,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -3553,6 +3618,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -3773,6 +3839,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -3812,6 +3879,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -3851,6 +3919,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -4075,6 +4144,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -4299,6 +4369,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -4330,6 +4401,7 @@
 		"object": "model",
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -4365,6 +4437,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -4404,6 +4477,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -4479,6 +4553,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -4518,6 +4593,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -4556,6 +4632,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -4580,6 +4657,38 @@
 		"root": "unsloth/gemma-3-4b-it",
 		"supported_features": ["json_mode", "structured_outputs"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "c5423c65-44aa-5dd9-80e2-12c6874b20b9",
+		"confidential_compute": false,
+		"created": 0,
+		"id": "voidai-research/umbra",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"parent": null,
+		"premium": false,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "voidai-research/umbra"
 	},
 	{
 		"chute_id": null,
@@ -4929,6 +5038,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -4968,6 +5078,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -5043,6 +5154,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -5082,6 +5194,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -5160,6 +5273,7 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -5198,6 +5312,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
@@ -5236,6 +5351,7 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
+		"premium": false,
 		"price":
 		{
 			"input":
