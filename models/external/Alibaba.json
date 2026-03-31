@@ -1,6 +1,18 @@
 {
 	"data": [
 	{
+		"created": 1774258667,
+		"id": "deepseek-v3.2",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1773991661,
+		"id": "qwen3-livetranslate-flash-2025-12-01",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1773717249,
 		"id": "qwen3-vl-plus-2025-12-19",
 		"object": "model",
@@ -439,12 +451,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1764737154,
-		"id": "qwen3-livetranslate-flash-2025-12-01",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1764737072,
 		"id": "qwen3-livetranslate-flash",
 		"object": "model",
@@ -818,6 +824,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-133",
+	"last_id": "model-id-134",
 	"object": "list"
 }

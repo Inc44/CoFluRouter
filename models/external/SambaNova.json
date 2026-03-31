@@ -252,6 +252,20 @@
 		},
 		"sn_metadata":
 		{}
+	},
+	{
+		"context_length": 131072,
+		"id": "gemma-3-12b-it",
+		"max_completion_tokens": 131072,
+		"object": "model",
+		"owned_by": "no-reply@sambanova.ai",
+		"pricing":
+		{
+			"completion": "0.00000035",
+			"prompt": "0.00000020"
+		},
+		"sn_metadata":
+		{}
 	}],
 	"object": "list"
 }

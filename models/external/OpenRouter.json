@@ -3,6 +3,298 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Grok"
+		},
+		"canonical_slug": "x-ai/grok-4.20-multi-agent-20260309",
+		"context_length": 2000000,
+		"created": 1774979158,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Grok 4.20 Multi-Agent is a variant of xAI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.\n\nReasoning effort behavior:\n- low / medium: 4 agents\n- high / xhigh: 16 agents",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "x-ai/grok-4.20-multi-agent",
+		"knowledge_cutoff": "2025-09-01",
+		"name": "xAI: Grok 4.20 Multi-Agent",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000006",
+			"input_cache_read": "0.0000002",
+			"prompt": "0.000002",
+			"web_search": "0.005"
+		},
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 2000000,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Grok"
+		},
+		"canonical_slug": "x-ai/grok-4.20-20260309",
+		"context_length": 2000000,
+		"created": 1774979019,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Grok 4.20 is xAI's newest flagship model with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering consistently precise and truthful responses.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "x-ai/grok-4.20",
+		"knowledge_cutoff": "2025-09-01",
+		"name": "xAI: Grok 4.20",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000006",
+			"input_cache_read": "0.0000002",
+			"prompt": "0.000002",
+			"web_search": "0.005"
+		},
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 2000000,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text+audio",
+			"output_modalities": ["text", "audio"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "google/lyria-3-pro-preview-20260330",
+		"context_length": 1048576,
+		"created": 1774907286,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Full-length songs are priced at $0.08 per song. Lyria 3 is Google's family of music generation models, available through the Gemini API. With Lyria 3, you can generate high-quality, 48kHz stereo audio from text prompts or from images. These models deliver structural coherence, including vocals, timed lyrics, and full instrumental arrangements. Lyria 3 Pro can generate full-length songs with verses, choruses, bridges.",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/lyria-3-pro-preview",
+		"knowledge_cutoff": null,
+		"name": "Google: Lyria 3 Pro Preview",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["max_tokens", "response_format", "seed", "temperature", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text+audio",
+			"output_modalities": ["text", "audio"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "google/lyria-3-clip-preview-20260330",
+		"context_length": 1048576,
+		"created": 1774907255,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "30 second duration clips are priced at $0.04 per clip. Lyria 3 is Google's family of music generation models, available through the Gemini API. With Lyria 3, you can generate high-quality, 48kHz stereo audio from text prompts or from images. These models deliver structural coherence, including vocals, timed lyrics, and full instrumental arrangements. Lyria 3 Clip can generate short clips, loops, previews.",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/lyria-3-clip-preview",
+		"knowledge_cutoff": null,
+		"name": "Google: Lyria 3 Clip Preview",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["max_tokens", "response_format", "seed", "temperature", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3.6-plus-preview",
+		"context_length": 1000000,
+		"created": 1774891569,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": 0,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": null,
+			"top_p": 1
+		},
+		"description": "Qwen 3.6 Plus Preview is the next-generation evolution of the Qwen Plus series, featuring an advanced hybrid architecture that improves efficiency and scalability. It delivers stronger reasoning and more reliable agentic behavior compared to the 3.5 series. In benchmarks, it performs at or above leading state-of-the-art models. Designed as a flagship preview, it excels in agentic coding, front-end development, and complex problem-solving.\n\nNote: The model collects prompt and completion data that can be used to improve the model. ",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "qwen/qwen3.6-plus-preview:free",
+		"knowledge_cutoff": null,
+		"name": "Qwen: Qwen3.6 Plus Preview (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 32000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "kwaipilot/kat-coder-pro-v2-20260327",
+		"context_length": 256000,
+		"created": 1774649310,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "KAT-Coder-Pro V2 is the latest high-performance model in KwaiKAT’s KAT-Coder series, designed for complex enterprise-grade software engineering and SaaS integration. It builds on the agentic coding strengths of earlier versions, with a focus on large-scale production environments, multi-system coordination, and seamless integration across modern software stacks, while also supporting web aesthetics generation to produce production-grade landing pages and presentation decks.",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "kwaipilot/kat-coder-pro-v2",
+		"knowledge_cutoff": null,
+		"name": "Kwaipilot: KAT-Coder-Pro V2",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000012",
+			"input_cache_read": "0.00000006",
+			"prompt": "0.0000003"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 256000,
+			"is_moderated": false,
+			"max_completion_tokens": 80000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "rekaai/reka-edge-2603",
+		"context_length": 16384,
+		"created": 1774026965,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Reka Edge is an extremely efficient 7B multimodal vision-language model that accepts image/video+text inputs and generates text outputs. This model is optimized specifically to deliver industry-leading performance in image understanding, video analysis, object detection, and agentic tool-use.",
+		"expiration_date": null,
+		"hugging_face_id": "RekaAI/reka-edge-2603",
+		"id": "reka/reka-edge",
+		"knowledge_cutoff": null,
+		"name": "Reka Edge",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000001",
+			"prompt": "0.0000001"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 16384,
+			"is_moderated": false,
+			"max_completion_tokens": 16384
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "audio", "image", "video"],
 			"instruct_type": null,
 			"modality": "text+image+audio+video->text",
@@ -21,10 +313,11 @@
 			"top_k": null,
 			"top_p": 0.95
 		},
-		"description": "MiMo-V2-Omni is a frontier omni-modal model that natively processes image, video, and audio inputs within a unified architecture. It combines strong multimodal perception with agentic capability - visual grounding, multi-step planning, tool use, and code execution - making it well-suited for complex real-world tasks that span modalities. 256K context window.",
+		"description": "MiMo-V2-Omni is a frontier omni-modal model that natively processes image, video, and audio inputs within a unified architecture. It combines strong multimodal perception with agentic capability - visual grounding, multi-step planning, tool use, and code execution - making it well-suited for complex real-world tasks that span modalities, 256K context window.",
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "xiaomi/mimo-v2-omni",
+		"knowledge_cutoff": null,
 		"name": "Xiaomi: MiMo-V2-Omni",
 		"per_request_limits": null,
 		"pricing":
@@ -66,6 +359,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "xiaomi/mimo-v2-pro",
+		"knowledge_cutoff": null,
 		"name": "Xiaomi: MiMo-V2-Pro",
 		"per_request_limits": null,
 		"pricing":
@@ -107,6 +401,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "MiniMaxAI/MiniMax-M2.7",
 		"id": "minimax/minimax-m2.7",
+		"knowledge_cutoff": null,
 		"name": "MiniMax: MiniMax M2.7",
 		"per_request_limits": null,
 		"pricing":
@@ -115,7 +410,7 @@
 			"input_cache_read": "0.00000006",
 			"prompt": "0.0000003"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 204800,
@@ -148,6 +443,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.4-nano",
+		"knowledge_cutoff": "2025-08-31",
 		"name": "OpenAI: GPT-5.4 Nano",
 		"per_request_limits": null,
 		"pricing":
@@ -190,6 +486,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.4-mini",
+		"knowledge_cutoff": "2025-08-31",
 		"name": "OpenAI: GPT-5.4 Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -232,6 +529,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Mistral-Small-4-119B-2603",
 		"id": "mistralai/mistral-small-2603",
+		"knowledge_cutoff": null,
 		"name": "Mistral: Mistral Small 4",
 		"per_request_limits": null,
 		"pricing":
@@ -273,15 +571,16 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "z-ai/glm-5-turbo",
+		"knowledge_cutoff": null,
 		"name": "Z.ai: GLM 5 Turbo",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000032",
-			"input_cache_read": "0.000000192",
-			"prompt": "0.00000096"
+			"completion": "0.000004",
+			"input_cache_read": "0.00000024",
+			"prompt": "0.0000012"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 202752,
@@ -292,9 +591,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Grok"
 		},
@@ -314,6 +613,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-4.20-multi-agent-beta",
+		"knowledge_cutoff": null,
 		"name": "xAI: Grok 4.20 Multi-Agent Beta",
 		"per_request_limits": null,
 		"pricing":
@@ -356,6 +656,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-4.20-beta",
+		"knowledge_cutoff": null,
 		"name": "xAI: Grok 4.20 Beta",
 		"per_request_limits": null,
 		"pricing":
@@ -486,6 +787,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
 		"id": "nvidia/nemotron-3-super-120b-a12b:free",
+		"knowledge_cutoff": null,
 		"name": "NVIDIA: Nemotron 3 Super (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -526,12 +828,13 @@
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
 		"id": "nvidia/nemotron-3-super-120b-a12b",
+		"knowledge_cutoff": null,
 		"name": "NVIDIA: Nemotron 3 Super",
 		"per_request_limits": null,
 		"pricing":
 		{
 			"completion": "0.0000005",
-			"input_cache_read": "0.00000004",
+			"input_cache_read": "0.0000001",
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -567,6 +870,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "bytedance-seed/seed-2.0-lite",
+		"knowledge_cutoff": null,
 		"name": "ByteDance Seed: Seed-2.0-Lite",
 		"per_request_limits": null,
 		"pricing":
@@ -607,6 +911,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3.5-9B",
 		"id": "qwen/qwen3.5-9b",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3.5-9B",
 		"per_request_limits": null,
 		"pricing":
@@ -619,7 +924,7 @@
 		{
 			"context_length": 256000,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -647,6 +952,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.4-pro",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.4 Pro",
 		"per_request_limits": null,
 		"pricing":
@@ -688,6 +994,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.4",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.4",
 		"per_request_limits": null,
 		"pricing":
@@ -730,6 +1037,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "inception/mercury-2",
+		"knowledge_cutoff": null,
 		"name": "Inception: Mercury 2",
 		"per_request_limits": null,
 		"pricing":
@@ -771,6 +1079,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.3-chat",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.3 Chat",
 		"per_request_limits": null,
 		"pricing":
@@ -813,6 +1122,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-3.1-flash-lite-preview",
+		"knowledge_cutoff": null,
 		"name": "Google: Gemini 3.1 Flash Lite Preview",
 		"per_request_limits": null,
 		"pricing":
@@ -855,6 +1165,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "bytedance-seed/seed-2.0-mini",
+		"knowledge_cutoff": null,
 		"name": "ByteDance Seed: Seed-2.0-Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -895,6 +1206,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-3.1-flash-image-preview",
+		"knowledge_cutoff": null,
 		"name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
 		"per_request_limits": null,
 		"pricing":
@@ -925,13 +1237,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
 			"temperature": 1,
+			"top_k": 20,
 			"top_p": 0.95
 		},
 		"description": "The Qwen3.5 Series 35B-A3B is a native vision-language model designed with a hybrid architecture that integrates linear attention mechanisms and a sparse mixture-of-experts model, achieving higher inference efficiency. Its overall performance is comparable to that of the Qwen3.5-27B.",
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3.5-35B-A3B",
 		"id": "qwen/qwen3.5-35b-a3b",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3.5-35B-A3B",
 		"per_request_limits": null,
 		"pricing":
@@ -962,13 +1278,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
 			"temperature": 0.6,
+			"top_k": 20,
 			"top_p": 0.95
 		},
 		"description": "The Qwen3.5 27B native vision-language Dense model incorporates a linear attention mechanism, delivering fast response times while balancing inference speed and performance. Its overall capabilities are comparable to those of the Qwen3.5-122B-A10B.",
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3.5-27B",
 		"id": "qwen/qwen3.5-27b",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3.5-27B",
 		"per_request_limits": null,
 		"pricing":
@@ -999,13 +1319,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
 			"temperature": 0.6,
+			"top_k": 20,
 			"top_p": 0.95
 		},
 		"description": "The Qwen3.5 122B-A10B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. In terms of overall performance, this model is second only to Qwen3.5-397B-A17B. Its text capabilities significantly outperform those of Qwen3-235B-2507, and its visual capabilities surpass those of Qwen3-VL-235B.",
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3.5-122B-A10B",
 		"id": "qwen/qwen3.5-122b-a10b",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3.5-122B-A10B",
 		"per_request_limits": null,
 		"pricing":
@@ -1043,6 +1367,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "qwen/qwen3.5-flash-02-23",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3.5-Flash",
 		"per_request_limits": null,
 		"pricing":
@@ -1083,6 +1408,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "LiquidAI/LFM2-24B-A2B",
 		"id": "liquid/lfm-2-24b-a2b",
+		"knowledge_cutoff": null,
 		"name": "LiquidAI: LFM2-24B-A2B",
 		"per_request_limits": null,
 		"pricing":
@@ -1120,6 +1446,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "google/gemini-3.1-pro-preview-customtools",
+		"knowledge_cutoff": null,
 		"name": "Google: Gemini 3.1 Pro Preview Custom Tools",
 		"per_request_limits": null,
 		"pricing":
@@ -1165,6 +1492,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.3-codex",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.3-Codex",
 		"per_request_limits": null,
 		"pricing":
@@ -1204,6 +1532,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "aion-labs/aion-2.0",
+		"knowledge_cutoff": null,
 		"name": "AionLabs: Aion-2.0",
 		"per_request_limits": null,
 		"pricing":
@@ -1242,6 +1571,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-3.1-pro-preview",
+		"knowledge_cutoff": null,
 		"name": "Google: Gemini 3.1 Pro Preview",
 		"per_request_limits": null,
 		"pricing":
@@ -1287,6 +1617,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "anthropic/claude-sonnet-4.6",
+		"knowledge_cutoff": null,
 		"name": "Anthropic: Claude Sonnet 4.6",
 		"per_request_limits": null,
 		"pricing":
@@ -1327,6 +1658,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen3.5-plus-02-15",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3.5 Plus 2026-02-15",
 		"per_request_limits": null,
 		"pricing":
@@ -1357,13 +1689,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
 			"temperature": 0.6,
+			"top_k": 20,
 			"top_p": 0.95
 		},
 		"description": "The Qwen3.5 series 397B-A17B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. It delivers state-of-the-art performance comparable to leading-edge models across a wide range of tasks, including language understanding, logical reasoning, code generation, agent-based tasks, image understanding, video understanding, and graphical user interface (GUI) interactions. With its robust code-generation and agent capabilities, the model exhibits strong generalization across diverse agent.",
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3.5-397B-A17B",
 		"id": "qwen/qwen3.5-397b-a17b",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3.5 397B A17B",
 		"per_request_limits": null,
 		"pricing":
@@ -1404,6 +1740,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "MiniMaxAI/MiniMax-M2.5",
 		"id": "minimax/minimax-m2.5:free",
+		"knowledge_cutoff": null,
 		"name": "MiniMax: MiniMax M2.5 (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -1444,19 +1781,21 @@
 		"expiration_date": null,
 		"hugging_face_id": "MiniMaxAI/MiniMax-M2.5",
 		"id": "minimax/minimax-m2.5",
+		"knowledge_cutoff": null,
 		"name": "MiniMax: MiniMax M2.5",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000012",
-			"prompt": "0.0000002"
+			"completion": "0.0000011",
+			"input_cache_read": "0.00000008",
+			"prompt": "0.00000016"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 196608,
 			"is_moderated": false,
-			"max_completion_tokens": 196608
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -1481,6 +1820,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-5",
 		"id": "z-ai/glm-5",
+		"knowledge_cutoff": null,
 		"name": "Z.ai: GLM 5",
 		"per_request_limits": null,
 		"pricing":
@@ -1518,6 +1858,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "qwen/qwen3-max-thinking",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3 Max Thinking",
 		"per_request_limits": null,
 		"pricing":
@@ -1640,6 +1981,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "anthropic/claude-opus-4.6",
+		"knowledge_cutoff": null,
 		"name": "Anthropic: Claude Opus 4.6",
 		"per_request_limits": null,
 		"pricing":
@@ -1680,6 +2022,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-Coder-Next",
 		"id": "qwen/qwen3-coder-next",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3 Coder Next",
 		"per_request_limits": null,
 		"pricing":
@@ -1718,6 +2061,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openrouter/free",
+		"knowledge_cutoff": null,
 		"name": "Free Models Router",
 		"per_request_limits": null,
 		"pricing":
@@ -1755,6 +2099,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "stepfun-ai/Step-3.5-Flash",
 		"id": "stepfun/step-3.5-flash:free",
+		"knowledge_cutoff": null,
 		"name": "StepFun: Step 3.5 Flash (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -1780,7 +2125,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "stepfun/step-3.5-flash",
-		"context_length": 256000,
+		"context_length": 262144,
 		"created": 1769728337,
 		"default_parameters":
 		{
@@ -1792,20 +2137,20 @@
 		"expiration_date": null,
 		"hugging_face_id": "stepfun-ai/Step-3.5-Flash",
 		"id": "stepfun/step-3.5-flash",
+		"knowledge_cutoff": null,
 		"name": "StepFun: Step 3.5 Flash",
 		"per_request_limits": null,
 		"pricing":
 		{
 			"completion": "0.0000003",
-			"input_cache_read": "0.00000002",
 			"prompt": "0.0000001"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tools", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 256000,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 256000
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -1830,19 +2175,16 @@
 			"top_p": 0.8
 		},
 		"description": "Trinity-Large-Preview is a frontier-scale open-weight language model from Arcee, built as a 400B-parameter sparse Mixture-of-Experts with 13B active parameters per token using 4-of-256 expert routing. \n\nIt excels in creative writing, storytelling, role-play, chat scenarios, and real-time voice assistance, better than your average reasoning model usually can. But we’re also introducing some of our newer agentic performance. It was trained to navigate well in agent harnesses like OpenCode, Cline, and Kilo Code, and to handle complex toolchains and long, constraint-filled prompts. \n\nThe architecture natively supports very long context windows up to 512k tokens, with the Preview API currently served at 128k context using 8-bit quantization for practical deployment. Trinity-Large-Preview reflects Arcee’s efficiency-first design philosophy, offering a production-oriented frontier model with open weights and permissive licensing suitable for real-world applications and experimentation.",
-		"expiration_date": null,
+		"expiration_date": "2026-04-03",
 		"hugging_face_id": "arcee-ai/Trinity-Large-Preview",
 		"id": "arcee-ai/trinity-large-preview:free",
+		"knowledge_cutoff": null,
 		"name": "Arcee AI: Trinity Large Preview (free)",
 		"per_request_limits": null,
 		"pricing":
 		{
 			"completion": "0",
-			"image": "0",
-			"internal_reasoning": "0",
-			"prompt": "0",
-			"request": "0",
-			"web_search": "0"
+			"prompt": "0"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "structured_outputs", "temperature", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -1874,13 +2216,14 @@
 		"expiration_date": null,
 		"hugging_face_id": "moonshotai/Kimi-K2.5",
 		"id": "moonshotai/kimi-k2.5",
+		"knowledge_cutoff": null,
 		"name": "MoonshotAI: Kimi K2.5",
 		"per_request_limits": null,
 		"pricing":
 		{
 			"completion": "0.0000022",
-			"input_cache_read": "0.000000225",
-			"prompt": "0.00000045"
+			"input_cache_read": "0.00000021",
+			"prompt": "0.00000042"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
@@ -1952,6 +2295,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "upstage/solar-pro-3",
+		"knowledge_cutoff": null,
 		"name": "Upstage: Solar Pro 3",
 		"per_request_limits": null,
 		"pricing":
@@ -1990,6 +2334,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "minimax/minimax-m2-her",
+		"knowledge_cutoff": null,
 		"name": "MiniMax: MiniMax M2-her",
 		"per_request_limits": null,
 		"pricing":
@@ -2028,6 +2373,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "writer/palmyra-x5",
+		"knowledge_cutoff": null,
 		"name": "Writer: Palmyra X5",
 		"per_request_limits": null,
 		"pricing":
@@ -2065,6 +2411,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "LiquidAI/LFM2.5-1.2B-Thinking",
 		"id": "liquid/lfm-2.5-1.2b-thinking:free",
+		"knowledge_cutoff": null,
 		"name": "LiquidAI: LFM2.5-1.2B-Thinking (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -2102,6 +2449,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "LiquidAI/LFM2.5-1.2B-Instruct",
 		"id": "liquid/lfm-2.5-1.2b-instruct:free",
+		"knowledge_cutoff": null,
 		"name": "LiquidAI: LFM2.5-1.2B-Instruct (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -2139,6 +2487,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-audio",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT Audio",
 		"per_request_limits": null,
 		"pricing":
@@ -2147,7 +2496,7 @@
 			"completion": "0.00001",
 			"prompt": "0.0000025"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -2177,6 +2526,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-audio-mini",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT Audio Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -2185,7 +2535,7 @@
 			"completion": "0.0000024",
 			"prompt": "0.0000006"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -2215,6 +2565,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.7-Flash",
 		"id": "z-ai/glm-4.7-flash",
+		"knowledge_cutoff": null,
 		"name": "Z.ai: GLM 4.7 Flash",
 		"per_request_limits": null,
 		"pricing":
@@ -2253,6 +2604,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.2-codex",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.2-Codex",
 		"per_request_limits": null,
 		"pricing":
@@ -2366,6 +2718,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "allenai/Olmo-3.1-32B-Instruct",
 		"id": "allenai/olmo-3.1-32b-instruct",
+		"knowledge_cutoff": null,
 		"name": "AllenAI: Olmo 3.1 32B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -2403,6 +2756,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "bytedance-seed/seed-1.6-flash",
+		"knowledge_cutoff": null,
 		"name": "ByteDance Seed: Seed 1.6 Flash",
 		"per_request_limits": null,
 		"pricing":
@@ -2440,6 +2794,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "bytedance-seed/seed-1.6",
+		"knowledge_cutoff": null,
 		"name": "ByteDance Seed: Seed 1.6",
 		"per_request_limits": null,
 		"pricing":
@@ -2477,6 +2832,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "MiniMaxAI/MiniMax-M2.1",
 		"id": "minimax/minimax-m2.1",
+		"knowledge_cutoff": null,
 		"name": "MiniMax: MiniMax M2.1",
 		"per_request_limits": null,
 		"pricing":
@@ -2515,6 +2871,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.7",
 		"id": "z-ai/glm-4.7",
+		"knowledge_cutoff": null,
 		"name": "Z.ai: GLM 4.7",
 		"per_request_limits": null,
 		"pricing":
@@ -2553,6 +2910,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-3-flash-preview",
+		"knowledge_cutoff": null,
 		"name": "Google: Gemini 3 Flash Preview",
 		"per_request_limits": null,
 		"pricing":
@@ -2595,6 +2953,7 @@
 		"expiration_date": "2026-04-30",
 		"hugging_face_id": null,
 		"id": "mistralai/mistral-small-creative",
+		"knowledge_cutoff": null,
 		"name": "Mistral: Mistral Small Creative",
 		"per_request_limits": null,
 		"pricing":
@@ -2670,9 +3029,10 @@
 			"top_p": 0.95
 		},
 		"description": "Olmo 3.1 32B Think is a large-scale, 32-billion-parameter model designed for deep reasoning, complex multi-step logic, and advanced instruction following. Building on the Olmo 3 series, version 3.1 delivers refined reasoning behavior and stronger performance across demanding evaluations and nuanced conversational tasks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Think continues the Olmo initiative’s commitment to openness, providing full transparency across model weights, code, and training methodology.",
-		"expiration_date": null,
+		"expiration_date": "2026-04-06",
 		"hugging_face_id": "allenai/Olmo-3.1-32B-Think",
 		"id": "allenai/olmo-3.1-32b-think",
+		"knowledge_cutoff": null,
 		"name": "AllenAI: Olmo 3.1 32B Think",
 		"per_request_limits": null,
 		"pricing":
@@ -2747,6 +3107,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "XiaomiMiMo/MiMo-V2-Flash",
 		"id": "xiaomi/mimo-v2-flash",
+		"knowledge_cutoff": null,
 		"name": "Xiaomi: MiMo-V2-Flash",
 		"per_request_limits": null,
 		"pricing":
@@ -2785,6 +3146,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
 		"id": "nvidia/nemotron-3-nano-30b-a3b:free",
+		"knowledge_cutoff": null,
 		"name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -2822,6 +3184,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
 		"id": "nvidia/nemotron-3-nano-30b-a3b",
+		"knowledge_cutoff": null,
 		"name": "NVIDIA: Nemotron 3 Nano 30B A3B",
 		"per_request_limits": null,
 		"pricing":
@@ -2859,6 +3222,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.2-chat",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.2 Chat",
 		"per_request_limits": null,
 		"pricing":
@@ -2898,6 +3262,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.2-pro",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.2 Pro",
 		"per_request_limits": null,
 		"pricing":
@@ -2939,6 +3304,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.2",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.2",
 		"per_request_limits": null,
 		"pricing":
@@ -3015,6 +3381,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Devstral-2-123B-Instruct-2512",
 		"id": "mistralai/devstral-2512",
+		"knowledge_cutoff": null,
 		"name": "Mistral: Devstral 2 2512",
 		"per_request_limits": null,
 		"pricing":
@@ -3053,6 +3420,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "relace/relace-search",
+		"knowledge_cutoff": null,
 		"name": "Relace: Relace Search",
 		"per_request_limits": null,
 		"pricing":
@@ -3090,6 +3458,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.6V",
 		"id": "z-ai/glm-4.6v",
+		"knowledge_cutoff": null,
 		"name": "Z.ai: GLM 4.6V",
 		"per_request_limits": null,
 		"pricing":
@@ -3169,12 +3538,13 @@
 		"expiration_date": null,
 		"hugging_face_id": "nex-agi/DeepSeek-V3.1-Nex-N1",
 		"id": "nex-agi/deepseek-v3.1-nex-n1",
+		"knowledge_cutoff": null,
 		"name": "Nex AGI: DeepSeek V3.1 Nex N1",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
-			"prompt": "0.00000027"
+			"completion": "0.0000005",
+			"prompt": "0.000000135"
 		},
 		"supported_parameters": ["frequency_penalty", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -3206,6 +3576,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "EssentialAI/rnj-1-instruct",
 		"id": "essentialai/rnj-1-instruct",
+		"knowledge_cutoff": null,
 		"name": "EssentialAI: Rnj 1 Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -3243,6 +3614,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openrouter/bodybuilder",
+		"knowledge_cutoff": null,
 		"name": "Body Builder (beta)",
 		"per_request_limits": null,
 		"pricing":
@@ -3283,6 +3655,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.1-codex-max",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.1-Codex-Max",
 		"per_request_limits": null,
 		"pricing":
@@ -3362,6 +3735,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "amazon/nova-2-lite-v1",
+		"knowledge_cutoff": null,
 		"name": "Amazon: Nova 2 Lite",
 		"per_request_limits": null,
 		"pricing":
@@ -3399,6 +3773,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Ministral-3-14B-Instruct-2512",
 		"id": "mistralai/ministral-14b-2512",
+		"knowledge_cutoff": null,
 		"name": "Mistral: Ministral 3 14B 2512",
 		"per_request_limits": null,
 		"pricing":
@@ -3437,6 +3812,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Ministral-3-8B-Instruct-2512",
 		"id": "mistralai/ministral-8b-2512",
+		"knowledge_cutoff": null,
 		"name": "Mistral: Ministral 3 8B 2512",
 		"per_request_limits": null,
 		"pricing":
@@ -3475,6 +3851,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Ministral-3-3B-Instruct-2512",
 		"id": "mistralai/ministral-3b-2512",
+		"knowledge_cutoff": null,
 		"name": "Mistral: Ministral 3 3B 2512",
 		"per_request_limits": null,
 		"pricing":
@@ -3513,6 +3890,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "mistralai/mistral-large-2512",
+		"knowledge_cutoff": null,
 		"name": "Mistral: Mistral Large 3 2512",
 		"per_request_limits": null,
 		"pricing":
@@ -3551,6 +3929,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "arcee-ai/Trinity-Mini",
 		"id": "arcee-ai/trinity-mini:free",
+		"knowledge_cutoff": null,
 		"name": "Arcee AI: Trinity Mini (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -3588,6 +3967,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "arcee-ai/Trinity-Mini",
 		"id": "arcee-ai/trinity-mini",
+		"knowledge_cutoff": null,
 		"name": "Arcee AI: Trinity Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -3625,6 +4005,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-V3.2-Speciale",
 		"id": "deepseek/deepseek-v3.2-speciale",
+		"knowledge_cutoff": null,
 		"name": "DeepSeek: DeepSeek V3.2 Speciale",
 		"per_request_limits": null,
 		"pricing":
@@ -3666,6 +4047,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-V3.2",
 		"id": "deepseek/deepseek-v3.2",
+		"knowledge_cutoff": null,
 		"name": "DeepSeek: DeepSeek V3.2",
 		"per_request_limits": null,
 		"pricing":
@@ -3704,6 +4086,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "PrimeIntellect/INTELLECT-3-FP8",
 		"id": "prime-intellect/intellect-3",
+		"knowledge_cutoff": null,
 		"name": "Prime Intellect: INTELLECT-3",
 		"per_request_limits": null,
 		"pricing":
@@ -3711,7 +4094,7 @@
 			"completion": "0.0000011",
 			"prompt": "0.0000002"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -3816,6 +4199,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "anthropic/claude-opus-4.5",
+		"knowledge_cutoff": null,
 		"name": "Anthropic: Claude Opus 4.5",
 		"per_request_limits": null,
 		"pricing":
@@ -3936,6 +4320,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "allenai/Olmo-3-32B-Think",
 		"id": "allenai/olmo-3-32b-think",
+		"knowledge_cutoff": null,
 		"name": "AllenAI: Olmo 3 32B Think",
 		"per_request_limits": null,
 		"pricing":
@@ -4047,6 +4432,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-3-pro-image-preview",
+		"knowledge_cutoff": null,
 		"name": "Google: Nano Banana Pro (Gemini 3 Pro Image Preview)",
 		"per_request_limits": null,
 		"pricing":
@@ -4110,9 +4496,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Grok"
 		},
@@ -4122,13 +4508,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
 			"temperature": 0.7,
+			"top_k": null,
 			"top_p": 0.95
 		},
 		"description": "Grok 4.1 Fast is xAI's best agentic tool calling model that shines in real-world use cases like customer support and deep research. 2M context window.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-4.1-fast",
+		"knowledge_cutoff": null,
 		"name": "xAI: Grok 4.1 Fast",
 		"per_request_limits": null,
 		"pricing":
@@ -4290,6 +4680,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "deepcogito/cogito-v2.1-671b",
+		"knowledge_cutoff": null,
 		"name": "Deep Cogito: Cogito v2.1 671B",
 		"per_request_limits": null,
 		"pricing":
@@ -4330,6 +4721,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.1",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.1",
 		"per_request_limits": null,
 		"pricing":
@@ -4369,6 +4761,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.1-chat",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.1 Chat",
 		"per_request_limits": null,
 		"pricing":
@@ -4411,6 +4804,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.1-codex",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.1-Codex",
 		"per_request_limits": null,
 		"pricing":
@@ -4452,6 +4846,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.1-codex-mini",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5.1-Codex-Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -4648,6 +5043,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "moonshotai/Kimi-K2-Thinking",
 		"id": "moonshotai/kimi-k2-thinking",
+		"knowledge_cutoff": null,
 		"name": "MoonshotAI: Kimi K2 Thinking",
 		"per_request_limits": null,
 		"pricing":
@@ -4686,6 +5082,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "amazon/nova-premier-v1",
+		"knowledge_cutoff": null,
 		"name": "Amazon: Nova Premier 1.0",
 		"per_request_limits": null,
 		"pricing":
@@ -4764,6 +5161,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "perplexity/sonar-pro-search",
+		"knowledge_cutoff": null,
 		"name": "Perplexity: Sonar Pro Search",
 		"per_request_limits": null,
 		"pricing":
@@ -4802,6 +5200,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Voxtral-Small-24B-2507",
 		"id": "mistralai/voxtral-small-24b-2507",
+		"knowledge_cutoff": null,
 		"name": "Mistral: Voxtral Small 24B 2507",
 		"per_request_limits": null,
 		"pricing":
@@ -4841,6 +5240,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "openai/gpt-oss-safeguard-20b",
 		"id": "openai/gpt-oss-safeguard-20b",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: gpt-oss-safeguard-20b",
 		"per_request_limits": null,
 		"pricing":
@@ -4879,6 +5279,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16",
 		"id": "nvidia/nemotron-nano-12b-v2-vl:free",
+		"knowledge_cutoff": null,
 		"name": "NVIDIA: Nemotron Nano 12B 2 VL (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -4916,6 +5317,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16",
 		"id": "nvidia/nemotron-nano-12b-v2-vl",
+		"knowledge_cutoff": null,
 		"name": "NVIDIA: Nemotron Nano 12B 2 VL",
 		"per_request_limits": null,
 		"pricing":
@@ -4993,6 +5395,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "MiniMaxAI/MiniMax-M2",
 		"id": "minimax/minimax-m2",
+		"knowledge_cutoff": null,
 		"name": "MiniMax: MiniMax M2",
 		"per_request_limits": null,
 		"pricing":
@@ -5024,13 +5427,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
-			"temperature": null,
-			"top_p": null
+			"presence_penalty": null,
+			"repetition_penalty": 1,
+			"temperature": 0.7,
+			"top_k": 20,
+			"top_p": 0.8
 		},
 		"description": "Qwen3-VL-32B-Instruct is a large-scale multimodal vision-language model designed for high-precision understanding and reasoning across text, images, and video. With 32 billion parameters, it combines deep visual perception with advanced text comprehension, enabling fine-grained spatial reasoning, document and scene analysis, and long-horizon video understanding.Robust OCR in 32 languages, and enhanced multimodal fusion through Interleaved-MRoPE and DeepStack architectures. Optimized for agentic interaction and visual tool use, Qwen3-VL-32B delivers state-of-the-art performance for complex real-world multimodal tasks.",
 		"expiration_date": "2026-02-25",
 		"hugging_face_id": "Qwen/Qwen3-VL-32B-Instruct",
 		"id": "qwen/qwen3-vl-32b-instruct",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3 VL 32B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -5108,6 +5515,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "LiquidAI/LFM2-8B-A1B",
 		"id": "liquid/lfm2-8b-a1b",
+		"knowledge_cutoff": null,
 		"name": "LiquidAI: LFM2-8B-A1B",
 		"per_request_limits": null,
 		"pricing":
@@ -5145,6 +5553,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "LiquidAI/LFM2-2.6B",
 		"id": "liquid/lfm-2.2-6b",
+		"knowledge_cutoff": null,
 		"name": "LiquidAI: LFM2-2.6B",
 		"per_request_limits": null,
 		"pricing":
@@ -5182,6 +5591,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "ibm-granite/granite-4.0-h-micro",
 		"id": "ibm-granite/granite-4.0-h-micro",
+		"knowledge_cutoff": null,
 		"name": "IBM: Granite 4.0 Micro",
 		"per_request_limits": null,
 		"pricing":
@@ -5256,6 +5666,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5-image-mini",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5 Image Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -5295,6 +5706,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "anthropic/claude-haiku-4.5",
+		"knowledge_cutoff": null,
 		"name": "Anthropic: Claude Haiku 4.5",
 		"per_request_limits": null,
 		"pricing":
@@ -5334,6 +5746,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-VL-8B-Thinking",
 		"id": "qwen/qwen3-vl-8b-thinking",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3 VL 8B Thinking",
 		"per_request_limits": null,
 		"pricing":
@@ -5371,6 +5784,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-VL-8B-Instruct",
 		"id": "qwen/qwen3-vl-8b-instruct",
+		"knowledge_cutoff": null,
 		"name": "Qwen: Qwen3 VL 8B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -5408,6 +5822,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5-image",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: GPT-5 Image",
 		"per_request_limits": null,
 		"pricing":
@@ -5527,6 +5942,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/o3-deep-research",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: o3 Deep Research",
 		"per_request_limits": null,
 		"pricing":
@@ -5566,6 +5982,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/o4-mini-deep-research",
+		"knowledge_cutoff": null,
 		"name": "OpenAI: o4 Mini Deep Research",
 		"per_request_limits": null,
 		"pricing":
@@ -5600,6 +6017,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
 		"id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+		"knowledge_cutoff": "2024-03-31",
 		"name": "NVIDIA: Llama 3.3 Nemotron Super 49B V1.5",
 		"per_request_limits": null,
 		"pricing":
@@ -5637,6 +6055,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "baidu/ERNIE-4.5-21B-A3B-Thinking",
 		"id": "baidu/ernie-4.5-21b-a3b-thinking",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Baidu: ERNIE 4.5 21B A3B Thinking",
 		"per_request_limits": null,
 		"pricing":
@@ -5674,6 +6093,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-flash-image",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Google: Nano Banana (Gemini 2.5 Flash Image)",
 		"per_request_limits": null,
 		"pricing":
@@ -5708,13 +6128,18 @@
 		"created": 1759794479,
 		"default_parameters":
 		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": 1,
 			"temperature": 0.8,
+			"top_k": 20,
 			"top_p": 0.95
 		},
 		"description": "Qwen3-VL-30B-A3B-Thinking is a multimodal model that unifies strong text generation with visual understanding for images and videos. Its Thinking variant enhances reasoning in STEM, math, and complex tasks. It excels in perception of real-world/synthetic categories, 2D/3D spatial grounding, and long-form visual comprehension, achieving competitive multimodal benchmark results. For agentic use, it handles multi-image multi-turn instructions, video timeline alignments, GUI automation, and visual coding from sketches to debugged UI. Text performance matches flagship Qwen3 models, suiting document AI, OCR, UI assistance, spatial tasks, and agent research.",
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
 		"id": "qwen/qwen3-vl-30b-a3b-thinking",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen3 VL 30B A3B Thinking",
 		"per_request_limits": null,
 		"pricing":
@@ -5745,13 +6170,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": 1,
 			"temperature": 0.7,
+			"top_k": 20,
 			"top_p": 0.8
 		},
 		"description": "Qwen3-VL-30B-A3B-Instruct is a multimodal model that unifies strong text generation with visual understanding for images and videos. Its Instruct variant optimizes instruction-following for general multimodal tasks. It excels in perception of real-world/synthetic categories, 2D/3D spatial grounding, and long-form visual comprehension, achieving competitive multimodal benchmark results. For agentic use, it handles multi-image multi-turn instructions, video timeline alignments, GUI automation, and visual coding from sketches to debugged UI. Text performance matches flagship Qwen3 models, suiting document AI, OCR, UI assistance, spatial tasks, and agent research.",
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
 		"id": "qwen/qwen3-vl-30b-a3b-instruct",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen3 VL 30B A3B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -5759,7 +6188,7 @@
 			"completion": "0.00000052",
 			"prompt": "0.00000013"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -5789,6 +6218,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5-pro",
+		"knowledge_cutoff": "2024-09-30",
 		"name": "OpenAI: GPT-5 Pro",
 		"per_request_limits": null,
 		"pricing":
@@ -5858,13 +6288,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
 			"temperature": 0.6,
+			"top_k": null,
 			"top_p": null
 		},
 		"description": "Compared with GLM-4.5, this generation brings several key improvements:\n\nLonger context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex agentic tasks.\nSuperior coding performance: The model achieves higher scores on code benchmarks and demonstrates better real-world performance in applications such as Claude Code、Cline、Roo Code and Kilo Code, including improvements in generating visually polished front-end pages.\nAdvanced reasoning: GLM-4.6 shows a clear improvement in reasoning performance and supports tool use during inference, leading to stronger overall capability.\nMore capable agents: GLM-4.6 exhibits stronger performance in tool using and search-based agents, and integrates more effectively within agent frameworks.\nRefined writing: Better aligns with human preferences in style and readability, and performs more naturally in role-playing scenarios.",
 		"expiration_date": null,
-		"hugging_face_id": "",
+		"hugging_face_id": "zai-org/GLM-4.6",
 		"id": "z-ai/glm-4.6",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Z.ai: GLM 4.6",
 		"per_request_limits": null,
 		"pricing":
@@ -5905,6 +6339,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "anthropic/claude-sonnet-4.5",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Anthropic: Claude Sonnet 4.5",
 		"per_request_limits": null,
 		"pricing":
@@ -5945,6 +6380,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-V3.2-Exp",
 		"id": "deepseek/deepseek-v3.2-exp",
+		"knowledge_cutoff": "2025-07-31",
 		"name": "DeepSeek: DeepSeek V3.2 Exp",
 		"per_request_limits": null,
 		"pricing":
@@ -5982,6 +6418,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "thedrummer/cydonia-24b-v4.1",
 		"id": "thedrummer/cydonia-24b-v4.1",
+		"knowledge_cutoff": "2024-04-30",
 		"name": "TheDrummer: Cydonia 24B V4.1",
 		"per_request_limits": null,
 		"pricing":
@@ -6019,6 +6456,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "relace/relace-apply-3",
+		"knowledge_cutoff": null,
 		"name": "Relace: Relace Apply 3",
 		"per_request_limits": null,
 		"pricing":
@@ -6098,6 +6536,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-flash-lite-preview-09-2025",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Google: Gemini 2.5 Flash Lite Preview 09-2025",
 		"per_request_limits": null,
 		"pricing":
@@ -6133,13 +6572,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": 1,
 			"temperature": 0.8,
+			"top_k": 20,
 			"top_p": 0.95
 		},
 		"description": "Qwen3-VL-235B-A22B Thinking is a multimodal model that unifies strong text generation with visual understanding across images and video. The Thinking model is optimized for multimodal reasoning in STEM and math. The series emphasizes robust perception (recognition of diverse real-world and synthetic categories), spatial understanding (2D/3D grounding), and long-form visual comprehension, with competitive results on public multimodal benchmarks for both perception and reasoning.\n\nBeyond analysis, Qwen3-VL supports agentic interaction and tool use: it can follow complex instructions over multi-image, multi-turn dialogues; align text to video timelines for precise temporal queries; and operate GUI elements for automation tasks. The models also enable visual coding workflows, turning sketches or mockups into code and assisting with UI debugging, while maintaining strong text-only performance comparable to the flagship Qwen3 language models. This makes Qwen3-VL suitable for production scenarios spanning document AI, multilingual OCR, software/UI assistance, spatial/embodied tasks, and research on vision-language agents.",
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-VL-235B-A22B-Thinking",
 		"id": "qwen/qwen3-vl-235b-a22b-thinking",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen3 VL 235B A22B Thinking",
 		"per_request_limits": null,
 		"pricing":
@@ -6177,6 +6620,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
 		"id": "qwen/qwen3-vl-235b-a22b-instruct",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen3 VL 235B A22B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -6185,7 +6629,7 @@
 			"input_cache_read": "0.00000011",
 			"prompt": "0.0000002"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -6215,6 +6659,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen3-max",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Qwen: Qwen3 Max",
 		"per_request_limits": null,
 		"pricing":
@@ -6253,6 +6698,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen3-coder-plus",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Qwen: Qwen3 Coder Plus",
 		"per_request_limits": null,
 		"pricing":
@@ -6291,6 +6737,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5-codex",
+		"knowledge_cutoff": "2024-09-30",
 		"name": "OpenAI: GPT-5 Codex",
 		"per_request_limits": null,
 		"pricing":
@@ -6367,12 +6814,13 @@
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-V3.1-Terminus",
 		"id": "deepseek/deepseek-v3.1-terminus",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "DeepSeek: DeepSeek V3.1 Terminus",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000078",
-			"input_cache_read": "0.000000105",
+			"completion": "0.00000079",
+			"input_cache_read": "0.0000001300000002",
 			"prompt": "0.00000021"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -6380,7 +6828,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -6426,9 +6874,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Grok"
 		},
@@ -6438,13 +6886,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
 			"temperature": null,
+			"top_k": null,
 			"top_p": null
 		},
 		"description": "Grok 4 Fast is xAI's latest multimodal model with SOTA cost-efficiency and a 2M token context window. It comes in two flavors: non-reasoning and reasoning. Read more about the model on xAI's [news post](http://x.ai/news/grok-4-fast).\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-4-fast",
+		"knowledge_cutoff": "2025-09-30",
 		"name": "xAI: Grok 4 Fast",
 		"per_request_limits": null,
 		"pricing":
@@ -6524,6 +6976,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B",
 		"id": "alibaba/tongyi-deepresearch-30b-a3b",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Tongyi DeepResearch 30B A3B",
 		"per_request_limits": null,
 		"pricing":
@@ -6562,6 +7015,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen3-coder-flash",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Qwen: Qwen3 Coder Flash",
 		"per_request_limits": null,
 		"pricing":
@@ -6674,6 +7128,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
 		"id": "qwen/qwen3-next-80b-a3b-thinking",
+		"knowledge_cutoff": "2025-09-30",
 		"name": "Qwen: Qwen3 Next 80B A3B Thinking",
 		"per_request_limits": null,
 		"pricing":
@@ -6707,6 +7162,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
 		"id": "qwen/qwen3-next-80b-a3b-instruct:free",
+		"knowledge_cutoff": "2025-09-30",
 		"name": "Qwen: Qwen3 Next 80B A3B Instruct (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -6740,6 +7196,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
 		"id": "qwen/qwen3-next-80b-a3b-instruct",
+		"knowledge_cutoff": "2025-09-30",
 		"name": "Qwen: Qwen3 Next 80B A3B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -6809,6 +7266,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meituan-longcat/LongCat-Flash-Chat",
 		"id": "meituan/longcat-flash-chat",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Meituan: LongCat Flash Chat",
 		"per_request_limits": null,
 		"pricing":
@@ -6847,6 +7305,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen-plus-2025-07-28:thinking",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen Plus 0728 (thinking)",
 		"per_request_limits": null,
 		"pricing":
@@ -6884,6 +7343,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen-plus-2025-07-28",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen Plus 0728",
 		"per_request_limits": null,
 		"pricing":
@@ -6921,6 +7381,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
 		"id": "nvidia/nemotron-nano-9b-v2:free",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "NVIDIA: Nemotron Nano 9B V2 (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -6958,6 +7419,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
 		"id": "nvidia/nemotron-nano-9b-v2",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "NVIDIA: Nemotron Nano 9B V2",
 		"per_request_limits": null,
 		"pricing":
@@ -7096,6 +7558,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "moonshotai/Kimi-K2-Instruct-0905",
 		"id": "moonshotai/kimi-k2-0905",
+		"knowledge_cutoff": "2024-12-31",
 		"name": "MoonshotAI: Kimi K2 0905",
 		"per_request_limits": null,
 		"pricing":
@@ -7345,6 +7808,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
 		"id": "qwen/qwen3-30b-a3b-thinking-2507",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Qwen: Qwen3 30B A3B Thinking 2507",
 		"per_request_limits": null,
 		"pricing":
@@ -7379,6 +7843,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-code-fast-1",
+		"knowledge_cutoff": "2025-09-30",
 		"name": "xAI: Grok Code Fast 1",
 		"per_request_limits": null,
 		"pricing":
@@ -7414,6 +7879,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "NousResearch/Hermes-4-70B",
 		"id": "nousresearch/hermes-4-70b",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Nous: Hermes 4 70B",
 		"per_request_limits": null,
 		"pricing":
@@ -7447,6 +7913,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "NousResearch/Hermes-4-405B",
 		"id": "nousresearch/hermes-4-405b",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Nous: Hermes 4 405B",
 		"per_request_limits": null,
 		"pricing":
@@ -7556,6 +8023,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-V3.1",
 		"id": "deepseek/deepseek-chat-v3.1",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "DeepSeek: DeepSeek V3.1",
 		"per_request_limits": null,
 		"pricing":
@@ -7629,6 +8097,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-4o-audio-preview",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: GPT-4o Audio",
 		"per_request_limits": null,
 		"pricing":
@@ -7665,6 +8134,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "mistralai/mistral-medium-3.1",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Mistral: Mistral Medium 3.1",
 		"per_request_limits": null,
 		"pricing":
@@ -7703,6 +8173,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "baidu/ERNIE-4.5-21B-A3B-PT",
 		"id": "baidu/ernie-4.5-21b-a3b",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Baidu: ERNIE 4.5 21B A3B",
 		"per_request_limits": null,
 		"pricing":
@@ -7736,6 +8207,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "baidu/ERNIE-4.5-VL-28B-A3B-PT",
 		"id": "baidu/ernie-4.5-vl-28b-a3b",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Baidu: ERNIE 4.5 VL 28B A3B",
 		"per_request_limits": null,
 		"pricing":
@@ -7773,6 +8245,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.5V",
 		"id": "z-ai/glm-4.5v",
+		"knowledge_cutoff": "2024-12-31",
 		"name": "Z.ai: GLM 4.5V",
 		"per_request_limits": null,
 		"pricing":
@@ -7840,6 +8313,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "ai21labs/AI21-Jamba-Large-1.7",
 		"id": "ai21/jamba-large-1.7",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "AI21: Jamba Large 1.7",
 		"per_request_limits": null,
 		"pricing":
@@ -7873,6 +8347,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5-chat",
+		"knowledge_cutoff": "2024-09-30",
 		"name": "OpenAI: GPT-5 Chat",
 		"per_request_limits": null,
 		"pricing":
@@ -7915,6 +8390,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5",
+		"knowledge_cutoff": "2024-09-30",
 		"name": "OpenAI: GPT-5",
 		"per_request_limits": null,
 		"pricing":
@@ -7957,6 +8433,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5-mini",
+		"knowledge_cutoff": "2024-05-31",
 		"name": "OpenAI: GPT-5 Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -7999,6 +8476,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5-nano",
+		"knowledge_cutoff": "2024-05-31",
 		"name": "OpenAI: GPT-5 Nano",
 		"per_request_limits": null,
 		"pricing":
@@ -8038,6 +8516,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "openai/gpt-oss-120b",
 		"id": "openai/gpt-oss-120b:free",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: gpt-oss-120b (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -8112,6 +8591,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "openai/gpt-oss-120b",
 		"id": "openai/gpt-oss-120b",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: gpt-oss-120b",
 		"per_request_limits": null,
 		"pricing":
@@ -8119,7 +8599,7 @@
 			"completion": "0.00000019",
 			"prompt": "0.000000039"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -8149,6 +8629,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "openai/gpt-oss-20b",
 		"id": "openai/gpt-oss-20b:free",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: gpt-oss-20b (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -8186,11 +8667,13 @@
 		"expiration_date": null,
 		"hugging_face_id": "openai/gpt-oss-20b",
 		"id": "openai/gpt-oss-20b",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: gpt-oss-20b",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000014",
+			"completion": "0.00000011",
+			"input_cache_read": "0.000000015",
 			"prompt": "0.00000003"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -8198,7 +8681,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -8223,6 +8706,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "anthropic/claude-opus-4.1",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Anthropic: Claude Opus 4.1",
 		"per_request_limits": null,
 		"pricing":
@@ -8261,6 +8745,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "mistralai/codestral-2508",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Mistral: Codestral 2508",
 		"per_request_limits": null,
 		"pricing":
@@ -8295,6 +8780,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
 		"id": "qwen/qwen3-coder-30b-a3b-instruct",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Qwen: Qwen3 Coder 30B A3B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -8328,6 +8814,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
 		"id": "qwen/qwen3-30b-a3b-instruct-2507",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Qwen: Qwen3 30B A3B Instruct 2507",
 		"per_request_limits": null,
 		"pricing":
@@ -8365,6 +8852,7 @@
 		"expiration_date": "2026-02-12",
 		"hugging_face_id": "zai-org/GLM-4.5",
 		"id": "z-ai/glm-4.5",
+		"knowledge_cutoff": "2024-12-31",
 		"name": "Z.ai: GLM 4.5",
 		"per_request_limits": null,
 		"pricing":
@@ -8403,6 +8891,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.5-Air",
 		"id": "z-ai/glm-4.5-air:free",
+		"knowledge_cutoff": "2024-12-31",
 		"name": "Z.ai: GLM 4.5 Air (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -8440,6 +8929,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-4.5-Air",
 		"id": "z-ai/glm-4.5-air",
+		"knowledge_cutoff": "2024-12-31",
 		"name": "Z.ai: GLM 4.5 Air",
 		"per_request_limits": null,
 		"pricing":
@@ -8478,6 +8968,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
 		"id": "qwen/qwen3-235b-a22b-thinking-2507",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Qwen: Qwen3 235B A22B Thinking 2507",
 		"per_request_limits": null,
 		"pricing":
@@ -8515,6 +9006,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "z-ai/glm-4-32b",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Z.ai: GLM 4 32B ",
 		"per_request_limits": null,
 		"pricing":
@@ -8548,6 +9040,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
 		"id": "qwen/qwen3-coder:free",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Qwen: Qwen3 Coder 480B A35B (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -8615,6 +9108,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
 		"id": "qwen/qwen3-coder",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Qwen: Qwen3 Coder 480B A35B",
 		"per_request_limits": null,
 		"pricing":
@@ -8649,6 +9143,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "ByteDance-Seed/UI-TARS-1.5-7B",
 		"id": "bytedance/ui-tars-1.5-7b",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "ByteDance: UI-TARS 7B ",
 		"per_request_limits": null,
 		"pricing":
@@ -8686,6 +9181,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-flash-lite",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Google: Gemini 2.5 Flash Lite",
 		"per_request_limits": null,
 		"pricing":
@@ -8724,6 +9220,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
 		"id": "qwen/qwen3-235b-a22b-2507",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Qwen: Qwen3 235B A22B Instruct 2507",
 		"per_request_limits": null,
 		"pricing":
@@ -8757,6 +9254,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "switchpoint/router",
+		"knowledge_cutoff": null,
 		"name": "Switchpoint Router",
 		"per_request_limits": null,
 		"pricing":
@@ -8815,7 +9313,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "moonshotai/kimi-k2",
-		"context_length": 131000,
+		"context_length": 131072,
 		"created": 1752263252,
 		"default_parameters":
 		{},
@@ -8823,19 +9321,20 @@
 		"expiration_date": null,
 		"hugging_face_id": "moonshotai/Kimi-K2-Instruct",
 		"id": "moonshotai/kimi-k2",
+		"knowledge_cutoff": "2024-12-31",
 		"name": "MoonshotAI: Kimi K2 0711",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000022",
-			"prompt": "0.00000055"
+			"completion": "0.0000023",
+			"prompt": "0.00000057"
 		},
-		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 131000,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -8894,6 +9393,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "mistralai/devstral-medium",
+		"knowledge_cutoff": "2025-06-30",
 		"name": "Mistral: Devstral Medium",
 		"per_request_limits": null,
 		"pricing":
@@ -8930,6 +9430,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Devstral-Small-2507",
 		"id": "mistralai/devstral-small",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Mistral: Devstral Small 1.1",
 		"per_request_limits": null,
 		"pricing":
@@ -8964,6 +9465,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
 		"id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+		"knowledge_cutoff": "2024-04-30",
 		"name": "Venice: Uncensored (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -8982,9 +9484,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["image", "text"],
+			"input_modalities": ["image", "text", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Grok"
 		},
@@ -8992,11 +9494,19 @@
 		"context_length": 256000,
 		"created": 1752087689,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
 		"description": "Grok 4 is xAI's latest reasoning model with a 256k context window. It supports parallel tool calling, structured outputs, and both image and text inputs. Note that reasoning is not exposed, reasoning cannot be disabled, and the reasoning effort cannot be specified. Pricing increases once the total tokens in a given request is greater than 128k tokens. See more details on the [xAI docs](https://docs.x.ai/docs/models/grok-4-0709)",
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-4",
+		"knowledge_cutoff": "2025-07-31",
 		"name": "xAI: Grok 4",
 		"per_request_limits": null,
 		"pricing":
@@ -9032,6 +9542,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-3n-E2B-it",
 		"id": "google/gemma-3n-e2b-it:free",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemma 3n 2B (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -9101,6 +9612,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "tencent/Hunyuan-A13B-Instruct",
 		"id": "tencent/hunyuan-a13b-instruct",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Tencent: Hunyuan A13B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -9167,13 +9679,14 @@
 		"expiration_date": null,
 		"hugging_face_id": "tngtech/DeepSeek-TNG-R1T2-Chimera",
 		"id": "tngtech/deepseek-r1t2-chimera",
+		"knowledge_cutoff": "2024-07-31",
 		"name": "TNG: DeepSeek R1T2 Chimera",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000085",
-			"input_cache_read": "0.000000125",
-			"prompt": "0.00000025"
+			"completion": "0.0000011",
+			"input_cache_read": "0.00000015",
+			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -9205,6 +9718,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "morph/morph-v3-large",
+		"knowledge_cutoff": null,
 		"name": "Morph: Morph V3 Large",
 		"per_request_limits": null,
 		"pricing":
@@ -9242,6 +9756,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "morph/morph-v3-fast",
+		"knowledge_cutoff": null,
 		"name": "Morph: Morph V3 Fast",
 		"per_request_limits": null,
 		"pricing":
@@ -9275,6 +9790,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "baidu/ERNIE-4.5-VL-424B-A47B-PT",
 		"id": "baidu/ernie-4.5-vl-424b-a47b",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Baidu: ERNIE 4.5 VL 424B A47B ",
 		"per_request_limits": null,
 		"pricing":
@@ -9308,6 +9824,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "baidu/ERNIE-4.5-300B-A47B-PT",
 		"id": "baidu/ernie-4.5-300b-a47b",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Baidu: ERNIE 4.5 300B A47B ",
 		"per_request_limits": null,
 		"pricing":
@@ -9381,6 +9898,7 @@
 		"expiration_date": "2026-04-15",
 		"hugging_face_id": "",
 		"id": "inception/mercury",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Inception: Mercury",
 		"per_request_limits": null,
 		"pricing":
@@ -9455,6 +9973,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
 		"id": "mistralai/mistral-small-3.2-24b-instruct",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "Mistral: Mistral Small 3.2 24B",
 		"per_request_limits": null,
 		"pricing":
@@ -9492,6 +10011,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "minimax/minimax-m1",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "MiniMax: MiniMax M1",
 		"per_request_limits": null,
 		"pricing":
@@ -9568,6 +10088,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-flash",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Google: Gemini 2.5 Flash",
 		"per_request_limits": null,
 		"pricing":
@@ -9610,6 +10131,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-pro",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Google: Gemini 2.5 Pro",
 		"per_request_limits": null,
 		"pricing":
@@ -9721,6 +10243,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/o3-pro",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: o3 Pro",
 		"per_request_limits": null,
 		"pricing":
@@ -9759,6 +10282,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-3-mini",
+		"knowledge_cutoff": "2025-02-28",
 		"name": "xAI: Grok 3 Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -9794,6 +10318,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-3",
+		"knowledge_cutoff": "2025-02-28",
 		"name": "xAI: Grok 3",
 		"per_request_limits": null,
 		"pricing":
@@ -9943,6 +10468,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-pro-preview",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Google: Gemini 2.5 Pro Preview 06-05",
 		"per_request_limits": null,
 		"pricing":
@@ -10102,6 +10628,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-R1-0528",
 		"id": "deepseek/deepseek-r1-0528",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "DeepSeek: R1 0528",
 		"per_request_limits": null,
 		"pricing":
@@ -10140,6 +10667,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "anthropic/claude-opus-4",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Anthropic: Claude Opus 4",
 		"per_request_limits": null,
 		"pricing":
@@ -10180,6 +10708,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "anthropic/claude-sonnet-4",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Anthropic: Claude Sonnet 4",
 		"per_request_limits": null,
 		"pricing":
@@ -10292,6 +10821,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-3n-E4B-it",
 		"id": "google/gemma-3n-e4b-it:free",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemma 3n 4B (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -10325,6 +10855,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-3n-E4B-it",
 		"id": "google/gemma-3n-e4b-it",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemma 3n 4B",
 		"per_request_limits": null,
 		"pricing":
@@ -10467,6 +10998,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "mistralai/mistral-medium-3",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Mistral: Mistral Medium 3",
 		"per_request_limits": null,
 		"pricing":
@@ -10505,6 +11037,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "google/gemini-2.5-pro-preview-05-06",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Google: Gemini 2.5 Pro Preview 05-06",
 		"per_request_limits": null,
 		"pricing":
@@ -10543,6 +11076,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "arcee-ai/spotlight",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Arcee AI: Spotlight",
 		"per_request_limits": null,
 		"pricing":
@@ -10576,6 +11110,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "arcee-ai/maestro-reasoning",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Arcee AI: Maestro Reasoning",
 		"per_request_limits": null,
 		"pricing":
@@ -10609,6 +11144,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "arcee-ai/virtuoso-large",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Arcee AI: Virtuoso Large",
 		"per_request_limits": null,
 		"pricing":
@@ -10642,6 +11178,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "arcee-ai/coder-large",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Arcee AI: Coder Large",
 		"per_request_limits": null,
 		"pricing":
@@ -10715,6 +11252,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "inception/mercury-coder",
+		"knowledge_cutoff": "2025-01-31",
 		"name": "Inception: Mercury Coder",
 		"per_request_limits": null,
 		"pricing":
@@ -10851,6 +11389,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Llama-Guard-4-12B",
 		"id": "meta-llama/llama-guard-4-12b",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Meta: Llama Guard 4 12B",
 		"per_request_limits": null,
 		"pricing":
@@ -10924,6 +11463,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-30B-A3B",
 		"id": "qwen/qwen3-30b-a3b",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen3 30B A3B",
 		"per_request_limits": null,
 		"pricing":
@@ -10990,13 +11530,17 @@
 		"default_parameters":
 		{
 			"frequency_penalty": null,
-			"temperature": null,
-			"top_p": null
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 0.6,
+			"top_k": 20,
+			"top_p": 0.95
 		},
 		"description": "Qwen3-8B is a dense 8.2B parameter causal language model from the Qwen3 series, designed for both reasoning-heavy tasks and efficient dialogue. It supports seamless switching between \"thinking\" mode for math, coding, and logical inference, and \"non-thinking\" mode for general conversation. The model is fine-tuned for instruction-following, agent integration, creative writing, and multilingual use across 100+ languages and dialects. It natively supports a 32K token context window and can extend to 131K tokens with YaRN scaling.",
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-8B",
 		"id": "qwen/qwen3-8b",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen3 8B",
 		"per_request_limits": null,
 		"pricing":
@@ -11067,6 +11611,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-14B",
 		"id": "qwen/qwen3-14b",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen3 14B",
 		"per_request_limits": null,
 		"pricing":
@@ -11100,6 +11645,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-32B",
 		"id": "qwen/qwen3-32b",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen3 32B",
 		"per_request_limits": null,
 		"pricing":
@@ -11108,7 +11654,7 @@
 			"input_cache_read": "0.00000004",
 			"prompt": "0.00000008"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 40960,
@@ -11170,6 +11716,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen3-235B-A22B",
 		"id": "qwen/qwen3-235b-a22b",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen3 235B A22B",
 		"per_request_limits": null,
 		"pricing":
@@ -11418,6 +11965,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/o4-mini-high",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: o4 Mini High",
 		"per_request_limits": null,
 		"pricing":
@@ -11453,6 +12001,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/o3",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: o3",
 		"per_request_limits": null,
 		"pricing":
@@ -11488,6 +12037,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/o4-mini",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: o4 Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -11595,6 +12145,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
 		"id": "qwen/qwen2.5-coder-7b-instruct",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Qwen: Qwen2.5 Coder 7B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -11628,6 +12179,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-4.1",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: GPT-4.1",
 		"per_request_limits": null,
 		"pricing":
@@ -11663,6 +12215,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-4.1-mini",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: GPT-4.1 Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -11698,6 +12251,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-4.1-nano",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "OpenAI: GPT-4.1 Nano",
 		"per_request_limits": null,
 		"pricing":
@@ -11733,6 +12287,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "EleutherAI/llemma_7b",
 		"id": "eleutherai/llemma_7b",
+		"knowledge_cutoff": "2023-04-30",
 		"name": "EleutherAI: Llemma 7b",
 		"per_request_limits": null,
 		"pricing":
@@ -11766,6 +12321,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "AlfredPros/CodeLlama-7b-Instruct-Solidity",
 		"id": "alfredpros/codellama-7b-instruct-solidity",
+		"knowledge_cutoff": "2023-06-30",
 		"name": "AlfredPros: CodeLLaMa 7B Instruct Solidity",
 		"per_request_limits": null,
 		"pricing":
@@ -12019,6 +12575,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-3-mini-beta",
+		"knowledge_cutoff": "2025-02-28",
 		"name": "xAI: Grok 3 Mini Beta",
 		"per_request_limits": null,
 		"pricing":
@@ -12054,6 +12611,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-3-beta",
+		"knowledge_cutoff": "2025-02-28",
 		"name": "xAI: Grok 3 Beta",
 		"per_request_limits": null,
 		"pricing":
@@ -12120,11 +12678,19 @@
 		"context_length": 131072,
 		"created": 1744115059,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
 		"description": "Llama-3.1-Nemotron-Ultra-253B-v1 is a large language model (LLM) optimized for advanced reasoning, human-interactive chat, retrieval-augmented generation (RAG), and tool-calling tasks. Derived from Meta’s Llama-3.1-405B-Instruct, it has been significantly customized using Neural Architecture Search (NAS), resulting in enhanced efficiency, reduced memory usage, and improved inference latency. The model supports a context length of up to 128K tokens and can operate efficiently on an 8x NVIDIA H100 node.\n\nNote: you must include `detailed thinking on` in the system prompt to enable reasoning. Please see [Usage Recommendations](https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1#quick-start-and-usage-recommendations) for more.",
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
 		"id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+		"knowledge_cutoff": "2024-03-31",
 		"name": "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1",
 		"per_request_limits": null,
 		"pricing":
@@ -12194,6 +12760,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
 		"id": "meta-llama/llama-4-maverick",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Meta: Llama 4 Maverick",
 		"per_request_limits": null,
 		"pricing":
@@ -12263,6 +12830,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
 		"id": "meta-llama/llama-4-scout",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Meta: Llama 4 Scout",
 		"per_request_limits": null,
 		"pricing":
@@ -12372,6 +12940,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen2.5-VL-32B-Instruct",
 		"id": "qwen/qwen2.5-vl-32b-instruct",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Qwen: Qwen2.5 VL 32B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -12441,6 +13010,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-V3-0324",
 		"id": "deepseek/deepseek-chat-v3-0324",
+		"knowledge_cutoff": "2024-07-31",
 		"name": "DeepSeek: DeepSeek V3 0324",
 		"per_request_limits": null,
 		"pricing":
@@ -12475,6 +13045,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/o1-pro",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: o1-pro",
 		"per_request_limits": null,
 		"pricing":
@@ -12535,7 +13106,7 @@
 			"tokenizer": "Mistral"
 		},
 		"canonical_slug": "mistralai/mistral-small-3.1-24b-instruct-2503",
-		"context_length": 128000,
+		"context_length": 131072,
 		"created": 1742238937,
 		"default_parameters":
 		{
@@ -12545,19 +13116,21 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
 		"id": "mistralai/mistral-small-3.1-24b-instruct",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "Mistral: Mistral Small 3.1 24B",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000056",
-			"prompt": "0.00000035"
+			"completion": "0.00000011",
+			"input_cache_read": "0.000000015",
+			"prompt": "0.00000003"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 128000,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -12578,6 +13151,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "allenai/OLMo-2-0325-32B-Instruct",
 		"id": "allenai/olmo-2-0325-32b-instruct",
+		"knowledge_cutoff": "2024-10-31",
 		"name": "AllenAI: Olmo 2 32B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -12611,6 +13185,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-3-4b-it",
 		"id": "google/gemma-3-4b-it:free",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemma 3 4B (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -12644,6 +13219,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-3-4b-it",
 		"id": "google/gemma-3-4b-it",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemma 3 4B",
 		"per_request_limits": null,
 		"pricing":
@@ -12677,6 +13253,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-3-12b-it",
 		"id": "google/gemma-3-12b-it:free",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemma 3 12B (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -12710,6 +13287,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-3-12b-it",
 		"id": "google/gemma-3-12b-it",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemma 3 12B",
 		"per_request_limits": null,
 		"pricing":
@@ -12743,6 +13321,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "CohereForAI/c4ai-command-a-03-2025",
 		"id": "cohere/command-a",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Cohere: Command A",
 		"per_request_limits": null,
 		"pricing":
@@ -12776,6 +13355,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-4o-mini-search-preview",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: GPT-4o-mini Search Preview",
 		"per_request_limits": null,
 		"pricing":
@@ -12810,6 +13390,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-4o-search-preview",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: GPT-4o Search Preview",
 		"per_request_limits": null,
 		"pricing":
@@ -12865,6 +13446,47 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "rekaai/reka-flash-3",
+		"context_length": 65536,
+		"created": 1741812813,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Reka Flash 3 is a general-purpose, instruction-tuned large language model with 21 billion parameters, developed by Reka. It excels at general chat, coding tasks, instruction-following, and function calling. Featuring a 32K context length and optimized through reinforcement learning (RLOO), it provides competitive performance comparable to proprietary models within a smaller parameter footprint. Ideal for low-latency, local, or on-device deployments, Reka Flash 3 is compact, supports efficient quantization (down to 11GB at 4-bit precision), and employs explicit reasoning tags (\"<reasoning>\") to indicate its internal thought process.\n\nReka Flash 3 is primarily an English model with limited multilingual understanding capabilities. The model weights are released under the Apache 2.0 license.",
+		"expiration_date": null,
+		"hugging_face_id": "RekaAI/reka-flash-3",
+		"id": "rekaai/reka-flash-3",
+		"knowledge_cutoff": "2025-01-31",
+		"name": "Reka: Flash 3",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000002",
+			"prompt": "0.0000001"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "seed", "stop", "temperature", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 65536,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "image"],
 			"instruct_type": "gemma",
 			"modality": "text+image->text",
@@ -12884,6 +13506,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-3-27b-it",
 		"id": "google/gemma-3-27b-it:free",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemma 3 27B (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -12921,6 +13544,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-3-27b-it",
 		"id": "google/gemma-3-27b-it",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemma 3 27B",
 		"per_request_limits": null,
 		"pricing":
@@ -12990,6 +13614,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "TheDrummer/Skyfall-36B-v2",
 		"id": "thedrummer/skyfall-36b-v2",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "TheDrummer: Skyfall 36B V2",
 		"per_request_limits": null,
 		"pricing":
@@ -13059,6 +13684,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "perplexity/sonar-reasoning-pro",
+		"knowledge_cutoff": null,
 		"name": "Perplexity: Sonar Reasoning Pro",
 		"per_request_limits": null,
 		"pricing":
@@ -13093,6 +13719,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "perplexity/sonar-pro",
+		"knowledge_cutoff": null,
 		"name": "Perplexity: Sonar Pro",
 		"per_request_limits": null,
 		"pricing":
@@ -13127,6 +13754,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "perplexity/sonar-deep-research",
+		"knowledge_cutoff": null,
 		"name": "Perplexity: Sonar Deep Research",
 		"per_request_limits": null,
 		"pricing":
@@ -13198,6 +13826,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/QwQ-32B",
 		"id": "qwen/qwq-32b",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Qwen: QwQ 32B",
 		"per_request_limits": null,
 		"pricing":
@@ -13307,6 +13936,7 @@
 		"expiration_date": "2026-06-01",
 		"hugging_face_id": "",
 		"id": "google/gemini-2.0-flash-lite-001",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemini 2.0 Flash Lite",
 		"per_request_limits": null,
 		"pricing":
@@ -13347,6 +13977,7 @@
 		"expiration_date": "2026-05-05",
 		"hugging_face_id": "",
 		"id": "anthropic/claude-3.7-sonnet:thinking",
+		"knowledge_cutoff": "2024-10-31",
 		"name": "Anthropic: Claude 3.7 Sonnet (thinking)",
 		"per_request_limits": null,
 		"pricing":
@@ -13387,6 +14018,7 @@
 		"expiration_date": "2026-05-05",
 		"hugging_face_id": "",
 		"id": "anthropic/claude-3.7-sonnet",
+		"knowledge_cutoff": "2024-10-31",
 		"name": "Anthropic: Claude 3.7 Sonnet",
 		"per_request_limits": null,
 		"pricing":
@@ -13461,6 +14093,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "mistralai/mistral-saba",
+		"knowledge_cutoff": "2024-09-30",
 		"name": "Mistral: Saba",
 		"per_request_limits": null,
 		"pricing":
@@ -13639,6 +14272,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Llama-Guard-3-8B",
 		"id": "meta-llama/llama-guard-3-8b",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Llama Guard 3 8B",
 		"per_request_limits": null,
 		"pricing":
@@ -13676,6 +14310,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/o3-mini-high",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: o3 Mini High",
 		"per_request_limits": null,
 		"pricing":
@@ -13750,6 +14385,7 @@
 		"expiration_date": "2026-06-01",
 		"hugging_face_id": "",
 		"id": "google/gemini-2.0-flash-001",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Google: Gemini 2.0 Flash",
 		"per_request_limits": null,
 		"pricing":
@@ -13788,6 +14424,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen-vl-plus",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen VL Plus",
 		"per_request_limits": null,
 		"pricing":
@@ -13822,6 +14459,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "aion-labs/aion-1.0",
+		"knowledge_cutoff": null,
 		"name": "AionLabs: Aion-1.0",
 		"per_request_limits": null,
 		"pricing":
@@ -13855,6 +14493,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "FuseAI/FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview",
 		"id": "aion-labs/aion-1.0-mini",
+		"knowledge_cutoff": null,
 		"name": "AionLabs: Aion-1.0-Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -13888,6 +14527,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "aion-labs/aion-rp-llama-3.1-8b",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "AionLabs: Aion-RP 1.0 (8B)",
 		"per_request_limits": null,
 		"pricing":
@@ -13925,6 +14565,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen-vl-max",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen VL Max",
 		"per_request_limits": null,
 		"pricing":
@@ -13958,6 +14599,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen-turbo",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen-Turbo",
 		"per_request_limits": null,
 		"pricing":
@@ -14028,6 +14670,7 @@
 		"expiration_date": "2026-02-16",
 		"hugging_face_id": "Qwen/Qwen2.5-VL-72B-Instruct",
 		"id": "qwen/qwen2.5-vl-72b-instruct",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Qwen: Qwen2.5 VL 72B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -14061,6 +14704,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen-plus",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen-Plus",
 		"per_request_limits": null,
 		"pricing":
@@ -14095,6 +14739,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "qwen/qwen-max",
+		"knowledge_cutoff": "2025-03-31",
 		"name": "Qwen: Qwen-Max ",
 		"per_request_limits": null,
 		"pricing":
@@ -14136,6 +14781,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/o3-mini",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: o3 Mini",
 		"per_request_limits": null,
 		"pricing":
@@ -14212,6 +14858,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Mistral-Small-24B-Instruct-2501",
 		"id": "mistralai/mistral-small-24b-instruct-2501",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "Mistral: Mistral Small 3",
 		"per_request_limits": null,
 		"pricing":
@@ -14245,6 +14892,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
 		"id": "deepseek/deepseek-r1-distill-qwen-32b",
+		"knowledge_cutoff": "2024-07-31",
 		"name": "DeepSeek: R1 Distill Qwen 32B",
 		"per_request_limits": null,
 		"pricing":
@@ -14386,6 +15034,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "perplexity/sonar",
+		"knowledge_cutoff": null,
 		"name": "Perplexity: Sonar",
 		"per_request_limits": null,
 		"pricing":
@@ -14528,6 +15177,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
 		"id": "deepseek/deepseek-r1-distill-llama-70b",
+		"knowledge_cutoff": "2024-07-31",
 		"name": "DeepSeek: R1 Distill Llama 70B",
 		"per_request_limits": null,
 		"pricing":
@@ -14592,11 +15242,19 @@
 		"context_length": 64000,
 		"created": 1737381095,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
 		"description": "DeepSeek R1 is here: Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass.\n\nFully open-source model & [technical report](https://api-docs.deepseek.com/news/news250120).\n\nMIT licensed: Distill & commercialize freely!",
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-R1",
 		"id": "deepseek/deepseek-r1",
+		"knowledge_cutoff": "2024-07-31",
 		"name": "DeepSeek: R1",
 		"per_request_limits": null,
 		"pricing":
@@ -14634,6 +15292,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "MiniMaxAI/MiniMax-Text-01",
 		"id": "minimax/minimax-01",
+		"knowledge_cutoff": "2024-03-31",
 		"name": "MiniMax: MiniMax-01",
 		"per_request_limits": null,
 		"pricing":
@@ -14705,6 +15364,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "microsoft/phi-4",
 		"id": "microsoft/phi-4",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Microsoft: Phi 4",
 		"per_request_limits": null,
 		"pricing":
@@ -14738,6 +15398,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Sao10K/L3.1-70B-Hanami-x1",
 		"id": "sao10k/l3.1-70b-hanami-x1",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Sao10K: Llama 3.1 70B Hanami x1",
 		"per_request_limits": null,
 		"pricing":
@@ -14771,6 +15432,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-V3",
 		"id": "deepseek/deepseek-chat",
+		"knowledge_cutoff": "2024-07-31",
 		"name": "DeepSeek: DeepSeek V3",
 		"per_request_limits": null,
 		"pricing":
@@ -14804,6 +15466,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Sao10K/L3.3-70B-Euryale-v2.3",
 		"id": "sao10k/l3.3-euryale-70b",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Sao10K: Llama 3.3 Euryale 70B",
 		"per_request_limits": null,
 		"pricing":
@@ -14844,6 +15507,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/o1",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: o1",
 		"per_request_limits": null,
 		"pricing":
@@ -14950,6 +15614,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "cohere/command-r7b-12-2024",
+		"knowledge_cutoff": "2024-08-31",
 		"name": "Cohere: Command R7B (12-2024)",
 		"per_request_limits": null,
 		"pricing":
@@ -15016,6 +15681,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Llama-3.3-70B-Instruct",
 		"id": "meta-llama/llama-3.3-70b-instruct:free",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Meta: Llama 3.3 70B Instruct (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -15049,6 +15715,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Llama-3.3-70B-Instruct",
 		"id": "meta-llama/llama-3.3-70b-instruct",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Meta: Llama 3.3 70B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -15082,6 +15749,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "amazon/nova-lite-v1",
+		"knowledge_cutoff": "2024-10-31",
 		"name": "Amazon: Nova Lite 1.0",
 		"per_request_limits": null,
 		"pricing":
@@ -15115,6 +15783,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "amazon/nova-micro-v1",
+		"knowledge_cutoff": "2024-10-31",
 		"name": "Amazon: Nova Micro 1.0",
 		"per_request_limits": null,
 		"pricing":
@@ -15148,6 +15817,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "amazon/nova-pro-v1",
+		"knowledge_cutoff": "2024-10-31",
 		"name": "Amazon: Nova Pro 1.0",
 		"per_request_limits": null,
 		"pricing":
@@ -15217,6 +15887,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-4o-2024-11-20",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: GPT-4o (2024-11-20)",
 		"per_request_limits": null,
 		"pricing":
@@ -15253,6 +15924,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "mistralai/mistral-large-2411",
+		"knowledge_cutoff": "2024-07-31",
 		"name": "Mistral Large 2411",
 		"per_request_limits": null,
 		"pricing":
@@ -15289,6 +15961,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "mistralai/mistral-large-2407",
+		"knowledge_cutoff": "2024-03-31",
 		"name": "Mistral Large 2407",
 		"per_request_limits": null,
 		"pricing":
@@ -15325,6 +15998,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "mistralai/pixtral-large-2411",
+		"knowledge_cutoff": "2024-07-31",
 		"name": "Mistral: Pixtral Large 2411",
 		"per_request_limits": null,
 		"pricing":
@@ -15395,6 +16069,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen2.5-Coder-32B-Instruct",
 		"id": "qwen/qwen-2.5-coder-32b-instruct",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Qwen2.5 Coder 32B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -15461,6 +16136,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "TheDrummer/UnslopNemo-12B-v4.1",
 		"id": "thedrummer/unslopnemo-12b",
+		"knowledge_cutoff": "2024-04-30",
 		"name": "TheDrummer: UnslopNemo 12B",
 		"per_request_limits": null,
 		"pricing":
@@ -15536,6 +16212,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "anthropic/claude-3.5-haiku",
+		"knowledge_cutoff": "2024-07-31",
 		"name": "Anthropic: Claude 3.5 Haiku",
 		"per_request_limits": null,
 		"pricing":
@@ -15572,6 +16249,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "anthracite-org/magnum-v4-72b",
 		"id": "anthracite-org/magnum-v4-72b",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Magnum v4 72B",
 		"per_request_limits": null,
 		"pricing":
@@ -15605,6 +16283,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "anthropic/claude-3.5-sonnet",
+		"knowledge_cutoff": "2024-04-30",
 		"name": "Anthropic: Claude 3.5 Sonnet",
 		"per_request_limits": null,
 		"pricing":
@@ -15714,6 +16393,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen2.5-7B-Instruct",
 		"id": "qwen/qwen-2.5-7b-instruct",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Qwen: Qwen2.5 7B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -15726,7 +16406,7 @@
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -15747,6 +16427,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
 		"id": "nvidia/llama-3.1-nemotron-70b-instruct",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "NVIDIA: Llama 3.1 Nemotron 70B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -15780,6 +16461,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "inflection/inflection-3-productivity",
+		"knowledge_cutoff": "2024-10-31",
 		"name": "Inflection: Inflection 3 Productivity",
 		"per_request_limits": null,
 		"pricing":
@@ -15813,6 +16495,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "inflection/inflection-3-pi",
+		"knowledge_cutoff": "2024-10-31",
 		"name": "Inflection: Inflection 3 Pi",
 		"per_request_limits": null,
 		"pricing":
@@ -15884,6 +16567,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "TheDrummer/Rocinante-12B-v1.1",
 		"id": "thedrummer/rocinante-12b",
+		"knowledge_cutoff": "2024-04-30",
 		"name": "TheDrummer: Rocinante 12B",
 		"per_request_limits": null,
 		"pricing":
@@ -15989,6 +16673,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Llama-3.2-3B-Instruct",
 		"id": "meta-llama/llama-3.2-3b-instruct:free",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Meta: Llama 3.2 3B Instruct (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -16022,6 +16707,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Llama-3.2-3B-Instruct",
 		"id": "meta-llama/llama-3.2-3b-instruct",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Meta: Llama 3.2 3B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -16055,6 +16741,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Llama-3.2-1B-Instruct",
 		"id": "meta-llama/llama-3.2-1b-instruct",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Meta: Llama 3.2 1B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -16088,6 +16775,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
 		"id": "meta-llama/llama-3.2-11b-vision-instruct",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Meta: Llama 3.2 11B Vision Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -16157,6 +16845,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Qwen/Qwen2.5-72B-Instruct",
 		"id": "qwen/qwen-2.5-72b-instruct",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Qwen2.5 72B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -16332,6 +17021,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "cohere/command-r-plus-08-2024",
+		"knowledge_cutoff": "2024-03-31",
 		"name": "Cohere: Command R+ (08-2024)",
 		"per_request_limits": null,
 		"pricing":
@@ -16365,6 +17055,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "cohere/command-r-08-2024",
+		"knowledge_cutoff": "2024-03-31",
 		"name": "Cohere: Command R (08-2024)",
 		"per_request_limits": null,
 		"pricing":
@@ -16398,6 +17089,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Sao10K/L3.1-70B-Euryale-v2.2",
 		"id": "sao10k/l3.1-euryale-70b",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Sao10K: Llama 3.1 Euryale 70B v2.2",
 		"per_request_limits": null,
 		"pricing":
@@ -16533,6 +17225,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "NousResearch/Hermes-3-Llama-3.1-70B",
 		"id": "nousresearch/hermes-3-llama-3.1-70b",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Nous: Hermes 3 70B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -16566,6 +17259,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "NousResearch/Hermes-3-Llama-3.1-405B",
 		"id": "nousresearch/hermes-3-llama-3.1-405b:free",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Nous: Hermes 3 405B Instruct (free)",
 		"per_request_limits": null,
 		"pricing":
@@ -16599,6 +17293,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "NousResearch/Hermes-3-Llama-3.1-405B",
 		"id": "nousresearch/hermes-3-llama-3.1-405b",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Nous: Hermes 3 405B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -16665,6 +17360,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Sao10K/L3-8B-Lunaris-v1",
 		"id": "sao10k/l3-lunaris-8b",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Sao10K: Llama 3 8B Lunaris",
 		"per_request_limits": null,
 		"pricing":
@@ -16698,6 +17394,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4o-2024-08-06",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: GPT-4o (2024-08-06)",
 		"per_request_limits": null,
 		"pricing":
@@ -16765,6 +17462,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
 		"id": "meta-llama/llama-3.1-8b-instruct",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Meta: Llama 3.1 8B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -16798,6 +17496,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
 		"id": "meta-llama/llama-3.1-70b-instruct",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Meta: Llama 3.1 70B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -16937,6 +17636,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Mistral-Nemo-Instruct-2407",
 		"id": "mistralai/mistral-nemo",
+		"knowledge_cutoff": "2024-04-30",
 		"name": "Mistral: Mistral Nemo",
 		"per_request_limits": null,
 		"pricing":
@@ -16970,6 +17670,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4o-mini-2024-07-18",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: GPT-4o-mini (2024-07-18)",
 		"per_request_limits": null,
 		"pricing":
@@ -17004,6 +17705,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4o-mini",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: GPT-4o-mini",
 		"per_request_limits": null,
 		"pricing":
@@ -17038,6 +17740,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-2-27b-it",
 		"id": "google/gemma-2-27b-it",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Google: Gemma 2 27B",
 		"per_request_limits": null,
 		"pricing":
@@ -17107,6 +17810,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "google/gemma-2-9b-it",
 		"id": "google/gemma-2-9b-it",
+		"knowledge_cutoff": "2024-06-30",
 		"name": "Google: Gemma 2 9B",
 		"per_request_limits": null,
 		"pricing":
@@ -17178,6 +17882,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Sao10K/L3-70B-Euryale-v2.1",
 		"id": "sao10k/l3-euryale-70b",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Sao10k: Llama 3 Euryale 70B v2.1",
 		"per_request_limits": null,
 		"pricing":
@@ -17247,6 +17952,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "NousResearch/Hermes-2-Pro-Llama-3-8B",
 		"id": "nousresearch/hermes-2-pro-llama-3-8b",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "NousResearch: Hermes 2 Pro - Llama-3 8B",
 		"per_request_limits": null,
 		"pricing":
@@ -17534,6 +18240,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4o:extended",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: GPT-4o (extended)",
 		"per_request_limits": null,
 		"pricing":
@@ -17567,6 +18274,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4o-2024-05-13",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: GPT-4o (2024-05-13)",
 		"per_request_limits": null,
 		"pricing":
@@ -17600,6 +18308,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4o",
+		"knowledge_cutoff": "2023-10-31",
 		"name": "OpenAI: GPT-4o",
 		"per_request_limits": null,
 		"pricing":
@@ -17667,6 +18376,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Meta-Llama-3-8B-Instruct",
 		"id": "meta-llama/llama-3-8b-instruct",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Meta: Llama 3 8B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -17700,6 +18410,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "meta-llama/Meta-Llama-3-70B-Instruct",
 		"id": "meta-llama/llama-3-70b-instruct",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Meta: Llama 3 70B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -17735,6 +18446,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Mixtral-8x22B-Instruct-v0.1",
 		"id": "mistralai/mixtral-8x22b-instruct",
+		"knowledge_cutoff": "2024-01-31",
 		"name": "Mistral: Mixtral 8x22B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -17769,6 +18481,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "microsoft/WizardLM-2-8x22B",
 		"id": "microsoft/wizardlm-2-8x22b",
+		"knowledge_cutoff": "2024-04-30",
 		"name": "WizardLM-2 8x22B",
 		"per_request_limits": null,
 		"pricing":
@@ -17802,6 +18515,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4-turbo",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "OpenAI: GPT-4 Turbo",
 		"per_request_limits": null,
 		"pricing":
@@ -18051,6 +18765,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "anthropic/claude-3-haiku",
+		"knowledge_cutoff": "2023-08-31",
 		"name": "Anthropic: Claude 3 Haiku",
 		"per_request_limits": null,
 		"pricing":
@@ -18162,6 +18877,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "mistralai/mistral-large",
+		"knowledge_cutoff": "2024-11-30",
 		"name": "Mistral Large",
 		"per_request_limits": null,
 		"pricing":
@@ -18196,6 +18912,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4-turbo-preview",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "OpenAI: GPT-4 Turbo Preview",
 		"per_request_limits": null,
 		"pricing":
@@ -18229,6 +18946,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-3.5-turbo-0613",
+		"knowledge_cutoff": "2021-09-30",
 		"name": "OpenAI: GPT-3.5 Turbo (older v0613)",
 		"per_request_limits": null,
 		"pricing":
@@ -18372,6 +19090,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
 		"id": "mistralai/mixtral-8x7b-instruct",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Mistral: Mixtral 8x7B Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -18438,6 +19157,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "alpindale/goliath-120b",
 		"id": "alpindale/goliath-120b",
+		"knowledge_cutoff": "2023-12-31",
 		"name": "Goliath 120B",
 		"per_request_limits": null,
 		"pricing":
@@ -18471,10 +19191,11 @@
 			"temperature": null,
 			"top_p": null
 		},
-		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nLearn more, including how to customize the models for routing, in our [docs](/docs/guides/routing/routers/auto-router).\n\nRequests will be routed to the following models:\n- [anthropic/claude-haiku-4.5](/anthropic/claude-haiku-4.5)\n- [anthropic/claude-opus-4.6](/anthropic/claude-opus-4.6)\n- [anthropic/claude-sonnet-4.5](/anthropic/claude-sonnet-4.5)\n- [anthropic/claude-sonnet-4.6](/anthropic/claude-sonnet-4.6)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [google/gemini-2.5-flash-lite](/google/gemini-2.5-flash-lite)\n- [google/gemini-3-flash-preview](/google/gemini-3-flash-preview)\n- [google/gemini-3-pro-preview](/google/gemini-3-pro-preview)\n- [google/gemini-3.1-pro-preview](/google/gemini-3.1-pro-preview)\n- [meta-llama/llama-3.3-70b-instruct](/meta-llama/llama-3.3-70b-instruct)\n- [minimax/minimax-m2.5](/minimax/minimax-m2.5)\n- [mistralai/codestral-2508](/mistralai/codestral-2508)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium-3.1](/mistralai/mistral-medium-3.1)\n- [mistralai/mistral-small-3.2-24b-instruct-2506](/mistralai/mistral-small-3.2-24b-instruct-2506)\n- [moonshotai/kimi-k2-thinking](/moonshotai/kimi-k2-thinking)\n- [moonshotai/kimi-k2.5](/moonshotai/kimi-k2.5)\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-5.1](/openai/gpt-5.1)\n- [openai/gpt-5.2](/openai/gpt-5.2)\n- [openai/gpt-5.2-pro](/openai/gpt-5.2-pro)\n- [openai/gpt-oss-120b](/openai/gpt-oss-120b)\n- [perplexity/sonar](/perplexity/sonar)\n- [qwen/qwen3-235b-a22b](/qwen/qwen3-235b-a22b)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)\n- [z-ai/glm-5](/z-ai/glm-5)",
+		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nLearn more, including how to customize the models for routing, in our [docs](/docs/guides/routing/routers/auto-router).\n\nRequests will be routed to the following models:\n- [anthropic/claude-haiku-4.5](/anthropic/claude-haiku-4.5)\n- [anthropic/claude-opus-4.6](/anthropic/claude-opus-4.6)\n- [anthropic/claude-sonnet-4.5](/anthropic/claude-sonnet-4.5)\n- [anthropic/claude-sonnet-4.6](/anthropic/claude-sonnet-4.6)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [google/gemini-2.5-flash-lite](/google/gemini-2.5-flash-lite)\n- [google/gemini-3-flash-preview](/google/gemini-3-flash-preview)\n- [google/gemini-3-pro-preview](/google/gemini-3-pro-preview)\n- [google/gemini-3.1-pro-preview](/google/gemini-3.1-pro-preview)\n- [meta-llama/llama-3.3-70b-instruct](/meta-llama/llama-3.3-70b-instruct)\n- [minimax/minimax-m2.5](/minimax/minimax-m2.5)\n- [mistralai/codestral-2508](/mistralai/codestral-2508)\n- [mistralai/mistral-7b-instruct-v0.1](/mistralai/mistral-7b-instruct-v0.1)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium-3.1](/mistralai/mistral-medium-3.1)\n- [mistralai/mistral-small-3.2-24b-instruct-2506](/mistralai/mistral-small-3.2-24b-instruct-2506)\n- [moonshotai/kimi-k2-thinking](/moonshotai/kimi-k2-thinking)\n- [moonshotai/kimi-k2.5](/moonshotai/kimi-k2.5)\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-5.1](/openai/gpt-5.1)\n- [openai/gpt-5.2](/openai/gpt-5.2)\n- [openai/gpt-5.2-pro](/openai/gpt-5.2-pro)\n- [openai/gpt-5.3-chat](/openai/gpt-5.3-chat)\n- [openai/gpt-oss-120b](/openai/gpt-oss-120b)\n- [perplexity/sonar](/perplexity/sonar)\n- [qwen/qwen3-235b-a22b](/qwen/qwen3-235b-a22b)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)\n- [x-ai/grok-4.1-fast](/x-ai/grok-4.1-fast)\n- [z-ai/glm-5](/z-ai/glm-5)",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openrouter/auto",
+		"knowledge_cutoff": null,
 		"name": "Auto Router",
 		"per_request_limits": null,
 		"pricing":
@@ -18508,6 +19229,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4-1106-preview",
+		"knowledge_cutoff": "2023-04-30",
 		"name": "OpenAI: GPT-4 Turbo (older v1106)",
 		"per_request_limits": null,
 		"pricing":
@@ -18541,6 +19263,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-3.5-turbo-instruct",
+		"knowledge_cutoff": "2021-09-30",
 		"name": "OpenAI: GPT-3.5 Turbo Instruct",
 		"per_request_limits": null,
 		"pricing":
@@ -18576,6 +19299,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "mistralai/Mistral-7B-Instruct-v0.1",
 		"id": "mistralai/mistral-7b-instruct-v0.1",
+		"knowledge_cutoff": "2023-09-30",
 		"name": "Mistral: Mistral 7B Instruct v0.1",
 		"per_request_limits": null,
 		"pricing":
@@ -18609,6 +19333,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-3.5-turbo-16k",
+		"knowledge_cutoff": "2021-09-30",
 		"name": "OpenAI: GPT-3.5 Turbo 16k",
 		"per_request_limits": null,
 		"pricing":
@@ -18642,6 +19367,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "mancer/weaver",
+		"knowledge_cutoff": "2023-06-30",
 		"name": "Mancer: Weaver (alpha)",
 		"per_request_limits": null,
 		"pricing":
@@ -18675,6 +19401,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Undi95/ReMM-SLERP-L2-13B",
 		"id": "undi95/remm-slerp-l2-13b",
+		"knowledge_cutoff": "2023-06-30",
 		"name": "ReMM SLERP 13B",
 		"per_request_limits": null,
 		"pricing":
@@ -18708,6 +19435,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "Gryphe/MythoMax-L2-13b",
 		"id": "gryphe/mythomax-l2-13b",
+		"knowledge_cutoff": "2023-06-30",
 		"name": "MythoMax 13B",
 		"per_request_limits": null,
 		"pricing":
@@ -18741,6 +19469,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4-0314",
+		"knowledge_cutoff": "2021-09-30",
 		"name": "OpenAI: GPT-4 (older v0314)",
 		"per_request_limits": null,
 		"pricing":
@@ -18774,6 +19503,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-4",
+		"knowledge_cutoff": "2021-09-30",
 		"name": "OpenAI: GPT-4",
 		"per_request_limits": null,
 		"pricing":
@@ -18807,6 +19537,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-3.5-turbo",
+		"knowledge_cutoff": "2021-09-30",
 		"name": "OpenAI: GPT-3.5 Turbo",
 		"per_request_limits": null,
 		"pricing":

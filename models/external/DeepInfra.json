@@ -187,7 +187,7 @@
 				"input_tokens": 0.25,
 				"output_tokens": 2.0
 			},
-			"tags": ["vision", "prompt_cache"]
+			"tags": ["vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -208,7 +208,7 @@
 				"input_tokens": 0.1,
 				"output_tokens": 0.4
 			},
-			"tags": ["vision", "prompt_cache"]
+			"tags": ["vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -385,7 +385,7 @@
 				"input_tokens": 0.27,
 				"output_tokens": 0.95
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -750,7 +750,7 @@
 				"input_tokens": 0.12000000000000001,
 				"output_tokens": 0.24000000000000002
 			},
-			"tags": ["reasoning_effort"]
+			"tags": ["reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -811,7 +811,7 @@
 				"input_tokens": 0.22999999999999998,
 				"output_tokens": 2.3
 			},
-			"tags": ["prompt_cache", "reasoning_effort"]
+			"tags": ["prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -831,7 +831,7 @@
 				"input_tokens": 0.08,
 				"output_tokens": 0.28
 			},
-			"tags": ["reasoning_effort"]
+			"tags": ["reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -851,7 +851,7 @@
 				"input_tokens": 0.08,
 				"output_tokens": 0.28
 			},
-			"tags": ["reasoning_effort"]
+			"tags": ["reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1215,6 +1215,166 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3-VL-8B-Thinking"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3.5-0.8B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3.5-0.8B is Alibaba's smallest model in the Qwen3.5 series, featuring a hybrid Gated Delta Networks and sparse Mixture-of-Experts architecture. Despite its compact size, it supports a 262K token context window, 201 languages, thinking/reasoning mode, and tool calling. Ideal for edge deployments, resource-constrained environments, and lightweight inference tasks.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.01,
+				"output_tokens": 0.05
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.5-0.8B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3.5-122B-A10B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3.5-122B-A10B is a large Mixture-of-Experts model from Alibaba's Qwen3.5 series with 122B total parameters and 10B activated per token. It features a 262K token context window (extensible to 1M with YaRN), thinking/reasoning mode, tool calling, and support for 201 languages. Excels at complex reasoning, coding, multimodal understanding, and agentic tasks with the efficiency of sparse activation.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.29,
+				"output_tokens": 2.9000000000000004
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.5-122B-A10B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3.5-27B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3.5-27B is Alibaba's largest dense Qwen3.5 model, delivering near-frontier quality across reasoning, coding, and instruction following. It features a 262K token context window (extensible to 1M), thinking/reasoning mode, tool calling, multi-token prediction, and support for 201 languages. Best suited for production deployments and complex enterprise tasks requiring top-tier performance.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.26,
+				"output_tokens": 2.5999999999999996
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.5-27B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3.5-2B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3.5-2B is a compact yet capable model from Alibaba's Qwen3.5 series. It features a 262K token context window, support for 201 languages, thinking/reasoning mode, and tool calling for agentic workflows. A strong choice for prototyping, fine-tuning, and efficient multilingual deployments.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.02,
+				"output_tokens": 0.1
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.5-2B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3.5-35B-A3B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3.5-35B-A3B is an efficient Mixture-of-Experts model from Alibaba's Qwen3.5 series with 35B total parameters and only 3B activated per token. It features a 262K token context window (extensible to 1M with YaRN), thinking/reasoning mode, tool calling, and support for 201 languages. Delivers strong performance on reasoning, coding, and vision-language tasks at a fraction of the compute cost.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.21999999999999997,
+				"output_tokens": 2.2
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.5-35B-A3B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3.5-397B-A17B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3.5-397B-A17B is Alibaba's most capable Qwen3.5 model, a Mixture-of-Experts architecture with 397B total parameters and 17B activated per token. It features a 262K token context window (extensible to 1M with YaRN), thinking/reasoning mode, tool calling with MCP integration, and support for 201 languages. Sets state-of-the-art results on reasoning, coding, math, and multimodal benchmarks.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.54,
+				"output_tokens": 3.4
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.5-397B-A17B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3.5-4B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3.5-4B is a mid-size model from Alibaba's Qwen3.5 series that delivers a strong balance of performance and efficiency. It features a 262K token context window (extensible to 1M with YaRN), thinking/reasoning mode, tool calling, and support for 201 languages. Well-suited for complex reasoning, code generation, and agentic applications.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.030000000000000002,
+				"output_tokens": 0.15
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.5-4B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3.5-9B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3.5-9B is a high-performance model from Alibaba's Qwen3.5 series with a hybrid Gated Delta Networks and sparse MoE architecture. It features a 262K token context window, thinking/reasoning mode, tool calling, multi-token prediction, and support for 201 languages. Excels at reasoning, coding, instruction following, and long-context tasks.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.04,
+				"output_tokens": 0.2
+			},
+			"tags": ["vision", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.5-9B"
 	},
 	{
 		"created": 0,
@@ -1777,7 +1937,7 @@
 				"input_tokens": 0.5,
 				"output_tokens": 2.15
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1797,7 +1957,7 @@
 				"input_tokens": 1.0,
 				"output_tokens": 2.9999999999999996
 			},
-			"tags": []
+			"tags": ["reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1817,7 +1977,7 @@
 				"input_tokens": 0.7,
 				"output_tokens": 0.8
 			},
-			"tags": []
+			"tags": ["reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1939,7 +2099,7 @@
 				"input_tokens": 0.21,
 				"output_tokens": 0.7899999999999999
 			},
-			"tags": ["prompt_cache", "reasoning_effort"]
+			"tags": ["prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1960,7 +2120,7 @@
 				"input_tokens": 0.21,
 				"output_tokens": 0.7899999999999999
 			},
-			"tags": ["prompt_cache", "reasoning_effort"]
+			"tags": ["prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2129,7 +2289,7 @@
 				"input_tokens": 0.3,
 				"output_tokens": 2.5
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2149,7 +2309,7 @@
 				"input_tokens": 1.25,
 				"output_tokens": 10.0
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3147,7 +3307,7 @@
 				"input_tokens": 0.47,
 				"output_tokens": 2.0
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3168,7 +3328,7 @@
 				"input_tokens": 0.45,
 				"output_tokens": 2.25
 			},
-			"tags": ["vision", "prompt_cache"]
+			"tags": ["vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3189,7 +3349,7 @@
 				"input_tokens": 0.6,
 				"output_tokens": 2.9999999999999996
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3229,7 +3389,7 @@
 				"input_tokens": 0.1,
 				"output_tokens": 0.4
 			},
-			"tags": []
+			"tags": ["reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3246,11 +3406,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.04000000000000001,
+				"cache_read_tokens": 0.1,
 				"input_tokens": 0.1,
 				"output_tokens": 0.5
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3270,7 +3430,7 @@
 				"input_tokens": 0.2,
 				"output_tokens": 0.6
 			},
-			"tags": ["vision"]
+			"tags": ["vision", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3290,7 +3450,7 @@
 				"input_tokens": 0.04,
 				"output_tokens": 0.16
 			},
-			"tags": []
+			"tags": ["reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3310,7 +3470,7 @@
 				"input_tokens": 0.05,
 				"output_tokens": 0.2
 			},
-			"tags": []
+			"tags": ["reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3359,7 +3519,7 @@
 				"input_tokens": 0.039,
 				"output_tokens": 0.19
 			},
-			"tags": ["reasoning_effort"]
+			"tags": ["reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3379,7 +3539,7 @@
 				"input_tokens": 0.15,
 				"output_tokens": 0.6
 			},
-			"tags": ["reasoning_effort"]
+			"tags": ["reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3399,7 +3559,7 @@
 				"input_tokens": 0.030000000000000002,
 				"output_tokens": 0.14
 			},
-			"tags": ["reasoning_effort"]
+			"tags": ["reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3603,6 +3763,27 @@
 	},
 	{
 		"created": 0,
+		"id": "stepfun-ai/Step-3.5-Flash",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Step 3.5 Flash is an open-source reasoning model by StepFun with 196B total parameters (11B active) using Mixture of Experts. It features a 256K context window, deep reasoning, tool calling, and agentic capabilities, achieving 97.3 on AIME 2025 and 74.4% on SWE-bench Verified.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.020000000000000004,
+				"input_tokens": 0.1,
+				"output_tokens": 0.3
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "stepfun-ai/Step-3.5-Flash"
+	},
+	{
+		"created": 0,
 		"id": "thenlper/gte-base",
 		"metadata": null,
 		"object": "model",
@@ -3673,7 +3854,7 @@
 				"input_tokens": 0.43,
 				"output_tokens": 1.74
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3693,7 +3874,7 @@
 				"input_tokens": 0.3,
 				"output_tokens": 0.9
 			},
-			"tags": ["vision"]
+			"tags": ["vision", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3714,7 +3895,7 @@
 				"input_tokens": 0.4,
 				"output_tokens": 1.75
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3735,7 +3916,7 @@
 				"input_tokens": 0.060000000000000005,
 				"output_tokens": 0.4
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3756,7 +3937,7 @@
 				"input_tokens": 0.8,
 				"output_tokens": 2.56
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",

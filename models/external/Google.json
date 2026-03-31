@@ -313,6 +313,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 3.1 Flash Live Preview",
+		"id": "models/gemini-3.1-flash-live-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 3.1 Pro Preview",
 		"id": "models/gemini-3.1-pro-preview",
 		"object": "model",
@@ -463,6 +469,18 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Lyria 3 Clip Preview",
+		"id": "models/lyria-3-clip-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Lyria 3 Pro Preview",
+		"id": "models/lyria-3-pro-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Lyria Realtime Experimental",
 		"id": "models/lyria-realtime-exp",
 		"object": "model",
@@ -519,6 +537,12 @@
 	{
 		"display_name": "Veo 3.1",
 		"id": "models/veo-3.1-generate-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Veo 3.1 lite",
+		"id": "models/veo-3.1-lite-generate-preview",
 		"object": "model",
 		"owned_by": "google"
 	}],
