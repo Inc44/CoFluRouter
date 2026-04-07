@@ -3,6 +3,229 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemma"
+		},
+		"canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
+		"context_length": 262144,
+		"created": 1775227989,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_k": 64,
+			"top_p": 0.95
+		},
+		"description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+		"expiration_date": null,
+		"hugging_face_id": "google/gemma-4-26B-A4B-it",
+		"id": "google/gemma-4-26b-a4b-it",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemma-4-26b-a4b-it-20260403/endpoints"
+		},
+		"name": "Google: Gemma 4 26B A4B ",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000004",
+			"prompt": "0.00000013"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemma"
+		},
+		"canonical_slug": "google/gemma-4-31b-it-20260402",
+		"context_length": 262144,
+		"created": 1775148486,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": 64,
+			"top_p": 0.95
+		},
+		"description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
+		"expiration_date": null,
+		"hugging_face_id": "google/gemma-4-31B-it",
+		"id": "google/gemma-4-31b-it",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemma-4-31b-it-20260402/endpoints"
+		},
+		"name": "Google: Gemma 4 31B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000004",
+			"prompt": "0.00000014"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3.6-plus-04-02",
+		"context_length": 1000000,
+		"created": 1775133557,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Qwen 3.6 Plus builds on a hybrid architecture that combines efficient linear attention with sparse mixture-of-experts routing, enabling strong scalability and high-performance inference. Compared to the 3.5 series, it delivers...",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "qwen/qwen3.6-plus:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.6-plus-04-02/endpoints"
+		},
+		"name": "Qwen: Qwen3.6 Plus (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "z-ai/glm-5v-turbo-20260401",
+		"context_length": 202752,
+		"created": 1775061458,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": null,
+			"top_p": 0.95
+		},
+		"description": "GLM-5V-Turbo is Z.ai’s first native multimodal agent foundation model, built for vision-based coding and agent-driven tasks. It natively handles image, video, and text inputs, excels at long-horizon planning, complex coding,...",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "z-ai/glm-5v-turbo",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/z-ai/glm-5v-turbo-20260401/endpoints"
+		},
+		"name": "Z.ai: GLM 5V Turbo",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000004",
+			"input_cache_read": "0.00000024",
+			"prompt": "0.0000012"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 202752,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "arcee-ai/trinity-large-thinking",
+		"context_length": 262144,
+		"created": 1775058318,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 0.3,
+			"top_k": null,
+			"top_p": 0.8
+		},
+		"description": "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7",
+		"expiration_date": null,
+		"hugging_face_id": "arcee-ai/Trinity-Large-Thinking",
+		"id": "arcee-ai/trinity-large-thinking",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/arcee-ai/trinity-large-thinking/endpoints"
+		},
+		"name": "Arcee AI: Trinity Large Thinking",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000085",
+			"prompt": "0.00000022"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
 			"modality": "text+image+file->text",
@@ -277,6 +500,51 @@
 		"hugging_face_id": "RekaAI/reka-edge-2603",
 		"id": "reka/reka-edge",
 		"knowledge_cutoff": null,
+		"name": "Reka Edge",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000001",
+			"prompt": "0.0000001"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 16384,
+			"is_moderated": false,
+			"max_completion_tokens": 16384
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "rekaai/reka-edge-2603",
+		"context_length": 16384,
+		"created": 1774026965,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Reka Edge is an extremely efficient 7B multimodal vision-language model that accepts image/video+text inputs and generates text outputs. This model is optimized specifically to deliver industry-leading performance in image understanding,...",
+		"expiration_date": null,
+		"hugging_face_id": "RekaAI/reka-edge-2603",
+		"id": "rekaai/reka-edge",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/rekaai/reka-edge-2603/endpoints"
+		},
 		"name": "Reka Edge",
 		"per_request_limits": null,
 		"pricing":
@@ -3926,7 +4194,7 @@
 			"top_p": 0.75
 		},
 		"description": "Trinity Mini is a 26B-parameter (3B active) sparse mixture-of-experts language model featuring 128 experts with 8 active per token. Engineered for efficient reasoning over long contexts (131k) with robust function calling and multi-step agent workflows.",
-		"expiration_date": null,
+		"expiration_date": "2026-04-10",
 		"hugging_face_id": "arcee-ai/Trinity-Mini",
 		"id": "arcee-ai/trinity-mini:free",
 		"knowledge_cutoff": null,
@@ -11249,7 +11517,7 @@
 			"top_p": null
 		},
 		"description": "Mercury Coder is the first diffusion large language model (dLLM). Applying a breakthrough discrete diffusion approach, the model runs 5-10x faster than even speed optimized models like Claude 3.5 Haiku and GPT-4o Mini while matching their performance. Mercury Coder's speed means that developers can stay in the flow while coding, enjoying rapid chat-based iteration and responsive code completion suggestions. On Copilot Arena, Mercury Coder ranks 1st in speed and ties for 2nd in quality. Read more in the [blog post here](https://www.inceptionlabs.ai/blog/introducing-mercury).",
-		"expiration_date": null,
+		"expiration_date": "2026-04-15",
 		"hugging_face_id": "",
 		"id": "inception/mercury-coder",
 		"knowledge_cutoff": "2025-01-31",

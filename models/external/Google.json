@@ -427,6 +427,18 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemma 4 26B A4B IT",
+		"id": "models/gemma-4-26b-a4b-it",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemma 4 31B IT",
+		"id": "models/gemma-4-31b-it",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Imagen 3.0",
 		"id": "models/imagen-3.0-generate-002",
 		"object": "model",

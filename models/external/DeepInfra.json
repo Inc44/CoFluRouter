@@ -217,6 +217,27 @@
 	},
 	{
 		"created": 0,
+		"id": "ByteDance/Seed-2.0-pro",
+		"metadata":
+		{
+			"context_length": 256000,
+			"description": "Built for the Agent era, it delivers stable performance in complex reasoning and long-horizon tasks, including multi-step planning, visual-text reasoning, video understanding, and advanced analysis.",
+			"max_tokens": 256000,
+			"pricing":
+			{
+				"cache_read_tokens": 0.1,
+				"input_tokens": 0.5,
+				"output_tokens": 2.9999999999999996
+			},
+			"tags": ["vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ByteDance/Seed-2.0-pro"
+	},
+	{
+		"created": 0,
 		"id": "ByteDance/Seedream-4",
 		"metadata": null,
 		"object": "model",
@@ -1493,6 +1514,15 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Wan-AI/Wan2.6-T2I"
+	},
+	{
+		"created": 0,
+		"id": "Wan-AI/Wan2.7-Image-Edit",
+		"metadata": null,
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Wan-AI/Wan2.7-Image-Edit"
 	},
 	{
 		"created": 0,

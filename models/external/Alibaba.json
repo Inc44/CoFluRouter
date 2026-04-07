@@ -1,6 +1,30 @@
 {
 	"data": [
 	{
+		"created": 1775212033,
+		"id": "qwen3.6-plus-2026-04-02",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775212021,
+		"id": "qwen3.6-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775023717,
+		"id": "wan2.7-image-pro",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775023705,
+		"id": "wan2.7-image",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1774258667,
 		"id": "deepseek-v3.2",
 		"object": "model",
@@ -824,6 +848,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-134",
+	"last_id": "model-id-138",
 	"object": "list"
 }

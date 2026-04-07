@@ -4,6 +4,31 @@
 	{
 		"bos_token": null,
 		"chat_template": null,
+		"eos_token": null,
+		"stop": []
+	},
+	"created": 1775245808,
+	"display_name": "Wan 2.7 T2V",
+	"id": "Wan-AI/wan2.7-t2v",
+	"object": "model",
+	"organization": "Wan-AI",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 0,
+		"output": 0
+	},
+	"running": false,
+	"type": "video",
+	"uuid": "endpoint-4e24da5f-2274-44ad-8bf3-36dc47a8114a"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
 		"eos_token": "<|im_end|>",
 		"stop": []
 	},
