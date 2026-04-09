@@ -5454,6 +5454,45 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "b048fe26-0352-5c46-acf7-335e527e7f3d",
+		"confidential_compute": true,
+		"context_length": 202752,
+		"created": 0,
+		"id": "zai-org/GLM-5.1-TEE",
+		"input_modalities": ["text"],
+		"max_model_len": 202752,
+		"max_output_length": 65535,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"premium": false,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "zai-org/GLM-5.1-FP8",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": "118a60a5-6bd8-554c-8fda-9d394e5c0ab8",
 		"confidential_compute": false,
 		"context_length": 32768,

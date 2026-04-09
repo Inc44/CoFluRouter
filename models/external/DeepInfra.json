@@ -2468,6 +2468,48 @@
 	},
 	{
 		"created": 0,
+		"id": "google/gemma-4-26B-A4B-it",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Efficient, MoE variant of Gemma 4. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.01,
+				"input_tokens": 0.08,
+				"output_tokens": 0.35
+			},
+			"tags": ["vision", "prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/gemma-4-26B-A4B-it"
+	},
+	{
+		"created": 0,
+		"id": "google/gemma-4-31B-it",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.0199999995,
+				"input_tokens": 0.13,
+				"output_tokens": 0.38
+			},
+			"tags": ["vision", "prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/gemma-4-31B-it"
+	},
+	{
+		"created": 0,
 		"id": "intfloat/e5-base-v2",
 		"metadata": null,
 		"object": "model",
@@ -3436,11 +3478,10 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.1,
 				"input_tokens": 0.1,
 				"output_tokens": 0.5
 			},
-			"tags": ["prompt_cache", "reasoning"]
+			"tags": ["reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3973,6 +4014,27 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "zai-org/GLM-5"
+	},
+	{
+		"created": 0,
+		"id": "zai-org/GLM-5.1",
+		"metadata":
+		{
+			"context_length": 202752,
+			"description": "GLM-5.1 is Z-AI's next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks).",
+			"max_tokens": 202752,
+			"pricing":
+			{
+				"cache_read_tokens": 0.260000006,
+				"input_tokens": 1.4,
+				"output_tokens": 4.4
+			},
+			"tags": ["prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "zai-org/GLM-5.1"
 	}],
 	"object": "list"
 }

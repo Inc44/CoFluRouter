@@ -3,6 +3,142 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Claude"
+		},
+		"canonical_slug": "anthropic/claude-4.6-opus-fast-20260407",
+		"context_length": 1000000,
+		"created": 1775592472,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Fast-mode variant of [Opus 4.6](/anthropic/claude-opus-4.6) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "anthropic/claude-opus-4.6-fast",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/anthropic/claude-4.6-opus-fast-20260407/endpoints"
+		},
+		"name": "Anthropic: Claude Opus 4.6 (Fast)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00015",
+			"input_cache_read": "0.000003",
+			"input_cache_write": "0.0000375",
+			"prompt": "0.00003",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p", "verbosity"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "z-ai/glm-5.1-20260406",
+		"context_length": 202752,
+		"created": 1775578025,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": null,
+			"top_p": 0.95
+		},
+		"description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
+		"expiration_date": null,
+		"hugging_face_id": "zai-org/GLM-5.1",
+		"id": "z-ai/glm-5.1",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/z-ai/glm-5.1-20260406/endpoints"
+		},
+		"name": "Z.ai: GLM 5.1",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000044",
+			"input_cache_read": "0.00000026",
+			"prompt": "0.000001395"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 202752,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemma"
+		},
+		"canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
+		"context_length": 262144,
+		"created": 1775227989,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_k": 64,
+			"top_p": 0.95
+		},
+		"description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+		"expiration_date": null,
+		"hugging_face_id": "google/gemma-4-26B-A4B-it",
+		"id": "google/gemma-4-26b-a4b-it:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemma-4-26b-a4b-it-20260403/endpoints"
+		},
+		"name": "Google: Gemma 4 26B A4B  (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 32768
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["image", "text", "video"],
 			"instruct_type": null,
 			"modality": "text+image+video->text",
@@ -40,6 +176,51 @@
 			"context_length": 262144,
 			"is_moderated": false,
 			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemma"
+		},
+		"canonical_slug": "google/gemma-4-31b-it-20260402",
+		"context_length": 262144,
+		"created": 1775148486,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": 64,
+			"top_p": 0.95
+		},
+		"description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
+		"expiration_date": null,
+		"hugging_face_id": "google/gemma-4-31B-it",
+		"id": "google/gemma-4-31b-it:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemma-4-31b-it-20260402/endpoints"
+		},
+		"name": "Google: Gemma 4 31B (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -123,6 +304,51 @@
 		{
 			"completion": "0",
 			"prompt": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3.6-plus-04-02",
+		"context_length": 1000000,
+		"created": 1775133557,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Qwen 3.6 Plus builds on a hybrid architecture that combines efficient linear attention with sparse mixture-of-experts routing, enabling strong scalability and high-performance inference. Compared to the 3.5 series, it delivers...",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "qwen/qwen3.6-plus",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.6-plus-04-02/endpoints"
+		},
+		"name": "Qwen: Qwen3.6 Plus",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000195",
+			"prompt": "0.000000325"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":

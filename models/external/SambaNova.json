@@ -242,7 +242,7 @@
 	{
 		"context_length": 163840,
 		"id": "MiniMax-M2.5",
-		"max_completion_tokens": 16384,
+		"max_completion_tokens": 163840,
 		"object": "model",
 		"owned_by": "no-reply@sambanova.ai",
 		"pricing":

@@ -4,6 +4,33 @@
 	{
 		"bos_token": null,
 		"chat_template": null,
+		"eos_token": "<|endoftext|>",
+		"stop": ["<|endoftext|>"]
+	},
+	"context_length": 202752,
+	"created": 1775669817,
+	"display_name": "GLM 5.1 FP4",
+	"id": "zai-org/GLM-5.1",
+	"link": "https://huggingface.co/api/models/togethercomputer/GLM-5.1-FP4",
+	"object": "model",
+	"organization": "Zai Org",
+	"pricing":
+	{
+		"base": 0,
+		"finetune": 0,
+		"hourly": 0,
+		"input": 1.4,
+		"output": 4.4
+	},
+	"running": false,
+	"type": "chat",
+	"uuid": "endpoint-b3089874-2df3-45d7-9d76-6a12456411eb"
+},
+{
+	"config":
+	{
+		"bos_token": null,
+		"chat_template": null,
 		"eos_token": null,
 		"stop": []
 	},
