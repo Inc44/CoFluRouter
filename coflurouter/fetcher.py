@@ -1,11 +1,17 @@
 from __future__ import annotations
+from difflib import SequenceMatcher
 from pathlib import Path
+import re
 
 from tqdm import tqdm
 import requests
 
 from .data import OPENAI_COMPATIBLE
 from .utils import read_json, write_json
+
+TRUNCATION_SUFFIX = "..."
+ANCHOR_WINDOW_SIZE = 6
+WORD_SIMILARITY_THRESHOLD = 0.80
 
 
 def redact_keys(obj, keys):
@@ -45,6 +51,64 @@ def sort_by_keys(obj, keys, reverse=False):
 			),
 			reverse=reverse,
 		)
+
+
+def find_description_suffix(current_description_prefix, previous_description):
+	current_description_prefix_words = [
+		word.casefold() for word in current_description_prefix.split()
+	]
+	previous_description_word_matches = list(re.finditer(r"\S+", previous_description))
+	if (
+		len(current_description_prefix_words) < ANCHOR_WINDOW_SIZE
+		or len(previous_description_word_matches) < ANCHOR_WINDOW_SIZE
+	):
+		return None
+	previous_description_words = [
+		match.group().casefold() for match in previous_description_word_matches
+	]
+	anchor_window = current_description_prefix_words[-ANCHOR_WINDOW_SIZE:]
+	maximum_word_similarity = 0
+	maximum_word_similarity_match_end_index = -1
+	for i in range(len(previous_description_words) - ANCHOR_WINDOW_SIZE + 1):
+		window_words = previous_description_words[i : i + ANCHOR_WINDOW_SIZE]
+		word_similarity = (
+			sum(
+				SequenceMatcher(None, anchor_window_word, window_word).ratio()
+				for anchor_window_word, window_word in zip(anchor_window, window_words)
+			)
+			/ ANCHOR_WINDOW_SIZE
+		)
+		if word_similarity >= maximum_word_similarity:
+			maximum_word_similarity = word_similarity
+			maximum_word_similarity_match_end_index = i + ANCHOR_WINDOW_SIZE
+	if (
+		maximum_word_similarity < WORD_SIMILARITY_THRESHOLD
+		or maximum_word_similarity_match_end_index
+		>= len(previous_description_word_matches)
+	):
+		return None
+	return previous_description[
+		previous_description_word_matches[
+			maximum_word_similarity_match_end_index - 1
+		].end() :
+	]
+
+
+def merge_truncated_description(current_description, previous_description):
+	if not current_description.endswith(TRUNCATION_SUFFIX):
+		return current_description
+	current_description_prefix = current_description[: -len(TRUNCATION_SUFFIX)].rstrip()
+	if not current_description_prefix:
+		return previous_description
+	if previous_description.startswith(current_description_prefix):
+		return previous_description
+	# current_description_prefix = current_description_prefix.rsplit(maxsplit=1)[0]
+	previous_description_suffix = find_description_suffix(
+		current_description_prefix, previous_description
+	)
+	if previous_description_suffix is None:
+		return current_description
+	return current_description_prefix + previous_description_suffix
 
 
 def fetch_models():
@@ -106,6 +170,19 @@ def fetch_models():
 								model["expiration_date"] = merged_data[model["id"]][
 									"expiration_date"
 								]
+							if (
+								name == "OpenRouter"
+								and isinstance(model.get("description"), str)
+								and model["description"].endswith("...")
+								and model["id"] in merged_data
+								and isinstance(
+									merged_data[model["id"]].get("description"), str
+								)
+							):
+								model["description"] = merge_truncated_description(
+									model["description"],
+									merged_data[model["id"]]["description"],
+								)
 							merged_data[model["id"]] = model
 				merged_obj = list(merged_data.values())
 				if isinstance(obj, dict) and "data" in obj:
