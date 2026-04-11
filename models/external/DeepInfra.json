@@ -1267,10 +1267,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
+				"cache_read_tokens": 0.145,
 				"input_tokens": 0.29,
 				"output_tokens": 2.9000000000000004
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["vision", "prompt_cache", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1327,10 +1328,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
+				"cache_read_tokens": 0.10999999999999999,
 				"input_tokens": 0.21999999999999997,
 				"output_tokens": 2.2
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["vision", "prompt_cache", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1347,10 +1349,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
+				"cache_read_tokens": 0.27,
 				"input_tokens": 0.54,
 				"output_tokens": 3.4
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["vision", "prompt_cache", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2480,7 +2483,7 @@
 				"input_tokens": 0.08,
 				"output_tokens": 0.35
 			},
-			"tags": ["vision", "prompt_cache"]
+			"tags": ["vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2501,7 +2504,7 @@
 				"input_tokens": 0.13,
 				"output_tokens": 0.38
 			},
-			"tags": ["vision", "prompt_cache"]
+			"tags": ["vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2634,8 +2637,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.048999999999999995,
-				"output_tokens": 0.048999999999999995
+				"input_tokens": 0.245,
+				"output_tokens": 0.245
 			},
 			"tags": ["vision"]
 		},

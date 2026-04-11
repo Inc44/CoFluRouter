@@ -1,6 +1,66 @@
 {
 	"data": [
 	{
+		"created": 1775811437,
+		"id": "qwen-flash-character",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775811400,
+		"id": "qwen-plus-character",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775748484,
+		"id": "qwen3.5-omni-plus-realtime-2026-03-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775748473,
+		"id": "qwen3.5-omni-plus-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775748440,
+		"id": "qwen3.5-omni-plus-2026-03-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775748422,
+		"id": "qwen3.5-omni-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775748394,
+		"id": "qwen3.5-omni-flash-realtime-2026-03-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775748348,
+		"id": "qwen3.5-omni-flash-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775748316,
+		"id": "qwen3.5-omni-flash-2026-03-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1775748281,
+		"id": "qwen3.5-omni-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1775212033,
 		"id": "qwen3.6-plus-2026-04-02",
 		"object": "model",
@@ -399,18 +459,6 @@
 	{
 		"created": 1768647298,
 		"id": "qwen3-tts-vc-realtime-2026-01-15",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1768481033,
-		"id": "qwen-plus-character",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1768308001,
-		"id": "qwen-flash-character",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -848,6 +896,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-138",
+	"last_id": "model-id-146",
 	"object": "list"
 }

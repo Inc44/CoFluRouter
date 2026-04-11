@@ -973,8 +973,8 @@
 			"input_cache_read": 0,
 			"prompt": 0
 		},
-		"quantization": "bf16",
-		"root": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+		"quantization": "fp8",
+		"root": "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8",
 		"supported_features": ["json_mode", "structured_outputs", "tools"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
@@ -1203,8 +1203,8 @@
 			"input_cache_read": 0,
 			"prompt": 0
 		},
-		"quantization": "bf16",
-		"root": "Qwen/Qwen3-32B",
+		"quantization": "fp8",
+		"root": "Qwen/Qwen3-32B-FP8",
 		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
@@ -1615,8 +1615,8 @@
 			"input_cache_read": 0,
 			"prompt": 0
 		},
-		"quantization": "bf16",
-		"root": "Qwen/Qwen3.5-397B-A17B",
+		"quantization": "fp8",
+		"root": "Qwen/Qwen3.5-397B-A17B-FP8",
 		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
@@ -5449,7 +5449,7 @@
 			"prompt": 0
 		},
 		"quantization": "fp4",
-		"root": "festr2/GLM-5-NVFP4-MTP",
+		"root": "nvidia/GLM-5-NVFP4",
 		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
