@@ -1,6 +1,54 @@
 {
 	"data": [
 	{
+		"id": "gpt-5.4-mini",
+		"max_tokens": 128000,
+		"reasoning_effort": ["none", "low", "medium", "high", "xhigh"],
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.4-mini-2026-03-17",
+		"max_tokens": 128000,
+		"reasoning_effort": ["none", "low", "medium", "high", "xhigh"],
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.4-nano",
+		"max_tokens": 128000,
+		"reasoning_effort": ["none", "low", "medium", "high", "xhigh"],
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.4-nano-2026-03-17",
+		"max_tokens": 128000,
+		"reasoning_effort": ["none", "low", "medium", "high", "xhigh"],
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.3-chat-latest",
+		"max_tokens": 16384,
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.3-codex",
+		"max_tokens": 128000,
+		"reasoning_effort": ["low", "medium", "high", "xhigh"],
+		"responses_api_only": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.2-codex",
+		"max_tokens": 128000,
+		"reasoning_effort": ["low", "medium", "high", "xhigh"],
+		"responses_api_only": true,
+		"image": true
+	},
+	{
 		"id": "gpt-5.2-chat-latest",
 		"max_tokens": 16384,
 		"file": true,

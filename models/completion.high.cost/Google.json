@@ -5,8 +5,39 @@
 		"max_tokens": 65536,
 		"reasoning_effort": ["low", "high"],
 		"audio": true,
+		"file": true,
 		"image": true,
 		"video": true,
-		"search": true
+		"search": true,
+		"url": true
+	},
+	{
+		"id": "gemini-3-pro-image-preview",
+		"max_tokens": 32768,
+		"file": true,
+		"image": true,
+		"search": true,
+		"modality": "image"
+	},
+	{
+		"id": "gemini-3.1-pro-preview",
+		"max_tokens": 65536,
+		"reasoning_effort": ["low", "medium", "high"],
+		"audio": true,
+		"file": true,
+		"image": true,
+		"video": true,
+		"search": true,
+		"maps": true,
+		"url": true
+	},
+	{
+		"id": "gemini-3.1-flash-image-preview",
+		"max_tokens": 65536,
+		"reasoning_effort": ["minimal", "high"],
+		"file": true,
+		"image": true,
+		"search": true,
+		"modality": "image"
 	}]
 }

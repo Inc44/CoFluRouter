@@ -1,6 +1,66 @@
 {
 	"data": [
 	{
+		"id": "gpt-5.4",
+		"max_tokens": 128000,
+		"reasoning_effort": ["none", "low", "medium", "high", "xhigh"],
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.4-pro-2026-03-05",
+		"max_tokens": 128000,
+		"reasoning_effort": ["none", "low", "medium", "high", "xhigh"],
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.4-pro",
+		"max_tokens": 128000,
+		"reasoning_effort": ["none", "low", "medium", "high", "xhigh"],
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-5.4-2026-03-05",
+		"max_tokens": 128000,
+		"reasoning_effort": ["none", "low", "medium", "high", "xhigh"],
+		"file": true,
+		"image": true
+	},
+	{
+		"id": "gpt-4o-search-preview-2025-03-11",
+		"max_tokens": 0,
+		"completions_api_only": true,
+		"search_context_size": "low",
+		"image": false
+	},
+	{
+		"id": "gpt-4o-search-preview",
+		"max_tokens": 0,
+		"completions_api_only": true,
+		"search_context_size": "low",
+		"image": false
+	},
+	{
+		"id": "gpt-audio-1.5",
+		"max_tokens": 16384,
+		"completions_api_only": true,
+		"audio": true,
+		"file": true,
+		"image": false,
+		"modality": "audio"
+	},
+	{
+		"id": "gpt-audio-mini-2025-12-15",
+		"max_tokens": 16384,
+		"completions_api_only": true,
+		"audio": true,
+		"file": true,
+		"image": false,
+		"modality": "audio"
+	},
+	{
 		"id": "gpt-5.2-pro",
 		"max_tokens": 128000,
 		"tools": ["web_search_preview"],
@@ -137,20 +197,6 @@
 	},
 	{
 		"id": "gpt-4o-mini-search-preview-2025-03-11",
-		"max_tokens": 0,
-		"completions_api_only": true,
-		"search_context_size": "low",
-		"image": false
-	},
-	{
-		"id": "gpt-4o-search-preview",
-		"max_tokens": 0,
-		"completions_api_only": true,
-		"search_context_size": "low",
-		"image": false
-	},
-	{
-		"id": "gpt-4o-search-preview-2025-03-11",
 		"max_tokens": 0,
 		"completions_api_only": true,
 		"search_context_size": "low",

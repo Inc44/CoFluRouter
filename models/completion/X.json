@@ -1,28 +1,58 @@
 {
 	"data": [
 	{
+		"id": "grok-4.20-beta-0309-non-reasoning",
+		"max_tokens": 2000000,
+		"image": true
+	},
+	{
+		"id": "grok-4.20-beta-0309-reasoning",
+		"max_tokens": 2000000,
+		"image": true
+	},
+	{
+		"id": "grok-4.20-multi-agent-beta-0309",
+		"max_tokens": 2000000,
+		"image": true
+	},
+	{
+		"id": "grok-4.20-0309-non-reasoning",
+		"max_tokens": 2000000,
+		"image": true
+	},
+	{
+		"id": "grok-4.20-0309-reasoning",
+		"max_tokens": 2000000,
+		"image": true
+	},
+	{
+		"id": "grok-4.20-multi-agent-0309",
+		"max_tokens": 2000000,
+		"image": true
+	},
+	{
 		"id": "grok-4-1-fast-non-reasoning",
-		"max_tokens": 30000,
+		"max_tokens": 2000000,
 		"image": true
 	},
 	{
 		"id": "grok-4-1-fast-reasoning",
-		"max_tokens": 30000,
+		"max_tokens": 2000000,
 		"image": true
 	},
 	{
 		"id": "grok-4-fast-non-reasoning",
-		"max_tokens": 30000,
+		"max_tokens": 2000000,
 		"image": true
 	},
 	{
 		"id": "grok-4-fast-reasoning",
-		"max_tokens": 30000,
+		"max_tokens": 2000000,
 		"image": true
 	},
 	{
 		"id": "grok-code-fast-1",
-		"max_tokens": 10000,
+		"max_tokens": 256000,
 		"image": false
 	},
 	{

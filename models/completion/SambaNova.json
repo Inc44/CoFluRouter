@@ -67,6 +67,26 @@
 		"image": false
 	},
 	{
+		"id": "DeepSeek-V3.1-cb",
+		"max_tokens": 32768,
+		"image": false
+	},
+	{
+		"id": "DeepSeek-V3.2",
+		"max_tokens": 7168,
+		"image": false
+	},
+	{
+		"id": "MiniMax-M2.5",
+		"max_tokens": 163840,
+		"image": false
+	},
+	{
+		"id": "gemma-3-12b-it",
+		"max_tokens": 131072,
+		"image": true
+	},
+	{
 		"id": "DeepSeek-R1",
 		"max_tokens": 16384,
 		"image": false

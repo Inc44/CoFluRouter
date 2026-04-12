@@ -2,7 +2,7 @@
 	"data": [
 	{
 		"id": "gpt-oss-120b",
-		"max_tokens": 8192,
+		"max_tokens": 40960,
 		"reasoning_effort": ["low", "medium", "high"],
 		"image": false
 	},
@@ -28,7 +28,7 @@
 	},
 	{
 		"id": "qwen-3-235b-a22b-instruct-2507",
-		"max_tokens": 8192,
+		"max_tokens": 40960,
 		"image": false
 	},
 	{
@@ -49,6 +49,11 @@
 	{
 		"id": "zai-glm-4.6",
 		"max_tokens": 8192,
+		"image": false
+	},
+	{
+		"id": "zai-glm-4.7",
+		"max_tokens": 40960,
 		"image": false
 	},
 	{

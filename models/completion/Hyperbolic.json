@@ -101,6 +101,11 @@
 		"image": false
 	},
 	{
+		"id": "meta-llama/Meta-Llama-3.1-405B",
+		"max_tokens": 131064,
+		"image": false
+	},
+	{
 		"id": "meta-llama/Meta-Llama-3.1-405B-FP8",
 		"max_tokens": 131064,
 		"image": false
