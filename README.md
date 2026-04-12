@@ -211,6 +211,25 @@ Creators of:
 - [Requests](https://requests.readthedocs.io)
 - [js-beautify](https://beautifier.io)
 - [tqdm](https://tqdm.github.io)
+- [Wayback Machine](https://web.archive.org)
+- Playgrounds:
+	- [Alibaba](https://modelstudio.console.alibabacloud.com)
+	- [Anthropic](https://platform.claude.com/workbench)
+	- [Cerebras](https://cloud.cerebras.ai)
+	- [Google](https://aistudio.google.com/prompts/new_chat)
+	- [Groq](https://console.groq.com/playground)
+	- [Hyperbolic](https://app.hyperbolic.ai/models)
+	- [OpenAI](https://platform.openai.com/chat)
+	- [SambaNova](https://cloud.sambanova.ai/playground)
+	- [xAI](https://console.x.ai)
+- Docs:
+	- [Anthropic](https://platform.claude.com/docs)
+	- [Cerebras](https://inference-docs.cerebras.ai/models/overview)
+	- [DeepSeek](https://api-docs.deepseek.com/quick_start/pricing)
+	- [Google/OpenAI](https://ai.google.dev/gemini-api/docs/openai)
+	- [Google](https://ai.google.dev/gemini-api/docs/models)
+	- [OpenAI](https://developers.openai.com/api/docs/models/all)
+	- [xAI](https://docs.x.ai/developers/models)
 
 ## 🤝 Contribution
 
