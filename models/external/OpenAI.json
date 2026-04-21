@@ -1,6 +1,18 @@
 {
 	"data": [
 	{
+		"created": 1776399994,
+		"id": "gpt-image-2-2026-04-21",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1776399795,
+		"id": "gpt-image-2",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1773451123,
 		"id": "gpt-5.4-mini",
 		"object": "model",

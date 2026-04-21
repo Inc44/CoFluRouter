@@ -1250,7 +1250,7 @@
 				"input_tokens": 0.01,
 				"output_tokens": 0.05
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1271,7 +1271,7 @@
 				"input_tokens": 0.29,
 				"output_tokens": 2.9000000000000004
 			},
-			"tags": ["vision", "prompt_cache", "reasoning_effort"]
+			"tags": ["vision", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1291,7 +1291,7 @@
 				"input_tokens": 0.26,
 				"output_tokens": 2.5999999999999996
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1311,7 +1311,7 @@
 				"input_tokens": 0.02,
 				"output_tokens": 0.1
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1328,11 +1328,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.10999999999999999,
-				"input_tokens": 0.21999999999999997,
-				"output_tokens": 2.2
+				"cache_read_tokens": 0.1,
+				"input_tokens": 0.2,
+				"output_tokens": 0.95
 			},
-			"tags": ["vision", "prompt_cache", "reasoning_effort"]
+			"tags": ["vision", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1353,7 +1353,7 @@
 				"input_tokens": 0.54,
 				"output_tokens": 3.4
 			},
-			"tags": ["vision", "prompt_cache", "reasoning_effort"]
+			"tags": ["vision", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1373,7 +1373,7 @@
 				"input_tokens": 0.030000000000000002,
 				"output_tokens": 0.15
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1399,6 +1399,26 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3.5-9B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3.6-35B-A3B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Qwen3.6-35B-A3B is Alibaba's latest flagship Mixture-of-Experts model, with 35B total parameters and only 3B activated per token (256 experts, 8 routed + 1 shared). Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.2,
+				"output_tokens": 1.0
+			},
+			"tags": ["vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.6-35B-A3B"
 	},
 	{
 		"created": 0,
@@ -2479,11 +2499,10 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.01,
-				"input_tokens": 0.08,
-				"output_tokens": 0.35
+				"input_tokens": 0.12000000000000001,
+				"output_tokens": 0.38999999999999996
 			},
-			"tags": ["vision", "prompt_cache", "reasoning"]
+			"tags": ["vision", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2500,11 +2519,10 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.0199999995,
 				"input_tokens": 0.13,
 				"output_tokens": 0.38
 			},
-			"tags": ["vision", "prompt_cache", "reasoning"]
+			"tags": ["vision", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",

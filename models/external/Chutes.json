@@ -3681,6 +3681,46 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "aac09863-35b4-5d9b-9b67-6e6a9d54273a",
+		"confidential_compute": true,
+		"context_length": 262144,
+		"created": 0,
+		"id": "moonshotai/Kimi-K2.6-TEE",
+		"input_modalities": ["text", "image", "video"],
+		"max_model_len": 262144,
+		"max_output_length": 65535,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"premium": false,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "int4",
+		"root": "moonshotai/Kimi-K2.6",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": null,
 		"confidential_compute": false,
 		"context_length": 131072,
