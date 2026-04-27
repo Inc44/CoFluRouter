@@ -1,8 +1,26 @@
 {
 	"data": [
 	{
-		"created": 1776691731,
+		"created": 1777294095,
 		"id": "qwen3.6-max-preview",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1776952776,
+		"id": "qwen-image-2.0-pro-2026-04-22",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1776917563,
+		"id": "qwen3.6-27b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1776917524,
+		"id": "qwen3.5-plus-2026-04-20",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -920,6 +938,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-150",
+	"last_id": "model-id-153",
 	"object": "list"
 }

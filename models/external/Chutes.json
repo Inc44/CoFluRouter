@@ -1621,6 +1621,46 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "7aa5e899-c0ba-5482-af48-d3f31d635c9f",
+		"confidential_compute": true,
+		"context_length": 262144,
+		"created": 0,
+		"id": "Qwen/Qwen3.6-27B-TEE",
+		"input_modalities": ["text", "image"],
+		"max_model_len": 262144,
+		"max_output_length": 65536,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"premium": false,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "Qwen/Qwen3.6-27B-FP8",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": "0d5ce0e6-5d96-5931-9ca2-3f6d9edcb37c",
 		"confidential_compute": false,
 		"created": 0,
@@ -3163,6 +3203,46 @@
 		"quantization": "fp8",
 		"root": "deepseek-ai/DeepSeek-V3.2",
 		"supported_features": ["json_mode", "tools", "reasoning", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "42ee92ba-a537-5a73-8741-876067750db7",
+		"confidential_compute": true,
+		"context_length": 131072,
+		"created": 0,
+		"id": "google/gemma-4-31B-turbo-TEE",
+		"input_modalities": ["text", "image"],
+		"max_model_len": 262144,
+		"max_output_length": 65536,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"premium": false,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "fp4",
+		"root": "nvidia/Gemma-4-31B-IT-NVFP4",
+		"supported_features": ["json_mode", "tools", "structured_outputs", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{

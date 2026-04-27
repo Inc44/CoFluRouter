@@ -402,9 +402,9 @@
 			"max_tokens": 196608,
 			"pricing":
 			{
-				"cache_read_tokens": 0.029999999700000002,
-				"input_tokens": 0.27,
-				"output_tokens": 0.95
+				"cache_read_tokens": 0.03,
+				"input_tokens": 0.15,
+				"output_tokens": 1.15
 			},
 			"tags": ["prompt_cache", "reasoning"]
 		},
@@ -668,8 +668,8 @@
 			"max_tokens": 32768,
 			"pricing":
 			{
-				"input_tokens": 0.12000000000000001,
-				"output_tokens": 0.38999999999999996
+				"input_tokens": 0.36,
+				"output_tokens": 0.4
 			},
 			"tags": []
 		},
@@ -929,8 +929,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.022,
-				"input_tokens": 0.21999999999999997,
+				"cache_read_tokens": 0.09999999899999999,
+				"input_tokens": 0.3,
 				"output_tokens": 1.0
 			},
 			"tags": ["prompt_cache"]
@@ -2224,6 +2224,48 @@
 	},
 	{
 		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V4-Flash",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"description": "DeepSeek V4 Flash is an efficiency-focused MoE model with 284B total parameters (13B active) and a 1M-token context window. It's tuned for fast inference and high-throughput use cases while still holding up on reasoning and coding tasks.",
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.028000000000000004,
+				"input_tokens": 0.14,
+				"output_tokens": 0.28
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/DeepSeek-V4-Flash"
+	},
+	{
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V4-Pro",
+		"metadata":
+		{
+			"context_length": 65536,
+			"description": "DeepSeek V4 Pro is an MoE model with 1.6T total parameters (49B active) and a 1M-token context window. It's built for advanced reasoning, coding, and long-running agent tasks, and performs well on knowledge, math, and software engineering benchmarks.",
+			"max_tokens": 65536,
+			"pricing":
+			{
+				"cache_read_tokens": 0.14499999419999998,
+				"input_tokens": 1.74,
+				"output_tokens": 3.48
+			},
+			"tags": ["prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/DeepSeek-V4-Pro"
+	},
+	{
+		"created": 0,
 		"id": "deepseek-ai/Janus-Pro-1B",
 		"metadata": null,
 		"object": "model",
@@ -2499,8 +2541,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.12000000000000001,
-				"output_tokens": 0.38999999999999996
+				"input_tokens": 0.07,
+				"output_tokens": 0.33999999999999997
 			},
 			"tags": ["vision", "reasoning"]
 		},
@@ -3451,6 +3493,27 @@
 	},
 	{
 		"created": 0,
+		"id": "moonshotai/Kimi-K2.6",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Kimi K2.6 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.15,
+				"input_tokens": 0.7499999999999999,
+				"output_tokens": 3.5
+			},
+			"tags": ["prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "moonshotai/Kimi-K2.6"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
 		"metadata":
 		{
@@ -4025,9 +4088,9 @@
 			"max_tokens": 202752,
 			"pricing":
 			{
-				"cache_read_tokens": 0.16000000000000003,
-				"input_tokens": 0.8,
-				"output_tokens": 2.56
+				"cache_read_tokens": 0.12,
+				"input_tokens": 0.6,
+				"output_tokens": 2.08
 			},
 			"tags": ["prompt_cache", "reasoning"]
 		},
@@ -4046,9 +4109,9 @@
 			"max_tokens": 202752,
 			"pricing":
 			{
-				"cache_read_tokens": 0.260000006,
-				"input_tokens": 1.4,
-				"output_tokens": 4.4
+				"cache_read_tokens": 0.205000005,
+				"input_tokens": 1.05,
+				"output_tokens": 3.5
 			},
 			"tags": ["prompt_cache", "reasoning"]
 		},

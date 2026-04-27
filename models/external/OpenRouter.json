@@ -3,6 +3,625 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3.5-plus-20260420",
+		"context_length": 1000000,
+		"created": 1777261368,
+		"default_parameters":
+		{},
+		"description": "Qwen3.5 Plus (April 2026) is a large-scale multimodal language model from Alibaba. It accepts text, image, and video input and produces text output, with a 1M token context window. This...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "qwen/qwen3.5-plus-20260420",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.5-plus-20260420/endpoints"
+		},
+		"name": "Qwen: Qwen3.5 Plus 2026-04-20",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000024",
+			"prompt": "0.0000004"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3.6-flash",
+		"context_length": 1000000,
+		"created": 1777261362,
+		"default_parameters":
+		{},
+		"description": "Qwen3.6 Flash is a fast, efficient language model from Alibaba's Qwen 3.6 series. It supports text, image, and video input with a 1M token context window. Tiered pricing kicks in...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "qwen/qwen3.6-flash",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.6-flash/endpoints"
+		},
+		"name": "Qwen: Qwen3.6 Flash",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000015",
+			"input_cache_write": "0.0000003125",
+			"prompt": "0.00000025"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "qwen/qwen3.6-35b-a3b-20260415",
+		"context_length": 262144,
+		"created": 1777260255,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_k": 20,
+			"top_p": 0.95
+		},
+		"description": "Qwen3.6-35B-A3B is an open-weight multimodal model from Alibaba Cloud with 35 billion total parameters and 3 billion active parameters per token. It uses a hybrid sparse mixture-of-experts architecture combining Gated...",
+		"expiration_date": null,
+		"hugging_face_id": "Qwen/Qwen3.6-35B-A3B",
+		"id": "qwen/qwen3.6-35b-a3b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.6-35b-a3b-20260415/endpoints"
+		},
+		"name": "Qwen: Qwen3.6 35B A3B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000096525",
+			"input_cache_read": "0.0000001612",
+			"prompt": "0.0000001612"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "qwen/qwen3.6-max-preview-20260420",
+		"context_length": 262144,
+		"created": 1777260242,
+		"default_parameters":
+		{},
+		"description": "Qwen3.6-Max-Preview is a proprietary frontier model from Alibaba Cloud built on a sparse mixture-of-experts architecture with approximately 1 trillion total parameters. It is optimized for agentic coding, tool use, and...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "qwen/qwen3.6-max-preview",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.6-max-preview-20260420/endpoints"
+		},
+		"name": "Qwen: Qwen3.6 Max Preview",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000078",
+			"input_cache_write": "0.000001625",
+			"prompt": "0.0000013"
+		},
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "qwen/qwen3.6-27b-20260422",
+		"context_length": 262144,
+		"created": 1777255064,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Qwen3.6 27B is a dense 27-billion-parameter language model from the Qwen Team at Alibaba, released in April 2026. It features hybrid multimodal capabilities — accepting text, image, and video inputs...",
+		"expiration_date": null,
+		"hugging_face_id": "Qwen/Qwen3.6-27B",
+		"id": "qwen/qwen3.6-27b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.6-27b-20260422/endpoints"
+		},
+		"name": "Qwen: Qwen3.6 27B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000002",
+			"input_cache_read": "0.00000025",
+			"prompt": "0.0000005"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5.5-pro-20260423",
+		"context_length": 1050000,
+		"created": 1777051896,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support for...",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "openai/gpt-5.5-pro",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-5.5-pro-20260423/endpoints"
+		},
+		"name": "OpenAI: GPT-5.5 Pro",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00018",
+			"prompt": "0.00003",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5.5-20260423",
+		"context_length": 1050000,
+		"created": 1777051893,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "GPT-5.5 is OpenAI’s frontier model designed for complex professional workloads, building on GPT-5.4 with stronger reasoning, higher reliability, and improved token efficiency on hard tasks. It features a 1M+ token...",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "openai/gpt-5.5",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-5.5-20260423/endpoints"
+		},
+		"name": "OpenAI: GPT-5.5",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00003",
+			"input_cache_read": "0.0000005",
+			"prompt": "0.000005",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "DeepSeek"
+		},
+		"canonical_slug": "deepseek/deepseek-v4-pro-20260423",
+		"context_length": 1048576,
+		"created": 1777000679,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": null,
+			"top_p": 1
+		},
+		"description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
+		"expiration_date": null,
+		"hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
+		"id": "deepseek/deepseek-v4-pro",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/deepseek/deepseek-v4-pro-20260423/endpoints"
+		},
+		"name": "DeepSeek: DeepSeek V4 Pro",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000087",
+			"input_cache_read": "0.000000003625",
+			"prompt": "0.000000435"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 384000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "DeepSeek"
+		},
+		"canonical_slug": "deepseek/deepseek-v4-flash-20260423",
+		"context_length": 1048576,
+		"created": 1777000666,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
+		"expiration_date": null,
+		"hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
+		"id": "deepseek/deepseek-v4-flash",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/deepseek/deepseek-v4-flash-20260423/endpoints"
+		},
+		"name": "DeepSeek: DeepSeek V4 Flash",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000028",
+			"input_cache_read": "0.0000000028",
+			"prompt": "0.00000014"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 384000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "inclusionai/ling-2.6-1t-20260423",
+		"context_length": 262144,
+		"created": 1776948238,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company’s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It uses a “fast...",
+		"expiration_date": "2026-04-30",
+		"hugging_face_id": null,
+		"id": "inclusionai/ling-2.6-1t:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/inclusionai/ling-2.6-1t-20260423/endpoints"
+		},
+		"name": "inclusionAI: Ling-2.6-1T (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 32768
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "tencent/hy3-preview-20260421",
+		"context_length": 262144,
+		"created": 1776878150,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 0.9,
+			"top_k": null,
+			"top_p": 1
+		},
+		"description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
+		"expiration_date": "2026-05-08",
+		"hugging_face_id": "tencent/Hy3-preview",
+		"id": "tencent/hy3-preview:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/tencent/hy3-preview-20260421/endpoints"
+		},
+		"name": "Tencent: Hy3 preview (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "xiaomi/mimo-v2.5-pro-20260422",
+		"context_length": 1048576,
+		"created": 1776874273,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": null,
+			"top_p": 0.95
+		},
+		"description": "MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "xiaomi/mimo-v2.5-pro",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/xiaomi/mimo-v2.5-pro-20260422/endpoints"
+		},
+		"name": "Xiaomi: MiMo-V2.5-Pro",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000003",
+			"input_cache_read": "0.0000002",
+			"prompt": "0.000001"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "audio", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "xiaomi/mimo-v2.5-20260422",
+		"context_length": 1048576,
+		"created": 1776874269,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": null,
+			"top_p": 0.95
+		},
+		"description": "MiMo-V2.5 is a native omnimodal model by Xiaomi. It delivers Pro-level agentic performance at roughly half the inference cost, while surpassing MiMo-V2-Omni in multimodal perception across image and video understanding...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "xiaomi/mimo-v2.5",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/xiaomi/mimo-v2.5-20260422/endpoints"
+		},
+		"name": "Xiaomi: MiMo-V2.5",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000002",
+			"input_cache_read": "0.00000008",
+			"prompt": "0.0000004"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text+image",
+			"output_modalities": ["image", "text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5.4-image-2-20260421",
+		"context_length": 272000,
+		"created": 1776797528,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "[GPT-5.4](https://openrouter.ai/openai/gpt-5.4) Image 2 combines OpenAI's GPT-5.4 model with state-of-the-art image generation capabilities from GPT Image 2. It enables rich multimodal workflows, allowing users to seamlessly move between reasoning, coding, and...",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "openai/gpt-5.4-image-2",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-5.4-image-2-20260421/endpoints"
+		},
+		"name": "OpenAI: GPT-5.4 Image 2",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000015",
+			"input_cache_read": "0.000002",
+			"prompt": "0.000008",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "top_logprobs"],
+		"top_provider":
+		{
+			"context_length": 272000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text"],
 			"instruct_type": null,
 			"modality": "text->text",
@@ -22,7 +641,7 @@
 			"top_p": null
 		},
 		"description": "Ling-2.6-flash is an instant (instruct) model from inclusionAI with 104B total parameters and 7.4B active parameters, designed for real-world agents that require fast responses, strong execution, and high token efficiency....",
-		"expiration_date": null,
+		"expiration_date": "2026-04-29",
 		"hugging_face_id": "",
 		"id": "inclusionai/ling-2.6-flash:free",
 		"knowledge_cutoff": null,
@@ -141,6 +760,51 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["image", "text"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "baidu/qianfan-ocr-fast-20260420",
+		"context_length": 65536,
+		"created": 1776707472,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Qianfan-OCR-Fast is a domain-specific multimodal large model purpose-built for OCR. By leveraging specialized OCR training data while preserving versatile multimodal intelligence, it provides a powerful performance upgrade over Qianfan-OCR.",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "baidu/qianfan-ocr-fast:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/baidu/qianfan-ocr-fast-20260420/endpoints"
+		},
+		"name": "Baidu: Qianfan-OCR-Fast (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "top_p"],
+		"top_provider":
+		{
+			"context_length": 65536,
+			"is_moderated": false,
+			"max_completion_tokens": 28672
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "image"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -148,7 +812,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "moonshotai/kimi-k2.6-20260420",
-		"context_length": 262144,
+		"context_length": 256000,
 		"created": 1776699402,
 		"default_parameters":
 		{
@@ -172,16 +836,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000028",
-			"input_cache_read": "0.0000002",
-			"prompt": "0.0000006"
+			"completion": "0.000004655",
+			"input_cache_read": "0.0000001463",
+			"prompt": "0.0000007448"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 256000,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -444,16 +1108,15 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000035",
-			"input_cache_read": "0.00000004",
-			"prompt": "0.00000007"
+			"completion": "0.00000033",
+			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -536,15 +1199,14 @@
 		"pricing":
 		{
 			"completion": "0.00000038",
-			"input_cache_read": "0.0000000199999995",
 			"prompt": "0.00000013"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -2715,8 +3377,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000012",
-			"input_cache_read": "0.000000075",
+			"completion": "0.00000115",
+			"input_cache_read": "0.00000003",
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -2724,7 +3386,7 @@
 		{
 			"context_length": 196608,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -2759,15 +3421,15 @@
 		"pricing":
 		{
 			"completion": "0.00000208",
-			"input_cache_read": "0.00000013",
-			"prompt": "0.00000065"
+			"input_cache_read": "0.00000012",
+			"prompt": "0.0000006"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 202752,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -2974,8 +3636,8 @@
 		"pricing":
 		{
 			"completion": "0.0000008",
-			"input_cache_read": "0.00000011",
-			"prompt": "0.00000015"
+			"input_cache_read": "0.00000009",
+			"prompt": "0.00000014"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -3099,7 +3761,7 @@
 			"completion": "0.0000003",
 			"prompt": "0.0000001"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -3143,6 +3805,51 @@
 		{
 			"completion": "0",
 			"prompt": "0"
+		},
+		"supported_parameters": ["max_tokens", "response_format", "structured_outputs", "temperature", "tools", "top_k", "top_p"],
+		"top_provider":
+		{
+			"context_length": 131000,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "arcee-ai/trinity-large-preview",
+		"context_length": 131000,
+		"created": 1769552670,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 0.8,
+			"top_k": null,
+			"top_p": 0.8
+		},
+		"description": "Trinity-Large-Preview is a frontier-scale open-weight language model from Arcee, built as a 400B-parameter sparse Mixture-of-Experts with 13B active parameters per token using 4-of-256 expert routing. It excels in creative writing,...",
+		"expiration_date": null,
+		"hugging_face_id": "arcee-ai/Trinity-Large-Preview",
+		"id": "arcee-ai/trinity-large-preview",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/arcee-ai/trinity-large-preview/endpoints"
+		},
+		"name": "Arcee AI: Trinity Large Preview",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000045",
+			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "structured_outputs", "temperature", "tools", "top_k", "top_p"],
 		"top_provider":
@@ -3568,15 +4275,15 @@
 		"pricing":
 		{
 			"completion": "0.0000004",
-			"input_cache_read": "0.0000000100000002",
+			"input_cache_read": "0.00000001",
 			"prompt": "0.00000006"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 202752,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -3730,12 +4437,12 @@
 			"completion": "0.0000006",
 			"prompt": "0.0000002"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 65536,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -4148,7 +4855,7 @@
 			"input_cache_read": "0.000000045",
 			"prompt": "0.00000009"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -4232,12 +4939,12 @@
 			"completion": "0.0000002",
 			"prompt": "0.00000005"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 228000
 		}
 	},
 	{
@@ -4526,14 +5233,15 @@
 		"pricing":
 		{
 			"completion": "0.0000009",
+			"input_cache_read": "0.00000005",
 			"prompt": "0.0000003"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 24000
 		}
 	},
 	{
@@ -4612,7 +5320,7 @@
 			"completion": "0.0000005",
 			"prompt": "0.000000135"
 		},
-		"supported_parameters": ["frequency_penalty", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -5077,7 +5785,7 @@
 			"completion": "0.00000015",
 			"prompt": "0.000000045"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -5166,12 +5874,12 @@
 			"input_cache_read": "0.0000000252",
 			"prompt": "0.000000252"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -6506,12 +7214,12 @@
 			"completion": "0.0000006",
 			"prompt": "0.0000002"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -6873,7 +7581,7 @@
 			"prompt": "0.0000025",
 			"web_search": "0.01"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -7045,7 +7753,7 @@
 			"prompt": "0.00001",
 			"web_search": "0.01"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -7233,7 +7941,15 @@
 		"canonical_slug": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
 		"context_length": 131072,
 		"created": 1760101395,
-		"default_parameters": null,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 0.6,
+			"top_k": null,
+			"top_p": 0.95
+		},
 		"description": "Llama-3.3-Nemotron-Super-49B-v1.5 is a 49B-parameter, English-centric reasoning/chat model derived from Meta’s Llama-3.3-70B-Instruct with a 128K context. It’s post-trained for agentic workflows (RAG, tool calling) via SFT across math, code, science, and multi-turn chat, followed by multiple RL stages; Reward-aware Preference Optimization (RPO) for alignment, RL with Verifiable Rewards (RLVR) for step-wise reasoning, and iterative DPO to refine tool-use behavior. A distillation-driven Neural Architecture Search (“Puzzle”) replaces some attention blocks and varies FFN widths to shrink memory footprint and improve throughput, enabling single-GPU (H100/H200) deployment while preserving instruction following and CoT quality.\n\nIn internal evaluations (NeMo-Skills, up to 16 runs, temp = 0.6, top_p = 0.95), the model reports strong reasoning/coding results, e.g., MATH500 pass@1 = 97.4, AIME-2024 = 87.5, AIME-2025 = 82.71, GPQA = 71.97, LiveCodeBench (24.10–25.02) = 73.58, and MMLU-Pro (CoT) = 79.53. The model targets practical inference efficiency (high tokens/s, reduced VRAM) with Transformers/vLLM support and explicit “reasoning on/off” modes (chat-first defaults, greedy recommended when disabled). Suitable for building agents, assistants, and long-context retrieval systems where balanced accuracy-to-cost and reliable tool use matter.\n",
 		"expiration_date": null,
 		"hugging_face_id": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
@@ -7250,12 +7966,12 @@
 			"completion": "0.0000004",
 			"prompt": "0.0000001"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -7866,7 +8582,7 @@
 			"completion": "0.0000026",
 			"prompt": "0.00000026"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -7914,7 +8630,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -8118,7 +8834,7 @@
 		"pricing":
 		{
 			"completion": "0.00000079",
-			"input_cache_read": "0.0000001300000002",
+			"input_cache_read": "0.00000013",
 			"prompt": "0.00000021"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -8126,7 +8842,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -8532,7 +9248,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -8772,12 +9488,12 @@
 			"completion": "0.00000016",
 			"prompt": "0.00000004"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -10018,7 +10734,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -10102,7 +10818,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -10408,7 +11124,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-235b-a22b-thinking-2507",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1753449557,
 		"default_parameters":
 		{
@@ -10429,15 +11145,15 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"prompt": "0.00000013"
+			"completion": "0.000001495",
+			"prompt": "0.0000001495"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -10581,8 +11297,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
-			"input_cache_read": "0.000000022",
+			"completion": "0.0000018",
 			"prompt": "0.00000022"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -10590,7 +11305,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -10715,7 +11430,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -11134,7 +11849,7 @@
 			"completion": "0.00000057",
 			"prompt": "0.00000014"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "reasoning", "response_format", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -11366,7 +12081,7 @@
 			"completion": "0.0000011",
 			"prompt": "0.00000028"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 123000,
@@ -11528,7 +12243,7 @@
 		{
 			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -12219,7 +12934,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -13034,7 +13749,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -13107,12 +13822,12 @@
 			"completion": "0.00000028",
 			"prompt": "0.00000008"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 40960,
 			"is_moderated": false,
-			"max_completion_tokens": 40960
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -13263,7 +13978,7 @@
 			"completion": "0.00000024",
 			"prompt": "0.00000006"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 40960,
@@ -14545,7 +15260,7 @@
 			"completion": "0.0000003",
 			"prompt": "0.00000008"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 327680,
@@ -14739,7 +15454,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -14961,12 +15676,12 @@
 			"completion": "0.00000008",
 			"prompt": "0.00000004"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -15037,12 +15752,12 @@
 			"completion": "0.00000013",
 			"prompt": "0.00000004"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -15318,7 +16033,7 @@
 			"completion": "0.00000016",
 			"prompt": "0.00000008"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -15606,7 +16321,7 @@
 		"default_parameters":
 		{},
 		"description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems. QwQ-32B is the medium-sized reasoning model, which is capable of achieving competitive performance against state-of-the-art reasoning models, e.g., DeepSeek-R1, o1-mini.",
-		"expiration_date": null,
+		"expiration_date": "2026-04-29",
 		"hugging_face_id": "Qwen/QwQ-32B",
 		"id": "qwen/qwq-32b",
 		"knowledge_cutoff": "2024-06-30",
@@ -15621,7 +16336,7 @@
 			"completion": "0.00000058",
 			"prompt": "0.00000015"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "reasoning", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -16734,7 +17449,7 @@
 			"completion": "0.00000008",
 			"prompt": "0.00000005"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -16772,7 +17487,7 @@
 			"completion": "0.00000029",
 			"prompt": "0.00000029"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -17065,7 +17780,7 @@
 			"completion": "0.0000008",
 			"prompt": "0.0000007"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -17264,7 +17979,7 @@
 			"completion": "0.00000014",
 			"prompt": "0.000000065"
 		},
-		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 16384,
@@ -17340,12 +18055,12 @@
 			"completion": "0.00000089",
 			"prompt": "0.00000032"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 163840
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -17378,7 +18093,7 @@
 			"completion": "0.00000075",
 			"prompt": "0.00000065"
 		},
-		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -17640,15 +18355,15 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000038",
-			"prompt": "0.00000012"
+			"completion": "0.00000032",
+			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -18407,7 +19122,7 @@
 			"completion": "0.0000012",
 			"prompt": "0.0000012"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -18783,7 +19498,7 @@
 			"completion": "0.000000245",
 			"prompt": "0.000000245"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -18854,10 +19569,10 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000039",
-			"prompt": "0.00000012"
+			"completion": "0.0000004",
+			"prompt": "0.00000036"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -19113,7 +19828,7 @@
 			"completion": "0.00000085",
 			"prompt": "0.00000085"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -19253,12 +19968,12 @@
 			"completion": "0.0000003",
 			"prompt": "0.0000003"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -19329,7 +20044,7 @@
 			"completion": "0.000001",
 			"prompt": "0.000001"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -19400,12 +20115,12 @@
 			"completion": "0.00000005",
 			"prompt": "0.00000004"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 8192,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -19510,7 +20225,7 @@
 			"completion": "0.00000005",
 			"prompt": "0.00000002"
 		},
-		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 16384,
@@ -19548,12 +20263,12 @@
 			"completion": "0.0000004",
 			"prompt": "0.0000004"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -19692,7 +20407,7 @@
 			"completion": "0.00000004",
 			"prompt": "0.00000002"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -19808,7 +20523,7 @@
 			"completion": "0.00000065",
 			"prompt": "0.00000065"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "stop", "structured_outputs", "temperature", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
 		"top_provider":
 		{
 			"context_length": 8192,
@@ -21221,7 +21936,7 @@
 			"completion": "0.00000054",
 			"prompt": "0.00000054"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"top_provider":
 		{
 			"context_length": 32768,

@@ -355,6 +355,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini Embedding 2",
+		"id": "models/gemini-embedding-2",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini Embedding 2 Preview",
 		"id": "models/gemini-embedding-2-preview",
 		"object": "model",
