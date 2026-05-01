@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"created": 1776384000,
+		"id": "grok-4.3",
+		"object": "model",
+		"owned_by": "xai"
+	},
+	{
 		"created": 1773014400,
 		"id": "grok-4.20-beta-0309-non-reasoning",
 		"object": "model",

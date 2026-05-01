@@ -196,6 +196,27 @@
 	},
 	{
 		"created": 0,
+		"id": "ByteDance/Seed-2.0-code",
+		"metadata":
+		{
+			"context_length": 256000,
+			"description": "A coding model optimized for real-world development environments, with reliable tool use in common IDEs such as Claude Code. It delivers strong front-end performance and supports Skills.",
+			"max_tokens": 256000,
+			"pricing":
+			{
+				"cache_read_tokens": 0.1,
+				"input_tokens": 0.5,
+				"output_tokens": 2.9999999999999996
+			},
+			"tags": ["vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ByteDance/Seed-2.0-code"
+	},
+	{
+		"created": 0,
 		"id": "ByteDance/Seed-2.0-mini",
 		"metadata":
 		{
@@ -1267,11 +1288,10 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.145,
 				"input_tokens": 0.29,
-				"output_tokens": 2.9000000000000004
+				"output_tokens": 2.4
 			},
-			"tags": ["vision", "prompt_cache", "reasoning_effort", "reasoning"]
+			"tags": ["vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1328,11 +1348,10 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.1,
-				"input_tokens": 0.2,
-				"output_tokens": 0.95
+				"input_tokens": 0.18,
+				"output_tokens": 1.0
 			},
-			"tags": ["vision", "prompt_cache", "reasoning_effort", "reasoning"]
+			"tags": ["reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1349,11 +1368,10 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.27,
 				"input_tokens": 0.54,
 				"output_tokens": 3.4
 			},
-			"tags": ["vision", "prompt_cache", "reasoning_effort", "reasoning"]
+			"tags": ["vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1391,7 +1409,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.04,
-				"output_tokens": 0.2
+				"output_tokens": 0.15
 			},
 			"tags": ["vision", "reasoning_effort"]
 		},
@@ -1410,10 +1428,10 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.2,
+				"input_tokens": 0.19,
 				"output_tokens": 1.0
 			},
-			"tags": ["vision", "reasoning_effort", "reasoning"]
+			"tags": ["reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3631,6 +3649,26 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "nvidia/Nemotron-3-Nano-30B-A3B"
+	},
+	{
+		"created": 0,
+		"id": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning",
+		"metadata":
+		{
+			"context_length": 262144,
+			"description": "Nemotron 3 Nano Omni is an open multimodal model built on a hybrid Mixture-of-Experts (MoE) architecture, engineered for high efficiency and strong accuracy across image, video, audio, and text inputs. It powers always-on sub-agents for computer use, document intelligence, and audio-video understanding—replacing fragmented vision, speech, and language pipelines with a single unified inference pass.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.2,
+				"output_tokens": 0.8
+			},
+			"tags": ["vision", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning"
 	},
 	{
 		"created": 0,

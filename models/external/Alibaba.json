@@ -1,6 +1,42 @@
 {
 	"data": [
 	{
+		"created": 1777534386,
+		"id": "qwen3-vl-plus-2025-09-23",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1777534335,
+		"id": "qwen3-vl-plus-2025-12-19",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1777534314,
+		"id": "qwen3-vl-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1777534225,
+		"id": "qwen3-vl-flash-2025-10-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1777534194,
+		"id": "qwen3-vl-flash-2026-01-22",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1777533980,
+		"id": "qwen3-vl-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1777294095,
 		"id": "qwen3.6-max-preview",
 		"object": "model",
@@ -135,12 +171,6 @@
 	{
 		"created": 1773991661,
 		"id": "qwen3-livetranslate-flash-2025-12-01",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1773717249,
-		"id": "qwen3-vl-plus-2025-12-19",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -469,20 +499,8 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1769588848,
-		"id": "qwen3-vl-flash-2026-01-22",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1769481833,
 		"id": "qwen3-max-2026-01-23",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1769443051,
-		"id": "qwen3-vl-plus",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -703,12 +721,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1761529658,
-		"id": "qwen3-vl-flash",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1761529599,
 		"id": "qwen3-max-2025-09-23",
 		"object": "model",
@@ -717,12 +729,6 @@
 	{
 		"created": 1761529587,
 		"id": "qwen3-max",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1760530303,
-		"id": "qwen3-vl-flash-2025-10-15",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -909,12 +915,6 @@
 	{
 		"created": 1760411450,
 		"id": "qwen3-4b",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1758629537,
-		"id": "qwen3-vl-plus-2025-09-23",
 		"object": "model",
 		"owned_by": "system"
 	},
