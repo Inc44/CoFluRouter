@@ -242,7 +242,7 @@
 	{
 		"context_length": 163840,
 		"id": "MiniMax-M2.5",
-		"max_completion_tokens": 163840,
+		"max_completion_tokens": 32768,
 		"object": "model",
 		"owned_by": "no-reply@sambanova.ai",
 		"pricing":
@@ -263,6 +263,20 @@
 		{
 			"completion": "0.00000035",
 			"prompt": "0.00000020"
+		},
+		"sn_metadata":
+		{}
+	},
+	{
+		"context_length": 196608,
+		"id": "MiniMax-M2.7",
+		"max_completion_tokens": 196608,
+		"object": "model",
+		"owned_by": "no-reply@sambanova.ai",
+		"pricing":
+		{
+			"completion": "0.00000240",
+			"prompt": "0.00000060"
 		},
 		"sn_metadata":
 		{}

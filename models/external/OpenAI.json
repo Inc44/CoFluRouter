@@ -1,6 +1,30 @@
 {
 	"data": [
 	{
+		"created": 1778012060,
+		"id": "gpt-realtime-whisper",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1778006032,
+		"id": "gpt-realtime-2",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1777950216,
+		"id": "gpt-realtime-translate",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1777704602,
+		"id": "chat-latest",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1776894470,
 		"id": "gpt-5.5-pro-2026-04-23",
 		"object": "model",

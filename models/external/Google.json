@@ -301,8 +301,20 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 3 Flash Preview (Agent)",
+		"id": "models/gemini-3-flash-preview-agent",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Nano Banana Pro",
 		"id": "models/gemini-3-pro-image-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3 Pro Image Preview (Agent)",
+		"id": "models/gemini-3-pro-image-preview-agent",
 		"object": "model",
 		"owned_by": "google"
 	},
@@ -319,8 +331,26 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 3.1 Flash Image Preview (Agent)",
+		"id": "models/gemini-3.1-flash-image-preview-agent",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.1 Flash Lite",
+		"id": "models/gemini-3.1-flash-lite",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 3.1 Flash Lite Preview",
 		"id": "models/gemini-3.1-flash-lite-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.1 Flash Lite Preview (Agent)",
+		"id": "models/gemini-3.1-flash-lite-preview-agent",
 		"object": "model",
 		"owned_by": "google"
 	},
@@ -337,8 +367,20 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 3.1 Flash TTS Preview (Agent)",
+		"id": "models/gemini-3.1-flash-tts-preview-agent",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 3.1 Pro Preview",
 		"id": "models/gemini-3.1-pro-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.1 Pro Preview (Agent)",
+		"id": "models/gemini-3.1-pro-preview-agent",
 		"object": "model",
 		"owned_by": "google"
 	},
@@ -517,8 +559,20 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Lyria 3 Clip Preview (Agent)",
+		"id": "models/lyria-3-clip-preview-agent",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Lyria 3 Pro Preview",
 		"id": "models/lyria-3-pro-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Lyria 3 Pro Preview (Agent)",
+		"id": "models/lyria-3-pro-preview-agent",
 		"object": "model",
 		"owned_by": "google"
 	},
@@ -531,6 +585,24 @@
 	{
 		"display_name": "Nano Banana Pro",
 		"id": "models/nano-banana-pro-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Omni BAG Autopush IAPI (Agent)",
+		"id": "models/omni-bag-autopush-iapi-agent",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Omni BAG Prod IAPI (Agent)",
+		"id": "models/omni-bag-prod-iapi-agent",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Omni BAG Staging IAPI (Agent)",
+		"id": "models/omni-bag-staging-iapi-agent",
 		"object": "model",
 		"owned_by": "google"
 	},

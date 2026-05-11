@@ -3,6 +3,191 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "inclusionai/ring-2.6-1t-20260508",
+		"context_length": 262144,
+		"created": 1778247440,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Ring-2.6-1T is a 1T-parameter-scale thinking model with 63B active parameters, built for real-world agent workflows that require both strong capability and operational efficiency. It is optimized for coding agents, tool...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "inclusionai/ring-2.6-1t:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/inclusionai/ring-2.6-1t-20260508/endpoints"
+		},
+		"name": "inclusionAI: Ring-2.6-1T (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-3.1-flash-lite-20260507",
+		"context_length": 1048576,
+		"created": 1778168828,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Gemini 3.1 Flash Lite is Google’s GA high-efficiency multimodal model optimized for low-latency, high-volume workloads. It supports text, image, video, audio, and PDF inputs, and is designed for lightweight agentic...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/gemini-3.1-flash-lite",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemini-3.1-flash-lite-20260507/endpoints"
+		},
+		"name": "Google: Gemini 3.1 Flash Lite",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"audio": "0.0000005",
+			"completion": "0.0000015",
+			"image": "0.00000025",
+			"input_cache_read": "0.000000025",
+			"input_cache_write": "0.00000008333333333333334",
+			"internal_reasoning": "0.0000015",
+			"prompt": "0.00000025",
+			"web_search": "0.014"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "baidu/cobuddy-20260430",
+		"context_length": 131072,
+		"created": 1778035480,
+		"default_parameters":
+		{},
+		"description": "CoBuddy is a code generation model from Baidu, optimized for coding tasks and AI Agent workflows. It features high inference throughput and low end-to-end latency, with native support for tool...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "baidu/cobuddy:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/baidu/cobuddy-20260430/endpoints"
+		},
+		"name": "Baidu Qianfan: CoBuddy (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "tools"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-chat-latest-20260505",
+		"context_length": 400000,
+		"created": 1778000212,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "GPT Chat Latest points to OpenAI's stable API alias `chat-latest` that always resolves to the latest Instant chat model used in ChatGPT. As OpenAI rolls out new Instant model updates...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-chat-latest",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-chat-latest-20260505/endpoints"
+		},
+		"name": "OpenAI: GPT Chat Latest",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00003",
+			"input_cache_read": "0.0000005",
+			"prompt": "0.000005",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools", "top_logprobs"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 400000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "image"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -40,6 +225,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -86,11 +272,58 @@
 			"prompt": "0.00000005"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
 			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Mistral"
+		},
+		"canonical_slug": "mistralai/mistral-medium-3.5-20260430",
+		"context_length": 262144,
+		"created": 1777570439,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "mistralai/mistral-medium-3-5",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/mistralai/mistral-medium-3.5-20260430/endpoints"
+		},
+		"name": "Mistral: Mistral Medium 3.5",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000075",
+			"prompt": "0.0000015"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -131,6 +364,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048756,
@@ -176,6 +410,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 256000,
@@ -221,6 +456,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "temperature", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -266,6 +502,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "temperature", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -314,6 +551,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -361,6 +599,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -412,6 +651,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -429,7 +669,7 @@
 			"tokenizer": "Router"
 		},
 		"canonical_slug": "~moonshotai/kimi-latest",
-		"context_length": 262142,
+		"context_length": 32768,
 		"created": 1777318428,
 		"default_parameters":
 		{
@@ -453,16 +693,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000349",
-			"input_cache_read": "0.00000014",
+			"completion": "0.0000035",
+			"input_cache_read": "0.00000025",
 			"prompt": "0.00000074"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 262142,
+			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": 262142
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -509,6 +750,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -557,6 +799,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p", "verbosity"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -589,7 +832,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "~openai/gpt-latest",
-		"knowledge_cutoff": null,
+		"knowledge_cutoff": "2025-12-01",
 		"links":
 		{
 			"details": "/api/v1/models/~openai/gpt-latest/endpoints"
@@ -604,6 +847,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1050000,
@@ -642,6 +886,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -681,6 +926,7 @@
 			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -719,16 +965,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000096525",
-			"input_cache_read": "0.0000001612",
-			"prompt": "0.0000001612"
+			"completion": "0.000001",
+			"input_cache_read": "0.00000005",
+			"prompt": "0.00000015"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -763,6 +1010,7 @@
 			"prompt": "0.00000104"
 		},
 		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -780,7 +1028,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3.6-27b-20260422",
-		"context_length": 256000,
+		"context_length": 262144,
 		"created": 1777255064,
 		"default_parameters":
 		{
@@ -804,15 +1052,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000325",
-			"prompt": "0.000000325"
+			"completion": "0.0000032",
+			"prompt": "0.00000032"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 256000,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 81920
 		}
 	},
 	{
@@ -840,7 +1089,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.5-pro",
-		"knowledge_cutoff": null,
+		"knowledge_cutoff": "2025-12-01",
 		"links":
 		{
 			"details": "/api/v1/models/openai/gpt-5.5-pro-20260423/endpoints"
@@ -854,6 +1103,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1050000,
@@ -886,7 +1136,7 @@
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openai/gpt-5.5",
-		"knowledge_cutoff": null,
+		"knowledge_cutoff": "2025-12-01",
 		"links":
 		{
 			"details": "/api/v1/models/openai/gpt-5.5-20260423/endpoints"
@@ -901,6 +1151,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1050000,
@@ -947,6 +1198,7 @@
 			"prompt": "0.000000435"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -993,6 +1245,7 @@
 			"prompt": "0.00000014"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -1054,6 +1307,53 @@
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
+		"canonical_slug": "inclusionai/ling-2.6-1t-20260423",
+		"context_length": 262144,
+		"created": 1776948238,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company’s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It uses a “fast...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "inclusionai/ling-2.6-1t",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/inclusionai/ling-2.6-1t-20260423/endpoints"
+		},
+		"name": "inclusionAI: Ling-2.6-1T",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000025",
+			"input_cache_read": "0.00000006",
+			"prompt": "0.0000003"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 32768
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
 		"canonical_slug": "tencent/hy3-preview-20260421",
 		"context_length": 262144,
 		"created": 1776878150,
@@ -1099,6 +1399,53 @@
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
+		"canonical_slug": "tencent/hy3-preview-20260421",
+		"context_length": 262144,
+		"created": 1776878150,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 0.9,
+			"top_k": null,
+			"top_p": 1
+		},
+		"description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
+		"expiration_date": null,
+		"hugging_face_id": "tencent/Hy3-preview",
+		"id": "tencent/hy3-preview",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/tencent/hy3-preview-20260421/endpoints"
+		},
+		"name": "Tencent: Hy3 preview",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000026",
+			"input_cache_read": "0.000000029",
+			"prompt": "0.000000066"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
 		"canonical_slug": "xiaomi/mimo-v2.5-pro-20260422",
 		"context_length": 1048576,
 		"created": 1776874273,
@@ -1128,12 +1475,13 @@
 			"input_cache_read": "0.0000002",
 			"prompt": "0.000001"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -1175,6 +1523,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -1222,6 +1571,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "top_logprobs"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 272000,
@@ -1313,6 +1663,7 @@
 			"prompt": "0.00000008"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -1361,6 +1712,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -1378,7 +1730,7 @@
 			"tokenizer": "Router"
 		},
 		"canonical_slug": "openrouter/pareto-code",
-		"context_length": 200000,
+		"context_length": 2000000,
 		"created": 1776747900,
 		"default_parameters":
 		{
@@ -1389,7 +1741,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "The Pareto Router is a way to have OpenRouter always pick a strong coding model for your needs without committing to a specific one. You express a single `min_coding_score` preference...",
+		"description": "The Pareto Router maintains a tiered shortlist of strong coding models, ranked by [Artificial Analysis](https://artificialanalysis.ai/) coding percentiles. Set min_coding_score between 0 and 1 on the [pareto-router plugin](https://openrouter.ai/docs/guides/routing/routers/pareto-router#the-min_coding_score-parameter) to control how...",
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "openrouter/pareto-code",
@@ -1406,6 +1758,7 @@
 			"prompt": "-1"
 		},
 		"supported_parameters": [],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": null,
@@ -1451,6 +1804,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 65536,
@@ -1468,7 +1822,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "moonshotai/kimi-k2.6-20260420",
-		"context_length": 262142,
+		"context_length": 32768,
 		"created": 1776699402,
 		"default_parameters":
 		{
@@ -1492,16 +1846,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000349",
-			"input_cache_read": "0.00000014",
+			"completion": "0.0000035",
+			"input_cache_read": "0.00000025",
 			"prompt": "0.00000074"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 262142,
+			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": 262142
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -1545,6 +1900,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -1638,6 +1994,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p", "verbosity"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -1679,16 +2036,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000035",
-			"input_cache_read": "0.000000525",
-			"prompt": "0.00000105"
+			"completion": "0.00000308",
+			"input_cache_read": "0.000000182",
+			"prompt": "0.00000098"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 202752,
 			"is_moderated": false,
-			"max_completion_tokens": 65535
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -1726,6 +2084,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -1768,6 +2127,7 @@
 			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -1813,6 +2173,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -1858,6 +2219,7 @@
 			"prompt": "0.00000013"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -1949,6 +2311,7 @@
 			"prompt": "0.000000325"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -1995,11 +2358,58 @@
 			"prompt": "0.0000012"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 202752,
 			"is_moderated": false,
 			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "arcee-ai/trinity-large-thinking",
+		"context_length": 262144,
+		"created": 1775058318,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 0.3,
+			"top_k": null,
+			"top_p": 0.8
+		},
+		"description": "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7...",
+		"expiration_date": null,
+		"hugging_face_id": "arcee-ai/Trinity-Large-Thinking",
+		"id": "arcee-ai/trinity-large-thinking:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/arcee-ai/trinity-large-thinking/endpoints"
+		},
+		"name": "Arcee AI: Trinity Large Thinking (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 80000
 		}
 	},
 	{
@@ -2041,6 +2451,7 @@
 			"prompt": "0.00000022"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -2088,6 +2499,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 2000000,
@@ -2116,7 +2528,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "Grok 4.20 is xAI's newest flagship model with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering consistently precise and truthful responses.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
+		"description": "Grok 4.20 is a reasoning model from xAI with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering consistently precise and truthful responses.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
 		"expiration_date": null,
 		"hugging_face_id": "",
 		"id": "x-ai/grok-4.20",
@@ -2135,6 +2547,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 2000000,
@@ -2180,6 +2593,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "seed", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -2225,6 +2639,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "seed", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -2312,6 +2727,7 @@
 			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 256000,
@@ -2398,6 +2814,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 16384,
@@ -2444,6 +2861,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -2490,6 +2908,7 @@
 			"prompt": "0.000001"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -2532,15 +2951,15 @@
 		"pricing":
 		{
 			"completion": "0.0000012",
-			"input_cache_read": "0.000000059",
-			"prompt": "0.0000003"
+			"prompt": "0.000000299"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 196608,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -2583,6 +3002,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -2630,6 +3050,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -2676,6 +3097,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -2722,6 +3144,7 @@
 			"prompt": "0.0000012"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 202752,
@@ -2941,6 +3364,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -2985,7 +3409,8 @@
 			"completion": "0.00000045",
 			"prompt": "0.00000009"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -3031,6 +3456,7 @@
 			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -3073,14 +3499,15 @@
 		"pricing":
 		{
 			"completion": "0.00000015",
-			"prompt": "0.0000001"
+			"prompt": "0.00000004"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 81920
 		}
 	},
 	{
@@ -3122,6 +3549,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1050000,
@@ -3169,6 +3597,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1050000,
@@ -3215,6 +3644,7 @@
 			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -3262,6 +3692,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -3313,6 +3744,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -3355,6 +3787,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -3401,6 +3834,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 65536,
@@ -3442,15 +3876,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000013",
-			"prompt": "0.0000001625"
+			"completion": "0.000001",
+			"input_cache_read": "0.00000005",
+			"prompt": "0.00000014"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 81920
 		}
 	},
 	{
@@ -3491,6 +3927,7 @@
 			"prompt": "0.000000195"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -3536,6 +3973,7 @@
 			"prompt": "0.00000026"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -3579,6 +4017,7 @@
 			"prompt": "0.000000065"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -3624,6 +4063,7 @@
 			"prompt": "0.00000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -3672,6 +4112,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -3719,6 +4160,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -3762,6 +4204,7 @@
 			"prompt": "0.0000008"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -3813,6 +4256,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -3861,6 +4305,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p", "verbosity"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -3904,6 +4349,7 @@
 			"prompt": "0.00000026"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -3950,6 +4396,7 @@
 			"prompt": "0.00000039"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -3995,6 +4442,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "temperature", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 196608,
@@ -4037,15 +4485,15 @@
 		"pricing":
 		{
 			"completion": "0.00000115",
-			"input_cache_read": "0.00000003",
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 196608,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 196608
 		}
 	},
 	{
@@ -4079,16 +4527,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000208",
+			"completion": "0.00000192",
 			"input_cache_read": "0.00000012",
 			"prompt": "0.0000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 202752,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -4126,6 +4575,7 @@
 			"prompt": "0.00000078"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -4256,6 +4706,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p", "verbosity"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -4296,9 +4747,10 @@
 		{
 			"completion": "0.0000008",
 			"input_cache_read": "0.00000007",
-			"prompt": "0.00000012"
+			"prompt": "0.00000011"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -4341,6 +4793,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": null,
@@ -4421,6 +4874,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -4511,6 +4965,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "structured_outputs", "temperature", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131000,
@@ -4552,16 +5007,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002",
-			"input_cache_read": "0.00000022",
-			"prompt": "0.00000044"
+			"completion": "0.00000198",
+			"input_cache_read": "0.00000005",
+			"prompt": "0.0000004"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 65535
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -4640,6 +5096,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -4683,6 +5140,7 @@
 			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["max_tokens", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 65536,
@@ -4725,6 +5183,7 @@
 			"prompt": "0.0000006"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1040000,
@@ -4767,6 +5226,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -4809,6 +5269,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -4852,6 +5313,7 @@
 			"prompt": "0.0000025"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -4895,6 +5357,7 @@
 			"prompt": "0.0000006"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -4938,6 +5401,7 @@
 			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 202752,
@@ -4981,6 +5445,7 @@
 			"prompt": "0.00000175"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -5139,6 +5604,7 @@
 			"prompt": "0.000000075"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -5181,6 +5647,7 @@
 			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -5224,6 +5691,7 @@
 			"prompt": "0.00000029"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 196608,
@@ -5262,15 +5730,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000174",
-			"prompt": "0.00000038"
+			"completion": "0.00000175",
+			"input_cache_read": "0.00000008",
+			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 202752,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -5317,6 +5787,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -5513,11 +5984,12 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000029",
-			"input_cache_read": "0.000000045",
-			"prompt": "0.00000009"
+			"completion": "0.0000003",
+			"input_cache_read": "0.00000001",
+			"prompt": "0.0000001"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -5560,6 +6032,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 256000,
@@ -5602,6 +6075,7 @@
 			"prompt": "0.00000005"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -5645,6 +6119,7 @@
 			"prompt": "0.00000175"
 		},
 		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -5688,6 +6163,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -5734,6 +6210,7 @@
 			"prompt": "0.00000175"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -5814,6 +6291,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -5856,6 +6334,7 @@
 			"prompt": "0.000001"
 		},
 		"supported_parameters": ["max_tokens", "seed", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 256000,
@@ -5899,6 +6378,7 @@
 			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -5983,6 +6463,7 @@
 			"prompt": "0.000000135"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -6025,6 +6506,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -6067,6 +6549,7 @@
 			"prompt": "-1"
 		},
 		"supported_parameters": [],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": null,
@@ -6114,6 +6597,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -6196,6 +6680,7 @@
 			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -6239,6 +6724,7 @@
 			"prompt": "0.0000002"
 		},
 		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -6282,6 +6768,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -6325,6 +6812,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -6368,6 +6856,7 @@
 			"prompt": "0.0000005"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -6448,6 +6937,7 @@
 			"prompt": "0.000000045"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -6486,11 +6976,12 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000012",
-			"input_cache_read": "0.0000002",
-			"prompt": "0.0000004"
+			"completion": "0.000000431",
+			"input_cache_read": "0.000000058",
+			"prompt": "0.000000287"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 163840,
@@ -6537,6 +7028,7 @@
 			"prompt": "0.000000252"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -6579,6 +7071,7 @@
 			"prompt": "0.0000002"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -6702,6 +7195,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "verbosity"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -6824,6 +7318,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 65536,
@@ -6946,6 +7441,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 65536,
@@ -7015,7 +7511,7 @@
 			"top_p": 0.95
 		},
 		"description": "Grok 4.1 Fast is xAI's best agentic tool calling model that shines in real-world use cases like customer support and deep research. 2M context window. Reasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
-		"expiration_date": null,
+		"expiration_date": "2026-05-15",
 		"hugging_face_id": "",
 		"id": "x-ai/grok-4.1-fast",
 		"knowledge_cutoff": null,
@@ -7033,6 +7529,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 2000000,
@@ -7197,6 +7694,7 @@
 			"prompt": "0.00000125"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -7243,6 +7741,7 @@
 			"prompt": "0.00000125"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -7287,6 +7786,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -7333,6 +7833,7 @@
 			"prompt": "0.00000125"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -7379,6 +7880,7 @@
 			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -7580,6 +8082,7 @@
 			"prompt": "0.0000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -7623,6 +8126,7 @@
 			"prompt": "0.0000025"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -7706,6 +8210,7 @@
 			"web_search": "0.018"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "structured_outputs", "temperature", "top_k", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -7750,6 +8255,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32000,
@@ -7793,6 +8299,7 @@
 			"prompt": "0.000000075"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -7835,6 +8342,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -7960,6 +8468,7 @@
 			"prompt": "0.000000255"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 196608,
@@ -8005,6 +8514,7 @@
 			"prompt": "0.000000104"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -8163,11 +8673,52 @@
 			"prompt": "0.000000017"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131000,
 			"is_moderated": false,
 			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "microsoft/phi-4-mini-instruct",
+		"context_length": 128000,
+		"created": 1760726049,
+		"default_parameters":
+		{},
+		"description": "Phi-4-mini-instruct is a lightweight open model built upon synthetic data and filtered publicly available websites - with a focus on high-quality, reasoning dense data. The model belongs to the Phi-4...",
+		"expiration_date": null,
+		"hugging_face_id": "microsoft/Phi-4-mini-instruct",
+		"id": "microsoft/phi-4-mini-instruct",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/microsoft/phi-4-mini-instruct/endpoints"
+		},
+		"name": "Microsoft: Phi 4 Mini Instruct",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000035",
+			"input_cache_read": "0.00000008",
+			"prompt": "0.00000008"
+		},
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": false,
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -8244,6 +8795,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -8292,6 +8844,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -8333,6 +8886,7 @@
 			"prompt": "0.000000117"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -8375,6 +8929,7 @@
 			"prompt": "0.00000008"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -8419,6 +8974,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -8543,6 +9099,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -8587,6 +9144,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -8632,6 +9190,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -8674,6 +9233,7 @@
 			"prompt": "0.00000007"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -8722,6 +9282,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -8767,6 +9328,7 @@
 			"prompt": "0.00000013"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -8812,6 +9374,7 @@
 			"prompt": "0.00000013"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -8855,6 +9418,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -8922,7 +9486,7 @@
 			"top_p": null
 		},
 		"description": "Compared with GLM-4.5, this generation brings several key improvements: Longer context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex agentic tasks.\nSuperior coding performance: The model achieves higher scores on code benchmarks and demonstrates better real-world performance in applications such as Claude Code、Cline、Roo Code and Kilo Code, including improvements in generating visually polished front-end pages.\nAdvanced reasoning: GLM-4.6 shows a clear improvement in reasoning performance and supports tool use during inference, leading to stronger overall capability.\nMore capable agents: GLM-4.6 exhibits stronger performance in tool using and search-based agents, and integrates more effectively within agent frameworks.\nRefined writing: Better aligns with human preferences in style and readability, and performs more naturally in role-playing scenarios.",
-		"expiration_date": null,
+		"expiration_date": "2026-05-14",
 		"hugging_face_id": "zai-org/GLM-4.6",
 		"id": "z-ai/glm-4.6",
 		"knowledge_cutoff": "2025-03-31",
@@ -8938,6 +9502,7 @@
 			"prompt": "0.00000039"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 204800,
@@ -8986,6 +9551,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -9028,6 +9594,7 @@
 			"prompt": "0.00000027"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 163840,
@@ -9071,6 +9638,7 @@
 			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -9113,6 +9681,7 @@
 			"prompt": "0.00000085"
 		},
 		"supported_parameters": ["max_tokens", "seed", "stop"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 256000,
@@ -9203,6 +9772,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -9248,6 +9818,7 @@
 			"prompt": "0.00000026"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -9291,6 +9862,7 @@
 			"prompt": "0.0000002"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -9335,6 +9907,7 @@
 			"prompt": "0.00000078"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -9379,6 +9952,7 @@
 			"prompt": "0.00000065"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -9422,6 +9996,7 @@
 			"prompt": "0.00000125"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -9498,11 +10073,12 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000079",
+			"completion": "0.00000095",
 			"input_cache_read": "0.00000013",
-			"prompt": "0.00000021"
+			"prompt": "0.00000027"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 163840,
@@ -9572,7 +10148,7 @@
 			"top_p": null
 		},
 		"description": "Grok 4 Fast is xAI's latest multimodal model with SOTA cost-efficiency and a 2M token context window. It comes in two flavors: non-reasoning and reasoning. Read more about the model on xAI's [news post](http://x.ai/news/grok-4-fast).\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
-		"expiration_date": null,
+		"expiration_date": "2026-05-15",
 		"hugging_face_id": "",
 		"id": "x-ai/grok-4-fast",
 		"knowledge_cutoff": "2025-09-30",
@@ -9590,6 +10166,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 2000000,
@@ -9673,6 +10250,7 @@
 			"prompt": "0.00000009"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -9717,6 +10295,7 @@
 			"prompt": "0.000000195"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -9833,6 +10412,7 @@
 			"prompt": "0.0000000975"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -9871,6 +10451,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -9909,6 +10490,7 @@
 			"prompt": "0.00000009"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -10027,6 +10609,7 @@
 			"prompt": "0.00000026"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -10070,6 +10653,7 @@
 			"prompt": "0.00000026"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -10112,6 +10696,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -10154,6 +10739,7 @@
 			"prompt": "0.00000004"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -10281,7 +10867,7 @@
 		"default_parameters":
 		{},
 		"description": "Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It supports long-context inference up to 256k tokens, extended from the previous 128k.\n\nThis update improves agentic coding with higher accuracy and better generalization across scaffolds, and enhances frontend coding with more aesthetic and functional outputs for web, 3D, and related tasks. Kimi K2 is optimized for agentic capabilities, including advanced tool use, reasoning, and code synthesis. It excels across coding (LiveCodeBench, SWE-bench), reasoning (ZebraLogic, GPQA), and tool-use (Tau2, AceBench) benchmarks. The model is trained with a novel stack incorporating the MuonClip optimizer for stable large-scale MoE training.",
-		"expiration_date": null,
+		"expiration_date": "2026-05-14",
 		"hugging_face_id": "moonshotai/Kimi-K2-Instruct-0905",
 		"id": "moonshotai/kimi-k2-0905",
 		"knowledge_cutoff": "2024-12-31",
@@ -10297,6 +10883,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -10551,6 +11138,7 @@
 			"prompt": "0.00000008"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -10571,9 +11159,16 @@
 		"context_length": 256000,
 		"created": 1756238927,
 		"default_parameters":
-		{},
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
 		"description": "Grok Code Fast 1 is a speedy and economical reasoning model that excels at agentic coding. With reasoning traces visible in the response, developers can steer Grok Code for high-quality work flows.",
-		"expiration_date": null,
+		"expiration_date": "2026-05-15",
 		"hugging_face_id": "",
 		"id": "x-ai/grok-code-fast-1",
 		"knowledge_cutoff": "2025-09-30",
@@ -10591,6 +11186,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 256000,
@@ -10629,6 +11225,7 @@
 			"prompt": "0.00000013"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -10667,6 +11264,7 @@
 			"prompt": "0.000001"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -10781,6 +11379,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -10860,6 +11459,7 @@
 			"prompt": "0.0000025"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -10901,6 +11501,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -10943,6 +11544,7 @@
 			"prompt": "0.00000007"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 120000,
@@ -10981,6 +11583,7 @@
 			"prompt": "0.00000014"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 30000,
@@ -11024,6 +11627,7 @@
 			"prompt": "0.0000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 65536,
@@ -11095,6 +11699,7 @@
 			"prompt": "0.000002"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 256000,
@@ -11135,6 +11740,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "seed", "structured_outputs"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -11181,6 +11787,7 @@
 			"prompt": "0.00000125"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -11228,6 +11835,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -11274,6 +11882,7 @@
 			"prompt": "0.00000005"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 400000,
@@ -11316,6 +11925,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "stop", "temperature", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -11395,6 +12005,7 @@
 			"prompt": "0.000000039"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -11437,6 +12048,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "stop", "temperature", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -11479,6 +12091,7 @@
 			"prompt": "0.00000003"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -11527,6 +12140,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -11568,6 +12182,7 @@
 			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 256000,
@@ -11606,6 +12221,7 @@
 			"prompt": "0.00000007"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 160000,
@@ -11644,6 +12260,7 @@
 			"prompt": "0.00000009"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -11687,6 +12304,7 @@
 			"prompt": "0.0000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -11729,6 +12347,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -11772,6 +12391,7 @@
 			"prompt": "0.00000013"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -11814,6 +12434,7 @@
 			"prompt": "0.0000001495"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -11856,6 +12477,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["max_tokens", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -11894,6 +12516,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262000,
@@ -11966,6 +12589,7 @@
 			"prompt": "0.00000022"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -12005,6 +12629,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -12053,6 +12678,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -12091,6 +12717,7 @@
 			"prompt": "0.000000071"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -12129,6 +12756,7 @@
 			"prompt": "0.00000085"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -12200,6 +12828,7 @@
 			"prompt": "0.00000057"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -12277,6 +12906,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -12318,6 +12948,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -12356,6 +12987,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -12385,7 +13017,7 @@
 			"top_p": null
 		},
 		"description": "Grok 4 is xAI's latest reasoning model with a 256k context window. It supports parallel tool calling, structured outputs, and both image and text inputs. Note that reasoning is not exposed, reasoning cannot be disabled, and the reasoning effort cannot be specified. Pricing increases once the total tokens in a given request is greater than 128k tokens. See more details on the [xAI docs](https://docs.x.ai/docs/models/grok-4-0709)",
-		"expiration_date": null,
+		"expiration_date": "2026-05-15",
 		"hugging_face_id": "",
 		"id": "x-ai/grok-4",
 		"knowledge_cutoff": "2025-07-31",
@@ -12403,6 +13035,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 256000,
@@ -12515,6 +13148,7 @@
 			"prompt": "0.00000014"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -12629,6 +13263,7 @@
 			"prompt": "0.0000009"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
@@ -12671,6 +13306,7 @@
 			"prompt": "0.0000008"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 81920,
@@ -12709,6 +13345,7 @@
 			"prompt": "0.00000042"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 123000,
@@ -12747,6 +13384,7 @@
 			"prompt": "0.00000028"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 123000,
@@ -12904,6 +13542,7 @@
 			"prompt": "0.000000075"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -12946,6 +13585,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -13033,6 +13673,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -13081,6 +13722,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -13193,6 +13835,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -13219,7 +13862,7 @@
 			"top_p": null
 		},
 		"description": "A lightweight model that thinks before responding. Fast, smart, and great for logic-based tasks that do not require deep domain knowledge. The raw thinking traces are accessible.",
-		"expiration_date": null,
+		"expiration_date": "2026-05-15",
 		"hugging_face_id": "",
 		"id": "x-ai/grok-3-mini",
 		"knowledge_cutoff": "2025-02-28",
@@ -13237,6 +13880,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -13259,7 +13903,7 @@
 		"default_parameters":
 		{},
 		"description": "Grok 3 is the latest model from xAI. It's their flagship model that excels at enterprise use cases like data extraction, coding, and text summarization. Possesses deep domain knowledge in finance, healthcare, law, and science.\n\n",
-		"expiration_date": null,
+		"expiration_date": "2026-05-15",
 		"hugging_face_id": "",
 		"id": "x-ai/grok-3",
 		"knowledge_cutoff": "2025-02-28",
@@ -13277,6 +13921,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -13435,6 +14080,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -13595,6 +14241,7 @@
 			"prompt": "0.0000005"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 163840,
@@ -13643,6 +14290,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -13691,6 +14339,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -13843,6 +14492,7 @@
 			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -13991,6 +14641,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -14039,6 +14690,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -14077,6 +14729,7 @@
 			"prompt": "0.00000018"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -14115,6 +14768,7 @@
 			"prompt": "0.0000009"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -14153,6 +14807,7 @@
 			"prompt": "0.00000075"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -14191,6 +14846,7 @@
 			"prompt": "0.0000005"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -14410,6 +15066,7 @@
 			"prompt": "0.00000018"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 163840,
@@ -14484,15 +15141,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000028",
-			"prompt": "0.00000008"
+			"completion": "0.00000045",
+			"prompt": "0.00000009"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 40960,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 20000
 		}
 	},
 	{
@@ -14570,6 +15228,7 @@
 			"prompt": "0.00000005"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 40960,
@@ -14644,6 +15303,7 @@
 			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 40960,
@@ -14678,16 +15338,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000024",
-			"input_cache_read": "0.00000004",
+			"completion": "0.00000028",
 			"prompt": "0.00000008"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 40960,
 			"is_moderated": false,
-			"max_completion_tokens": 40960
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -14757,6 +15417,7 @@
 			"prompt": "0.000000455"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -15012,6 +15673,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -15052,6 +15714,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -15092,6 +15755,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -15241,6 +15905,7 @@
 			"prompt": "0.000002"
 		},
 		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1047576,
@@ -15281,6 +15946,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1047576,
@@ -15321,6 +15987,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1047576,
@@ -15397,6 +16064,7 @@
 			"prompt": "0.0000008"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 4096,
@@ -15639,7 +16307,7 @@
 			"top_p": null
 		},
 		"description": "Grok 3 Mini is a lightweight, smaller thinking model. Unlike traditional models that generate answers immediately, Grok 3 Mini thinks before responding. It’s ideal for reasoning-heavy tasks that don’t demand extensive domain knowledge, and shines in math-specific and quantitative use cases, such as solving challenging puzzles or math problems.\n\nTransparent \"thinking\" traces accessible. Defaults to low reasoning, can boost with setting `reasoning: { effort: \"high\" }`\n\nNote: That there are two xAI endpoints for this model. By default when using this model we will always route you to the base endpoint. If you want the fast endpoint you can add `provider: { sort: throughput}`, to sort by throughput instead. \n",
-		"expiration_date": null,
+		"expiration_date": "2026-05-15",
 		"hugging_face_id": "",
 		"id": "x-ai/grok-3-mini-beta",
 		"knowledge_cutoff": "2025-02-28",
@@ -15657,6 +16325,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -15679,7 +16348,7 @@
 		"default_parameters":
 		{},
 		"description": "Grok 3 is the latest model from xAI. It's their flagship model that excels at enterprise use cases like data extraction, coding, and text summarization. Possesses deep domain knowledge in finance, healthcare, law, and science.\n\nExcels in structured tasks and benchmarks like GPQA, LCB, and MMLU-Pro where it outperforms Grok 3 Mini even on high thinking. \n\nNote: That there are two xAI endpoints for this model. By default when using this model we will always route you to the base endpoint. If you want the fast endpoint you can add `provider: { sort: throughput}`, to sort by throughput instead. \n",
-		"expiration_date": null,
+		"expiration_date": "2026-05-15",
 		"hugging_face_id": "",
 		"id": "x-ai/grok-3-beta",
 		"knowledge_cutoff": "2025-02-28",
@@ -15697,6 +16366,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -15852,6 +16522,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -15926,6 +16597,7 @@
 			"prompt": "0.00000008"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 327680,
@@ -16115,6 +16787,7 @@
 			"prompt": "0.0000002"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 163840,
@@ -16153,6 +16826,7 @@
 			"prompt": "0.00015"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -16228,6 +16902,7 @@
 			"prompt": "0.00000035"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -16342,6 +17017,7 @@
 			"prompt": "0.00000004"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -16418,6 +17094,7 @@
 			"prompt": "0.00000004"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -16456,6 +17133,7 @@
 			"prompt": "0.0000025"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 256000,
@@ -16495,6 +17173,7 @@
 			"web_search": "0.0275"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "structured_outputs", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -16534,6 +17213,7 @@
 			"web_search": "0.035"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "structured_outputs", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -16615,6 +17295,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 65536,
@@ -16699,6 +17380,7 @@
 			"prompt": "0.00000008"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -16774,6 +17456,7 @@
 			"prompt": "0.00000055"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -16849,6 +17532,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "temperature", "top_k", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -16888,6 +17572,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "temperature", "top_k", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -16928,6 +17613,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "temperature", "top_k", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -17120,6 +17806,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -17293,6 +17980,7 @@
 			"prompt": "0.0000002"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -17475,6 +18163,7 @@
 			"prompt": "0.00000048"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -17518,6 +18207,7 @@
 			"prompt": "0.0000011"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -17602,6 +18292,7 @@
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["max_tokens", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -17624,7 +18315,7 @@
 		"default_parameters":
 		{},
 		"description": "Qwen's Enhanced Large Visual Language Model. Significantly upgraded for detailed recognition capabilities and text recognition abilities, supporting ultra-high pixel resolutions up to millions of pixels and extreme aspect ratios for image input. It delivers significant performance across a broad range of visual tasks.\n",
-		"expiration_date": null,
+		"expiration_date": "2026-05-13",
 		"hugging_face_id": "",
 		"id": "qwen/qwen-vl-plus",
 		"knowledge_cutoff": "2025-03-31",
@@ -17641,6 +18332,7 @@
 			"prompt": "0.0000001365"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -17679,6 +18371,7 @@
 			"prompt": "0.000004"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -17717,6 +18410,7 @@
 			"prompt": "0.0000007"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -17755,6 +18449,7 @@
 			"prompt": "0.0000008"
 		},
 		"supported_parameters": ["max_tokens", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -17781,7 +18476,7 @@
 			"top_p": null
 		},
 		"description": "Qwen VL Max is a visual understanding model with 7500 tokens context length. It excels in delivering optimal performance for a broader spectrum of complex tasks.\n",
-		"expiration_date": null,
+		"expiration_date": "2026-05-13",
 		"hugging_face_id": "",
 		"id": "qwen/qwen-vl-max",
 		"knowledge_cutoff": "2025-03-31",
@@ -17797,6 +18492,7 @@
 			"prompt": "0.00000052"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -17819,7 +18515,7 @@
 		"default_parameters":
 		{},
 		"description": "Qwen-Turbo, based on Qwen2.5, is a 1M context model that provides fast speed and low cost, suitable for simple tasks.",
-		"expiration_date": null,
+		"expiration_date": "2026-05-13",
 		"hugging_face_id": "",
 		"id": "qwen/qwen-turbo",
 		"knowledge_cutoff": "2025-03-31",
@@ -17836,6 +18532,7 @@
 			"prompt": "0.0000000325"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -17910,6 +18607,7 @@
 			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32000,
@@ -17950,6 +18648,7 @@
 			"prompt": "0.00000026"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
@@ -17972,7 +18671,7 @@
 		"default_parameters":
 		{},
 		"description": "Qwen-Max, based on Qwen2.5, provides the best inference performance among [Qwen models](/qwen), especially for complex multi-step tasks. It's a large-scale MoE model that has been pretrained on over 20 trillion tokens and further post-trained with curated Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF) methodologies. The parameter count is unknown.",
-		"expiration_date": null,
+		"expiration_date": "2026-05-13",
 		"hugging_face_id": "",
 		"id": "qwen/qwen-max",
 		"knowledge_cutoff": "2025-03-31",
@@ -17989,6 +18688,7 @@
 			"prompt": "0.00000104"
 		},
 		"supported_parameters": ["max_tokens", "presence_penalty", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -18035,6 +18735,7 @@
 			"prompt": "0.0000011"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -18115,6 +18816,7 @@
 			"prompt": "0.00000005"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -18153,6 +18855,7 @@
 			"prompt": "0.00000029"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -18300,6 +19003,7 @@
 			"web_search": "0.005"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "temperature", "top_k", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 127072,
@@ -18446,6 +19150,7 @@
 			"prompt": "0.0000007"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -18527,6 +19232,7 @@
 			"prompt": "0.0000007"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_completion_tokens", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 64000,
@@ -18569,6 +19275,7 @@
 			"prompt": "0.0000002"
 		},
 		"supported_parameters": ["max_tokens", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000192,
@@ -18645,6 +19352,7 @@
 			"prompt": "0.000000065"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 16384,
@@ -18683,6 +19391,7 @@
 			"prompt": "0.000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 16000,
@@ -18720,7 +19429,8 @@
 			"completion": "0.00000089",
 			"prompt": "0.00000032"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 163840,
@@ -18758,7 +19468,8 @@
 			"completion": "0.00000075",
 			"prompt": "0.00000065"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -18805,6 +19516,7 @@
 			"prompt": "0.000015"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -18915,6 +19627,7 @@
 			"prompt": "0.0000000375"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -18986,6 +19699,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 65536,
@@ -19024,6 +19738,7 @@
 			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -19062,6 +19777,7 @@
 			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 300000,
@@ -19100,6 +19816,7 @@
 			"prompt": "0.000000035"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -19138,6 +19855,7 @@
 			"prompt": "0.0000008"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 300000,
@@ -19213,6 +19931,7 @@
 			"prompt": "0.0000025"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -19254,6 +19973,7 @@
 			"prompt": "0.000002"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -19295,6 +20015,7 @@
 			"prompt": "0.000002"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -19336,6 +20057,7 @@
 			"prompt": "0.000002"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -19410,6 +20132,7 @@
 			"prompt": "0.00000066"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -19481,6 +20204,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -19564,6 +20288,7 @@
 			"web_search": "0.01"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -19602,6 +20327,7 @@
 			"prompt": "0.000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 16384,
@@ -19750,6 +20476,7 @@
 			"prompt": "0.00000004"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -19826,6 +20553,7 @@
 			"prompt": "0.0000025"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8000,
@@ -19864,6 +20592,7 @@
 			"prompt": "0.0000025"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8000,
@@ -19940,6 +20669,7 @@
 			"prompt": "0.00000017"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -20050,6 +20780,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -20088,6 +20819,7 @@
 			"prompt": "0.000000051"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 80000,
@@ -20126,6 +20858,7 @@
 			"prompt": "0.000000027"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 60000,
@@ -20164,6 +20897,7 @@
 			"prompt": "0.000000245"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -20238,6 +20972,7 @@
 			"prompt": "0.00000036"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
@@ -20418,6 +21153,7 @@
 			"prompt": "0.0000025"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -20456,6 +21192,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -20494,6 +21231,7 @@
 			"prompt": "0.00000085"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -20634,6 +21372,7 @@
 			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -20672,6 +21411,7 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -20710,6 +21450,7 @@
 			"prompt": "0.000001"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -20781,6 +21522,7 @@
 			"prompt": "0.00000004"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8192,
@@ -20820,6 +21562,7 @@
 			"prompt": "0.0000025"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -20891,6 +21634,7 @@
 			"prompt": "0.00000002"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 16384,
@@ -20929,6 +21673,7 @@
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -21073,6 +21818,7 @@
 			"prompt": "0.00000002"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
@@ -21112,6 +21858,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -21151,6 +21898,7 @@
 			"prompt": "0.00000015"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -21189,6 +21937,7 @@
 			"prompt": "0.00000065"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8192,
@@ -21339,6 +22088,7 @@
 			"prompt": "0.00000148"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8192,
@@ -21413,6 +22163,7 @@
 			"prompt": "0.00000014"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8192,
@@ -21743,6 +22494,7 @@
 			"prompt": "0.000005"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -21781,6 +22533,7 @@
 			"prompt": "0.0000025"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -21849,14 +22602,15 @@
 		"pricing":
 		{
 			"completion": "0.00000004",
-			"prompt": "0.00000003"
+			"prompt": "0.00000004"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8192,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 8192
 		}
 	},
 	{
@@ -21890,6 +22644,7 @@
 			"prompt": "0.00000051"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8192,
@@ -21931,6 +22686,7 @@
 			"prompt": "0.000002"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 65536,
@@ -21969,6 +22725,7 @@
 			"prompt": "0.00000062"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 65535,
@@ -22007,6 +22764,7 @@
 			"prompt": "0.00001"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -22263,6 +23021,7 @@
 			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["max_tokens", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 200000,
@@ -22378,6 +23137,7 @@
 			"prompt": "0.000002"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -22416,6 +23176,7 @@
 			"prompt": "0.00001"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -22454,6 +23215,7 @@
 			"prompt": "0.000001"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_completion_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 4095,
@@ -22673,6 +23435,7 @@
 			"prompt": "0.00000375"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 6144,
@@ -22701,7 +23464,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "\"Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output. To see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nLearn more, including how to customize the models for routing, in our [docs](/docs/guides/routing/routers/auto-router).\n\nRequests will be routed to the following models:\n- [anthropic/claude-haiku-4.5](/anthropic/claude-haiku-4.5)\n- [anthropic/claude-opus-4.6](/anthropic/claude-opus-4.6)\n- [anthropic/claude-sonnet-4.5](/anthropic/claude-sonnet-4.5)\n- [anthropic/claude-sonnet-4.6](/anthropic/claude-sonnet-4.6)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [google/gemini-2.5-flash-lite](/google/gemini-2.5-flash-lite)\n- [google/gemini-3-flash-preview](/google/gemini-3-flash-preview)\n- [google/gemini-3-pro-preview](/google/gemini-3-pro-preview)\n- [google/gemini-3.1-pro-preview](/google/gemini-3.1-pro-preview)\n- [meta-llama/llama-3.3-70b-instruct](/meta-llama/llama-3.3-70b-instruct)\n- [minimax/minimax-m2.5](/minimax/minimax-m2.5)\n- [mistralai/codestral-2508](/mistralai/codestral-2508)\n- [mistralai/mistral-7b-instruct-v0.1](/mistralai/mistral-7b-instruct-v0.1)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium-3.1](/mistralai/mistral-medium-3.1)\n- [mistralai/mistral-small-3.2-24b-instruct-2506](/mistralai/mistral-small-3.2-24b-instruct-2506)\n- [moonshotai/kimi-k2-thinking](/moonshotai/kimi-k2-thinking)\n- [moonshotai/kimi-k2.5](/moonshotai/kimi-k2.5)\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-5.1](/openai/gpt-5.1)\n- [openai/gpt-5.2](/openai/gpt-5.2)\n- [openai/gpt-5.2-pro](/openai/gpt-5.2-pro)\n- [openai/gpt-5.3-chat](/openai/gpt-5.3-chat)\n- [openai/gpt-oss-120b](/openai/gpt-oss-120b)\n- [perplexity/sonar](/perplexity/sonar)\n- [qwen/qwen3-235b-a22b](/qwen/qwen3-235b-a22b)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)\n- [x-ai/grok-4.1-fast](/x-ai/grok-4.1-fast)\n- [z-ai/glm-5](/z-ai/glm-5)",
+		"description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output. To see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nLearn more, including how to customize the models for routing, in our [docs](/docs/guides/routing/routers/auto-router).\n\nRequests will be routed to the following models:\n- [anthropic/claude-haiku-4.5](/anthropic/claude-haiku-4.5)\n- [anthropic/claude-opus-4.6](/anthropic/claude-opus-4.6)\n- [anthropic/claude-sonnet-4.5](/anthropic/claude-sonnet-4.5)\n- [anthropic/claude-sonnet-4.6](/anthropic/claude-sonnet-4.6)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [google/gemini-2.5-flash-lite](/google/gemini-2.5-flash-lite)\n- [google/gemini-3-flash-preview](/google/gemini-3-flash-preview)\n- [google/gemini-3-pro-preview](/google/gemini-3-pro-preview)\n- [google/gemini-3.1-pro-preview](/google/gemini-3.1-pro-preview)\n- [meta-llama/llama-3.3-70b-instruct](/meta-llama/llama-3.3-70b-instruct)\n- [minimax/minimax-m2.5](/minimax/minimax-m2.5)\n- [mistralai/codestral-2508](/mistralai/codestral-2508)\n- [mistralai/mistral-7b-instruct-v0.1](/mistralai/mistral-7b-instruct-v0.1)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium-3.1](/mistralai/mistral-medium-3.1)\n- [mistralai/mistral-small-3.2-24b-instruct-2506](/mistralai/mistral-small-3.2-24b-instruct-2506)\n- [moonshotai/kimi-k2-thinking](/moonshotai/kimi-k2-thinking)\n- [moonshotai/kimi-k2.5](/moonshotai/kimi-k2.5)\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-5.1](/openai/gpt-5.1)\n- [openai/gpt-5.2](/openai/gpt-5.2)\n- [openai/gpt-5.2-pro](/openai/gpt-5.2-pro)\n- [openai/gpt-5.3-chat](/openai/gpt-5.3-chat)\n- [openai/gpt-oss-120b](/openai/gpt-oss-120b)\n- [perplexity/sonar](/perplexity/sonar)\n- [qwen/qwen3-235b-a22b](/qwen/qwen3-235b-a22b)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)\n- [x-ai/grok-4.1-fast](/x-ai/grok-4.1-fast)\n- [z-ai/glm-5](/z-ai/glm-5)",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openrouter/auto",
@@ -22718,6 +23481,7 @@
 			"prompt": "-1"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p", "web_search_options"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": null,
@@ -22756,6 +23520,7 @@
 			"prompt": "0.00001"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
@@ -22794,6 +23559,7 @@
 			"prompt": "0.0000015"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 4095,
@@ -22818,7 +23584,7 @@
 			"temperature": 0.3
 		},
 		"description": "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length.",
-		"expiration_date": null,
+		"expiration_date": "2026-05-30",
 		"hugging_face_id": "mistralai/Mistral-7B-Instruct-v0.1",
 		"id": "mistralai/mistral-7b-instruct-v0.1",
 		"knowledge_cutoff": "2023-09-30",
@@ -22834,6 +23600,7 @@
 			"prompt": "0.00000011"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 2824,
@@ -22872,6 +23639,7 @@
 			"prompt": "0.000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 16385,
@@ -22910,6 +23678,7 @@
 			"prompt": "0.00000075"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8000,
@@ -22948,6 +23717,7 @@
 			"prompt": "0.00000045"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 6144,
@@ -22986,6 +23756,7 @@
 			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 4096,
@@ -23024,6 +23795,7 @@
 			"prompt": "0.00003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8191,
@@ -23062,6 +23834,7 @@
 			"prompt": "0.00003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8191,
@@ -23100,6 +23873,7 @@
 			"prompt": "0.0000005"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 16385,
