@@ -7,6 +7,12 @@
 		"owned_by": "xai"
 	},
 	{
+		"created": 1776297600,
+		"id": "grok-build-0.1",
+		"object": "model",
+		"owned_by": "xai"
+	},
+	{
 		"created": 1775174400,
 		"id": "grok-imagine-image-quality",
 		"object": "model",

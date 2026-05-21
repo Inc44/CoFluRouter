@@ -23,7 +23,20 @@
 	{
 		"created": 0,
 		"id": "BAAI/bge-base-en-v1.5",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "BGE embedding is a general Embedding Model. It is pre-trained using retromae and trained on large-scale pair data using contrastive learning. Note that the goal of pre-training is to reconstruct the text, and the pre-trained model cannot be used for similarity calculation directly, it needs to be fine-tuned",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -32,7 +45,20 @@
 	{
 		"created": 0,
 		"id": "BAAI/bge-en-icl",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 8192,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "A LLM-based embedding model with in-context learning capabilities that achieves SOTA performance on BEIR and AIR-Bench. It leverages few-shot examples to enhance task performance.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -41,7 +67,20 @@
 	{
 		"created": 0,
 		"id": "BAAI/bge-large-en-v1.5",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "BGE embedding is a general Embedding Model. It is pre-trained using retromae and trained on large-scale pair data using contrastive learning. Note that the goal of pre-training is to reconstruct the text, and the pre-trained model cannot be used for similarity calculation directly, it needs to be fine-tuned",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -50,7 +89,20 @@
 	{
 		"created": 0,
 		"id": "BAAI/bge-m3",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 8192,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "BGE-M3 is a versatile text embedding model that supports multi-functionality, multi-linguality, and multi-granularity, allowing it to perform dense retrieval, multi-vector retrieval, and sparse retrieval in over 100 languages and with input sizes up to 8192 tokens. The model can be used in a retrieval pipeline with hybrid retrieval and re-ranking to achieve higher accuracy and stronger generalization capabilities. BGE-M3 has shown state-of-the-art performance on several benchmarks, including MKQA, MLDR, and NarritiveQA, and can be used as a drop-in replacement for other embedding models like DPR and BGE-v1.5.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -59,7 +111,20 @@
 	{
 		"created": 0,
 		"id": "BAAI/bge-m3-multi",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 8192,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "BGE-M3 is a multilingual text embedding model developed by BAAI, distinguished by its Multi-Linguality (supporting 100+ languages), Multi-Functionality (unified dense, multi-vector, and sparse retrieval), and Multi-Granularity (handling inputs from short queries to 8192-token documents). It achieves state-of-the-art retrieval performance across diverse benchmarks while maintaining a single model for multiple retrieval modes.",
+			"max_tokens": 8192,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -68,7 +133,20 @@
 	{
 		"created": 0,
 		"id": "Bria/Bria-3.2",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Bria 3.2 is the next-generation commercial-ready text-to-image model. With just 4 billion parameters, it provides exceptional aesthetics and text rendering, evaluated to be on par to leading open-source models, and outperforming other licensed models.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.04
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -77,7 +155,20 @@
 	{
 		"created": 0,
 		"id": "Bria/Bria-3.2-vector",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Bria 3.2 is the next-generation commercial-ready text-to-image model. With just 4 billion parameters, it provides exceptional aesthetics and text rendering, evaluated to be on par to leading open-source models, and outperforming other licensed models.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.04
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -131,7 +222,20 @@
 	{
 		"created": 0,
 		"id": "Bria/fibo",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "FIBO is an open-source, JSON-native text-to-image model trained on detailed structured descriptions (over 1,000+ words per image), providing fine-grained control over light, composition, and camera parameters.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.04
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -179,6 +283,9 @@
 		"metadata":
 		{
 			"context_length": 256000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Optimized specifically for multimodal agent scenarios. It features enhanced agent capabilities, upgraded multimodal comprehension, and more flexible context management.",
 			"max_tokens": 256000,
 			"pricing":
@@ -187,7 +294,7 @@
 				"input_tokens": 0.25,
 				"output_tokens": 2.0
 			},
-			"tags": ["vision", "prompt_cache", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -200,6 +307,9 @@
 		"metadata":
 		{
 			"context_length": 256000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "A coding model optimized for real-world development environments, with reliable tool use in common IDEs such as Claude Code. It delivers strong front-end performance and supports Skills.",
 			"max_tokens": 256000,
 			"pricing":
@@ -208,7 +318,7 @@
 				"input_tokens": 0.5,
 				"output_tokens": 2.9999999999999996
 			},
-			"tags": ["vision", "prompt_cache", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -221,6 +331,9 @@
 		"metadata":
 		{
 			"context_length": 256000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Built for low-latency, high-concurrency, cost-sensitive use cases, with flexible deployment, four-tier thinking, and multimodal",
 			"max_tokens": 256000,
 			"pricing":
@@ -229,7 +342,7 @@
 				"input_tokens": 0.1,
 				"output_tokens": 0.4
 			},
-			"tags": ["vision", "prompt_cache", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -242,6 +355,9 @@
 		"metadata":
 		{
 			"context_length": 256000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Built for the Agent era, it delivers stable performance in complex reasoning and long-horizon tasks, including multi-step planning, visual-text reasoning, video understanding, and advanced analysis.",
 			"max_tokens": 256000,
 			"pricing":
@@ -250,7 +366,7 @@
 				"input_tokens": 0.5,
 				"output_tokens": 2.9999999999999996
 			},
-			"tags": ["vision", "prompt_cache", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -260,7 +376,20 @@
 	{
 		"created": 0,
 		"id": "ByteDance/Seedream-4",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Seedream 4.0 is a SOTA multimodal image creation model built on leading architecture. It breaks through the boundaries of traditional text-to-image models by natively supporting text, single-image, and multi-image inputs. Users can freely combine text and images to achieve diverse creative modes within a single model—such as multi-image blending, image editing, and sequentially batch image generation, featuring subject consistency, making image creation more free and controllable.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.04
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -317,6 +446,9 @@
 		"metadata":
 		{
 			"context_length": 4096,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "",
 			"max_tokens": 4096,
 			"pricing":
@@ -324,7 +456,7 @@
 				"input_tokens": 0.4,
 				"output_tokens": 0.4
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -419,6 +551,9 @@
 		"metadata":
 		{
 			"context_length": 196608,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "MiniMax M2.5 is SOTA in coding, agentic tool use and search, office work, and a range of other economically valuable tasks, boasting scores of 80.2% in SWE-Bench Verified, 51.3% in Multi-SWE-Bench, and 76.3% in BrowseComp (with context management).",
 			"max_tokens": 196608,
 			"pricing":
@@ -427,7 +562,7 @@
 				"input_tokens": 0.15,
 				"output_tokens": 1.15
 			},
-			"tags": ["prompt_cache", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -440,6 +575,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Hermes 3 is a cutting-edge language model that offers advanced capabilities in roleplaying, reasoning, and conversation. It's a fine-tuned version of the Llama-3.1 405B foundation model, designed to align with user needs and provide powerful control. Key features include reliable function calling, structured output, generalist assistant capabilities, and improved code generation. Hermes 3 is competitive with Llama-3.1 Instruct models, with its own strengths and weaknesses.",
 			"max_tokens": 131072,
 			"pricing":
@@ -447,7 +585,7 @@
 				"input_tokens": 1.0,
 				"output_tokens": 1.0
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -460,6 +598,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Hermes 3 is a generalist language model with many improvements over Hermes 2, including advanced agentic capabilities, much better roleplaying, reasoning, multi-turn conversation, long context coherence, and improvements across the board.",
 			"max_tokens": 131072,
 			"pricing":
@@ -467,7 +608,7 @@
 				"input_tokens": 0.3,
 				"output_tokens": 0.3
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -537,7 +678,20 @@
 	{
 		"created": 0,
 		"id": "PrunaAI/p-image",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "P-Image is a state-of-the-art real-time generation model with exceptional text rendering, fine-detail accuracy, and rock-solid prompt adherence. It’s built for instant creativity at high-fidelity images in about one second at a fraction of typical model costs.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.005
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -633,7 +787,20 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen-Image-Max",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Compared with the Plus series, it significantly reduces the “AI-like” feel in generated images, enhancing their realism. It delivers more lifelike material textures for human subjects, finer and more detailed natural textures, and more visually appealing text rendering.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.075
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -685,6 +852,9 @@
 		"metadata":
 		{
 			"context_length": 32768,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen2.5 is a model pretrained on a large-scale dataset of up to 18 trillion tokens, offering significant improvements in knowledge, coding, mathematics, and instruction following compared to its predecessor Qwen2. The model also features enhanced capabilities in generating long texts, understanding structured data, and generating structured outputs, while supporting multilingual capabilities for over 29 languages.",
 			"max_tokens": 32768,
 			"pricing":
@@ -692,7 +862,7 @@
 				"input_tokens": 0.36,
 				"output_tokens": 0.4
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -785,14 +955,17 @@
 		"metadata":
 		{
 			"context_length": 40960,
-			"description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support. ",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support.",
 			"max_tokens": 40960,
 			"pricing":
 			{
 				"input_tokens": 0.12000000000000001,
 				"output_tokens": 0.24000000000000002
 			},
-			"tags": ["reasoning_effort", "reasoning"]
+			"tags": ["chat", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -825,14 +998,17 @@
 		"metadata":
 		{
 			"context_length": 262144,
-			"description": "Qwen3-235B-A22B-Instruct-2507 is the updated version of the Qwen3-235B-A22B non-thinking mode, featuring Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage.  ",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Qwen3-235B-A22B-Instruct-2507 is the updated version of the Qwen3-235B-A22B non-thinking mode, featuring Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage.",
 			"max_tokens": 262144,
 			"pricing":
 			{
 				"input_tokens": 0.071,
 				"output_tokens": 0.1
 			},
-			"tags": ["reasoning_effort"]
+			"tags": ["chat", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -845,7 +1021,10 @@
 		"metadata":
 		{
 			"context_length": 262144,
-			"description": "Qwen3-235B-A22B-Thinking-2507 is the Qwen3's new model with scaling the thinking capability of Qwen3-235B-A22B, improving both the quality and depth of reasoning. ",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Qwen3-235B-A22B-Thinking-2507 is the Qwen3's new model with scaling the thinking capability of Qwen3-235B-A22B, improving both the quality and depth of reasoning.",
 			"max_tokens": 262144,
 			"pricing":
 			{
@@ -853,7 +1032,7 @@
 				"input_tokens": 0.22999999999999998,
 				"output_tokens": 2.3
 			},
-			"tags": ["prompt_cache", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -866,6 +1045,9 @@
 		"metadata":
 		{
 			"context_length": 40960,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support",
 			"max_tokens": 40960,
 			"pricing":
@@ -873,7 +1055,7 @@
 				"input_tokens": 0.09,
 				"output_tokens": 0.45
 			},
-			"tags": ["reasoning_effort", "reasoning"]
+			"tags": ["chat", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -886,6 +1068,9 @@
 		"metadata":
 		{
 			"context_length": 40960,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support",
 			"max_tokens": 40960,
 			"pricing":
@@ -893,7 +1078,7 @@
 				"input_tokens": 0.08,
 				"output_tokens": 0.28
 			},
-			"tags": ["reasoning_effort", "reasoning"]
+			"tags": ["chat", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -946,6 +1131,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3-Coder-480B-A35B-Instruct is the Qwen3's most agentic code model, featuring Significant Performance on Agentic Coding, Agentic Browser-Use and other foundational coding tasks, achieving results comparable to Claude Sonnet.",
 			"max_tokens": 262144,
 			"pricing":
@@ -954,7 +1142,7 @@
 				"input_tokens": 0.3,
 				"output_tokens": 1.0
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["chat", "prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -964,7 +1152,20 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-Embedding-0.6B",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 32768,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B).",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -973,7 +1174,20 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-Embedding-0.6B-batch",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 32768,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B).",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -982,7 +1196,20 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-Embedding-4B",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 32768,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B).",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.02
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -991,7 +1218,20 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-Embedding-4B-batch",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 32768,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B).",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1000,7 +1240,20 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-Embedding-8B",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 32768,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B).",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1009,7 +1262,20 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen3-Embedding-8B-batch",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 32768,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B).",
+			"max_tokens": 32768,
+			"pricing":
+			{
+				"input_tokens": 0.04
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1021,6 +1287,9 @@
 		"metadata":
 		{
 			"context_length": 256000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "The latest flagship model in the Qwen family. State-of-the-art results across a comprehensive suite of benchmarks — including knowledge, reasoning, coding, instruction following, human preference alignment, agent tasks, and multilingual understanding.",
 			"max_tokens": 256000,
 			"pricing":
@@ -1029,7 +1298,7 @@
 				"input_tokens": 1.2,
 				"output_tokens": 5.999999999999999
 			},
-			"tags": ["prompt_cache", "reasoning_effort"]
+			"tags": ["chat", "prompt_cache", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1042,6 +1311,9 @@
 		"metadata":
 		{
 			"context_length": 256000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "The latest flagship reasoning model in the Qwen3 family. Further enhanced by multiple innovations like adaptive tool-use and advanced test-time scaling techniques",
 			"max_tokens": 256000,
 			"pricing":
@@ -1050,7 +1322,7 @@
 				"input_tokens": 1.2,
 				"output_tokens": 5.999999999999999
 			},
-			"tags": ["prompt_cache", "reasoning_effort"]
+			"tags": ["chat", "prompt_cache", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1063,6 +1335,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Over the past few months, we have observed increasingly clear trends toward scaling both total parameters and context lengths in the pursuit of more powerful and agentic artificial intelligence (AI). We are excited to share our latest advancements in addressing these demands, centered on improving scaling efficiency through innovative model architecture. We call this next-generation foundation models Qwen3-Next.",
 			"max_tokens": 262144,
 			"pricing":
@@ -1070,7 +1345,7 @@
 				"input_tokens": 0.09,
 				"output_tokens": 1.1
 			},
-			"tags": ["reasoning_effort"]
+			"tags": ["chat", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1099,11 +1374,36 @@
 	},
 	{
 		"created": 0,
+		"id": "Qwen/Qwen3-TTS-VoiceDesign",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "● Qwen3-TTS-VoiceDesign is a voice design variant of Qwen3-TTS by Alibaba's Qwen team. Instead of selecting from preset voices, you describe the voice you want in natural language — and the model generates speech in that voice. Key capabilities: - Natural language voice control — describe any voice with free text (e.g. \"a deep male voice with a calm, authoritative presence\", \"a young cheerful female with a warm and friendly tone\") - 10 languages — English, Chinese, Japanese, Korean, German, French, Russian, Spanish, Italian, Portuguese - Streaming support — real-time PCM streaming - Multiple output formats — WAV, MP3, FLAC, PCM Built on the same 1.7B parameter architecture as Qwen3-TTS, using discrete multi-codebook language modeling and a custom 12Hz acoustic tokenizer for high-quality end-to-end speech synthesis.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 20.0
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-TTS-VoiceDesign"
+	},
+	{
+		"created": 0,
 		"id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
 		"metadata":
 		{
 			"context_length": 262144,
-			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date.  This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
 			"max_tokens": 262144,
 			"pricing":
 			{
@@ -1111,7 +1411,7 @@
 				"input_tokens": 0.2,
 				"output_tokens": 0.8799999999999999
 			},
-			"tags": ["vision", "prompt_cache", "reasoning_effort"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1144,14 +1444,17 @@
 		"metadata":
 		{
 			"context_length": 262144,
-			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date.  This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities.",
 			"max_tokens": 262144,
 			"pricing":
 			{
 				"input_tokens": 0.15,
 				"output_tokens": 0.6
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1264,6 +1567,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3.5-0.8B is Alibaba's smallest model in the Qwen3.5 series, featuring a hybrid Gated Delta Networks and sparse Mixture-of-Experts architecture. Despite its compact size, it supports a 262K token context window, 201 languages, thinking/reasoning mode, and tool calling. Ideal for edge deployments, resource-constrained environments, and lightweight inference tasks.",
 			"max_tokens": 262144,
 			"pricing":
@@ -1271,7 +1577,7 @@
 				"input_tokens": 0.01,
 				"output_tokens": 0.05
 			},
-			"tags": ["vision", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1284,6 +1590,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3.5-122B-A10B is a large Mixture-of-Experts model from Alibaba's Qwen3.5 series with 122B total parameters and 10B activated per token. It features a 262K token context window (extensible to 1M with YaRN), thinking/reasoning mode, tool calling, and support for 201 languages. Excels at complex reasoning, coding, multimodal understanding, and agentic tasks with the efficiency of sparse activation.",
 			"max_tokens": 262144,
 			"pricing":
@@ -1291,7 +1600,7 @@
 				"input_tokens": 0.29,
 				"output_tokens": 2.4
 			},
-			"tags": ["vision", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1304,6 +1613,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3.5-27B is Alibaba's largest dense Qwen3.5 model, delivering near-frontier quality across reasoning, coding, and instruction following. It features a 262K token context window (extensible to 1M), thinking/reasoning mode, tool calling, multi-token prediction, and support for 201 languages. Best suited for production deployments and complex enterprise tasks requiring top-tier performance.",
 			"max_tokens": 262144,
 			"pricing":
@@ -1311,7 +1623,7 @@
 				"input_tokens": 0.26,
 				"output_tokens": 2.5999999999999996
 			},
-			"tags": ["vision", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1324,6 +1636,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3.5-2B is a compact yet capable model from Alibaba's Qwen3.5 series. It features a 262K token context window, support for 201 languages, thinking/reasoning mode, and tool calling for agentic workflows. A strong choice for prototyping, fine-tuning, and efficient multilingual deployments.",
 			"max_tokens": 262144,
 			"pricing":
@@ -1331,7 +1646,7 @@
 				"input_tokens": 0.02,
 				"output_tokens": 0.1
 			},
-			"tags": ["vision", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1344,6 +1659,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3.5-35B-A3B is an efficient Mixture-of-Experts model from Alibaba's Qwen3.5 series with 35B total parameters and only 3B activated per token. It features a 262K token context window (extensible to 1M with YaRN), thinking/reasoning mode, tool calling, and support for 201 languages. Delivers strong performance on reasoning, coding, and vision-language tasks at a fraction of the compute cost.",
 			"max_tokens": 262144,
 			"pricing":
@@ -1352,7 +1670,7 @@
 				"input_tokens": 0.14,
 				"output_tokens": 1.0
 			},
-			"tags": ["vision", "prompt_cache", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1365,6 +1683,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3.5-397B-A17B is Alibaba's most capable Qwen3.5 model, a Mixture-of-Experts architecture with 397B total parameters and 17B activated per token. It features a 262K token context window (extensible to 1M with YaRN), thinking/reasoning mode, tool calling with MCP integration, and support for 201 languages. Sets state-of-the-art results on reasoning, coding, math, and multimodal benchmarks.",
 			"max_tokens": 262144,
 			"pricing":
@@ -1373,7 +1694,7 @@
 				"input_tokens": 0.49,
 				"output_tokens": 3.6
 			},
-			"tags": ["vision", "prompt_cache", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1386,6 +1707,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3.5-4B is a mid-size model from Alibaba's Qwen3.5 series that delivers a strong balance of performance and efficiency. It features a 262K token context window (extensible to 1M with YaRN), thinking/reasoning mode, tool calling, and support for 201 languages. Well-suited for complex reasoning, code generation, and agentic applications.",
 			"max_tokens": 262144,
 			"pricing":
@@ -1393,7 +1717,7 @@
 				"input_tokens": 0.030000000000000002,
 				"output_tokens": 0.15
 			},
-			"tags": ["vision", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1406,6 +1730,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3.5-9B is a high-performance model from Alibaba's Qwen3.5 series with a hybrid Gated Delta Networks and sparse MoE architecture. It features a 262K token context window, thinking/reasoning mode, tool calling, multi-token prediction, and support for 201 languages. Excels at reasoning, coding, instruction following, and long-context tasks.",
 			"max_tokens": 262144,
 			"pricing":
@@ -1413,7 +1740,7 @@
 				"input_tokens": 0.04,
 				"output_tokens": 0.15
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1426,6 +1753,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "",
 			"max_tokens": 262144,
 			"pricing":
@@ -1433,7 +1763,7 @@
 				"input_tokens": 0.32,
 				"output_tokens": 3.2
 			},
-			"tags": ["vision", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1446,6 +1776,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Qwen3.6-35B-A3B is Alibaba's latest flagship Mixture-of-Experts model, with 35B total parameters and only 3B activated per token (256 experts, 8 routed + 1 shared). Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience.",
 			"max_tokens": 262144,
 			"pricing":
@@ -1453,12 +1786,56 @@
 				"input_tokens": 0.15,
 				"output_tokens": 0.95
 			},
-			"tags": ["vision", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3.6-35B-A3B"
+	},
+	{
+		"created": 0,
+		"id": "ResembleAI/chatterbox-multilingual",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "09/04 🔥 Introducing Chatterbox Multilingual in 23 Languages! We're excited to introduce Chatterbox and Chatterbox Multilingual, Resemble AI's production-grade open source TTS models. Chatterbox Multilingual supports Arabic, Danish, German, Greek, English, Spanish, Finnish, French, Hebrew, Hindi, Italian, Japanese, Korean, Malay, Dutch, Norwegian, Polish, Portuguese, Russian, Swedish, Swahili, Turkish, Chinese out of the box. Licensed under MIT, Chatterbox has been benchmarked against leading closed-source systems like ElevenLabs, and is consistently preferred in side-by-side evaluations.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 1.0
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ResembleAI/chatterbox-multilingual"
+	},
+	{
+		"created": 0,
+		"id": "ResembleAI/chatterbox-turbo",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Chatterbox is a family of three state-of-the-art, open-source text-to-speech models by Resemble AI. We are excited to introduce Chatterbox-Turbo, our most efficient model yet. Built on a streamlined 350M parameter architecture, Turbo delivers high-quality speech with less compute and VRAM than our previous models. We have also distilled the speech-token-to-mel decoder, previously a bottleneck, reducing generation from 10 steps to just one, while retaining high-fidelity audio output. Paralinguistic tags are now native to the Turbo model, allowing you to use [cough], [laugh], [chuckle], and more to add distinct realism. While Turbo was built primarily for low-latency voice agents, it excels at narration and creative workflows. If you like the model but need to scale or tune it for higher accuracy, check out our competitively priced TTS service (link).",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 1.0
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ResembleAI/chatterbox-turbo"
 	},
 	{
 		"created": 0,
@@ -1506,6 +1883,9 @@
 		"metadata":
 		{
 			"context_length": 8192,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "",
 			"max_tokens": 8192,
 			"pricing":
@@ -1513,7 +1893,7 @@
 				"input_tokens": 0.04,
 				"output_tokens": 0.05
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1526,6 +1906,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Euryale 3.1 - 70B v2.2 is a model focused on creative roleplay from Sao10k",
 			"max_tokens": 131072,
 			"pricing":
@@ -1533,7 +1916,7 @@
 				"input_tokens": 0.85,
 				"output_tokens": 0.85
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1572,7 +1955,20 @@
 	{
 		"created": 0,
 		"id": "Wan-AI/Wan2.6-T2I",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Wan2.6 text to image, Upgraded visual quality, aesthetics, and instruction-following deliver precise style control, realistic portraits, long-text understanding, and broad historical/cultural IP coverage, enabling high-quality, highly expressive visual generation.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.03
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1593,7 +1989,10 @@
 		"metadata":
 		{
 			"context_length": 262144,
-			"description": "MiMo-V2.5 is a native omnimodal model with strong agentic capabilities, supporting text, image, video, and audio understanding within a unified architecture. Built upon the MiMo-V2-Flash backbone and extended with dedicated vision and audio encoders, it delivers robust performance across multimodal perception, long-context reasoning, and agentic workflows. ",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "MiMo-V2.5 is a native omnimodal model with strong agentic capabilities, supporting text, image, video, and audio understanding within a unified architecture. Built upon the MiMo-V2-Flash backbone and extended with dedicated vision and audio encoders, it delivers robust performance across multimodal perception, long-context reasoning, and agentic workflows.",
 			"max_tokens": 262144,
 			"pricing":
 			{
@@ -1601,7 +2000,7 @@
 				"input_tokens": 0.4,
 				"output_tokens": 2.0
 			},
-			"tags": ["vision", "prompt_cache", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -1614,6 +2013,9 @@
 		"metadata":
 		{
 			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "MiMo-V2.5-Pro is an open-source Mixture-of-Experts (MoE) language model with 1.02T total parameters and 42B active parameters. It utilizes the hybrid attention architecture and 3-layers Multi-Token Prediction (MTP) introduced in [MiMo-V2-Flash](https://github.com/XiaomiMiMo/MiMo-V2-Flash).",
 			"max_tokens": 1048576,
 			"pricing":
@@ -1622,12 +2024,34 @@
 				"input_tokens": 1.0,
 				"output_tokens": 2.9999999999999996
 			},
-			"tags": ["vision", "prompt_cache", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "XiaomiMiMo/MiMo-V2.5-Pro"
+	},
+	{
+		"created": 0,
+		"id": "XiaomiMiMo/MiMo-V2.5-tts-voicedesign",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Automatically convert input text into natural and fluent speech output. You can generate natural and vivid speech content by configuring parameters such as speech style and voice. Automatically generate voices from text descriptions, without requiring presets or audio samples.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 0.0
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "XiaomiMiMo/MiMo-V2.5-tts-voicedesign"
 	},
 	{
 		"created": 0,
@@ -1821,6 +2245,75 @@
 	},
 	{
 		"created": 0,
+		"id": "anthropic/claude-haiku-4-5",
+		"metadata":
+		{
+			"context_length": 200000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The next generation of Anthropic's fastest and most cost-effective model, optimal for use cases where speed and affordability matter.",
+			"max_tokens": 200000,
+			"pricing":
+			{
+				"input_tokens": 1.0,
+				"output_tokens": 5.0
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "anthropic/claude-haiku-4-5"
+	},
+	{
+		"created": 0,
+		"id": "anthropic/claude-opus-4-7",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Anthropic's most capable production model yet, advancing performance across coding, enterprise workflows, and long-running agentic tasks.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 5.0,
+				"output_tokens": 25.0
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "anthropic/claude-opus-4-7"
+	},
+	{
+		"created": 0,
+		"id": "anthropic/claude-sonnet-4-6",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Claude Sonnet 4.6 delivers frontier intelligence at scale—built for coding, agents, and enterprise workflows.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 2.9999999999999996,
+				"output_tokens": 15.0
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "anthropic/claude-sonnet-4-6"
+	},
+	{
+		"created": 0,
 		"id": "bigcode/starcoder2-15b-instruct-v0.1",
 		"metadata":
 		{
@@ -1851,7 +2344,20 @@
 	{
 		"created": 0,
 		"id": "black-forest-labs/FLUX-1-dev",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 1024,
+			"default_iterations": 25,
+			"default_width": 1024,
+			"description": "FLUX.1-dev is a state-of-the-art 12 billion parameter rectified flow transformer developed by Black Forest Labs. This model excels in text-to-image generation, providing highly accurate and detailed outputs. It is particularly well-regarded for its ability to follow complex prompts and generate anatomically accurate images, especially with challenging details like hands and faces.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.009000000000000001
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1860,7 +2366,20 @@
 	{
 		"created": 0,
 		"id": "black-forest-labs/FLUX-1-schnell",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 1024,
+			"default_iterations": 1,
+			"default_width": 1024,
+			"description": "FLUX.1 [schnell] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions. This model offers cutting-edge output quality and competitive prompt following, matching the performance of closed source alternatives. Trained using latent adversarial diffusion distillation, FLUX.1 [schnell] can generate high-quality images in only 1 to 4 steps.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.0005
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1869,7 +2388,20 @@
 	{
 		"created": 0,
 		"id": "black-forest-labs/FLUX-1.1-pro",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Black Forest Labs' latest state-of-the art proprietary model sporting top of the line prompt following, visual quality, details and output diversity.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.04
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1878,7 +2410,20 @@
 	{
 		"created": 0,
 		"id": "black-forest-labs/FLUX-2-dev",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 1024,
+			"default_iterations": 28,
+			"default_width": 1024,
+			"description": "Brand-new Flux2 Dev introduces a faster, more modular architecture for next-generation image generation pipelines. It delivers improved performance, cleaner control APIs, and a significantly more flexible development workflow for custom inference setups.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.01
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1887,7 +2432,20 @@
 	{
 		"created": 0,
 		"id": "black-forest-labs/FLUX-2-klein-4b",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 1024,
+			"default_iterations": 0,
+			"default_width": 1024,
+			"description": "The fastest model of the Flux 2 family. Frontier visual intelligence — state-of-the-art image generation and editing from Black Forest Labs",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.013999999999999999
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1896,7 +2454,20 @@
 	{
 		"created": 0,
 		"id": "black-forest-labs/FLUX-2-klein-9b",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 1024,
+			"default_iterations": 0,
+			"default_width": 1024,
+			"description": "The best quality-to-latency ratio, production apps model of the Flux 2 family. Frontier visual intelligence — state-of-the-art image generation and editing from Black Forest Labs",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.015
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1905,7 +2476,20 @@
 	{
 		"created": 0,
 		"id": "black-forest-labs/FLUX-2-max",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "The new top-tier image model from Black Forest Labs, significantly pushing image quality and editing consistency",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.1
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1914,7 +2498,20 @@
 	{
 		"created": 0,
 		"id": "black-forest-labs/FLUX-2-pro",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Multi-reference visual intelligence with unprecedented detail, color precision, and spatial reasoning. The most advanced image generation and editing model. Generate photorealistic images with precise control.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.015
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -2064,6 +2661,9 @@
 		"metadata":
 		{
 			"context_length": 163840,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "The DeepSeek R1 model has undergone a minor version upgrade, with the current version being DeepSeek-R1-0528.",
 			"max_tokens": 163840,
 			"pricing":
@@ -2072,7 +2672,7 @@
 				"input_tokens": 0.5,
 				"output_tokens": 2.15
 			},
-			"tags": ["prompt_cache", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2085,6 +2685,9 @@
 		"metadata":
 		{
 			"context_length": 32768,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "The DeepSeek R1 0528 turbo model is a state of the art reasoning model that can generate very quick responses",
 			"max_tokens": 32768,
 			"pricing":
@@ -2092,7 +2695,7 @@
 				"input_tokens": 1.0,
 				"output_tokens": 2.9999999999999996
 			},
-			"tags": ["reasoning"]
+			"tags": ["chat", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2105,14 +2708,17 @@
 		"metadata":
 		{
 			"context_length": 131072,
-			"description": "DeepSeek-R1-Distill-Llama-70B is a highly efficient language model that leverages knowledge distillation to achieve state-of-the-art performance. This model distills the reasoning patterns of larger models into a smaller, more agile architecture, resulting in exceptional results on benchmarks like AIME 2024, MATH-500, and LiveCodeBench. With 70 billion parameters, DeepSeek-R1-Distill-Llama-70B offers a unique balance of accuracy and efficiency, making it an ideal choice for a wide range of natural language processing tasks. ",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "DeepSeek-R1-Distill-Llama-70B is a highly efficient language model that leverages knowledge distillation to achieve state-of-the-art performance. This model distills the reasoning patterns of larger models into a smaller, more agile architecture, resulting in exceptional results on benchmarks like AIME 2024, MATH-500, and LiveCodeBench. With 70 billion parameters, DeepSeek-R1-Distill-Llama-70B offers a unique balance of accuracy and efficiency, making it an ideal choice for a wide range of natural language processing tasks.",
 			"max_tokens": 131072,
 			"pricing":
 			{
 				"input_tokens": 0.7,
 				"output_tokens": 0.8
 			},
-			"tags": ["reasoning"]
+			"tags": ["chat", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2165,14 +2771,17 @@
 		"metadata":
 		{
 			"context_length": 163840,
-			"description": "DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. To achieve efficient inference and cost-effective training, DeepSeek-V3 adopts Multi-head Latent Attention (MLA) and DeepSeekMoE architectures, which were thoroughly validated in DeepSeek-V2. ",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. To achieve efficient inference and cost-effective training, DeepSeek-V3 adopts Multi-head Latent Attention (MLA) and DeepSeekMoE architectures, which were thoroughly validated in DeepSeek-V2.",
 			"max_tokens": 163840,
 			"pricing":
 			{
 				"input_tokens": 0.32,
 				"output_tokens": 0.8899999999999999
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2185,6 +2794,9 @@
 		"metadata":
 		{
 			"context_length": 163840,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "DeepSeek-V3-0324, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token, an improved iteration over DeepSeek-V3.",
 			"max_tokens": 163840,
 			"pricing":
@@ -2193,7 +2805,7 @@
 				"input_tokens": 0.2,
 				"output_tokens": 0.77
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["chat", "prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2226,6 +2838,9 @@
 		"metadata":
 		{
 			"context_length": 163840,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "DeepSeek-V3.1 is post-trained on the top of DeepSeek-V3.1-Base, which is built upon the original V3 base checkpoint through a two-phase long context extension approach, following the methodology outlined in the original DeepSeek-V3 report. We have expanded our dataset by collecting additional long documents and substantially extending both training phases. The 32K extension phase has been increased 10-fold to 630B tokens, while the 128K extension phase has been extended by 3.3x to 209B tokens. Additionally, DeepSeek-V3.1 is trained using the UE8M0 FP8 scale data format to ensure compatibility with microscaling data formats.",
 			"max_tokens": 163840,
 			"pricing":
@@ -2234,7 +2849,7 @@
 				"input_tokens": 0.21,
 				"output_tokens": 0.7899999999999999
 			},
-			"tags": ["prompt_cache", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2247,7 +2862,10 @@
 		"metadata":
 		{
 			"context_length": 163840,
-			"description": "DeepSeek-V3.1 Terminus is an update to DeepSeek V3.1 that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's performance in coding and search agents. It is a large hybrid reasoning model (671B parameters, 37B active) that supports both thinking and non-thinking modes. It extends the DeepSeek-V3 base with a two-phase long-context training process. Users can control the reasoning behaviour with the reasoning enabled boolean. Learn more in our docs  The model improves tool use, code generation, and reasoning efficiency, achieving performance comparable to DeepSeek-R1 on difficult benchmarks while responding more quickly. It supports structured tool calling, code agents, and search agents, making it suitable for research, coding, and agentic workflows.",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "DeepSeek-V3.1 Terminus is an update to DeepSeek V3.1 that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's performance in coding and search agents. It is a large hybrid reasoning model (671B parameters, 37B active) that supports both thinking and non-thinking modes. It extends the DeepSeek-V3 base with a two-phase long-context training process. Users can control the reasoning behaviour with the reasoning enabled boolean. Learn more in our docs The model improves tool use, code generation, and reasoning efficiency, achieving performance comparable to DeepSeek-R1 on difficult benchmarks while responding more quickly. It supports structured tool calling, code agents, and search agents, making it suitable for research, coding, and agentic workflows.",
 			"max_tokens": 163840,
 			"pricing":
 			{
@@ -2255,7 +2873,7 @@
 				"input_tokens": 0.27,
 				"output_tokens": 0.95
 			},
-			"tags": ["prompt_cache", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2268,6 +2886,9 @@
 		"metadata":
 		{
 			"context_length": 163840,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism that reduces training and inference cost while preserving quality in long-context scenarios. A scalable reinforcement learning post-training framework further improves reasoning, with reported performance in the GPT-5 class, and the model has demonstrated gold-medal results on the 2025 IMO and IOI. V3.2 also uses a large-scale agentic task synthesis pipeline to better integrate reasoning into tool-use settings, boosting compliance and generalization in interactive environments.",
 			"max_tokens": 163840,
 			"pricing":
@@ -2276,7 +2897,7 @@
 				"input_tokens": 0.26,
 				"output_tokens": 0.38
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["chat", "prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2310,6 +2931,9 @@
 		"metadata":
 		{
 			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "DeepSeek V4 Flash is an efficiency-focused MoE model with 284B total parameters (13B active) and a 1M-token context window. It's tuned for fast inference and high-throughput use cases while still holding up on reasoning and coding tasks.",
 			"max_tokens": 1048576,
 			"pricing":
@@ -2318,7 +2942,7 @@
 				"input_tokens": 0.14,
 				"output_tokens": 0.28
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2331,6 +2955,9 @@
 		"metadata":
 		{
 			"context_length": 65536,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "DeepSeek V4 Pro is an MoE model with 1.6T total parameters (49B active) and a 1M-token context window. It's built for advanced reasoning, coding, and long-running agent tasks, and performs well on knowledge, math, and software engineering benchmarks.",
 			"max_tokens": 65536,
 			"pricing":
@@ -2339,7 +2966,7 @@
 				"input_tokens": 1.74,
 				"output_tokens": 3.48
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["chat", "prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2387,7 +3014,20 @@
 	{
 		"created": 0,
 		"id": "google/embeddinggemma-300m",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 2048,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "ChatGPT said: EmbeddingGemma is a 300M parameter multilingual open embedding model from Google DeepMind, designed for efficient deployment even on low-resource devices, producing high-quality text vector representations for tasks such as search, classification, clustering, and semantic similarity.",
+			"max_tokens": 2048,
+			"pricing":
+			{
+				"input_tokens": 0.0019999999999999996
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -2399,14 +3039,17 @@
 		"metadata":
 		{
 			"context_length": 1000000,
-			"description": "Gemini 1.5 Flash is Google's foundation model that performs well at a variety of multimodal tasks such as visual understanding, classification, summarization, and creating content from image, audio and video. It's adept at processing visual and text inputs such as photographs, documents, infographics, and screenshots.  Gemini 1.5 Flash is designed for high-volume, high-frequency tasks where cost and latency matter. ",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Gemini 1.5 Flash is Google's foundation model that performs well at a variety of multimodal tasks such as visual understanding, classification, summarization, and creating content from image, audio and video. It's adept at processing visual and text inputs such as photographs, documents, infographics, and screenshots. Gemini 1.5 Flash is designed for high-volume, high-frequency tasks where cost and latency matter.",
 			"max_tokens": 1000000,
 			"pricing":
 			{
 				"input_tokens": 0.075,
 				"output_tokens": 0.3
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2419,6 +3062,9 @@
 		"metadata":
 		{
 			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "",
 			"max_tokens": 1000000,
 			"pricing":
@@ -2426,7 +3072,7 @@
 				"input_tokens": 0.0375,
 				"output_tokens": 0.15
 			},
-			"tags": ["vision", "reasoning_effort"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2459,14 +3105,17 @@
 		"metadata":
 		{
 			"context_length": 1000000,
-			"description": "Gemini 2.5 Flash is Google's latest thinking model, designed to tackle increasingly complex problems. It's capable of reasoning through their thoughts before responding, resulting in enhanced performance and improved accuracy.  Gemini 2.5 Flash: best for balancing reasoning and speed.",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Gemini 2.5 Flash is Google's latest thinking model, designed to tackle increasingly complex problems. It's capable of reasoning through their thoughts before responding, resulting in enhanced performance and improved accuracy. Gemini 2.5 Flash: best for balancing reasoning and speed.",
 			"max_tokens": 1000000,
 			"pricing":
 			{
 				"input_tokens": 0.3,
 				"output_tokens": 2.5
 			},
-			"tags": ["vision", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2479,19 +3128,88 @@
 		"metadata":
 		{
 			"context_length": 1000000,
-			"description": "Gemini 2.5 Pro is Google's the most advanced thinking model, designed to tackle increasingly complex problems. Gemini 2.5 Pro leads common benchmarks by meaningful margins and showcases strong reasoning and code capabilities.  Gemini 2.5 models are thinking models, capable of reasoning through their thoughts before responding, resulting in enhanced performance and improved accuracy.  The Gemini 2.5 Pro model is now available on DeepInfra.",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Gemini 2.5 Pro is Google's the most advanced thinking model, designed to tackle increasingly complex problems. Gemini 2.5 Pro leads common benchmarks by meaningful margins and showcases strong reasoning and code capabilities. Gemini 2.5 models are thinking models, capable of reasoning through their thoughts before responding, resulting in enhanced performance and improved accuracy. The Gemini 2.5 Pro model is now available on DeepInfra.",
 			"max_tokens": 1000000,
 			"pricing":
 			{
 				"input_tokens": 1.25,
 				"output_tokens": 10.0
 			},
-			"tags": ["vision", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "google/gemini-2.5-pro"
+	},
+	{
+		"created": 0,
+		"id": "google/gemini-3-pro-image",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Nano Banana Pro (Gemini 3 Pro Image) is designed to tackle the most challenging image generation by incorporating state-of-the-art reasoning capabilities. It is the best model for complex and multi-turn image generation and editing.",
+			"max_tokens": null,
+			"pricing":
+			{},
+			"tags": ["image-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/gemini-3-pro-image"
+	},
+	{
+		"created": 0,
+		"id": "google/gemini-3.1-flash-lite",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Bring any idea to life with state-of-the-art reasoning to help you learn, build, and plan anything. Best for high-volume tasks that need efficiency and intelligence.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 0.25,
+				"output_tokens": 1.4999999999999998
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/gemini-3.1-flash-lite"
+	},
+	{
+		"created": 0,
+		"id": "google/gemini-3.1-pro",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Bring any idea to life with state-of-the-art reasoning to help you learn, build, and plan anything. Best for complex tasks and bringing creative concepts to life.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 2.0,
+				"output_tokens": 11.999999999999998
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/gemini-3.1-pro"
 	},
 	{
 		"created": 0,
@@ -2559,6 +3277,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3-12B is Google's latest open source model, successor to Gemma 2",
 			"max_tokens": 131072,
 			"pricing":
@@ -2566,7 +3287,7 @@
 				"input_tokens": 0.04,
 				"output_tokens": 0.13
 			},
-			"tags": ["vision"]
+			"tags": ["chat", "vlm", "vision"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2579,6 +3300,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to Gemma 2",
 			"max_tokens": 131072,
 			"pricing":
@@ -2586,7 +3310,7 @@
 				"input_tokens": 0.08,
 				"output_tokens": 0.16
 			},
-			"tags": ["vision"]
+			"tags": ["chat", "vlm", "vision"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2599,6 +3323,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3-12B is Google's latest open source model, successor to Gemma 2",
 			"max_tokens": 131072,
 			"pricing":
@@ -2606,7 +3333,7 @@
 				"input_tokens": 0.04,
 				"output_tokens": 0.08
 			},
-			"tags": ["vision"]
+			"tags": ["chat", "vlm", "vision"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2619,6 +3346,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Efficient, MoE variant of Gemma 4. Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output.",
 			"max_tokens": 262144,
 			"pricing":
@@ -2626,7 +3356,7 @@
 				"input_tokens": 0.07,
 				"output_tokens": 0.33999999999999997
 			},
-			"tags": ["vision", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2639,6 +3369,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output.",
 			"max_tokens": 262144,
 			"pricing":
@@ -2646,7 +3379,7 @@
 				"input_tokens": 0.13,
 				"output_tokens": 0.38
 			},
-			"tags": ["vision", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2655,8 +3388,44 @@
 	},
 	{
 		"created": 0,
+		"id": "google/gemma-4-31B-it-turbo",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"input_tokens": 0.12000000000000001,
+				"output_tokens": 0.37
+			},
+			"tags": ["chat", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/gemma-4-31B-it-turbo"
+	},
+	{
+		"created": 0,
 		"id": "intfloat/e5-base-v2",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Text Embeddings by Weakly-Supervised Contrastive Pre-training. Model has 24 layers and 1024 out dim.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -2665,7 +3434,20 @@
 	{
 		"created": 0,
 		"id": "intfloat/e5-large-v2",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Text Embeddings by Weakly-Supervised Contrastive Pre-training. Model has 24 layers and 1024 out dim.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -2674,7 +3456,20 @@
 	{
 		"created": 0,
 		"id": "intfloat/multilingual-e5-large",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The Multilingual-E5-large model is a 24-layer text embedding model with an embedding size of 1024, trained on a mixture of multilingual datasets and supporting 100 languages.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -2683,7 +3478,20 @@
 	{
 		"created": 0,
 		"id": "intfloat/multilingual-e5-large-instruct",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The Multilingual-E5 models, initialized from XLM-RoBERTa, support up to 512 tokens per input — any longer text will be silently truncated. To ensure optimal performance, always prefix inputs with “query:” or “passage:”, as the model was explicitly trained with this format.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -2775,14 +3583,17 @@
 		"metadata":
 		{
 			"context_length": 131072,
-			"description": "Llama 3.2 11B Vision is a multimodal model with 11 billion parameters, designed to handle tasks combining visual and textual data. It excels in tasks such as image captioning and visual question answering, bridging the gap between language generation and visual reasoning. Pre-trained on a massive dataset of image-text pairs, it performs well in complex, high-accuracy image analysis.  Its ability to integrate visual understanding with language processing makes it an ideal solution for industries requiring comprehensive visual-linguistic AI applications, such as content creation, AI-driven customer service, and research.",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Llama 3.2 11B Vision is a multimodal model with 11 billion parameters, designed to handle tasks combining visual and textual data. It excels in tasks such as image captioning and visual question answering, bridging the gap between language generation and visual reasoning. Pre-trained on a massive dataset of image-text pairs, it performs well in complex, high-accuracy image analysis. Its ability to integrate visual understanding with language processing makes it an ideal solution for industries requiring comprehensive visual-linguistic AI applications, such as content creation, AI-driven customer service, and research.",
 			"max_tokens": 131072,
 			"pricing":
 			{
 				"input_tokens": 0.245,
 				"output_tokens": 0.245
 			},
-			"tags": ["vision"]
+			"tags": ["chat", "vlm", "vision"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2875,6 +3686,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Llama 3.3-70B Turbo is a highly optimized version of the Llama 3.3-70B model, utilizing FP8 quantization to deliver significantly faster inference speeds with a minor trade-off in accuracy. The model is designed to be helpful, safe, and flexible, with a focus on responsible deployment and mitigating potential risks such as bias, toxicity, and misinformation. It achieves state-of-the-art performance on various benchmarks, including conversational tasks, language translation, and text generation.",
 			"max_tokens": 131072,
 			"pricing":
@@ -2882,7 +3696,7 @@
 				"input_tokens": 0.1,
 				"output_tokens": 0.32
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2895,6 +3709,9 @@
 		"metadata":
 		{
 			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "The Llama 4 collection of models are natively multimodal AI models that enable text and multimodal experiences. These models leverage a mixture-of-experts architecture to offer industry-leading performance in text and image understanding. Llama 4 Maverick, a 17 billion parameter model with 128 experts",
 			"max_tokens": 1048576,
 			"pricing":
@@ -2902,7 +3719,7 @@
 				"input_tokens": 0.15,
 				"output_tokens": 0.6
 			},
-			"tags": ["vision"]
+			"tags": ["chat", "vlm", "vision"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2935,6 +3752,9 @@
 		"metadata":
 		{
 			"context_length": 327680,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "The Llama 4 collection of models are natively multimodal AI models that enable text and multimodal experiences. These models leverage a mixture-of-experts architecture to offer industry-leading performance in text and image understanding. Llama 4 Scout, a 17 billion parameter model with 16 experts",
 			"max_tokens": 327680,
 			"pricing":
@@ -2942,7 +3762,7 @@
 				"input_tokens": 0.08,
 				"output_tokens": 0.3
 			},
-			"tags": ["vision"]
+			"tags": ["chat", "vlm", "vision"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2975,6 +3795,9 @@
 		"metadata":
 		{
 			"context_length": 163840,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Llama Guard 4 is a natively multimodal safety classifier with 12 billion parameters trained jointly on text and multiple images. Llama Guard 4 is a dense architecture pruned from the Llama 4 Scout pre-trained model and fine-tuned for content safety classification. Similar to previous versions, it can be used to classify content in both LLM inputs (prompt classification) and in LLM responses (response classification). It itself acts as an LLM: it generates text in its output that indicates whether a given prompt or response is safe or unsafe, and if unsafe, it also lists the content categories violated.",
 			"max_tokens": 163840,
 			"pricing":
@@ -2982,7 +3805,7 @@
 				"input_tokens": 0.18,
 				"output_tokens": 0.18
 			},
-			"tags": ["vision"]
+			"tags": ["chat", "vlm", "vision"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3055,6 +3878,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Meta developed and released the Meta Llama 3.1 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8B, 70B and 405B sizes",
 			"max_tokens": 131072,
 			"pricing":
@@ -3062,7 +3888,7 @@
 				"input_tokens": 0.4,
 				"output_tokens": 0.4
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3075,6 +3901,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Meta developed and released the Meta Llama 3.1 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8B, 70B and 405B sizes",
 			"max_tokens": 131072,
 			"pricing":
@@ -3082,7 +3911,7 @@
 				"input_tokens": 0.4,
 				"output_tokens": 0.4
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3095,6 +3924,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Meta developed and released the Meta Llama 3.1 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8B, 70B and 405B sizes",
 			"max_tokens": 131072,
 			"pricing":
@@ -3102,7 +3934,7 @@
 				"input_tokens": 0.02,
 				"output_tokens": 0.05
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3115,6 +3947,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Meta developed and released the Meta Llama 3.1 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8B, 70B and 405B sizes",
 			"max_tokens": 131072,
 			"pricing":
@@ -3122,7 +3957,7 @@
 				"input_tokens": 0.02,
 				"output_tokens": 0.030000000000000002
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3215,6 +4050,9 @@
 		"metadata":
 		{
 			"context_length": 16384,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Phi-4 is a model built upon a blend of synthetic datasets, data from filtered public domain websites, and acquired academic books and Q&A datasets. The goal of this approach was to ensure that small capable models were trained with data focused on high quality and advanced reasoning.",
 			"max_tokens": 16384,
 			"pricing":
@@ -3222,7 +4060,7 @@
 				"input_tokens": 0.07,
 				"output_tokens": 0.14
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3355,6 +4193,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "12B model trained jointly by Mistral AI and NVIDIA, it significantly outperforms existing models smaller or similar in size.",
 			"max_tokens": 131072,
 			"pricing":
@@ -3362,7 +4203,7 @@
 				"input_tokens": 0.02,
 				"output_tokens": 0.04
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3375,14 +4216,17 @@
 		"metadata":
 		{
 			"context_length": 32768,
-			"description": "Mistral Small 3 is a 24B-parameter language model optimized for low-latency performance across common AI tasks. Released under the Apache 2.0 license, it features both pre-trained and instruction-tuned versions designed for efficient local deployment.  The model achieves 81% accuracy on the MMLU benchmark and performs competitively with larger models like Llama 3.3 70B and Qwen 32B, while operating at three times the speed on equivalent hardware.",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Mistral Small 3 is a 24B-parameter language model optimized for low-latency performance across common AI tasks. Released under the Apache 2.0 license, it features both pre-trained and instruction-tuned versions designed for efficient local deployment. The model achieves 81% accuracy on the MMLU benchmark and performs competitively with larger models like Llama 3.3 70B and Qwen 32B, while operating at three times the speed on equivalent hardware.",
 			"max_tokens": 32768,
 			"pricing":
 			{
 				"input_tokens": 0.05,
 				"output_tokens": 0.08
 			},
-			"tags": []
+			"tags": ["chat"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3415,6 +4259,9 @@
 		"metadata":
 		{
 			"context_length": 128000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Mistral-Small-3.2-24B-Instruct is a drop-in upgrade over the 3.1 release, with markedly better instruction following, roughly half the infinite-generation errors, and a more robust function-calling interface—while otherwise matching or slightly improving on all previous text and vision benchmarks.",
 			"max_tokens": 128000,
 			"pricing":
@@ -3422,7 +4269,7 @@
 				"input_tokens": 0.075,
 				"output_tokens": 0.2
 			},
-			"tags": ["vision"]
+			"tags": ["chat", "vlm", "vision"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3468,6 +4315,50 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "mistralai/Mixtral-8x7B-Instruct-v0.1"
+	},
+	{
+		"created": 0,
+		"id": "mistralai/Voxtral-Mini-3B-2507",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Voxtral Mini is an enhancement of Ministral 3B, incorporating state-of-the-art audio input capabilities while retaining best-in-class text performance. It excels at speech transcription, translation and audio understanding.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_seconds": 1.66667e-05
+			},
+			"tags": ["stt"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "mistralai/Voxtral-Mini-3B-2507"
+	},
+	{
+		"created": 0,
+		"id": "mistralai/Voxtral-Small-24B-2507",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Voxtral Small is an enhancement of Mistral Small 3, incorporating state-of-the-art audio input capabilities while retaining best-in-class text performance. It excels at speech transcription, translation and audio understanding.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_seconds": 5e-05
+			},
+			"tags": ["stt"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "mistralai/Voxtral-Small-24B-2507"
 	},
 	{
 		"created": 0,
@@ -3537,6 +4428,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Kimi K2.5 is an open-source, native multimodal agentic model built through continual pretraining on approximately 15 trillion mixed visual and text tokens atop Kimi-K2-Base. It seamlessly integrates vision and language understanding with advanced agentic capabilities, instant and thinking modes, as well as conversational and agentic paradigms.",
 			"max_tokens": 262144,
 			"pricing":
@@ -3545,7 +4439,7 @@
 				"input_tokens": 0.45,
 				"output_tokens": 2.25
 			},
-			"tags": ["vision", "prompt_cache", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3579,6 +4473,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Kimi K2.6 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration.",
 			"max_tokens": 262144,
 			"pricing":
@@ -3587,7 +4484,7 @@
 				"input_tokens": 0.7499999999999999,
 				"output_tokens": 3.5
 			},
-			"tags": ["prompt_cache", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3620,14 +4517,17 @@
 		"metadata":
 		{
 			"context_length": 131072,
-			"description": "Llama-3.3-Nemotron-Super-49B-v1.5 is a large language model (LLM) optimized for advanced reasoning, conversational interactions, retrieval-augmented generation (RAG), and tool-calling tasks. Derived from Meta's Llama-3.3-70B-Instruct, it employs a Neural Architecture Search (NAS) approach, significantly enhancing efficiency and reducing memory requirements. ",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Llama-3.3-Nemotron-Super-49B-v1.5 is a large language model (LLM) optimized for advanced reasoning, conversational interactions, retrieval-augmented generation (RAG), and tool-calling tasks. Derived from Meta's Llama-3.3-70B-Instruct, it employs a Neural Architecture Search (NAS) approach, significantly enhancing efficiency and reducing memory requirements.",
 			"max_tokens": 131072,
 			"pricing":
 			{
 				"input_tokens": 0.1,
 				"output_tokens": 0.4
 			},
-			"tags": ["reasoning"]
+			"tags": ["chat", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3640,6 +4540,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "NVIDIA Nemotron 3 Super is a hybrid Mixture-of-Experts (MoE) model engineered for highest compute efficiency and accuracy in multi-agent applications and specialized agentic systems. It is optimized to run many collaborating agents per application on a single GPU, delivering high accuracy for reasoning, tool use, and instruction following.",
 			"max_tokens": 262144,
 			"pricing":
@@ -3647,7 +4550,7 @@
 				"input_tokens": 0.1,
 				"output_tokens": 0.5
 			},
-			"tags": ["reasoning"]
+			"tags": ["chat", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3680,14 +4583,17 @@
 		"metadata":
 		{
 			"context_length": 131072,
-			"description": "NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response.  The model's reasoning capabilities can be controlled via a system prompt. If the user prefers the model to provide its final answer without intermediate reasoning traces, it can be configured to do so.",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response. The model's reasoning capabilities can be controlled via a system prompt. If the user prefers the model to provide its final answer without intermediate reasoning traces, it can be configured to do so.",
 			"max_tokens": 131072,
 			"pricing":
 			{
 				"input_tokens": 0.04,
 				"output_tokens": 0.16
 			},
-			"tags": ["reasoning"]
+			"tags": ["chat", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3700,6 +4606,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "NVIDIA Nemotron 3 Nano is an open small reasoning model optimized for fast, cost-efficient inference in agentic and production workloads. Built with a hybrid Mixture-of-Experts (MoE) and Mamba-Transformer architecture, it delivers strong multi-step reasoning, high token throughput, stable latency with predictable cost, and efficient deployment for agent-based systems. Designed for real-world AI systems where reasoning can generate significantly more tokens per prompt, Nemotron Nano reduces compute cost while maintaining strong reasoning quality.",
 			"max_tokens": 262144,
 			"pricing":
@@ -3707,7 +4616,7 @@
 				"input_tokens": 0.05,
 				"output_tokens": 0.2
 			},
-			"tags": ["reasoning"]
+			"tags": ["chat", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3720,6 +4629,9 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Nemotron 3 Nano Omni is an open multimodal model built on a hybrid Mixture-of-Experts (MoE) architecture, engineered for high efficiency and strong accuracy across image, video, audio, and text inputs. It powers always-on sub-agents for computer use, document intelligence, and audio-video understanding—replacing fragmented vision, speech, and language pipelines with a single unified inference pass.",
 			"max_tokens": 262144,
 			"pricing":
@@ -3727,7 +4639,7 @@
 				"input_tokens": 0.2,
 				"output_tokens": 0.8
 			},
-			"tags": ["vision", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3757,7 +4669,20 @@
 	{
 		"created": 0,
 		"id": "nvidia/llama-nemotron-embed-vl-1b-v2",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 10240,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The llama-nemotron-embed-vl-1b-v2 is a high-performance multimodal embedding model designed to transform text queries and document images into dense vector representations for advanced retrieval systems. It excels at understanding complex visual content like charts, tables, and infographics.",
+			"max_tokens": 10240,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -3769,6 +4694,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. The model supports configurable reasoning depth, full chain-of-thought access, and native tool use, including function calling, browsing, and structured output generation.",
 			"max_tokens": 131072,
 			"pricing":
@@ -3776,7 +4704,7 @@
 				"input_tokens": 0.039,
 				"output_tokens": 0.19
 			},
-			"tags": ["reasoning_effort", "reasoning"]
+			"tags": ["chat", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3789,6 +4717,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "",
 			"max_tokens": 131072,
 			"pricing":
@@ -3796,7 +4727,7 @@
 				"input_tokens": 0.15,
 				"output_tokens": 0.6
 			},
-			"tags": ["reasoning_effort", "reasoning"]
+			"tags": ["chat", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -3809,6 +4740,9 @@
 		"metadata":
 		{
 			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for lower-latency inference. The model is trained in OpenAI’s Harmony response format and supports reasoning level configuration, fine-tuning, and agentic capabilities including function calling, tool use, and structured outputs.",
 			"max_tokens": 131072,
 			"pricing":
@@ -3816,12 +4750,56 @@
 				"input_tokens": 0.030000000000000002,
 				"output_tokens": 0.14
 			},
-			"tags": ["reasoning_effort", "reasoning"]
+			"tags": ["chat", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "openai/gpt-oss-20b"
+	},
+	{
+		"created": 0,
+		"id": "openai/whisper-large-v3",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multi-task model that can perform multilingual speech recognition as well as speech translation and language identification.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_seconds": 7.5e-06
+			},
+			"tags": ["stt"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "openai/whisper-large-v3"
+	},
+	{
+		"created": 0,
+		"id": "openai/whisper-large-v3-turbo",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Whisper is a state-of-the-art model for automatic speech recognition (ASR) and speech translation, proposed in the paper \"Robust Speech Recognition via Large-Scale Weak Supervision\" by Alec Radford et al. from OpenAI. Trained on >5M hours of labeled data, Whisper demonstrates a strong ability to generalise to many datasets and domains in a zero-shot setting. Whisper large-v3-turbo is a finetuned version of a pruned Whisper large-v3. In other words, it's the exact same model, except that the number of decoding layers have reduced from 32 to 4. As a result, the model is way faster, at the expense of a minor quality degradation.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_seconds": 3.3300000000000003e-06
+			},
+			"tags": ["stt"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "openai/whisper-large-v3-turbo"
 	},
 	{
 		"created": 0,
@@ -3913,7 +4891,20 @@
 	{
 		"created": 0,
 		"id": "sentence-transformers/all-MiniLM-L12-v2",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "We present a sentence transformation model that generates semantically similar sentences. Our model is based on the Sentence-Transformers architecture and was trained on a large dataset of sentence pairs. We evaluate the effectiveness of our model by measuring its ability to generate similar sentences that are close to the original sentence in meaning.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -3922,7 +4913,20 @@
 	{
 		"created": 0,
 		"id": "sentence-transformers/all-MiniLM-L6-v2",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "We present a sentence transformation model that achieves state-of-the-art results on various NLP tasks without requiring task-specific architectures or fine-tuning. Our approach leverages contrastive learning and utilizes a variety of datasets to learn robust sentence representations. We evaluate our model on several benchmarks and demonstrate its effectiveness in various applications such as text classification, sentiment analysis, named entity recognition, and question answering.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -3931,7 +4935,20 @@
 	{
 		"created": 0,
 		"id": "sentence-transformers/all-mpnet-base-v2",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "A sentence transformation model that has been trained on a wide range of datasets, including but not limited to S2ORC, WikiAnwers, PAQ, Stack Exchange, and Yahoo! Answers. Our model can be used for various NLP tasks such as clustering, sentiment analysis, and question answering.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -3940,7 +4957,20 @@
 	{
 		"created": 0,
 		"id": "sentence-transformers/clip-ViT-B-32",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 77,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The CLIP model maps text and images to a shared vector space, enabling various applications such as image search, zero-shot image classification, and image clustering. The model can be used easily after installation, and its performance is demonstrated through zero-shot ImageNet validation set accuracy scores. Multilingual versions of the model are also available for 50+ languages.",
+			"max_tokens": 77,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -3949,7 +4979,20 @@
 	{
 		"created": 0,
 		"id": "sentence-transformers/clip-ViT-B-32-multilingual-v1",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "This model is a multilingual version of the OpenAI CLIP-ViT-B32 model, which maps text and images to a common dense vector space. It includes a text embedding model that works for 50+ languages and an image encoder from CLIP. The model was trained using Multilingual Knowledge Distillation, where a multilingual DistilBERT model was trained as a student model to align the vector space of the original CLIP image encoder across many languages.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -3958,7 +5001,20 @@
 	{
 		"created": 0,
 		"id": "sentence-transformers/multi-qa-mpnet-base-dot-v1",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "We present a sentence transformation model that maps sentences and paragraphs to a 768-dimensional dense vector space, suitable for semantic search tasks. The model is trained on 215 million question-answer pairs from various sources, including WikiAnswers, PAQ, Stack Exchange, MS MARCO, GOOAQ, Amazon QA, Yahoo Answers, Search QA, ELI5, and Natural Questions. Our model uses a contrastive learning objective.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -3967,7 +5023,20 @@
 	{
 		"created": 0,
 		"id": "sentence-transformers/paraphrase-MiniLM-L6-v2",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "We present a sentence similarity model based on the Sentence Transformers architecture, which maps sentences to a 384-dimensional dense vector space. The model uses a pre-trained BERT encoder and applies mean pooling on top of the contextualized word embeddings to obtain sentence embeddings. We evaluate the model on the Sentence Embeddings Benchmark.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -3975,8 +5044,43 @@
 	},
 	{
 		"created": 0,
+		"id": "sesame/csm-1b",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "CSM (Conversational Speech Model) is a speech generation model from Sesame that generates RVQ audio codes from text and audio inputs. The model architecture employs a Llama backbone and a smaller audio decoder that produces Mimi audio codes.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 7.0
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "sesame/csm-1b"
+	},
+	{
+		"created": 0,
 		"id": "shibing624/text2vec-base-chinese",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "A sentence similarity model that can be used for various NLP tasks such as text classification, sentiment analysis, named entity recognition, question answering, and more. It utilizes the CoSENT architecture, which consists of a transformer encoder and a pooling module, to encode input texts into vectors that capture their semantic meaning. The model was trained on the nli_zh dataset and achieved high performance on various benchmark datasets.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -4003,7 +5107,20 @@
 	{
 		"created": 0,
 		"id": "stabilityai/sdxl-turbo",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 1024,
+			"default_iterations": 5,
+			"default_width": 1024,
+			"description": "The SDXL Turbo model, developed by Stability AI, is an optimized, fast text-to-image generative model. It is a distilled version of SDXL 1.0, leveraging Adversarial Diffusion Distillation (ADD) to generate high-quality images in less steps.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.0002
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -4024,15 +5141,18 @@
 		"metadata":
 		{
 			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "Step 3.5 Flash is an open-source reasoning model by StepFun with 196B total parameters (11B active) using Mixture of Experts. It features a 256K context window, deep reasoning, tool calling, and agentic capabilities, achieving 97.3 on AIME 2025 and 74.4% on SWE-bench Verified.",
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.020000000000000004,
-				"input_tokens": 0.1,
+				"cache_read_tokens": 0.019999999799999998,
+				"input_tokens": 0.09,
 				"output_tokens": 0.3
 			},
-			"tags": ["prompt_cache"]
+			"tags": ["chat", "prompt_cache"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -4042,7 +5162,20 @@
 	{
 		"created": 0,
 		"id": "thenlper/gte-base",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The GTE models are trained by Alibaba DAMO Academy. They are mainly based on the BERT framework and currently offer three different sizes of models, including GTE-large, GTE-base, and GTE-small. The GTE models are trained on a large-scale corpus of relevance text pairs, covering a wide range of domains and scenarios. This enables the GTE models to be applied to various downstream tasks of text embeddings, including information retrieval, semantic textual similarity, text reranking, etc.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.005
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -4051,7 +5184,20 @@
 	{
 		"created": 0,
 		"id": "thenlper/gte-large",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The GTE models are trained by Alibaba DAMO Academy. They are mainly based on the BERT framework and currently offer three different sizes of models, including GTE-large, GTE-base, and GTE-small. The GTE models are trained on a large-scale corpus of relevance text pairs, covering a wide range of domains and scenarios. This enables the GTE models to be applied to various downstream tasks of text embeddings, including information retrieval, semantic textual similarity, text reranking, etc.",
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -4103,7 +5249,10 @@
 		"metadata":
 		{
 			"context_length": 202752,
-			"description": "Compared with GLM-4.5, GLM-4.6 brings several key improvements:  Longer context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex agentic tasks. Superior coding performance: The model achieves higher scores on code benchmarks and demonstrates better real-world performance in applications such as Claude Code、Cline、Roo Code and Kilo Code, including improvements in generating visually polished front-end pages. Advanced reasoning: GLM-4.6 shows a clear improvement in reasoning performance and supports tool use during inference, leading to stronger overall capability. More capable agents: GLM-4.6 exhibits stronger performance in tool using and search-based agents, and integrates more effectively within agent frameworks. Refined writing: Better aligns with human preferences in style and readability, and performs more naturally in role-playing scenarios.",
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Compared with GLM-4.5, GLM-4.6 brings several key improvements: Longer context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex agentic tasks. Superior coding performance: The model achieves higher scores on code benchmarks and demonstrates better real-world performance in applications such as Claude Code、Cline、Roo Code and Kilo Code, including improvements in generating visually polished front-end pages. Advanced reasoning: GLM-4.6 shows a clear improvement in reasoning performance and supports tool use during inference, leading to stronger overall capability. More capable agents: GLM-4.6 exhibits stronger performance in tool using and search-based agents, and integrates more effectively within agent frameworks. Refined writing: Better aligns with human preferences in style and readability, and performs more naturally in role-playing scenarios.",
 			"max_tokens": 202752,
 			"pricing":
 			{
@@ -4111,7 +5260,7 @@
 				"input_tokens": 0.43,
 				"output_tokens": 1.74
 			},
-			"tags": ["prompt_cache", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -4144,6 +5293,9 @@
 		"metadata":
 		{
 			"context_length": 202752,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "GLM-4.7 is a state-of-the-art, multilingual Mixture-of-Experts (MoE) language model designed for complex reasoning, agentic coding, and tool use. Building on its predecessor GLM-4.6, it delivers significant improvements across key benchmarks, including multilingual SWE-bench, Terminal Bench, and reasoning-heavy evaluations like HLE. The model features advanced \"Interleaved Thinking\" and new \"Preserved Thinking\" modes, allowing it to reason before actions and maintain consistency across long, multi-turn tasks. With 358 billion parameters, GLM-4.7 excels in generating clean code, modern UI elements, and sophisticated reasoning outputs.",
 			"max_tokens": 202752,
 			"pricing":
@@ -4152,7 +5304,7 @@
 				"input_tokens": 0.4,
 				"output_tokens": 1.75
 			},
-			"tags": ["prompt_cache", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -4165,6 +5317,9 @@
 		"metadata":
 		{
 			"context_length": 202752,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "GLM-4.7-Flash is a 30B-A3B MoE model. As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency.",
 			"max_tokens": 202752,
 			"pricing":
@@ -4173,7 +5328,7 @@
 				"input_tokens": 0.060000000000000005,
 				"output_tokens": 0.4
 			},
-			"tags": ["prompt_cache", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -4186,6 +5341,9 @@
 		"metadata":
 		{
 			"context_length": 202752,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "GLM-5 is an advanced, open-source large language model designed for developers tackling the toughest challenges. It excels at long-context reasoning, multi-step tool orchestration, and complex systems engineering, making it the ideal choice for powering sophisticated agents and applications that require high-level cognitive tasks.",
 			"max_tokens": 202752,
 			"pricing":
@@ -4194,7 +5352,7 @@
 				"input_tokens": 0.6,
 				"output_tokens": 2.08
 			},
-			"tags": ["prompt_cache", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -4207,6 +5365,9 @@
 		"metadata":
 		{
 			"context_length": 202752,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
 			"description": "GLM-5.1 is Z-AI's next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks).",
 			"max_tokens": 202752,
 			"pricing":
@@ -4215,7 +5376,7 @@
 				"input_tokens": 1.05,
 				"output_tokens": 3.5
 			},
-			"tags": ["prompt_cache", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",

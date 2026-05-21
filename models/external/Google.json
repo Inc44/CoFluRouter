@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"display_name": "Antigravity Agent Preview",
+		"id": "models/antigravity-preview-05-2026",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Model that performs Attributed Question Answering.",
 		"id": "models/aqa",
 		"object": "model",
@@ -387,6 +393,12 @@
 	{
 		"display_name": "Gemini 3.1 Pro Preview Custom Tools",
 		"id": "models/gemini-3.1-pro-preview-customtools",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.5 Flash",
+		"id": "models/gemini-3.5-flash",
 		"object": "model",
 		"owned_by": "google"
 	},

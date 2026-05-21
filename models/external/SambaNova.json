@@ -261,8 +261,8 @@
 		"owned_by": "no-reply@sambanova.ai",
 		"pricing":
 		{
-			"completion": "0.00000035",
-			"prompt": "0.00000020"
+			"completion": "0.00000059",
+			"prompt": "0.00000035"
 		},
 		"sn_metadata":
 		{}

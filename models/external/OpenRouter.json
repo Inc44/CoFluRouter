@@ -7,6 +7,248 @@
 			"instruct_type": null,
 			"modality": "text->text",
 			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "qwen/qwen3.7-max-20260520",
+		"context_length": 1000000,
+		"created": 1779376861,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Qwen3.7-Max is the flagship model in Alibaba's Qwen3.7 series. It supports text input and output and is designed for agent-centric workloads, with particular strengths in coding, office and productivity tasks,...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "qwen/qwen3.7-max",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.7-max-20260520/endpoints"
+		},
+		"name": "Qwen: Qwen3.7 Max",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000075",
+			"input_cache_write": "0.000003125",
+			"prompt": "0.0000025"
+		},
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Grok"
+		},
+		"canonical_slug": "x-ai/grok-build-0.1-20260520",
+		"context_length": 256000,
+		"created": 1779298123,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Grok Build 0.1 is xAI’s fast coding model trained specifically for agentic software engineering workflows. It supports text and image inputs with text output, and is optimized for interactive coding...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "x-ai/grok-build-0.1",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/x-ai/grok-build-0.1-20260520/endpoints"
+		},
+		"name": "xAI: Grok Build 0.1",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000002",
+			"input_cache_read": "0.0000002",
+			"prompt": "0.000001",
+			"web_search": "0.005"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 256000,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-3.5-flash-20260519",
+		"context_length": 1048576,
+		"created": 1779193800,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Gemini 3.5 Flash is Google's high-efficiency multimodal model, bringing near-Pro level coding and reasoning at Flash-tier cost and speed. It is highly optimized for coding proficiency and parallel agentic execution...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/gemini-3.5-flash",
+		"knowledge_cutoff": "2025-01-01",
+		"links":
+		{
+			"details": "/api/v1/models/google/gemini-3.5-flash-20260519/endpoints"
+		},
+		"name": "Google: Gemini 3.5 Flash",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"audio": "0.000003",
+			"completion": "0.000009",
+			"image": "0.0000015",
+			"input_cache_read": "0.00000015",
+			"input_cache_write": "0.00000008333333333333334",
+			"internal_reasoning": "0.000009",
+			"prompt": "0.0000015",
+			"web_search": "0.014"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Claude"
+		},
+		"canonical_slug": "anthropic/claude-4.7-opus-fast-20260512",
+		"context_length": 1000000,
+		"created": 1778613011,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Fast-mode variant of [Opus 4.7](/anthropic/claude-opus-4.7) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "anthropic/claude-opus-4.7-fast",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/anthropic/claude-4.7-opus-fast-20260512/endpoints"
+		},
+		"name": "Anthropic: Claude Opus 4.7 (Fast)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00015",
+			"input_cache_read": "0.000003",
+			"input_cache_write": "0.0000375",
+			"prompt": "0.00003",
+			"web_search": "0.01"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "perceptron/perceptron-mk1-20260512",
+		"context_length": 32768,
+		"created": 1778597029,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Perceptron Mk1 (Mark One) is Perceptron's highest-quality vision-language model for video and embodied reasoning.** It accepts image and video inputs paired with natural language queries, and produces detailed visual understanding...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "perceptron/perceptron-mk1",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/perceptron/perceptron-mk1-20260512/endpoints"
+		},
+		"name": "Perceptron: Perceptron Mk1",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000015",
+			"prompt": "0.00000015"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 32768,
+			"is_moderated": false,
+			"max_completion_tokens": 8192
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "inclusionai/ring-2.6-1t-20260508",
@@ -38,6 +280,53 @@
 			"prompt": "0"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "inclusionai/ring-2.6-1t-20260508",
+		"context_length": 262144,
+		"created": 1778247440,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Ring-2.6-1T is a 1T-parameter-scale thinking model with 63B active parameters, built for real-world agent workflows that require both strong capability and operational efficiency. It is optimized for coding agents, tool...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "inclusionai/ring-2.6-1t",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/inclusionai/ring-2.6-1t-20260508/endpoints"
+		},
+		"name": "inclusionAI: Ring-2.6-1T",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000000625",
+			"input_cache_read": "0.000000015",
+			"prompt": "0.000000075"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -283,9 +572,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -338,15 +627,7 @@
 		"canonical_slug": "openrouter/owl-alpha",
 		"context_length": 1048756,
 		"created": 1777398589,
-		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		"default_parameters": null,
 		"description": "Owl Alpha is a high-performance foundation model designed for agentic workloads. Natively supports tool use, and long-context tasks, with strong performance in code generation, automated workflows, and complex instruction execution....",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -513,9 +794,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["image", "text"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Router"
 		},
@@ -669,7 +950,7 @@
 			"tokenizer": "Router"
 		},
 		"canonical_slug": "~moonshotai/kimi-latest",
-		"context_length": 32768,
+		"context_length": 262144,
 		"created": 1777318428,
 		"default_parameters":
 		{
@@ -693,23 +974,23 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000035",
+			"completion": "0.00000349",
 			"input_cache_read": "0.00000025",
-			"prompt": "0.00000074"
+			"prompt": "0.00000073"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 32768,
+			"context_length": 262142,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 262142
 		}
 	},
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image", "file", "audio", "video"],
+			"input_modalities": ["text", "image", "video", "file", "audio"],
 			"instruct_type": null,
 			"modality": "text+image+file+audio+video->text",
 			"output_modalities": ["text"],
@@ -731,7 +1012,7 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "~google/gemini-flash-latest",
-		"knowledge_cutoff": null,
+		"knowledge_cutoff": "2025-01-01",
 		"links":
 		{
 			"details": "/api/v1/models/~google/gemini-flash-latest/endpoints"
@@ -740,13 +1021,13 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0.000001",
-			"completion": "0.000003",
-			"image": "0.0000005",
-			"input_cache_read": "0.00000005",
+			"audio": "0.000003",
+			"completion": "0.000009",
+			"image": "0.0000015",
+			"input_cache_read": "0.00000015",
 			"input_cache_write": "0.00000008333333333333334",
-			"internal_reasoning": "0.000003",
-			"prompt": "0.0000005",
+			"internal_reasoning": "0.000009",
+			"prompt": "0.0000015",
 			"web_search": "0.014"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
@@ -761,9 +1042,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Router"
 		},
@@ -882,8 +1163,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000024",
-			"prompt": "0.0000004"
+			"completion": "0.0000018",
+			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
@@ -921,9 +1202,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000015",
-			"input_cache_write": "0.0000003125",
-			"prompt": "0.00000025"
+			"completion": "0.000001125",
+			"input_cache_write": "0.000000234375",
+			"prompt": "0.0000001875"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
@@ -969,7 +1250,7 @@
 			"input_cache_read": "0.00000005",
 			"prompt": "0.00000015"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1053,15 +1334,15 @@
 		"pricing":
 		{
 			"completion": "0.0000032",
-			"prompt": "0.00000032"
+			"prompt": "0.000000317"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 262140,
 			"is_moderated": false,
-			"max_completion_tokens": 81920
+			"max_completion_tokens": 262140
 		}
 	},
 	{
@@ -1230,6 +1511,52 @@
 		"description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
 		"expiration_date": null,
 		"hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
+		"id": "deepseek/deepseek-v4-flash:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/deepseek/deepseek-v4-flash-20260423/endpoints"
+		},
+		"name": "DeepSeek: DeepSeek V4 Flash (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["include_reasoning", "reasoning", "tool_choice", "tools"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 384000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "DeepSeek"
+		},
+		"canonical_slug": "deepseek/deepseek-v4-flash-20260423",
+		"context_length": 1048576,
+		"created": 1777000666,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
+		"expiration_date": null,
+		"hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
 		"id": "deepseek/deepseek-v4-flash",
 		"knowledge_cutoff": null,
 		"links":
@@ -1240,17 +1567,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000028",
-			"input_cache_read": "0.0000000028",
-			"prompt": "0.00000014"
+			"completion": "0.000000224",
+			"input_cache_read": "0.000000022",
+			"prompt": "0.000000112"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1048576,
+			"context_length": 1048575,
 			"is_moderated": false,
-			"max_completion_tokens": 384000
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -1332,9 +1659,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000025",
-			"input_cache_read": "0.00000006",
-			"prompt": "0.0000003"
+			"completion": "0.000000625",
+			"input_cache_read": "0.000000015",
+			"prompt": "0.000000075"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
@@ -1658,9 +1985,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000024",
-			"input_cache_read": "0.000000016",
-			"prompt": "0.00000008"
+			"completion": "0.00000003",
+			"input_cache_read": "0.000000002",
+			"prompt": "0.00000001"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
@@ -1674,9 +2001,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Router"
 		},
@@ -1815,6 +2142,52 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["image", "text"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "baidu/qianfan-ocr-fast-20260420",
+		"context_length": 65536,
+		"created": 1776707472,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Qianfan-OCR-Fast is a domain-specific multimodal large model purpose-built for OCR. By leveraging specialized OCR training data while preserving versatile multimodal intelligence, it provides a powerful performance upgrade over Qianfan-OCR.",
+		"expiration_date": "2026-05-28",
+		"hugging_face_id": "",
+		"id": "baidu/qianfan-ocr-fast",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/baidu/qianfan-ocr-fast-20260420/endpoints"
+		},
+		"name": "Baidu: Qianfan-OCR-Fast",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000281",
+			"prompt": "0.00000068"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 65536,
+			"is_moderated": false,
+			"max_completion_tokens": 28672
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "image"],
 			"instruct_type": null,
 			"modality": "text+image->text",
@@ -1822,7 +2195,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "moonshotai/kimi-k2.6-20260420",
-		"context_length": 32768,
+		"context_length": 262144,
 		"created": 1776699402,
 		"default_parameters":
 		{
@@ -1846,25 +2219,25 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000035",
+			"completion": "0.00000349",
 			"input_cache_read": "0.00000025",
-			"prompt": "0.00000074"
+			"prompt": "0.00000073"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 32768,
+			"context_length": 262142,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 262142
 		}
 	},
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Claude"
 		},
@@ -1956,9 +2329,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Claude"
 		},
@@ -2215,8 +2588,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000038",
-			"prompt": "0.00000013"
+			"completion": "0.00000037",
+			"prompt": "0.00000012"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -2926,7 +3299,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "minimax/minimax-m2.7-20260318",
-		"context_length": 196608,
+		"context_length": 204800,
 		"created": 1773836697,
 		"default_parameters":
 		{
@@ -2951,7 +3324,7 @@
 		"pricing":
 		{
 			"completion": "0.0000012",
-			"prompt": "0.000000299"
+			"prompt": "0.000000279"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -3336,7 +3709,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
-		"context_length": 262144,
+		"context_length": 1000000,
 		"created": 1773245239,
 		"default_parameters":
 		{
@@ -3382,7 +3755,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
-		"context_length": 262144,
+		"context_length": 1000000,
 		"created": 1773245239,
 		"default_parameters":
 		{
@@ -3696,7 +4069,7 @@
 		"top_provider":
 		{
 			"context_length": 128000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 16384
 		}
 	},
@@ -3805,7 +4178,7 @@
 			"tokenizer": "Gemini"
 		},
 		"canonical_slug": "google/gemini-3.1-flash-image-preview-20260226",
-		"context_length": 65536,
+		"context_length": 131072,
 		"created": 1772119558,
 		"default_parameters":
 		{
@@ -3877,8 +4250,7 @@
 		"pricing":
 		{
 			"completion": "0.000001",
-			"input_cache_read": "0.00000005",
-			"prompt": "0.00000014"
+			"prompt": "0.000000139"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -3886,7 +4258,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 81920
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -4035,7 +4407,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "liquid/lfm-2-24b-a2b-20260224",
-		"context_length": 32768,
+		"context_length": 128000,
 		"created": 1772048711,
 		"default_parameters":
 		{
@@ -4081,7 +4453,7 @@
 			"tokenizer": "Gemini"
 		},
 		"canonical_slug": "google/gemini-3.1-pro-preview-customtools-20260219",
-		"context_length": 1048576,
+		"context_length": 1048756,
 		"created": 1772045923,
 		"default_parameters":
 		{
@@ -4267,9 +4639,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Claude"
 		},
@@ -4392,7 +4764,6 @@
 		"pricing":
 		{
 			"completion": "0.00000234",
-			"input_cache_read": "0.000000195",
 			"prompt": "0.00000039"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -4414,7 +4785,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "minimax/minimax-m2.5-20260211",
-		"context_length": 196608,
+		"context_length": 204800,
 		"created": 1770908502,
 		"default_parameters":
 		{
@@ -4460,7 +4831,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "minimax/minimax-m2.5-20260211",
-		"context_length": 196608,
+		"context_length": 204800,
 		"created": 1770908502,
 		"default_parameters":
 		{
@@ -4531,7 +4902,7 @@
 			"input_cache_read": "0.00000012",
 			"prompt": "0.0000006"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -4668,9 +5039,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Claude"
 		},
@@ -4871,7 +5242,8 @@
 		"pricing":
 		{
 			"completion": "0.0000003",
-			"prompt": "0.0000001"
+			"input_cache_read": "0.00000002",
+			"prompt": "0.00000009"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
@@ -4879,7 +5251,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -5007,8 +5379,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000198",
-			"input_cache_read": "0.00000005",
+			"completion": "0.0000019",
+			"input_cache_read": "0.00000009",
 			"prompt": "0.0000004"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
@@ -5442,7 +5814,8 @@
 		{
 			"completion": "0.000014",
 			"input_cache_read": "0.000000175",
-			"prompt": "0.00000175"
+			"prompt": "0.00000175",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -5665,7 +6038,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "minimax/minimax-m2.1",
-		"context_length": 196608,
+		"context_length": 204800,
 		"created": 1766454997,
 		"default_parameters":
 		{
@@ -6116,7 +6489,8 @@
 		{
 			"completion": "0.000014",
 			"input_cache_read": "0.000000175",
-			"prompt": "0.00000175"
+			"prompt": "0.00000175",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -6207,7 +6581,8 @@
 		{
 			"completion": "0.000014",
 			"input_cache_read": "0.000000175",
-			"prompt": "0.00000175"
+			"prompt": "0.00000175",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -6258,9 +6633,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text"],
+			"input_modalities": ["text", "file"],
 			"instruct_type": null,
-			"modality": "text->text",
+			"modality": "text+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -6377,7 +6752,7 @@
 			"input_cache_read": "0.00000005",
 			"prompt": "0.0000003"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -6823,9 +7198,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -7738,7 +8113,8 @@
 		{
 			"completion": "0.00001",
 			"input_cache_read": "0.00000013",
-			"prompt": "0.00000125"
+			"prompt": "0.00000125",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -7830,7 +8206,8 @@
 		{
 			"completion": "0.00001",
 			"input_cache_read": "0.000000125",
-			"prompt": "0.00000125"
+			"prompt": "0.00000125",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -7877,7 +8254,8 @@
 		{
 			"completion": "0.000002",
 			"input_cache_read": "0.00000003",
-			"prompt": "0.00000025"
+			"prompt": "0.00000025",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -8078,7 +8456,6 @@
 		"pricing":
 		{
 			"completion": "0.0000025",
-			"input_cache_read": "0.00000015",
 			"prompt": "0.0000006"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
@@ -8221,9 +8598,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "audio"],
+			"input_modalities": ["text", "audio", "file"],
 			"instruct_type": null,
-			"modality": "text+audio->text",
+			"modality": "text+file+audio->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -8442,7 +8819,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "minimax/minimax-m2",
-		"context_length": 196608,
+		"context_length": 204800,
 		"created": 1761252093,
 		"default_parameters":
 		{
@@ -8486,7 +8863,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen3-vl-32b-instruct",
-		"context_length": 131072,
+		"context_length": 262144,
 		"created": 1761231332,
 		"default_parameters":
 		{
@@ -8669,16 +9046,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000011",
+			"completion": "0.000000112",
 			"prompt": "0.000000017"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131000,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131000
 		}
 	},
 	{
@@ -8691,7 +9068,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "microsoft/phi-4-mini-instruct",
-		"context_length": 128000,
+		"context_length": 131072,
 		"created": 1760726049,
 		"default_parameters":
 		{},
@@ -8806,9 +9183,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["image", "text"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Claude"
 		},
@@ -8862,7 +9239,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-vl-8b-thinking",
-		"context_length": 131072,
+		"context_length": 256000,
 		"created": 1760463746,
 		"default_parameters":
 		{
@@ -8904,7 +9281,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-vl-8b-instruct",
-		"context_length": 131072,
+		"context_length": 256000,
 		"created": 1760463308,
 		"default_parameters":
 		{
@@ -9346,7 +9723,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-vl-30b-a3b-instruct",
-		"context_length": 131072,
+		"context_length": 262144,
 		"created": 1759794476,
 		"default_parameters":
 		{
@@ -9474,7 +9851,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "z-ai/glm-4.6",
-		"context_length": 204800,
+		"context_length": 202752,
 		"created": 1759235576,
 		"default_parameters":
 		{
@@ -9498,16 +9875,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000019",
-			"prompt": "0.00000039"
+			"completion": "0.00000174",
+			"input_cache_read": "0.00000008",
+			"prompt": "0.00000043"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 204800,
+			"context_length": 202752,
 			"is_moderated": false,
-			"max_completion_tokens": 204800
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -9993,7 +10371,8 @@
 		{
 			"completion": "0.00001",
 			"input_cache_read": "0.000000125",
-			"prompt": "0.00000125"
+			"prompt": "0.00000125",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -10387,7 +10766,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-next-80b-a3b-thinking-2509",
-		"context_length": 131072,
+		"context_length": 262144,
 		"created": 1757612284,
 		"default_parameters":
 		{
@@ -10879,8 +11258,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002",
-			"prompt": "0.0000004"
+			"completion": "0.0000025",
+			"prompt": "0.0000006"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
@@ -11358,7 +11737,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-chat-v3.1",
-		"context_length": 32768,
+		"context_length": 163840,
 		"created": 1755779628,
 		"default_parameters":
 		{},
@@ -11375,16 +11754,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000075",
-			"prompt": "0.00000015"
+			"completion": "0.00000079",
+			"input_cache_read": "0.00000013",
+			"prompt": "0.00000021"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 32768,
+			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 7168
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -11470,9 +11850,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -11519,7 +11899,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "baidu/ernie-4.5-21b-a3b",
-		"context_length": 120000,
+		"context_length": 131072,
 		"created": 1755034167,
 		"default_parameters":
 		{
@@ -11562,7 +11942,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "baidu/ernie-4.5-vl-28b-a3b",
-		"context_length": 30000,
+		"context_length": 131072,
 		"created": 1755032836,
 		"default_parameters":
 		{},
@@ -11626,7 +12006,7 @@
 			"input_cache_read": "0.00000011",
 			"prompt": "0.0000006"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -11784,7 +12164,8 @@
 		{
 			"completion": "0.00001",
 			"input_cache_read": "0.000000125",
-			"prompt": "0.00000125"
+			"prompt": "0.00000125",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -11879,7 +12260,8 @@
 		{
 			"completion": "0.0000004",
 			"input_cache_read": "0.00000001",
-			"prompt": "0.00000005"
+			"prompt": "0.00000005",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -12151,9 +12533,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text"],
+			"input_modalities": ["text", "file"],
 			"instruct_type": null,
-			"modality": "text->text",
+			"modality": "text+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -12409,7 +12791,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-235b-a22b-thinking-2507",
-		"context_length": 131072,
+		"context_length": 262144,
 		"created": 1753449557,
 		"default_parameters":
 		{
@@ -12495,7 +12877,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-coder-480b-a35b-07-25",
-		"context_length": 262000,
+		"context_length": 1048576,
 		"created": 1753230546,
 		"default_parameters":
 		{},
@@ -12568,7 +12950,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-coder-480b-a35b-07-25",
-		"context_length": 262144,
+		"context_length": 1048576,
 		"created": 1753230546,
 		"default_parameters":
 		{},
@@ -12875,9 +13257,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text"],
+			"input_modalities": ["text", "file"],
 			"instruct_type": null,
-			"modality": "text->text",
+			"modality": "text+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -12917,9 +13299,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text"],
+			"input_modalities": ["text", "file"],
 			"instruct_type": null,
-			"modality": "text->text",
+			"modality": "text+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -13324,7 +13706,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "baidu/ernie-4.5-vl-424b-a47b",
-		"context_length": 123000,
+		"context_length": 131072,
 		"created": 1751300903,
 		"default_parameters":
 		{},
@@ -13363,7 +13745,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "baidu/ernie-4.5-300b-a47b",
-		"context_length": 123000,
+		"context_length": 131072,
 		"created": 1751300139,
 		"default_parameters":
 		{},
@@ -13383,7 +13765,7 @@
 			"completion": "0.0000011",
 			"prompt": "0.00000028"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -14610,9 +14992,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -15120,7 +15502,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-30b-a3b-04-28",
-		"context_length": 40960,
+		"context_length": 131072,
 		"created": 1745878604,
 		"default_parameters":
 		{
@@ -15199,7 +15581,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-8b-04-28",
-		"context_length": 40960,
+		"context_length": 131072,
 		"created": 1745876632,
 		"default_parameters":
 		{
@@ -15282,7 +15664,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-14b-04-28",
-		"context_length": 40960,
+		"context_length": 131702,
 		"created": 1745876478,
 		"default_parameters":
 		{},
@@ -15300,7 +15682,7 @@
 		"pricing":
 		{
 			"completion": "0.00000024",
-			"prompt": "0.00000006"
+			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -15321,7 +15703,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-32b-04-28",
-		"context_length": 40960,
+		"context_length": 131072,
 		"created": 1745875945,
 		"default_parameters":
 		{},
@@ -15902,7 +16284,8 @@
 		{
 			"completion": "0.000008",
 			"input_cache_read": "0.0000005",
-			"prompt": "0.000002"
+			"prompt": "0.000002",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
@@ -16576,7 +16959,7 @@
 			"tokenizer": "Llama4"
 		},
 		"canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
-		"context_length": 327680,
+		"context_length": 10000000,
 		"created": 1743881519,
 		"default_parameters":
 		{},
@@ -16823,7 +17206,8 @@
 		"pricing":
 		{
 			"completion": "0.0006",
-			"prompt": "0.00015"
+			"prompt": "0.00015",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs"],
 		"supported_voices": null,
@@ -16898,16 +17282,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000056",
-			"prompt": "0.00000035"
+			"completion": "0.000000555",
+			"prompt": "0.000000351"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -17949,9 +18333,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text"],
+			"input_modalities": ["text", "file"],
 			"instruct_type": null,
-			"modality": "text->text",
+			"modality": "text+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -18160,15 +18544,15 @@
 		"pricing":
 		{
 			"completion": "0.00000003",
-			"prompt": "0.00000048"
+			"prompt": "0.000000484"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -18204,7 +18588,8 @@
 		{
 			"completion": "0.0000044",
 			"input_cache_read": "0.00000055",
-			"prompt": "0.0000011"
+			"prompt": "0.0000011",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -18586,7 +18971,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen2.5-vl-72b-instruct",
-		"context_length": 32000,
+		"context_length": 131072,
 		"created": 1738410311,
 		"default_parameters":
 		{},
@@ -18732,7 +19117,8 @@
 		{
 			"completion": "0.0000044",
 			"input_cache_read": "0.00000055",
-			"prompt": "0.0000011"
+			"prompt": "0.0000011",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -18834,7 +19220,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "deepseek/deepseek-r1-distill-qwen-32b",
-		"context_length": 32768,
+		"context_length": 128000,
 		"created": 1738194830,
 		"default_parameters":
 		{},
@@ -19204,7 +19590,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-r1",
-		"context_length": 64000,
+		"context_length": 163840,
 		"created": 1737381095,
 		"default_parameters":
 		{
@@ -19231,7 +19617,7 @@
 			"completion": "0.0000025",
 			"prompt": "0.0000007"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_completion_tokens", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_completion_tokens", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -19513,7 +19899,8 @@
 		{
 			"completion": "0.00006",
 			"input_cache_read": "0.0000075",
-			"prompt": "0.000015"
+			"prompt": "0.000015",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
@@ -19678,7 +20065,7 @@
 			"tokenizer": "Llama3"
 		},
 		"canonical_slug": "meta-llama/llama-3.3-70b-instruct",
-		"context_length": 65536,
+		"context_length": 131072,
 		"created": 1733506137,
 		"default_parameters":
 		{},
@@ -19942,9 +20329,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text"],
+			"input_modalities": ["text", "file"],
 			"instruct_type": null,
-			"modality": "text->text",
+			"modality": "text+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -19984,9 +20371,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text"],
+			"input_modalities": ["text", "file"],
 			"instruct_type": null,
-			"modality": "text->text",
+			"modality": "text+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -20026,9 +20413,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "file"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -20111,7 +20498,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen-2.5-coder-32b-instruct",
-		"context_length": 32768,
+		"context_length": 128000,
 		"created": 1731368400,
 		"default_parameters":
 		{},
@@ -20131,13 +20518,13 @@
 			"completion": "0.000001",
 			"prompt": "0.00000066"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -20306,7 +20693,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "anthracite-org/magnum-v4-72b",
-		"context_length": 16384,
+		"context_length": 32768,
 		"created": 1729555200,
 		"default_parameters":
 		{},
@@ -20451,7 +20838,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen-2.5-7b-instruct",
-		"context_length": 32768,
+		"context_length": 131072,
 		"created": 1729036800,
 		"default_parameters":
 		{
@@ -20798,7 +21185,7 @@
 			"tokenizer": "Llama3"
 		},
 		"canonical_slug": "meta-llama/llama-3.2-3b-instruct",
-		"context_length": 80000,
+		"context_length": 131072,
 		"created": 1727222400,
 		"default_parameters":
 		{},
@@ -20815,16 +21202,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000034",
-			"prompt": "0.000000051"
+			"completion": "0.000000335",
+			"prompt": "0.0000000509"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 80000,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 80000
 		}
 	},
 	{
@@ -20837,7 +21224,7 @@
 			"tokenizer": "Llama3"
 		},
 		"canonical_slug": "meta-llama/llama-3.2-1b-instruct",
-		"context_length": 60000,
+		"context_length": 131072,
 		"created": 1727222400,
 		"default_parameters":
 		{},
@@ -20854,16 +21241,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000002",
+			"completion": "0.000000201",
 			"prompt": "0.000000027"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 60000,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 60000
 		}
 	},
 	{
@@ -20951,7 +21338,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "qwen/qwen-2.5-72b-instruct",
-		"context_length": 32768,
+		"context_length": 131072,
 		"created": 1726704000,
 		"default_parameters":
 		{},
@@ -21613,7 +22000,7 @@
 			"tokenizer": "Llama3"
 		},
 		"canonical_slug": "meta-llama/llama-3.1-8b-instruct",
-		"context_length": 16384,
+		"context_length": 131072,
 		"created": 1721692800,
 		"default_parameters":
 		{},
@@ -21817,7 +22204,7 @@
 			"completion": "0.00000003",
 			"prompt": "0.00000002"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -22604,7 +22991,7 @@
 			"completion": "0.00000004",
 			"prompt": "0.00000004"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -22643,7 +23030,7 @@
 			"completion": "0.00000074",
 			"prompt": "0.00000051"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -22655,9 +23042,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text"],
+			"input_modalities": ["text", "file"],
 			"instruct_type": "mistral",
-			"modality": "text->text",
+			"modality": "text+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -22704,7 +23091,7 @@
 			"tokenizer": "Mistral"
 		},
 		"canonical_slug": "microsoft/wizardlm-2-8x22b",
-		"context_length": 65535,
+		"context_length": 65536,
 		"created": 1713225600,
 		"default_parameters":
 		{},
@@ -22724,7 +23111,7 @@
 			"completion": "0.00000062",
 			"prompt": "0.00000062"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -23106,9 +23493,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text"],
+			"input_modalities": ["text", "file"],
 			"instruct_type": null,
-			"modality": "text->text",
+			"modality": "text+file->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Mistral"
 		},
@@ -23517,7 +23904,8 @@
 		"pricing":
 		{
 			"completion": "0.00003",
-			"prompt": "0.00001"
+			"prompt": "0.00001",
+			"web_search": "0.01"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -23577,7 +23965,7 @@
 			"tokenizer": "Mistral"
 		},
 		"canonical_slug": "mistralai/mistral-7b-instruct-v0.1",
-		"context_length": 2824,
+		"context_length": 4096,
 		"created": 1695859200,
 		"default_parameters":
 		{
@@ -23599,13 +23987,13 @@
 			"completion": "0.00000019",
 			"prompt": "0.00000011"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 2824,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 2824
 		}
 	},
 	{

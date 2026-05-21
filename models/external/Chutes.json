@@ -232,7 +232,6 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
-		"premium": false,
 		"price":
 		{
 			"input":
@@ -711,6 +710,37 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "98ac1f3c-a140-5a06-90ff-4507c2b7802c",
+		"confidential_compute": true,
+		"created": 0,
+		"id": "Qwen/Qwen2.5-Coder-32B-Instruct-TEE",
+		"max_model_len": 32768,
+		"object": "model",
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "RedHatAI/Qwen2.5-Coder-32B-Instruct-FP8-dynamic"
+	},
+	{
 		"chute_id": "41d0bdad-9127-5d30-8d9f-e743577f4293",
 		"confidential_compute": false,
 		"context_length": 16384,
@@ -992,7 +1022,6 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
-		"premium": false,
 		"price":
 		{
 			"input":
@@ -1182,7 +1211,6 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
-		"premium": false,
 		"price":
 		{
 			"input":
@@ -1594,7 +1622,6 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
-		"premium": false,
 		"price":
 		{
 			"input":
@@ -1634,7 +1661,6 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
-		"premium": false,
 		"price":
 		{
 			"input":
@@ -3179,7 +3205,6 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
-		"premium": false,
 		"price":
 		{
 			"input":
@@ -3219,7 +3244,6 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
-		"premium": false,
 		"price":
 		{
 			"input":
@@ -3734,7 +3758,6 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
-		"premium": false,
 		"price":
 		{
 			"input":
@@ -3774,7 +3797,6 @@
 		"owned_by": "vllm",
 		"parent": null,
 		"permission": [],
-		"premium": false,
 		"price":
 		{
 			"input":
@@ -4660,6 +4682,37 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "7725a31d-28df-5bb7-9d29-c23b49df5472",
+		"confidential_compute": true,
+		"created": 0,
+		"id": "unsloth/Mistral-Nemo-Instruct-2407-TEE",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "unsloth/Mistral-Nemo-Instruct-2407"
+	},
+	{
 		"chute_id": "986b874c-bf41-549f-b28f-4322f86fa4ba",
 		"confidential_compute": false,
 		"context_length": 32768,
@@ -5508,7 +5561,6 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
-		"premium": false,
 		"price":
 		{
 			"input":
@@ -5586,7 +5638,6 @@
 		"output_modalities": ["text"],
 		"owned_by": "sglang",
 		"parent": null,
-		"premium": false,
 		"price":
 		{
 			"input":
