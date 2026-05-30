@@ -1795,6 +1795,30 @@
 	},
 	{
 		"created": 0,
+		"id": "Qwen/Qwen3.7-Max",
+		"metadata":
+		{
+			"context_length": 256000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The largest and most capable in the Qwen3.7 series. Qwen3.7 is a next‑generation flagship model designed for the agent‑centric.",
+			"max_tokens": 256000,
+			"pricing":
+			{
+				"cache_read_tokens": 0.5,
+				"input_tokens": 2.5,
+				"output_tokens": 7.5
+			},
+			"tags": ["chat", "prompt_cache", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.7-Max"
+	},
+	{
+		"created": 0,
 		"id": "ResembleAI/chatterbox-multilingual",
 		"metadata":
 		{
@@ -2288,6 +2312,29 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "anthropic/claude-opus-4-7"
+	},
+	{
+		"created": 0,
+		"id": "anthropic/claude-opus-4-8",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Claude Opus 4.8 is our most intelligent Opus model and the best generally available model for coding and agents, with deeper reasoning for enterprise workflows.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 5.0,
+				"output_tokens": 25.0
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "anthropic/claude-opus-4-8"
 	},
 	{
 		"created": 0,
@@ -2938,9 +2985,9 @@
 			"max_tokens": 1048576,
 			"pricing":
 			{
-				"cache_read_tokens": 0.028000000000000004,
-				"input_tokens": 0.14,
-				"output_tokens": 0.28
+				"cache_read_tokens": 0.020000000000000004,
+				"input_tokens": 0.1,
+				"output_tokens": 0.2
 			},
 			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
@@ -2954,17 +3001,17 @@
 		"id": "deepseek-ai/DeepSeek-V4-Pro",
 		"metadata":
 		{
-			"context_length": 65536,
+			"context_length": 1048576,
 			"default_height": null,
 			"default_iterations": null,
 			"default_width": null,
 			"description": "DeepSeek V4 Pro is an MoE model with 1.6T total parameters (49B active) and a 1M-token context window. It's built for advanced reasoning, coding, and long-running agent tasks, and performs well on knowledge, math, and software engineering benchmarks.",
-			"max_tokens": 65536,
+			"max_tokens": 1048576,
 			"pricing":
 			{
-				"cache_read_tokens": 0.14499999419999998,
-				"input_tokens": 1.74,
-				"output_tokens": 3.48
+				"cache_read_tokens": 0.10000000399999999,
+				"input_tokens": 1.2999999999999998,
+				"output_tokens": 2.5999999999999996
 			},
 			"tags": ["chat", "prompt_cache"]
 		},
@@ -3210,6 +3257,29 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "google/gemini-3.1-pro"
+	},
+	{
+		"created": 0,
+		"id": "google/gemini-3.5-flash",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Gemini 3.5 Flash delivers near-Pro intelligence at Flash-tier cost and speed: Pro-level coding proficiency, parallel agentic execution, all at a much lower price.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 1.4999999999999998,
+				"output_tokens": 9.0
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/gemini-3.5-flash"
 	},
 	{
 		"created": 0,

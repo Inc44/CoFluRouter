@@ -280,6 +280,20 @@
 		},
 		"sn_metadata":
 		{}
+	},
+	{
+		"context_length": 131072,
+		"id": "gemma-4-31B-it",
+		"max_completion_tokens": 131072,
+		"object": "model",
+		"owned_by": "no-reply@sambanova.ai",
+		"pricing":
+		{
+			"completion": "0.00000115",
+			"prompt": "0.00000038"
+		},
+		"sn_metadata":
+		{}
 	}],
 	"object": "list"
 }
