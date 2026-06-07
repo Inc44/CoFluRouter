@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"created": 1779840000,
+		"id": "grok-imagine-video-1.5-preview",
+		"object": "model",
+		"owned_by": "xai"
+	},
+	{
 		"cached_prompt_text_token_price": 2000,
 		"cached_prompt_text_token_price_long_context": 4000,
 		"completion_text_token_price": 25000,

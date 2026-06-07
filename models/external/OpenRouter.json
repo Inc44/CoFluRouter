@@ -3,6 +3,233 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "nvidia/nemotron-3.5-content-safety-20260604",
+		"context_length": 128000,
+		"created": 1780581864,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting...",
+		"expiration_date": null,
+		"hugging_face_id": "nvidia/Nemotron-3.5-Content-Safety",
+		"id": "nvidia/nemotron-3.5-content-safety:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/nvidia/nemotron-3.5-content-safety-20260604/endpoints"
+		},
+		"name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "temperature", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": false,
+			"max_completion_tokens": 8192
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+		"context_length": 1000000,
+		"created": 1780551208,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": null,
+			"top_p": 0.95
+		},
+		"description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
+		"expiration_date": null,
+		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+		"id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/nvidia/nemotron-3-ultra-550b-a55b-20260604/endpoints"
+		},
+		"name": "NVIDIA: Nemotron 3 Ultra (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+		"context_length": 1000000,
+		"created": 1780551208,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": null,
+			"top_p": 0.95
+		},
+		"description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
+		"expiration_date": null,
+		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+		"id": "nvidia/nemotron-3-ultra-550b-a55b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/nvidia/nemotron-3-ultra-550b-a55b-20260604/endpoints"
+		},
+		"name": "NVIDIA: Nemotron 3 Ultra",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000025",
+			"input_cache_read": "0.00000015",
+			"prompt": "0.0000005"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 16384
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "qwen/qwen3.7-plus-20260602",
+		"context_length": 1000000,
+		"created": 1780491783,
+		"default_parameters":
+		{},
+		"description": "Qwen3.7-Plus is a cost-effective model in Alibaba's Qwen3.7 series. It supports text and image input with text output, building on the series' text capabilities with a comprehensive upgrade to its...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "qwen/qwen3.7-plus",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.7-plus-20260602/endpoints"
+		},
+		"name": "Qwen: Qwen3.7 Plus",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000016",
+			"input_cache_read": "0.00000008",
+			"input_cache_write": "0.0000005",
+			"prompt": "0.0000004"
+		},
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "minimax/minimax-m3-20260531",
+		"context_length": 1048576,
+		"created": 1780245374,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": null,
+			"top_p": 0.95
+		},
+		"description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,...",
+		"expiration_date": null,
+		"hugging_face_id": "",
+		"id": "minimax/minimax-m3",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/minimax/minimax-m3-20260531/endpoints"
+		},
+		"name": "MiniMax: MiniMax M3",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000012",
+			"input_cache_read": "0.00000006",
+			"prompt": "0.0000003"
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 524288,
+			"is_moderated": false,
+			"max_completion_tokens": 512000
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text", "image", "video"],
 			"instruct_type": null,
 			"modality": "text+image+video->text",
@@ -340,6 +567,52 @@
 			"context_length": 1000000,
 			"is_moderated": true,
 			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Router"
+		},
+		"canonical_slug": "openrouter/fusion",
+		"context_length": 128000,
+		"created": 1778603606,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Fusion turns your prompt into a small multi-model deliberation. A panel of expert models (see below) analyzes your prompt in parallel with web search and web fetch enabled, then a...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openrouter/fusion",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openrouter/fusion/endpoints"
+		},
+		"name": "OpenRouter: Fusion",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "-1",
+			"prompt": "-1"
+		},
+		"supported_parameters": [],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": null,
+			"is_moderated": false,
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -1479,16 +1752,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000032",
-			"prompt": "0.00000029"
+			"completion": "0.0000024",
+			"prompt": "0.000000289"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 262140,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 262140
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -2780,16 +3053,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000037",
+			"completion": "0.00000036",
+			"input_cache_read": "0.00000009",
 			"prompt": "0.00000012"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 256000,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 8192
 		}
 	},
 	{
@@ -3516,7 +3790,7 @@
 		"pricing":
 		{
 			"completion": "0.0000012",
-			"prompt": "0.00000026"
+			"prompt": "0.000000279"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -3524,7 +3798,7 @@
 		{
 			"context_length": 196608,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 196608
 		}
 	},
 	{
@@ -6558,7 +6832,7 @@
 			"input_cache_read": "0.00000001",
 			"prompt": "0.0000001"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -7019,7 +7293,7 @@
 			"top_p": null
 		},
 		"description": "DeepSeek V3.1 Nex-N1 is the flagship release of the Nex-N1 series — a post-trained model designed to highlight agent autonomy, tool use, and real-world productivity. Nex-N1 demonstrates competitive performance across all evaluation scenarios, showing particularly strong results in practical coding and HTML generation tasks.",
-		"expiration_date": null,
+		"expiration_date": "2026-06-08",
 		"hugging_face_id": "nex-agi/DeepSeek-V3.1-Nex-N1",
 		"id": "nex-agi/deepseek-v3.1-nex-n1",
 		"knowledge_cutoff": null,
@@ -7595,17 +7869,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000378",
-			"input_cache_read": "0.0000000252",
-			"prompt": "0.000000252"
+			"completion": "0.0000003432",
+			"prompt": "0.0000002288"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 64000
 		}
 	},
 	{
@@ -11298,7 +11571,7 @@
 			"top_p": null
 		},
 		"description": "NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response. \n\nThe model's reasoning capabilities can be controlled via a system prompt. If the user prefers the model to provide its final answer without intermediate reasoning traces, it can be configured to do so.",
-		"expiration_date": null,
+		"expiration_date": "2026-06-11",
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
 		"id": "nvidia/nemotron-nano-9b-v2",
 		"knowledge_cutoff": "2025-03-31",
@@ -12817,7 +13090,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-30b-a3b-instruct-2507",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1753806965,
 		"default_parameters":
 		{},
@@ -12834,16 +13107,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000003",
-			"prompt": "0.00000009"
+			"completion": "0.00000019305",
+			"prompt": "0.00000004815"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": 32000
 		}
 	},
 	{
@@ -12865,7 +13138,7 @@
 			"top_p": null
 		},
 		"description": "GLM-4.5 is our latest flagship foundation model, purpose-built for agent-based applications. It leverages a Mixture-of-Experts (MoE) architecture and supports a context length of up to 128k tokens. GLM-4.5 delivers significantly enhanced capabilities in reasoning, code generation, and agent alignment. It supports a hybrid inference mode with two options, a \"thinking mode\" designed for complex reasoning and tool use, and a \"non-thinking mode\" optimized for instant responses. Users can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
-		"expiration_date": "2026-02-12",
+		"expiration_date": "2026-06-19",
 		"hugging_face_id": "zai-org/GLM-4.5",
 		"id": "z-ai/glm-4.5",
 		"knowledge_cutoff": "2024-12-31",
@@ -13008,16 +13281,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001495",
-			"prompt": "0.0000001495"
+			"completion": "0.0000001",
+			"input_cache_read": "0.0000001",
+			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -14870,7 +15144,7 @@
 			"prompt": "0.000015",
 			"web_search": "0.01"
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -15731,7 +16005,7 @@
 		{
 			"context_length": 40960,
 			"is_moderated": false,
-			"max_completion_tokens": 20000
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -17103,7 +17377,7 @@
 			"completion": "0.0000006",
 			"prompt": "0.00000015"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -19719,7 +19993,7 @@
 		"default_parameters":
 		{},
 		"description": "DeepSeek R1 Distill Llama 70B is a distilled large language model based on [Llama-3.3-70B-Instruct](/meta-llama/llama-3.3-70b-instruct), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). The model combines advanced distillation techniques to achieve high performance across multiple benchmarks, including:\n\n- AIME 2024 pass@1: 70.0\n- MATH-500 pass@1: 94.5\n- CodeForces Rating: 1633\n\nThe model leverages fine-tuning from DeepSeek R1's outputs, enabling competitive performance comparable to larger frontier models.",
-		"expiration_date": null,
+		"expiration_date": "2026-06-11",
 		"hugging_face_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
 		"id": "deepseek/deepseek-r1-distill-llama-70b",
 		"knowledge_cutoff": "2024-07-31",
@@ -20011,8 +20285,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000009144",
-			"prompt": "0.0000002288"
+			"completion": "0.0000008001",
+			"prompt": "0.0000002002"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
@@ -21061,7 +21335,7 @@
 			"completion": "0.0000001",
 			"prompt": "0.00000004"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -22216,14 +22490,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000005",
+			"completion": "0.00000003",
 			"prompt": "0.00000002"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 16384,
+			"context_length": 131072,
 			"is_moderated": false,
 			"max_completion_tokens": 16384
 		}
@@ -23187,16 +23461,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000004",
-			"prompt": "0.00000004"
+			"completion": "0.00000014",
+			"prompt": "0.00000014"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "stop", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 8192,
 			"is_moderated": false,
-			"max_completion_tokens": 8192
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -23214,7 +23488,7 @@
 		"default_parameters":
 		{},
 		"description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 70B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
-		"expiration_date": null,
+		"expiration_date": "2026-06-19",
 		"hugging_face_id": "meta-llama/Meta-Llama-3-70B-Instruct",
 		"id": "meta-llama/llama-3-70b-instruct",
 		"knowledge_cutoff": "2023-12-31",

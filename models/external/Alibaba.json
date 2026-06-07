@@ -1,6 +1,54 @@
 {
 	"data": [
 	{
+		"created": 1780649801,
+		"id": "qwen3.5-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1780644989,
+		"id": "wan2.7-image",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1780644949,
+		"id": "wan2.7-image-pro",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1780631532,
+		"id": "qwen3.5-flash-2026-02-23",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1780631510,
+		"id": "qwen3.5-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1780474246,
+		"id": "qwen3.7-plus-2026-05-26",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1780469826,
+		"id": "qwen3.7-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1780387777,
+		"id": "qwen3-235b-a22b-thinking-2507",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1779992856,
 		"id": "qwen3.6-flash",
 		"object": "model",
@@ -133,26 +181,8 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1778726171,
-		"id": "wan2.7-image-pro",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1778726101,
-		"id": "wan2.7-image",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1778725927,
 		"id": "qwen3.6-35b-a3b",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1778725901,
-		"id": "qwen3.5-plus",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -333,18 +363,6 @@
 	{
 		"created": 1772462022,
 		"id": "qwen3.5-35b-a3b",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1772461993,
-		"id": "qwen3.5-flash-2026-02-23",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1772461958,
-		"id": "qwen3.5-flash",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -937,12 +955,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1760413428,
-		"id": "qwen3-235b-a22b-thinking-2507",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1760413112,
 		"id": "qwen-vl-max",
 		"object": "model",
@@ -998,6 +1010,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-163",
+	"last_id": "model-id-144",
 	"object": "list"
 }

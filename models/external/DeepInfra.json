@@ -571,6 +571,30 @@
 	},
 	{
 		"created": 0,
+		"id": "MiniMaxAI/MiniMax-M2.7",
+		"metadata":
+		{
+			"context_length": 196608,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "MiniMax-M2.7 is MiniMax's first model deeply participating in its own evolution. M2.7 is capable of building complex agent harnesses and completing highly elaborate productivity tasks, leveraging Agent Teams, complex Skills, and dynamic tool search.",
+			"max_tokens": 196608,
+			"pricing":
+			{
+				"cache_read_tokens": 0.054999998999999994,
+				"input_tokens": 0.3,
+				"output_tokens": 1.2
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "MiniMaxAI/MiniMax-M2.7"
+	},
+	{
+		"created": 0,
 		"id": "NousResearch/Hermes-3-Llama-3.1-405B",
 		"metadata":
 		{
@@ -1690,9 +1714,9 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.30000000099999996,
-				"input_tokens": 0.49,
-				"output_tokens": 3.6
+				"cache_read_tokens": 0.22000000050000001,
+				"input_tokens": 0.45,
+				"output_tokens": 2.9999999999999996
 			},
 			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
@@ -4629,6 +4653,30 @@
 	},
 	{
 		"created": 0,
+		"id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Nemotron 3 Ultra is built for, frontier reasoning, orchestration, coding agents, deep research, and complex enterprise workflows. It delivers up to 5x faster inference and up to 30% lower cost for agentic workloads while supporting up to 1M token context.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.15,
+				"input_tokens": 0.5,
+				"output_tokens": 2.5
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL",
 		"metadata":
 		{
@@ -4718,6 +4766,28 @@
 	},
 	{
 		"created": 0,
+		"id": "nvidia/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Nemotron 3.5 ASR Streaming Multilingual is an open 0.6B-parameter prompt-conditioned cache-aware FastConformer-RNNT model, engineered for low-latency streaming transcription across 40+ languages. It powers real-time captioning, voice agents, and multilingual transcription pipelines—replacing separate per-language Whisper deployments with a single inference pass.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_seconds": 3.3300000000000003e-06
+			},
+			"tags": ["stt"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/Nemotron-4-340B-Instruct",
 		"metadata":
 		{
@@ -4735,6 +4805,29 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "nvidia/Nemotron-4-340B-Instruct"
+	},
+	{
+		"created": 0,
+		"id": "nvidia/Nemotron-Content-Safety-3.5",
+		"metadata":
+		{
+			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Nemotron Content Safety 3.5 is a multimodal safety classifier developed by NVIDIA. A compact safety model that handles text, images, and custom policies. It outputs a safe/unsafe classification plus a reasoning trace, and can be used as an inference-time guardrail, as a judge for LLM safety testing and evaluation, or with the accompanying training dataset to post-train models for safer behavior.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.2,
+				"output_tokens": 0.2
+			},
+			"tags": ["chat", "vlm", "vision"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/Nemotron-Content-Safety-3.5"
 	},
 	{
 		"created": 0,

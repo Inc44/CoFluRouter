@@ -49,7 +49,11 @@
 				{
 					"supported": true
 				},
-				"supported": true
+				"supported": true,
+				"xhigh":
+				{
+					"supported": true
+				}
 			},
 			"image_input":
 			{
@@ -135,7 +139,11 @@
 				{
 					"supported": true
 				},
-				"supported": true
+				"supported": true,
+				"xhigh":
+				{
+					"supported": true
+				}
 			},
 			"image_input":
 			{
@@ -221,7 +229,11 @@
 				{
 					"supported": true
 				},
-				"supported": true
+				"supported": true,
+				"xhigh":
+				{
+					"supported": false
+				}
 			},
 			"image_input":
 			{
@@ -307,7 +319,11 @@
 				{
 					"supported": true
 				},
-				"supported": true
+				"supported": true,
+				"xhigh":
+				{
+					"supported": false
+				}
 			},
 			"image_input":
 			{
@@ -393,7 +409,11 @@
 				{
 					"supported": true
 				},
-				"supported": true
+				"supported": true,
+				"xhigh":
+				{
+					"supported": false
+				}
 			},
 			"image_input":
 			{
@@ -479,7 +499,11 @@
 				{
 					"supported": false
 				},
-				"supported": false
+				"supported": false,
+				"xhigh":
+				{
+					"supported": false
+				}
 			},
 			"image_input":
 			{
@@ -565,7 +589,11 @@
 				{
 					"supported": false
 				},
-				"supported": false
+				"supported": false,
+				"xhigh":
+				{
+					"supported": false
+				}
 			},
 			"image_input":
 			{
@@ -651,7 +679,11 @@
 				{
 					"supported": false
 				},
-				"supported": false
+				"supported": false,
+				"xhigh":
+				{
+					"supported": false
+				}
 			},
 			"image_input":
 			{
@@ -737,7 +769,11 @@
 				{
 					"supported": false
 				},
-				"supported": false
+				"supported": false,
+				"xhigh":
+				{
+					"supported": false
+				}
 			},
 			"image_input":
 			{
@@ -823,7 +859,11 @@
 				{
 					"supported": false
 				},
-				"supported": false
+				"supported": false,
+				"xhigh":
+				{
+					"supported": false
+				}
 			},
 			"image_input":
 			{

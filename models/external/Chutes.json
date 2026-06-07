@@ -1048,6 +1048,45 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "21d129e5-8426-5c29-a6be-844e0f5f5e30",
+		"confidential_compute": true,
+		"context_length": 262144,
+		"created": 0,
+		"id": "Qwen/Qwen3-235B-A22B-Thinking-2507-TEE",
+		"input_modalities": ["text"],
+		"max_model_len": 262144,
+		"max_output_length": 262144,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "bf16",
+		"root": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": "96b5aab1-6a45-578b-8897-6f927b3aa87f",
 		"confidential_compute": false,
 		"context_length": 40960,
