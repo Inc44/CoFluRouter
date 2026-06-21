@@ -183,6 +183,8 @@ def fetch_models():
 									model["description"],
 									merged_data[model["id"]]["description"],
 								)
+							if name == "OpenRouter":
+								model.pop("benchmarks", None)
 							merged_data[model["id"]] = model
 				merged_obj = list(merged_data.values())
 				if isinstance(obj, dict) and "data" in obj:
