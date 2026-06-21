@@ -83,6 +83,96 @@
 				}
 			}
 		},
+		"created_at": "2026-06-07T00:00:00Z",
+		"display_name": "Claude Fable 5",
+		"id": "claude-fable-5",
+		"max_input_tokens": 1000000,
+		"max_tokens": 128000,
+		"type": "model"
+	},
+	{
+		"capabilities":
+		{
+			"batch":
+			{
+				"supported": true
+			},
+			"citations":
+			{
+				"supported": true
+			},
+			"code_execution":
+			{
+				"supported": true
+			},
+			"context_management":
+			{
+				"clear_thinking_20251015":
+				{
+					"supported": true
+				},
+				"clear_tool_uses_20250919":
+				{
+					"supported": true
+				},
+				"compact_20260112":
+				{
+					"supported": true
+				},
+				"supported": true
+			},
+			"effort":
+			{
+				"high":
+				{
+					"supported": true
+				},
+				"low":
+				{
+					"supported": true
+				},
+				"max":
+				{
+					"supported": true
+				},
+				"medium":
+				{
+					"supported": true
+				},
+				"supported": true,
+				"xhigh":
+				{
+					"supported": true
+				}
+			},
+			"image_input":
+			{
+				"supported": true
+			},
+			"pdf_input":
+			{
+				"supported": true
+			},
+			"structured_outputs":
+			{
+				"supported": true
+			},
+			"thinking":
+			{
+				"supported": true,
+				"types":
+				{
+					"adaptive":
+					{
+						"supported": true
+					},
+					"enabled":
+					{
+						"supported": false
+					}
+				}
+			}
+		},
 		"created_at": "2026-05-28T00:00:00Z",
 		"display_name": "Claude Opus 4.8",
 		"id": "claude-opus-4-8",
@@ -1016,7 +1106,7 @@
 		"id": "claude-3-opus-20240229",
 		"type": "model"
 	}],
-	"first_id": "claude-opus-4-8",
+	"first_id": "claude-fable-5",
 	"has_more": false,
-	"last_id": "claude-sonnet-4-20250514"
+	"last_id": "claude-opus-4-1-20250805"
 }

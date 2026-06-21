@@ -3794,9 +3794,8 @@
 		"max_output_length": 65535,
 		"object": "model",
 		"output_modalities": ["text"],
-		"owned_by": "vllm",
+		"owned_by": "sglang",
 		"parent": null,
-		"permission": [],
 		"price":
 		{
 			"input":
@@ -4005,6 +4004,38 @@
 			"prompt": 0
 		},
 		"root": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+	},
+	{
+		"chute_id": "feedcff5-3142-527c-a9a6-9e72250df69f",
+		"confidential_compute": true,
+		"created": 0,
+		"id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-TEE",
+		"max_model_len": 262144,
+		"object": "model",
+		"owned_by": "vllm",
+		"parent": null,
+		"permission": [],
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4"
 	},
 	{
 		"chute_id": "610528a4-f2db-55c8-a43f-b83f3f215d00",
@@ -5699,6 +5730,44 @@
 		},
 		"quantization": "fp8",
 		"root": "zai-org/GLM-5.1-FP8",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "08901219-159f-55a7-87cf-9d0d02744668",
+		"confidential_compute": true,
+		"context_length": 1048576,
+		"created": 0,
+		"id": "zai-org/GLM-5.2-TEE",
+		"input_modalities": ["text"],
+		"max_model_len": 1048576,
+		"max_output_length": 65535,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "zai-org/GLM-5.2-FP8",
 		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},

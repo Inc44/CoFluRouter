@@ -177,7 +177,20 @@
 	{
 		"created": 0,
 		"id": "Bria/blur_background",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Bria Blur Background softens and de-emphasizes image backgrounds while keeping the subject sharp and clear for professional-quality results. Trained fully on licensed data, it delivers safe, natural, and commercial-ready outputs.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.04
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -204,7 +217,20 @@
 	{
 		"created": 0,
 		"id": "Bria/erase_foreground",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Bria Erase Foreground precisely removes main subjects or foreground objects from images. Built entirely on licensed data, it is safe and optimized for professional and commercial use.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.04
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -213,7 +239,20 @@
 	{
 		"created": 0,
 		"id": "Bria/expand",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Bria Expand expands images beyond their borders in high quality. Resizing the image by generating new pixels to expand to the desired aspect ratio. Trained exclusively on licensed data for safe and risk-free commercial use.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.04
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -244,7 +283,20 @@
 	{
 		"created": 0,
 		"id": "Bria/fibo_edit",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "🥳 For a limited time, Fibo Edit is free on DeepInfra 🥳 YOUR AI, YOUR RULES. Visual Generation for Production-Grade. FIBO Edit. An open-source image editing model with native masking and a lightweight 8B architecture.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.04
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -262,7 +314,20 @@
 	{
 		"created": 0,
 		"id": "Bria/remove_background",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Bria RMBG 2.0 enables seamless removal of backgrounds from images, ideal for professional editing tasks. Trained exclusively on licensed data for safe and risk-free commercial use.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.018000000000000002
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -375,6 +440,46 @@
 	},
 	{
 		"created": 0,
+		"id": "ByteDance/Seedance-1.5-Pro",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "ByteDance's Seedance 1.5 Pro is a professional video model using V2A native generation for integrated, synced audio-visual output, enhancing efficiency of professional video creation.",
+			"max_tokens": null,
+			"pricing":
+			{},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ByteDance/Seedance-1.5-Pro"
+	},
+	{
+		"created": 0,
+		"id": "ByteDance/Seedance-2.0",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "A new-generation professional-grade multimodal video creation model developed, supports video generation with multimodal reference inputs including images, videos and audio.",
+			"max_tokens": null,
+			"pricing":
+			{},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ByteDance/Seedance-2.0"
+	},
+	{
+		"created": 0,
 		"id": "ByteDance/Seedream-4",
 		"metadata":
 		{
@@ -439,6 +544,28 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "CompVis/stable-diffusion-v1-4"
+	},
+	{
+		"created": 0,
+		"id": "FastVideo/LTX2-Distilled-Diffusers",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "LTX-2 is a DiT-based audio-video foundation model designed to generate synchronized video and audio within a single model. It brings together the core building blocks of modern video generation, with open weights and a focus on practical, local execution.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.036000000000000004
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "FastVideo/LTX2-Distilled-Diffusers"
 	},
 	{
 		"created": 0,
@@ -582,9 +709,9 @@
 			"max_tokens": 196608,
 			"pricing":
 			{
-				"cache_read_tokens": 0.054999998999999994,
-				"input_tokens": 0.3,
-				"output_tokens": 1.2
+				"cache_read_tokens": 0.05,
+				"input_tokens": 0.25,
+				"output_tokens": 1.0
 			},
 			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
@@ -592,6 +719,29 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "MiniMaxAI/MiniMax-M2.7"
+	},
+	{
+		"created": 0,
+		"id": "MiniMaxAI/MiniMax-M2.7-Turbo",
+		"metadata":
+		{
+			"context_length": 196608,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Speed-optimized MiniMax-M2.7",
+			"max_tokens": 196608,
+			"pricing":
+			{
+				"input_tokens": 0.5,
+				"output_tokens": 2.25
+			},
+			"tags": ["chat", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "MiniMaxAI/MiniMax-M2.7-Turbo"
 	},
 	{
 		"created": 0,
@@ -629,8 +779,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.3,
-				"output_tokens": 0.3
+				"input_tokens": 0.7,
+				"output_tokens": 0.7
 			},
 			"tags": ["chat"]
 		},
@@ -701,6 +851,68 @@
 	},
 	{
 		"created": 0,
+		"id": "Pixverse/Pixverse-6-T2V",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "PixVerse V6 redefines AI video by shifting from isolated generation to a unified, model-driven workflow. Key upgrades include 15-second durations at 1080p resolution and a multi-shot engine. This transition allows creators to move beyond short clips toward meaningful narrative production and professional-grade marketing assets suitable for 2026 digital distribution standards.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.045
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Pixverse/Pixverse-6-T2V"
+	},
+	{
+		"created": 0,
+		"id": "Pixverse/Pixverse-T2V",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "PixVerse's 720p resolution offers a fast and reliable option for generating standard HD videos, ideal for quick previews and social media content where generation speed is prioritized over maximum detail.",
+			"max_tokens": null,
+			"pricing":
+			{},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Pixverse/Pixverse-T2V"
+	},
+	{
+		"created": 0,
+		"id": "Pixverse/Pixverse-T2V-HD",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The 1080p high-fidelity mode in PixVerse renders videos with significantly enhanced sharpness and visual clarity, capturing intricate details and providing a crisp, professional-grade quality suitable for more polished projects.",
+			"max_tokens": null,
+			"pricing":
+			{},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Pixverse/Pixverse-T2V-HD"
+	},
+	{
+		"created": 0,
 		"id": "PrunaAI/p-image",
 		"metadata":
 		{
@@ -729,6 +941,28 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "PrunaAI/p-image-Edit"
+	},
+	{
+		"created": 0,
+		"id": "PrunaAI/p-video",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Real-time AI video generation from text, images, and audio. Supports up to 1080p at 48 FPS with built-in audio generation, draft mode for 4x faster previews, and prompt upsampling.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.02
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "PrunaAI/p-video"
 	},
 	{
 		"created": 0,
@@ -793,7 +1027,20 @@
 	{
 		"created": 0,
 		"id": "Qwen/Qwen-Image-Edit",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 1024,
+			"default_iterations": 25,
+			"default_width": 1024,
+			"description": "Qwen-Image-Edit is a next-generation image editing model built on top of Qwen-Image, designed for both semantic and appearance-level edits. It excels at tasks like precise text modifications, style transfers, viewpoint transformations, and element adjustments while preserving overall visual consistency.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.025
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -1029,7 +1276,7 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.071,
+				"input_tokens": 0.09,
 				"output_tokens": 0.1
 			},
 			"tags": ["chat", "reasoning_effort"]
@@ -1076,8 +1323,8 @@
 			"max_tokens": 40960,
 			"pricing":
 			{
-				"input_tokens": 0.09,
-				"output_tokens": 0.45
+				"input_tokens": 0.12000000000000001,
+				"output_tokens": 0.5
 			},
 			"tags": ["chat", "reasoning_effort", "reasoning"]
 		},
@@ -1395,6 +1642,28 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3-Next-80B-A3B-Thinking"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-TTS",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Qwen3-TTS is an advanced text-to-speech model by Alibaba's Qwen team, delivering stable, expressive, and low-latency speech generation across 10 languages. Key capabilities: - 9 preset voices — Vivian, Serena, Uncle_Fu, Dylan, Eric, Ryan, Aiden, Ono_Anna, Sohee — covering diverse genders, ages, and accents - Voice cloning — clone any voice from a short (~3s) audio sample via the voice_id parameter - Instruction control — adjust tone, emotion, and speaking style with natural language (e.g. \"speak slowly and calmly\", \"excited tone\") - 10 languages — English, Chinese, Japanese, Korean, German, French, Russian, Spanish, Italian, Portuguese - Streaming support — real-time PCM streaming with ~97ms first-byte latency - Multiple output formats — WAV, MP3, FLAC, PCM Built on a 1.7B parameter architecture using discrete multi-codebook language modeling for end-to-end speech synthesis without cascading errors. Uses a custom 12Hz acoustic tokenizer that preserves paralinguistic information and environmental audio details.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 20.0
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-TTS"
 	},
 	{
 		"created": 0,
@@ -1761,7 +2030,7 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.04,
+				"input_tokens": 0.1,
 				"output_tokens": 0.15
 			},
 			"tags": ["chat", "vlm", "vision", "reasoning_effort"]
@@ -1993,6 +2262,28 @@
 	},
 	{
 		"created": 0,
+		"id": "Wan-AI/Wan2.2-T2V-A14B",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The Wan2.2 T2V A14B is a next-generation 14B-parameter video foundation model by Wan-AI featuring a novel two-stage denoising architecture. It produces 480P videos with improved visual coherence and detail, generating 2 or 5 second clips at 16fps from text prompts.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.036000000000000004
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Wan-AI/Wan2.2-T2V-A14B"
+	},
+	{
+		"created": 0,
 		"id": "Wan-AI/Wan2.6-Image-Edit",
 		"metadata": null,
 		"object": "model",
@@ -2021,6 +2312,28 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Wan-AI/Wan2.6-T2I"
+	},
+	{
+		"created": 0,
+		"id": "Wan-AI/Wan2.6-T2V",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Turn any prompt into a smooth video. Intelligent shot scheduling supports multi-shot storytelling, generating multi-shot narrative videos with consistent subjects, scenes, and atmosphere",
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.1
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Wan-AI/Wan2.6-T2V"
 	},
 	{
 		"created": 0,
@@ -2078,6 +2391,28 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "XiaomiMiMo/MiMo-V2.5-Pro"
+	},
+	{
+		"created": 0,
+		"id": "XiaomiMiMo/MiMo-V2.5-tts",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Automatically convert input text into natural and fluent speech output. You can generate natural and vivid speech content by configuring parameters such as speech style and voice. Use the high-quality voices from the built-in voices list.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 0.0
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "XiaomiMiMo/MiMo-V2.5-tts"
 	},
 	{
 		"created": 0,
@@ -2406,7 +2741,20 @@
 	{
 		"created": 0,
 		"id": "black-forest-labs/FLUX-1-Redux-dev",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 1024,
+			"default_iterations": 25,
+			"default_width": 1024,
+			"description": "FLUX.1 Redux [dev] is an image variation generation adapter for all FLUX.1 base models. It enables users to refine images with slight variations and supports text-based restyling via API. Integrated with FLUX1.1 [pro] Ultra, it allows for high-quality 4-megapixel outputs. The model can be used with Diffusers in Python for efficient image generation. While powerful, it has ethical and factual limitations and is governed by a non-commercial license.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.012
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
@@ -2600,11 +2948,46 @@
 	{
 		"created": 0,
 		"id": "black-forest-labs/FLUX.1-Kontext-dev",
-		"metadata": null,
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 1024,
+			"default_iterations": 25,
+			"default_width": 1024,
+			"description": "FLUX.1 Kontext [dev] is a 12-billion-parameter image editing model that transforms visuals based on natural language instructions. It allows highly consistent, multi-step edits and is released with open weights under a non-commercial license to empower artists and researchers.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.01
+			},
+			"tags": ["image-gen"]
+		},
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "black-forest-labs/FLUX.1-Kontext-dev"
+	},
+	{
+		"created": 0,
+		"id": "bosonai/HiggsAudioV2.5",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "HiggsAudioV2.5 is a high-quality neural text-to-speech (TTS) model designed for natural-sounding voice generation across a wide range of use cases. It focuses on clarity, stable prosody, and consistent pacing, making it suitable for both short prompts and longer narration.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 20.0
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "bosonai/HiggsAudioV2.5"
 	},
 	{
 		"created": 0,
@@ -3378,8 +3761,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.04,
-				"output_tokens": 0.13
+				"input_tokens": 0.05,
+				"output_tokens": 0.15
 			},
 			"tags": ["chat", "vlm", "vision"]
 		},
@@ -3424,8 +3807,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.04,
-				"output_tokens": 0.08
+				"input_tokens": 0.05,
+				"output_tokens": 0.1
 			},
 			"tags": ["chat", "vlm", "vision"]
 		},
@@ -3502,6 +3885,72 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "google/gemma-4-31B-it-turbo"
+	},
+	{
+		"created": 0,
+		"id": "google/veo-3.1",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Veo 3.1 is the latest text-to-video model from Google that generates high-fidelity, cinematic videos with synchronized audio from a simple text prompt. It excels at creating realistic and imaginative scenes with a deep understanding of natural language and visual dynamics.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.4
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/veo-3.1"
+	},
+	{
+		"created": 0,
+		"id": "google/veo-3.1-fast",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Veo 3.1 is the latest text-to-video model from Google that generates high-fidelity, cinematic videos with synchronized audio from a simple text prompt. It excels at creating realistic and imaginative scenes with a deep understanding of natural language and visual dynamics.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.15
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/veo-3.1-fast"
+	},
+	{
+		"created": 0,
+		"id": "hexgrad/Kokoro-82M",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient. With Apache-licensed weights, Kokoro can be deployed anywhere from production environments to personal projects.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 0.62
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "hexgrad/Kokoro-82M"
 	},
 	{
 		"created": 0,
@@ -3590,6 +4039,72 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "intfloat/multilingual-e5-large-instruct"
+	},
+	{
+		"created": 0,
+		"id": "inworld-ai/realtime-tts-1.5-max",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "High-quality multilingual text-to-speech model by Inworld AI with 130+ preset voices across 15 languages. Supports voice cloning, word-level timestamps, and streaming. Optimized for natural, expressive speech with <250ms time-to-first-audio.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 50.0
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "inworld-ai/realtime-tts-1.5-max"
+	},
+	{
+		"created": 0,
+		"id": "inworld-ai/realtime-tts-1.5-mini",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Fast multilingual text-to-speech model by Inworld AI with 130+ preset voices across 15 languages. Supports voice cloning, word-level timestamps, and streaming. Optimized for low-latency applications with <130ms time-to-first-audio.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 25.0
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "inworld-ai/realtime-tts-1.5-mini"
+	},
+	{
+		"created": 0,
+		"id": "inworld-ai/realtime-tts-2",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Realtime TTS 2.0 is a low-latency text-to-speech model with natural language steering, allowing you to control tone and emotion directly in the prompt (e.g., “[be happy and upbeat] Hello!”). It supports cross-lingual voices and multiple languages, enabling the same voice to speak consistently across different languages. This is an early access preview ahead of full launch, with ongoing improvements to voice quality and steering.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_characters": 35.00000000000001
+			},
+			"tags": ["tts"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "inworld-ai/realtime-tts-2"
 	},
 	{
 		"created": 0,
@@ -3684,8 +4199,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.245,
-				"output_tokens": 0.245
+				"input_tokens": 0.345,
+				"output_tokens": 0.345
 			},
 			"tags": ["chat", "vlm", "vision"]
 		},
@@ -3853,7 +4368,7 @@
 			"max_tokens": 327680,
 			"pricing":
 			{
-				"input_tokens": 0.08,
+				"input_tokens": 0.1,
 				"output_tokens": 0.3
 			},
 			"tags": ["chat", "vlm", "vision"]
@@ -4587,6 +5102,70 @@
 	},
 	{
 		"created": 0,
+		"id": "moonshotai/Kimi-K2.7-Code",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Kimi K2.7 Code is a coding-focused agentic model built upon Kimi K2.6. With substantial improvements on real-world long-horizon coding tasks, it strengthens end-to-end task completion across complex software engineering workflows while improving token efficiency, reducing thinking-token usage by approximately 30% compared with Kimi K2.6.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.149999998,
+				"input_tokens": 0.74,
+				"output_tokens": 3.5
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "moonshotai/Kimi-K2.7-Code"
+	},
+	{
+		"created": 0,
+		"id": "nvidia/Cosmos3-Nano",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Cosmos3 is a world foundation model that unifies understanding and generation within a single Mixture-of-Transformer (MoT) architecture. Two tightly coupled towers—a Reasoner (vision-language model) and a Generator (world simulator)—share latent representations so that structured perception directly grounds realistic, temporally consistent simulation.",
+			"max_tokens": null,
+			"pricing":
+			{},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/Cosmos3-Nano"
+	},
+	{
+		"created": 0,
+		"id": "nvidia/Cosmos3-Super",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Cosmos3 is a world foundation model that unifies understanding and generation within a single Mixture-of-Transformer (MoT) architecture. Two tightly coupled towers—a Reasoner (vision-language model) and a Generator (world simulator)—share latent representations so that structured perception directly grounds realistic, temporally consistent simulation.",
+			"max_tokens": null,
+			"pricing":
+			{},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/Cosmos3-Super"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
 		"metadata":
 		{
@@ -4618,7 +5197,7 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.1,
+				"input_tokens": 0.4,
 				"output_tokens": 0.4
 			},
 			"tags": ["chat", "reasoning"]
@@ -4664,9 +5243,9 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.15,
+				"cache_read_tokens": 0.1,
 				"input_tokens": 0.5,
-				"output_tokens": 2.5
+				"output_tokens": 2.2
 			},
 			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
@@ -4674,6 +5253,30 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B"
+	},
+	{
+		"created": 0,
+		"id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Nemotron 3 Ultra is built for, frontier reasoning, orchestration, coding agents, deep research, and complex enterprise workflows. It delivers up to 5x faster inference and up to 30% lower cost for agentic workloads while supporting up to 1M token context.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.3,
+				"input_tokens": 1.0,
+				"output_tokens": 5.0
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
 	},
 	{
 		"created": 0,
@@ -5324,6 +5927,30 @@
 	},
 	{
 		"created": 0,
+		"id": "stepfun-ai/Step-3.7-Flash",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Step 3.7 Flash is an open-source multimodal reasoning model by StepFun with 198B total parameters (11B active) using Mixture of Experts. It accepts text and image inputs and features a 256K context window, selectable reasoning effort, tool calling, and agentic capabilities for coding and search workflows, scoring 80.9% on GPQA Diamond and 56.3% on SWE-bench Pro.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.04000000000000001,
+				"input_tokens": 0.2,
+				"output_tokens": 1.15
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "stepfun-ai/Step-3.7-Flash"
+	},
+	{
+		"created": 0,
 		"id": "thenlper/gte-base",
 		"metadata":
 		{
@@ -5545,6 +6172,30 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "zai-org/GLM-5.1"
+	},
+	{
+		"created": 0,
+		"id": "zai-org/GLM-5.2",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "GLM-5.2 is Z-AI's latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and, for the first time, delivers that capability on a **solid 1M-token context**.",
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.18,
+				"input_tokens": 1.0,
+				"output_tokens": 4.0
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "zai-org/GLM-5.2"
 	}],
 	"object": "list"
 }
