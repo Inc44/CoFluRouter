@@ -361,6 +361,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Nano Banana 2 Lite",
+		"id": "models/gemini-3.1-flash-lite-image",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 3.1 Flash Lite Preview",
 		"id": "models/gemini-3.1-flash-lite-preview",
 		"object": "model",
@@ -471,6 +477,12 @@
 	{
 		"display_name": "Gemini Live 2.5 Flash Preview",
 		"id": "models/gemini-live-2.5-flash-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini Omni Flash Preview",
+		"id": "models/gemini-omni-flash-preview",
 		"object": "model",
 		"owned_by": "google"
 	},

@@ -1,6 +1,18 @@
 {
 	"data": [
 	{
+		"created": 1782254706,
+		"id": "gpt-realtime-2.1-mini",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1782254687,
+		"id": "gpt-realtime-2.1",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1778012060,
 		"id": "gpt-realtime-whisper",
 		"object": "model",

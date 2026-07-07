@@ -547,6 +547,28 @@
 	},
 	{
 		"created": 0,
+		"id": "FastVideo/LTX-2.3-Distilled-Diffusers",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "A fast, step-distilled build of Lightricks' LTX-2.3 diffusion-transformer video model (distilled by FastVideo). Generates high-fidelity text-to-video and image-to-video in just a few denoising steps.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.035
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "FastVideo/LTX-2.3-Distilled-Diffusers"
+	},
+	{
+		"created": 0,
 		"id": "FastVideo/LTX2-Distilled-Diffusers",
 		"metadata":
 		{
@@ -733,8 +755,8 @@
 			"max_tokens": 196608,
 			"pricing":
 			{
-				"input_tokens": 0.5,
-				"output_tokens": 2.25
+				"input_tokens": 0.4,
+				"output_tokens": 2.0
 			},
 			"tags": ["chat", "reasoning"]
 		},
@@ -742,6 +764,30 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "MiniMaxAI/MiniMax-M2.7-Turbo"
+	},
+	{
+		"created": 0,
+		"id": "MiniMaxAI/MiniMax-M3",
+		"metadata":
+		{
+			"context_length": 524288,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "MiniMax-M3 is a native multimodal model with 1M context. It has ~428B parameters and ~23B activated parameters.",
+			"max_tokens": 524288,
+			"pricing":
+			{
+				"cache_read_tokens": 0.06,
+				"input_tokens": 0.3,
+				"output_tokens": 1.2
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "MiniMaxAI/MiniMax-M3"
 	},
 	{
 		"created": 0,
@@ -2628,6 +2674,29 @@
 	},
 	{
 		"created": 0,
+		"id": "anthropic/claude-fable-5",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Claude Fable 5 is Anthropic's next generation of intelligence for the hardest knowledge work and coding problems. It works independently for longer than any prior generally available Claude model: run it in an agent harness and it can work for days at a time, planning across stages, delegating to sub-agents, and checking its own work.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 10.0,
+				"output_tokens": 50.0
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "anthropic/claude-fable-5"
+	},
+	{
+		"created": 0,
 		"id": "anthropic/claude-haiku-4-5",
 		"metadata":
 		{
@@ -2717,6 +2786,29 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "anthropic/claude-sonnet-4-6"
+	},
+	{
+		"created": 0,
+		"id": "anthropic/claude-sonnet-5",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Claude Sonnet 5 is Anthropic's most capable Sonnet model yet, built for coding, agents, and professional work at scale. It brings near-Opus intelligence to the model teams run at scale every day, with the same balance of capability, cost, and speed teams already rely on Sonnet for.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 2.0,
+				"output_tokens": 10.0
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "anthropic/claude-sonnet-5"
 	},
 	{
 		"created": 0,
@@ -3051,6 +3143,30 @@
 	},
 	{
 		"created": 0,
+		"id": "deepreinforce-ai/Ornith-1.0-35B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Ornith-1.0-35B is DeepReinforce's open (MIT-licensed) agentic-coding model: an RL post-train of Qwen3.5-35B-A3B, a 35B-total / ~3B-active Mixture-of-Experts with hybrid Gated-DeltaNet attention. It targets state-of-the-art open-model coding-agent performance (SWE-bench Verified 75.6, Terminal-Bench 2.1 64.2) with a 262K-token context, thinking/reasoning mode, tool calling, and image + video understanding.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.05000000040000001,
+				"input_tokens": 0.14,
+				"output_tokens": 1.0
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepreinforce-ai/Ornith-1.0-35B"
+	},
+	{
+		"created": 0,
 		"id": "deepseek-ai/DeepSeek-OCR",
 		"metadata":
 		{
@@ -3256,8 +3372,8 @@
 			"pricing":
 			{
 				"cache_read_tokens": 0.135,
-				"input_tokens": 0.2,
-				"output_tokens": 0.77
+				"input_tokens": 0.24000000000000002,
+				"output_tokens": 0.9
 			},
 			"tags": ["chat", "prompt_cache"]
 		},
@@ -3392,9 +3508,9 @@
 			"max_tokens": 1048576,
 			"pricing":
 			{
-				"cache_read_tokens": 0.020000000000000004,
-				"input_tokens": 0.1,
-				"output_tokens": 0.2
+				"cache_read_tokens": 0.018,
+				"input_tokens": 0.09,
+				"output_tokens": 0.18
 			},
 			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
@@ -3474,7 +3590,7 @@
 			"default_height": null,
 			"default_iterations": null,
 			"default_width": null,
-			"description": "ChatGPT said: EmbeddingGemma is a 300M parameter multilingual open embedding model from Google DeepMind, designed for efficient deployment even on low-resource devices, producing high-quality text vector representations for tasks such as search, classification, clustering, and semantic similarity.",
+			"description": "EmbeddingGemma is a 300M parameter multilingual open embedding model from Google DeepMind, designed for efficient deployment even on low-resource devices, producing high-quality text vector representations for tasks such as search, classification, clustering, and semantic similarity.",
 			"max_tokens": 2048,
 			"pricing":
 			{
@@ -3879,7 +3995,7 @@
 				"input_tokens": 0.12000000000000001,
 				"output_tokens": 0.37
 			},
-			"tags": ["chat", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -5220,8 +5336,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.1,
-				"output_tokens": 0.5
+				"input_tokens": 0.08499999999999999,
+				"output_tokens": 0.4
 			},
 			"tags": ["chat", "reasoning"]
 		},
@@ -5468,7 +5584,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.039,
-				"output_tokens": 0.19
+				"output_tokens": 0.16999999999999998
 			},
 			"tags": ["chat", "reasoning_effort", "reasoning"]
 		},
@@ -6186,9 +6302,9 @@
 			"max_tokens": 1048576,
 			"pricing":
 			{
-				"cache_read_tokens": 0.18,
-				"input_tokens": 1.0,
-				"output_tokens": 4.0
+				"cache_read_tokens": 0.18000000269999997,
+				"input_tokens": 0.9299999999999999,
+				"output_tokens": 2.9999999999999996
 			},
 			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
