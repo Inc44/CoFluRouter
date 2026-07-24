@@ -258,6 +258,37 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "761ccdab-2e3d-5268-ab03-55f8ba94a80c",
+		"confidential_compute": true,
+		"created": 0,
+		"id": "Nemotron-3-Nano-Omni-30B-TEE",
+		"max_model_len": 131072,
+		"object": "model",
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16"
+	},
+	{
 		"chute_id": "b20fe05c-52c6-594a-b7c6-5c68f3153df3",
 		"confidential_compute": false,
 		"context_length": 131072,

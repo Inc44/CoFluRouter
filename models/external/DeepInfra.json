@@ -755,8 +755,8 @@
 			"max_tokens": 196608,
 			"pricing":
 			{
-				"input_tokens": 0.4,
-				"output_tokens": 2.0
+				"input_tokens": 0.38,
+				"output_tokens": 1.7
 			},
 			"tags": ["chat", "reasoning"]
 		},
@@ -1323,7 +1323,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.09,
-				"output_tokens": 0.1
+				"output_tokens": 0.55
 			},
 			"tags": ["chat", "reasoning_effort"]
 		},
@@ -1401,6 +1401,50 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3-32B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-ASR-0.6B",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Qwen3-ASR-0.6B is the compact model of the Qwen3-ASR family: multilingual language identification and speech recognition across 30 languages and 22 Chinese dialects, built on Qwen3-Omni. It targets an accuracy-efficiency trade-off with very high throughput, unified streaming/offline inference, and segment- and word-level timestamps.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_seconds": 3.3300000000000003e-06
+			},
+			"tags": ["stt"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-ASR-0.6B"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3-ASR-1.7B",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Qwen3-ASR-1.7B is the flagship model of the Qwen3-ASR family: multilingual language identification and speech recognition across 30 languages and 22 Chinese dialects, built on Qwen3-Omni. It reaches state-of-the-art accuracy among open-source ASR models (competitive with strong commercial APIs), with unified streaming/offline inference and segment- and word-level timestamps.",
+			"max_tokens": null,
+			"pricing":
+			{
+				"input_seconds": 7.5e-06
+			},
+			"tags": ["stt"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3-ASR-1.7B"
 	},
 	{
 		"created": 0,
@@ -3415,9 +3459,9 @@
 			"max_tokens": 163840,
 			"pricing":
 			{
-				"cache_read_tokens": 0.1300000002,
-				"input_tokens": 0.21,
-				"output_tokens": 0.7899999999999999
+				"cache_read_tokens": 0.13,
+				"input_tokens": 0.25,
+				"output_tokens": 0.95
 			},
 			"tags": ["chat", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
@@ -4004,6 +4048,29 @@
 	},
 	{
 		"created": 0,
+		"id": "google/gemma-4-E4B-it",
+		"metadata":
+		{
+			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.02,
+				"output_tokens": 0.1
+			},
+			"tags": ["chat", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/gemma-4-E4B-it"
+	},
+	{
+		"created": 0,
 		"id": "google/veo-3.1",
 		"metadata":
 		{
@@ -4441,8 +4508,8 @@
 			"max_tokens": 1048576,
 			"pricing":
 			{
-				"input_tokens": 0.15,
-				"output_tokens": 0.6
+				"input_tokens": 0.2,
+				"output_tokens": 0.8
 			},
 			"tags": ["chat", "vlm", "vision"]
 		},
@@ -4680,7 +4747,7 @@
 			"pricing":
 			{
 				"input_tokens": 0.02,
-				"output_tokens": 0.030000000000000002
+				"output_tokens": 0.04
 			},
 			"tags": ["chat"]
 		},
@@ -4925,8 +4992,8 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.02,
-				"output_tokens": 0.04
+				"input_tokens": 0.019000000000000003,
+				"output_tokens": 0.030000000000000002
 			},
 			"tags": ["chat"]
 		},
@@ -5583,7 +5650,7 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.039,
+				"input_tokens": 0.037,
 				"output_tokens": 0.16999999999999998
 			},
 			"tags": ["chat", "reasoning_effort", "reasoning"]
@@ -6067,6 +6134,30 @@
 	},
 	{
 		"created": 0,
+		"id": "tencent/Hy3",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Hy3 is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters and 3.8B MTP layer parameters, developed by the Tencent Hy Team. Following the Hy3 Preview launch in late April, we gathered feedback from 50+ products and scaled up post-training with higher quality data. Today, we introduce Hy3, which outperforms similar-size models and rivals flagship open-source models with 2-5x parameters. It also shows significant gains in utility across various products and productivity tasks.",
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.035,
+				"input_tokens": 0.14,
+				"output_tokens": 0.58
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "tencent/Hy3"
+	},
+	{
+		"created": 0,
 		"id": "thenlper/gte-base",
 		"metadata":
 		{
@@ -6108,6 +6199,30 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "thenlper/gte-large"
+	},
+	{
+		"created": 0,
+		"id": "thinkingmachines/Inkling",
+		"metadata":
+		{
+			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Inkling is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"cache_read_tokens": 0.17,
+				"input_tokens": 1.0,
+				"output_tokens": 4.05
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "thinkingmachines/Inkling"
 	},
 	{
 		"created": 0,
@@ -6162,9 +6277,9 @@
 			"max_tokens": 202752,
 			"pricing":
 			{
-				"cache_read_tokens": 0.0799999993,
-				"input_tokens": 0.43,
-				"output_tokens": 1.74
+				"cache_read_tokens": 0.1,
+				"input_tokens": 0.5,
+				"output_tokens": 2.0
 			},
 			"tags": ["chat", "prompt_cache", "reasoning"]
 		},

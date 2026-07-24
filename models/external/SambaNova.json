@@ -58,17 +58,8 @@
 	},
 	{
 		"context_length": 131072,
-		"display":
-		{
-			"group":
-			{
-				"id": "reasoning",
-				"label": "Reasoning",
-				"order": 10
-			}
-		},
 		"id": "DeepSeek-V3.1",
-		"max_completion_tokens": 131072,
+		"max_completion_tokens": 7168,
 		"object": "model",
 		"owned_by": "no-reply@sambanova.ai",
 		"pricing":
@@ -151,17 +142,8 @@
 	},
 	{
 		"context_length": 131072,
-		"display":
-		{
-			"group":
-			{
-				"id": "text",
-				"label": "Text",
-				"order": 50
-			}
-		},
 		"id": "Meta-Llama-3.3-70B-Instruct",
-		"max_completion_tokens": 131072,
+		"max_completion_tokens": 3072,
 		"object": "model",
 		"owned_by": "no-reply@sambanova.ai",
 		"pricing":
@@ -217,15 +199,6 @@
 	},
 	{
 		"context_length": 131072,
-		"display":
-		{
-			"group":
-			{
-				"id": "text",
-				"label": "Text",
-				"order": 50
-			}
-		},
 		"id": "gpt-oss-120b",
 		"max_completion_tokens": 131072,
 		"object": "model",
@@ -254,17 +227,8 @@
 	},
 	{
 		"context_length": 32768,
-		"display":
-		{
-			"group":
-			{
-				"id": "reasoning",
-				"label": "Reasoning",
-				"order": 10
-			}
-		},
 		"id": "DeepSeek-V3.2",
-		"max_completion_tokens": 32768,
+		"max_completion_tokens": 7168,
 		"object": "model",
 		"owned_by": "no-reply@sambanova.ai",
 		"pricing":
@@ -305,15 +269,6 @@
 	},
 	{
 		"context_length": 196608,
-		"display":
-		{
-			"group":
-			{
-				"id": "text",
-				"label": "Text",
-				"order": 50
-			}
-		},
 		"id": "MiniMax-M2.7",
 		"max_completion_tokens": 196608,
 		"object": "model",
@@ -330,57 +285,17 @@
 	},
 	{
 		"context_length": 131072,
-		"display":
-		{
-			"group":
-			{
-				"id": "image-text",
-				"label": "Image / Text",
-				"order": 20
-			}
-		},
 		"id": "gemma-4-31B-it",
 		"max_completion_tokens": 131072,
 		"object": "model",
 		"owned_by": "no-reply@sambanova.ai",
 		"pricing":
 		{
-			"completion": "0.00000059",
-			"prompt": "0.00000022"
+			"completion": "0.00000115",
+			"prompt": "0.00000038"
 		},
 		"sn_metadata":
 		{}
-	}],
-	"groups": [
-	{
-		"id": "reasoning",
-		"label": "Reasoning",
-		"order": 10
-	},
-	{
-		"id": "image-text",
-		"label": "Image / Text",
-		"order": 20
-	},
-	{
-		"id": "audio",
-		"label": "Audio",
-		"order": 30
-	},
-	{
-		"id": "embeddings",
-		"label": "Embeddings",
-		"order": 40
-	},
-	{
-		"id": "text",
-		"label": "Text",
-		"order": 50
-	},
-	{
-		"id": "other",
-		"label": "Other",
-		"order": 99
 	}],
 	"object": "list"
 }

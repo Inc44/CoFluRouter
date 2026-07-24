@@ -13,6 +13,24 @@
 		"owned_by": "system"
 	},
 	{
+		"created": 1782228658,
+		"id": "gpt-5.6-luna",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1782228459,
+		"id": "gpt-5.6-terra",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1782228018,
+		"id": "gpt-5.6-sol",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1778012060,
 		"id": "gpt-realtime-whisper",
 		"object": "model",
