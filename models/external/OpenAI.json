@@ -1,6 +1,18 @@
 {
 	"data": [
 	{
+		"created": 1785168034,
+		"id": "gpt-live-transcribe",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1785168027,
+		"id": "gpt-transcribe",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1782254706,
 		"id": "gpt-realtime-2.1-mini",
 		"object": "model",

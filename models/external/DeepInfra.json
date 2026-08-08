@@ -755,10 +755,11 @@
 			"max_tokens": 196608,
 			"pricing":
 			{
+				"cache_read_tokens": 0.07000000140000001,
 				"input_tokens": 0.38,
 				"output_tokens": 1.7
 			},
-			"tags": ["chat", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -778,9 +779,9 @@
 			"max_tokens": 524288,
 			"pricing":
 			{
-				"cache_read_tokens": 0.06,
-				"input_tokens": 0.3,
-				"output_tokens": 1.2
+				"cache_read_tokens": 0.05600000000000001,
+				"input_tokens": 0.28,
+				"output_tokens": 1.1
 			},
 			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
@@ -2166,7 +2167,7 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.15,
+				"input_tokens": 0.1,
 				"output_tokens": 0.95
 			},
 			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
@@ -2199,6 +2200,30 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3.7-Max"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen3.8-Max",
+		"metadata":
+		{
+			"context_length": 256000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Qwen's latest 2.4-trillion-parameter MoE flagship model delivering a comprehensive leap in coding and professional work.",
+			"max_tokens": 256000,
+			"pricing":
+			{
+				"cache_read_tokens": 0.20599999200000002,
+				"input_tokens": 1.6500000000000001,
+				"output_tokens": 4.9510000000000005
+			},
+			"tags": ["chat", "prompt_cache", "reasoning_effort"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen3.8-Max"
 	},
 	{
 		"created": 0,
@@ -2363,7 +2388,7 @@
 			"max_tokens": null,
 			"pricing":
 			{
-				"output_seconds": 0.036000000000000004
+				"output_seconds": 0.075
 			},
 			"tags": ["video-gen"]
 		},
@@ -2807,6 +2832,29 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "anthropic/claude-opus-4-8"
+	},
+	{
+		"created": 0,
+		"id": "anthropic/claude-opus-5",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Claude Opus 5 is Anthropic's most advanced Opus model, powering long-running agents while delivering improvements in coding and professional work.",
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 5.0,
+				"output_tokens": 25.0
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "anthropic/claude-opus-5"
 	},
 	{
 		"created": 0,
@@ -3565,6 +3613,30 @@
 	},
 	{
 		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. DeepSeek-V4-Flash-0731 outperforms DeepSeek-V4-Pro (Preview) on benchmarks listed below despite its far smaller activated parameter count, and is broadly competitive with the strongest proprietary models available.",
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.018,
+				"input_tokens": 0.09,
+				"output_tokens": 0.18
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/DeepSeek-V4-Flash-0731"
+	},
+	{
+		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V4-Pro",
 		"metadata":
 		{
@@ -4025,6 +4097,29 @@
 	},
 	{
 		"created": 0,
+		"id": "google/gemma-4-31B-it-Ultra",
+		"metadata":
+		{
+			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Ultra speed version of gemma-4-31B-it",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.27,
+				"output_tokens": 0.76
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/gemma-4-31B-it-Ultra"
+	},
+	{
+		"created": 0,
 		"id": "google/gemma-4-31B-it-turbo",
 		"metadata":
 		{
@@ -4036,10 +4131,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.12000000000000001,
-				"output_tokens": 0.37
+				"cache_read_tokens": 0.050000000399999994,
+				"input_tokens": 0.09,
+				"output_tokens": 0.33999999999999997
 			},
-			"tags": ["chat", "vlm", "vision", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -4068,6 +4164,66 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "google/gemma-4-E4B-it"
+	},
+	{
+		"created": 0,
+		"id": "google/nano-banana-2",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Nano Banana 2 makes high quality image generation and editing mainstream. The model also introduces Grounding with Google Image Search to enable long-tail entity recognition and enhance visual understanding.",
+			"max_tokens": null,
+			"pricing":
+			{},
+			"tags": ["image-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/nano-banana-2"
+	},
+	{
+		"created": 0,
+		"id": "google/nano-banana-2-lite",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Nano Banana 2 Lite enables high speed image generation a reality, while keeping the high quality editing of Nano Banana.",
+			"max_tokens": null,
+			"pricing":
+			{},
+			"tags": ["image-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/nano-banana-2-lite"
+	},
+	{
+		"created": 0,
+		"id": "google/nano-banana-pro",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Nano Banana Pro is designed to tackle the most challenging image generation by incorporating state-of-the-art reasoning capabilities. It is the best model for complex and multi-turn image generation and editing.",
+			"max_tokens": null,
+			"pricing":
+			{},
+			"tags": ["image-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "google/nano-banana-pro"
 	},
 	{
 		"created": 0,
@@ -4134,6 +4290,30 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "hexgrad/Kokoro-82M"
+	},
+	{
+		"created": 0,
+		"id": "inclusionAI/Ling-3.0-flash",
+		"metadata":
+		{
+			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The model prioritizes token efficiency and agentic inference at production scale, stretching what developers can achieve within limited token, latency, and serving-cost budgets.",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"cache_read_tokens": 0.0050000001,
+				"input_tokens": 0.030000000000000002,
+				"output_tokens": 0.07
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "inclusionAI/Ling-3.0-flash"
 	},
 	{
 		"created": 0,
@@ -5296,9 +5476,9 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.149999998,
-				"input_tokens": 0.74,
-				"output_tokens": 3.5
+				"cache_read_tokens": 0.13599999999999998,
+				"input_tokens": 0.6799999999999999,
+				"output_tokens": 3.4
 			},
 			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
@@ -5306,6 +5486,30 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "moonshotai/Kimi-K2.7-Code"
+	},
+	{
+		"created": 0,
+		"id": "moonshotai/Kimi-K3",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Kimi K3 is Moonshot AI's 2.8T-parameter open-weight multimodal reasoning model. Built for complex coding, knowledge work, and long-horizon agentic workflows, it excels at navigating large repositories, calling tools, debugging, and iterating on images, logs, tests, and runtime feedback. Its architecture relies on KDA and Attention Residuals for computational efficiency.",
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.285,
+				"input_tokens": 2.8499999999999996,
+				"output_tokens": 14.25
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "moonshotai/Kimi-K3"
 	},
 	{
 		"created": 0,
@@ -5517,10 +5721,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
+				"cache_read_tokens": 0.025,
 				"input_tokens": 0.05,
 				"output_tokens": 0.2
 			},
-			"tags": ["chat", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -5682,6 +5887,29 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "openai/gpt-oss-120b-Turbo"
+	},
+	{
+		"created": 0,
+		"id": "openai/gpt-oss-120b-Ultra",
+		"metadata":
+		{
+			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Ultra speed version of gpt-oss-120b",
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"input_tokens": 0.2,
+				"output_tokens": 0.95
+			},
+			"tags": ["chat", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "openai/gpt-oss-120b-Ultra"
 	},
 	{
 		"created": 0,
@@ -6205,16 +6433,16 @@
 		"id": "thinkingmachines/Inkling",
 		"metadata":
 		{
-			"context_length": 131072,
+			"context_length": 524288,
 			"default_height": null,
 			"default_iterations": null,
 			"default_width": null,
 			"description": "Inkling is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs.",
-			"max_tokens": 131072,
+			"max_tokens": 524288,
 			"pricing":
 			{
-				"cache_read_tokens": 0.17,
-				"input_tokens": 1.0,
+				"cache_read_tokens": 0.1599999975,
+				"input_tokens": 0.95,
 				"output_tokens": 4.05
 			},
 			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
@@ -6223,6 +6451,30 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "thinkingmachines/Inkling"
+	},
+	{
+		"created": 0,
+		"id": "thinkingmachines/Inkling-Small",
+		"metadata":
+		{
+			"context_length": 524288,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Inkling-Small is a Mixture-of-Experts transformer with 276B total parameters, 12B active, trained on NVIDIA GB300 NVL72 systems. Like Inkling, it features native reasoning over audio and images, variable thinking effort",
+			"max_tokens": 524288,
+			"pricing":
+			{
+				"cache_read_tokens": 0.099999999,
+				"input_tokens": 0.45,
+				"output_tokens": 1.2
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "thinkingmachines/Inkling-Small"
 	},
 	{
 		"created": 0,
@@ -6417,9 +6669,9 @@
 			"max_tokens": 1048576,
 			"pricing":
 			{
-				"cache_read_tokens": 0.18000000269999997,
-				"input_tokens": 0.9299999999999999,
-				"output_tokens": 2.9999999999999996
+				"cache_read_tokens": 0.1400000025,
+				"input_tokens": 0.7499999999999999,
+				"output_tokens": 2.4
 			},
 			"tags": ["chat", "prompt_cache", "reasoning"]
 		},

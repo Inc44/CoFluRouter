@@ -517,6 +517,18 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini Robotics-ER 2 Preview",
+		"id": "models/gemini-robotics-er-2-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini Robotics-ER 2 Streaming Preview",
+		"id": "models/gemini-robotics-er-2-streaming-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemma 3 12B",
 		"id": "models/gemma-3-12b-it",
 		"object": "model",

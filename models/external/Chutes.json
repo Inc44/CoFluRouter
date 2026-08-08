@@ -3300,6 +3300,44 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "b4d58772-e72b-55d1-9d73-d30dff6d2ed8",
+		"confidential_compute": true,
+		"context_length": 1048576,
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V4-Flash-0731-TEE",
+		"input_modalities": ["text"],
+		"max_model_len": 1048576,
+		"max_output_length": 131072,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "AtlasCloud/DeepSeek-V4-Flash-0731-FP8-DSpark",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": "42ee92ba-a537-5a73-8741-876067750db7",
 		"confidential_compute": true,
 		"context_length": 131072,
@@ -3886,6 +3924,44 @@
 		},
 		"quantization": "int4",
 		"root": "moonshotai/Kimi-K2.6",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "0bb5d4c2-b5da-587d-b88e-62b4839028ec",
+		"confidential_compute": true,
+		"context_length": 1048576,
+		"created": 0,
+		"id": "moonshotai/Kimi-K3-TEE",
+		"input_modalities": ["text", "image", "video"],
+		"max_model_len": 1048576,
+		"max_output_length": 65535,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "mxfp4",
+		"root": "moonshotai/Kimi-K3",
 		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
