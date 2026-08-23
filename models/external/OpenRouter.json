@@ -3,6 +3,1096 @@
 	{
 		"architecture":
 		{
+			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "meta/muse-spark-1.2-contributor-20260805",
+		"context_length": 1048576,
+		"created": 1787336476,
+		"default_parameters":
+		{},
+		"description": "Muse Spark 1.2 contributor tier is a reasoning model from Meta designed for developers who want to start building at an even lower cost. It’s meaningfully cheaper than Muse Spark...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "meta/muse-spark-1.2-contributor",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/meta/muse-spark-1.2-contributor-20260805/endpoints"
+		},
+		"name": "Meta: Muse Spark 1.2 Contributor",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000002",
+			"input_cache_read": "0.000000002",
+			"prompt": "0.0000001",
+			"web_search": "0.0025"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": true,
+			"supported_efforts": ["xhigh", "high", "medium", "low", "minimal"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": true,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "DeepSeek"
+		},
+		"canonical_slug": "deepseek/deepseek-v4-flash-vision-exp-20260821",
+		"context_length": 1048576,
+		"created": 1787311563,
+		"default_parameters":
+		{},
+		"description": "DeepSeek V4 Flash Vision Exp is an experimental vision-enabled version of [DeepSeek V4 Flash 0731](https://openrouter.ai/deepseek/deepseek-v4-flash-0731) from DeepSeek, adding image understanding while matching the base model on text capabilities including agents,...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "deepseek/deepseek-v4-flash-vision-exp",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/deepseek/deepseek-v4-flash-vision-exp-20260821/endpoints"
+		},
+		"name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000066",
+			"input_cache_read": "0.000000007",
+			"prompt": "0.00000022"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["max", "high", "low"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "response_format", "stop", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 384000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "stealth/ox-alpha",
+		"context_length": 1048576,
+		"created": 1787256295,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_p": 0.95
+		},
+		"description": "Ox Alpha is a reasoning model designed for coding, sustained agentic work, and production workloads. It is suited for long-horizon software engineering, complex reasoning, and workflows that combine text with...",
+		"expiration_date": "2098-12-31",
+		"hugging_face_id": null,
+		"id": "stealth/ox-alpha",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/stealth/ox-alpha/endpoints"
+		},
+		"name": "Ox Alpha",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"reasoning":
+		{
+			"default_effort": "max",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "high", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "tencent/hy-mt2-1.8b-20260521",
+		"context_length": 8192,
+		"created": 1787231581,
+		"default_parameters":
+		{},
+		"description": "Hy-MT2-1.8B is a compact 1.8B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided...",
+		"expiration_date": null,
+		"hugging_face_id": "tencent/Hy-MT2-1.8B",
+		"id": "tencent/hy-mt2-1.8b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/tencent/hy-mt2-1.8b-20260521/endpoints"
+		},
+		"name": "Tencent: Hy-MT2-1.8B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000000177",
+			"prompt": "0.000000044"
+		},
+		"supported_parameters": ["max_completion_tokens", "max_tokens", "stop", "temperature"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 8192,
+			"is_moderated": false,
+			"max_completion_tokens": 4096
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "tencent/hy-mt2-30b-a3b-20260521",
+		"context_length": 8192,
+		"created": 1787231561,
+		"default_parameters":
+		{},
+		"description": "Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and...",
+		"expiration_date": null,
+		"hugging_face_id": "tencent/Hy-MT2-30B-A3B",
+		"id": "tencent/hy-mt2-30b-a3b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/tencent/hy-mt2-30b-a3b-20260521/endpoints"
+		},
+		"name": "Tencent: Hy-MT2-30B-A3B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000000295",
+			"prompt": "0.000000074"
+		},
+		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "stop", "structured_outputs", "temperature"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 8192,
+			"is_moderated": false,
+			"max_completion_tokens": 4096
+		}
+	},
+	{
+		"alias_target":
+		{
+			"name": "Z.ai: GLM 5.3",
+			"slug": "z-ai/glm-5.3"
+		},
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Router"
+		},
+		"canonical_slug": "~z-ai/glm-latest",
+		"context_length": 1048576,
+		"created": 1787151053,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_p": 0.95
+		},
+		"description": "This model always redirects to the latest GLM model from Z.ai.",
+		"expiration_date": "2098-12-31",
+		"hugging_face_id": null,
+		"id": "~z-ai/glm-latest",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/~z-ai/glm-latest/endpoints"
+		},
+		"name": "Z.ai: GLM Latest",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000044",
+			"input_cache_read": "0.00000026",
+			"prompt": "0.0000014"
+		},
+		"reasoning":
+		{
+			"default_effort": "max",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "high", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "tencent/hy-mt2-7b-20260521",
+		"context_length": 8192,
+		"created": 1787148797,
+		"default_parameters":
+		{},
+		"description": "Hy-MT2-7B is a 7B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation.",
+		"expiration_date": null,
+		"hugging_face_id": "tencent/Hy-MT2-7B",
+		"id": "tencent/hy-mt2-7b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/tencent/hy-mt2-7b-20260521/endpoints"
+		},
+		"name": "Tencent: Hy-MT2-7B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000000295",
+			"prompt": "0.000000074"
+		},
+		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "stop", "structured_outputs", "temperature"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 8192,
+			"is_moderated": false,
+			"max_completion_tokens": 4096
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "z-ai/glm-5.3-20260816",
+		"context_length": 1048576,
+		"created": 1787086655,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_p": 0.95
+		},
+		"description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves...",
+		"expiration_date": "2098-12-31",
+		"hugging_face_id": null,
+		"id": "z-ai/glm-5.3",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/z-ai/glm-5.3-20260816/endpoints"
+		},
+		"name": "Z.ai: GLM 5.3",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000044",
+			"input_cache_read": "0.00000026",
+			"prompt": "0.0000014"
+		},
+		"reasoning":
+		{
+			"default_effort": "max",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "high", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "qwen/qwen3.8-27b-20260814",
+		"context_length": 1000000,
+		"created": 1786722910,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_k": 20,
+			"top_p": 0.95
+		},
+		"description": "Qwen3.8 27B is an open-weight dense vision-language model from Qwen. It is suited for coding, professional workflows, research, multimodal interaction, and long-running agent tasks, with flexible thinking that can be...",
+		"expiration_date": null,
+		"hugging_face_id": "Qwen/Qwen3.8-27B",
+		"id": "qwen/qwen3.8-27b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.8-27b-20260814/endpoints"
+		},
+		"name": "Qwen: Qwen3.8 27B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000003",
+			"input_cache_read": "0.00000005",
+			"prompt": "0.0000004"
+		},
+		"reasoning":
+		{
+			"default_effort": "xhigh",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["xhigh", "medium", "low"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "dots-studio/dots-3-note-preview-20260813",
+		"context_length": 512000,
+		"created": 1786680361,
+		"default_parameters":
+		{},
+		"description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
+		"expiration_date": "2026-09-30",
+		"hugging_face_id": null,
+		"id": "dots-studio/dots-3-note-preview:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/dots-studio/dots-3-note-preview-20260813/endpoints"
+		},
+		"name": "Dots Studio: Dots3-Note Preview (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"reasoning":
+		{
+			"mandatory": false
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 512000,
+			"is_moderated": false,
+			"max_completion_tokens": 512000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-3.7-flash-20260813",
+		"context_length": 1048576,
+		"created": 1786640581,
+		"default_parameters":
+		{},
+		"description": "Gemini 3.7 Flash is a multimodal model from Google for fast agentic workflows, coding, and complex multi-step reasoning. It is designed for tasks that require responsive performance and reliable multi-step...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/gemini-3.7-flash:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemini-3.7-flash-20260813/endpoints"
+		},
+		"name": "Google: Gemini 3.7 Flash (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"audio": "0.0000001875",
+			"completion": "0.0000009375",
+			"image": "0.0000001875",
+			"input_audio_cache": "0.00000001875",
+			"input_cache_read": "0.00000001875",
+			"input_cache_write": "0.0000000208333333333333",
+			"internal_reasoning": "0.0000009375",
+			"prompt": "0.0000001875",
+			"web_search": "0.014"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "tool_choice", "tools"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-3.7-flash-20260813",
+		"context_length": 1048576,
+		"created": 1786640581,
+		"default_parameters":
+		{},
+		"description": "Gemini 3.7 Flash is a multimodal model from Google for fast agentic workflows, coding, and complex multi-step reasoning. It is designed for tasks that require responsive performance and reliable multi-step...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/gemini-3.7-flash",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemini-3.7-flash-20260813/endpoints"
+		},
+		"name": "Google: Gemini 3.7 Flash",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"audio": "0.000000375",
+			"completion": "0.000001875",
+			"image": "0.000000375",
+			"input_audio_cache": "0.0000000375",
+			"input_cache_read": "0.0000000375",
+			"input_cache_write": "0.0000000208333333333333",
+			"internal_reasoning": "0.000001875",
+			"prompt": "0.000000375",
+			"web_search": "0.014"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "bytedance-seed/seed-2-1-turbo-20260810",
+		"context_length": 262144,
+		"created": 1786552176,
+		"default_parameters":
+		{},
+		"description": "Seed 2.1 Turbo is a multimodal model from ByteDance Seed for coding and long-horizon agent workflows. It is suited for end-to-end software delivery, multi-step task execution, and understanding visual and...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "bytedance-seed/seed-2-1-turbo",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/bytedance-seed/seed-2-1-turbo-20260810/endpoints"
+		},
+		"name": "ByteDance Seed: Seed 2.1 Turbo",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000025",
+			"prompt": "0.0000005"
+		},
+		"reasoning":
+		{
+			"mandatory": false
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "qwen/qwen3.8-2.4t-a95b-20260812",
+		"context_length": 1048576,
+		"created": 1786551702,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_k": 20,
+			"top_p": 0.95
+		},
+		"description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is...",
+		"expiration_date": null,
+		"hugging_face_id": "Qwen/Qwen3.8-2.4T-A95B",
+		"id": "qwen/qwen3.8-2.4t-a95b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen3.8-2.4t-a95b-20260812/endpoints"
+		},
+		"name": "Qwen: Qwen3.8 2.4T A95B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000006",
+			"input_cache_read": "0.00000025",
+			"prompt": "0.000002"
+		},
+		"reasoning":
+		{
+			"default_effort": "xhigh",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["xhigh", "medium", "low"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "bytedance-seed/seed-2.0-code-20260730",
+		"context_length": 262144,
+		"created": 1786550701,
+		"default_parameters":
+		{},
+		"description": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tools such as Claude...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "bytedance-seed/seed-2.0-code",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/bytedance-seed/seed-2.0-code-20260730/endpoints"
+		},
+		"name": "ByteDance Seed: Seed-2.0-Code",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000003",
+			"overrides": [
+			{
+				"completion": "0.000006",
+				"min_prompt_tokens": 128000,
+				"prompt": "0.000001"
+			}],
+			"prompt": "0.0000005"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": false,
+			"supported_efforts": ["high", "medium", "low"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "DeepSeek"
+		},
+		"canonical_slug": "deepseek/deepseek-v4-pro-20260813",
+		"context_length": 1048576,
+		"created": 1786549364,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_p": 1
+		},
+		"description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro.",
+		"expiration_date": null,
+		"hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+		"id": "deepseek/deepseek-v4-pro-0813",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/deepseek/deepseek-v4-pro-20260813/endpoints"
+		},
+		"name": "DeepSeek: DeepSeek V4 Pro 0813",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000003366",
+			"input_cache_read": "0.0000000374",
+			"prompt": "0.000001122"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"mandatory": false,
+			"supported_efforts": ["max", "high", "low"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048575,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Grok"
+		},
+		"canonical_slug": "x-ai/grok-4.6-20260810",
+		"context_length": 500000,
+		"created": 1786548957,
+		"default_parameters":
+		{},
+		"description": "Grok 4.6 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM.",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "x-ai/grok-4.6",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/x-ai/grok-4.6-20260810/endpoints"
+		},
+		"name": "SpaceXAI: Grok 4.6",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000006",
+			"input_cache_read": "0.0000005",
+			"overrides": [
+			{
+				"completion": "0.000012",
+				"input_cache_read": "0.000001",
+				"min_prompt_tokens": 200000,
+				"prompt": "0.000004"
+			}],
+			"prompt": "0.000002",
+			"web_search": "0.005"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 500000,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
+		"context_length": 65536,
+		"created": 1786470519,
+		"default_parameters":
+		{
+			"repetition_penalty": 1.1,
+			"temperature": 0.1,
+			"top_k": 50
+		},
+		"description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
+		"expiration_date": null,
+		"hugging_face_id": "LiquidAI/LFM2.5-2.6B",
+		"id": "liquid/lfm-2.5-2.6b:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/liquid/lfm-2.5-2.6b-20260811/endpoints"
+		},
+		"name": "LiquidAI: LFM2.5-2.6B (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"reasoning":
+		{
+			"mandatory": true
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 65536,
+			"is_moderated": false,
+			"max_completion_tokens": 8192
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
+		"context_length": 1000000,
+		"created": 1786452751,
+		"default_parameters":
+		{},
+		"description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
+		"expiration_date": null,
+		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+		"id": "nvidia/nemotron-3.5-lightning:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/nvidia/nemotron-3.5-lightning-20260807/endpoints"
+		},
+		"name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"reasoning":
+		{
+			"mandatory": false
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
+		"context_length": 262144,
+		"created": 1786452751,
+		"default_parameters":
+		{},
+		"description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
+		"expiration_date": null,
+		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+		"id": "nvidia/nemotron-3.5-lightning",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/nvidia/nemotron-3.5-lightning-20260807/endpoints"
+		},
+		"name": "NVIDIA: Nemotron 3.5 Lightning",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000002",
+			"input_cache_read": "0.00000004",
+			"prompt": "0.00000008"
+		},
+		"reasoning":
+		{
+			"mandatory": false
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "sakana/namazu-20260811",
+		"context_length": 262144,
+		"created": 1786410129,
+		"default_parameters":
+		{},
+		"description": "Sakana Namazu is a Japanese-specialized reasoning model from Sakana AI, based on Kimi K2.6 with additional training for Japanese language and business contexts. It is suited for Japanese instruction following,...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "sakana/sakana-namazu",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/sakana/namazu-20260811/endpoints"
+		},
+		"name": "Sakana: Sakana Namazu",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000004",
+			"input_cache_read": "0.00000015",
+			"prompt": "0.00000095",
+			"web_search": "0.007"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["high", "none"]
+		},
+		"supported_parameters": ["include_reasoning", "reasoning", "reasoning_effort", "structured_outputs", "tool_choice", "tools", "web_search_options"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "upstage/solar-pro4-20260810",
+		"context_length": 524288,
+		"created": 1786371636,
+		"default_parameters":
+		{},
+		"description": "Solar Pro 4 is Upstage's cost-efficient large language model, featuring a 524K context window. It is built for long-horizon tasks and agentic workflows, with strong capabilities in office productivity, document-intensive...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "upstage/solar-pro4",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/upstage/solar-pro4-20260810/endpoints"
+		},
+		"name": "Upstage: Solar Pro 4",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000012",
+			"input_cache_read": "0.000000006",
+			"prompt": "0.00000003"
+		},
+		"reasoning":
+		{
+			"mandatory": false
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 524288,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "meta/muse-glimmer-30b-20260810",
+		"context_length": 131072,
+		"created": 1786302394,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_k": 64,
+			"top_p": 0.95
+		},
+		"description": "Muse Glimmer 30B is a dense, open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark and optimized for autonomous agents on consumer hardware. It is suited for long-horizon...",
+		"expiration_date": null,
+		"hugging_face_id": "meta-models/Muse-Glimmer-30B",
+		"id": "meta/muse-glimmer-30b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/meta/muse-glimmer-30b-20260810/endpoints"
+		},
+		"name": "Meta: Muse Glimmer 30B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000015",
+			"input_cache_read": "0.00000004",
+			"prompt": "0.00000035"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": true,
+			"supported_efforts": ["xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 131072,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
 			"input_modalities": ["text"],
 			"instruct_type": null,
 			"modality": "text->text",
@@ -154,7 +1244,7 @@
 			"tokenizer": "Router"
 		},
 		"canonical_slug": "~deepseek/deepseek-v4-flash-latest",
-		"context_length": 1048576,
+		"context_length": 1310720,
 		"created": 1785606009,
 		"default_parameters":
 		{},
@@ -171,9 +1261,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000001792",
-			"input_cache_read": "0.00000001792",
-			"prompt": "0.0000000896"
+			"completion": "0.00000014",
+			"input_cache_read": "0.00000001",
+			"prompt": "0.000000055"
 		},
 		"reasoning":
 		{
@@ -182,13 +1272,13 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "high", "low"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": [],
 		"top_provider":
 		{
-			"context_length": 1048576,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -201,7 +1291,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-v4-flash-20260731",
-		"context_length": 1048576,
+		"context_length": 1310720,
 		"created": 1785478908,
 		"default_parameters":
 		{},
@@ -219,8 +1309,8 @@
 		"pricing":
 		{
 			"completion": "0.00000018",
-			"input_cache_read": "0.000000018",
-			"prompt": "0.00000009"
+			"input_cache_read": "0.000000016",
+			"prompt": "0.00000008"
 		},
 		"reasoning":
 		{
@@ -229,7 +1319,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "high", "low"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": [],
 		"top_provider":
 		{
@@ -248,7 +1338,60 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "thinkingmachines/inkling-small-20260730",
-		"context_length": 524288,
+		"context_length": 262144,
+		"created": 1785443117,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of...",
+		"expiration_date": null,
+		"hugging_face_id": "thinkingmachines/Inkling-Small",
+		"id": "thinkingmachines/inkling-small:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/thinkingmachines/inkling-small-20260730/endpoints"
+		},
+		"name": "Thinking Machines: Inkling Small (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["max", "high", "medium", "low", "minimal", "none"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "seed", "stop", "temperature", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "audio"],
+			"instruct_type": null,
+			"modality": "text+image+audio->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "thinkingmachines/inkling-small-20260730",
+		"context_length": 1048576,
 		"created": 1785443117,
 		"default_parameters":
 		{
@@ -283,7 +1426,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "high", "medium", "low", "minimal", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -424,14 +1567,7 @@
 		"context_length": 1000000,
 		"created": 1784912544,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual analysis...",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -481,14 +1617,7 @@
 		"context_length": 1000000,
 		"created": 1784912544,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual analysis...",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -605,7 +1734,7 @@
 			"default_enabled": true,
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -737,14 +1866,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0.00000075",
-			"completion": "0.00000375",
-			"image": "0.00000075",
-			"input_audio_cache": "0.000000075",
-			"input_cache_read": "0.000000075",
-			"input_cache_write": "0.0000000833333333333333",
-			"internal_reasoning": "0.00000375",
-			"prompt": "0.00000075",
+			"audio": "0.000000375",
+			"completion": "0.000001875",
+			"image": "0.000000375",
+			"input_audio_cache": "0.0000000375",
+			"input_cache_read": "0.0000000375",
+			"input_cache_write": "0.0000000416666666666667",
+			"internal_reasoning": "0.000001875",
+			"prompt": "0.000000375",
 			"web_search": "0.014"
 		},
 		"reasoning":
@@ -797,14 +1926,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0.0000015",
-			"completion": "0.0000075",
-			"image": "0.0000015",
-			"input_audio_cache": "0.00000015",
-			"input_cache_read": "0.00000015",
-			"input_cache_write": "0.0000000833333333333333",
-			"internal_reasoning": "0.0000075",
-			"prompt": "0.0000015",
+			"audio": "0.00000075",
+			"completion": "0.00000375",
+			"image": "0.00000075",
+			"input_audio_cache": "0.000000075",
+			"input_cache_read": "0.000000075",
+			"input_cache_write": "0.0000000416666666666667",
+			"internal_reasoning": "0.00000375",
+			"prompt": "0.00000075",
 			"web_search": "0.014"
 		},
 		"reasoning":
@@ -998,6 +2127,59 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "thinkingmachines/inkling-20260715",
+		"context_length": 262144,
+		"created": 1784325956,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic and tool-use systems,...",
+		"expiration_date": null,
+		"hugging_face_id": "thinkingmachines/Inkling",
+		"id": "thinkingmachines/inkling:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/thinkingmachines/inkling-20260715/endpoints"
+		},
+		"name": "Thinking Machines: Inkling (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["max", "high", "medium", "low", "minimal", "none"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "seed", "stop", "temperature", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "audio"],
+			"instruct_type": null,
+			"modality": "text+image+audio->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "thinkingmachines/inkling-20260715",
 		"context_length": 524288,
 		"created": 1784325956,
 		"default_parameters":
@@ -1022,9 +2204,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002025",
-			"input_cache_read": "0.000000085",
-			"prompt": "0.0000005"
+			"completion": "0.00000405",
+			"input_cache_read": "0.00000017",
+			"prompt": "0.000001"
 		},
 		"reasoning":
 		{
@@ -1077,8 +2259,8 @@
 		"pricing":
 		{
 			"completion": "0.00000405",
-			"input_cache_read": "0.00000016",
-			"prompt": "0.00000095"
+			"input_cache_read": "0.00000017",
+			"prompt": "0.000001"
 		},
 		"reasoning":
 		{
@@ -1093,7 +2275,7 @@
 		{
 			"context_length": 524288,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -1145,9 +2327,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "video"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+video->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
@@ -1281,7 +2463,7 @@
 			"input_cache_read": "0.00000003",
 			"prompt": "0.00000015"
 		},
-		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["logprobs", "max_tokens", "presence_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1328,7 +2510,7 @@
 			"input_cache_read": "0.00000015",
 			"prompt": "0.00000074"
 		},
-		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["logprobs", "max_tokens", "presence_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1433,19 +2615,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"input_cache_read": "0.00000001",
-			"input_cache_write": "0.000000125",
+			"completion": "0.0000012",
+			"input_cache_read": "0.00000002",
+			"input_cache_write": "0.00000025",
 			"overrides": [
 			{
-				"completion": "0.0000009",
-				"input_cache_read": "0.00000002",
-				"input_cache_write": "0.00000025",
+				"completion": "0.0000018",
+				"input_cache_read": "0.00000004",
+				"input_cache_write": "0.0000005",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.0000002"
+				"prompt": "0.0000004"
 			}],
-			"prompt": "0.0000001",
-			"web_search": "0.005"
+			"prompt": "0.0000002",
+			"web_search": "0.01"
 		},
 		"reasoning":
 		{
@@ -1559,19 +2741,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"input_cache_read": "0.00000001",
-			"input_cache_write": "0.000000125",
+			"completion": "0.0000012",
+			"input_cache_read": "0.00000002",
+			"input_cache_write": "0.00000025",
 			"overrides": [
 			{
-				"completion": "0.0000009",
-				"input_cache_read": "0.00000002",
-				"input_cache_write": "0.00000025",
+				"completion": "0.0000018",
+				"input_cache_read": "0.00000004",
+				"input_cache_write": "0.0000005",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.0000002"
+				"prompt": "0.0000004"
 			}],
-			"prompt": "0.0000001",
-			"web_search": "0.005"
+			"prompt": "0.0000002",
+			"web_search": "0.01"
 		},
 		"reasoning":
 		{
@@ -1685,19 +2867,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000006",
-			"input_cache_read": "0.0000001",
-			"input_cache_write": "0.00000125",
+			"completion": "0.000012",
+			"input_cache_read": "0.0000002",
+			"input_cache_write": "0.0000025",
 			"overrides": [
 			{
-				"completion": "0.000009",
-				"input_cache_read": "0.0000002",
-				"input_cache_write": "0.0000025",
+				"completion": "0.000018",
+				"input_cache_read": "0.0000004",
+				"input_cache_write": "0.000005",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.000002"
+				"prompt": "0.000004"
 			}],
-			"prompt": "0.000001",
-			"web_search": "0.005"
+			"prompt": "0.000002",
+			"web_search": "0.01"
 		},
 		"reasoning":
 		{
@@ -1811,19 +2993,19 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000006",
-			"input_cache_read": "0.0000001",
-			"input_cache_write": "0.00000125",
+			"completion": "0.000012",
+			"input_cache_read": "0.0000002",
+			"input_cache_write": "0.0000025",
 			"overrides": [
 			{
-				"completion": "0.000009",
-				"input_cache_read": "0.0000002",
-				"input_cache_write": "0.0000025",
+				"completion": "0.000018",
+				"input_cache_read": "0.0000004",
+				"input_cache_write": "0.000005",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.000002"
+				"prompt": "0.000004"
 			}],
-			"prompt": "0.000001",
-			"web_search": "0.005"
+			"prompt": "0.000002",
+			"web_search": "0.01"
 		},
 		"reasoning":
 		{
@@ -1875,16 +3057,18 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000015",
-			"input_cache_read": "0.00000025",
+			"completion": "0.000005",
+			"input_cache_read": "0.0000001",
+			"input_cache_write": "0.00000125",
 			"overrides": [
 			{
-				"completion": "0.0000225",
-				"input_cache_read": "0.0000005",
+				"completion": "0.0000075",
+				"input_cache_read": "0.0000002",
+				"input_cache_write": "0.0000025",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.000005"
+				"prompt": "0.000002"
 			}],
-			"prompt": "0.0000025",
+			"prompt": "0.000001",
 			"web_search": "0.01"
 		},
 		"reasoning":
@@ -1937,18 +3121,18 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00003",
-			"input_cache_read": "0.0000005",
-			"input_cache_write": "0.00000625",
+			"completion": "0.00001",
+			"input_cache_read": "0.0000002",
+			"input_cache_write": "0.0000025",
 			"overrides": [
 			{
-				"completion": "0.000045",
-				"input_cache_read": "0.000001",
-				"input_cache_write": "0.0000125",
+				"completion": "0.000015",
+				"input_cache_read": "0.0000004",
+				"input_cache_write": "0.000005",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.00001"
+				"prompt": "0.000004"
 			}],
-			"prompt": "0.000005",
+			"prompt": "0.000002",
 			"web_search": "0.01"
 		},
 		"reasoning":
@@ -2001,16 +3185,18 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000015",
-			"input_cache_read": "0.00000025",
+			"completion": "0.000005",
+			"input_cache_read": "0.0000001",
+			"input_cache_write": "0.00000125",
 			"overrides": [
 			{
-				"completion": "0.0000225",
-				"input_cache_read": "0.0000005",
+				"completion": "0.0000075",
+				"input_cache_read": "0.0000002",
+				"input_cache_write": "0.0000025",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.000005"
+				"prompt": "0.000002"
 			}],
-			"prompt": "0.0000025",
+			"prompt": "0.000001",
 			"web_search": "0.01"
 		},
 		"reasoning":
@@ -2063,18 +3249,18 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00003",
-			"input_cache_read": "0.0000005",
-			"input_cache_write": "0.00000625",
+			"completion": "0.00001",
+			"input_cache_read": "0.0000002",
+			"input_cache_write": "0.0000025",
 			"overrides": [
 			{
-				"completion": "0.000045",
-				"input_cache_read": "0.000001",
-				"input_cache_write": "0.0000125",
+				"completion": "0.000015",
+				"input_cache_read": "0.0000004",
+				"input_cache_write": "0.000005",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.00001"
+				"prompt": "0.000004"
 			}],
-			"prompt": "0.000005",
+			"prompt": "0.000002",
 			"web_search": "0.01"
 		},
 		"reasoning":
@@ -2106,15 +3292,8 @@
 		"context_length": 500000,
 		"created": 1783523154,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
-		"description": "Grok 4.5 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM.",
+		{},
+		"description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM.",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "x-ai/grok-4.5",
@@ -2146,7 +3325,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high", "medium", "low"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -2158,8 +3337,8 @@
 	{
 		"alias_target":
 		{
-			"name": "SpaceXAI: Grok 4.5",
-			"slug": "x-ai/grok-4.5"
+			"name": "SpaceXAI: Grok 4.6",
+			"slug": "x-ai/grok-4.6"
 		},
 		"architecture":
 		{
@@ -2173,14 +3352,7 @@
 		"context_length": 500000,
 		"created": 1783519360,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "This model always redirects to the latest Grok model from xAI.",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -2195,11 +3367,11 @@
 		"pricing":
 		{
 			"completion": "0.000006",
-			"input_cache_read": "0.0000003",
+			"input_cache_read": "0.0000005",
 			"overrides": [
 			{
 				"completion": "0.000012",
-				"input_cache_read": "0.0000006",
+				"input_cache_read": "0.000001",
 				"min_prompt_tokens": 200000,
 				"prompt": "0.000004"
 			}],
@@ -2211,9 +3383,9 @@
 			"default_effort": "high",
 			"default_enabled": true,
 			"mandatory": true,
-			"supported_efforts": ["high", "medium", "low"]
+			"supported_efforts": ["xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -2519,14 +3691,7 @@
 		"context_length": 1000000,
 		"created": 1782843083,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Sonnet 5 is Anthropic's most capable Sonnet-class model, with frontier performance across coding, agents, and professional work. It supports adaptive thinking with selectable reasoning effort levels (low, medium, high, max,...",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -2576,14 +3741,7 @@
 		"context_length": 1000000,
 		"created": 1782843083,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Sonnet 5 is Anthropic's most capable Sonnet-class model, with frontier performance across coding, agents, and professional work. It supports adaptive thinking with selectable reasoning effort levels (low, medium, high, max,...",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -2940,7 +4098,60 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "z-ai/glm-5.2-20260616",
-		"context_length": 512000,
+		"context_length": 256000,
+		"created": 1781631930,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": 1,
+			"top_k": null,
+			"top_p": 0.95
+		},
+		"description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
+		"expiration_date": null,
+		"hugging_face_id": "zai-org/GLM-5.2",
+		"id": "z-ai/glm-5.2:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/z-ai/glm-5.2-20260616/endpoints"
+		},
+		"name": "Z.ai: GLM 5.2 (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["xhigh", "high"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 256000,
+			"is_moderated": false,
+			"max_completion_tokens": 256000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "z-ai/glm-5.2-20260616",
+		"context_length": 1048575,
 		"created": 1781631930,
 		"default_parameters":
 		{
@@ -2964,9 +4175,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000022",
-			"input_cache_read": "0.00000013",
-			"prompt": "0.0000007"
+			"completion": "0.0000044",
+			"input_cache_read": "0.00000026",
+			"prompt": "0.0000014"
 		},
 		"reasoning":
 		{
@@ -2979,7 +4190,7 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 512000,
+			"context_length": 1048575,
 			"is_moderated": false,
 			"max_completion_tokens": null
 		}
@@ -3018,9 +4229,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000572",
-			"input_cache_read": "0.0000000338",
-			"prompt": "0.000000182"
+			"completion": "0.000003036",
+			"input_cache_read": "0.0000001932",
+			"prompt": "0.000000966"
 		},
 		"reasoning":
 		{
@@ -3033,9 +4244,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1024000,
+			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 128000
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -3118,9 +4329,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002",
-			"input_cache_read": "0.000000095",
-			"prompt": "0.000000475"
+			"completion": "0.000004",
+			"input_cache_read": "0.00000019",
+			"prompt": "0.00000095"
 		},
 		"reasoning":
 		{
@@ -3170,9 +4381,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000035",
-			"input_cache_read": "0.00000015",
-			"prompt": "0.0000007"
+			"completion": "0.0000034",
+			"input_cache_read": "0.00000017",
+			"prompt": "0.00000067"
 		},
 		"reasoning":
 		{
@@ -3357,7 +4568,7 @@
 		"top_provider":
 		{
 			"context_length": 1000000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 128000
 		}
 	},
@@ -3601,9 +4812,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000018",
-			"input_cache_read": "0.0000001",
-			"prompt": "0.0000003"
+			"completion": "0.0000036",
+			"input_cache_read": "0.0000002",
+			"prompt": "0.0000006"
 		},
 		"reasoning":
 		{
@@ -3765,9 +4976,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"input_cache_read": "0.00000003",
-			"prompt": "0.00000015"
+			"completion": "0.0000012",
+			"input_cache_read": "0.00000006",
+			"prompt": "0.0000003"
 		},
 		"reasoning":
 		{
@@ -3956,14 +5167,7 @@
 		"context_length": 1000000,
 		"created": 1779905091,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token...",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -4013,14 +5217,7 @@
 		"context_length": 1000000,
 		"created": 1779905091,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token...",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -4160,7 +5357,7 @@
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -4463,7 +5660,7 @@
 			"top_p": null
 		},
 		"description": "Ring-2.6-1T is a 1T-parameter-scale thinking model with 63B active parameters, built for real-world agent workflows that require both strong capability and operational efficiency. It is optimized for coding agents, tool...",
-		"expiration_date": null,
+		"expiration_date": "2026-08-24",
 		"hugging_face_id": null,
 		"id": "inclusionai/ring-2.6-1t",
 		"knowledge_cutoff": null,
@@ -4753,7 +5950,7 @@
 			"mandatory": false,
 			"supported_efforts": ["high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -5212,7 +6409,7 @@
 		"top_provider":
 		{
 			"context_length": 200000,
-			"is_moderated": false,
+			"is_moderated": true,
 			"max_completion_tokens": 64000
 		}
 	},
@@ -5272,7 +6469,7 @@
 		"top_provider":
 		{
 			"context_length": 400000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 128000
 		}
 	},
@@ -5357,9 +6554,9 @@
 		},
 		"architecture":
 		{
-			"input_modalities": ["text", "image"],
+			"input_modalities": ["text", "image", "video"],
 			"instruct_type": null,
-			"modality": "text+image->text",
+			"modality": "text+image+video->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Router"
 		},
@@ -5388,9 +6585,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000014",
+			"completion": "0.000013",
 			"input_cache_read": "0.00000029",
-			"prompt": "0.0000028"
+			"prompt": "0.0000026"
 		},
 		"reasoning":
 		{
@@ -5403,16 +6600,16 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1048576,
+			"context_length": 974842,
 			"is_moderated": false,
-			"max_completion_tokens": 1048576
+			"max_completion_tokens": 974842
 		}
 	},
 	{
 		"alias_target":
 		{
-			"name": "Google: Gemini 3.6 Flash",
-			"slug": "google/gemini-3.6-flash"
+			"name": "Google: Gemini 3.7 Flash",
+			"slug": "google/gemini-3.7-flash"
 		},
 		"architecture":
 		{
@@ -5426,14 +6623,7 @@
 		"context_length": 1048576,
 		"created": 1777318398,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "This model always redirects to the latest model in the Google Gemini Flash family.",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -5447,14 +6637,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"audio": "0.0000015",
-			"completion": "0.0000075",
-			"image": "0.0000015",
-			"input_audio_cache": "0.00000015",
-			"input_cache_read": "0.00000015",
-			"input_cache_write": "0.0000000833333333333333",
-			"internal_reasoning": "0.0000075",
-			"prompt": "0.0000015",
+			"audio": "0.000000375",
+			"completion": "0.000001875",
+			"image": "0.000000375",
+			"input_audio_cache": "0.0000000375",
+			"input_cache_read": "0.0000000375",
+			"input_cache_write": "0.0000000208333333333333",
+			"internal_reasoning": "0.000001875",
+			"prompt": "0.000000375",
 			"web_search": "0.014"
 		},
 		"reasoning":
@@ -5462,7 +6652,7 @@
 			"default_effort": "medium",
 			"default_enabled": true,
 			"mandatory": true,
-			"supported_efforts": ["high", "medium", "low", "minimal"]
+			"supported_efforts": ["high", "medium", "low"]
 		},
 		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
@@ -5491,14 +6681,7 @@
 		"context_length": 1000000,
 		"created": 1777318368,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "This model always redirects to the latest model in the Anthropic Claude Sonnet family.",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -5574,18 +6757,18 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00003",
-			"input_cache_read": "0.0000005",
-			"input_cache_write": "0.00000625",
+			"completion": "0.00001",
+			"input_cache_read": "0.0000002",
+			"input_cache_write": "0.0000025",
 			"overrides": [
 			{
-				"completion": "0.000045",
-				"input_cache_read": "0.000001",
-				"input_cache_write": "0.0000125",
+				"completion": "0.000015",
+				"input_cache_read": "0.0000004",
+				"input_cache_write": "0.000005",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.00001"
+				"prompt": "0.000004"
 			}],
-			"prompt": "0.000005",
+			"prompt": "0.000002",
 			"web_search": "0.01"
 		},
 		"reasoning":
@@ -5739,7 +6922,7 @@
 		{
 			"completion": "0.000001",
 			"input_cache_read": "0.00000005",
-			"prompt": "0.00000015"
+			"prompt": "0.00000014"
 		},
 		"reasoning":
 		{
@@ -6097,7 +7280,7 @@
 		"top_provider":
 		{
 			"context_length": 1050000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 128000
 		}
 	},
@@ -6115,11 +7298,7 @@
 		"created": 1777000679,
 		"default_parameters":
 		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
 			"temperature": 1,
-			"top_k": null,
 			"top_p": 1
 		},
 		"description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
@@ -6131,13 +7310,13 @@
 		{
 			"details": "/api/v1/models/deepseek/deepseek-v4-pro-20260423/endpoints"
 		},
-		"name": "DeepSeek: DeepSeek V4 Pro",
+		"name": "DeepSeek: DeepSeek V4 Pro 0423",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000087",
-			"input_cache_read": "0.000000003625",
-			"prompt": "0.000000435"
+			"completion": "0.000000827544",
+			"input_cache_read": "0.000000034481",
+			"prompt": "0.000000413772"
 		},
 		"reasoning":
 		{
@@ -6145,11 +7324,11 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1048576,
+			"context_length": 1024000,
 			"is_moderated": false,
 			"max_completion_tokens": 384000
 		}
@@ -6181,9 +7360,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000028",
-			"input_cache_read": "0.000000028",
-			"prompt": "0.00000014"
+			"completion": "0.00000010892",
+			"input_cache_read": "0.000000010892",
+			"prompt": "0.00000005446"
 		},
 		"reasoning":
 		{
@@ -6191,13 +7370,13 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1048576,
+			"context_length": 1024000,
 			"is_moderated": false,
-			"max_completion_tokens": 393216
+			"max_completion_tokens": 384000
 		}
 	},
 	{
@@ -6306,7 +7485,7 @@
 			"top_p": null
 		},
 		"description": "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company’s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It uses a “fast...",
-		"expiration_date": null,
+		"expiration_date": "2026-08-24",
 		"hugging_face_id": null,
 		"id": "inclusionai/ling-2.6-1t",
 		"knowledge_cutoff": null,
@@ -6410,9 +7589,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000021",
-			"input_cache_read": "0.000000021",
-			"prompt": "0.000000063"
+			"completion": "0.0000006",
+			"input_cache_read": "0.00000006",
+			"prompt": "0.00000018"
 		},
 		"reasoning":
 		{
@@ -6655,7 +7834,7 @@
 			"top_p": null
 		},
 		"description": "Ling-2.6-flash is an instant (instruct) model from inclusionAI with 104B total parameters and 7.4B active parameters, designed for real-world agents that require fast responses, strong execution, and high token efficiency....",
-		"expiration_date": null,
+		"expiration_date": "2026-08-24",
 		"hugging_face_id": "",
 		"id": "inclusionai/ling-2.6-flash",
 		"knowledge_cutoff": null,
@@ -6698,14 +7877,7 @@
 		"context_length": 1000000,
 		"created": 1776795361,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "This model always redirects to the latest model in the Claude Opus family.",
 		"expiration_date": null,
 		"hugging_face_id": "",
@@ -6960,9 +8132,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000244",
-			"input_cache_read": "0.0000000976",
-			"prompt": "0.0000005795"
+			"completion": "0.000004",
+			"input_cache_read": "0.00000016",
+			"prompt": "0.00000095"
 		},
 		"reasoning":
 		{
@@ -6975,7 +8147,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -6991,14 +8163,7 @@
 		"context_length": 1000000,
 		"created": 1776351100,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Opus 4.7 is the next generation of Anthropic's Opus family, built for long-running, asynchronous agents. Building on the coding and agentic strengths of Opus 4.6, it delivers stronger performance on...",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -7048,14 +8213,7 @@
 		"context_length": 1000000,
 		"created": 1776351100,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Opus 4.7 is the next generation of Anthropic's Opus family, built for long-running, asynchronous agents. Building on the coding and agentic strengths of Opus 4.6, it delivers stronger performance on...",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -7225,9 +8383,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002992",
-			"input_cache_read": "0.0000001768",
-			"prompt": "0.000000952"
+			"completion": "0.000003036",
+			"input_cache_read": "0.0000001794",
+			"prompt": "0.000000966"
 		},
 		"reasoning":
 		{
@@ -7238,9 +8396,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 202752,
+			"context_length": 200000,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -7282,11 +8440,11 @@
 			"default_enabled": false,
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 262144,
 			"is_moderated": false,
 			"max_completion_tokens": 32768
 		}
@@ -7433,7 +8591,7 @@
 			"default_enabled": false,
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -9496,8 +10654,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
-			"prompt": "0.00000014"
+			"completion": "0.00000125",
+			"input_cache_read": "0.00000025",
+			"prompt": "0.00000025"
 		},
 		"reasoning":
 		{
@@ -9596,8 +10755,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000024",
-			"prompt": "0.00000029"
+			"completion": "0.00000208",
+			"prompt": "0.00000026"
 		},
 		"reasoning":
 		{
@@ -9609,7 +10768,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 81920
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -10016,14 +11175,7 @@
 		"context_length": 1000000,
 		"created": 1771342990,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Sonnet 4.6 is Anthropic's most capable Sonnet-class model yet, with frontier performance across coding, agents, and professional work. It excels at iterative development, complex codebase navigation, end-to-end project management with...",
 		"expiration_date": null,
 		"hugging_face_id": "",
@@ -10072,14 +11224,7 @@
 		"context_length": 1000000,
 		"created": 1771342990,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Sonnet 4.6 is Anthropic's most capable Sonnet-class model yet, with frontier performance across coding, agents, and professional work. It excels at iterative development, complex codebase navigation, end-to-end project management with memory, polished document creation, and confident computer use for web QA and workflow automation.",
 		"expiration_date": null,
 		"hugging_face_id": "",
@@ -10298,21 +11443,21 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000009",
-			"input_cache_read": "0.00000005",
-			"prompt": "0.00000022"
+			"completion": "0.00000108",
+			"input_cache_read": "0.000000027",
+			"prompt": "0.00000027"
 		},
 		"reasoning":
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 196608,
+			"context_length": 200000,
 			"is_moderated": false,
-			"max_completion_tokens": 196608
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -10346,9 +11491,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000255",
-			"input_cache_read": "0.0000002",
-			"prompt": "0.00000095"
+			"completion": "0.00000192",
+			"input_cache_read": "0.00000012",
+			"prompt": "0.0000006"
 		},
 		"reasoning":
 		{
@@ -10359,9 +11504,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 204800,
+			"context_length": 198000,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -10517,14 +11662,7 @@
 		"context_length": 1000000,
 		"created": 1770219050,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Opus 4.6 is Anthropic’s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective...",
 		"expiration_date": null,
 		"hugging_face_id": "",
@@ -10575,14 +11713,7 @@
 		"context_length": 1000000,
 		"created": 1770219050,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Opus 4.6 is Anthropic’s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective for large codebases, complex refactors, and multi-step debugging that unfolds over time. The model shows deeper contextual understanding, stronger problem decomposition, and greater reliability on hard engineering tasks than prior generations.\n\nBeyond coding, Opus 4.6 excels at sustained knowledge work. It produces near-production-ready documents, plans, and analyses in a single pass, and maintains coherence across very long outputs and extended sessions. This makes it a strong default for tasks that require persistence, judgment, and follow-through, such as technical design, migration planning, and end-to-end project execution.\n\nFor users upgrading from earlier Opus versions, see our [official migration guide here](https://openrouter.ai/docs/guides/guides/model-migrations/claude-4-6-opus)\n",
 		"expiration_date": null,
 		"hugging_face_id": "",
@@ -10698,7 +11829,7 @@
 			"completion": "0",
 			"prompt": "0"
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -10920,9 +12051,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000285",
-			"input_cache_read": "0.000000095",
-			"prompt": "0.00000057"
+			"completion": "0.00000225",
+			"input_cache_read": "0.00000007",
+			"prompt": "0.00000045"
 		},
 		"reasoning":
 		{
@@ -12054,7 +13185,7 @@
 			"top_p": null
 		},
 		"description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems. The model is fully open with open-weights, datasets and recipes so developers can easily\ncustomize, optimize, and deploy the model on their infrastructure for maximum privacy and\nsecurity.",
-		"expiration_date": null,
+		"expiration_date": "2026-08-24",
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
 		"id": "nvidia/nemotron-3-nano-30b-a3b:free",
 		"knowledge_cutoff": null,
@@ -12166,13 +13297,13 @@
 			"prompt": "0.00000175",
 			"web_search": "0.01"
 		},
-		"supported_parameters": ["max_completion_tokens", "max_tokens", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["max_completion_tokens", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 128000,
-			"is_moderated": true,
-			"max_completion_tokens": 16384
+			"is_moderated": false,
+			"max_completion_tokens": 32000
 		}
 	},
 	{
@@ -13210,9 +14341,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000004",
-			"input_cache_read": "0.0000001345",
-			"prompt": "0.000000269"
+			"completion": "0.00000038",
+			"input_cache_read": "0.00000013",
+			"prompt": "0.00000026"
 		},
 		"reasoning":
 		{
@@ -13225,7 +14356,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -13363,14 +14494,7 @@
 		"context_length": 200000,
 		"created": 1764010580,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Claude Opus 4.5 is Anthropic’s frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and...",
 		"expiration_date": null,
 		"hugging_face_id": "",
@@ -13417,14 +14541,7 @@
 		"context_length": 200000,
 		"created": 1764010580,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "Claude Opus 4.5 is Anthropic’s frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and reasoning benchmarks, and improved robustness to prompt injection. The model is designed to operate efficiently across varied effort levels, enabling developers to trade off speed, depth, and token usage depending on task requirements. It comes with a new parameter to control token efficiency, which can be accessed using the OpenRouter Verbosity parameter with low, medium, or high.\n\nOpus 4.5 supports advanced tool use, extended context management, and coordinated multi-agent setups, making it well-suited for autonomous research, debugging, multi-step planning, and spreadsheet/browser manipulation. It delivers substantial gains in structured reasoning, execution reliability, and alignment compared to prior Opus generations, while reducing token overhead and improving performance on long-running tasks.",
 		"expiration_date": null,
 		"hugging_face_id": "",
@@ -14684,7 +15801,7 @@
 			"top_p": null
 		},
 		"description": "NVIDIA Nemotron Nano 2 VL is a 12-billion-parameter open multimodal reasoning model designed for video understanding and document intelligence. It introduces a hybrid Transformer-Mamba architecture, combining transformer-level accuracy with Mamba’s memory-efficient sequence modeling for significantly higher throughput and lower latency.\n\nThe model supports inputs of text and multi-image documents, producing natural-language outputs. It is trained on high-quality NVIDIA-curated synthetic datasets optimized for optical-character recognition, chart reasoning, and multimodal comprehension.\n\nNemotron Nano 2 VL achieves leading results on OCRBench v2 and scores ≈ 74 average across MMMU, MathVista, AI2D, OCRBench, OCR-Reasoning, ChartQA, DocVQA, and Video-MME—surpassing prior open VL baselines. With Efficient Video Sampling (EVS), it handles long-form videos while reducing inference cost.\n\nOpen-weights, training data, and fine-tuning recipes are released under a permissive NVIDIA open license, with deployment supported across NeMo, NIM, and major inference runtimes.",
-		"expiration_date": null,
+		"expiration_date": "2026-08-24",
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16",
 		"id": "nvidia/nemotron-nano-12b-v2-vl:free",
 		"knowledge_cutoff": null,
@@ -15826,16 +16943,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"prompt": "0.00000015"
+			"completion": "0.00000052",
+			"prompt": "0.00000013"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -17136,9 +18253,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 262144
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -17208,7 +18325,8 @@
 		"pricing":
 		{
 			"completion": "0.0000011",
-			"prompt": "0.00000009"
+			"input_cache_read": "0.00000007",
+			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -17216,7 +18334,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -17325,16 +18443,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000012",
-			"input_cache_write": "0.0000005",
+			"completion": "0.00000078",
 			"overrides": [
 			{
-				"completion": "0.0000036",
-				"input_cache_write": "0.0000015",
+				"completion": "0.00000234",
 				"min_prompt_tokens": 256000,
-				"prompt": "0.0000012"
+				"prompt": "0.00000078"
 			}],
-			"prompt": "0.0000004"
+			"prompt": "0.00000026"
 		},
 		"reasoning":
 		{
@@ -17421,7 +18537,7 @@
 			"top_p": null
 		},
 		"description": "NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response. \n\nThe model's reasoning capabilities can be controlled via a system prompt. If the user prefers the model to provide its final answer without intermediate reasoning traces, it can be configured to do so.",
-		"expiration_date": null,
+		"expiration_date": "2026-08-24",
 		"hugging_face_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
 		"id": "nvidia/nemotron-nano-9b-v2:free",
 		"knowledge_cutoff": "2025-03-31",
@@ -18131,9 +19247,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000095",
-			"input_cache_read": "0.00000013",
-			"prompt": "0.00000025"
+			"completion": "0.00000165",
+			"input_cache_read": "0.00000055",
+			"prompt": "0.00000055"
 		},
 		"reasoning":
 		{
@@ -18143,9 +19259,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 163840,
+			"context_length": 161000,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 161000
 		}
 	},
 	{
@@ -19248,16 +20364,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000027",
+			"completion": "0.00000028",
 			"prompt": "0.00000007"
 		},
 		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 160000,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -20672,7 +21788,7 @@
 			"tokenizer": "Mistral"
 		},
 		"canonical_slug": "mistralai/mistral-small-3.2-24b-instruct-2506",
-		"context_length": 256000,
+		"context_length": 131072,
 		"created": 1750443016,
 		"default_parameters":
 		{
@@ -20691,14 +21807,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000025",
-			"prompt": "0.00000009375"
+			"completion": "0.0000002",
+			"prompt": "0.000000075"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 256000,
+			"context_length": 128000,
 			"is_moderated": false,
 			"max_completion_tokens": 16384
 		}
@@ -22708,8 +23824,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000091",
-			"prompt": "0.0000002275"
+			"completion": "0.00000024",
+			"prompt": "0.00000012"
 		},
 		"reasoning":
 		{
@@ -22719,9 +23835,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 40960,
 			"is_moderated": false,
-			"max_completion_tokens": 8192
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -24482,17 +25598,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000112",
-			"input_cache_read": "0.000000135",
-			"prompt": "0.00000027"
+			"completion": "0.000001",
+			"prompt": "0.00000025"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 163840
 		}
 	},
 	{
@@ -26431,16 +27546,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000075",
-			"prompt": "0.00000025"
+			"completion": "0.000001",
+			"input_cache_read": "0.0000004",
+			"prompt": "0.0000008"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 32000,
+			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": null
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -27101,7 +28217,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-r1",
-		"context_length": 163840,
+		"context_length": 64000,
 		"created": 1737381095,
 		"default_parameters":
 		{
@@ -27132,7 +28248,7 @@
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_completion_tokens", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -28264,7 +29380,7 @@
 			"tokenizer": "Qwen"
 		},
 		"canonical_slug": "anthracite-org/magnum-v4-72b",
-		"context_length": 16384,
+		"context_length": 32768,
 		"created": 1729555200,
 		"default_parameters":
 		{},
@@ -28288,9 +29404,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 16384,
+			"context_length": 32768,
 			"is_moderated": false,
-			"max_completion_tokens": 2048
+			"max_completion_tokens": 4096
 		}
 	},
 	{
@@ -28339,7 +29455,7 @@
 			"tokenizer": "Mistral"
 		},
 		"canonical_slug": "mistralai/ministral-8b",
-		"context_length": 131072,
+		"context_length": 128000,
 		"created": 1729123200,
 		"default_parameters":
 		{
@@ -28349,17 +29465,23 @@
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "mistralai/ministral-8b",
+		"knowledge_cutoff": "2024-09-30",
+		"links":
+		{
+			"details": "/api/v1/models/mistralai/ministral-8b/endpoints"
+		},
 		"name": "Mistral: Ministral 8B",
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000001",
-			"prompt": "0.0000001"
+			"completion": "0.00000011",
+			"prompt": "0.00000011"
 		},
-		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_p"],
+		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 128000,
 			"is_moderated": false,
 			"max_completion_tokens": null
 		}
@@ -31728,7 +32850,7 @@
 		"top_provider":
 		{
 			"context_length": 16385,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 4096
 		}
 	},
@@ -31762,7 +32884,7 @@
 			"completion": "0.00000075",
 			"prompt": "0.0000005"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -31837,8 +32959,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000011",
-			"prompt": "0.00000008"
+			"completion": "0.00000006",
+			"prompt": "0.00000006"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -31923,7 +33045,7 @@
 		"top_provider":
 		{
 			"context_length": 8191,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 4096
 		}
 	},
@@ -32010,5 +33132,5 @@
 	{
 		"next": null
 	},
-	"total_count": 400
+	"total_count": 422
 }

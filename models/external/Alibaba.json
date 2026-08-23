@@ -1,6 +1,108 @@
 {
 	"data": [
 	{
+		"created": 1787316025,
+		"id": "kimi-k3",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1787312621,
+		"id": "deepseek-v4-pro-0813",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1787143672,
+		"id": "qwen3.8-27b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1787029756,
+		"id": "ZHIPU/GLM-5.3",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786625995,
+		"id": "qwen3.8-2.4t-a95b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786606113,
+		"id": "qwen-image-3.0-pro",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786606078,
+		"id": "qwen-image-3.0",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786453689,
+		"id": "qwen3.5-397b-a17b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786435205,
+		"id": "qwen3.7-text-embedding",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786420843,
+		"id": "qwen3.7-max",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786372125,
+		"id": "qwen3.7-plus-2026-05-26",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786372099,
+		"id": "qwen3.7-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786372084,
+		"id": "qwen3.6-plus-2026-04-02",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786372061,
+		"id": "qwen3.6-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786372035,
+		"id": "qwen3.5-plus-2026-02-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786372017,
+		"id": "qwen3.5-plus-2026-04-20",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1786372004,
+		"id": "qwen3.5-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1786098182,
 		"id": "qwen3.8-max",
 		"object": "model",
@@ -13,26 +115,8 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1785862507,
-		"id": "qwen-image-3.0-pro",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1785862462,
-		"id": "qwen-image-3.0",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1785845568,
 		"id": "qwen3.5-122b-a10b",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1785750559,
-		"id": "qwen3.5-plus",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -57,18 +141,6 @@
 	{
 		"created": 1785750376,
 		"id": "qwen-plus",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1785750328,
-		"id": "qwen3.6-plus",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1785750278,
-		"id": "qwen3.7-plus",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -193,12 +265,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1782991139,
-		"id": "qwen3.7-max",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1782886358,
 		"id": "glm-5.2",
 		"object": "model",
@@ -265,24 +331,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1781705346,
-		"id": "qwen3.5-plus-2026-02-15",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1781704683,
-		"id": "qwen3.5-plus-2026-04-20",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1781579222,
-		"id": "qwen3.7-plus-2026-05-26",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1781491466,
 		"id": "qwen3.7-max-2026-05-17",
 		"object": "model",
@@ -321,12 +369,6 @@
 	{
 		"created": 1780984108,
 		"id": "qwen3.5-omni-flash-realtime-2026-03-15",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1780904976,
-		"id": "qwen3.6-plus-2026-04-02",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -387,12 +429,6 @@
 	{
 		"created": 1778725927,
 		"id": "qwen3.6-35b-a3b",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1778725838,
-		"id": "qwen3.5-397b-a17b",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -1082,6 +1118,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-155",
+	"last_id": "model-id-161",
 	"object": "list"
 }

@@ -439,6 +439,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 3.7 Flash",
+		"id": "models/gemini-3.7-flash",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini Embedding 001",
 		"id": "models/gemini-embedding-001",
 		"object": "model",
