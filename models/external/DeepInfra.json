@@ -140,11 +140,34 @@
 		"id": "BAAI/bge-m3-multi",
 		"metadata":
 		{
+			"context_length": 512,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "BGE-M3 is a multilingual text embedding model developed by BAAI, distinguished by its Multi-Linguality (supporting 100+ languages), Multi-Functionality (unified dense, multi-vector, and sparse retrieval), and Multi-Granularity (handling inputs from short queries to long documents). It achieves state-of-the-art retrieval performance across diverse benchmarks while maintaining a single model for multiple retrieval modes. Inputs to this endpoint are truncated to 512 tokens.",
+			"discount": null,
+			"max_tokens": 512,
+			"pricing":
+			{
+				"input_tokens": 0.01
+			},
+			"tags": ["embed"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "BAAI/bge-m3-multi"
+	},
+	{
+		"created": 0,
+		"id": "BAAI/bge-m3-multi-8k",
+		"metadata":
+		{
 			"context_length": 8192,
 			"default_height": null,
 			"default_iterations": null,
 			"default_width": null,
-			"description": "BGE-M3 is a multilingual text embedding model developed by BAAI, distinguished by its Multi-Linguality (supporting 100+ languages), Multi-Functionality (unified dense, multi-vector, and sparse retrieval), and Multi-Granularity (handling inputs from short queries to 8192-token documents). It achieves state-of-the-art retrieval performance across diverse benchmarks while maintaining a single model for multiple retrieval modes.",
+			"description": "BGE-M3 is a multilingual text embedding model developed by BAAI, distinguished by its Multi-Linguality (supporting 100+ languages), Multi-Functionality (unified dense, multi-vector, and sparse retrieval), and Multi-Granularity (handling inputs from short queries to long documents). It achieves state-of-the-art retrieval performance across diverse benchmarks while maintaining a single model for multiple retrieval modes. This endpoint serves the model's full 8192-token context.",
 			"discount": null,
 			"max_tokens": 8192,
 			"pricing":
@@ -156,7 +179,7 @@
 		"object": "model",
 		"owned_by": "deepinfra",
 		"parent": null,
-		"root": "BAAI/bge-m3-multi"
+		"root": "BAAI/bge-m3-multi-8k"
 	},
 	{
 		"created": 0,
@@ -2634,7 +2657,7 @@
 			"default_iterations": null,
 			"default_width": null,
 			"description": "MiMo-V2.5-Pro is an open-source Mixture-of-Experts (MoE) language model with 1.02T total parameters and 42B active parameters. It utilizes the hybrid attention architecture and 3-layers Multi-Token Prediction (MTP) introduced in [MiMo-V2-Flash](https://github.com/XiaomiMiMo/MiMo-V2-Flash).",
-			"discount": null,
+			"discount": 0.61,
 			"max_tokens": 1048576,
 			"pricing":
 			{
@@ -3043,8 +3066,8 @@
 			"max_tokens": 1000000,
 			"pricing":
 			{
-				"input_tokens": 2.0,
-				"output_tokens": 10.0
+				"input_tokens": 2.9999999999999996,
+				"output_tokens": 15.0
 			},
 			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
@@ -3793,8 +3816,8 @@
 			"max_tokens": 1048576,
 			"pricing":
 			{
-				"cache_read_tokens": 0.016,
-				"input_tokens": 0.08,
+				"cache_read_tokens": 0.015000000000000001,
+				"input_tokens": 0.060000000000000005,
 				"output_tokens": 0.18
 			},
 			"tags": ["chat", "prompt_cache", "reasoning"]
@@ -3803,6 +3826,31 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "deepseek-ai/DeepSeek-V4-Flash-0731"
+	},
+	{
+		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "DeepSeek-V4-Flash-Vision-Exp is DeepSeek's experimental multimodal model in the V4-Flash family, adding visual understanding to the V4-Flash architecture. It serves a 1M-token (1,048,576) context window and supports image input with visual grounding, tool calling, structured/JSON output, and configurable reasoning effort (low/high/max, or disabled).",
+			"discount": 0.51,
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.1400000008,
+				"input_tokens": 0.43999999999999995,
+				"output_tokens": 1.32
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
 	},
 	{
 		"created": 0,
@@ -4533,6 +4581,81 @@
 	},
 	{
 		"created": 0,
+		"id": "ibm-granite/granite-4.2-30b",
+		"metadata":
+		{
+			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Granite-4.2-30B is the flagship reasoning model in the Granite 4.2 family. It delivers the strongest performance across reasoning-intensive tasks by leveraging built-in <think>...</think> chain-of-thought. It supports flexible thinking modes — full thinking (default), non-thinking, and low-effort — allowing users to balance depth vs. latency on a per-query basis.",
+			"discount": null,
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"cache_read_tokens": 0.04,
+				"input_tokens": 0.16,
+				"output_tokens": 0.6499999999999999
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ibm-granite/granite-4.2-30b"
+	},
+	{
+		"created": 0,
+		"id": "ibm-granite/granite-4.2-3b",
+		"metadata":
+		{
+			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Granite-4.2-3B is the compact reasoning model in the Granite 4.2 family. Despite its small parameter count, it delivers strong performance on reasoning-intensive tasks by leveraging built-in <think>...</think> chain-of-thought. It supports flexible thinking modes — full thinking (default), non-thinking, and low-effort — allowing users to balance depth vs. latency on a per-query basis.",
+			"discount": null,
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"cache_read_tokens": 0.007500000000000001,
+				"input_tokens": 0.030000000000000002,
+				"output_tokens": 0.12000000000000001
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ibm-granite/granite-4.2-3b"
+	},
+	{
+		"created": 0,
+		"id": "ibm-granite/granite-4.2-8b",
+		"metadata":
+		{
+			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Granite-4.2-8B is the mid-size reasoning model in the Granite 4.2 family. It delivers strong performance on reasoning-intensive tasks by leveraging built-in <think>...</think> chain-of-thought. It supports flexible thinking modes — full thinking (default), non-thinking, and low-effort — allowing users to balance depth vs. latency on a per-query basis.",
+			"discount": null,
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"cache_read_tokens": 0.015000000000000001,
+				"input_tokens": 0.060000000000000005,
+				"output_tokens": 0.25
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "ibm-granite/granite-4.2-8b"
+	},
+	{
+		"created": 0,
 		"id": "inclusionAI/Ling-3.0-flash",
 		"metadata":
 		{
@@ -4555,6 +4678,56 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "inclusionAI/Ling-3.0-flash"
+	},
+	{
+		"created": 0,
+		"id": "inclusionAI/Ling-3.0-flash-Fin",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Ling-3.0-flash-Fin is the first finance-enhanced model in the Ant Ling family. Developed by Ant Group with leading financial institutions and domain experts, it extends Ling-3.0-flash through continued training on high-quality financial data.",
+			"discount": null,
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.012000000000000002,
+				"input_tokens": 0.060000000000000005,
+				"output_tokens": 0.18
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "inclusionAI/Ling-3.0-flash-Fin"
+	},
+	{
+		"created": 0,
+		"id": "inclusionAI/Ling-3.0-flash-VL",
+		"metadata":
+		{
+			"context_length": 131072,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "The multimodal version built on Ling-3.0-flash — 124B total / ~5.5B active per token, with native text, image, and video understanding. It’s mainly designed for multimodal agentic workflows, long-context understanding, and multi-step reasoning.",
+			"discount": null,
+			"max_tokens": 131072,
+			"pricing":
+			{
+				"cache_read_tokens": 0.012000000000000002,
+				"input_tokens": 0.060000000000000005,
+				"output_tokens": 0.18
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "inclusionAI/Ling-3.0-flash-VL"
 	},
 	{
 		"created": 0,
@@ -6684,7 +6857,7 @@
 			"default_iterations": null,
 			"default_width": null,
 			"description": "Step 3.7 Flash is an open-source multimodal reasoning model by StepFun with 198B total parameters (11B active) using Mixture of Experts. It accepts text and image inputs and features a 256K context window, selectable reasoning effort, tool calling, and agentic capabilities for coding and search workflows, scoring 80.9% on GPQA Diamond and 56.3% on SWE-bench Pro.",
-			"discount": null,
+			"discount": 0.2,
 			"max_tokens": 262144,
 			"pricing":
 			{
@@ -7015,7 +7188,7 @@
 			"default_iterations": null,
 			"default_width": null,
 			"description": "GLM-5.2 is Z-AI's latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and, for the first time, delivers that capability on a **solid 1M-token context**.",
-			"discount": null,
+			"discount": 0.35,
 			"max_tokens": 1048576,
 			"pricing":
 			{
@@ -7029,6 +7202,56 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "zai-org/GLM-5.2"
+	},
+	{
+		"created": 0,
+		"id": "zai-org/GLM-5.3",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves on GLM-5.2 in coding and in the balance between performance and token efficiency.",
+			"discount": null,
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.12,
+				"input_tokens": 1.2,
+				"output_tokens": 4.0
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "zai-org/GLM-5.3"
+	},
+	{
+		"created": 0,
+		"id": "zai-org/GLM-5.3-Flash",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead.",
+			"discount": 0.5,
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.03,
+				"input_tokens": 0.15,
+				"output_tokens": 0.5
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "zai-org/GLM-5.3-Flash"
 	}],
 	"object": "list"
 }

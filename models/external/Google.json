@@ -433,6 +433,18 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 3.5 Transcribe",
+		"id": "models/gemini-3.5-transcribe",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.5 Transcribe Live",
+		"id": "models/gemini-3.5-transcribe-live",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini 3.6 Flash",
 		"id": "models/gemini-3.6-flash",
 		"object": "model",
@@ -441,6 +453,12 @@
 	{
 		"display_name": "Gemini 3.7 Flash",
 		"id": "models/gemini-3.7-flash",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.8 Flash",
+		"id": "models/gemini-3.8-flash",
 		"object": "model",
 		"owned_by": "google"
 	},
@@ -495,6 +513,12 @@
 	{
 		"display_name": "Gemini Live 2.5 Flash Preview",
 		"id": "models/gemini-live-2.5-flash-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini Omni 1.1 Flash",
+		"id": "models/gemini-omni-1.1-flash",
 		"object": "model",
 		"owned_by": "google"
 	},
@@ -645,6 +669,12 @@
 	{
 		"display_name": "Lyria 3 Pro Preview (Agent)",
 		"id": "models/lyria-3-pro-preview-agent",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Lyria 3.5",
+		"id": "models/lyria-3.5",
 		"object": "model",
 		"owned_by": "google"
 	},

@@ -2,6 +2,31 @@
 	"data": [
 	{
 		"active": true,
+		"context_length": 131042,
+		"context_window": 131042,
+		"created": 1786984846,
+		"id": "qwen/qwen3.8-27b",
+		"input_modalities": ["text", "image"],
+		"max_completion_tokens": 16384,
+		"max_output_length": 16384,
+		"name": "Qwen/Qwen3.8-27B",
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "Alibaba Cloud",
+		"pricing":
+		{
+			"completion": "0.000004",
+			"image": "0",
+			"input_cache_read": "0.0000004",
+			"prompt": "0.0000008",
+			"request": "0"
+		},
+		"public_apps": null,
+		"supported_features": ["tools", "json_mode", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "stop", "seed", "max_tokens"]
+	},
+	{
+		"active": true,
 		"context_length": 131072,
 		"context_window": 131072,
 		"created": 1778288776,

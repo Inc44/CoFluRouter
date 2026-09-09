@@ -1,6 +1,13 @@
 {
 	"data": [
 	{
+		"created": 1787853604,
+		"id": "gpt-6-astra",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
 		"created": 1785168034,
 		"id": "gpt-live-transcribe",
 		"object": "model",
