@@ -22,14 +22,12 @@ def list_high_cost_models() -> list[str]:
 			[
 				str(model["id"]).split("/")[-1].lower().replace(".", "-")
 				for model in obj
-				if model.get("pricing", {})
+				if isinstance(model.get("pricing"), dict)
 				and any(
-					(
-						float(price) >= threshold
-						if price_key not in ["duration_per_hour", "image", "web_search"]
-						else False
-					)
+					float(price) >= threshold
 					for price_key, price in model["pricing"].items()
+					if price_key not in ["duration_per_hour", "image", "web_search"]
+					and isinstance(price, (int, float, str))
 				)
 			]
 		)
