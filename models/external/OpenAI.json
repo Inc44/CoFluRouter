@@ -1,6 +1,55 @@
 {
 	"data": [
 	{
+		"created": 1789406102,
+		"id": "gpt-6-luna",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
+		"created": 1789405937,
+		"id": "gpt-6-sol",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
+		"created": 1788889407,
+		"id": "gpt-live-1",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
+		"created": 1788851010,
+		"id": "gpt-image-2.5-sunburst-2026-09-08",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
+		"created": 1788851006,
+		"id": "gpt-image-2.5-flare-2026-09-08",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
+		"created": 1788563162,
+		"id": "gpt-image-2.5-sunburst",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
+		"created": 1788563147,
+		"id": "gpt-image-2.5-flare",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
 		"created": 1787853604,
 		"id": "gpt-6-astra",
 		"object": "model",
@@ -543,7 +592,7 @@
 		"id": "gpt-4o-transcribe-diarize",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-02-26"
 	},
 	{
 		"created": 1749840121,
@@ -694,14 +743,14 @@
 		"id": "gpt-4o-mini-transcribe",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-02-26"
 	},
 	{
 		"created": 1742068463,
 		"id": "gpt-4o-transcribe",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-02-26"
 	},
 	{
 		"created": 1741391161,
@@ -1054,7 +1103,7 @@
 		"id": "whisper-1",
 		"object": "model",
 		"owned_by": "openai-internal",
-		"shutdown_date": null
+		"shutdown_date": "2027-02-26"
 	},
 	{
 		"created": 1671217299,

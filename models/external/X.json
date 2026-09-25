@@ -2,6 +2,27 @@
 	"data": [
 	{
 		"aliases": [],
+		"cached_prompt_text_token_price": 5000,
+		"cached_prompt_text_token_price_long_context": 10000,
+		"capabilities":
+		{
+			"default_reasoning_effort": "high",
+			"reasoning_effort": ["low", "medium", "high", "xhigh"]
+		},
+		"completion_text_token_price": 60000,
+		"completion_text_token_price_long_context": 120000,
+		"context_length": 500000,
+		"created": 1788307200,
+		"id": "grok-4.7",
+		"long_context_threshold": 200000,
+		"object": "model",
+		"owned_by": "xai",
+		"prompt_image_token_price": 20000,
+		"prompt_text_token_price": 20000,
+		"prompt_text_token_price_long_context": 40000
+	},
+	{
+		"aliases": [],
 		"context_length": 64000,
 		"created": 1786147200,
 		"id": "grok-imagine-image-2.0",
@@ -20,6 +41,11 @@
 			"resolution": "2k"
 		},
 		{
+			"price_per_image": 500000000,
+			"quality": "low",
+			"resolution": "1.5k"
+		},
+		{
 			"price_per_image": 600000000,
 			"quality": "medium",
 			"resolution": "1k"
@@ -28,12 +54,22 @@
 			"price_per_image": 800000000,
 			"quality": "medium",
 			"resolution": "2k"
+		},
+		{
+			"price_per_image": 700000000,
+			"quality": "medium",
+			"resolution": "1.5k"
 		}]
 	},
 	{
 		"aliases": [],
 		"cached_prompt_text_token_price": 5000,
 		"cached_prompt_text_token_price_long_context": 10000,
+		"capabilities":
+		{
+			"default_reasoning_effort": "high",
+			"reasoning_effort": ["low", "medium", "high", "xhigh"]
+		},
 		"completion_text_token_price": 60000,
 		"completion_text_token_price_long_context": 120000,
 		"context_length": 500000,
@@ -50,6 +86,11 @@
 		"aliases": ["grok-4.5-latest", "grok-build-latest"],
 		"cached_prompt_text_token_price": 3000,
 		"cached_prompt_text_token_price_long_context": 6000,
+		"capabilities":
+		{
+			"default_reasoning_effort": "high",
+			"reasoning_effort": ["low", "medium", "high", "xhigh"]
+		},
 		"completion_text_token_price": 60000,
 		"completion_text_token_price_long_context": 120000,
 		"context_length": 500000,
@@ -79,6 +120,11 @@
 		"aliases": ["grok-4.3-latest"],
 		"cached_prompt_text_token_price": 2000,
 		"cached_prompt_text_token_price_long_context": 4000,
+		"capabilities":
+		{
+			"default_reasoning_effort": "low",
+			"reasoning_effort": ["none", "low", "medium", "high", "xhigh"]
+		},
 		"completion_text_token_price": 25000,
 		"completion_text_token_price_long_context": 50000,
 		"context_length": 1000000,

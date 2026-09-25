@@ -7,6 +7,18 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Antigravity Agent Preview",
+		"id": "models/antigravity-preview-09-2026",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Antigravity Agent Preview Latest",
+		"id": "models/antigravity-preview-latest",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Model that performs Attributed Question Answering.",
 		"id": "models/aqa",
 		"object": "model",
@@ -459,6 +471,30 @@
 	{
 		"display_name": "Gemini 3.8 Flash",
 		"id": "models/gemini-3.8-flash",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.8 Flash Lite TTS",
+		"id": "models/gemini-3.8-flash-lite-tts",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.8 Flash TTS",
+		"id": "models/gemini-3.8-flash-tts",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.8 Live",
+		"id": "models/gemini-3.8-live",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 3.8 Live Extended Thinking",
+		"id": "models/gemini-3.8-live-extended-thinking",
 		"object": "model",
 		"owned_by": "google"
 	},

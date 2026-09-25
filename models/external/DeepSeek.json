@@ -1,6 +1,50 @@
 {
 	"data": [
 	{
+		"api_capabilities":
+		{
+			"anthropic_messages":
+			{
+				"system_prompt_update": "in-history"
+			}
+		},
+		"context_window": 1048576,
+		"effort":
+		{
+			"default_level": "high",
+			"supported_levels": ["low", "high", "max"]
+		},
+		"id": "deepseek-flash",
+		"input_modalities": ["text", "image"],
+		"max_output_tokens": 393216,
+		"name": "DeepSeek-V4.1-Flash",
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "deepseek"
+	},
+	{
+		"api_capabilities":
+		{
+			"anthropic_messages":
+			{
+				"system_prompt_update": "leading-only"
+			}
+		},
+		"context_window": 1048576,
+		"effort":
+		{
+			"default_level": "high",
+			"supported_levels": ["low", "high", "max"]
+		},
+		"id": "deepseek-v4-pro",
+		"input_modalities": ["text"],
+		"max_output_tokens": 393216,
+		"name": "DeepSeek-V4-Pro",
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "deepseek"
+	},
+	{
 		"id": "deepseek-chat",
 		"object": "model",
 		"owned_by": "deepseek"
@@ -12,11 +56,6 @@
 	},
 	{
 		"id": "deepseek-v4-flash",
-		"object": "model",
-		"owned_by": "deepseek"
-	},
-	{
-		"id": "deepseek-v4-pro",
 		"object": "model",
 		"owned_by": "deepseek"
 	},

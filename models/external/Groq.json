@@ -2,8 +2,8 @@
 	"data": [
 	{
 		"active": true,
-		"context_length": 131042,
-		"context_window": 131042,
+		"context_length": 131072,
+		"context_window": 131072,
 		"created": 1786984846,
 		"id": "qwen/qwen3.8-27b",
 		"input_modalities": ["text", "image"],
