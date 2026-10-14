@@ -306,7 +306,7 @@
 		"pricing":
 		{
 			"completion": "0.00000240",
-			"input_cache_read": "0.00000000",
+			"input_cache_read": "0.00000006",
 			"input_cache_write": "0.00000000",
 			"prompt": "0.00000060"
 		},

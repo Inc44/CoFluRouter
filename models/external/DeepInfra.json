@@ -440,6 +440,29 @@
 	},
 	{
 		"created": 0,
+		"id": "Bria/remove_background_guided",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "Prompt-guided background removal by Bria: tell it what to keep or what to remove and get a clean cutout with true transparency, at the original resolution with the original pixels untouched. Trained exclusively on licensed data for commercially safe use.",
+			"discount": null,
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.03
+			},
+			"tags": ["image-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/remove_background_guided"
+	},
+	{
+		"created": 0,
 		"id": "Bria/replace_background",
 		"metadata": null,
 		"object": "model",
@@ -2272,7 +2295,7 @@
 				"input_tokens": 0.1,
 				"output_tokens": 0.15
 			},
-			"tags": ["chat", "vlm", "vision", "reasoning_effort"]
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2317,10 +2340,11 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
+				"cache_read_tokens": 0.1,
 				"input_tokens": 0.1,
 				"output_tokens": 0.95
 			},
-			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -2828,8 +2852,8 @@
 			"max_tokens": 1048576,
 			"pricing":
 			{
-				"cache_read_tokens": 0.0035999990999999996,
-				"input_tokens": 0.435,
+				"cache_read_tokens": 0.0035999987000000003,
+				"input_tokens": 0.43,
 				"output_tokens": 0.87
 			},
 			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
@@ -3221,6 +3245,30 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "anthropic/claude-sonnet-5"
+	},
+	{
+		"created": 0,
+		"id": "anthropic/claude-sonnet-5-5",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Claude Sonnet 5.5 is Anthropic's latest Sonnet model, balancing speed and capability for everyday coding, agents, and enterprise work. It supports a 1M-token context window and up to 128K output tokens.",
+			"discount": null,
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"input_tokens": 2.0,
+				"output_tokens": 10.0
+			},
+			"tags": ["chat", "vlm", "vision", "reasoning_effort", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "anthropic/claude-sonnet-5-5"
 	},
 	{
 		"created": 0,
@@ -4535,8 +4583,8 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.13,
-				"output_tokens": 0.38
+				"input_tokens": 0.2,
+				"output_tokens": 0.4
 			},
 			"tags": ["chat", "vlm", "vision", "reasoning"]
 		},
@@ -4741,7 +4789,7 @@
 			"max_tokens": null,
 			"pricing":
 			{
-				"input_characters": 0.62
+				"input_characters": 0.9899999999999999
 			},
 			"tags": ["tts"]
 		},
@@ -4899,6 +4947,31 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "inclusionAI/Ling-3.0-flash-VL"
+	},
+	{
+		"created": 0,
+		"id": "inclusionAI/Ling-3.1-flash",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Ling-3.1-flash, an upgraded native hybrid reasoning model designed for complex, real-world tasks. With 560B total parameters, 25B active parameters per token, and a 1M-token context window, Ling-3.1-flash builds upon Ling-3.0-flash with improvements in architecture, performance on real-world capabilities.",
+			"discount": null,
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.06,
+				"input_tokens": 0.3,
+				"output_tokens": 0.9
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "inclusionAI/Ling-3.1-flash"
 	},
 	{
 		"created": 0,
@@ -5797,7 +5870,7 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
-				"input_tokens": 0.019000000000000003,
+				"input_tokens": 0.029,
 				"output_tokens": 0.030000000000000002
 			},
 			"tags": ["chat"]
@@ -6137,7 +6210,7 @@
 				"input_tokens": 2.8499999999999996,
 				"output_tokens": 14.25
 			},
-			"tags": ["chat", "vlm", "vision", "prompt_cache"]
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -6271,7 +6344,7 @@
 				"input_tokens": 0.5,
 				"output_tokens": 2.2
 			},
-			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -6316,9 +6389,9 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"cache_read_tokens": 0.04,
-				"input_tokens": 0.08,
-				"output_tokens": 0.2
+				"cache_read_tokens": 0.030000000000000002,
+				"input_tokens": 0.060000000000000005,
+				"output_tokens": 0.16
 			},
 			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
@@ -7067,6 +7140,31 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "tencent/Hy3"
+	},
+	{
+		"created": 0,
+		"id": "tencent/Hy4-preview",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Hy4 preview is a 770B-parameter Mixture-of-Experts flagship model from the Tencent Hy Team, with 49B parameters activated per token and a 1M-token context window. It uses Gated DeepSeek Sparse Attention with IndexCache, and is post-trained for software engineering, office and data analysis, game development, and scientific research.",
+			"discount": null,
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.04199999814,
+				"input_tokens": 0.834,
+				"output_tokens": 2.5010000000000003
+			},
+			"tags": ["chat", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "tencent/Hy4-preview"
 	},
 	{
 		"created": 0,

@@ -499,6 +499,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 4 Argon",
+		"id": "models/gemini-4-argon",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini Embedding 001",
 		"id": "models/gemini-embedding-001",
 		"object": "model",
@@ -549,6 +555,12 @@
 	{
 		"display_name": "Gemini Live 2.5 Flash Preview",
 		"id": "models/gemini-live-2.5-flash-preview",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Nano Banana 2.1",
+		"id": "models/gemini-nano-banana-2.1",
 		"object": "model",
 		"owned_by": "google"
 	},

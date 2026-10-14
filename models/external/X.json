@@ -23,6 +23,13 @@
 	},
 	{
 		"aliases": [],
+		"created": 1787702400,
+		"id": "grok-imagine-video-1.5-lite",
+		"object": "model",
+		"owned_by": "xai"
+	},
+	{
+		"aliases": [],
 		"context_length": 64000,
 		"created": 1786147200,
 		"id": "grok-imagine-image-2.0",

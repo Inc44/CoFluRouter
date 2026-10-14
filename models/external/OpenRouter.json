@@ -1,6 +1,1198 @@
 {
 	"data": [
 	{
+		"alias_target":
+		{
+			"name": "Pareto 26.9",
+			"slug": "unbiased/pareto-26.9"
+		},
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Router"
+		},
+		"canonical_slug": "~unbiased/pareto-latest",
+		"context_length": 262144,
+		"created": 1791933050,
+		"default_parameters":
+		{},
+		"description": "This model always redirects to the latest model in the Pareto family.",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "~unbiased/pareto-latest",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/~unbiased/pareto-latest/endpoints"
+		},
+		"name": "Pareto Latest",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000075",
+			"input_cache_read": "0.00000025",
+			"prompt": "0.0000025"
+		},
+		"supported_parameters": ["max_tokens", "response_format", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "unbiased/pareto-26.9-20260917",
+		"context_length": 262144,
+		"created": 1791930537,
+		"default_parameters":
+		{},
+		"description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "unbiased/pareto-26.9",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/unbiased/pareto-26.9-20260917/endpoints"
+		},
+		"name": "Pareto 26.9",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000075",
+			"input_cache_read": "0.00000025",
+			"prompt": "0.0000025"
+		},
+		"supported_parameters": ["max_tokens", "response_format", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "liquid/lfm-2.5-24b-a2b-20261012",
+		"context_length": 128000,
+		"created": 1791912025,
+		"default_parameters":
+		{
+			"repetition_penalty": 1.05,
+			"temperature": 0.1,
+			"top_k": 50
+		},
+		"description": "LFM2.5-24B-A2B is a mixture-of-experts reasoning model from Liquid AI with 24B total and 2.45B active parameters. It always reasons before answering and is built for agents that call tools. Liquid...",
+		"expiration_date": null,
+		"hugging_face_id": "LiquidAI/LFM2.5-24B-A2B",
+		"id": "liquid/lfm-2.5-24b-a2b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/liquid/lfm-2.5-24b-a2b-20261012/endpoints"
+		},
+		"name": "LiquidAI: LFM2.5-24B-A2B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000007",
+			"input_cache_read": "0.000000025",
+			"prompt": "0.00000005"
+		},
+		"reasoning":
+		{
+			"mandatory": true
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": false,
+			"max_completion_tokens": 8192
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["audio", "file", "image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-4-argon-20261013",
+		"context_length": 1048576,
+		"created": 1791907477,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Gemini 4 Argon is Google's flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, and autonomous multi-step agents. Google trained it to keep context across...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/gemini-4-argon:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemini-4-argon-20261013/endpoints"
+		},
+		"name": "Google: Gemini 4 Argon (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"audio": "0.000001",
+			"completion": "0.000005",
+			"image": "0.000001",
+			"input_audio_cache": "0.00000005",
+			"input_cache_read": "0.00000005",
+			"input_cache_write": "0.0000001875",
+			"internal_reasoning": "0.000005",
+			"prompt": "0.000001",
+			"web_search": "0.014"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": true,
+			"supported_efforts": ["high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 943718
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["audio", "file", "image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-4-argon-20261013",
+		"context_length": 1048576,
+		"created": 1791907477,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Gemini 4 Argon is Google's flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, and autonomous multi-step agents. Google trained it to keep context across...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/gemini-4-argon",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemini-4-argon-20261013/endpoints"
+		},
+		"name": "Google: Gemini 4 Argon",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"audio": "0.000002",
+			"completion": "0.00001",
+			"image": "0.000002",
+			"input_audio_cache": "0.0000001",
+			"input_cache_read": "0.0000001",
+			"input_cache_write": "0.0000001875",
+			"internal_reasoning": "0.00001",
+			"prompt": "0.000002",
+			"web_search": "0.014"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": true,
+			"supported_efforts": ["high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "scaledown/summarize-20260928",
+		"context_length": 1000000,
+		"created": 1791893360,
+		"default_parameters":
+		{},
+		"description": "Summarize is an abstractive summarization model from ScaleDown. It condenses long text and documents into a fluent, faithful rewrite rather than lifting sentences from the source, and is suited for...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "scaledown/summarize",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/scaledown/summarize-20260928/endpoints"
+		},
+		"name": "ScaleDown: Summarize",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0.00000004"
+		},
+		"supported_parameters": ["max_tokens"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 4000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "scaledown/extract-20260928",
+		"context_length": 1000000,
+		"created": 1791893351,
+		"default_parameters":
+		{},
+		"description": "Extract is a description-driven entity extraction model from ScaleDown. Instead of a fixed set of entity types, callers describe the fields they want in plain English through `provider.options.scaledown.entities`, and the...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "scaledown/extract",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/scaledown/extract-20260928/endpoints"
+		},
+		"name": "ScaleDown: Extract",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0.00000004"
+		},
+		"supported_parameters": ["max_tokens"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 900000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "meta/muse-wonder-20261012",
+		"context_length": 1048576,
+		"created": 1791807945,
+		"default_parameters":
+		{},
+		"description": "Muse Wonder is a frontier reasoning model from Meta, designed for complex personal and professional agentic tasks. It accepts text, images, video, audio, and PDF documents and returns text, with...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "meta/muse-wonder",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/meta/muse-wonder-20261012/endpoints"
+		},
+		"name": "Meta: Muse Wonder",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00002",
+			"input_cache_read": "0.0000002",
+			"prompt": "0.000004",
+			"web_search": "0.0025"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "minimal"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": true,
+			"max_completion_tokens": 943718
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "stepfun/step-5-preview-20261008",
+		"context_length": 1000000,
+		"created": 1791462849,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in software engineering and professional...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "stepfun/step-5-preview",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/stepfun/step-5-preview-20261008/endpoints"
+		},
+		"name": "StepFun: Step 5 Preview",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000027",
+			"input_cache_read": "0.00000005",
+			"prompt": "0.000001"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": true,
+			"supported_efforts": ["high", "medium", "low"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "temperature", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 64000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Claude"
+		},
+		"canonical_slug": "anthropic/claude-haiku-5.5-20261007",
+		"context_length": 1000000,
+		"created": 1791397883,
+		"default_parameters":
+		{},
+		"description": "Claude Haiku 5.5 is Anthropic's small, fast model for high-volume, cost-sensitive work such as summarization, subagents, and browser use. It succeeds Claude Haiku 4.5 with stronger coding, computer use, and...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "anthropic/claude-haiku-5.5:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/anthropic/claude-haiku-5.5-20261007/endpoints"
+		},
+		"name": "Anthropic: Claude Haiku 5.5 (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000025",
+			"input_cache_read": "0.000000005",
+			"input_cache_write": "0.0000000625",
+			"input_cache_write_1h": "0.0000001",
+			"overrides": [
+			{
+				"completion": "0.00000125",
+				"input_cache_read": "0.000000025",
+				"input_cache_write": "0.0000003125",
+				"input_cache_write_1h": "0.0000005",
+				"min_prompt_tokens": 100000,
+				"prompt": "0.00000025"
+			}],
+			"prompt": "0.00000005",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": false,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Claude"
+		},
+		"canonical_slug": "anthropic/claude-haiku-5.5-20261007",
+		"context_length": 1000000,
+		"created": 1791397883,
+		"default_parameters":
+		{},
+		"description": "Claude Haiku 5.5 is Anthropic's small, fast model for high-volume, cost-sensitive work such as summarization, subagents, and browser use. It succeeds Claude Haiku 4.5 with stronger coding, computer use, and...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "anthropic/claude-haiku-5.5",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/anthropic/claude-haiku-5.5-20261007/endpoints"
+		},
+		"name": "Anthropic: Claude Haiku 5.5",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000005",
+			"input_cache_read": "0.00000001",
+			"input_cache_write": "0.000000125",
+			"input_cache_write_1h": "0.0000002",
+			"overrides": [
+			{
+				"completion": "0.0000025",
+				"input_cache_read": "0.00000005",
+				"input_cache_write": "0.000000625",
+				"input_cache_write_1h": "0.000001",
+				"min_prompt_tokens": 100000,
+				"prompt": "0.0000005"
+			}],
+			"prompt": "0.0000001",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": false,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["image", "text"],
+			"instruct_type": null,
+			"modality": "text+image->text+image",
+			"output_modalities": ["image", "text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-nano-banana-2.1-20261006",
+		"context_length": 65536,
+		"created": 1791300825,
+		"default_parameters":
+		{},
+		"description": "Nano Banana 2.1 (Gemini Nano Banana 2.1) is Google's image generation and editing model on the Flash tier, succeeding Nano Banana 2 and Nano Banana Pro. It improves product recontextualization,...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/gemini-nano-banana-2.1",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemini-nano-banana-2.1-20261006/endpoints"
+		},
+		"name": "Google: Nano Banana 2.1",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000075",
+			"image_output": "0.00003",
+			"prompt": "0.0000015",
+			"web_search": "0.014"
+		},
+		"reasoning":
+		{
+			"default_effort": "minimal",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["high", "minimal"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 65536,
+			"is_moderated": false,
+			"max_completion_tokens": 58982
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Mistral"
+		},
+		"canonical_slug": "mistralai/mistral-large-4-0-20261006",
+		"context_length": 1048576,
+		"created": 1791294122,
+		"default_parameters":
+		{},
+		"description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 1M-token context window with up...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "mistralai/mistral-large-4-0",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/mistralai/mistral-large-4-0-20261006/endpoints"
+		},
+		"name": "Mistral: Mistral Large 4",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000209",
+			"input_cache_read": "0.00000007",
+			"prompt": "0.00000068"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["high", "none"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 262144
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "inclusionai/ling-3.1-flash-20261002",
+		"context_length": 262144,
+		"created": 1790950024,
+		"default_parameters":
+		{},
+		"description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "inclusionai/ling-3.1-flash",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/inclusionai/ling-3.1-flash-20261002/endpoints"
+		},
+		"name": "inclusionAI: Ling 3.1 Flash",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000000225",
+			"input_cache_read": "0.000000015",
+			"prompt": "0.000000075"
+		},
+		"reasoning":
+		{
+			"default_enabled": true,
+			"mandatory": false
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 235929
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "apodex/apodex-1.1-mini-20261001",
+		"context_length": 262144,
+		"created": 1790875335,
+		"default_parameters":
+		{},
+		"description": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produce verifiable results,...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "apodex/apodex-1.1-mini:free",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/apodex/apodex-1.1-mini-20261001/endpoints"
+		},
+		"name": "Apodex: Apodex 1.1 Mini (free)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0",
+			"prompt": "0"
+		},
+		"reasoning":
+		{
+			"mandatory": false
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 235929
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "unbiased/pareto-26.10-preview-20260929",
+		"context_length": 1048576,
+		"created": 1790863623,
+		"default_parameters":
+		{},
+		"description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. This is a preview of the...",
+		"expiration_date": "2026-10-15",
+		"hugging_face_id": null,
+		"id": "unbiased/pareto-26.10-preview",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/unbiased/pareto-26.10-preview-20260929/endpoints"
+		},
+		"name": "Pareto 26.10 Preview",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000032",
+			"input_cache_read": "0.00000003",
+			"prompt": "0.0000008"
+		},
+		"supported_parameters": ["max_tokens", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.1-sol-pro-20260929",
+		"context_length": 1050000,
+		"created": 1790702886,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "GPT-6.1 Sol Pro is the same underlying model as [GPT-6.1 Sol](https://openrouter.ai/openai/gpt-6.1-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.1-sol-pro:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.1-sol-pro-20260929/endpoints"
+		},
+		"name": "OpenAI: GPT-6.1 Sol Pro (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000005",
+			"input_cache_read": "0.00000005",
+			"input_cache_write": "0.00000125",
+			"overrides": [
+			{
+				"completion": "0.0000075",
+				"input_cache_read": "0.0000001",
+				"input_cache_write": "0.0000025",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000002"
+			}],
+			"prompt": "0.000001",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.1-sol-pro-20260929",
+		"context_length": 1050000,
+		"created": 1790702886,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "GPT-6.1 Sol Pro is the same underlying model as [GPT-6.1 Sol](https://openrouter.ai/openai/gpt-6.1-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.1-sol-pro",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.1-sol-pro-20260929/endpoints"
+		},
+		"name": "OpenAI: GPT-6.1 Sol Pro",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00001",
+			"input_cache_read": "0.0000001",
+			"input_cache_write": "0.0000025",
+			"overrides": [
+			{
+				"completion": "0.000015",
+				"input_cache_read": "0.0000002",
+				"input_cache_write": "0.000005",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000004"
+			}],
+			"prompt": "0.000002",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.1-sol-20260929",
+		"context_length": 1050000,
+		"created": 1790702882,
+		"default_parameters":
+		{},
+		"description": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series. It is suited for agentic coding, computer use, document-heavy professional...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.1-sol:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.1-sol-20260929/endpoints"
+		},
+		"name": "OpenAI: GPT-6.1 Sol (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000005",
+			"input_cache_read": "0.00000005",
+			"input_cache_write": "0.00000125",
+			"overrides": [
+			{
+				"completion": "0.0000075",
+				"input_cache_read": "0.0000001",
+				"input_cache_write": "0.0000025",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000002"
+			}],
+			"prompt": "0.000001",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.1-sol-20260929",
+		"context_length": 1050000,
+		"created": 1790702882,
+		"default_parameters":
+		{},
+		"description": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series. It is suited for agentic coding, computer use, document-heavy professional...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.1-sol",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.1-sol-20260929/endpoints"
+		},
+		"name": "OpenAI: GPT-6.1 Sol",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00001",
+			"input_cache_read": "0.0000001",
+			"input_cache_write": "0.0000025",
+			"overrides": [
+			{
+				"completion": "0.000015",
+				"input_cache_read": "0.0000002",
+				"input_cache_write": "0.000005",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000004"
+			}],
+			"prompt": "0.000002",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Claude"
+		},
+		"canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+		"context_length": 1000000,
+		"created": 1790618686,
+		"default_parameters":
+		{},
+		"description": "Claude Sonnet 5.5 is Anthropic's Sonnet-class model for well-scoped everyday work, succeeding Claude Sonnet 5 as a direct upgrade. It is especially strong at building features, fixing bugs, and producing...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "anthropic/claude-sonnet-5.5:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/anthropic/claude-sonnet-5.5-20260928/endpoints"
+		},
+		"name": "Anthropic: Claude Sonnet 5.5 (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000005",
+			"input_cache_read": "0.00000005",
+			"input_cache_write": "0.00000125",
+			"input_cache_write_1h": "0.000002",
+			"prompt": "0.000001",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "file"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Claude"
+		},
+		"canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+		"context_length": 1000000,
+		"created": 1790618686,
+		"default_parameters":
+		{},
+		"description": "Claude Sonnet 5.5 is Anthropic's Sonnet-class model for well-scoped everyday work, succeeding Claude Sonnet 5 as a direct upgrade. It is especially strong at building features, fixing bugs, and producing...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "anthropic/claude-sonnet-5.5",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/anthropic/claude-sonnet-5.5-20260928/endpoints"
+		},
+		"name": "Anthropic: Claude Sonnet 5.5",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00001",
+			"input_cache_read": "0.0000001",
+			"input_cache_write": "0.0000025",
+			"input_cache_write_1h": "0.000004",
+			"prompt": "0.000002",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["audio", "file", "image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Router"
+		},
+		"canonical_slug": "typesafe/jev-router",
+		"context_length": 1000000,
+		"created": 1790363560,
+		"default_parameters":
+		{},
+		"description": "Jev Router picks the best model and reasoning effort for each request, balancing quality, speed, and cost. It runs on [Jev](https://openrouter.ai/~typesafe/jev-latest), TypeSafe's first System One model, and adapts as your...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "typesafe/jev-router",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/typesafe/jev-router/endpoints"
+		},
+		"name": "TypeSafe: Jev Router",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "-1",
+			"prompt": "-1"
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": null,
+			"is_moderated": false,
+			"max_completion_tokens": null
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video", "audio"],
+			"instruct_type": null,
+			"modality": "text+image+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "perceptron/perceptron-mk1.5-20260925",
+		"context_length": 36864,
+		"created": 1790352661,
+		"default_parameters":
+		{},
+		"description": "Perceptron Mk1.5 is Perceptron's embodied reasoning model for physical agents. It accepts text, image, video, and audio input, and answers with text plus optional structured annotations: points, boxes, polygons, tracks,...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "perceptron/perceptron-mk1.5",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/perceptron/perceptron-mk1.5-20260925/endpoints"
+		},
+		"name": "Perceptron: Perceptron Mk1.5",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000015",
+			"prompt": "0.00000015"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"mandatory": false,
+			"supported_efforts": ["high", "medium", "low", "minimal", "none"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 36864,
+			"is_moderated": false,
+			"max_completion_tokens": 8192
+		}
+	},
+	{
 		"architecture":
 		{
 			"input_modalities": ["text", "image"],
@@ -393,7 +1585,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "GPT-6 Luna Pro is the same underlying model as [GPT-6 Luna](https://openrouter.ai/openai/gpt-6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-6 Luna Pro is the same underlying model as [GPT-6 Luna](https://openrouter.ai/openai/gpt-6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-6-luna-pro:batch",
@@ -427,7 +1619,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -457,7 +1649,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "GPT-6 Luna Pro is the same underlying model as [GPT-6 Luna](https://openrouter.ai/openai/gpt-6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-6 Luna Pro is the same underlying model as [GPT-6 Luna](https://openrouter.ai/openai/gpt-6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-6-luna-pro",
@@ -491,7 +1683,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -555,7 +1747,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -619,7 +1811,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -649,7 +1841,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-6-sol-pro:batch",
@@ -683,7 +1875,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -713,7 +1905,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-6-sol-pro",
@@ -747,7 +1939,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -811,7 +2003,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -875,7 +2067,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -973,13 +2165,52 @@
 			"mandatory": true,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "verbosity"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1000000,
 			"is_moderated": true,
 			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text"],
+			"instruct_type": null,
+			"modality": "text->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Router"
+		},
+		"canonical_slug": "nvidia/switchyard",
+		"context_length": 1000000,
+		"created": 1790025947,
+		"default_parameters":
+		{},
+		"description": "Switchyard is an open-source model router that switches between multiple models to optimize the cost of requests. By default it will use OpenRouter market data to select the most popular...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "nvidia/switchyard",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/nvidia/switchyard/endpoints"
+		},
+		"name": "NVIDIA: Switchyard",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "-1",
+			"prompt": "-1"
+		},
+		"supported_parameters": [],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": null,
+			"is_moderated": false,
+			"max_completion_tokens": null
 		}
 	},
 	{
@@ -1040,7 +2271,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "xiaomi/mimo-v2.6-flash-20260921",
-		"context_length": 1048576,
+		"context_length": 1050000,
 		"created": 1790021264,
 		"default_parameters":
 		{
@@ -1069,7 +2300,7 @@
 		{
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1088,7 +2319,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
-		"context_length": 1048576,
+		"context_length": 1050000,
 		"created": 1790021259,
 		"default_parameters":
 		{
@@ -1156,16 +2387,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000048",
-			"input_cache_read": "0.0000004",
+			"completion": "0.000006",
+			"input_cache_read": "0.0000005",
 			"overrides": [
 			{
-				"completion": "0.0000096",
-				"input_cache_read": "0.0000008",
+				"completion": "0.000012",
+				"input_cache_read": "0.000001",
 				"min_prompt_tokens": 200000,
-				"prompt": "0.0000032"
+				"prompt": "0.000004"
 			}],
-			"prompt": "0.0000016",
+			"prompt": "0.000002",
 			"web_search": "0.005"
 		},
 		"reasoning":
@@ -1262,6 +2493,7 @@
 		"pricing":
 		{
 			"completion": "0.0000005",
+			"input_cache_read": "0.0000000375",
 			"prompt": "0.000000075"
 		},
 		"reasoning":
@@ -1361,7 +2593,7 @@
 			"input_cache_read": "0.00000025",
 			"prompt": "0.0000025"
 		},
-		"supported_parameters": ["max_tokens", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["max_tokens", "response_format", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1405,9 +2637,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000288",
-			"input_cache_read": "0.00000008832",
-			"prompt": "0.00000009984"
+			"completion": "0.000008",
+			"input_cache_read": "0.00000013",
+			"prompt": "0.0000001307"
 		},
 		"reasoning":
 		{
@@ -1421,7 +2653,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 943718
+			"max_completion_tokens": 393216
 		}
 	},
 	{
@@ -1456,9 +2688,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000049",
-			"input_cache_read": "0.00000001",
-			"prompt": "0.00000004"
+			"completion": "0.00000099",
+			"input_cache_read": "0.000000014",
+			"prompt": "0.000000015"
 		},
 		"reasoning":
 		{
@@ -1507,7 +2739,7 @@
 			"input_cache_read": "0.00000003",
 			"prompt": "0.00000003"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1547,7 +2779,7 @@
 			"input_cache_read": "0.00000005",
 			"prompt": "0.00000005"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1609,7 +2841,7 @@
 			"mandatory": true,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1621,8 +2853,8 @@
 	{
 		"alias_target":
 		{
-			"name": "OpenAI: GPT-6 Sol",
-			"slug": "openai/gpt-6-sol"
+			"name": "OpenAI: GPT-6.1 Sol",
+			"slug": "openai/gpt-6.1-sol"
 		},
 		"architecture":
 		{
@@ -1636,14 +2868,7 @@
 		"context_length": 1050000,
 		"created": 1789130928,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "This model always redirects to the latest model in the GPT Sol family.",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -1658,12 +2883,12 @@
 		"pricing":
 		{
 			"completion": "0.00001",
-			"input_cache_read": "0.0000002",
+			"input_cache_read": "0.0000001",
 			"input_cache_write": "0.0000025",
 			"overrides": [
 			{
 				"completion": "0.000015",
-				"input_cache_read": "0.0000004",
+				"input_cache_read": "0.0000002",
 				"input_cache_write": "0.000005",
 				"min_prompt_tokens": 272000,
 				"prompt": "0.000004"
@@ -1675,15 +2900,15 @@
 		{
 			"default_effort": "medium",
 			"default_enabled": true,
-			"mandatory": false,
-			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1050000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 128000
 		}
 	},
@@ -1747,7 +2972,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1816,7 +3041,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1952,7 +3177,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "inclusionai/ling-3.0-flash-vl-20260910",
-		"context_length": 262144,
+		"context_length": 131072,
 		"created": 1789056114,
 		"default_parameters":
 		{},
@@ -1978,7 +3203,7 @@
 			"default_enabled": true,
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -2061,56 +3286,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000012",
-			"input_cache_read": "0.000000006",
-			"overrides": [
-			{
-				"completion": "0.0000006",
-				"input_cache_read": "0.000000003",
-				"prompt": "0.00000015",
-				"utc_days": ["saturday", "sunday"]
-			},
-			{
-				"completion": "0.0000006",
-				"input_cache_read": "0.000000003",
-				"prompt": "0.00000015",
-				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
-				"utc_end": 100,
-				"utc_start": 0
-			},
-			{
-				"completion": "0.0000012",
-				"input_cache_read": "0.000000006",
-				"prompt": "0.0000003",
-				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
-				"utc_end": 400,
-				"utc_start": 100
-			},
-			{
-				"completion": "0.0000006",
-				"input_cache_read": "0.000000003",
-				"prompt": "0.00000015",
-				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
-				"utc_end": 600,
-				"utc_start": 400
-			},
-			{
-				"completion": "0.0000012",
-				"input_cache_read": "0.000000006",
-				"prompt": "0.0000003",
-				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
-				"utc_end": 1000,
-				"utc_start": 600
-			},
-			{
-				"completion": "0.0000006",
-				"input_cache_read": "0.000000003",
-				"prompt": "0.00000015",
-				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
-				"utc_end": 0,
-				"utc_start": 1000
-			}],
-			"prompt": "0.0000003"
+			"completion": "0.00000099",
+			"input_cache_read": "0.000000014",
+			"prompt": "0.000000015"
 		},
 		"reasoning":
 		{
@@ -2125,7 +3303,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 393216
+			"max_completion_tokens": 943718
 		}
 	},
 	{
@@ -2233,6 +3411,56 @@
 			"output_modalities": ["text"],
 			"tokenizer": "Qwen3"
 		},
+		"canonical_slug": "nex-agi/nex-n2.5-mini-20260908",
+		"context_length": 262144,
+		"created": 1788890061,
+		"default_parameters":
+		{
+			"temperature": 0.7,
+			"top_k": 40,
+			"top_p": 0.95
+		},
+		"description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+		"expiration_date": null,
+		"hugging_face_id": "nex-agi/Nex-N2.5-mini",
+		"id": "nex-agi/nex-n2.5-mini",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/nex-agi/nex-n2.5-mini-20260908/endpoints"
+		},
+		"name": "Nex AGI: Nex-N2.5-Mini",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000001",
+			"input_cache_read": "0.0000000025",
+			"prompt": "0.000000025"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"mandatory": false,
+			"supported_efforts": ["high", "medium", "none"]
+		},
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "reasoning_effort", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 235929
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
 		"canonical_slug": "nex-agi/nex-n2.5-pro-20260907",
 		"context_length": 262144,
 		"created": 1788890050,
@@ -2265,6 +3493,56 @@
 			"supported_efforts": ["high", "medium", "none"]
 		},
 		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "reasoning_effort", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 235929
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen3"
+		},
+		"canonical_slug": "nex-agi/nex-n2.5-pro-20260907",
+		"context_length": 262144,
+		"created": 1788890050,
+		"default_parameters":
+		{
+			"temperature": 0.7,
+			"top_k": 40,
+			"top_p": 0.95
+		},
+		"description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+		"expiration_date": null,
+		"hugging_face_id": "nex-agi/Nex-N2.5-Pro",
+		"id": "nex-agi/nex-n2.5-pro",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/nex-agi/nex-n2.5-pro-20260907/endpoints"
+		},
+		"name": "Nex AGI: Nex-N2.5-Pro",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00000025",
+			"input_cache_read": "0.000000015",
+			"prompt": "0.000000075"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"mandatory": false,
+			"supported_efforts": ["high", "medium", "none"]
+		},
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "reasoning_effort", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -2321,7 +3599,7 @@
 			"mandatory": true,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -2378,7 +3656,7 @@
 			"mandatory": true,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -2401,7 +3679,7 @@
 		"created": 1788552835,
 		"default_parameters":
 		{},
-		"description": "GPT-6 Astra Pro is the same underlying model as [GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-6 Astra Pro is the same underlying model as [GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-6-astra-pro:batch",
@@ -2435,7 +3713,7 @@
 			"mandatory": true,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -2458,7 +3736,7 @@
 		"created": 1788552835,
 		"default_parameters":
 		{},
-		"description": "GPT-6 Astra Pro is the same underlying model as [GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-6 Astra Pro is the same underlying model as [GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-6-astra-pro",
@@ -2492,12 +3770,12 @@
 			"mandatory": true,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1050000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 128000
 		}
 	},
@@ -2574,7 +3852,6 @@
 		{
 			"completion": "0.000006",
 			"input_cache_read": "0.00000025",
-			"input_cache_write": "0.0000025",
 			"prompt": "0.000002"
 		},
 		"reasoning":
@@ -2596,9 +3873,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"input_modalities": ["text", "image", "video", "file"],
 			"instruct_type": null,
-			"modality": "text+image+file+audio+video->text",
+			"modality": "text+image+file+video->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
@@ -2643,9 +3920,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"input_modalities": ["text", "image", "video", "file"],
 			"instruct_type": null,
-			"modality": "text+image+file+audio+video->text",
+			"modality": "text+image+file+video->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
@@ -3015,9 +4292,24 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002501",
-			"input_cache_read": "0.000000042",
-			"prompt": "0.000000834"
+			"completion": "0.0000022509",
+			"input_cache_read": "0.0000000378",
+			"overrides": [
+			{
+				"completion": "0.000002501",
+				"input_cache_read": "0.000000042",
+				"prompt": "0.000000834",
+				"utc_end": 1600,
+				"utc_start": 0
+			},
+			{
+				"completion": "0.0000022509",
+				"input_cache_read": "0.0000000378",
+				"prompt": "0.0000007506",
+				"utc_end": 0,
+				"utc_start": 1600
+			}],
+			"prompt": "0.0000007506"
 		},
 		"reasoning":
 		{
@@ -3026,7 +4318,7 @@
 			"mandatory": false,
 			"supported_efforts": ["high", "low", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_completion_tokens", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -3106,22 +4398,22 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000018",
-			"input_cache_read": "0.000000012",
-			"prompt": "0.00000006"
+			"completion": "0.0000001232",
+			"input_cache_read": "0.0000000084",
+			"prompt": "0.000000042"
 		},
 		"reasoning":
 		{
 			"default_enabled": true,
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 235929
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -3139,7 +4431,7 @@
 			"tokenizer": "Router"
 		},
 		"canonical_slug": "~z-ai/glm-flash-latest",
-		"context_length": 1310720,
+		"context_length": 1048576,
 		"created": 1787817633,
 		"default_parameters":
 		{
@@ -3159,9 +4451,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000014",
-			"input_cache_read": "0.00000001",
-			"prompt": "0.000000045"
+			"completion": "0.0000009",
+			"input_cache_read": "0.0000000108",
+			"prompt": "0.0000000315"
 		},
 		"reasoning":
 		{
@@ -3176,7 +4468,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 128000
+			"max_completion_tokens": 943718
 		}
 	},
 	{
@@ -3208,7 +4500,6 @@
 		{
 			"completion": "0.00000047",
 			"input_cache_read": "0.000000016",
-			"input_cache_write": "0.0000002",
 			"prompt": "0.00000015"
 		},
 		"reasoning":
@@ -3286,7 +4577,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "z-ai/glm-5.3-flash-20260826",
-		"context_length": 1310720,
+		"context_length": 1048576,
 		"created": 1787752741,
 		"default_parameters":
 		{
@@ -3306,9 +4597,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000014",
-			"input_cache_read": "0.00000001",
-			"prompt": "0.000000045"
+			"completion": "0.0000009",
+			"input_cache_read": "0.0000000108",
+			"prompt": "0.0000000315"
 		},
 		"reasoning":
 		{
@@ -3323,15 +4614,15 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 128000
+			"max_completion_tokens": 943718
 		}
 	},
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"input_modalities": ["text", "image", "video", "file"],
 			"instruct_type": null,
-			"modality": "text+image+file+audio+video->text",
+			"modality": "text+image+file+video->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
@@ -3447,9 +4738,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000066",
-			"input_cache_read": "0.000000007",
-			"prompt": "0.00000022"
+			"completion": "0.0000006468",
+			"input_cache_read": "0.00000000686",
+			"prompt": "0.0000002156"
 		},
 		"reasoning":
 		{
@@ -3464,7 +4755,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 943718
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -3609,7 +4900,7 @@
 			"tokenizer": "Router"
 		},
 		"canonical_slug": "~z-ai/glm-latest",
-		"context_length": 1310720,
+		"context_length": 1048576,
 		"created": 1787151053,
 		"default_parameters":
 		{
@@ -3629,9 +4920,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000017644",
-			"input_cache_read": "0.00000010426",
-			"prompt": "0.0000005614"
+			"completion": "0.0000044",
+			"input_cache_read": "0.0000000565",
+			"prompt": "0.0000000608"
 		},
 		"reasoning":
 		{
@@ -3748,7 +5039,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "z-ai/glm-5.3-20260816",
-		"context_length": 1310720,
+		"context_length": 1048576,
 		"created": 1787086655,
 		"default_parameters":
 		{
@@ -3768,9 +5059,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000044",
-			"input_cache_read": "0.00000026",
-			"prompt": "0.0000014"
+			"completion": "0.0000048",
+			"input_cache_read": "0.000000059",
+			"prompt": "0.000000079"
 		},
 		"reasoning":
 		{
@@ -3783,9 +5074,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1048575,
+			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 943717
+			"max_completion_tokens": 943718
 		}
 	},
 	{
@@ -3869,9 +5160,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000003",
-			"input_cache_read": "0.000000085",
-			"prompt": "0.00000042"
+			"completion": "0.0000023",
+			"input_cache_read": "0.0000000198",
+			"prompt": "0.00000004"
 		},
 		"reasoning":
 		{
@@ -3884,9 +5175,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1000000,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 235929
 		}
 	},
 	{
@@ -3904,7 +5195,7 @@
 		"default_parameters":
 		{},
 		"description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
-		"expiration_date": "2026-09-30",
+		"expiration_date": "2026-12-31",
 		"hugging_face_id": null,
 		"id": "dots-studio/dots-3-note-preview:free",
 		"knowledge_cutoff": null,
@@ -4313,9 +5604,56 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001386",
-			"input_cache_read": "0.0000000154",
-			"prompt": "0.000000462"
+			"completion": "0.00000198",
+			"input_cache_read": "0.000000022",
+			"overrides": [
+			{
+				"completion": "0.00000198",
+				"input_cache_read": "0.000000022",
+				"prompt": "0.00000066",
+				"utc_days": ["saturday", "sunday"]
+			},
+			{
+				"completion": "0.00000198",
+				"input_cache_read": "0.000000022",
+				"prompt": "0.00000066",
+				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+				"utc_end": 100,
+				"utc_start": 0
+			},
+			{
+				"completion": "0.00000396",
+				"input_cache_read": "0.000000044",
+				"prompt": "0.00000132",
+				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+				"utc_end": 400,
+				"utc_start": 100
+			},
+			{
+				"completion": "0.00000198",
+				"input_cache_read": "0.000000022",
+				"prompt": "0.00000066",
+				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+				"utc_end": 600,
+				"utc_start": 400
+			},
+			{
+				"completion": "0.00000396",
+				"input_cache_read": "0.000000044",
+				"prompt": "0.00000132",
+				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+				"utc_end": 1000,
+				"utc_start": 600
+			},
+			{
+				"completion": "0.00000198",
+				"input_cache_read": "0.000000022",
+				"prompt": "0.00000066",
+				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+				"utc_end": 0,
+				"utc_start": 1000
+			}],
+			"prompt": "0.00000066"
 		},
 		"reasoning":
 		{
@@ -4327,9 +5665,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1024000,
+			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 384000
+			"max_completion_tokens": 393216
 		}
 	},
 	{
@@ -4425,7 +5763,7 @@
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -4506,7 +5844,7 @@
 		{
 			"completion": "0.0000002",
 			"input_cache_read": "0.00000004",
-			"prompt": "0.00000008"
+			"prompt": "0.00000007"
 		},
 		"reasoning":
 		{
@@ -4518,7 +5856,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 235929
 		}
 	},
 	{
@@ -4707,7 +6045,7 @@
 			"mandatory": true,
 			"supported_efforts": ["xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -4763,9 +6101,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"input_modalities": ["text", "image", "video", "file"],
 			"instruct_type": null,
-			"modality": "text+image+file+audio+video->text",
+			"modality": "text+image+file+video->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
@@ -4774,7 +6112,7 @@
 		"created": 1785959287,
 		"default_parameters":
 		{},
-		"description": "Muse Spark 1.2 is a reasoning model from Meta, designed for complex agentic tasks. It accepts text, images, video, audio, and PDF documents, returns text, and offers a 1M-token context...",
+		"description": "Muse Spark 1.2 is a reasoning model from Meta, designed for complex agentic tasks. It accepts text, images, video, and PDF documents, returns text, and offers a 1M-token context window....",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "meta/muse-spark-1.2",
@@ -4870,7 +6208,7 @@
 			"tokenizer": "Router"
 		},
 		"canonical_slug": "~deepseek/deepseek-v4-flash-latest",
-		"context_length": 1310720,
+		"context_length": 1048576,
 		"created": 1785606009,
 		"default_parameters":
 		{},
@@ -4887,9 +6225,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000032",
-			"input_cache_read": "0.000000016",
-			"prompt": "0.00000003"
+			"completion": "0.000000576",
+			"input_cache_read": "0.0000000108",
+			"prompt": "0.0000000144"
 		},
 		"reasoning":
 		{
@@ -4964,7 +6302,7 @@
 			"tokenizer": "DeepSeek"
 		},
 		"canonical_slug": "deepseek/deepseek-v4-flash-20260731",
-		"context_length": 1310720,
+		"context_length": 1048576,
 		"created": 1785478908,
 		"default_parameters":
 		{},
@@ -4981,9 +6319,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000032",
+			"completion": "0.00000064",
 			"input_cache_read": "0.000000016",
-			"prompt": "0.00000003"
+			"prompt": "0.000000016"
 		},
 		"reasoning":
 		{
@@ -5118,7 +6456,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "thinkingmachines/inkling-small-20260730",
-		"context_length": 1048576,
+		"context_length": 524288,
 		"created": 1785443117,
 		"default_parameters":
 		{
@@ -5372,7 +6710,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "verbosity"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -5485,7 +6823,7 @@
 		"default_parameters":
 		{},
 		"description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
-		"expiration_date": null,
+		"expiration_date": "2026-10-31",
 		"hugging_face_id": "poolside/Laguna-S-2.1",
 		"id": "poolside/laguna-s-2.1:free",
 		"knowledge_cutoff": null,
@@ -5529,7 +6867,7 @@
 		"default_parameters":
 		{},
 		"description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
-		"expiration_date": null,
+		"expiration_date": "2026-10-31",
 		"hugging_face_id": "poolside/Laguna-S-2.1",
 		"id": "poolside/laguna-s-2.1",
 		"knowledge_cutoff": null,
@@ -5961,7 +7299,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "thinkingmachines/inkling-20260715",
-		"context_length": 1048576,
+		"context_length": 524288,
 		"created": 1784325956,
 		"default_parameters":
 		{
@@ -6133,8 +7471,8 @@
 		"pricing":
 		{
 			"completion": "0.000015",
-			"input_cache_read": "0.0000003",
-			"prompt": "0.000003"
+			"input_cache_read": "0.00000028",
+			"prompt": "0.0000005"
 		},
 		"reasoning":
 		{
@@ -6155,9 +7493,9 @@
 	{
 		"architecture":
 		{
-			"input_modalities": ["text", "image", "video", "file", "audio"],
+			"input_modalities": ["text", "image", "video", "file"],
 			"instruct_type": null,
-			"modality": "text+image+file+audio+video->text",
+			"modality": "text+image+file+video->text",
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
@@ -6166,7 +7504,7 @@
 		"created": 1784215741,
 		"default_parameters":
 		{},
-		"description": "Muse Spark 1.1 is a multimodal reasoning model from Meta, built for agentic tasks. It accepts text, images, video, audio, and PDF documents and returns text, with a 1M-token context...",
+		"description": "Muse Spark 1.1 is a multimodal reasoning model from Meta, built for agentic tasks. It accepts text, images, video, and PDF documents and returns text, with a 1M-token context window....",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "meta/muse-spark-1.1",
@@ -6314,7 +7652,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "GPT-5.6 Luna Pro is the same underlying model as [GPT-5.6 Luna](https://openrouter.ai/openai/gpt-5.6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-5.6 Luna Pro is the same underlying model as [GPT-5.6 Luna](https://openrouter.ai/openai/gpt-5.6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-5.6-luna-pro:batch",
@@ -6346,7 +7684,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -6376,7 +7714,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "GPT-5.6 Luna Pro is the same underlying model as [GPT-5.6 Luna](https://openrouter.ai/openai/gpt-5.6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-5.6 Luna Pro is the same underlying model as [GPT-5.6 Luna](https://openrouter.ai/openai/gpt-5.6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-5.6-luna-pro",
@@ -6410,7 +7748,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -6472,7 +7810,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -6536,7 +7874,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -6566,7 +7904,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "GPT-5.6 Terra Pro is the same underlying model as [GPT-5.6 Terra](https://openrouter.ai/openai/gpt-5.6-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-5.6 Terra Pro is the same underlying model as [GPT-5.6 Terra](https://openrouter.ai/openai/gpt-5.6-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-5.6-terra-pro:batch",
@@ -6598,7 +7936,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -6628,7 +7966,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "GPT-5.6 Terra Pro is the same underlying model as [GPT-5.6 Terra](https://openrouter.ai/openai/gpt-5.6-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-5.6 Terra Pro is the same underlying model as [GPT-5.6 Terra](https://openrouter.ai/openai/gpt-5.6-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-5.6-terra-pro",
@@ -6662,12 +8000,12 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1050000,
-			"is_moderated": false,
+			"is_moderated": true,
 			"max_completion_tokens": 128000
 		}
 	},
@@ -6724,7 +8062,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -6788,7 +8126,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -6818,7 +8156,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+		"description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
 		"expiration_date": null,
 		"hugging_face_id": null,
 		"id": "openai/gpt-5.6-sol-pro:batch",
@@ -6828,70 +8166,6 @@
 			"details": "/api/v1/models/openai/gpt-5.6-sol-pro-20260709/endpoints"
 		},
 		"name": "OpenAI: GPT-5.6 Sol Pro (batch)",
-		"per_request_limits": null,
-		"pricing":
-		{
-			"completion": "0.000005",
-			"input_cache_read": "0.0000001",
-			"input_cache_write": "0.00000125",
-			"overrides": [
-			{
-				"completion": "0.0000075",
-				"input_cache_read": "0.0000002",
-				"input_cache_write": "0.0000025",
-				"min_prompt_tokens": 272000,
-				"prompt": "0.000002"
-			}],
-			"prompt": "0.000001",
-			"web_search": "0.01"
-		},
-		"reasoning":
-		{
-			"default_effort": "medium",
-			"default_enabled": true,
-			"mandatory": false,
-			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
-		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
-		"supported_voices": null,
-		"top_provider":
-		{
-			"context_length": 1050000,
-			"is_moderated": true,
-			"max_completion_tokens": 128000
-		}
-	},
-	{
-		"architecture":
-		{
-			"input_modalities": ["file", "image", "text"],
-			"instruct_type": null,
-			"modality": "text+image+file->text",
-			"output_modalities": ["text"],
-			"tokenizer": "GPT"
-		},
-		"canonical_slug": "openai/gpt-5.6-sol-pro-20260709",
-		"context_length": 1050000,
-		"created": 1783590854,
-		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
-		"description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
-		"expiration_date": null,
-		"hugging_face_id": null,
-		"id": "openai/gpt-5.6-sol-pro",
-		"knowledge_cutoff": "2026-02-16",
-		"links":
-		{
-			"details": "/api/v1/models/openai/gpt-5.6-sol-pro-20260709/endpoints"
-		},
-		"name": "OpenAI: GPT-5.6 Sol Pro",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -6916,7 +8190,71 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-5.6-sol-pro-20260709",
+		"context_length": 1050000,
+		"created": 1783590854,
+		"default_parameters":
+		{
+			"frequency_penalty": null,
+			"presence_penalty": null,
+			"repetition_penalty": null,
+			"temperature": null,
+			"top_k": null,
+			"top_p": null
+		},
+		"description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-5.6-sol-pro",
+		"knowledge_cutoff": "2026-02-16",
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-5.6-sol-pro-20260709/endpoints"
+		},
+		"name": "OpenAI: GPT-5.6 Sol Pro",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00002",
+			"input_cache_read": "0.0000004",
+			"input_cache_write": "0.000005",
+			"overrides": [
+			{
+				"completion": "0.00003",
+				"input_cache_read": "0.0000008",
+				"input_cache_write": "0.00001",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000008"
+			}],
+			"prompt": "0.000004",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -6959,18 +8297,18 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000005",
-			"input_cache_read": "0.0000001",
-			"input_cache_write": "0.00000125",
+			"completion": "0.00001",
+			"input_cache_read": "0.0000002",
+			"input_cache_write": "0.0000025",
 			"overrides": [
 			{
-				"completion": "0.0000075",
-				"input_cache_read": "0.0000002",
-				"input_cache_write": "0.0000025",
+				"completion": "0.000015",
+				"input_cache_read": "0.0000004",
+				"input_cache_write": "0.000005",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.000002"
+				"prompt": "0.000004"
 			}],
-			"prompt": "0.000001",
+			"prompt": "0.000002",
 			"web_search": "0.01"
 		},
 		"reasoning":
@@ -6980,7 +8318,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -7023,18 +8361,18 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00001",
-			"input_cache_read": "0.0000002",
-			"input_cache_write": "0.0000025",
+			"completion": "0.00002",
+			"input_cache_read": "0.0000004",
+			"input_cache_write": "0.000005",
 			"overrides": [
 			{
-				"completion": "0.000015",
-				"input_cache_read": "0.0000004",
-				"input_cache_write": "0.000005",
+				"completion": "0.00003",
+				"input_cache_read": "0.0000008",
+				"input_cache_write": "0.00001",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.000004"
+				"prompt": "0.000008"
 			}],
-			"prompt": "0.000002",
+			"prompt": "0.000004",
 			"web_search": "0.01"
 		},
 		"reasoning":
@@ -7044,7 +8382,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -7143,16 +8481,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000048",
-			"input_cache_read": "0.0000004",
+			"completion": "0.000006",
+			"input_cache_read": "0.0000005",
 			"overrides": [
 			{
-				"completion": "0.0000096",
-				"input_cache_read": "0.0000008",
+				"completion": "0.000012",
+				"input_cache_read": "0.000001",
 				"min_prompt_tokens": 200000,
-				"prompt": "0.0000032"
+				"prompt": "0.000004"
 			}],
-			"prompt": "0.0000016",
+			"prompt": "0.000002",
 			"web_search": "0.005"
 		},
 		"reasoning":
@@ -7346,8 +8684,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000528",
-			"input_cache_read": "0.000000033",
+			"completion": "0.00000033",
+			"input_cache_read": "0.000000020625",
 			"overrides": [
 			{
 				"completion": "0.000000528",
@@ -7363,7 +8701,7 @@
 				"utc_end": 0,
 				"utc_start": 1600
 			}],
-			"prompt": "0.000000132"
+			"prompt": "0.0000000825"
 		},
 		"reasoning":
 		{
@@ -7396,7 +8734,7 @@
 		"default_parameters":
 		{},
 		"description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
-		"expiration_date": null,
+		"expiration_date": "2026-10-31",
 		"hugging_face_id": "poolside/Laguna-XS-2.1",
 		"id": "poolside/laguna-xs-2.1:free",
 		"knowledge_cutoff": null,
@@ -7440,7 +8778,7 @@
 		"default_parameters":
 		{},
 		"description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
-		"expiration_date": null,
+		"expiration_date": "2026-10-31",
 		"hugging_face_id": "poolside/Laguna-XS-2.1",
 		"id": "poolside/laguna-xs-2.1",
 		"knowledge_cutoff": null,
@@ -8021,9 +9359,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000020416",
-			"input_cache_read": "0.00000012064",
-			"prompt": "0.0000006496"
+			"completion": "0.000007",
+			"input_cache_read": "0.000000039",
+			"prompt": "0.00000004"
 		},
 		"reasoning":
 		{
@@ -8038,7 +9376,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 943718
 		}
 	},
 	{
@@ -8173,9 +9511,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000033",
+			"completion": "0.00000335",
 			"input_cache_read": "0.00000018",
-			"prompt": "0.0000006562"
+			"prompt": "0.0000006712"
 		},
 		"reasoning":
 		{
@@ -8974,7 +10312,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high", "medium", "low"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -9131,7 +10469,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "verbosity"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -10357,8 +11695,8 @@
 	{
 		"alias_target":
 		{
-			"name": "Anthropic: Claude Haiku 4.5",
-			"slug": "anthropic/claude-haiku-4.5"
+			"name": "Anthropic: Claude Haiku 5.5",
+			"slug": "anthropic/claude-haiku-5.5"
 		},
 		"architecture":
 		{
@@ -10369,17 +11707,10 @@
 			"tokenizer": "Router"
 		},
 		"canonical_slug": "~anthropic/claude-haiku-latest",
-		"context_length": 200000,
+		"context_length": 1000000,
 		"created": 1777318492,
 		"default_parameters":
-		{
-			"frequency_penalty": null,
-			"presence_penalty": null,
-			"repetition_penalty": null,
-			"temperature": null,
-			"top_k": null,
-			"top_p": null
-		},
+		{},
 		"description": "This model always redirects to the latest model in the Claude Haiku family.",
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -10393,24 +11724,35 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000005",
-			"input_cache_read": "0.0000001",
-			"input_cache_write": "0.00000125",
-			"input_cache_write_1h": "0.000002",
-			"prompt": "0.000001",
+			"completion": "0.0000005",
+			"input_cache_read": "0.00000001",
+			"input_cache_write": "0.000000125",
+			"input_cache_write_1h": "0.0000002",
+			"overrides": [
+			{
+				"completion": "0.0000025",
+				"input_cache_read": "0.00000005",
+				"input_cache_write": "0.000000625",
+				"input_cache_write_1h": "0.000001",
+				"min_prompt_tokens": 100000,
+				"prompt": "0.0000005"
+			}],
+			"prompt": "0.0000001",
 			"web_search": "0.01"
 		},
 		"reasoning":
 		{
-			"mandatory": false
+			"default_effort": "medium",
+			"mandatory": false,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 200000,
+			"context_length": 1000000,
 			"is_moderated": false,
-			"max_completion_tokens": 64000
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -10464,7 +11806,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -10585,9 +11927,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000105346",
-			"input_cache_read": "0.00000033",
-			"prompt": "0.0000008845"
+			"completion": "0.0000149",
+			"input_cache_read": "0.00000027",
+			"prompt": "0.00000049"
 		},
 		"reasoning":
 		{
@@ -10666,8 +12008,8 @@
 	{
 		"alias_target":
 		{
-			"name": "Anthropic: Claude Sonnet 5",
-			"slug": "anthropic/claude-sonnet-5"
+			"name": "Anthropic: Claude Sonnet 5.5",
+			"slug": "anthropic/claude-sonnet-5.5"
 		},
 		"architecture":
 		{
@@ -10696,7 +12038,7 @@
 		"pricing":
 		{
 			"completion": "0.00001",
-			"input_cache_read": "0.0000002",
+			"input_cache_read": "0.0000001",
 			"input_cache_write": "0.0000025",
 			"input_cache_write_1h": "0.000004",
 			"prompt": "0.000002",
@@ -10705,8 +12047,7 @@
 		"reasoning":
 		{
 			"default_effort": "high",
-			"default_enabled": true,
-			"mandatory": false,
+			"mandatory": true,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
 		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
@@ -10714,7 +12055,7 @@
 		"top_provider":
 		{
 			"context_length": 1000000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 128000
 		}
 	},
@@ -10920,9 +12261,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
-			"input_cache_read": "0.00000005",
-			"prompt": "0.00000015"
+			"completion": "0.00000095",
+			"input_cache_read": "0.0000001",
+			"prompt": "0.0000001"
 		},
 		"reasoning":
 		{
@@ -10935,7 +12276,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 235929
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -10953,7 +12294,7 @@
 		"default_parameters":
 		{},
 		"description": "Qwen3.6-Max-Preview is a proprietary frontier model from Alibaba Cloud built on a sparse mixture-of-experts architecture with approximately 1 trillion total parameters. It is optimized for agentic coding, tool use, and...",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": null,
 		"id": "qwen/qwen3.6-max-preview",
 		"knowledge_cutoff": null,
@@ -11024,8 +12365,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000027",
-			"input_cache_read": "0.00000015",
+			"completion": "0.0000032",
 			"prompt": "0.00000032"
 		},
 		"reasoning":
@@ -11039,7 +12379,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 262140
+			"max_completion_tokens": 81920
 		}
 	},
 	{
@@ -11092,7 +12432,7 @@
 			"mandatory": true,
 			"supported_efforts": ["xhigh", "high", "medium"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -11151,7 +12491,7 @@
 			"mandatory": true,
 			"supported_efforts": ["xhigh", "high", "medium"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -11213,7 +12553,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -11275,7 +12615,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -11314,9 +12654,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001566",
-			"input_cache_read": "0.00000006525",
-			"prompt": "0.000000783"
+			"completion": "0.000000766992",
+			"input_cache_read": "0.000000031958",
+			"prompt": "0.000000383496"
 		},
 		"reasoning":
 		{
@@ -11360,9 +12700,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000098",
-			"input_cache_read": "0.0000000098",
-			"prompt": "0.000000049"
+			"completion": "0.000000182",
+			"input_cache_read": "0.0000000182",
+			"prompt": "0.000000091"
 		},
 		"reasoning":
 		{
@@ -11374,9 +12714,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1024000,
+			"context_length": 1048575,
 			"is_moderated": false,
-			"max_completion_tokens": 384000
+			"max_completion_tokens": 943717
 		}
 	},
 	{
@@ -11631,7 +12971,7 @@
 			"top_p": 0.95
 		},
 		"description": "MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....",
-		"expiration_date": null,
+		"expiration_date": "2026-10-21",
 		"hugging_face_id": "XiaomiMiMo/MiMo-V2.5-Pro",
 		"id": "xiaomi/mimo-v2.5-pro",
 		"knowledge_cutoff": null,
@@ -11651,7 +12991,7 @@
 		{
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -11682,7 +13022,7 @@
 			"top_p": 0.95
 		},
 		"description": "MiMo-V2.5 is a native omnimodal model by Xiaomi. It delivers Pro-level agentic performance at roughly half the inference cost, while surpassing MiMo-V2-Omni in multimodal perception across image and video understanding...",
-		"expiration_date": null,
+		"expiration_date": "2026-10-21",
 		"hugging_face_id": "XiaomiMiMo/MiMo-V2.5",
 		"id": "xiaomi/mimo-v2.5",
 		"knowledge_cutoff": null,
@@ -11702,7 +13042,7 @@
 		{
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -11758,7 +13098,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "top_logprobs"],
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "top_logprobs", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -11904,7 +13244,7 @@
 			"mandatory": true,
 			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "verbosity"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -11950,7 +13290,7 @@
 			"completion": "-1",
 			"prompt": "-1"
 		},
-		"supported_parameters": [],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -12131,9 +13471,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000004",
-			"input_cache_read": "0.00000016",
-			"prompt": "0.00000095"
+			"completion": "0.00000341",
+			"input_cache_read": "0.00000015",
+			"prompt": "0.00000065"
 		},
 		"reasoning":
 		{
@@ -12382,9 +13722,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000030316",
-			"input_cache_read": "0.00000017914",
-			"prompt": "0.0000009646"
+			"completion": "0.00000418",
+			"input_cache_read": "0.000000247",
+			"prompt": "0.00000133"
 		},
 		"reasoning":
 		{
@@ -12395,7 +13735,7 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 202752,
+			"context_length": 202745,
 			"is_moderated": false,
 			"max_completion_tokens": 131072
 		}
@@ -12479,9 +13819,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000003",
-			"input_cache_read": "0.00000005",
-			"prompt": "0.00000009"
+			"completion": "0.000000255",
+			"input_cache_read": "0.0000000425",
+			"prompt": "0.0000000765"
 		},
 		"reasoning":
 		{
@@ -13482,7 +14822,7 @@
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -13537,7 +14877,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -13592,7 +14932,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -13647,7 +14987,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -13702,7 +15042,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -14283,7 +15623,7 @@
 			"top_p": null
 		},
 		"description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified vision-language design with early fusion of multimodal tokens, allowing the model to process and reason across text and images within the same context.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-21",
 		"hugging_face_id": "Qwen/Qwen3.5-9B",
 		"id": "qwen/qwen3.5-9b",
 		"knowledge_cutoff": null,
@@ -14361,7 +15701,7 @@
 			"mandatory": true,
 			"supported_efforts": ["xhigh", "high", "medium"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -14420,7 +15760,7 @@
 			"mandatory": true,
 			"supported_efforts": ["xhigh", "high", "medium"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -14482,7 +15822,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -14544,7 +15884,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -14859,9 +16199,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000125",
-			"input_cache_read": "0.00000015625",
-			"prompt": "0.0000003125"
+			"completion": "0.000001",
+			"input_cache_read": "0.00000005",
+			"prompt": "0.00000015"
 		},
 		"reasoning":
 		{
@@ -14910,8 +16250,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000156",
-			"prompt": "0.000000195"
+			"completion": "0.0000026",
+			"prompt": "0.00000026"
 		},
 		"reasoning":
 		{
@@ -14923,7 +16263,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 81920
 		}
 	},
 	{
@@ -15179,7 +16519,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -15552,9 +16892,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000035",
-			"input_cache_read": "0.000000225",
-			"prompt": "0.00000055"
+			"completion": "0.0000036",
+			"input_cache_read": "0.0000003",
+			"prompt": "0.0000005"
 		},
 		"reasoning":
 		{
@@ -15734,7 +17074,7 @@
 			"top_p": null
 		},
 		"description": "Qwen3-Max-Thinking is the flagship reasoning model in the Qwen3 series, designed for high-stakes cognitive tasks that require deep, multi-step reasoning. By significantly scaling model capacity and reinforcement learning compute, it delivers major gains in factual accuracy, complex reasoning, instruction following, alignment with human preferences, and agentic behavior.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": null,
 		"id": "qwen/qwen3-max-thinking",
 		"knowledge_cutoff": null,
@@ -16257,9 +17597,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000225",
-			"input_cache_read": "0.00000007",
-			"prompt": "0.00000045"
+			"completion": "0.0000025",
+			"input_cache_read": "0.00000015",
+			"prompt": "0.0000005"
 		},
 		"reasoning":
 		{
@@ -16726,7 +18066,7 @@
 			"mandatory": true,
 			"supported_efforts": ["xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -16996,7 +18336,7 @@
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -17027,7 +18367,7 @@
 			"top_p": 0.95
 		},
 		"description": "GLM-4.7 is Z.ai’s latest flagship model, featuring upgrades in two key areas: enhanced programming capabilities and more stable multi-step reasoning/execution. It demonstrates significant improvements in executing complex agent tasks while delivering more natural conversational experiences and superior front-end aesthetics.",
-		"expiration_date": null,
+		"expiration_date": "2026-12-31",
 		"hugging_face_id": "zai-org/GLM-4.7",
 		"id": "z-ai/glm-4.7",
 		"knowledge_cutoff": null,
@@ -17452,15 +18792,14 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000002",
-			"input_cache_read": "0.00000003",
-			"prompt": "0.00000005"
+			"completion": "0.00000024",
+			"prompt": "0.00000006"
 		},
 		"reasoning":
 		{
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -17505,7 +18844,7 @@
 			"prompt": "0.00000175",
 			"web_search": "0.01"
 		},
-		"supported_parameters": ["max_completion_tokens", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["max_completion_tokens", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -17555,7 +18894,7 @@
 			"mandatory": true,
 			"supported_efforts": ["xhigh", "high", "medium"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -17605,7 +18944,7 @@
 			"mandatory": true,
 			"supported_efforts": ["xhigh", "high", "medium"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -17659,7 +18998,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -17713,7 +19052,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -18114,7 +19453,7 @@
 			"mandatory": true,
 			"supported_efforts": ["xhigh", "high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -18637,9 +19976,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000004",
-			"input_cache_read": "0.0000001345",
-			"prompt": "0.000000269"
+			"completion": "0.0000008",
+			"input_cache_read": "0.00000014",
+			"prompt": "0.000000259"
 		},
 		"reasoning":
 		{
@@ -18652,7 +19991,7 @@
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 147456
 		}
 	},
 	{
@@ -19430,7 +20769,7 @@
 			"mandatory": false,
 			"supported_efforts": ["high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -19485,7 +20824,7 @@
 			"mandatory": false,
 			"supported_efforts": ["high", "medium", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -19584,7 +20923,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -19638,7 +20977,7 @@
 			"mandatory": false,
 			"supported_efforts": ["high", "medium", "low"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -20238,8 +21577,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000012",
-			"prompt": "0.0000003"
+			"completion": "0.00000102",
+			"prompt": "0.000000255"
 		},
 		"reasoning":
 		{
@@ -20249,9 +21588,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 196608,
+			"context_length": 204800,
 			"is_moderated": false,
-			"max_completion_tokens": 176947
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -20276,7 +21615,7 @@
 			"top_p": 0.8
 		},
 		"description": "Qwen3-VL-32B-Instruct is a large-scale multimodal vision-language model designed for high-precision understanding and reasoning across text, images, and video. With 32 billion parameters, it combines deep visual perception with advanced text comprehension, enabling fine-grained spatial reasoning, document and scene analysis, and long-horizon video understanding.Robust OCR in 32 languages, and enhanced multimodal fusion through Interleaved-MRoPE and DeepStack architectures. Optimized for agentic interaction and visual tool use, Qwen3-VL-32B delivers state-of-the-art performance for complex real-world multimodal tasks.",
-		"expiration_date": "2026-02-25",
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "Qwen/Qwen3-VL-32B-Instruct",
 		"id": "qwen/qwen3-vl-32b-instruct",
 		"knowledge_cutoff": null,
@@ -20577,7 +21916,7 @@
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "top_logprobs", "top_p", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -20712,7 +22051,7 @@
 			"top_p": 0.95
 		},
 		"description": "Qwen3-VL-8B-Thinking is the reasoning-optimized variant of the Qwen3-VL-8B multimodal model, designed for advanced visual and textual reasoning across complex scenes, documents, and temporal sequences. It integrates enhanced multimodal alignment and long-context processing (native 256K, expandable to 1M tokens) for tasks such as scientific visual analysis, causal inference, and mathematical reasoning over image or video inputs.\n\nCompared to the Instruct edition, the Thinking version introduces deeper visual-language fusion and deliberate reasoning pathways that improve performance on long-chain logic tasks, STEM problem-solving, and multi-step video understanding. It achieves stronger temporal grounding via Interleaved-MRoPE and timestamp-aware embeddings, while maintaining robust OCR, multilingual comprehension, and text generation on par with large text-only LLMs.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "Qwen/Qwen3-VL-8B-Thinking",
 		"id": "qwen/qwen3-vl-8b-thinking",
 		"knowledge_cutoff": null,
@@ -20759,7 +22098,7 @@
 			"top_p": 0.8
 		},
 		"description": "Qwen3-VL-8B-Instruct is a multimodal vision-language model from the Qwen3-VL series, built for high-fidelity understanding and reasoning across text, images, and video. It features improved multimodal fusion with Interleaved-MRoPE for long-horizon temporal reasoning, DeepStack for fine-grained visual-text alignment, and text-timestamp alignment for precise event localization.\n\nThe model supports a native 256K-token context window, extensible to 1M tokens, and handles both static and dynamic media inputs for tasks like document parsing, visual question answering, spatial reasoning, and GUI control. It achieves text understanding comparable to leading LLMs while expanding OCR coverage to 32 languages and enhancing robustness under varied visual conditions.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "Qwen/Qwen3-VL-8B-Instruct",
 		"id": "qwen/qwen3-vl-8b-instruct",
 		"knowledge_cutoff": null,
@@ -20771,16 +22110,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000455",
-			"prompt": "0.000000117"
+			"completion": "0.00000075",
+			"input_cache_read": "0.00000012",
+			"prompt": "0.00000025"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 235929
 		}
 	},
 	{
@@ -20824,7 +22164,7 @@
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_logprobs", "top_p"],
+		"supported_parameters": ["include_reasoning", "logprobs", "max_tokens", "reasoning", "response_format", "seed", "structured_outputs", "temperature", "top_logprobs", "top_p", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -21177,7 +22517,7 @@
 			"top_p": 0.95
 		},
 		"description": "Qwen3-VL-30B-A3B-Thinking is a multimodal model that unifies strong text generation with visual understanding for images and videos. Its Thinking variant enhances reasoning in STEM, math, and complex tasks. It excels in perception of real-world/synthetic categories, 2D/3D spatial grounding, and long-form visual comprehension, achieving competitive multimodal benchmark results. For agentic use, it handles multi-image multi-turn instructions, video timeline alignments, GUI automation, and visual coding from sketches to debugged UI. Text performance matches flagship Qwen3 models, suiting document AI, OCR, UI assistance, spatial tasks, and agent research.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "Qwen/Qwen3-VL-30B-A3B-Thinking",
 		"id": "qwen/qwen3-vl-30b-a3b-thinking",
 		"knowledge_cutoff": "2025-03-31",
@@ -21189,20 +22529,20 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000024",
-			"prompt": "0.0000002"
+			"completion": "0.000001",
+			"prompt": "0.00000029"
 		},
 		"reasoning":
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 235929
 		}
 	},
 	{
@@ -21292,7 +22632,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -21342,7 +22682,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -21423,9 +22763,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000175",
-			"input_cache_read": "0.00000008",
-			"prompt": "0.00000043"
+			"completion": "0.000002",
+			"input_cache_read": "0.0000001",
+			"prompt": "0.0000005"
 		},
 		"reasoning":
 		{
@@ -21435,9 +22775,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 198000,
+			"context_length": 202752,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -21604,13 +22944,13 @@
 		{
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 147456
 		}
 	},
 	{
@@ -21817,7 +23157,7 @@
 			"top_p": 0.95
 		},
 		"description": "Qwen3-VL-235B-A22B Thinking is a multimodal model that unifies strong text generation with visual understanding across images and video. The Thinking model is optimized for multimodal reasoning in STEM and math. The series emphasizes robust perception (recognition of diverse real-world and synthetic categories), spatial understanding (2D/3D grounding), and long-form visual comprehension, with competitive results on public multimodal benchmarks for both perception and reasoning.\n\nBeyond analysis, Qwen3-VL supports agentic interaction and tool use: it can follow complex instructions over multi-image, multi-turn dialogues; align text to video timelines for precise temporal queries; and operate GUI elements for automation tasks. The models also enable visual coding workflows, turning sketches or mockups into code and assisting with UI debugging, while maintaining strong text-only performance comparable to the flagship Qwen3 language models. This makes Qwen3-VL suitable for production scenarios spanning document AI, multilingual OCR, software/UI assistance, spatial/embodied tasks, and research on vision-language agents.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "Qwen/Qwen3-VL-235B-A22B-Thinking",
 		"id": "qwen/qwen3-vl-235b-a22b-thinking",
 		"knowledge_cutoff": "2025-03-31",
@@ -21908,7 +23248,7 @@
 			"top_p": 1
 		},
 		"description": "Qwen3-Max is an updated release built on the Qwen3 series, offering major improvements in reasoning, instruction following, multilingual support, and long-tail knowledge coverage compared to the January 2025 version. It delivers higher accuracy in math, coding, logic, and science tasks, follows complex instructions in Chinese and English more reliably, reduces hallucinations, and produces higher-quality responses for open-ended Q&A, writing, and conversation. The model supports over 100 languages with stronger translation and commonsense reasoning, and is optimized for retrieval-augmented generation (RAG) and tool calling, though it does not include a dedicated “thinking” mode.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "",
 		"id": "qwen/qwen3-max",
 		"knowledge_cutoff": "2025-06-30",
@@ -21972,7 +23312,7 @@
 			"top_p": null
 		},
 		"description": "Qwen3 Coder Plus is Alibaba's proprietary version of the Open Source Qwen3 Coder 480B A35B. It is a powerful coding agent model specializing in autonomous programming via tool calling and environment interaction, combining coding proficiency with versatile general-purpose abilities.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "",
 		"id": "qwen/qwen3-coder-plus",
 		"knowledge_cutoff": "2025-06-30",
@@ -22181,20 +23521,19 @@
 		"pricing":
 		{
 			"completion": "0.000001",
-			"input_cache_read": "0.000000135",
 			"prompt": "0.00000027"
 		},
 		"reasoning":
 		{
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 147456
 		}
 	},
 	{
@@ -22522,7 +23861,7 @@
 			"top_p": null
 		},
 		"description": "Qwen3-Next-80B-A3B-Thinking is a reasoning-first chat model in the Qwen3-Next line that outputs structured “thinking” traces by default. It’s designed for hard multi-step problems; math proofs, code synthesis/debugging, logic, and agentic planning, and reports strong results across knowledge, reasoning, coding, alignment, and multilingual evaluations. Compared with prior Qwen3 variants, it emphasizes stability under long chains of thought and efficient scaling during inference, and it is tuned to follow complex instructions while reducing repetitive or off-task behavior.\n\nThe model is suitable for agent frameworks and tool use (function calling), retrieval-heavy workflows, and standardized benchmarking where step-by-step solutions are required. It supports long, detailed completions and leverages throughput-oriented techniques (e.g., multi-token prediction) for faster generation. Note that it operates in thinking-only mode.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
 		"id": "qwen/qwen3-next-80b-a3b-thinking",
 		"knowledge_cutoff": "2025-09-30",
@@ -22776,7 +24115,7 @@
 			"top_p": null
 		},
 		"description": "Qwen Plus 0728, based on the Qwen3 foundation model, is a 1 million context hybrid reasoning model with a balanced performance, speed, and cost combination.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "",
 		"id": "qwen/qwen-plus-2025-07-28",
 		"knowledge_cutoff": "2025-03-31",
@@ -23274,7 +24613,7 @@
 		"default_parameters":
 		{},
 		"description": "Qwen3-30B-A3B-Thinking-2507 is a 30B parameter Mixture-of-Experts reasoning model optimized for complex tasks requiring extended multi-step thinking. The model is designed specifically for “thinking mode,” where internal reasoning traces are separated from final answers.\n\nCompared to earlier Qwen3-30B releases, this version improves performance across logical reasoning, mathematics, science, coding, and multilingual benchmarks. It also demonstrates stronger instruction following, tool use, and alignment with human preferences. With higher reasoning efficiency and extended output budgets, it is best suited for advanced research, competitive problem solving, and agentic applications requiring structured long-context reasoning.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
 		"id": "qwen/qwen3-30b-a3b-thinking-2507",
 		"knowledge_cutoff": "2025-06-30",
@@ -24008,7 +25347,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high", "medium", "low", "minimal"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -24062,7 +25401,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high", "medium", "low", "minimal"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -24116,7 +25455,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high", "medium", "low", "minimal"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -24170,7 +25509,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high", "medium", "low", "minimal"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -24224,7 +25563,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high", "medium", "low", "minimal"]
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -24278,7 +25617,7 @@
 			"mandatory": true,
 			"supported_efforts": ["high", "medium", "low", "minimal"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools"],
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -24453,9 +25792,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"input_cache_read": "0.000000075",
-			"prompt": "0.00000015"
+			"completion": "0.00000017",
+			"prompt": "0.000000037"
 		},
 		"reasoning":
 		{
@@ -24469,7 +25807,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 117964
 		}
 	},
 	{
@@ -24602,6 +25940,7 @@
 		"pricing":
 		{
 			"completion": "0.00000009",
+			"input_cache_read": "0.000000009",
 			"prompt": "0.000000018"
 		},
 		"reasoning":
@@ -24841,7 +26180,7 @@
 			"completion": "0.00000028",
 			"prompt": "0.00000007"
 		},
-		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -25038,7 +26377,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-235b-a22b-thinking-2507",
-		"context_length": 131072,
+		"context_length": 128000,
 		"created": 1753449557,
 		"default_parameters":
 		{
@@ -25047,7 +26386,7 @@
 			"top_p": null
 		},
 		"description": "Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks. It activates 22B of its 235B parameters per forward pass and natively supports up to 262,144 tokens of context. This \"thinking-only\" variant enhances structured logical reasoning, mathematics, science, and long-form generation, showing strong benchmark performance across AIME, SuperGPQA, LiveCodeBench, and MMLU-Redux. It enforces a special reasoning mode (</think>) and is designed for high-token outputs (up to 81,920 tokens) in challenging domains.\n\nThe model is instruction-tuned and excels at step-by-step reasoning, tool use, agentic workflows, and multilingual tasks. This release represents the most capable open-source variant in the Qwen3-235B series, surpassing many closed models in structured reasoning use cases.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
 		"id": "qwen/qwen3-235b-a22b-thinking-2507",
 		"knowledge_cutoff": "2025-06-30",
@@ -25059,20 +26398,20 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000023",
-			"prompt": "0.00000023"
+			"completion": "0.0000035",
+			"prompt": "0.00000045"
 		},
 		"reasoning":
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 131072,
+			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": 117964
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -25405,9 +26744,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000035",
-			"input_cache_read": "0.0000000175",
-			"prompt": "0.0000000875"
+			"completion": "0.00000055",
+			"prompt": "0.00000009"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -25415,7 +26753,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 235929
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -26326,7 +27664,7 @@
 		"pricing":
 		{
 			"completion": "0.0000022",
-			"prompt": "0.0000004"
+			"prompt": "0.00000055"
 		},
 		"reasoning":
 		{
@@ -28111,7 +29449,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-30b-a3b-04-28",
-		"context_length": 131072,
+		"context_length": 40960,
 		"created": 1745878604,
 		"default_parameters":
 		{
@@ -28207,7 +29545,7 @@
 			"top_p": 0.95
 		},
 		"description": "Qwen3-8B is a dense 8.2B parameter causal language model from the Qwen3 series, designed for both reasoning-heavy tasks and efficient dialogue. It supports seamless switching between \"thinking\" mode for math, coding, and logical inference, and \"non-thinking\" mode for general conversation. The model is fine-tuned for instruction-following, agent integration, creative writing, and multilingual use across 100+ languages and dialects. It natively supports a 32K token context window and can extend to 131K tokens with YaRN scaling.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "Qwen/Qwen3-8B",
 		"id": "qwen/qwen3-8b",
 		"knowledge_cutoff": "2025-03-31",
@@ -28282,7 +29620,7 @@
 			"tokenizer": "Qwen3"
 		},
 		"canonical_slug": "qwen/qwen3-14b-04-28",
-		"context_length": 131072,
+		"context_length": 40960,
 		"created": 1745876478,
 		"default_parameters":
 		{},
@@ -28349,7 +29687,7 @@
 		{
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -28409,7 +29747,7 @@
 		"default_parameters":
 		{},
 		"description": "Qwen3-235B-A22B is a 235B parameter mixture-of-experts (MoE) model developed by Qwen, activating 22B parameters per forward pass. It supports seamless switching between a \"thinking\" mode for complex reasoning, math, and code tasks, and a \"non-thinking\" mode for general conversational efficiency. The model demonstrates strong reasoning ability, multilingual support (100+ languages and dialects), advanced instruction-following, and agent tool-calling capabilities. It natively handles a 32K token context window and extends up to 131K tokens using YaRN-based scaling.",
-		"expiration_date": null,
+		"expiration_date": "2026-10-09",
 		"hugging_face_id": "Qwen/Qwen3-235B-A22B",
 		"id": "qwen/qwen3-235b-a22b",
 		"knowledge_cutoff": "2025-03-31",
@@ -29810,9 +31148,10 @@
 		"pricing":
 		{
 			"completion": "0.0000006525",
+			"input_cache_read": "0.00000005",
 			"prompt": "0.0000001875"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -29884,16 +31223,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000003",
-			"prompt": "0.0000001"
+			"completion": "0.00000059",
+			"prompt": "0.00000018"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 327680,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 117964
 		}
 	},
 	{
@@ -30073,16 +31412,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001",
-			"prompt": "0.00000025"
+			"completion": "0.00000114",
+			"input_cache_read": "0.00000011",
+			"prompt": "0.00000029"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 163840,
+			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": 147456
+			"max_completion_tokens": 115200
 		}
 	},
 	{
@@ -30240,7 +31580,7 @@
 			"completion": "0.000000555",
 			"prompt": "0.000000351"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -33283,8 +34623,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000032",
-			"prompt": "0.0000001"
+			"completion": "0.00000079",
+			"input_cache_read": "0.000000295",
+			"prompt": "0.00000059"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -33292,7 +34633,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 32768
 		}
 	},
 	{
@@ -34785,7 +36126,7 @@
 			"completion": "0.00000085",
 			"prompt": "0.00000085"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -35371,7 +36712,7 @@
 		"pricing":
 		{
 			"completion": "0.00000003",
-			"prompt": "0.000000019"
+			"prompt": "0.000000029"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -36136,7 +37477,7 @@
 		"top_provider":
 		{
 			"context_length": 128000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 4096
 		}
 	},
@@ -37318,7 +38659,7 @@
 		"top_provider":
 		{
 			"context_length": 16385,
-			"is_moderated": false,
+			"is_moderated": true,
 			"max_completion_tokens": 4096
 		}
 	},
@@ -37600,5 +38941,5 @@
 	{
 		"next": null
 	},
-	"total_count": 460
+	"total_count": 462
 }
