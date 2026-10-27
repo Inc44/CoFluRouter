@@ -1,6 +1,13 @@
 {
 	"data": [
 	{
+		"created": 1791908780,
+		"id": "gpt-6.1-terra",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
 		"created": 1790552874,
 		"id": "gpt-6.1-sol",
 		"object": "model",
@@ -201,14 +208,14 @@
 		"id": "gpt-5.4-nano",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-04-01"
 	},
 	{
 		"created": 1773450837,
 		"id": "gpt-5.4-nano-2026-03-17",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-04-01"
 	},
 	{
 		"created": 1772691852,
@@ -278,7 +285,7 @@
 		"id": "gpt-5.3-codex",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-04-01"
 	},
 	{
 		"created": 1766164985,
@@ -299,28 +306,28 @@
 		"id": "gpt-audio-mini-2025-12-15",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-20"
 	},
 	{
 		"created": 1765612007,
 		"id": "gpt-realtime-mini-2025-12-15",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-20"
 	},
 	{
 		"created": 1765610837,
 		"id": "gpt-4o-mini-tts-2025-12-15",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-06"
 	},
 	{
 		"created": 1765610731,
 		"id": "gpt-4o-mini-tts-2025-03-20",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": "2026-07-23"
+		"shutdown_date": "2027-01-06"
 	},
 	{
 		"created": 1765610545,
@@ -334,7 +341,7 @@
 		"id": "gpt-4o-mini-transcribe-2025-12-15",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-02-26"
 	},
 	{
 		"created": 1765344352,
@@ -404,14 +411,14 @@
 		"id": "gpt-5.1",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-04-01"
 	},
 	{
 		"created": 1762800353,
 		"id": "gpt-5.1-2025-11-13",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-04-01"
 	},
 	{
 		"created": 1762547951,
@@ -480,7 +487,7 @@
 		"id": "gpt-5-pro",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2026-12-11"
 	},
 	{
 		"created": 1759469707,
@@ -515,7 +522,7 @@
 		"id": "gpt-realtime-2025-08-28",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-20"
 	},
 	{
 		"created": 1756271701,
@@ -529,14 +536,14 @@
 		"id": "gpt-audio-2025-08-28",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-20"
 	},
 	{
 		"created": 1754426384,
 		"id": "gpt-5-nano",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2026-12-11"
 	},
 	{
 		"created": 1754426303,
@@ -550,7 +557,7 @@
 		"id": "gpt-5-mini",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2026-12-11"
 	},
 	{
 		"created": 1754425867,
@@ -564,7 +571,7 @@
 		"id": "gpt-5",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2026-12-11"
 	},
 	{
 		"created": 1754075360,
@@ -639,7 +646,7 @@
 		"id": "o3-pro",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2026-12-11"
 	},
 	{
 		"created": 1746673257,
@@ -673,28 +680,28 @@
 		"id": "gpt-4.1-mini",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-14"
 	},
 	{
 		"created": 1744317547,
 		"id": "gpt-4.1-mini-2025-04-14",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-14"
 	},
 	{
 		"created": 1744316542,
 		"id": "gpt-4.1",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-14"
 	},
 	{
 		"created": 1744315746,
 		"id": "gpt-4.1-2025-04-14",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-14"
 	},
 	{
 		"created": 1744225351,
@@ -708,7 +715,7 @@
 		"id": "o3",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2026-12-11"
 	},
 	{
 		"created": 1744133506,
@@ -729,7 +736,7 @@
 		"id": "gpt-4o-mini-tts",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-06"
 	},
 	{
 		"created": 1742251791,
@@ -785,7 +792,7 @@
 		"id": "gpt-4o-2024-11-20",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-14"
 	},
 	{
 		"created": 1738010200,
@@ -919,21 +926,21 @@
 		"id": "gpt-4o-2024-08-06",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-14"
 	},
 	{
 		"created": 1721172741,
 		"id": "gpt-4o-mini",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-14"
 	},
 	{
 		"created": 1721172717,
 		"id": "gpt-4o-mini-2024-07-18",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-14"
 	},
 	{
 		"created": 1715368132,
@@ -947,7 +954,7 @@
 		"id": "gpt-4o",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-14"
 	},
 	{
 		"created": 1712601677,
@@ -1015,7 +1022,7 @@
 		"id": "tts-1-hd",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-06"
 	},
 	{
 		"created": 1698959748,
@@ -1096,7 +1103,7 @@
 		"id": "tts-1",
 		"object": "model",
 		"owned_by": "openai-internal",
-		"shutdown_date": null
+		"shutdown_date": "2027-01-06"
 	},
 	{
 		"created": 1677610602,

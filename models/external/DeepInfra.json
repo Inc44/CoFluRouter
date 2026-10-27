@@ -362,6 +362,29 @@
 	},
 	{
 		"created": 0,
+		"id": "Bria/fibo-2.0",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": 0,
+			"default_iterations": 0,
+			"default_width": 0,
+			"description": "FIBO 2.0 is Bria's latest JSON-native text-to-image model, the successor to FIBO 1.0 and 1.5, with structured-prompt control over lighting, composition and camera. Trained only on licensed data for commercially safe output.",
+			"discount": null,
+			"max_tokens": null,
+			"pricing":
+			{
+				"per_image_unit": 0.04
+			},
+			"tags": ["image-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Bria/fibo-2.0"
+	},
+	{
+		"created": 0,
 		"id": "Bria/fibo_edit",
 		"metadata":
 		{
@@ -2639,7 +2662,7 @@
 			"default_height": null,
 			"default_iterations": null,
 			"default_width": null,
-			"description": "The Wan2.2 T2V A14B is a next-generation 14B-parameter video foundation model by Wan-AI featuring a novel two-stage denoising architecture. It produces 480P videos with improved visual coherence and detail, generating 2 or 5 second clips at 16fps from text prompts.",
+			"description": "Wan2.2 T2V A14B is a 14B-parameter text-to-video model by Wan-AI with a Mixture-of-Experts design: a high-noise expert lays out the scene and motion, and a low-noise expert refines the detail. It generates 5-second 720p (1280×720) clips at 16 fps from text prompts.",
 			"discount": null,
 			"max_tokens": null,
 			"pricing":
@@ -2823,7 +2846,7 @@
 			"default_iterations": null,
 			"default_width": null,
 			"description": "MiMo-V2.6-Flash is the efficiency-balanced model in Xiaomi's MiMo-V2.6 series: a sparse Mixture-of-Experts model with 309B total and 15B activated parameters, natively omnimodal across text, image, video and audio, with a 1M-token context window. Trained with large-scale mixed reinforcement learning across coding, general agents, visual and cybersecurity tasks, it is built for agentic workloads such as long-horizon coding, tool use and computer use.",
-			"discount": null,
+			"discount": 0.0,
 			"max_tokens": 1048576,
 			"pricing":
 			{
@@ -2848,7 +2871,7 @@
 			"default_iterations": null,
 			"default_width": null,
 			"description": "MiMo-V2.6-Pro is the flagship of Xiaomi's MiMo-V2.6 series: a sparse Mixture-of-Experts model with 1.02T total and 42B activated parameters, natively omnimodal across text, image, video and audio, with a 1M-token context window. Trained with large-scale mixed reinforcement learning and groupwise agentic grading, it is built for demanding agentic work including long-horizon coding, multi-tool agents and cybersecurity tasks.",
-			"discount": null,
+			"discount": 0.1,
 			"max_tokens": 1048576,
 			"pricing":
 			{
@@ -4123,6 +4146,31 @@
 	},
 	{
 		"created": 0,
+		"id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance–cost Pareto frontier across multiple agent harnesses.",
+			"discount": 0.51,
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.006,
+				"input_tokens": 0.2,
+				"output_tokens": 0.6
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+	},
+	{
+		"created": 0,
 		"id": "deepseek-ai/Janus-Pro-1B",
 		"metadata": null,
 		"object": "model",
@@ -4958,7 +5006,7 @@
 			"default_iterations": null,
 			"default_width": null,
 			"description": "Ling-3.1-flash, an upgraded native hybrid reasoning model designed for complex, real-world tasks. With 560B total parameters, 25B active parameters per token, and a 1M-token context window, Ling-3.1-flash builds upon Ling-3.0-flash with improvements in architecture, performance on real-world capabilities.",
-			"discount": null,
+			"discount": 0.75,
 			"max_tokens": 262144,
 			"pricing":
 			{
@@ -6402,6 +6450,31 @@
 	},
 	{
 		"created": 0,
+		"id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal model for agents that see, reason, and act. Its 120B-parameter Mixture-of-Experts design (12B active) understands text, images, documents, GUIs, and video, and adds reasoning and tool use on top.",
+			"discount": null,
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.0199999995,
+				"input_tokens": 0.15,
+				"output_tokens": 0.5
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "nvidia/NVIDIA-Nemotron-3.5-Super-VL"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL",
 		"metadata":
 		{
@@ -7118,6 +7191,31 @@
 	},
 	{
 		"created": 0,
+		"id": "stepfun-ai/Step-5-Preview",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Step 5 Preview is StepFun's flagship model for agentic work. It is a sparse Mixture-of-Experts model with 600B total parameters and 27B active per token, a 1M-token context window, and text and image input. It delivers frontier-level performance in software engineering, long-horizon agentic execution with repeated tool calls, and professional knowledge work, with particular strength in finance.",
+			"discount": null,
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.1,
+				"input_tokens": 1.0,
+				"output_tokens": 2.7
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "stepfun-ai/Step-5-Preview"
+	},
+	{
+		"created": 0,
 		"id": "tencent/Hy3",
 		"metadata":
 		{
@@ -7507,7 +7605,7 @@
 			"default_iterations": null,
 			"default_width": null,
 			"description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead.",
-			"discount": 0.5,
+			"discount": null,
 			"max_tokens": 1048576,
 			"pricing":
 			{

@@ -1,6 +1,66 @@
 {
 	"data": [
 	{
+		"created": 1793103072,
+		"id": "qwen-audio-3.1-realtime-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793070552,
+		"id": "deepseek-v4.1-flash-1017",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1792745861,
+		"id": "qwen3.7-plus-2026-05-26",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1792745840,
+		"id": "qwen3.7-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1792675513,
+		"id": "qwen3.5-397b-a17b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1792675512,
+		"id": "qwen3.6-plus-2026-04-02",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1792675511,
+		"id": "qwen3.6-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1792483196,
+		"id": "qwen3.6-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1792120452,
+		"id": "pre-mock_new_gateway_session_affinity",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1792072989,
+		"id": "qwen3.8-omni-flash-realtime",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1791966238,
 		"id": "kimi/kimi-k3",
 		"object": "model",
@@ -79,12 +139,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1790590012,
-		"id": "qwen3.8-omni-flash-realtime",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1790578335,
 		"id": "qwen-image-3.0-pro",
 		"object": "model",
@@ -121,18 +175,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1789541156,
-		"id": "qwen3.6-plus",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1789540632,
-		"id": "qwen3.6-plus-2026-04-02",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1789525989,
 		"id": "glm-5.3",
 		"object": "model",
@@ -147,12 +189,6 @@
 	{
 		"created": 1789378036,
 		"id": "deepseek-v4-pro-0813",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1789366788,
-		"id": "qwen3.5-397b-a17b",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -223,18 +259,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1786372125,
-		"id": "qwen3.7-plus-2026-05-26",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1786372099,
-		"id": "qwen3.7-plus",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1786098182,
 		"id": "qwen3.8-max",
 		"object": "model",
@@ -291,12 +315,6 @@
 	{
 		"created": 1785750126,
 		"id": "deepseek-v4-flash",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1785750067,
-		"id": "qwen3.6-flash",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -1178,6 +1196,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-98",
+	"last_id": "model-id-101",
 	"object": "list"
 }

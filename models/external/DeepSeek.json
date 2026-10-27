@@ -5,7 +5,8 @@
 		{
 			"anthropic_messages":
 			{
-				"system_prompt_update": "in-history"
+				"system_prompt_update": "in-history",
+				"tool_update": "addition-only"
 			}
 		},
 		"context_window": 1048576,
@@ -27,7 +28,8 @@
 		{
 			"anthropic_messages":
 			{
-				"system_prompt_update": "leading-only"
+				"system_prompt_update": "leading-only",
+				"tool_update": "leading-only"
 			}
 		},
 		"context_window": 1048576,
