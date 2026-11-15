@@ -505,6 +505,24 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 4 Carbon",
+		"id": "models/gemini-4-carbon",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini 4 Hydrogen",
+		"id": "models/gemini-4-hydrogen",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini Decision 1",
+		"id": "models/gemini-decision-1",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini Embedding 001",
 		"id": "models/gemini-embedding-001",
 		"object": "model",
@@ -567,6 +585,12 @@
 	{
 		"display_name": "Gemini Omni 1.1 Flash",
 		"id": "models/gemini-omni-1.1-flash",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Gemini Omni 1.2 Flash",
+		"id": "models/gemini-omni-1.2-flash",
 		"object": "model",
 		"owned_by": "google"
 	},

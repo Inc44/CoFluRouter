@@ -1,6 +1,20 @@
 {
 	"data": [
 	{
+		"created": 1793222670,
+		"id": "gpt-image-2.6-sunburst",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
+		"created": 1793222647,
+		"id": "gpt-image-2.6-flare",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
 		"created": 1791908780,
 		"id": "gpt-6.1-terra",
 		"object": "model",
@@ -180,14 +194,14 @@
 		"id": "gpt-image-2-2026-04-21",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-02-10"
 	},
 	{
 		"created": 1776399795,
 		"id": "gpt-image-2",
 		"object": "model",
 		"owned_by": "system",
-		"shutdown_date": null
+		"shutdown_date": "2027-02-10"
 	},
 	{
 		"created": 1773451123,

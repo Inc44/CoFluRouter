@@ -1,44 +1,146 @@
 {
 	"data": [
 	{
-		"created": 1793103072,
+		"created": 1794538242,
+		"id": "kimi-k3.1-pro",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1794300792,
+		"id": "qwen-flash-character",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1794300787,
+		"id": "qwen-plus-character",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1794296108,
+		"id": "z-image-turbo",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793941347,
+		"id": "ZHIPU/GLM-5.3",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793941343,
+		"id": "kimi/kimi-k3",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793871792,
 		"id": "qwen-audio-3.1-realtime-flash",
 		"object": "model",
 		"owned_by": "system"
 	},
 	{
-		"created": 1793070552,
+		"created": 1793710084,
+		"id": "qwen3.8-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793605437,
+		"id": "qwen3.7-flash",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793605271,
+		"id": "qwen3.8-max",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793603976,
+		"id": "qwen3.8-max-0902",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793287167,
+		"id": "qwen3.8-27b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793260010,
 		"id": "deepseek-v4.1-flash-1017",
 		"object": "model",
 		"owned_by": "system"
 	},
 	{
-		"created": 1792745861,
+		"created": 1793244086,
+		"id": "qwen3.6-35b-a3b",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793244077,
+		"id": "qwen3.6-flash-2026-04-16",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793189576,
+		"id": "kimi-k3",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793174605,
 		"id": "qwen3.7-plus-2026-05-26",
 		"object": "model",
 		"owned_by": "system"
 	},
 	{
-		"created": 1792745840,
+		"created": 1793174585,
 		"id": "qwen3.7-plus",
 		"object": "model",
 		"owned_by": "system"
 	},
 	{
-		"created": 1792675513,
-		"id": "qwen3.5-397b-a17b",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1792675512,
+		"created": 1793174561,
 		"id": "qwen3.6-plus-2026-04-02",
 		"object": "model",
 		"owned_by": "system"
 	},
 	{
-		"created": 1792675511,
+		"created": 1793174540,
 		"id": "qwen3.6-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793174512,
+		"id": "qwen3.5-plus-2026-02-15",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793174434,
+		"id": "qwen3.5-plus-2026-04-20",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793174401,
+		"id": "qwen3.5-plus",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1793174370,
+		"id": "qwen3.5-397b-a17b",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -61,32 +163,8 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1791966238,
-		"id": "kimi/kimi-k3",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1791894785,
 		"id": "qwen3.8-omni-flash",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1791808081,
-		"id": "qwen3.5-plus-2026-04-20",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1791808043,
-		"id": "qwen3.5-plus-2026-02-15",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1791807948,
-		"id": "qwen3.5-plus",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -211,38 +289,8 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1788312760,
-		"id": "qwen3.8-max-0902",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1787761130,
-		"id": "qwen3.8-flash",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1787721476,
 		"id": "qwen3.8-2.4t-a95b",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1787712425,
-		"id": "qwen3.8-27b",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1787645029,
-		"id": "kimi-k3",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1787029756,
-		"id": "ZHIPU/GLM-5.3",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -255,12 +303,6 @@
 	{
 		"created": 1786420843,
 		"id": "qwen3.7-max",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1786098182,
-		"id": "qwen3.8-max",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -285,12 +327,6 @@
 	{
 		"created": 1785750474,
 		"id": "qwen3.5-flash",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1785750420,
-		"id": "qwen3.7-flash",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -475,12 +511,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1779992807,
-		"id": "qwen3.6-flash-2026-04-16",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1779934775,
 		"id": "qwen-image-max-2025-12-30",
 		"object": "model",
@@ -507,12 +537,6 @@
 	{
 		"created": 1779438700,
 		"id": "qwen3.5-omni-plus",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1778725927,
-		"id": "qwen3.6-35b-a3b",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -561,18 +585,6 @@
 	{
 		"created": 1777534194,
 		"id": "qwen3-vl-flash-2026-01-22",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1775811437,
-		"id": "qwen-flash-character",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1775811400,
-		"id": "qwen-plus-character",
 		"object": "model",
 		"owned_by": "system"
 	},
@@ -867,12 +879,6 @@
 	{
 		"created": 1767096300,
 		"id": "qwen-image-max",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
-		"created": 1766371140,
-		"id": "z-image-turbo",
 		"object": "model",
 		"owned_by": "system"
 	},

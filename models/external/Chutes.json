@@ -1680,6 +1680,44 @@
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
+		"chute_id": "d24fc0ce-25e3-5377-8e8a-af99ee9bb70d",
+		"confidential_compute": true,
+		"context_length": 262144,
+		"created": 0,
+		"id": "Qwen/Qwen3.5-27B-TEE",
+		"input_modalities": ["text", "image"],
+		"max_model_len": 262144,
+		"max_output_length": 262144,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "sglang",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"quantization": "fp8",
+		"root": "Qwen/Qwen3.5-27B-FP8",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
 		"chute_id": "51a4284a-a5a0-5e44-a9cc-6af5a2abfbcf",
 		"confidential_compute": true,
 		"context_length": 262144,
@@ -1758,12 +1796,36 @@
 	{
 		"chute_id": "d86bda6f-f327-538c-9e23-44f7372e1cb8",
 		"confidential_compute": false,
+		"context_length": 1000000,
 		"created": 0,
 		"id": "Qwen/Qwen3.8-2.4T-A95B",
+		"input_modalities": ["text"],
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "chutes",
 		"parent": null,
-		"root": "Qwen/Qwen3.8-2.4T-A95B"
+		"price":
+		{
+			"input":
+			{
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "Qwen/Qwen3.8-2.4T-A95B",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": "9ecb73cc-909b-5334-9cd8-74985945cff5",
@@ -1776,9 +1838,8 @@
 		"max_output_length": 65536,
 		"object": "model",
 		"output_modalities": ["text"],
-		"owned_by": "vllm",
+		"owned_by": "sglang",
 		"parent": null,
-		"permission": [],
 		"price":
 		{
 			"input":
@@ -1807,12 +1868,36 @@
 	{
 		"chute_id": "cb177979-3b79-5508-bcbe-5e7f3f5cec75",
 		"confidential_compute": false,
+		"context_length": 1000000,
 		"created": 0,
 		"id": "Qwen/Qwen3.8-Max-0902",
+		"input_modalities": ["text", "image", "video"],
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "chutes",
 		"parent": null,
-		"root": "Qwen/Qwen3.8-Max-0902"
+		"price":
+		{
+			"input":
+			{
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "Qwen/Qwen3.8-Max-0902",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": "0d5ce0e6-5d96-5931-9ca2-3f6d9edcb37c",
@@ -3399,22 +3484,70 @@
 	{
 		"chute_id": "b990f27b-59b1-526e-adfd-e3ad9ea8920d",
 		"confidential_compute": false,
+		"context_length": 1000000,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+		"input_modalities": ["text"],
+		"max_output_length": 393216,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "chutes",
 		"parent": null,
-		"root": "deepseek-ai/DeepSeek-V4-Pro-0813"
+		"price":
+		{
+			"input":
+			{
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "deepseek-ai/DeepSeek-V4-Pro-0813",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": "34c7b79d-854b-5e32-981a-774d322062b0",
 		"confidential_compute": false,
+		"context_length": 1000000,
 		"created": 0,
 		"id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+		"input_modalities": ["text", "image"],
+		"max_output_length": 393216,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "chutes",
 		"parent": null,
-		"root": "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+		"price":
+		{
+			"input":
+			{
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": "42ee92ba-a537-5a73-8741-876067750db7",
@@ -4009,12 +4142,36 @@
 	{
 		"chute_id": "36e54170-0e13-59b7-8aab-8ed348dabd49",
 		"confidential_compute": false,
+		"context_length": 262144,
 		"created": 0,
 		"id": "moonshotai/Kimi-K2.7-Code",
+		"input_modalities": ["text", "image", "video"],
+		"max_output_length": 16384,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "chutes",
 		"parent": null,
-		"root": "moonshotai/Kimi-K2.7-Code"
+		"price":
+		{
+			"input":
+			{
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "moonshotai/Kimi-K2.7-Code",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": "0bb5d4c2-b5da-587d-b88e-62b4839028ec",
@@ -4533,6 +4690,40 @@
 		"quantization": "bf16",
 		"root": "tencent/Hunyuan-A13B-Instruct",
 		"supported_features": ["json_mode", "structured_outputs"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
+	},
+	{
+		"chute_id": "718e99ae-99ee-5a46-8c1a-5d35a169e61f",
+		"confidential_compute": false,
+		"context_length": 1048576,
+		"created": 0,
+		"id": "tencent/Hy4",
+		"input_modalities": ["text", "image"],
+		"max_output_length": 65536,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "chutes",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "tencent/Hy4",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
@@ -5930,12 +6121,36 @@
 	{
 		"chute_id": "3200d3cc-6583-535b-b104-1f87c2397698",
 		"confidential_compute": false,
+		"context_length": 1048576,
 		"created": 0,
 		"id": "zai-org/GLM-5.2-Fast",
+		"input_modalities": ["text"],
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "chutes",
 		"parent": null,
-		"root": "zai-org/GLM-5.2-Fast"
+		"price":
+		{
+			"input":
+			{
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "zai-org/GLM-5.2-Fast",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": "08901219-159f-55a7-87cf-9d0d02744668",
@@ -5978,12 +6193,36 @@
 	{
 		"chute_id": "1ebb4c96-21fb-5c6f-b5ab-d4aeaa869603",
 		"confidential_compute": false,
+		"context_length": 1048576,
 		"created": 0,
 		"id": "zai-org/GLM-5.3",
+		"input_modalities": ["text"],
+		"max_output_length": 131072,
 		"object": "model",
+		"output_modalities": ["text"],
 		"owned_by": "chutes",
 		"parent": null,
-		"root": "zai-org/GLM-5.3"
+		"price":
+		{
+			"input":
+			{
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "zai-org/GLM-5.3",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": "118a60a5-6bd8-554c-8fda-9d394e5c0ab8",

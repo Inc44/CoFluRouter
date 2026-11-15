@@ -813,6 +813,98 @@
 	},
 	{
 		"created": 0,
+		"id": "Lightricks/LTX-2.3-Fast",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "LTX-2.3 Fast is Lightricks' lowest-cost video model. It generates landscape or portrait video from text or a first frame, up to 4K at 24–50 fps, with synchronized audio and clips up to 20 seconds.",
+			"discount": null,
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.03
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Lightricks/LTX-2.3-Fast"
+	},
+	{
+		"created": 0,
+		"id": "Lightricks/LTX-2.3-Pro",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "LTX-2.3 Pro is Lightricks' higher-fidelity LTX-2.3 model. It generates landscape or portrait video from text or a first frame, up to 4K at 24–50 fps, with synchronized audio and clips of 6, 8 or 10 seconds.",
+			"discount": null,
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.04
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Lightricks/LTX-2.3-Pro"
+	},
+	{
+		"created": 0,
+		"id": "Lightricks/LTX-2.5-Fast",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "LTX-2.5 Fast is Lightricks' speed-optimized LTX-2.5 model. It generates video from text or a first frame in 16:9, 9:16, 1:1, 3:2 or 2:3, up to 4K at 24–50 fps, with synchronized audio, native multi-shot scenes and clips up to 20 seconds.",
+			"discount": null,
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.09
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Lightricks/LTX-2.5-Fast"
+	},
+	{
+		"created": 0,
+		"id": "Lightricks/LTX-2.5-Pro",
+		"metadata":
+		{
+			"context_length": null,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "LTX-2.5 Pro is Lightricks' higher-fidelity LTX-2.5 model. It generates video from text or a first frame in 16:9, 9:16, 1:1, 3:2 or 2:3, up to 4K at 24–50 fps, with synchronized audio, native multi-shot scenes and clips of 6, 8 or 10 seconds.",
+			"discount": null,
+			"max_tokens": null,
+			"pricing":
+			{
+				"output_seconds": 0.12
+			},
+			"tags": ["video-gen"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Lightricks/LTX-2.5-Pro"
+	},
+	{
+		"created": 0,
 		"id": "MiniMaxAI/MiniMax-M2",
 		"metadata":
 		{
@@ -2667,7 +2759,7 @@
 			"max_tokens": null,
 			"pricing":
 			{
-				"output_seconds": 0.075
+				"output_seconds": 0.033
 			},
 			"tags": ["video-gen"]
 		},
@@ -4087,7 +4179,7 @@
 				"input_tokens": 1.2999999999999998,
 				"output_tokens": 2.5999999999999996
 			},
-			"tags": ["chat", "prompt_cache"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -4112,7 +4204,7 @@
 				"input_tokens": 1.2999999999999998,
 				"output_tokens": 2.5999999999999996
 			},
-			"tags": ["chat", "prompt_cache"]
+			"tags": ["chat", "prompt_cache", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -6267,6 +6359,31 @@
 	},
 	{
 		"created": 0,
+		"id": "moonshotai/Kimi-K3.1-Pro",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Kimi K3.1 Pro is an open-weight, natively multimodal agentic model, post-trained from Kimi K3 with large-scale joint reinforcement learning across hundreds of downstream domains, it is the first model in the K3.1 series. With a 1-million-token context window, Kimi K3.1 Pro delivers substantial improvements in coding, 3D creation, financial research, factual accuracy, and other agentic capabilities.",
+			"discount": 0.05,
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.2,
+				"input_tokens": 2.0,
+				"output_tokens": 10.0
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "moonshotai/Kimi-K3.1-Pro"
+	},
+	{
+		"created": 0,
 		"id": "nvidia/Cosmos3-Nano",
 		"metadata":
 		{
@@ -6364,7 +6481,7 @@
 			"max_tokens": 262144,
 			"pricing":
 			{
-				"input_tokens": 0.08499999999999999,
+				"input_tokens": 0.075,
 				"output_tokens": 0.4
 			},
 			"tags": ["chat", "reasoning"]
@@ -7334,6 +7451,31 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "thinkingmachines/Inkling"
+	},
+	{
+		"created": 0,
+		"id": "thinkingmachines/Inkling-2-Small",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Inkling 2 Small is a general-purpose multimodal model that accepts text and image inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages.",
+			"discount": 0.05,
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.03,
+				"input_tokens": 0.3,
+				"output_tokens": 1.0
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "thinkingmachines/Inkling-2-Small"
 	},
 	{
 		"created": 0,
