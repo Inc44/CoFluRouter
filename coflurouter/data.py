@@ -52,7 +52,7 @@ OPENAI_COMPATIBLE = [
 	),
 	(
 		"Hyperbolic",
-		"https://api.hyperbolic.xyz/v1",
+		"https://api.hyperbolic.ai/inference/v1",
 		os.getenv("HYPERBOLIC_API_KEY"),
 	),
 	(
