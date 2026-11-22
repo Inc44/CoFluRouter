@@ -1,6 +1,27 @@
 {
 	"data": [
 	{
+		"created": 1794980943,
+		"id": "gpt-live-1.1",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
+		"created": 1793642820,
+		"id": "gpt-6.2-sol",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
+		"created": 1793430042,
+		"id": "gpt-6.2-astra",
+		"object": "model",
+		"owned_by": "system",
+		"shutdown_date": null
+	},
+	{
 		"created": 1793222670,
 		"id": "gpt-image-2.6-sunburst",
 		"object": "model",

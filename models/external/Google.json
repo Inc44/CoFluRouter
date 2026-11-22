@@ -517,6 +517,12 @@
 		"owned_by": "google"
 	},
 	{
+		"display_name": "Gemini 4 Neon",
+		"id": "models/gemini-4-neon",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
 		"display_name": "Gemini Decision 1",
 		"id": "models/gemini-decision-1",
 		"object": "model",
@@ -675,6 +681,12 @@
 	{
 		"display_name": "Gemma 4 31B IT",
 		"id": "models/gemma-4-31b-it",
+		"object": "model",
+		"owned_by": "google"
+	},
+	{
+		"display_name": "Genie 4",
+		"id": "models/genie-4",
 		"object": "model",
 		"owned_by": "google"
 	},

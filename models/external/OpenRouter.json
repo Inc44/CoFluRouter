@@ -9,6 +9,811 @@
 			"output_modalities": ["text"],
 			"tokenizer": "Other"
 		},
+		"canonical_slug": "thinkingmachines/inkling-2-mini-20261120",
+		"context_length": 1048576,
+		"created": 1795227585,
+		"default_parameters":
+		{},
+		"description": "Inkling 2 Mini is an open-weight multimodal looped transformer from Thinking Machines Lab, with 3.4B active parameters out of 26.4B total (MoE). Its middle layers run three times with shared...",
+		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
+		"expiration_date": null,
+		"hugging_face_id": "thinkingmachines/Inkling-2-Mini",
+		"id": "thinkingmachines/inkling-2-mini",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/thinkingmachines/inkling-2-mini-20261120/endpoints"
+		},
+		"name": "Thinking Machines: Inkling 2 Mini",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000003",
+			"input_cache_read": "0.000000015",
+			"prompt": "0.000000075"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["max", "high", "medium", "low", "minimal", "none"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "radixark/daisyrose-27b-20261120",
+		"context_length": 262144,
+		"created": 1795222188,
+		"default_parameters":
+		{
+			"temperature": 1,
+			"top_k": 20,
+			"top_p": 0.95
+		},
+		"description": "DaisyRose 27B is an open-weight multimodal reasoning model from RadixArk, trained from [Qwen3.8 27B](https://openrouter.ai/qwen/qwen3.8-27b) using reinforcement learning only on long-horizon agent tasks, with no supervised fine-tuning or distillation. It is...",
+		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
+		"expiration_date": null,
+		"hugging_face_id": "RadixArk/DaisyRose-27B",
+		"id": "radixark/daisyrose-27b",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/radixark/daisyrose-27b-20261120/endpoints"
+		},
+		"name": "RadixArk: DaisyRose 27B",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000001875",
+			"input_cache_read": "0.0000000375",
+			"prompt": "0.00000015"
+		},
+		"reasoning":
+		{
+			"default_effort": "xhigh",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["xhigh", "medium", "low", "none"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 262144,
+			"is_moderated": false,
+			"max_completion_tokens": 235929
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Mistral"
+		},
+		"canonical_slug": "mistralai/pixtral-large-2502",
+		"context_length": 128000,
+		"created": 1795135865,
+		"default_parameters":
+		{},
+		"description": "Pixtral Large 2502 is the February 2025 version of Mistral AI's large multimodal model, following [Pixtral Large 2411](https://openrouter.ai/mistralai/pixtral-large-2411). It accepts text and image input, including documents, charts, and natural images,...",
+		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "mistralai/pixtral-large-2502",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/mistralai/pixtral-large-2502/endpoints"
+		},
+		"name": "Mistral: Pixtral Large 2502",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000006",
+			"prompt": "0.000002"
+		},
+		"supported_parameters": ["max_tokens", "stop", "temperature", "top_k", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 128000,
+			"is_moderated": true,
+			"max_completion_tokens": 102400
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["audio", "file", "image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-4-neon-20261118",
+		"context_length": 1048576,
+		"created": 1795006977,
+		"default_parameters":
+		{},
+		"description": "Gemini 4 Neon is a fast, mid-priced model in the Gemini 4 family from Google, built for coding and agentic work. It is suited for repository and terminal coding, web...",
+		"endpoints": ["/api/v1/batches"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/gemini-4-neon:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemini-4-neon-20261118/endpoints"
+		},
+		"name": "Google: Gemini 4 Neon (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"audio": "0.0000015",
+			"completion": "0.0000075",
+			"image": "0.0000015",
+			"input_audio_cache": "0.000000075",
+			"input_cache_read": "0.000000075",
+			"input_cache_write": "0.0000000833333333333333",
+			"internal_reasoning": "0.0000075",
+			"prompt": "0.0000015",
+			"web_search": "0.014"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": true,
+			"supported_efforts": ["xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 943718
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["audio", "file", "image", "text", "video"],
+			"instruct_type": null,
+			"modality": "text+image+file+audio+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Gemini"
+		},
+		"canonical_slug": "google/gemini-4-neon-20261118",
+		"context_length": 1048576,
+		"created": 1795006977,
+		"default_parameters":
+		{},
+		"description": "Gemini 4 Neon is a fast, mid-priced model in the Gemini 4 family from Google, built for coding and agentic work. It is suited for repository and terminal coding, web...",
+		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "google/gemini-4-neon",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/google/gemini-4-neon-20261118/endpoints"
+		},
+		"name": "Google: Gemini 4 Neon",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"audio": "0.000003",
+			"completion": "0.000015",
+			"image": "0.000003",
+			"input_audio_cache": "0.00000015",
+			"input_cache_read": "0.00000015",
+			"input_cache_write": "0.0000000833333333333333",
+			"internal_reasoning": "0.000015",
+			"prompt": "0.000003",
+			"web_search": "0.014"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"mandatory": true,
+			"supported_efforts": ["xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 943718
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.2-astra-pro-20261117",
+		"context_length": 1050000,
+		"created": 1794938432,
+		"default_parameters":
+		{},
+		"description": "GPT-6.2 Astra Pro is the same underlying model as [GPT-6.2 Astra](https://openrouter.ai/openai/gpt-6.2-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+		"endpoints": ["/api/v1/batches"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.2-astra-pro:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.2-astra-pro-20261117/endpoints"
+		},
+		"name": "OpenAI: GPT-6.2 Astra Pro (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00002",
+			"input_cache_read": "0.0000002",
+			"input_cache_write": "0.000005",
+			"overrides": [
+			{
+				"completion": "0.00003",
+				"input_cache_read": "0.0000004",
+				"input_cache_write": "0.00001",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000008"
+			}],
+			"prompt": "0.000004",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.2-astra-pro-20261117",
+		"context_length": 1050000,
+		"created": 1794938432,
+		"default_parameters":
+		{},
+		"description": "GPT-6.2 Astra Pro is the same underlying model as [GPT-6.2 Astra](https://openrouter.ai/openai/gpt-6.2-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.2-astra-pro",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.2-astra-pro-20261117/endpoints"
+		},
+		"name": "OpenAI: GPT-6.2 Astra Pro",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00004",
+			"input_cache_read": "0.0000004",
+			"input_cache_write": "0.00001",
+			"overrides": [
+			{
+				"completion": "0.00006",
+				"input_cache_read": "0.0000008",
+				"input_cache_write": "0.00002",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000016"
+			}],
+			"prompt": "0.000008",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": false,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.2-astra-20261117",
+		"context_length": 1050000,
+		"created": 1794938423,
+		"default_parameters":
+		{},
+		"description": "GPT-6.2 Astra is the flagship model in the GPT-6.2 series from OpenAI, built for the hardest projects. It is suited for real-world engineering, professional work and scientific research, with stronger...",
+		"endpoints": ["/api/v1/batches"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.2-astra:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.2-astra-20261117/endpoints"
+		},
+		"name": "OpenAI: GPT-6.2 Astra (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00002",
+			"input_cache_read": "0.0000002",
+			"input_cache_write": "0.000005",
+			"overrides": [
+			{
+				"completion": "0.00003",
+				"input_cache_read": "0.0000004",
+				"input_cache_write": "0.00001",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000008"
+			}],
+			"prompt": "0.000004",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.2-astra-20261117",
+		"context_length": 1050000,
+		"created": 1794938423,
+		"default_parameters":
+		{},
+		"description": "GPT-6.2 Astra is the flagship model in the GPT-6.2 series from OpenAI, built for the hardest projects. It is suited for real-world engineering, professional work and scientific research, with stronger...",
+		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.2-astra",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.2-astra-20261117/endpoints"
+		},
+		"name": "OpenAI: GPT-6.2 Astra",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00004",
+			"input_cache_read": "0.0000004",
+			"input_cache_write": "0.00001",
+			"overrides": [
+			{
+				"completion": "0.00006",
+				"input_cache_read": "0.0000008",
+				"input_cache_write": "0.00002",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000016"
+			}],
+			"prompt": "0.000008",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": false,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.2-sol-pro-20261117",
+		"context_length": 1050000,
+		"created": 1794938409,
+		"default_parameters":
+		{},
+		"description": "GPT-6.2 Sol Pro is the same underlying model as [GPT-6.2 Sol](https://openrouter.ai/openai/gpt-6.2-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+		"endpoints": ["/api/v1/batches"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.2-sol-pro:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.2-sol-pro-20261117/endpoints"
+		},
+		"name": "OpenAI: GPT-6.2 Sol Pro (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000005",
+			"input_cache_read": "0.00000005",
+			"input_cache_write": "0.00000125",
+			"overrides": [
+			{
+				"completion": "0.0000075",
+				"input_cache_read": "0.0000001",
+				"input_cache_write": "0.0000025",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000002"
+			}],
+			"prompt": "0.000001",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.2-sol-pro-20261117",
+		"context_length": 1050000,
+		"created": 1794938409,
+		"default_parameters":
+		{},
+		"description": "GPT-6.2 Sol Pro is the same underlying model as [GPT-6.2 Sol](https://openrouter.ai/openai/gpt-6.2-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.2-sol-pro",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.2-sol-pro-20261117/endpoints"
+		},
+		"name": "OpenAI: GPT-6.2 Sol Pro",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00001",
+			"input_cache_read": "0.0000001",
+			"input_cache_write": "0.0000025",
+			"overrides": [
+			{
+				"completion": "0.000015",
+				"input_cache_read": "0.0000002",
+				"input_cache_write": "0.000005",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000004"
+			}],
+			"prompt": "0.000002",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": false,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.2-sol-20261117",
+		"context_length": 1050000,
+		"created": 1794938371,
+		"default_parameters":
+		{},
+		"description": "GPT-6.2 Sol is an upgrade to GPT-6.1 Sol from OpenAI, positioned below the flagship GPT-6.2 Astra in the GPT-6.2 series. It is an efficient, versatile model for everyday work, suited...",
+		"endpoints": ["/api/v1/batches"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.2-sol:batch",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.2-sol-20261117/endpoints"
+		},
+		"name": "OpenAI: GPT-6.2 Sol (batch)",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000005",
+			"input_cache_read": "0.00000005",
+			"input_cache_write": "0.00000125",
+			"overrides": [
+			{
+				"completion": "0.0000075",
+				"input_cache_read": "0.0000001",
+				"input_cache_write": "0.0000025",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000002"
+			}],
+			"prompt": "0.000001",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["file", "image", "text"],
+			"instruct_type": null,
+			"modality": "text+image+file->text",
+			"output_modalities": ["text"],
+			"tokenizer": "GPT"
+		},
+		"canonical_slug": "openai/gpt-6.2-sol-20261117",
+		"context_length": 1050000,
+		"created": 1794938371,
+		"default_parameters":
+		{},
+		"description": "GPT-6.2 Sol is an upgrade to GPT-6.1 Sol from OpenAI, positioned below the flagship GPT-6.2 Astra in the GPT-6.2 series. It is an efficient, versatile model for everyday work, suited...",
+		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "openai/gpt-6.2-sol",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/openai/gpt-6.2-sol-20261117/endpoints"
+		},
+		"name": "OpenAI: GPT-6.2 Sol",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.00001",
+			"input_cache_read": "0.0000001",
+			"input_cache_write": "0.0000025",
+			"overrides": [
+			{
+				"completion": "0.000015",
+				"input_cache_read": "0.0000002",
+				"input_cache_write": "0.000005",
+				"min_prompt_tokens": 272000,
+				"prompt": "0.000004"
+			}],
+			"prompt": "0.000002",
+			"web_search": "0.01"
+		},
+		"reasoning":
+		{
+			"default_effort": "medium",
+			"default_enabled": true,
+			"mandatory": true,
+			"supported_efforts": ["max", "xhigh", "high", "medium", "low"]
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "seed", "structured_outputs", "tool_choice", "tools", "verbosity"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1050000,
+			"is_moderated": true,
+			"max_completion_tokens": 128000
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
+		"canonical_slug": "tencent/hy4-flash-20261116",
+		"context_length": 1048576,
+		"created": 1794838706,
+		"default_parameters":
+		{},
+		"description": "Hy4 flash is a cost-efficient variant of [Hy4](https://openrouter.ai/tencent/hy4) from Tencent, served with roughly a quarter of the flagship's parameter count for lower latency and cost. It targets code assistance, agent...",
+		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
+		"expiration_date": null,
+		"hugging_face_id": "tencent/Hy4-flash",
+		"id": "tencent/hy4-flash",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/tencent/hy4-flash-20261116/endpoints"
+		},
+		"name": "Tencent: Hy4 flash",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.0000001405",
+			"input_cache_read": "0.0000000015",
+			"prompt": "0.000000035"
+		},
+		"reasoning":
+		{
+			"default_enabled": true,
+			"mandatory": false
+		},
+		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1048576,
+			"is_moderated": false,
+			"max_completion_tokens": 65536
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image", "video"],
+			"instruct_type": null,
+			"modality": "text+image+video->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Qwen"
+		},
+		"canonical_slug": "qwen/qwen4-max-20261115",
+		"context_length": 1000000,
+		"created": 1794795526,
+		"default_parameters":
+		{},
+		"description": "Qwen4 Max is the flagship model in Alibaba's Qwen4 series. It accepts text, image, and video input and returns text, with a 1M-token context window and reasoning enabled by default....",
+		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
+		"expiration_date": null,
+		"hugging_face_id": null,
+		"id": "qwen/qwen4-max",
+		"knowledge_cutoff": null,
+		"links":
+		{
+			"details": "/api/v1/models/qwen/qwen4-max-20261115/endpoints"
+		},
+		"name": "Qwen: Qwen4 Max",
+		"per_request_limits": null,
+		"pricing":
+		{
+			"completion": "0.000004275",
+			"input_cache_read": "0.00000007125",
+			"input_cache_write": "0.00000178125",
+			"prompt": "0.000001425"
+		},
+		"reasoning":
+		{
+			"default_effort": "high",
+			"default_enabled": true,
+			"mandatory": false,
+			"supported_efforts": ["xhigh", "high", "low", "none"]
+		},
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_voices": null,
+		"top_provider":
+		{
+			"context_length": 1000000,
+			"is_moderated": false,
+			"max_completion_tokens": 131072
+		}
+	},
+	{
+		"architecture":
+		{
+			"input_modalities": ["text", "image"],
+			"instruct_type": null,
+			"modality": "text+image->text",
+			"output_modalities": ["text"],
+			"tokenizer": "Other"
+		},
 		"canonical_slug": "inclusionai/ling-3.2-flash-20261113",
 		"context_length": 1048576,
 		"created": 1794591958,
@@ -853,7 +1658,7 @@
 		{
 			"context_length": null,
 			"is_moderated": false,
-			"max_completion_tokens": 64000
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -988,7 +1793,7 @@
 			"mandatory": false,
 			"supported_efforts": ["high", "low", "none"]
 		},
-		"supported_parameters": ["include_reasoning", "max_completion_tokens", "max_tokens", "reasoning", "reasoning_effort", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1122,8 +1927,8 @@
 		"pricing":
 		{
 			"completion": "0.0000005",
-			"input_cache_read": "0.000000003",
-			"prompt": "0.00000006"
+			"input_cache_read": "0.00000003",
+			"prompt": "0.00000007"
 		},
 		"reasoning":
 		{
@@ -1417,9 +2222,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000006",
+			"completion": "0.000005583",
 			"input_cache_read": "0.0000001",
-			"prompt": "0.0000007"
+			"prompt": "0.000000372"
 		},
 		"reasoning":
 		{
@@ -1428,7 +2233,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "high", "low", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "seed", "stop", "temperature", "top_k"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -1467,9 +2272,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00001",
+			"completion": "0.0000084023",
 			"input_cache_read": "0.0000002",
-			"prompt": "0.000002"
+			"prompt": "0.0000002403"
 		},
 		"reasoning":
 		{
@@ -1621,9 +2426,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000336",
-			"input_cache_read": "0.000000004",
-			"prompt": "0.000000038"
+			"completion": "0.000000149",
+			"input_cache_read": "0.0000000029",
+			"prompt": "0.000000035"
 		},
 		"reasoning":
 		{
@@ -1669,9 +2474,56 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000108",
-			"input_cache_read": "0.000000007",
-			"prompt": "0.00000002"
+			"completion": "0.0000006",
+			"input_cache_read": "0.000000003",
+			"overrides": [
+			{
+				"completion": "0.0000006",
+				"input_cache_read": "0.000000003",
+				"prompt": "0.00000015",
+				"utc_days": ["saturday", "sunday"]
+			},
+			{
+				"completion": "0.0000006",
+				"input_cache_read": "0.000000003",
+				"prompt": "0.00000015",
+				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+				"utc_end": 100,
+				"utc_start": 0
+			},
+			{
+				"completion": "0.0000012",
+				"input_cache_read": "0.000000006",
+				"prompt": "0.0000003",
+				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+				"utc_end": 400,
+				"utc_start": 100
+			},
+			{
+				"completion": "0.0000006",
+				"input_cache_read": "0.000000003",
+				"prompt": "0.00000015",
+				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+				"utc_end": 600,
+				"utc_start": 400
+			},
+			{
+				"completion": "0.0000012",
+				"input_cache_read": "0.000000006",
+				"prompt": "0.0000003",
+				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+				"utc_end": 1000,
+				"utc_start": 600
+			},
+			{
+				"completion": "0.0000006",
+				"input_cache_read": "0.000000003",
+				"prompt": "0.00000015",
+				"utc_days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+				"utc_end": 0,
+				"utc_start": 1000
+			}],
+			"prompt": "0.00000015"
 		},
 		"reasoning":
 		{
@@ -1686,7 +2538,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 384000
+			"max_completion_tokens": 393216
 		}
 	},
 	{
@@ -1811,8 +2663,8 @@
 		"pricing":
 		{
 			"completion": "0.000001",
-			"input_cache_read": "0.00000004",
-			"prompt": "0.0000003"
+			"input_cache_read": "0.00000005",
+			"prompt": "0.00000025"
 		},
 		"reasoning":
 		{
@@ -1826,7 +2678,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 943718
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -2140,7 +2992,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000005",
+			"completion": "0.00000047",
 			"input_cache_read": "0.00000002",
 			"prompt": "0.00000015"
 		},
@@ -2152,9 +3004,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 262144,
+			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 235929
+			"max_completion_tokens": 943718
 		}
 	},
 	{
@@ -2565,7 +3417,7 @@
 			"completion": "0.00002",
 			"input_cache_read": "0.0000002",
 			"prompt": "0.000004",
-			"web_search": "0.0025"
+			"web_search": "0.01"
 		},
 		"reasoning":
 		{
@@ -2578,7 +3430,7 @@
 		"top_provider":
 		{
 			"context_length": 1048576,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 943718
 		}
 	},
@@ -2879,9 +3731,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000135",
-			"input_cache_read": "0.000000009",
-			"prompt": "0.000000045"
+			"completion": "0.00000018",
+			"input_cache_read": "0.000000012",
+			"prompt": "0.00000006"
 		},
 		"reasoning":
 		{
@@ -3364,7 +4216,7 @@
 		{
 			"context_length": null,
 			"is_moderated": false,
-			"max_completion_tokens": 64000
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -3492,9 +4344,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000088",
-			"input_cache_read": "0.00000056",
-			"prompt": "0.0000028"
+			"completion": "0.00000528",
+			"input_cache_read": "0.000000336",
+			"prompt": "0.00000168"
 		},
 		"reasoning":
 		{
@@ -4511,7 +5363,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "xiaomi/mimo-v2.6-flash-20260921",
-		"context_length": 1050000,
+		"context_length": 1048576,
 		"created": 1790021264,
 		"default_parameters":
 		{
@@ -4560,7 +5412,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
-		"context_length": 1050000,
+		"context_length": 1048576,
 		"created": 1790021259,
 		"default_parameters":
 		{
@@ -4616,7 +5468,7 @@
 			"temperature": 0.7,
 			"top_p": 0.95
 		},
-		"description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
+		"description": "Grok 4.7 is SpaceXSI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
 		"endpoints": ["/api/v1/batches"],
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -4626,7 +5478,7 @@
 		{
 			"details": "/api/v1/models/x-ai/grok-4.7-20260916/endpoints"
 		},
-		"name": "SpaceXAI: Grok 4.7 (batch)",
+		"name": "SpaceXSI: Grok 4.7 (batch)",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -4675,7 +5527,7 @@
 			"temperature": 0.7,
 			"top_p": 0.95
 		},
-		"description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
+		"description": "Grok 4.7 is SpaceXSI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
 		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -4685,7 +5537,7 @@
 		{
 			"details": "/api/v1/models/x-ai/grok-4.7-20260916/endpoints"
 		},
-		"name": "SpaceXAI: Grok 4.7",
+		"name": "SpaceXSI: Grok 4.7",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -4944,8 +5796,8 @@
 		"pricing":
 		{
 			"completion": "0.000008",
-			"input_cache_read": "0.0000000999",
-			"prompt": "0.0000000999"
+			"input_cache_read": "0.00000012",
+			"prompt": "0.0000001188"
 		},
 		"reasoning":
 		{
@@ -4995,9 +5847,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000108",
-			"input_cache_read": "0.000000007",
-			"prompt": "0.00000002"
+			"completion": "0.0000005",
+			"input_cache_read": "0.00000001",
+			"prompt": "0.000000036"
 		},
 		"reasoning":
 		{
@@ -5012,7 +5864,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 384000
+			"max_completion_tokens": 943718
 		}
 	},
 	{
@@ -5100,8 +5952,8 @@
 	{
 		"alias_target":
 		{
-			"name": "OpenAI: GPT-6 Astra",
-			"slug": "openai/gpt-6-astra"
+			"name": "OpenAI: GPT-6.2 Astra",
+			"slug": "openai/gpt-6.2-astra"
 		},
 		"architecture":
 		{
@@ -5130,18 +5982,18 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00005",
-			"input_cache_read": "0.000001",
-			"input_cache_write": "0.0000125",
+			"completion": "0.00004",
+			"input_cache_read": "0.0000004",
+			"input_cache_write": "0.00001",
 			"overrides": [
 			{
-				"completion": "0.000075",
-				"input_cache_read": "0.000002",
-				"input_cache_write": "0.000025",
+				"completion": "0.00006",
+				"input_cache_read": "0.0000008",
+				"input_cache_write": "0.00002",
 				"min_prompt_tokens": 272000,
-				"prompt": "0.00002"
+				"prompt": "0.000016"
 			}],
-			"prompt": "0.00001",
+			"prompt": "0.000008",
 			"web_search": "0.01"
 		},
 		"reasoning":
@@ -5163,8 +6015,8 @@
 	{
 		"alias_target":
 		{
-			"name": "OpenAI: GPT-6.1 Sol",
-			"slug": "openai/gpt-6.1-sol"
+			"name": "OpenAI: GPT-6.2 Sol",
+			"slug": "openai/gpt-6.2-sol"
 		},
 		"architecture":
 		{
@@ -5549,9 +6401,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000336",
-			"input_cache_read": "0.00000000336",
-			"prompt": "0.000000112"
+			"completion": "0.00000015",
+			"input_cache_read": "0.000000004",
+			"prompt": "0.00000005"
 		},
 		"reasoning":
 		{
@@ -5566,7 +6418,7 @@
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 384000
 		}
 	},
 	{
@@ -5597,9 +6449,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000002028",
-			"input_cache_read": "0.000000001014",
-			"prompt": "0.0000000507"
+			"completion": "0.0000001992",
+			"input_cache_read": "0.000000000996",
+			"prompt": "0.0000000498"
 		},
 		"reasoning":
 		{
@@ -6535,7 +7387,7 @@
 		"top_provider":
 		{
 			"context_length": 1000000,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 128000
 		}
 	},
@@ -6691,7 +7543,7 @@
 			"mandatory": false,
 			"supported_efforts": ["high", "low", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -6923,9 +7775,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000018",
-			"input_cache_read": "0.00000001",
-			"prompt": "0.00000005"
+			"completion": "0.000000068",
+			"input_cache_read": "0.000000009",
+			"prompt": "0.000000023"
 		},
 		"reasoning":
 		{
@@ -6938,9 +7790,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1048576,
+			"context_length": 1048575,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 943717
 		}
 	},
 	{
@@ -7117,9 +7969,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000132",
-			"input_cache_read": "0.000000014",
-			"prompt": "0.00000044"
+			"completion": "0.0000006468",
+			"input_cache_read": "0.00000000686",
+			"prompt": "0.0000002156"
 		},
 		"reasoning":
 		{
@@ -7128,13 +7980,13 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "high", "low", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1048575,
+			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 943717
+			"max_completion_tokens": 262144
 		}
 	},
 	{
@@ -7393,9 +8245,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002",
-			"input_cache_read": "0.0000001",
-			"prompt": "0.00000045"
+			"completion": "0.000001249",
+			"input_cache_read": "0.000000061",
+			"prompt": "0.00000028"
 		},
 		"reasoning":
 		{
@@ -7408,9 +8260,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1048576,
+			"context_length": 1048575,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 943717
 		}
 	},
 	{
@@ -7444,9 +8296,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000036",
-			"input_cache_read": "0.000000079",
-			"prompt": "0.000000084"
+			"completion": "0.0000014",
+			"input_cache_read": "0.0000000689",
+			"prompt": "0.0000000699"
 		},
 		"reasoning":
 		{
@@ -7598,9 +8450,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000001875",
-			"input_cache_read": "0.0000000375",
-			"prompt": "0.00000015"
+			"completion": "0.0000015",
+			"input_cache_read": "0.0000000175",
+			"prompt": "0.000000035"
 		},
 		"reasoning":
 		{
@@ -7615,7 +8467,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 235929
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -7908,13 +8760,13 @@
 			"mandatory": true,
 			"supported_efforts": ["xhigh", "medium", "low"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1000000,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 65536
 		}
 	},
 	{
@@ -8048,9 +8900,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000444",
-			"input_cache_read": "0.000000097",
-			"prompt": "0.000000111"
+			"completion": "0.00000396",
+			"input_cache_read": "0.000000044",
+			"prompt": "0.00000132"
 		},
 		"reasoning":
 		{
@@ -8081,7 +8933,7 @@
 		"created": 1786548957,
 		"default_parameters":
 		{},
-		"description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
+		"description": "Grok 4.6 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
 		"endpoints": ["/api/v1/batches"],
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -8091,7 +8943,7 @@
 		{
 			"details": "/api/v1/models/x-ai/grok-4.6-20260810/endpoints"
 		},
-		"name": "SpaceXAI: Grok 4.6 (batch)",
+		"name": "SpaceXSI: Grok 4.6 (batch)",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -8137,7 +8989,7 @@
 		"created": 1786548957,
 		"default_parameters":
 		{},
-		"description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
+		"description": "Grok 4.6 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
 		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -8147,7 +8999,7 @@
 		{
 			"details": "/api/v1/models/x-ai/grok-4.6-20260810/endpoints"
 		},
-		"name": "SpaceXAI: Grok 4.6",
+		"name": "SpaceXSI: Grok 4.6",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -8327,7 +9179,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
-		"context_length": 262144,
+		"context_length": 1048576,
 		"created": 1786452751,
 		"default_parameters":
 		{},
@@ -8542,9 +9394,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000012",
+			"completion": "0.0000015",
 			"input_cache_read": "0.00000004",
-			"prompt": "0.0000003"
+			"prompt": "0.00000035"
 		},
 		"reasoning":
 		{
@@ -8558,7 +9410,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 117964
 		}
 	},
 	{
@@ -8784,9 +9636,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000003",
-			"input_cache_read": "0.000000035",
-			"prompt": "0.0000000434"
+			"completion": "0.000000132",
+			"input_cache_read": "0.0000000014",
+			"prompt": "0.000000044"
 		},
 		"reasoning":
 		{
@@ -8796,12 +9648,12 @@
 			"supported_efforts": ["max", "high", "low", "none"]
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
-		"supported_voices": [],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
 			"is_moderated": false,
-			"max_completion_tokens": 943718
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -8844,7 +9696,7 @@
 			"supported_efforts": ["max", "high", "low", "none"]
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
-		"supported_voices": [],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -8882,7 +9734,7 @@
 		{
 			"completion": "0.0000003",
 			"input_cache_read": "0.000000035",
-			"prompt": "0.0000000434"
+			"prompt": "0.0000000443"
 		},
 		"reasoning":
 		{
@@ -8892,7 +9744,7 @@
 			"supported_efforts": ["max", "high", "low", "none"]
 		},
 		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_a", "top_k", "top_logprobs", "top_p"],
-		"supported_voices": [],
+		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 1048576,
@@ -9953,7 +10805,7 @@
 		{
 			"context_length": null,
 			"is_moderated": false,
-			"max_completion_tokens": 64000
+			"max_completion_tokens": 128000
 		}
 	},
 	{
@@ -10057,7 +10909,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "high", "low", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -10976,7 +11828,7 @@
 		"top_provider":
 		{
 			"context_length": 1050000,
-			"is_moderated": false,
+			"is_moderated": true,
 			"max_completion_tokens": 128000
 		}
 	},
@@ -10994,7 +11846,7 @@
 		"created": 1783523154,
 		"default_parameters":
 		{},
-		"description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM.",
+		"description": "Grok 4.5 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM.",
 		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -11004,7 +11856,7 @@
 		{
 			"details": "/api/v1/models/x-ai/grok-4.5-20260708/endpoints"
 		},
-		"name": "SpaceXAI: Grok 4.5",
+		"name": "SpaceXSI: Grok 4.5",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -11039,7 +11891,7 @@
 	{
 		"alias_target":
 		{
-			"name": "SpaceXAI: Grok 4.7",
+			"name": "SpaceXSI: Grok 4.7",
 			"slug": "x-ai/grok-4.7"
 		},
 		"architecture":
@@ -11280,24 +12132,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000033",
-			"input_cache_read": "0.000000020625",
-			"overrides": [
-			{
-				"completion": "0.000000528",
-				"input_cache_read": "0.000000033",
-				"prompt": "0.000000132",
-				"utc_end": 1600,
-				"utc_start": 0
-			},
-			{
-				"completion": "0.00000033",
-				"input_cache_read": "0.000000020625",
-				"prompt": "0.0000000825",
-				"utc_end": 0,
-				"utc_start": 1600
-			}],
-			"prompt": "0.0000000825"
+			"completion": "0.00000058",
+			"input_cache_read": "0.000000035",
+			"prompt": "0.00000014"
 		},
 		"reasoning":
 		{
@@ -11306,13 +12143,13 @@
 			"mandatory": false,
 			"supported_efforts": ["high", "low", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "max_completion_tokens", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "max_completion_tokens", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 128000
+			"max_completion_tokens": 235929
 		}
 	},
 	{
@@ -11896,6 +12733,7 @@
 			"top_p": 0.95
 		},
 		"description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
+		"endpoints": ["/api/v1/batches"],
 		"expiration_date": null,
 		"hugging_face_id": "zai-org/GLM-5.2",
 		"id": "z-ai/glm-5.2:batch",
@@ -11908,18 +12746,18 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000022",
-			"input_cache_read": "0.00000007",
-			"prompt": "0.0000007"
+			"completion": "0.000000989",
+			"input_cache_read": "0.000000109",
+			"prompt": "0.000000322"
 		},
 		"reasoning":
 		{
 			"default_effort": "high",
 			"default_enabled": true,
 			"mandatory": false,
-			"supported_efforts": ["xhigh", "high"]
+			"supported_efforts": ["xhigh", "high", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -11963,9 +12801,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000068",
-			"input_cache_read": "0.000000006",
-			"prompt": "0.000000007"
+			"completion": "0.00000242",
+			"input_cache_read": "0.00000014",
+			"prompt": "0.00000062"
 		},
 		"reasoning":
 		{
@@ -11974,7 +12812,7 @@
 			"mandatory": false,
 			"supported_efforts": ["xhigh", "high", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -12117,8 +12955,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000035",
-			"input_cache_read": "0.00000016",
+			"completion": "0.000003",
+			"input_cache_read": "0.00000012",
 			"prompt": "0.0000006"
 		},
 		"reasoning":
@@ -12126,7 +12964,7 @@
 			"default_enabled": true,
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "parallel_tool_calls", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -12652,9 +13490,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000024",
-			"input_cache_read": "0.00000012",
-			"prompt": "0.0000006"
+			"completion": "0.0000022",
+			"input_cache_read": "0.0000001",
+			"prompt": "0.0000005"
 		},
 		"reasoning":
 		{
@@ -12668,9 +13506,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 202800,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 182520
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -13812,7 +14650,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
+		"description": "Grok 4.3 is a reasoning model from SpaceXSI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
 		"endpoints": ["/api/v1/batches"],
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -13822,7 +14660,7 @@
 		{
 			"details": "/api/v1/models/x-ai/grok-4.3-20260430/endpoints"
 		},
-		"name": "SpaceXAI: Grok 4.3 (batch)",
+		"name": "SpaceXSI: Grok 4.3 (batch)",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -13875,7 +14713,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
+		"description": "Grok 4.3 is a reasoning model from SpaceXSI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
 		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
 		"expiration_date": null,
 		"hugging_face_id": null,
@@ -13885,7 +14723,7 @@
 		{
 			"details": "/api/v1/models/x-ai/grok-4.3-20260430/endpoints"
 		},
-		"name": "SpaceXAI: Grok 4.3",
+		"name": "SpaceXSI: Grok 4.3",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -14040,7 +14878,7 @@
 		},
 		"description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex...",
 		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
-		"expiration_date": null,
+		"expiration_date": "2027-01-31",
 		"hugging_face_id": "mistralai/Mistral-Medium-3.5-128B",
 		"id": "mistralai/mistral-medium-3-5",
 		"knowledge_cutoff": null,
@@ -14607,7 +15445,7 @@
 			"mandatory": false,
 			"supported_efforts": ["max", "high", "low", "none"]
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_completion_tokens", "max_tokens", "min_p", "parallel_tool_calls", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "reasoning_effort", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -15341,7 +16179,7 @@
 		"pricing":
 		{
 			"completion": "0.0000015",
-			"input_cache_read": "0.00000025",
+			"input_cache_read": "0.0000002",
 			"prompt": "0.0000009"
 		},
 		"reasoning":
@@ -15647,7 +16485,7 @@
 			"tokenizer": "Other"
 		},
 		"canonical_slug": "xiaomi/mimo-v2.5-pro-20260422",
-		"context_length": 1024000,
+		"context_length": 262144,
 		"created": 1776874273,
 		"default_parameters":
 		{
@@ -15672,9 +16510,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000087",
-			"input_cache_read": "0.0000000036",
-			"prompt": "0.000000435"
+			"completion": "0.0000018",
+			"input_cache_read": "0.000000096",
+			"prompt": "0.00000048"
 		},
 		"reasoning":
 		{
@@ -15684,9 +16522,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 1024000,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 131072
+			"max_completion_tokens": 235929
 		}
 	},
 	{
@@ -16428,13 +17266,13 @@
 			"default_enabled": true,
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 202752,
 			"is_moderated": false,
-			"max_completion_tokens": 182476
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -16966,7 +17804,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "Grok 4.20 Multi-Agent is a variant of SpaceXAI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.\n\nReasoning effort behavior:\n- low / medium: 4 agents\n- high / xhigh: 16 agents",
+		"description": "Grok 4.20 Multi-Agent is a variant of SpaceXSI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.\n\nReasoning effort behavior:\n- low / medium: 4 agents\n- high / xhigh: 16 agents",
 		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
 		"expiration_date": null,
 		"hugging_face_id": "",
@@ -16976,7 +17814,7 @@
 		{
 			"details": "/api/v1/models/x-ai/grok-4.20-multi-agent-20260309/endpoints"
 		},
-		"name": "SpaceXAI: Grok 4.20 Multi-Agent",
+		"name": "SpaceXSI: Grok 4.20 Multi-Agent",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -17029,7 +17867,7 @@
 			"top_k": null,
 			"top_p": null
 		},
-		"description": "Grok 4.20 is a reasoning model from SpaceXAI with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering consistently precise and truthful responses.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
+		"description": "Grok 4.20 is a reasoning model from SpaceXSI with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering consistently precise and truthful responses.\n\nReasoning can be enabled/disabled using the `reasoning` `enabled` parameter in the API. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens)",
 		"endpoints": ["/api/v1/chat/completions", "/api/v1/completions", "/api/v1/messages", "/api/v1/responses"],
 		"expiration_date": null,
 		"hugging_face_id": "",
@@ -17039,7 +17877,7 @@
 		{
 			"details": "/api/v1/models/x-ai/grok-4.20-20260309/endpoints"
 		},
-		"name": "SpaceXAI: Grok 4.20",
+		"name": "SpaceXSI: Grok 4.20",
 		"per_request_limits": null,
 		"pricing":
 		{
@@ -17522,21 +18360,20 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000084",
-			"input_cache_read": "0.000000042",
-			"prompt": "0.00000021"
+			"completion": "0.0000018",
+			"prompt": "0.0000006"
 		},
 		"reasoning":
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "seed", "stop", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 196608,
 			"is_moderated": false,
-			"max_completion_tokens": 176947
+			"max_completion_tokens": 131072
 		}
 	},
 	{
@@ -18352,9 +19189,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000115",
-			"input_cache_read": "0.000000071",
-			"prompt": "0.000000078"
+			"completion": "0.00000025",
+			"prompt": "0.00000017"
 		},
 		"reasoning":
 		{
@@ -18366,7 +19202,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 40960
+			"max_completion_tokens": 235929
 		}
 	},
 	{
@@ -19035,7 +19871,7 @@
 		{
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -19630,9 +20466,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000036",
-			"input_cache_read": "0.00000012",
-			"prompt": "0.0000006"
+			"completion": "0.000003",
+			"input_cache_read": "0.00000022",
+			"prompt": "0.00000045"
 		},
 		"reasoning":
 		{
@@ -19642,9 +20478,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 256000,
+			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 64000
+			"max_completion_tokens": 81920
 		}
 	},
 	{
@@ -19736,7 +20572,7 @@
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -20352,7 +21188,7 @@
 			"default_enabled": true,
 			"mandatory": false
 		},
-		"supported_parameters": ["frequency_penalty", "include_reasoning", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "include_reasoning", "logprobs", "max_tokens", "presence_penalty", "reasoning", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -21131,9 +21967,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000175",
-			"input_cache_read": "0.00000008",
-			"prompt": "0.0000004"
+			"completion": "0.0000022",
+			"input_cache_read": "0.00000011",
+			"prompt": "0.0000006"
 		},
 		"reasoning":
 		{
@@ -21144,7 +21980,7 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 202752,
+			"context_length": 204800,
 			"is_moderated": false,
 			"max_completion_tokens": 131072
 		}
@@ -24191,7 +25027,7 @@
 		{
 			"mandatory": true
 		},
-		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
+		"supported_parameters": ["include_reasoning", "max_tokens", "reasoning", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
@@ -26759,7 +27595,8 @@
 		"pricing":
 		{
 			"completion": "0.0000011",
-			"prompt": "0.00000009"
+			"input_cache_read": "0.00000007",
+			"prompt": "0.0000001"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -26767,7 +27604,7 @@
 		{
 			"context_length": 262144,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 235929
 		}
 	},
 	{
@@ -27853,9 +28690,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002",
-			"input_cache_read": "0.00000004",
-			"prompt": "0.0000004"
+			"completion": "0.0000022",
+			"input_cache_read": "0.000000044",
+			"prompt": "0.00000044"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
@@ -28608,9 +29445,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"input_cache_read": "0.000000075",
-			"prompt": "0.00000015"
+			"completion": "0.00000036",
+			"prompt": "0.00000009"
 		},
 		"reasoning":
 		{
@@ -28624,7 +29460,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 117964
 		}
 	},
 	{
@@ -28758,9 +29594,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000003",
-			"input_cache_read": "0.0000000375",
-			"prompt": "0.000000075"
+			"completion": "0.00000013",
+			"input_cache_read": "0.00000003",
+			"prompt": "0.00000003"
 		},
 		"reasoning":
 		{
@@ -28774,7 +29610,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 65536
+			"max_completion_tokens": 117964
 		}
 	},
 	{
@@ -29000,15 +29836,15 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000006",
-			"prompt": "0.00000015"
+			"completion": "0.00000028",
+			"prompt": "0.00000007"
 		},
-		"supported_parameters": ["max_tokens", "stop", "temperature", "tool_choice", "tools", "top_k", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "response_format", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
 			"context_length": 262144,
-			"is_moderated": true,
+			"is_moderated": false,
 			"max_completion_tokens": 235929
 		}
 	},
@@ -29177,9 +30013,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000011",
-			"input_cache_read": "0.00000003",
-			"prompt": "0.0000002"
+			"completion": "0.00000085",
+			"input_cache_read": "0.000000025",
+			"prompt": "0.00000013"
 		},
 		"reasoning":
 		{
@@ -30547,17 +31383,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000003",
-			"input_cache_read": "0.00000001",
-			"prompt": "0.0000001"
+			"completion": "0.0000002",
+			"prompt": "0.000000075"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 32768,
+			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": 26214
+			"max_completion_tokens": 16384
 		}
 	},
 	{
@@ -31461,9 +32296,8 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000215",
-			"input_cache_read": "0.00000035",
-			"prompt": "0.0000005"
+			"completion": "0.000002286",
+			"prompt": "0.000000571"
 		},
 		"reasoning":
 		{
@@ -31473,9 +32307,9 @@
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 163840,
+			"context_length": 128000,
 			"is_moderated": false,
-			"max_completion_tokens": 32768
+			"max_completion_tokens": 32000
 		}
 	},
 	{
@@ -31885,9 +32719,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000002",
-			"input_cache_read": "0.00000004",
-			"prompt": "0.0000004"
+			"completion": "0.0000022",
+			"input_cache_read": "0.000000044",
+			"prompt": "0.00000044"
 		},
 		"supported_parameters": ["frequency_penalty", "max_tokens", "presence_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "tool_choice", "tools", "top_p"],
 		"supported_voices": null,
@@ -34362,17 +35196,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000114",
-			"input_cache_read": "0.00000011",
-			"prompt": "0.00000029"
+			"completion": "0.000001",
+			"prompt": "0.00000025"
 		},
-		"supported_parameters": ["frequency_penalty", "logprobs", "max_tokens", "response_format", "seed", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "max_tokens", "response_format", "structured_outputs", "temperature", "tool_choice", "tools", "top_k", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 128000,
+			"context_length": 163840,
 			"is_moderated": false,
-			"max_completion_tokens": 115200
+			"max_completion_tokens": 147456
 		}
 	},
 	{
@@ -34644,8 +35477,9 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.0000001",
-			"prompt": "0.00000005"
+			"completion": "0.00000005",
+			"input_cache_read": "0.00000002",
+			"prompt": "0.00000004"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
@@ -34653,7 +35487,7 @@
 		{
 			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 16384
+			"max_completion_tokens": 117964
 		}
 	},
 	{
@@ -35015,7 +35849,7 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000035",
+			"completion": "0.00000045",
 			"input_cache_read": "0.00000004",
 			"prompt": "0.00000008"
 		},
@@ -38692,16 +39526,16 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.000000335",
-			"prompt": "0.0000000509"
+			"completion": "0.00000033",
+			"prompt": "0.00000005"
 		},
-		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
+		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "presence_penalty", "repetition_penalty", "seed", "stop", "structured_outputs", "temperature", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 80000,
+			"context_length": 131072,
 			"is_moderated": false,
-			"max_completion_tokens": 72000
+			"max_completion_tokens": 117964
 		}
 	},
 	{
@@ -41736,16 +42570,17 @@
 		"per_request_limits": null,
 		"pricing":
 		{
-			"completion": "0.00000011",
-			"prompt": "0.00000008"
+			"completion": "0.0000005",
+			"input_cache_read": "0.0000002",
+			"prompt": "0.0000003"
 		},
 		"supported_parameters": ["frequency_penalty", "logit_bias", "logprobs", "max_tokens", "min_p", "presence_penalty", "repetition_penalty", "response_format", "seed", "stop", "structured_outputs", "temperature", "top_a", "top_k", "top_logprobs", "top_p"],
 		"supported_voices": null,
 		"top_provider":
 		{
-			"context_length": 4096,
+			"context_length": 8192,
 			"is_moderated": false,
-			"max_completion_tokens": 3686
+			"max_completion_tokens": 7372
 		}
 	},
 	{
@@ -41910,5 +42745,5 @@
 	{
 		"next": null
 	},
-	"total_count": 459
+	"total_count": 469
 }

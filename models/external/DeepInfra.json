@@ -447,7 +447,7 @@
 			"default_height": 0,
 			"default_iterations": 0,
 			"default_width": 0,
-			"description": "Bria RMBG 2.0 enables seamless removal of backgrounds from images, ideal for professional editing tasks. Trained exclusively on licensed data for safe and risk-free commercial use.",
+			"description": "Bria RMBG 3.0 enables seamless removal of backgrounds from images, ideal for professional editing tasks. Trained exclusively on licensed data for safe and risk-free commercial use. The cleanest cutout, from any image.",
 			"discount": null,
 			"max_tokens": null,
 			"pricing":
@@ -2590,6 +2590,56 @@
 		"owned_by": "deepinfra",
 		"parent": null,
 		"root": "Qwen/Qwen3.8-Max"
+	},
+	{
+		"created": 0,
+		"id": "Qwen/Qwen4-Max",
+		"metadata":
+		{
+			"context_length": 1000000,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Qwen's next-generation flagship multimodal model, combining text, image and video understanding with deep reasoning for coding, office work and complex agentic tasks.",
+			"discount": null,
+			"max_tokens": 1000000,
+			"pricing":
+			{
+				"cache_read_tokens": 0.07100000009999999,
+				"input_tokens": 1.4129999999999998,
+				"output_tokens": 4.24
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "Qwen/Qwen4-Max"
+	},
+	{
+		"created": 0,
+		"id": "RadixArk/DaisyRose-27B",
+		"metadata":
+		{
+			"context_length": 262144,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "DaisyRose-27B is RadixArk's multimodal reasoning model, trained from Qwen3.8-27B with reinforcement learning only on long-horizon agent tasks. It improves on the base model in agentic coding, reasoning and instruction following, with thinking that can be enabled or disabled, image understanding and a 256K-token context.",
+			"discount": 0.25,
+			"max_tokens": 262144,
+			"pricing":
+			{
+				"cache_read_tokens": 0.05,
+				"input_tokens": 0.2,
+				"output_tokens": 2.5
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "RadixArk/DaisyRose-27B"
 	},
 	{
 		"created": 0,
@@ -6785,10 +6835,11 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
+				"cache_read_tokens": 0.0185,
 				"input_tokens": 0.037,
 				"output_tokens": 0.16999999999999998
 			},
-			"tags": ["chat", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -6857,10 +6908,11 @@
 			"max_tokens": 131072,
 			"pricing":
 			{
+				"cache_read_tokens": 0.015000000000000001,
 				"input_tokens": 0.030000000000000002,
 				"output_tokens": 0.14
 			},
-			"tags": ["chat", "reasoning_effort", "reasoning"]
+			"tags": ["chat", "prompt_cache", "reasoning_effort", "reasoning"]
 		},
 		"object": "model",
 		"owned_by": "deepinfra",
@@ -7358,6 +7410,31 @@
 	},
 	{
 		"created": 0,
+		"id": "tencent/Hy4",
+		"metadata":
+		{
+			"context_length": 1048576,
+			"default_height": null,
+			"default_iterations": null,
+			"default_width": null,
+			"description": "Hy4 is a 770B-parameter Mixture-of-Experts flagship model from the Tencent Hy Team, with 49B parameters activated per token, a 1M-token context window and image understanding. It uses Gated DeepSeek Sparse Attention with IndexCache, and improves on Hy4 preview in instruction following, long-context reasoning, long-horizon agentic tasks, computer use, coding and deep research.",
+			"discount": null,
+			"max_tokens": 1048576,
+			"pricing":
+			{
+				"cache_read_tokens": 0.04199999814,
+				"input_tokens": 0.834,
+				"output_tokens": 2.5010000000000003
+			},
+			"tags": ["chat", "vlm", "vision", "prompt_cache", "reasoning"]
+		},
+		"object": "model",
+		"owned_by": "deepinfra",
+		"parent": null,
+		"root": "tencent/Hy4"
+	},
+	{
+		"created": 0,
 		"id": "tencent/Hy4-preview",
 		"metadata":
 		{
@@ -7747,7 +7824,7 @@
 			"default_iterations": null,
 			"default_width": null,
 			"description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while reducing compute overhead.",
-			"discount": null,
+			"discount": 0.33,
 			"max_tokens": 1048576,
 			"pricing":
 			{

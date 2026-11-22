@@ -1,6 +1,24 @@
 {
 	"data": [
 	{
+		"created": 1795140108,
+		"id": "mindlab/macaron-v1.1-venti-pro",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1794986616,
+		"id": "qwen4-max",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
+		"created": 1794906604,
+		"id": "qwen-vl-ocr-2025-11-20",
+		"object": "model",
+		"owned_by": "system"
+	},
+	{
 		"created": 1794538242,
 		"id": "kimi-k3.1-pro",
 		"object": "model",
@@ -775,12 +793,6 @@
 		"owned_by": "system"
 	},
 	{
-		"created": 1770024610,
-		"id": "qwen-vl-ocr-2025-11-20",
-		"object": "model",
-		"owned_by": "system"
-	},
-	{
 		"created": 1770024280,
 		"id": "qwen3-235b-a22b-instruct-2507",
 		"object": "model",
@@ -1202,6 +1214,6 @@
 	}],
 	"first_id": "model-id-0",
 	"has_more": false,
-	"last_id": "model-id-101",
+	"last_id": "model-id-103",
 	"object": "list"
 }

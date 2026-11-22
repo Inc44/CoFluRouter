@@ -1809,11 +1809,13 @@
 		{
 			"input":
 			{
+				"tao": 0,
 				"usd": 0
 			},
 			"input_cache_read": 0,
 			"output":
 			{
+				"tao": 0,
 				"usd": 0
 			}
 		},
@@ -1881,11 +1883,13 @@
 		{
 			"input":
 			{
+				"tao": 0,
 				"usd": 0
 			},
 			"input_cache_read": 0,
 			"output":
 			{
+				"tao": 0,
 				"usd": 0
 			}
 		},
@@ -1931,6 +1935,42 @@
 			"prompt": 0
 		},
 		"root": "Qwen/Qwen3Guard-Gen-0.6B"
+	},
+	{
+		"chute_id": "8cadfde4-1604-5e13-a753-8a3941add625",
+		"confidential_compute": false,
+		"context_length": 1000000,
+		"created": 0,
+		"id": "Qwen/Qwen4-Max",
+		"input_modalities": ["text", "image", "video"],
+		"max_output_length": 131072,
+		"object": "model",
+		"output_modalities": ["text"],
+		"owned_by": "chutes",
+		"parent": null,
+		"price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"pricing":
+		{
+			"completion": 0,
+			"input_cache_read": 0,
+			"prompt": 0
+		},
+		"root": "Qwen/Qwen4-Max",
+		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
+		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
 	},
 	{
 		"chute_id": null,
@@ -3497,11 +3537,13 @@
 		{
 			"input":
 			{
+				"tao": 0,
 				"usd": 0
 			},
 			"input_cache_read": 0,
 			"output":
 			{
+				"tao": 0,
 				"usd": 0
 			}
 		},
@@ -3531,11 +3573,13 @@
 		{
 			"input":
 			{
+				"tao": 0,
 				"usd": 0
 			},
 			"input_cache_read": 0,
 			"output":
 			{
+				"tao": 0,
 				"usd": 0
 			}
 		},
@@ -3545,6 +3589,21 @@
 			"input_cache_read": 0,
 			"prompt": 0
 		},
+		"regular_price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"regular_price_from": "2026-11-24T00:00:00Z",
 		"root": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
 		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
@@ -4155,11 +4214,13 @@
 		{
 			"input":
 			{
+				"tao": 0,
 				"usd": 0
 			},
 			"input_cache_read": 0,
 			"output":
 			{
+				"tao": 0,
 				"usd": 0
 			}
 		},
@@ -4708,11 +4769,13 @@
 		{
 			"input":
 			{
+				"tao": 0,
 				"usd": 0
 			},
 			"input_cache_read": 0,
 			"output":
 			{
+				"tao": 0,
 				"usd": 0
 			}
 		},
@@ -6134,11 +6197,13 @@
 		{
 			"input":
 			{
+				"tao": 0,
 				"usd": 0
 			},
 			"input_cache_read": 0,
 			"output":
 			{
+				"tao": 0,
 				"usd": 0
 			}
 		},
@@ -6206,11 +6271,13 @@
 		{
 			"input":
 			{
+				"tao": 0,
 				"usd": 0
 			},
 			"input_cache_read": 0,
 			"output":
 			{
+				"tao": 0,
 				"usd": 0
 			}
 		},
@@ -6220,6 +6287,21 @@
 			"input_cache_read": 0,
 			"prompt": 0
 		},
+		"regular_price":
+		{
+			"input":
+			{
+				"tao": 0,
+				"usd": 0
+			},
+			"input_cache_read": 0,
+			"output":
+			{
+				"tao": 0,
+				"usd": 0
+			}
+		},
+		"regular_price_from": "2026-11-24T00:00:00Z",
 		"root": "zai-org/GLM-5.3",
 		"supported_features": ["json_mode", "structured_outputs", "tools", "reasoning"],
 		"supported_sampling_parameters": ["temperature", "top_p", "top_k", "repetition_penalty", "frequency_penalty", "presence_penalty", "stop", "seed"]
