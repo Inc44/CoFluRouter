@@ -1,6 +1,12 @@
 {
 	"data": [
 	{
+		"id": "gemma-4-31b",
+		"max_tokens": 8192,
+		"reasoning_effort": ["low", "medium", "high"],
+		"image": true
+	},
+	{
 		"id": "gpt-oss-120b",
 		"max_tokens": 40960,
 		"reasoning_effort": ["low", "medium", "high"],
@@ -45,6 +51,12 @@
 		"id": "qwen-3-coder-480b",
 		"max_tokens": 8192,
 		"image": false
+	},
+	{
+		"id": "qwen-3.8-27b",
+		"max_tokens": 8192,
+		"reasoning_effort": ["low", "medium", "high"],
+		"image": true
 	},
 	{
 		"id": "zai-glm-4.6",

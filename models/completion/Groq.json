@@ -1,6 +1,18 @@
 {
 	"data": [
 	{
+		"id": "qwen/qwen3.8-27b",
+		"max_tokens": 16384,
+		"reasoning_effort": ["default", "low"],
+		"image": true
+	},
+	{
+		"id": "qwen/qwen3.6-27b",
+		"max_tokens": 16384,
+		"reasoning_effort": ["default", "none", "low", "medium", "high"],
+		"image": true
+	},
+	{
 		"id": "moonshotai/kimi-k2-instruct-0905",
 		"max_tokens": 16384,
 		"image": false
@@ -63,13 +75,13 @@
 		"image": false
 	},
 	{
-		"id": "gemma2-9b-it",
-		"max_tokens": 8192,
+		"id": "llama-3.1-8b-instant",
+		"max_tokens": 8000,
 		"image": false
 	},
 	{
-		"id": "llama-3.1-8b-instant",
-		"max_tokens": 8000,
+		"id": "gemma2-9b-it",
+		"max_tokens": 8192,
 		"image": false
 	},
 	{

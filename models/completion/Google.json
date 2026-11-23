@@ -431,5 +431,89 @@
 		"image": true,
 		"video": true,
 		"search": true
+	},
+	{
+		"id": "gemini-3.1-flash-lite",
+		"max_tokens": 65536,
+		"reasoning_effort": ["minimal", "low", "medium", "high"],
+		"audio": true,
+		"file": true,
+		"image": true,
+		"video": true,
+		"search": true,
+		"maps": true,
+		"url": true
+	},
+	{
+		"id": "gemini-3.5-flash",
+		"max_tokens": 65536,
+		"reasoning_effort": ["minimal", "low", "medium", "high"],
+		"audio": true,
+		"file": true,
+		"image": true,
+		"video": true,
+		"search": true,
+		"maps": true,
+		"url": true
+	},
+	{
+		"id": "gemini-3.5-flash-lite",
+		"max_tokens": 65536,
+		"reasoning_effort": ["minimal", "low", "medium", "high"],
+		"audio": true,
+		"file": true,
+		"image": true,
+		"video": true,
+		"search": true,
+		"maps": true,
+		"url": true
+	},
+	{
+		"id": "gemini-3.6-flash",
+		"max_tokens": 65536,
+		"reasoning_effort": ["minimal", "low", "medium", "high"],
+		"audio": true,
+		"file": true,
+		"image": true,
+		"video": true,
+		"search": true,
+		"maps": true,
+		"url": true
+	},
+	{
+		"id": "gemini-3.7-flash",
+		"max_tokens": 65536,
+		"reasoning_effort": ["low", "medium", "high"],
+		"audio": true,
+		"file": true,
+		"image": true,
+		"video": true,
+		"search": true,
+		"maps": true,
+		"url": true
+	},
+	{
+		"id": "gemini-3.8-flash",
+		"max_tokens": 65536,
+		"reasoning_effort": ["low", "medium", "high"],
+		"audio": true,
+		"file": true,
+		"image": true,
+		"video": true,
+		"search": true,
+		"maps": true,
+		"url": true
+	},
+	{
+		"id": "gemini-4-hydrogen",
+		"max_tokens": 65536,
+		"reasoning_effort": ["low", "medium", "high", "xhigh"],
+		"audio": true,
+		"file": true,
+		"image": true,
+		"video": true,
+		"search": true,
+		"maps": true,
+		"url": true
 	}]
 }

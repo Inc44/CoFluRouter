@@ -78,13 +78,38 @@
 	},
 	{
 		"id": "MiniMax-M2.5",
-		"max_tokens": 163840,
+		"max_tokens": 32768,
 		"image": false
 	},
 	{
 		"id": "gemma-3-12b-it",
 		"max_tokens": 131072,
 		"image": true
+	},
+	{
+		"id": "MiniMax-M2.7",
+		"max_tokens": 196608,
+		"image": false
+	},
+	{
+		"id": "gemma-4-31B-it",
+		"max_tokens": 131072,
+		"image": true
+	},
+	{
+		"id": "MiniMax-M3",
+		"max_tokens": 1048576,
+		"image": true
+	},
+	{
+		"id": "MiniMax-M3.1-Flash",
+		"max_tokens": 1048576,
+		"image": true
+	},
+	{
+		"id": "GLM-5.3",
+		"max_tokens": 1048576,
+		"image": false
 	},
 	{
 		"id": "DeepSeek-R1",
