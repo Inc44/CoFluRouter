@@ -114,7 +114,7 @@ def skip_model(item):
 		"type" in item and "embedding" in item["type"]
 	):
 		return True
-	for model in [
+	for model in [  # OpenAI
 		"babbage",
 		"computer-use",
 		"dall-e",
@@ -126,17 +126,26 @@ def skip_model(item):
 	]:
 		if "id" in item and model in str(item["id"]).lower():
 			return True
-	for model in [
+	for model in [  # Google
+		"antigravity",
 		"aqa",
+		"customtools",
+		"decision",
+		"genie",
 		"imagen",
 		"live",
+		"lyria",
+		"nano-banana",
 		"native",
+		"robotics-er",
 		"veo",
 	]:
 		if "id" in item and model in str(item["id"]).lower():
 			return True
 	for model in [
+		"grok-imagine",
 		"guard",
+		"orpheus",
 		"qwen-image",
 	]:
 		if "id" in item and model in str(item["id"]).lower():
